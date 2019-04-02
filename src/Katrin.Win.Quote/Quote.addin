@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.QuoteModule.dll" />
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+
+  <Path name = "/Workbench/Navigation/Sales">
+    <NavItem id = "Quote"
+		          type = "Item"
+		          label = "${res:Quote}"
+              icon ="Quote"
+              class ="Katrin.Win.QuoteModule.OpenQuoteListCommand"
+              builderid ="NavBarItemBuilder"
+              insertafter="Opportunity"
+             />
+  </Path>
+  <Path name="/Quote">
+    <Path id="List">
+      <Path id="DockPanels">
+        <View id = "DefaultListView" controller="QuoteList" guid="{5E265350-DA01-4715-B268-25DDDD17A116}"/>
+        <DockPanel id="NoteList" ViewType="Layout" width="400" controller="NoteList" label="Note" guid="{B0305861-1142-42A2-BB60-48A08B47303D}"></DockPanel>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/List/Commands"/>
+        <Include id = "FormatCommand" path = "/Format/Commands" />
+        <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude">
+          <Condition name = "EnabledConditionEvaluator" affect="Enabled" action="Disable">
+            <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+            <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+            <Include id = "HistoryCommand" path = "/History/Commands/List" />
+            <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+          </Condition>
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder" mergeOrder="1">
+          <Include id = "Base" path = "/List/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" builderid ="RibbonPageGroupBuilder">
+            <Include id = "ShowNote" path = "/NoteView/Show"/>
+            <!--Include id = "ShowTiming" path = "/TimeTrackingView/Show"/-->
+            <Include id = "ShowHistory" path = "/HistoryViews/ShowWindow"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+          </MenuItem>
+          <RelatedDoozer id="Related" entityName="Quote"></RelatedDoozer>
+          <CovertDoozer id="Convert" entityName="Quote"></CovertDoozer>
+          <Include id = "FilterGroup" path = "/FilterView/FilterGroup"/>
+        </MenuItem>
+        <MenuItem id = "Appearance" type = "Page" label = "${res:ViewPageCaption}" builderid ="RibbonPageBuilder">
+          <Include id = "Format" path = "/FormatView/Format"/>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id="Detail">
+      <Path id="DockPanels">
+        <View id = "DefaultDetailView" controller="QuoteDetail"/>
+        <DockPanel id="NoteList" dock="Fill" lazy="true" controller="NoteList"></DockPanel>
+        <DockPanel id="History" dock="Fill" lazy="true" controller="HistoryList"></DockPanel>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/Detail/Commands"/>
+        <Include id = "HistoryCommand" path = "/History/Commands/Detail" />
+        <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+        <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+        <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+        <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "Base" path = "/Detail/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" OrderNumber="1" builderid ="RibbonPageGroupBuilder">
+            <Include id = "Base" path = "/Detail/Ribbon/Show" />
+            <Condition name = "DetailEnabledConditionEvaluator"  affect="Enabled" action="Disable">
+              <Include id = "ShowNote" path = "/NoteView/Activate"/>
+              <Include id = "ShowHistory" path = "/HistoryViews/Show"/>
+            </Condition>
+          </MenuItem>
+          <Condition name = "DetailEnabledConditionEvaluator" affect="Enabled" action="Disable">
+            <MenuItem id = "Add" type = "Group" label = "${res:Add}" OrderNumber="2" builderid ="RibbonPageGroupBuilder">
+              <Include id = "AddNote" path = "/NoteView/Add"/>
+            </MenuItem>
+          </Condition>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id ="ContextMenu">
+      <!--MenuItem default type is normal.-->
+      <MenuItem id = "QuoteListViewMenu" viewid = "DefaultListView" module ="Quote">
+        <MenuItem id ="Edit" cmdId ="Edit" />
+        <MenuItem id ="View" cmdId ="View"/>
+        <MenuItem id ="Delete" cmdId ="Delete"/>
+        <MenuItem id ="AddNote" cmdId ="AddNote" beginGroup ="true"/>
+        <MenuItem id ="Refresh" cmdId ="Refresh" beginGroup ="true"/>
+        <MenuItem id ="RelatedGroup" cmdId ="RelatedGroup" beginGroup ="true"  type ="dynamicGroup" label ="${res:Related}"/>
+        <MenuItem id ="ConvertGroup" cmdId ="ConvertGroup" beginGroup ="true"  type ="dynamicGroup" label ="${res:ConvertTitle}"/>
+      </MenuItem>
+      <MenuItem id = "QuoteNoteViewMenu" viewid = "NoteList" module ="Quote">
+        <MenuItem id ="EditNote" cmdId ="EditNote"/>
+        <MenuItem id ="DeleteNote" cmdId ="DeleteNote"/>
+      </MenuItem>
+    </Path>
+  </Path>
+
+  <Path name ="/Controllers">
+    <Controller id = "Quote" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="Quote"/>
+    <Controller id = "QuoteList" class = " Katrin.Win.QuoteModule.QuoteController"/>
+    <Controller id = "QuoteDetail" class = "Katrin.Win.QuoteModule.QuoteDetailController"/>
+  </Path>
+  <Path name ="/ObjectListViews/QuoteCommand">
+    <Class id = "QuoteCommand" class = "Katrin.Win.QuoteModule.OpenQuoteListCommand"/>
+  </Path>
+
+  <Path name ="/Views">
+    <View id = "DefaultQuoteDetailView" class = " Katrin.Win.QuoteModule.QuoteDetailView"/>
+  </Path>
+
+</AddIn>

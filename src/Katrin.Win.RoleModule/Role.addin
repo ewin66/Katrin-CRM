@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.RoleModule.dll" />
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+  <Path name="/Role">
+    <Path id="List">
+      <Path id="DockPanels">
+        <View id = "DefaultListView" controller="RoleList" guid="{062317D7-1C62-4B8C-8EFE-50D4E865C924}"/>
+        <DockPanel id="NoteList" ViewType="Layout" width="400" controller="NoteList" label="Note" guid="{EC4468FD-7F41-46B5-BC0B-1393641AA7CF}"></DockPanel>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/List/Commands"/>
+        <Include id = "FormatCommand" path = "/Format/Commands" />
+        <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude">
+          <Condition name = "EnabledConditionEvaluator" affect="Enabled" action="Disable">
+            <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+            <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+            <Include id = "HistoryCommand" path = "/History/Commands/List" />
+            <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+          </Condition>
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "Base" path = "/List/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" builderid ="RibbonPageGroupBuilder">
+            <Include id = "ShowNote" path = "/NoteView/Show"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/ShowWindow"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+          </MenuItem>
+          <RelatedDoozer id="Related" entityName="Role"></RelatedDoozer>
+          <CovertDoozer id="Convert" entityName="Role"></CovertDoozer>
+          <Include id = "FilterGroup" path = "/FilterView/FilterGroup"/>
+        </MenuItem>
+        <MenuItem id = "Appearance" type = "Page" label = "${res:ViewPageCaption}" builderid ="RibbonPageBuilder">
+          <Include id = "Format" path = "/FormatView/Format"/>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id="Detail">
+      <Path id="DockPanels">
+        <View id = "DefaultDetailView" controller="RoleDetail"/>
+        <DockPanel id="NoteList" dock="Fill" lazy="true" controller="NoteList"></DockPanel>
+        <DockPanel id="History" dock="Fill" lazy="true" controller="HistoryList"></DockPanel>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/Detail/Commands"/>
+        <Condition name = "DetailEnabledConditionEvaluator" affect="Enabled" action="Disable">
+          <Include id = "HistoryCommand" path = "/History/Commands/Detail" />
+          <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+          <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+          <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "Base" path = "/Detail/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" OrderNumber="1" builderid ="RibbonPageGroupBuilder">
+            <Include id = "Base" path = "/Detail/Ribbon/Show" />
+            <Include id = "ShowNote" path = "/NoteView/Activate"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/Show"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" OrderNumber="2" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+          </MenuItem>
+          <RelatedDoozer id="Related" entityName="Role"></RelatedDoozer>
+          <CovertDoozer id="Convert" entityName="Role"></CovertDoozer>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id ="ContextMenu">
+      <!--MenuItem default type is normal.-->
+      <MenuItem id = "RoleListViewMenu" viewid = "DefaultListView" module ="Role">
+        <MenuItem id ="Edit" cmdId ="Edit" />
+        <MenuItem id ="View" cmdId ="View"/>
+        <MenuItem id ="Delete" cmdId ="Delete"/>
+        <MenuItem id ="AddNote" cmdId ="AddNote" beginGroup ="true"/>
+        <MenuItem id ="Refresh" cmdId ="Refresh" beginGroup ="true"/>
+      </MenuItem>
+      <MenuItem id = "RoleNoteViewMenu" viewid = "NoteList" module ="Role">
+        <MenuItem id ="EditNote" cmdId ="EditNote"/>
+        <MenuItem id ="DeleteNote" cmdId ="DeleteNote"/>
+      </MenuItem>
+    </Path>
+  </Path>
+
+  <Path name = "/Workbench/Navigation/Administration">
+    <NavItem id = "Role"
+		          type = "Item"
+		          label = "${res:Role}"
+              icon ="Role"
+              class ="Katrin.Win.RoleModule.OpenRoleListCommand"
+              builderid ="NavBarItemBuilder"
+              insertafter ="User"
+             />
+  </Path>
+
+  <Path name ="/Controllers">
+    <Controller id = "Role" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="Role"/>
+    <Controller id = "RoleList" class = "Katrin.Win.RoleModule.RoleController"/>
+    <Controller id = "RoleDetail" class = "Katrin.Win.RoleModule.Detail.RoleDetailController"/>
+  </Path>
+  <Path name ="/ObjectListViews/RoleCommand">
+    <Class id = "RoleCommand" class = "Katrin.Win.RoleModule.OpenRoleListCommand"/>
+  </Path>
+
+  <Path name ="/Views">
+    <View id = "DefaultRoleDetailView" class = "Katrin.Win.RoleModule.Detail.RoleDetailView"/>
+  </Path>
+
+</AddIn>

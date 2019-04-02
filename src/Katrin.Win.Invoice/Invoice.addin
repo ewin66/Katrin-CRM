@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.InvoiceModule.dll" />
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+
+  <Path name = "/Workbench/Navigation/Sales">
+    <NavItem id = "Invoice"
+		          type = "Item"
+		          label = "${res:Invoice}"
+              icon ="Invoice"
+              class ="Katrin.Win.InvoiceModule.OpenInvoiceListCommand"
+              builderid ="NavBarItemBuilder"
+              insertafter="Contract"
+             insertbefore="Contact"
+             />
+  </Path>
+
+  <Path name="/Invoice">
+    <Path id="List">
+      <Path id="DockPanels">
+        <View id = "DefaultListView" controller="InvoiceList" guid="{4E69570F-6C43-4B46-BFDA-1C93C6EEC058}"/>
+        <DockPanel id="NoteList" width="400" ViewType="Layout" controller="NoteList" label="Note" guid="{888F4B8F-5BC3-47B7-AF2F-4A6A8F61486E}"></DockPanel>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/List/Commands"/>
+        <Include id = "FormatCommand" path = "/Format/Commands" />
+        <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude">
+          <Condition name = "EnabledConditionEvaluator" affect="Enabled" action="Disable">
+            <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+            <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+            <Include id = "HistoryCommand" path = "/History/Commands/List" />
+            <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+          </Condition>
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "Base" path = "/List/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" builderid ="RibbonPageGroupBuilder">
+            <Include id = "ShowNote" path = "/NoteView/Show"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/ShowWindow"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+          </MenuItem>
+          <RelatedDoozer id="Related" entityName="Invoice"></RelatedDoozer>
+          <CovertDoozer id="Convert" entityName="Invoice"></CovertDoozer>
+          <Include id = "FilterGroup" path = "/FilterView/FilterGroup"/>
+        </MenuItem>
+        <MenuItem id = "Appearance" type = "Page" label = "${res:ViewPageCaption}" builderid ="RibbonPageBuilder">
+          <Include id = "Format" path = "/FormatView/Format"/>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id="Detail">
+      <Path id="DockPanels">
+        <View id = "DefaultDetailView" controller="InvoiceDetail"/>
+        <DockPanel id="NoteList" dock="Fill" lazy="true" controller="NoteList"></DockPanel>
+        <DockPanel id="History" dock="Fill" lazy="true" controller="HistoryList"></DockPanel>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/Detail/Commands"/>
+        <Condition name = "DetailEnabledConditionEvaluator" affect="Enabled" action="Disable">
+          <Include id = "HistoryCommand" path = "/History/Commands/Detail" />
+          <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+          <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+          <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "Base" path = "/Detail/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" OrderNumber="1" builderid ="RibbonPageGroupBuilder">
+            <Include id = "Base" path = "/Detail/Ribbon/Show" />
+            <Include id = "ShowNote" path = "/NoteView/Activate"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/Show"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" OrderNumber="2" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+          </MenuItem>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id ="ContextMenu">
+      <!--MenuItem default type is normal.-->
+      <MenuItem id = "InvoiceListViewMenu" viewid = "DefaultListView" module ="Invoice">
+        <MenuItem id ="Edit" cmdId ="Edit" />
+        <MenuItem id ="View" cmdId ="View"/>
+        <MenuItem id ="Delete" cmdId ="Delete"/>
+        <MenuItem id ="AddNote" cmdId ="AddNote" beginGroup ="true"/>
+        <MenuItem id ="Refresh" cmdId ="Refresh" beginGroup ="true"/>
+        <MenuItem id ="RelatedGroup" cmdId ="RelatedGroup" beginGroup ="true"  type ="dynamicGroup" label ="${res:Related}"/>
+        <MenuItem id ="ConvertGroup" cmdId ="ConvertGroup" beginGroup ="true"  type ="dynamicGroup" label ="${res:ConvertTitle}"/>
+      </MenuItem>
+      <MenuItem id = "InvoiceNoteViewMenu" viewid = "NoteList" module ="Invoice">
+        <MenuItem id ="EditNote" cmdId ="EditNote"/>
+        <MenuItem id ="DeleteNote" cmdId ="DeleteNote"/>
+      </MenuItem>
+    </Path>
+  </Path>
+
+
+
+  <!-- Detail is key word,the appframework will use this format to invoke-->
+  <Path name ="/Controllers">
+    <Controller id = "Invoice" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="Invoice"/>
+    <Controller id = "InvoiceList" class = " Katrin.Win.InvoiceModule.InvoiceController"/>
+    <Controller id = "InvoiceDetail" class = "Katrin.Win.InvoiceModule.InvoiceDetailController"/>
+  </Path>
+  <Path name ="/ObjectListViews/InvoiceCommand">
+    <Class id = "InvoiceCommand" class = "Katrin.Win.InvoiceModule.OpenInvoiceListCommand"/>
+  </Path>
+
+  <Path name ="/Views">
+    <View id = "DefaultInvoiceDetailView" class = " Katrin.Win.InvoiceModule.InvoiceDetailView"/>
+  </Path>
+
+  <Path name ="/ConvertObject/Invoice">
+    <Class id = "ConvertInvoice" class = "Katrin.Win.InvoiceModule.ConvertInvoice"/>
+  </Path>
+  
+</AddIn>

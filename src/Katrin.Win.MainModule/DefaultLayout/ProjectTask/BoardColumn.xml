@@ -1,0 +1,899 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="ShowButtonMode">ShowForFocusedCell</property>
+  <property name="SynchronizeClones">true</property>
+  <property name="BorderStyle">NoBorder</property>
+  <property name="ViewCaption" />
+  <property name="Appearance" isnull="true" iskey="true">
+    <property name="ViewBackground" iskey="true" value="ViewBackground">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+      </property>
+      <property name="BackColor">204, 204, 204</property>
+    </property>
+    <property name="Card" iskey="true" value="Card">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseImage">true</property>
+      </property>
+    </property>
+  </property>
+  <property name="OptionsSelection" isnull="true" iskey="true">
+    <property name="MultiSelect">false</property>
+  </property>
+  <property name="DetailTabHeaderLocation">Top</property>
+  <property name="OptionsFind" isnull="true" iskey="true">
+    <property name="AllowFindPanel">false</property>
+  </property>
+  <property name="ViewCaptionHeight">-1</property>
+  <property name="DetailAutoHeight">true</property>
+  <property name="CardVertInterval">6</property>
+  <property name="DetailHeight">350</property>
+  <property name="FieldCaptionFormat" />
+  <property name="Name">layoutView</property>
+  <property name="Columns" iskey="true" value="10">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="OptionsField" isnull="true" iskey="true">
+        <property name="SortFilterButtonShowMode">Nowhere</property>
+      </property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseForeColor">true</property>
+          <property name="UseTextOptions">true</property>
+          <property name="UseBorderColor">true</property>
+          <property name="UseBackColor">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="ForeColor">43, 62, 76</property>
+        <property name="BorderColor">White</property>
+        <property name="BackColor">Green</property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="VAlignment">Center</property>
+        </property>
+        <property name="Font">Segoe UI Semibold, 10pt</property>
+      </property>
+      <property name="FilterMode">DisplayText</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">Name</property>
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AllowFilter">false</property>
+        <property name="AllowAutoFilter">false</property>
+      </property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowFocus">false</property>
+      </property>
+      <property name="Name">colName</property>
+      <property name="ImageAlignment">Near</property>
+      <property name="Visible">true</property>
+      <property name="ToolTip" />
+      <property name="VisibleIndex">-1</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="ColumnEditName" />
+      <property name="FieldName">TaskId</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowFocus">false</property>
+      </property>
+      <property name="Name">colTaskId</property>
+      <property name="ImageAlignment">Near</property>
+      <property name="Visible">true</property>
+      <property name="ToolTip" />
+      <property name="VisibleIndex">-1</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="ColumnEditName" />
+      <property name="FieldName">StatusCode</property>
+      <property name="Caption">StatusCode</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowFocus">false</property>
+      </property>
+      <property name="CustomizationCaption">StatusCode</property>
+      <property name="Name">colStatusCode</property>
+      <property name="ImageAlignment">Near</property>
+      <property name="Visible">true</property>
+      <property name="ToolTip" />
+      <property name="VisibleIndex">-1</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="OptionsField" isnull="true" iskey="true">
+        <property name="SortFilterButtonShowMode">Nowhere</property>
+      </property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseBackColor">true</property>
+        </property>
+        <property name="BackColor">Green</property>
+      </property>
+      <property name="ColumnEditName" />
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AllowFilter">false</property>
+        <property name="AllowAutoFilter">false</property>
+      </property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowFocus">false</property>
+      </property>
+      <property name="Name">colLayoutSpacer</property>
+      <property name="ImageAlignment">Near</property>
+      <property name="Visible">true</property>
+      <property name="ToolTip" />
+      <property name="VisibleIndex">-1</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="OptionsField" isnull="true" iskey="true">
+        <property name="SortFilterButtonShowMode">Nowhere</property>
+      </property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseBackColor">true</property>
+        </property>
+        <property name="BackColor">Green</property>
+      </property>
+      <property name="ColumnEditName" />
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AllowFilter">false</property>
+        <property name="AllowAutoFilter">false</property>
+      </property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowFocus">false</property>
+      </property>
+      <property name="Name">colLayoutSpacer2</property>
+      <property name="ImageAlignment">Near</property>
+      <property name="Visible">true</property>
+      <property name="ToolTip" />
+      <property name="VisibleIndex">-1</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="OptionsField" isnull="true" iskey="true">
+        <property name="SortFilterButtonShowMode">Nowhere</property>
+      </property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseBackColor">true</property>
+        </property>
+        <property name="BackColor">Green</property>
+      </property>
+      <property name="ColumnEditName" />
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AllowFilter">false</property>
+        <property name="AllowAutoFilter">false</property>
+      </property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowFocus">false</property>
+      </property>
+      <property name="Name">colLayoutSpacer3</property>
+      <property name="ImageAlignment">Near</property>
+      <property name="Visible">true</property>
+      <property name="ToolTip" />
+      <property name="VisibleIndex">-1</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="OptionsField" isnull="true" iskey="true">
+        <property name="SortFilterButtonShowMode">Nowhere</property>
+      </property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseForeColor">true</property>
+          <property name="UseTextOptions">true</property>
+          <property name="UseBorderColor">true</property>
+          <property name="UseBackColor">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="ForeColor">10, 71, 89</property>
+        <property name="BorderColor">White</property>
+        <property name="BackColor">Green</property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Far</property>
+          <property name="VAlignment">Bottom</property>
+        </property>
+      </property>
+      <property name="FilterMode">DisplayText</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">ProjectName</property>
+      <property name="Caption">Priority</property>
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AllowFilter">false</property>
+        <property name="AllowAutoFilter">false</property>
+      </property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowFocus">false</property>
+      </property>
+      <property name="Name">colPriorityCode</property>
+      <property name="ImageAlignment">Near</property>
+      <property name="Visible">true</property>
+      <property name="ToolTip" />
+      <property name="VisibleIndex">-1</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="OptionsField" isnull="true" iskey="true">
+        <property name="SortFilterButtonShowMode">Nowhere</property>
+      </property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseForeColor">true</property>
+          <property name="UseTextOptions">true</property>
+          <property name="UseBorderColor">true</property>
+          <property name="UseBackColor">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="ForeColor">145, 146, 148</property>
+        <property name="BackColor">Green</property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Far</property>
+          <property name="VAlignment">Top</property>
+        </property>
+      </property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">ProjectIterationName</property>
+      <property name="Caption">E</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowFocus">false</property>
+      </property>
+      <property name="Name">colEffort</property>
+      <property name="ImageAlignment">Near</property>
+      <property name="Visible">true</property>
+      <property name="ToolTip" />
+      <property name="VisibleIndex">-1</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="OptionsField" isnull="true" iskey="true">
+        <property name="SortFilterButtonShowMode">Nowhere</property>
+      </property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseForeColor">true</property>
+          <property name="UseTextOptions">true</property>
+          <property name="UseBorderColor">true</property>
+          <property name="UseBackColor">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="ForeColor">145, 146, 148</property>
+        <property name="BackColor">Green</property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+          <property name="VAlignment">Top</property>
+        </property>
+      </property>
+      <property name="FilterMode">DisplayText</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">Description</property>
+      <property name="Caption">P</property>
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AllowFilter">false</property>
+        <property name="AllowAutoFilter">false</property>
+      </property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowFocus">false</property>
+      </property>
+      <property name="Name">colActualWorkHours</property>
+      <property name="ImageAlignment">Near</property>
+      <property name="Visible">true</property>
+      <property name="ToolTip" />
+      <property name="VisibleIndex">-1</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="OptionsField" isnull="true" iskey="true">
+        <property name="SortFilterButtonShowMode">Nowhere</property>
+      </property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseForeColor">true</property>
+          <property name="UseTextOptions">true</property>
+          <property name="UseBorderColor">true</property>
+          <property name="UseBackColor">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="ForeColor">10, 71, 89</property>
+        <property name="BackColor">Green</property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="VAlignment">Bottom</property>
+        </property>
+      </property>
+      <property name="FilterMode">DisplayText</property>
+      <property name="ColumnEditName" />
+      <property name="FieldName">OwnerFullName</property>
+      <property name="Caption">OwnerName</property>
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AllowFilter">false</property>
+        <property name="AllowAutoFilter">false</property>
+      </property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowFocus">false</property>
+      </property>
+      <property name="Name">colOwnerName</property>
+      <property name="ImageAlignment">Near</property>
+      <property name="Visible">true</property>
+      <property name="ToolTip" />
+      <property name="VisibleIndex">-1</property>
+    </property>
+  </property>
+  <property name="CardMinSize">@3,Width=276@2,Height=81</property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="AllowHotTrackFields">false</property>
+    <property name="ShowFilterPanelMode">Never</property>
+    <property name="ViewMode">Column</property>
+    <property name="ShowCardExpandButton">false</property>
+    <property name="ShowCardLines">false</property>
+    <property name="ShowCardBorderIfCaptionHidden">false</property>
+    <property name="ShowCardCaption">false</property>
+    <property name="CardArrangeRule">AllowPartialCards</property>
+    <property name="ShowHeaderPanel">false</property>
+  </property>
+  <property name="OptionsBehavior" isnull="true" iskey="true">
+    <property name="AllowAddRows">False</property>
+    <property name="AllowDeleteRows">False</property>
+    <property name="Editable">false</property>
+    <property name="ReadOnly">true</property>
+    <property name="ScrollVisibility">Auto</property>
+  </property>
+  <property name="CardHorzInterval">7</property>
+  <property name="OptionsMultiRecordMode" isnull="true" iskey="true">
+    <property name="MultiColumnScrollBarOrientation">Default</property>
+    <property name="MultiRowScrollBarOrientation">Default</property>
+    <property name="StretchCardToViewWidth">true</property>
+    <property name="StretchCardToViewHeight">false</property>
+    <property name="MaxCardRows">0</property>
+    <property name="MaxCardColumns">0</property>
+  </property>
+  <property name="OptionsItemText" isnull="true" iskey="true">
+    <property name="AlignMode">AlignGlobal</property>
+    <property name="TextToControlDistance">10</property>
+  </property>
+  <property name="OptionsCarouselMode" isnull="true" iskey="true">
+    <property name="StretchCardToViewWidth">false</property>
+    <property name="StretchCardToViewHeight">false</property>
+    <property name="InterpolationMode">Default</property>
+    <property name="CenterOffset">@1,X=0@1,Y=0</property>
+    <property name="FrameCount">250</property>
+    <property name="FrameDelay">10000</property>
+    <property name="CardCount">15</property>
+    <property name="RollAngle">3.14159274</property>
+    <property name="Radius">0</property>
+    <property name="PitchAngle">1.57079637</property>
+    <property name="BottomCardScale">0.2</property>
+    <property name="BottomCardFading">0</property>
+    <property name="BottomCardAlphaLevel">0</property>
+  </property>
+  <property name="OptionsCustomization" isnull="true" iskey="true">
+    <property name="AllowSort">true</property>
+    <property name="AllowFilter">true</property>
+    <property name="UseAdvancedRuntimeCustomization">false</property>
+    <property name="ShowGroupLayoutTreeView">true</property>
+    <property name="ShowGroupHiddenItems">true</property>
+    <property name="ShowResetShrinkButtons">true</property>
+    <property name="ShowGroupCardIndents">true</property>
+    <property name="ShowGroupCardCaptions">true</property>
+    <property name="ShowSaveLoadLayoutButtons">true</property>
+    <property name="ShowGroupView">true</property>
+    <property name="ShowGroupLayout">true</property>
+    <property name="ShowGroupCards">true</property>
+    <property name="ShowGroupFields">true</property>
+  </property>
+  <property name="OptionsHeaderPanel" isnull="true" iskey="true">
+    <property name="ShowSingleModeButton">true</property>
+    <property name="EnableSingleModeButton">true</property>
+    <property name="ShowRowModeButton">true</property>
+    <property name="EnableRowModeButton">true</property>
+    <property name="ShowColumnModeButton">true</property>
+    <property name="EnableColumnModeButton">true</property>
+    <property name="ShowMultiRowModeButton">true</property>
+    <property name="EnableMultiRowModeButton">true</property>
+    <property name="ShowMultiColumnModeButton">true</property>
+    <property name="EnableMultiColumnModeButton">true</property>
+    <property name="ShowCarouselModeButton">true</property>
+    <property name="EnableCarouselModeButton">true</property>
+    <property name="ShowPanButton">true</property>
+    <property name="EnablePanButton">true</property>
+    <property name="ShowCustomizeButton">true</property>
+    <property name="EnableCustomizeButton">true</property>
+  </property>
+  <property name="CardCaptionFormat" />
+  <property name="OptionsSingleRecordMode" isnull="true" iskey="true">
+    <property name="StretchCardToViewWidth">false</property>
+    <property name="StretchCardToViewHeight">false</property>
+    <property name="CardAlignment">Center</property>
+  </property>
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="Items" iskey="true" value="11">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="ExpandButtonLocation">AfterText</property>
+      <property name="Padding">0, 0, 0, 0</property>
+      <property name="TextVisible">false</property>
+      <property name="ParentName" />
+      <property name="AppearanceItemCaption" isnull="true" iskey="true">
+        <property name="ForeColor" />
+        <property name="BorderColor" />
+        <property name="BackColor" />
+        <property name="BackColor2" />
+        <property name="Font">Tahoma, 9pt</property>
+        <property name="GradientMode">Horizontal</property>
+      </property>
+      <property name="Name">layoutViewTemplateCard</property>
+      <property name="OptionsToolTip" isnull="true" iskey="true">
+        <property name="ToolTip" />
+        <property name="ToolTipTitle" />
+        <property name="ToolTipIconType">None</property>
+        <property name="IconToolTip" />
+        <property name="IconToolTipTitle" />
+        <property name="IconToolTipIconType">None</property>
+        <property name="EnableIconToolTip">true</property>
+      </property>
+      <property name="TextToControlDistance">0</property>
+      <property name="AppearanceTabPage" isnull="true" iskey="true">
+        <property name="Header" isnull="true" iskey="true">
+          <property name="ForeColor" />
+          <property name="BorderColor" />
+          <property name="BackColor" />
+          <property name="BackColor2" />
+          <property name="Font">Tahoma, 9pt</property>
+          <property name="GradientMode">Horizontal</property>
+        </property>
+        <property name="HeaderActive" isnull="true" iskey="true">
+          <property name="ForeColor" />
+          <property name="BorderColor" />
+          <property name="BackColor" />
+          <property name="BackColor2" />
+          <property name="Font">Tahoma, 9pt</property>
+          <property name="GradientMode">Horizontal</property>
+        </property>
+        <property name="HeaderDisabled" isnull="true" iskey="true">
+          <property name="ForeColor" />
+          <property name="BorderColor" />
+          <property name="BackColor" />
+          <property name="BackColor2" />
+          <property name="Font">Tahoma, 9pt</property>
+          <property name="GradientMode">Horizontal</property>
+        </property>
+        <property name="HeaderHotTracked" isnull="true" iskey="true">
+          <property name="ForeColor" />
+          <property name="BorderColor" />
+          <property name="BackColor" />
+          <property name="BackColor2" />
+          <property name="Font">Tahoma, 9pt</property>
+          <property name="GradientMode">Horizontal</property>
+        </property>
+        <property name="PageClient" isnull="true" iskey="true">
+          <property name="ForeColor" />
+          <property name="BorderColor" />
+          <property name="BackColor" />
+          <property name="BackColor2" />
+          <property name="Font">Tahoma, 9pt</property>
+          <property name="GradientMode">Horizontal</property>
+        </property>
+      </property>
+      <property name="OptionsCustomization" isnull="true" iskey="true">
+        <property name="AllowDrag">Default</property>
+        <property name="AllowDrop">Default</property>
+      </property>
+      <property name="OptionsItemText" isnull="true" iskey="true">
+        <property name="TextToControlDistance">10</property>
+        <property name="TextAlignMode">UseParentOptions</property>
+      </property>
+      <property name="AppearanceGroup" isnull="true" iskey="true">
+        <property name="ForeColor" />
+        <property name="BorderColor" />
+        <property name="BackColor" />
+        <property name="BackColor2" />
+        <property name="Font">Tahoma, 9pt</property>
+        <property name="GradientMode">Horizontal</property>
+      </property>
+      <property name="TypeName">LayoutViewCard</property>
+      <property name="Location">@1,X=0@1,Y=0</property>
+      <property name="Size">@3,Width=276@2,Height=81</property>
+      <property name="ExpandButtonVisible">false</property>
+      <property name="CustomizationFormText">TemplateCard</property>
+      <property name="Text">TemplateCard</property>
+      <property name="ExpandOnDoubleClick">false</property>
+      <property name="GroupBordersVisible">false</property>
+      <property name="TabbedGroupParentName" />
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="TypeName">LayoutViewField</property>
+      <property name="MaxSize">@1,Width=7@2,Height=81</property>
+      <property name="MinSize">@1,Width=7@2,Height=81</property>
+      <property name="Padding">0, 0, 0, 0</property>
+      <property name="TextToControlDistance">0</property>
+      <property name="TextSize">@1,Width=0@1,Height=0</property>
+      <property name="OptionsCustomization" isnull="true" iskey="true">
+        <property name="AllowDrag">Default</property>
+        <property name="AllowDrop">Default</property>
+      </property>
+      <property name="OptionsToolTip" isnull="true" iskey="true">
+        <property name="ToolTip" />
+        <property name="ToolTipTitle" />
+        <property name="ToolTipIconType">None</property>
+        <property name="IconToolTip" />
+        <property name="IconToolTipTitle" />
+        <property name="IconToolTipIconType">None</property>
+        <property name="EnableIconToolTip">true</property>
+      </property>
+      <property name="TextVisible">false</property>
+      <property name="Name">layoutViewField_colLayoutSpacer2</property>
+      <property name="AppearanceItemCaption" isnull="true" iskey="true">
+        <property name="ForeColor" />
+        <property name="BorderColor" />
+        <property name="BackColor" />
+        <property name="BackColor2" />
+        <property name="Font">Tahoma, 9pt</property>
+        <property name="GradientMode">Horizontal</property>
+      </property>
+      <property name="SizeConstraintsType">Custom</property>
+      <property name="ParentName">layoutViewTemplateCard</property>
+      <property name="Location">@3,X=269@1,Y=0</property>
+      <property name="ControlName" isnull="true" />
+      <property name="ColumnName">colLayoutSpacer2</property>
+      <property name="EditorPreferredWidth">7</property>
+      <property name="Size">@1,Width=7@2,Height=81</property>
+      <property name="Text" />
+      <property name="TextLocation">Right</property>
+      <property name="ShowInCustomizationForm">true</property>
+      <property name="CustomizationFormText" />
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="TypeName">LayoutViewField</property>
+      <property name="MaxSize">@1,Width=6@2,Height=81</property>
+      <property name="MinSize">@1,Width=6@2,Height=81</property>
+      <property name="Padding">0, 0, 0, 0</property>
+      <property name="TextToControlDistance">0</property>
+      <property name="TextSize">@1,Width=0@1,Height=0</property>
+      <property name="OptionsCustomization" isnull="true" iskey="true">
+        <property name="AllowDrag">Default</property>
+        <property name="AllowDrop">Default</property>
+      </property>
+      <property name="OptionsToolTip" isnull="true" iskey="true">
+        <property name="ToolTip" />
+        <property name="ToolTipTitle" />
+        <property name="ToolTipIconType">None</property>
+        <property name="IconToolTip" />
+        <property name="IconToolTipTitle" />
+        <property name="IconToolTipIconType">None</property>
+        <property name="EnableIconToolTip">true</property>
+      </property>
+      <property name="TextVisible">false</property>
+      <property name="Name">layoutViewField_colLayoutSpacer3</property>
+      <property name="AppearanceItemCaption" isnull="true" iskey="true">
+        <property name="ForeColor" />
+        <property name="BorderColor" />
+        <property name="BackColor" />
+        <property name="BackColor2" />
+        <property name="Font">Tahoma, 9pt</property>
+        <property name="GradientMode">Horizontal</property>
+      </property>
+      <property name="SizeConstraintsType">Custom</property>
+      <property name="ParentName">layoutViewTemplateCard</property>
+      <property name="Location">@2,X=12@1,Y=0</property>
+      <property name="ControlName" isnull="true" />
+      <property name="ColumnName">colLayoutSpacer3</property>
+      <property name="EditorPreferredWidth">6</property>
+      <property name="Size">@1,Width=6@2,Height=81</property>
+      <property name="Text" />
+      <property name="TextLocation">Right</property>
+      <property name="ShowInCustomizationForm">true</property>
+      <property name="CustomizationFormText" />
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="TypeName">LayoutViewField</property>
+      <property name="MaxSize">@2,Width=12@2,Height=81</property>
+      <property name="MinSize">@2,Width=12@2,Height=81</property>
+      <property name="Padding">0, 0, 0, 0</property>
+      <property name="TextToControlDistance">0</property>
+      <property name="TextSize">@1,Width=0@1,Height=0</property>
+      <property name="OptionsCustomization" isnull="true" iskey="true">
+        <property name="AllowDrag">Default</property>
+        <property name="AllowDrop">Default</property>
+      </property>
+      <property name="OptionsToolTip" isnull="true" iskey="true">
+        <property name="ToolTip" />
+        <property name="ToolTipTitle" />
+        <property name="ToolTipIconType">None</property>
+        <property name="IconToolTip" />
+        <property name="IconToolTipTitle" />
+        <property name="IconToolTipIconType">None</property>
+        <property name="EnableIconToolTip">true</property>
+      </property>
+      <property name="TextVisible">false</property>
+      <property name="Name">layoutViewField_colLayoutSpacer</property>
+      <property name="AppearanceItemCaption" isnull="true" iskey="true">
+        <property name="ForeColor" />
+        <property name="BorderColor" />
+        <property name="BackColor" />
+        <property name="BackColor2" />
+        <property name="Font">Tahoma, 9pt</property>
+        <property name="GradientMode">Horizontal</property>
+      </property>
+      <property name="SizeConstraintsType">Custom</property>
+      <property name="ParentName">layoutViewTemplateCard</property>
+      <property name="Location">@1,X=0@1,Y=0</property>
+      <property name="ControlName" isnull="true" />
+      <property name="ColumnName">colLayoutSpacer</property>
+      <property name="EditorPreferredWidth">12</property>
+      <property name="Size">@2,Width=12@2,Height=81</property>
+      <property name="Text" />
+      <property name="TextLocation">Right</property>
+      <property name="ShowInCustomizationForm">true</property>
+      <property name="CustomizationFormText" />
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="TypeName">LayoutViewField</property>
+      <property name="MaxSize">@3,Width=251@2,Height=40</property>
+      <property name="MinSize">@3,Width=251@2,Height=40</property>
+      <property name="Padding">0, 0, 0, 0</property>
+      <property name="TextToControlDistance">0</property>
+      <property name="TextSize">@1,Width=0@1,Height=0</property>
+      <property name="OptionsCustomization" isnull="true" iskey="true">
+        <property name="AllowDrag">Default</property>
+        <property name="AllowDrop">Default</property>
+      </property>
+      <property name="OptionsToolTip" isnull="true" iskey="true">
+        <property name="ToolTip" />
+        <property name="ToolTipTitle" />
+        <property name="ToolTipIconType">None</property>
+        <property name="IconToolTip" />
+        <property name="IconToolTipTitle" />
+        <property name="IconToolTipIconType">None</property>
+        <property name="EnableIconToolTip">true</property>
+      </property>
+      <property name="TextVisible">false</property>
+      <property name="Name">layoutViewField_colName</property>
+      <property name="AppearanceItemCaption" isnull="true" iskey="true">
+        <property name="ForeColor" />
+        <property name="BorderColor" />
+        <property name="BackColor" />
+        <property name="BackColor2" />
+        <property name="Font">Tahoma, 9pt</property>
+        <property name="GradientMode">Horizontal</property>
+      </property>
+      <property name="SizeConstraintsType">Custom</property>
+      <property name="ParentName">layoutViewTemplateCard</property>
+      <property name="Location">@2,X=18@2,Y=20</property>
+      <property name="ControlName" isnull="true" />
+      <property name="ColumnName">colName</property>
+      <property name="EditorPreferredWidth">251</property>
+      <property name="Size">@3,Width=251@2,Height=40</property>
+      <property name="Text">Name:</property>
+      <property name="ShowInCustomizationForm">true</property>
+      <property name="CustomizationFormText">Name</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="TypeName">LayoutViewField</property>
+      <property name="MaxSize">@3,Width=143@2,Height=20</property>
+      <property name="MinSize">@3,Width=143@2,Height=20</property>
+      <property name="Padding">0, 0, 0, 0</property>
+      <property name="TextToControlDistance">0</property>
+      <property name="TextSize">@1,Width=0@1,Height=0</property>
+      <property name="OptionsCustomization" isnull="true" iskey="true">
+        <property name="AllowDrag">Default</property>
+        <property name="AllowDrop">Default</property>
+      </property>
+      <property name="OptionsToolTip" isnull="true" iskey="true">
+        <property name="ToolTip" />
+        <property name="ToolTipTitle" />
+        <property name="ToolTipIconType">None</property>
+        <property name="IconToolTip" />
+        <property name="IconToolTipTitle" />
+        <property name="IconToolTipIconType">None</property>
+        <property name="EnableIconToolTip">true</property>
+      </property>
+      <property name="TextVisible">false</property>
+      <property name="Name">layoutViewField_colProjectName</property>
+      <property name="AppearanceItemCaption" isnull="true" iskey="true">
+        <property name="ForeColor" />
+        <property name="BorderColor" />
+        <property name="BackColor" />
+        <property name="BackColor2" />
+        <property name="Font">Tahoma, 9pt</property>
+        <property name="GradientMode">Horizontal</property>
+      </property>
+      <property name="SizeConstraintsType">Custom</property>
+      <property name="ParentName">layoutViewTemplateCard</property>
+      <property name="Location">@3,X=126@1,Y=0</property>
+      <property name="ControlName" isnull="true" />
+      <property name="ColumnName">colPriorityCode</property>
+      <property name="EditorPreferredWidth">143</property>
+      <property name="Size">@3,Width=143@2,Height=20</property>
+      <property name="Text">Priority:</property>
+      <property name="ShowInCustomizationForm">true</property>
+      <property name="CustomizationFormText">Priority</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="TypeName">LayoutViewField</property>
+      <property name="MaxSize">@3,Width=107@2,Height=21</property>
+      <property name="MinSize">@3,Width=107@2,Height=21</property>
+      <property name="Padding">0, 0, 0, 0</property>
+      <property name="TextToControlDistance">0</property>
+      <property name="TextSize">@1,Width=0@1,Height=0</property>
+      <property name="OptionsCustomization" isnull="true" iskey="true">
+        <property name="AllowDrag">Default</property>
+        <property name="AllowDrop">Default</property>
+      </property>
+      <property name="OptionsToolTip" isnull="true" iskey="true">
+        <property name="ToolTip" />
+        <property name="ToolTipTitle" />
+        <property name="ToolTipIconType">None</property>
+        <property name="IconToolTip" />
+        <property name="IconToolTipTitle" />
+        <property name="IconToolTipIconType">None</property>
+        <property name="EnableIconToolTip">true</property>
+      </property>
+      <property name="TextVisible">false</property>
+      <property name="Name">layoutViewField_layoutViewColumn1</property>
+      <property name="AppearanceItemCaption" isnull="true" iskey="true">
+        <property name="ForeColor" />
+        <property name="BorderColor" />
+        <property name="BackColor" />
+        <property name="BackColor2" />
+        <property name="Font">Tahoma, 9pt</property>
+        <property name="GradientMode">Horizontal</property>
+      </property>
+      <property name="SizeConstraintsType">Custom</property>
+      <property name="ParentName">layoutViewTemplateCard</property>
+      <property name="Location">@2,X=18@2,Y=60</property>
+      <property name="ControlName" isnull="true" />
+      <property name="ColumnName">colActualWorkHours</property>
+      <property name="EditorPreferredWidth">107</property>
+      <property name="Size">@3,Width=107@2,Height=21</property>
+      <property name="Text">P:</property>
+      <property name="ShowInCustomizationForm">true</property>
+      <property name="CustomizationFormText">P</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="TypeName">LayoutViewField</property>
+      <property name="MaxSize">@3,Width=108@2,Height=20</property>
+      <property name="MinSize">@3,Width=108@2,Height=20</property>
+      <property name="Padding">0, 0, 0, 0</property>
+      <property name="TextToControlDistance">0</property>
+      <property name="TextSize">@1,Width=0@1,Height=0</property>
+      <property name="OptionsCustomization" isnull="true" iskey="true">
+        <property name="AllowDrag">Default</property>
+        <property name="AllowDrop">Default</property>
+      </property>
+      <property name="OptionsToolTip" isnull="true" iskey="true">
+        <property name="ToolTip" />
+        <property name="ToolTipTitle" />
+        <property name="ToolTipIconType">None</property>
+        <property name="IconToolTip" />
+        <property name="IconToolTipTitle" />
+        <property name="IconToolTipIconType">None</property>
+        <property name="EnableIconToolTip">true</property>
+      </property>
+      <property name="TextVisible">false</property>
+      <property name="Name">layoutViewField_layoutViewColumn1_1</property>
+      <property name="AppearanceItemCaption" isnull="true" iskey="true">
+        <property name="ForeColor" />
+        <property name="BorderColor" />
+        <property name="BackColor" />
+        <property name="BackColor2" />
+        <property name="Font">Tahoma, 9pt</property>
+        <property name="GradientMode">Horizontal</property>
+      </property>
+      <property name="SizeConstraintsType">Custom</property>
+      <property name="ParentName">layoutViewTemplateCard</property>
+      <property name="Location">@2,X=18@1,Y=0</property>
+      <property name="ControlName" isnull="true" />
+      <property name="ColumnName">colOwnerName</property>
+      <property name="EditorPreferredWidth">108</property>
+      <property name="Size">@3,Width=108@2,Height=20</property>
+      <property name="Text">OwnerName:</property>
+      <property name="TextLocation">Top</property>
+      <property name="ShowInCustomizationForm">true</property>
+      <property name="CustomizationFormText">OwnerName</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="TypeName">LayoutViewField</property>
+      <property name="MaxSize">@3,Width=144@2,Height=21</property>
+      <property name="MinSize">@3,Width=144@2,Height=21</property>
+      <property name="Padding">0, 0, 0, 0</property>
+      <property name="TextToControlDistance">0</property>
+      <property name="TextSize">@1,Width=0@1,Height=0</property>
+      <property name="OptionsCustomization" isnull="true" iskey="true">
+        <property name="AllowDrag">Default</property>
+        <property name="AllowDrop">Default</property>
+      </property>
+      <property name="OptionsToolTip" isnull="true" iskey="true">
+        <property name="ToolTip" />
+        <property name="ToolTipTitle" />
+        <property name="ToolTipIconType">None</property>
+        <property name="IconToolTip" />
+        <property name="IconToolTipTitle" />
+        <property name="IconToolTipIconType">None</property>
+        <property name="EnableIconToolTip">true</property>
+      </property>
+      <property name="TextVisible">false</property>
+      <property name="Name">layoutViewField_colIterationName</property>
+      <property name="AppearanceItemCaption" isnull="true" iskey="true">
+        <property name="ForeColor" />
+        <property name="BorderColor" />
+        <property name="BackColor" />
+        <property name="BackColor2" />
+        <property name="Font">Tahoma, 9pt</property>
+        <property name="GradientMode">Horizontal</property>
+      </property>
+      <property name="SizeConstraintsType">Custom</property>
+      <property name="ParentName">layoutViewTemplateCard</property>
+      <property name="Location">@3,X=125@2,Y=60</property>
+      <property name="ControlName" isnull="true" />
+      <property name="ColumnName">colEffort</property>
+      <property name="EditorPreferredWidth">144</property>
+      <property name="Size">@3,Width=144@2,Height=21</property>
+      <property name="Text">E:</property>
+      <property name="ShowInCustomizationForm">true</property>
+      <property name="CustomizationFormText">E</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="TypeName">LayoutViewField</property>
+      <property name="Padding">0, 0, 0, 0</property>
+      <property name="TextToControlDistance">5</property>
+      <property name="TextSize">@2,Width=86@2,Height=14</property>
+      <property name="OptionsCustomization" isnull="true" iskey="true">
+        <property name="AllowDrag">Default</property>
+        <property name="AllowDrop">Default</property>
+      </property>
+      <property name="OptionsToolTip" isnull="true" iskey="true">
+        <property name="ToolTip" />
+        <property name="ToolTipTitle" />
+        <property name="ToolTipIconType">None</property>
+        <property name="IconToolTip" />
+        <property name="IconToolTipTitle" />
+        <property name="IconToolTipIconType">None</property>
+        <property name="EnableIconToolTip">true</property>
+      </property>
+      <property name="Name">layoutViewField_colTaskId</property>
+      <property name="AppearanceItemCaption" isnull="true" iskey="true">
+        <property name="ForeColor" />
+        <property name="BorderColor" />
+        <property name="BackColor" />
+        <property name="BackColor2" />
+        <property name="Font">Tahoma, 9pt</property>
+        <property name="GradientMode">Horizontal</property>
+      </property>
+      <property name="ParentName">Customization</property>
+      <property name="Location">@1,X=0@1,Y=0</property>
+      <property name="ControlName" isnull="true" />
+      <property name="ColumnName">colTaskId</property>
+      <property name="EditorPreferredWidth">20</property>
+      <property name="Size">@3,Width=276@2,Height=81</property>
+      <property name="Text">Task Id:</property>
+      <property name="TextLocation">Right</property>
+      <property name="ShowInCustomizationForm">true</property>
+      <property name="CustomizationFormText">Task Id</property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="TypeName">LayoutViewField</property>
+      <property name="Padding">0, 0, 0, 0</property>
+      <property name="TextToControlDistance">5</property>
+      <property name="TextSize">@2,Width=86@2,Height=14</property>
+      <property name="OptionsCustomization" isnull="true" iskey="true">
+        <property name="AllowDrag">Default</property>
+        <property name="AllowDrop">Default</property>
+      </property>
+      <property name="OptionsToolTip" isnull="true" iskey="true">
+        <property name="ToolTip" />
+        <property name="ToolTipTitle" />
+        <property name="ToolTipIconType">None</property>
+        <property name="IconToolTip" />
+        <property name="IconToolTipTitle" />
+        <property name="IconToolTipIconType">None</property>
+        <property name="EnableIconToolTip">true</property>
+      </property>
+      <property name="Name">layoutViewField_colStatusCode</property>
+      <property name="AppearanceItemCaption" isnull="true" iskey="true">
+        <property name="ForeColor" />
+        <property name="BorderColor" />
+        <property name="BackColor" />
+        <property name="BackColor2" />
+        <property name="Font">Tahoma, 9pt</property>
+        <property name="GradientMode">Horizontal</property>
+      </property>
+      <property name="ParentName">Customization</property>
+      <property name="Location">@1,X=0@1,Y=0</property>
+      <property name="ControlName" isnull="true" />
+      <property name="ColumnName">colStatusCode</property>
+      <property name="EditorPreferredWidth">20</property>
+      <property name="Size">@3,Width=276@2,Height=81</property>
+      <property name="Text">StatusCode:</property>
+      <property name="TextLocation">Right</property>
+      <property name="ShowInCustomizationForm">true</property>
+      <property name="CustomizationFormText">StatusCode</property>
+    </property>
+  </property>
+  <property name="FormatConditions" iskey="true" value="0" />
+  <property name="ActiveFilterString" />
+</XtraSerializer>

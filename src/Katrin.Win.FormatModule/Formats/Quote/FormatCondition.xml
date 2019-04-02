@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<ArrayOfFormatCondition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FormatCondition>
+    <Name>Quote Expires On Next Week</Name>
+    <ConditionName>QuoteExpiresOnNextWeek</ConditionName>
+    <Backcolor />
+    <BackcolorArgb>0</BackcolorArgb>
+    <Forecolor />
+    <ForecolorArgb>0</ForecolorArgb>
+    <FontName>微软雅黑</FontName>
+    <Size>8.5</Size>
+    <Bold>true</Bold>
+    <Unit>false</Unit>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <Conditions>IsEarlierNextWeek([ExpiresOn])</Conditions>
+    <Active>true</Active>
+    <UseFont>true</UseFont>
+    <UseForeColor>false</UseForeColor>
+    <UseBackColor>false</UseBackColor>
+  </FormatCondition>
+  <FormatCondition>
+    <Name>Active Customers Didn't Update In A Week</Name>
+    <ConditionName>ActiveCustomersDidn'tUpdateInAWeek</ConditionName>
+    <Backcolor />
+    <BackcolorArgb>0</BackcolorArgb>
+    <Forecolor />
+    <ForecolorArgb>-16777024</ForecolorArgb>
+    <FontName>微软雅黑</FontName>
+    <Size>8.5</Size>
+    <Bold>false</Bold>
+    <Unit>false</Unit>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <Conditions>Not [StageCode] In (3, 5, 6) And IsPriorDays([ModifiedOn],7)</Conditions>
+    <Active>true</Active>
+    <UseFont>false</UseFont>
+    <UseForeColor>true</UseForeColor>
+    <UseBackColor>false</UseBackColor>
+  </FormatCondition>
+  <FormatCondition>
+    <Name>Total Amount Greater Than Ten Thousand</Name>
+    <ConditionName>TotalAmountGreaterThanTenThousand</ConditionName>
+    <Backcolor />
+    <BackcolorArgb>-32</BackcolorArgb>
+    <Forecolor />
+    <ForecolorArgb>0</ForecolorArgb>
+    <FontName>微软雅黑</FontName>
+    <Size>8.5</Size>
+    <Bold>false</Bold>
+    <Unit>false</Unit>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <Conditions>[TotalAmount] &gt; 10000.0m</Conditions>
+    <Active>true</Active>
+    <UseFont>false</UseFont>
+    <UseForeColor>false</UseForeColor>
+    <UseBackColor>true</UseBackColor>
+  </FormatCondition>
+</ArrayOfFormatCondition>

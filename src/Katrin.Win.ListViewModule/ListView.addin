@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.BaseViewModule.dll">
+      <ConditionEvaluator name="EnabledConditionEvaluator" class="Katrin.Win.ListViewModule.ConditionEvaluators.EnabledConditionEvaluator"/>
+      <ConditionEvaluator name="VisibilityConditionEvaluator" class="Katrin.Win.ListViewModule.ConditionEvaluators.VisibilityConditionEvaluator"/>
+    </Import>
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll"/>
+  </Runtime>
+
+  <Path name ="/Views">
+    <View id = "DefaultListView" class = "Katrin.Win.ListViewModule.ListViews.ListView"/>
+  </Path>
+  
+  <Path name = "/List/Ribbon">
+    <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+      <MenuItem id = "General" type = "Group" label = "${res:General}" OrderNumber="0" builderid ="RibbonPageGroupBuilder">
+        <MenuItem id = "Add" type = "Item" label = "${res:Add}" overlay="overlay_add"  class ="Katrin.Win.ListViewModule.Commands.AddCommand" builderid ="BarButtonItemBuilder" />
+        <Condition name = "VisibilityConditionEvaluator" action="Exclude">
+          <Condition name = "EnabledConditionEvaluator" action="Disable">
+        <MenuItem id = "Edit" type = "Item" label = "${res:Edit}" overlay="overlay_edit" class ="Katrin.Win.ListViewModule.Commands.EditCommand" builderid ="BarButtonItemBuilder" />
+        <MenuItem id = "View" type = "Item" label = "${res:View}" overlay="overlay_view" class ="Katrin.Win.ListViewModule.Commands.ViewCommand" RibbonStyle="Small" beginGroup ="true" builderid ="BarButtonItemBuilder"/>
+        <MenuItem id = "Delete" type = "Item" label = "${res:Delete}" overlay="overlay_delete" class ="Katrin.Win.ListViewModule.Commands.DeleteCommand" RibbonStyle="Small" builderid ="BarButtonItemBuilder"/>
+          </Condition>
+        </Condition>
+         <MenuItem id = "Refresh" type = "Item" label = "${res:Refresh}" imageName="refresh" class ="Katrin.Win.ListViewModule.Commands.RefreshCommand" RibbonStyle="Small" builderid ="BarButtonItemBuilder"/>
+      </MenuItem>
+    </MenuItem>
+    
+  </Path>
+</AddIn>

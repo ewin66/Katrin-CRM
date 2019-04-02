@@ -1,0 +1,2946 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TotalTaxTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="textEdit3.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="UserTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ValidationProvider.Name" xml:space="preserve">
+    <value>ValidationProvider</value>
+  </data>
+  <data name="&gt;&gt;ItemForExpiresOn.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="TotalAmountTextEdit.Properties.Appearance.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;ItemForCreatedOn.Name" xml:space="preserve">
+    <value>ItemForCreatedOn</value>
+  </data>
+  <data name="colUnitPrice.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v12.1" name="DevExpress.Utils.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="lkpProduct.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="ExchangeRateTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v12.1" name="DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="TotalDiscountAmountTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="quoteLineItemGridControl.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="QuoteNumberTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TotalTaxTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="emptySpaceItem3.Text" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="textEdit4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>323, 20</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="OpportunityIdSearchLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="colTotalPrice.Summary2" xml:space="preserve">
+    <value>Total:{0:n2}</value>
+  </data>
+  <data name="CountryTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit2.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit3.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RootLayoutControlGroup.Name" xml:space="preserve">
+    <value>RootLayoutControlGroup</value>
+  </data>
+  <data name="OpportunityIdSearchLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StateTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TransactionCurrencyTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BillTo_ContactNameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="QuoteIdTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;NameTextEdit.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="colQuantity.Caption" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="&gt;&gt;managementLayoutControlGroup.Name" xml:space="preserve">
+    <value>managementLayoutControlGroup</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;btnRemove.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="TransactionCurrencyTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="StateTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="layoutControlGroup5.Text" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="&gt;&gt;CustomerIdSearchLookUpEdit.Type" xml:space="preserve">
+    <value>Katrin.Win.Common.Controls.WcfSearchLookUpEdit, Katrin.Win.Common, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="ItemForBillTo_ContactName.Text" xml:space="preserve">
+    <value>Bill To Contact Name</value>
+  </data>
+  <data name="AccountTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="TransactionCurrencyIdLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;quoteLineItemGridView.Name" xml:space="preserve">
+    <value>quoteLineItemGridView</value>
+  </data>
+  <data name="seQuantity.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ExpiresOnTextEdit.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="PostalCodeTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;QuoteIdTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TransactionCurrencyTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NameTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PaymentTermsCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForStatusCode.CustomizationFormText" xml:space="preserve">
+    <value>Status Code</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForExpiresOn.Name" xml:space="preserve">
+    <value>ItemForExpiresOn</value>
+  </data>
+  <data name="TotalTaxTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForCreateBy.Name" xml:space="preserve">
+    <value>ItemForCreateBy</value>
+  </data>
+  <data name="TotalDiscountAmountTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ExchangeRateTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="PostalCodeTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 20</value>
+  </data>
+  <data name="OpportunityTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;EntityBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnRemove.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;seQuantity.Name" xml:space="preserve">
+    <value>seQuantity</value>
+  </data>
+  <data name="TransactionCurrencyTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;OpportunityTextEdit.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>323, 20</value>
+  </data>
+  <data name="PaymentTermsCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="CountryTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="sePrice.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForVersionNumber.Text" xml:space="preserve">
+    <value>Version Number</value>
+  </data>
+  <data name="ExchangeRateTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>Numeric</value>
+  </data>
+  <data name="&gt;&gt;ItemForModifiedOn.Name" xml:space="preserve">
+    <value>ItemForModifiedOn</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>622, 95</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForTotalAmount.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.Name" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ItemForTransactionCurrency.CustomizationFormText" xml:space="preserve">
+    <value>Transaction Currency</value>
+  </data>
+  <data name="&gt;&gt;colUnitPrice.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="btnRemove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="NameTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;StageCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="textEdit2.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ExchangeRateTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>622, 271</value>
+  </data>
+  <data name="ItemForQuoteId.CustomizationFormText" xml:space="preserve">
+    <value>Quote Id</value>
+  </data>
+  <data name="textEdit2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>622, 71</value>
+  </data>
+  <data name="ItemForPaymentTermsCode.CustomizationFormText" xml:space="preserve">
+    <value>Payment Terms Code</value>
+  </data>
+  <data name="RootLayoutControlGroup.CustomizationFormText" xml:space="preserve">
+    <value>RootLayoutControlGroup</value>
+  </data>
+  <data name="managementLayoutControlGroup.CustomizationFormText" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="TotalAmountTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;StateTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lkpProduct.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="UserTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TotalAmountTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="seQuantity.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="quoteLineItemGridControl.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="&gt;&gt;TotalLineItemAmountTextEdit.Name" xml:space="preserve">
+    <value>TotalLineItemAmountTextEdit</value>
+  </data>
+  <data name="btnNew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <assembly alias="DevExpress.Data.v12.1" name="DevExpress.Data.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="colTotalPrice.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v12.1">
+    <value>Sum</value>
+  </data>
+  <data name="BillingAddressNameTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="PaymentTermsCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="quoteLineItemGridControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 47</value>
+  </data>
+  <data name="&gt;&gt;StatusCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForTotalDiscountAmount.Name" xml:space="preserve">
+    <value>ItemForTotalDiscountAmount</value>
+  </data>
+  <data name="&gt;&gt;ItemForTotalTax.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;textEdit2.Name" xml:space="preserve">
+    <value>textEdit2</value>
+  </data>
+  <data name="&gt;&gt;StateTextEdit.Name" xml:space="preserve">
+    <value>StateTextEdit</value>
+  </data>
+  <data name="AccountTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="quoteLineItemGridControl.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v12.1">
+    <value>Center</value>
+  </data>
+  <data name="StageCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OpportunityTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="BillingAddressNameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>QuoteDetailView</value>
+  </data>
+  <data name="OpportunityTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LineItemLayoutControlGroup.Name" xml:space="preserve">
+    <value>LineItemLayoutControlGroup</value>
+  </data>
+  <data name="BillingAddressNameTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;TransactionCurrencyIdLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="btnRemove.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="seQuantity.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="colTotalPrice.Caption" xml:space="preserve">
+    <value>TotalPrice</value>
+  </data>
+  <data name="textEdit4.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TransactionCurrencyIdLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TotalDiscountAmountTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;NameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="QuoteIdTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;StageCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;ItemForOpportunityId.Name" xml:space="preserve">
+    <value>ItemForOpportunityId</value>
+  </data>
+  <data name="QuoteNumberTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ExchangeRateTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="TotalTaxTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="ExchangeRateTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnRemove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>854, 251</value>
+  </data>
+  <data name="&gt;&gt;TotalDiscountAmountTextEdit.Name" xml:space="preserve">
+    <value>TotalDiscountAmountTextEdit</value>
+  </data>
+  <data name="QuoteNumberTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="UserTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;QuoteNumberTextEdit.Name" xml:space="preserve">
+    <value>QuoteNumberTextEdit</value>
+  </data>
+  <data name="btnNew.Text" xml:space="preserve">
+    <value> New</value>
+  </data>
+  <data name="&gt;&gt;ItemForNewLineItem.Name" xml:space="preserve">
+    <value>ItemForNewLineItem</value>
+  </data>
+  <data name="TotalAmountTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="ItemForDescription.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="&gt;&gt;TotalLineItemAmountTextEdit.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;OwnerIdSearchLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;customerAddressBindingSource.Name" xml:space="preserve">
+    <value>customerAddressBindingSource</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.VistaTimeProperties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForBillingAddress.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TotalDiscountAmountTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="VersionNumberPictureEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="ItemForTransactionCurrency.Text" xml:space="preserve">
+    <value>Transaction Currency</value>
+  </data>
+  <data name="&gt;&gt;OpportunityIdSearchLookUpEdit.Name" xml:space="preserve">
+    <value>OpportunityIdSearchLookUpEdit</value>
+  </data>
+  <data name="QuoteIdTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="StageCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;CustomerIdSearchLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="QuoteIdTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="QuoteIdTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OpportunityTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForTransactionCurrency.Name" xml:space="preserve">
+    <value>ItemForTransactionCurrency</value>
+  </data>
+  <data name="TransactionCurrencyTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>323, 20</value>
+  </data>
+  <data name="QuoteIdTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="QuoteIdTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="QuoteNumberTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.VistaTimeProperties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.VistaTimeProperties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;EntityBindingSource.Name" xml:space="preserve">
+    <value>EntityBindingSource</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="colTotalPrice.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="TotalDiscountAmountTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 301</value>
+  </data>
+  <data name="&gt;&gt;quoteLineItemGridControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForExchangeRate.Name" xml:space="preserve">
+    <value>ItemForExchangeRate</value>
+  </data>
+  <data name="PostalCodeTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="colQuantity.Summary2" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="ItemForTotalAmount.CustomizationFormText" xml:space="preserve">
+    <value>Total Amount</value>
+  </data>
+  <data name="&gt;&gt;btnNew.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForUser.Text" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CountryTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;DescriptionTextEdit.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="CityTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;sePrice.Name" xml:space="preserve">
+    <value>sePrice</value>
+  </data>
+  <data name="ProductLayoutControlItem.Text" xml:space="preserve">
+    <value>Producets</value>
+  </data>
+  <data name="PostalCodeTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForTotalLineItemAmount.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="DescriptionTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ExchangeRateTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="TotalTaxTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="TotalTaxTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="QuoteNumberTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BillTo_ContactNameTextEdit.Name" xml:space="preserve">
+    <value>BillTo_ContactNameTextEdit</value>
+  </data>
+  <data name="StageCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;seQuantity.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="UserTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForExchangeRate.Text" xml:space="preserve">
+    <value>Exchange Rate</value>
+  </data>
+  <data name="colQuantity.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="colUnitPrice.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForUser.Name" xml:space="preserve">
+    <value>ItemForUser</value>
+  </data>
+  <data name="TransactionCurrencyTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ItemForAccount.CustomizationFormText" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="TotalDiscountAmountTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TransactionCurrencyTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TransactionCurrencyTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="QuoteIdTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="TotalTaxTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="seQuantity.Mask.EditMask" xml:space="preserve">
+    <value>[1-9]\d{0,4}</value>
+  </data>
+  <data name="TotalTaxTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OpportunityTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="QuoteNumberTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="TransactionCurrencyIdLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="QuoteIdTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 406</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.VistaTimeProperties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="NameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="textEdit1.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TotalAmountTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TotalDiscountAmountTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="PaymentTermsCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForBillTo_ContactName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CityTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="CityTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 20</value>
+  </data>
+  <data name="TransactionCurrencyTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;quoteLineItemGridControl.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PostalCodeTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TotalAmountTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="PaymentTermsCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit2.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ItemForOpportunity.Text" xml:space="preserve">
+    <value>Opportunity</value>
+  </data>
+  <data name="ExchangeRateTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 20</value>
+  </data>
+  <data name="textEdit2.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraDataLayout.DataLayoutControl, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="UserTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 20</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForCustomerId.Name" xml:space="preserve">
+    <value>ItemForCustomerId</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="AccountTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 14</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.VistaTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>DateTime</value>
+  </data>
+  <data name="managementLayoutControlGroup.Text" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="&gt;&gt;quoteLineItemGridControl.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;PostalCodeTextEdit.Name" xml:space="preserve">
+    <value>PostalCodeTextEdit</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;ValidationProvider.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="emptySpaceItem1.Text" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;UserTextEdit.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;searchLookUpEdit1View.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="CountryTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;CountryTextEdit.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ExpiresOnTextEdit.Type" xml:space="preserve">
+    <value>Katrin.Win.Common.Controls.DropDownDateEdit, Katrin.Win.Common, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="OpportunityIdSearchLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="LineItemLayoutControlGroup.Text" xml:space="preserve">
+    <value>Line Items</value>
+  </data>
+  <data name="&gt;&gt;managementLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForTotalDiscountAmount.CustomizationFormText" xml:space="preserve">
+    <value>Total Discount Amount</value>
+  </data>
+  <data name="&gt;&gt;colUnitPrice.Name" xml:space="preserve">
+    <value>colUnitPrice</value>
+  </data>
+  <data name="&gt;&gt;ExchangeRateTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TotalDiscountAmountTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="AccountTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;QuoteIdTextEdit.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;OwnerIdSearchLookUpEdit.Name" xml:space="preserve">
+    <value>OwnerIdSearchLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;ItemForVersionNumber.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="CityTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;customerAddressBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OpportunityTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="layoutControlGroup5.CustomizationFormText" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="TotalAmountTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CityTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.VistaTimeProperties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForCountry.CustomizationFormText" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="&gt;&gt;BillingAddressNameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ItemForQuoteNumber.CustomizationFormText" xml:space="preserve">
+    <value>Quote Number</value>
+  </data>
+  <data name="btnNew.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;textEdit2.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="StateTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="ItemForOpportunity.CustomizationFormText" xml:space="preserve">
+    <value>Opportunity</value>
+  </data>
+  <data name="UserTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BillingAddressNameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>761, 20</value>
+  </data>
+  <data name="&gt;&gt;ItemForState.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup1.Name" xml:space="preserve">
+    <value>tabbedControlGroup1</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="resource.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OpportunityIdSearchLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="PostalCodeTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="emptySpaceItem3.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CountryTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 14</value>
+  </data>
+  <data name="&gt;&gt;CountryTextEdit.Name" xml:space="preserve">
+    <value>CountryTextEdit</value>
+  </data>
+  <data name="TotalDiscountAmountTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CityTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="StageCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 119</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StateTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="QuoteIdTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TotalAmountTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StageCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="textEdit4.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TransactionCurrencyIdLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TotalTaxTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TransactionCurrencyIdLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;TotalLineItemAmountTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;TransactionCurrencyIdLookUpEdit.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="OpportunityTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 20</value>
+  </data>
+  <data name="ExchangeRateTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="ItemForTotalLineItemAmount.CustomizationFormText" xml:space="preserve">
+    <value>Total Line Item Amount</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.VistaTimeProperties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="quoteLineItemGridControl.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v12.1">
+    <value>None</value>
+  </data>
+  <data name="textEdit3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForStageCode.Name" xml:space="preserve">
+    <value>ItemForStageCode</value>
+  </data>
+  <data name="&gt;&gt;quoteLineItemsBindingSource.Name" xml:space="preserve">
+    <value>quoteLineItemsBindingSource</value>
+  </data>
+  <data name="&gt;&gt;CountryTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TransactionCurrencyTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit3.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;btnNew.Name" xml:space="preserve">
+    <value>btnNew</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="&gt;&gt;TotalAmountTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;ItemForModifiedBy.Name" xml:space="preserve">
+    <value>ItemForModifiedBy</value>
+  </data>
+  <data name="ExchangeRateTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ItemForModifiedOn.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForExpiresOn.Text" xml:space="preserve">
+    <value>Expires On</value>
+  </data>
+  <data name="OpportunityIdSearchLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForTotalTax.Name" xml:space="preserve">
+    <value>ItemForTotalTax</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="QuoteIdTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CountryTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TotalAmountTextEdit.Name" xml:space="preserve">
+    <value>TotalAmountTextEdit</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;btnNew.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.Appearance.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit1.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="QuoteNumberTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="DescriptionTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 295</value>
+  </data>
+  <data name="&gt;&gt;ItemForName.Name" xml:space="preserve">
+    <value>ItemForName</value>
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ExchangeRateTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lkpProduct.Name" xml:space="preserve">
+    <value>lkpProduct</value>
+  </data>
+  <data name="EntityDataLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>969, 393</value>
+  </data>
+  <data name="ItemForCreatedOn.CustomizationFormText" xml:space="preserve">
+    <value>Created On</value>
+  </data>
+  <data name="TransactionCurrencyIdLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PostalCodeTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TotalAmountTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PaymentTermsCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 20</value>
+  </data>
+  <data name="UserTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="QuoteNumberTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="ItemForState.CustomizationFormText" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="&gt;&gt;btnRemove.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForDescription.Name" xml:space="preserve">
+    <value>ItemForDescription</value>
+  </data>
+  <data name="StateTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="QuoteIdTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;QuoteIdTextEdit.Name" xml:space="preserve">
+    <value>QuoteIdTextEdit</value>
+  </data>
+  <data name="&gt;&gt;ItemForCountry.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="DescriptionTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>761, 62</value>
+  </data>
+  <data name="resource.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v12.1">
+    <value>None</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.VistaTimeProperties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TransactionCurrencyIdLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="StateTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="&gt;&gt;OwnerIdSearchLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PopupContainerEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TotalDiscountAmountTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CityTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit2.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 20</value>
+  </data>
+  <data name="OpportunityTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="ItemForExchangeRate.CustomizationFormText" xml:space="preserve">
+    <value>Exchange Rate</value>
+  </data>
+  <data name="AccountTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CityTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="ItemForUser.CustomizationFormText" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="seQuantity.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="layoutControlGroup4.CustomizationFormText" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="ItemForTotalLineItemAmount.Text" xml:space="preserve">
+    <value>Total Line Item Amount</value>
+  </data>
+  <data name="seQuantity.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BillingAddressNameTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="VersionNumberPictureEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OpportunityTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CountryTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>323, 20</value>
+  </data>
+  <data name="TransactionCurrencyTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="TransactionCurrencyTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="ExchangeRateTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;ItemForPaymentTermsCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TotalTaxTextEdit.Name" xml:space="preserve">
+    <value>TotalTaxTextEdit</value>
+  </data>
+  <data name="OpportunityTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit3.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BillingAddressNameTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="QuoteIdTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="AccountTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;OpportunityIdSearchLookUpEdit.Type" xml:space="preserve">
+    <value>Katrin.Win.Common.Controls.WcfSearchLookUpEdit, Katrin.Win.Common, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="ItemForModifiedOn.CustomizationFormText" xml:space="preserve">
+    <value>Modified On</value>
+  </data>
+  <data name="seQuantity.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;StatusCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ItemForExpiresOn.CustomizationFormText" xml:space="preserve">
+    <value>Expires On</value>
+  </data>
+  <data name="StageCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 20</value>
+  </data>
+  <data name="btnRemove.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 95</value>
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForBillingAddress.Name" xml:space="preserve">
+    <value>ItemForBillingAddress</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForCreateBy.CustomizationFormText" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="textEdit4.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ExchangeRateTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;TransactionCurrencyTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="CityTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AccountTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OpportunityTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BillTo_ContactNameTextEdit.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>969, 426</value>
+  </data>
+  <data name="&gt;&gt;colTotalPrice.Name" xml:space="preserve">
+    <value>colTotalPrice</value>
+  </data>
+  <data name="CountryTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit3.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AccountTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="StateTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TotalAmountTextEdit.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;ItemForTotalAmount.Name" xml:space="preserve">
+    <value>ItemForTotalAmount</value>
+  </data>
+  <data name="colQuantity.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="ItemForName.CustomizationFormText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="QuoteNumberTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 20</value>
+  </data>
+  <data name="seQuantity.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForState.Text" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="&gt;&gt;colProduct.Name" xml:space="preserve">
+    <value>colProduct</value>
+  </data>
+  <data name="ItemForCity.CustomizationFormText" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="StageCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="ItemForCity.Text" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="StateTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CountryTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForCustomerId.Text" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;QuoteNumberTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Name" xml:space="preserve">
+    <value>textEdit1</value>
+  </data>
+  <data name="DescriptionTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="UserTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CityTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;UserTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 20</value>
+  </data>
+  <data name="seQuantity.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>RegEx</value>
+  </data>
+  <data name="StateTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="AccountTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PostalCodeTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;UserTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;sePrice.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CountryTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="QuoteIdTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OpportunityTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForTransactionCurrencyId.Name" xml:space="preserve">
+    <value>ItemForTransactionCurrencyId</value>
+  </data>
+  <data name="BillingAddressNameTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TotalDiscountAmountTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TotalAmountTextEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CountryTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 223</value>
+  </data>
+  <data name="ItemForStatusCode.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="&gt;&gt;ItemForQuoteNumber.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TotalLineItemAmountTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="colQuantity.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v12.1">
+    <value>Sum</value>
+  </data>
+  <data name="ItemForBillTo_ContactName.CustomizationFormText" xml:space="preserve">
+    <value>Bill To_Contact Name</value>
+  </data>
+  <data name="sePrice.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="emptySpaceItem1.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="sePrice.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="VersionNumberPictureEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 574</value>
+  </data>
+  <data name="BillingAddressNameTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TotalTaxTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 325</value>
+  </data>
+  <data name="AccountTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OpportunityIdSearchLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 20</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>785, 20</value>
+  </data>
+  <data name="QuoteNumberTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForStatusCode.Name" xml:space="preserve">
+    <value>ItemForStatusCode</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForPostalCode.Text" xml:space="preserve">
+    <value>PostalCode</value>
+  </data>
+  <data name="PostalCodeTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>622, 223</value>
+  </data>
+  <data name="TotalTaxTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;StatusCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="AccountTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 20</value>
+  </data>
+  <data name="&gt;&gt;TotalAmountTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="QuoteNumberTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;ItemForOpportunity.Name" xml:space="preserve">
+    <value>ItemForOpportunity</value>
+  </data>
+  <data name="&gt;&gt;ItemForOpportunity.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit2.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="BillingAddressNameTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="TotalAmountTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;PostalCodeTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="StageCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>622, 95</value>
+  </data>
+  <data name="QuoteNumberTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 71</value>
+  </data>
+  <data name="&gt;&gt;gridView2.Name" xml:space="preserve">
+    <value>gridView2</value>
+  </data>
+  <data name="ItemForTransactionCurrencyId.Text" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="TransactionCurrencyTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TotalDiscountAmountTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="colProduct.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="AccountTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CityTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;StageCodeLookUpEdit.Name" xml:space="preserve">
+    <value>StageCodeLookUpEdit</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="QuoteNumberTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;ItemForUser.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.VistaTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;ItemForCreatedOn.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PaymentTermsCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="ItemForPostalCode.CustomizationFormText" xml:space="preserve">
+    <value>PostalCode</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="StateTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 199</value>
+  </data>
+  <data name="ExpiresOnTextEdit.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;CustomerIdSearchLookUpEdit.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="textEdit3.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ItemForStageCode.CustomizationFormText" xml:space="preserve">
+    <value>Stage Code</value>
+  </data>
+  <data name="TransactionCurrencyIdLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ItemForCountry.Text" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OpportunityIdSearchLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="ProductLayoutControlItem.CustomizationFormText" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="TotalDiscountAmountTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>785, 20</value>
+  </data>
+  <data name="StateTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="emptySpaceItem6.Text" xml:space="preserve">
+    <value>emptySpaceItem6</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForQuoteId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PostalCodeTextEdit.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ItemForCreateBy.Text" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="colTotalPrice.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TotalAmountTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;ItemForCity.Name" xml:space="preserve">
+    <value>ItemForCity</value>
+  </data>
+  <data name="PaymentTermsCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StateTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForBillTo_ContactName.Name" xml:space="preserve">
+    <value>ItemForBillTo_ContactName</value>
+  </data>
+  <data name="TotalAmountTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForAccount.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TransactionCurrencyIdLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="quoteLineItemGridControl.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="sePrice.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;ExchangeRateTextEdit.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;colProduct.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TotalDiscountAmountTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ExchangeRateTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;ItemForCustomerId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PaymentTermsCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnNew.Location" type="System.Drawing.Point, System.Drawing">
+    <value>753, 251</value>
+  </data>
+  <data name="&gt;&gt;RootLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="textEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="StateTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="quoteLineItemGridControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>921, 200</value>
+  </data>
+  <data name="PostalCodeTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForStatusCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="CityTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>622, 199</value>
+  </data>
+  <data name="ItemForModifiedBy.CustomizationFormText" xml:space="preserve">
+    <value>Modified By</value>
+  </data>
+  <data name="&gt;&gt;ItemForPostalCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForNewLineItem.CustomizationFormText" xml:space="preserve">
+    <value>New Line Item</value>
+  </data>
+  <data name="DescriptionTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TotalAmountTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;ItemForQuoteNumber.Name" xml:space="preserve">
+    <value>ItemForQuoteNumber</value>
+  </data>
+  <data name="&gt;&gt;ProductLayoutControlItem.Name" xml:space="preserve">
+    <value>ProductLayoutControlItem</value>
+  </data>
+  <data name="UserTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForRemoveLine.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>622, 71</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TotalAmountTextEdit.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="StageCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="OpportunityTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="TotalDiscountAmountTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForPaymentTermsCode.Text" xml:space="preserve">
+    <value>Payment Terms</value>
+  </data>
+  <data name="emptySpaceItem6.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem6</value>
+  </data>
+  <data name="ItemForRemoveLine.CustomizationFormText" xml:space="preserve">
+    <value>Remove Line</value>
+  </data>
+  <data name="PostalCodeTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TotalAmountTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit4.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;ItemForTransactionCurrencyId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForTotalDiscountAmount.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="AccountTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;QuoteIdTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;ItemForVersionNumber.Name" xml:space="preserve">
+    <value>ItemForVersionNumber</value>
+  </data>
+  <data name="colProduct.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit1.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BillingAddressNameTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NameTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="DescriptionTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;BillingAddressNameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="QuoteNumberTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>785, 20</value>
+  </data>
+  <data name="BillingAddressNameTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OpportunityTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="BillingAddressNameTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="VersionNumberPictureEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>783, 40</value>
+  </data>
+  <data name="ItemForName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="quoteLineItemGridControl.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;quoteLineItemGridControl.Name" xml:space="preserve">
+    <value>quoteLineItemGridControl</value>
+  </data>
+  <data name="&gt;&gt;QuoteNumberTextEdit.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="PostalCodeTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;colQuantity.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PostalCodeTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="ItemForOpportunityId.Text" xml:space="preserve">
+    <value>Opportunity</value>
+  </data>
+  <data name="&gt;&gt;DescriptionTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 277</value>
+  </data>
+  <data name="ItemForDescription.CustomizationFormText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ItemForTotalTax.Text" xml:space="preserve">
+    <value>Total Tax</value>
+  </data>
+  <data name="&gt;&gt;QuoteNumberTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lkpProduct.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TotalTaxTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>323, 20</value>
+  </data>
+  <data name="&gt;&gt;colTotalPrice.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForOwnerId.CustomizationFormText" xml:space="preserve">
+    <value>Owner Id</value>
+  </data>
+  <data name="PaymentTermsCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="quoteLineItemGridControl.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TransactionCurrencyTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 20</value>
+  </data>
+  <data name="UserTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;ItemForCountry.Name" xml:space="preserve">
+    <value>ItemForCountry</value>
+  </data>
+  <data name="ItemForVersionNumber.CustomizationFormText" xml:space="preserve">
+    <value>Version Number</value>
+  </data>
+  <data name="&gt;&gt;ExchangeRateTextEdit.Name" xml:space="preserve">
+    <value>ExchangeRateTextEdit</value>
+  </data>
+  <data name="CountryTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="&gt;&gt;StateTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="BillingAddressNameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 175</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 247</value>
+  </data>
+  <data name="TotalDiscountAmountTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OpportunityIdSearchLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForOwnerId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TransactionCurrencyIdLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 271</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TransactionCurrencyTextEdit.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="QuoteNumberTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Name" xml:space="preserve">
+    <value>textEdit3</value>
+  </data>
+  <data name="TotalDiscountAmountTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="BillingAddressNameTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TotalAmountTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit1.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="quoteLineItemGridControl.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="quoteLineItemGridControl.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="ItemForRemoveLine.Text" xml:space="preserve">
+    <value>ItemForRemoveLine</value>
+  </data>
+  <data name="CityTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;OpportunityTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="LineItemLayoutControlGroup.CustomizationFormText" xml:space="preserve">
+    <value>Line Items</value>
+  </data>
+  <data name="NameTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForModifiedBy.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForCity.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="tabbedControlGroup1.Text" xml:space="preserve">
+    <value>tabbedControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="ItemForTotalDiscountAmount.Text" xml:space="preserve">
+    <value>Total Discount Amount</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OpportunityTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CityTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PostalCodeTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NameTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;OpportunityIdSearchLookUpEdit.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="BillingAddressNameTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ExpiresOnTextEdit.Name" xml:space="preserve">
+    <value>ExpiresOnTextEdit</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.Appearance.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
+    <value>Horizontal</value>
+  </data>
+  <data name="textEdit3.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;UserTextEdit.Name" xml:space="preserve">
+    <value>UserTextEdit</value>
+  </data>
+  <data name="UserTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TotalAmountTextEdit.Properties.Appearance.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;AccountTextEdit.Name" xml:space="preserve">
+    <value>AccountTextEdit</value>
+  </data>
+  <data name="textEdit4.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit1.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="quoteLineItemGridControl.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EntityDataLayoutControl.Text" xml:space="preserve">
+    <value>dataLayoutControl1</value>
+  </data>
+  <data name="textEdit4.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="quoteLineItemGridControl.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;btnNew.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="sePrice.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>Numeric</value>
+  </data>
+  <data name="ItemForStageCode.Text" xml:space="preserve">
+    <value>Stage</value>
+  </data>
+  <data name="colUnitPrice.Caption" xml:space="preserve">
+    <value>UnitPrice</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="StateTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="RootLayoutControlGroup.Text" xml:space="preserve">
+    <value>RootLayoutControlGroup</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="NameTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="CityTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit4.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="sePrice.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ExchangeRateTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ExchangeRateTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="QuoteIdTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 20</value>
+  </data>
+  <data name="&gt;&gt;ItemForPaymentTermsCode.Name" xml:space="preserve">
+    <value>ItemForPaymentTermsCode</value>
+  </data>
+  <data name="textEdit2.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ExchangeRateTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tabbedControlGroup1.CustomizationFormText" xml:space="preserve">
+    <value>tabbedControlGroup1</value>
+  </data>
+  <data name="ItemForTotalAmount.Text" xml:space="preserve">
+    <value>Total Amount</value>
+  </data>
+  <data name="UserTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="AccountTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="TotalTaxTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BillingAddressNameTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup5.Name" xml:space="preserve">
+    <value>layoutControlGroup5</value>
+  </data>
+  <data name="&gt;&gt;VersionNumberPictureEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>622, 119</value>
+  </data>
+  <data name="ItemForBillingAddress.CustomizationFormText" xml:space="preserve">
+    <value>Billing Address</value>
+  </data>
+  <data name="&gt;&gt;ItemForOpportunityId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem6.Name" xml:space="preserve">
+    <value>emptySpaceItem6</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForQuoteId.Name" xml:space="preserve">
+    <value>ItemForQuoteId</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;CustomerIdSearchLookUpEdit.Name" xml:space="preserve">
+    <value>CustomerIdSearchLookUpEdit</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="NameTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ItemForOpportunityId.CustomizationFormText" xml:space="preserve">
+    <value>Opportunity Id</value>
+  </data>
+  <data name="AccountTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="sePrice.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="UserTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CountryTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForState.Name" xml:space="preserve">
+    <value>ItemForState</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup4.Name" xml:space="preserve">
+    <value>layoutControlGroup4</value>
+  </data>
+  <data name="colTotalPrice.Summary1" xml:space="preserve">
+    <value>colTotalPrice</value>
+  </data>
+  <data name="TotalDiscountAmountTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ExpiresOnTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="TotalTaxTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForPostalCode.Name" xml:space="preserve">
+    <value>ItemForPostalCode</value>
+  </data>
+  <data name="colQuantity.Summary1" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="layoutControlGroup4.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.VistaTimeProperties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="sePrice.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;OpportunityTextEdit.Name" xml:space="preserve">
+    <value>OpportunityTextEdit</value>
+  </data>
+  <data name="ItemForModifiedOn.Text" xml:space="preserve">
+    <value>Modified On</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TotalLineItemAmountTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit4.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForNewLineItem.Text" xml:space="preserve">
+    <value>ItemForNewLineItem</value>
+  </data>
+  <data name="&gt;&gt;colQuantity.Name" xml:space="preserve">
+    <value>colQuantity</value>
+  </data>
+  <data name="OpportunityTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 322</value>
+  </data>
+  <data name="&gt;&gt;OpportunityTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="StageCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;NameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ItemForModifiedBy.Text" xml:space="preserve">
+    <value>Modified By</value>
+  </data>
+  <data name="ItemForCreatedOn.Text" xml:space="preserve">
+    <value>Created On</value>
+  </data>
+  <data name="OpportunityIdSearchLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 95</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;gridView2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;AccountTextEdit.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="emptySpaceItem8.Text" xml:space="preserve">
+    <value>emptySpaceItem8</value>
+  </data>
+  <data name="ItemForAccount.Text" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="&gt;&gt;TransactionCurrencyIdLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 71</value>
+  </data>
+  <data name="&gt;&gt;BillingAddressNameTextEdit.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;ItemForTotalLineItemAmount.Name" xml:space="preserve">
+    <value>ItemForTotalLineItemAmount</value>
+  </data>
+  <data name="VersionNumberPictureEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;VersionNumberPictureEdit.Name" xml:space="preserve">
+    <value>VersionNumberPictureEdit</value>
+  </data>
+  <data name="StateTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;btnRemove.Name" xml:space="preserve">
+    <value>btnRemove</value>
+  </data>
+  <data name="&gt;&gt;TotalTaxTextEdit.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Katrin.Win.Common.Core.AbstractDetailView, Katrin.Win.Common, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="UserTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CityTextEdit.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;ItemForStageCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="QuoteIdTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;DescriptionTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="UserTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 574</value>
+  </data>
+  <data name="StateTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;StageCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="CityTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="ItemForQuoteNumber.Text" xml:space="preserve">
+    <value>Quote Number</value>
+  </data>
+  <data name="&gt;&gt;StatusCodeLookUpEdit.Name" xml:space="preserve">
+    <value>StatusCodeLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;PostalCodeTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;CountryTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;ItemForAccount.Name" xml:space="preserve">
+    <value>ItemForAccount</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.VistaTimeProperties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TotalDiscountAmountTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TotalAmountTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>785, 20</value>
+  </data>
+  <data name="&gt;&gt;VersionNumberPictureEdit.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Name" xml:space="preserve">
+    <value>textEdit4</value>
+  </data>
+  <data name="ItemForTotalTax.CustomizationFormText" xml:space="preserve">
+    <value>Total Tax</value>
+  </data>
+  <data name="&gt;&gt;ItemForRemoveLine.Name" xml:space="preserve">
+    <value>ItemForRemoveLine</value>
+  </data>
+  <data name="NameTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TotalDiscountAmountTextEdit.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="NameTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OpportunityTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;PaymentTermsCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.VistaTimeProperties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="emptySpaceItem8.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem8</value>
+  </data>
+  <data name="OpportunityIdSearchLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CityTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;StateTextEdit.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.VistaTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="CountryTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="TotalAmountTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForTransactionCurrency.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="UserTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem8.Name" xml:space="preserve">
+    <value>emptySpaceItem8</value>
+  </data>
+  <data name="&gt;&gt;TransactionCurrencyIdLookUpEdit.Name" xml:space="preserve">
+    <value>TransactionCurrencyIdLookUpEdit</value>
+  </data>
+  <data name="CountryTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForNewLineItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="NameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 47</value>
+  </data>
+  <data name="ExpiresOnTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="sePrice.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="CityTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;NameTextEdit.Name" xml:space="preserve">
+    <value>NameTextEdit</value>
+  </data>
+  <data name="&gt;&gt;BillingAddressNameTextEdit.Name" xml:space="preserve">
+    <value>BillingAddressNameTextEdit</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;CityTextEdit.Name" xml:space="preserve">
+    <value>CityTextEdit</value>
+  </data>
+  <data name="DescriptionTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForTransactionCurrencyId.CustomizationFormText" xml:space="preserve">
+    <value>Transaction Currency Id</value>
+  </data>
+  <data name="&gt;&gt;AccountTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="PaymentTermsCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="seQuantity.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TotalTaxTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TotalTaxTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;VersionNumberPictureEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;ItemForDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;searchLookUpEdit1View.Name" xml:space="preserve">
+    <value>searchLookUpEdit1View</value>
+  </data>
+  <data name="QuoteNumberTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TransactionCurrencyTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="NameTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ExchangeRateTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="UserTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;BillTo_ContactNameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 20</value>
+  </data>
+  <data name="&gt;&gt;PaymentTermsCodeLookUpEdit.Name" xml:space="preserve">
+    <value>PaymentTermsCodeLookUpEdit</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;OwnerIdSearchLookUpEdit.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="CountryTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="AccountTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForExchangeRate.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TotalTaxTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>785, 20</value>
+  </data>
+  <data name="NameTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PostalCodeTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;ProductLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;AccountTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForOwnerId.Text" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="ItemForBillingAddress.Text" xml:space="preserve">
+    <value>Billing Address</value>
+  </data>
+  <data name="TransactionCurrencyTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 602</value>
+  </data>
+  <data name="CountryTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 47</value>
+  </data>
+  <data name="TotalTaxTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;LineItemLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PostalCodeTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;quoteLineItemGridView.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="quoteLineItemGridControl.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PostalCodeTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TransactionCurrencyTextEdit.Name" xml:space="preserve">
+    <value>TransactionCurrencyTextEdit</value>
+  </data>
+  <data name="AccountTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="quoteLineItemGridControl.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="BillingAddressNameTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="QuoteIdTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;quoteLineItemsBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="StateTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TotalTaxTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TransactionCurrencyTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForCustomerId.CustomizationFormText" xml:space="preserve">
+    <value>Customer Id</value>
+  </data>
+  <data name="&gt;&gt;ItemForCreateBy.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CityTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="ItemForQuoteId.Text" xml:space="preserve">
+    <value>Quote Id</value>
+  </data>
+  <data name="TransactionCurrencyTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PaymentTermsCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>622, 247</value>
+  </data>
+  <data name="colProduct.Caption" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.VistaTimeProperties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="BillTo_ContactNameTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForOwnerId.Name" xml:space="preserve">
+    <value>ItemForOwnerId</value>
+  </data>
+  <data name="ExpiresOnTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TotalLineItemAmountTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="TotalAmountTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 349</value>
+  </data>
+  <data name="&gt;&gt;DescriptionTextEdit.Name" xml:space="preserve">
+    <value>DescriptionTextEdit</value>
+  </data>
+  <data name="QuoteNumberTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;OpportunityIdSearchLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <metadata name="btnNew.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="EntityBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>60</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
+  <metadata name="ValidationProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>188, 17</value>
+  </metadata>
+  <metadata name="quoteLineItemsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>349, 17</value>
+  </metadata>
+  <metadata name="customerAddressBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+</root>

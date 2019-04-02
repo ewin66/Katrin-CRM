@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.RelatedModule.dll">
+      <Doozer name="RelatedDoozer"  class="Katrin.Win.RelatedModule.RelatedDoozer"/>
+    </Import>
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+
+  <Path name ="/Workbench/Service">
+    <Class id = "RelatedService" class = "Katrin.Win.RelatedModule.RelatedService" />
+  </Path>
+</AddIn>

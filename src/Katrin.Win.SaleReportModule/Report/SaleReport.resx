@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="xrTableCell69.Text" xml:space="preserve">
+    <value>Number Of The Dead</value>
+  </data>
+  <assembly alias="DevExpress.Data.v12.1" name="DevExpress.Data.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="FirstEmailCountCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="xrTableCell71.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="lbTitle.Text" xml:space="preserve">
+    <value>Sale Report</value>
+  </data>
+  <data name="headerTable.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="xrTableCell4.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 119</value>
+  </data>
+  <data name="xrTableCell63.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="RootLayoutControlGroup.Text" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="xrPageInfo2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>292, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="topMarginBand1.HeightF" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="xrTableCell68.Text" xml:space="preserve">
+    <value>Closure Rate</value>
+  </data>
+  <data name="xrTableCell66.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v12.1" name="DevExpress.Utils.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="winControlContainer4.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>896.7822, 51.0416679</value>
+  </data>
+  <data name="xrPageInfo1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>116.999878, 23</value>
+  </data>
+  <data name="xrTableCell70.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrLine1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>0, 75</value>
+  </data>
+  <data name="technicianTotalEffortsHeaderCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="dimensionCellRow.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>232, 205, 162</value>
+  </data>
+  <data name="ClosureRateCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrPageInfo3.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>896.7822, 51.0416679</value>
+  </data>
+  <data name="&gt;&gt;StatusCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="xrLine1.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>84, 132, 213</value>
+  </data>
+  <data name="NumberIntoContractCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lookUpEdit1.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="winControlContainer4.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>25, 15</value>
+  </data>
+  <data name="winControlContainer1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="headerTable.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="tableDetail.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1149, 22</value>
+  </data>
+  <data name="xrTableCell73.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell73.Text" xml:space="preserve">
+    <value>Contract Amount</value>
+  </data>
+  <data name="labelControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="series1.Name" xml:space="preserve">
+    <value>Series 1</value>
+  </data>
+  <data name="&gt;&gt;targetDropDown.Name" xml:space="preserve">
+    <value>targetDropDown</value>
+  </data>
+  <data name="DimensionDropDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 119</value>
+  </data>
+  <data name="BottomMargin.HeightF" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="xrTableCell61.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lookUpEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ReportHeader1.HeightF" type="System.Single, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="xrTableCell66.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;StatusCodeLookUpEdit.Name" xml:space="preserve">
+    <value>StatusCodeLookUpEdit</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="DimensionDropDown.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Name" xml:space="preserve">
+    <value>labelControl2</value>
+  </data>
+  <data name="xrChart1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>300, 200</value>
+  </data>
+  <data name="xrTableCell4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="xrTableCell6.Text" xml:space="preserve">
+    <value>Lead </value>
+  </data>
+  <data name="xrTableCell10.Text" xml:space="preserve">
+    <value>New Contract</value>
+  </data>
+  <data name="ResponseRateCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="dimensionCellRow.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="xrTableCell69.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="RootLayoutControlGroup.CustomizationFormText" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="labelControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="dimensionRow.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="xrTableCell2.Text" xml:space="preserve">
+    <value>Response Rate</value>
+  </data>
+  <data name="xrTableCell10.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="winControlContainer1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>525, 137.5</value>
+  </data>
+  <data name="dimensionCellRow.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>ControlText</value>
+  </data>
+  <data name="xrPageInfo1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>896.7822, 10.0000067</value>
+  </data>
+  <data name="tableDetail.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>10.0000067, 0</value>
+  </data>
+  <data name="lbTitle.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>BottomCenter</value>
+  </data>
+  <data name="xrTableCell67.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lbTitle.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>281.0417, 38</value>
+  </data>
+  <data name="headerTable.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1149, 64</value>
+  </data>
+  <data name="xrTableCell68.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="winControlContainer3.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>899.7876, 10.0000067</value>
+  </data>
+  <data name="lookUpEdit1.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xrTableRow2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lookUpEdit1.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RateIntoOpportunityCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTableRow2.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 103, 196</value>
+  </data>
+  <data name="lookUpEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 119</value>
+  </data>
+  <data name="xrPageInfo2.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>84, 132, 213</value>
+  </data>
+  <data name="targetDropDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 119</value>
+  </data>
+  <data name="xrTableCell67.Text" xml:space="preserve">
+    <value>Rate Into Opportunity</value>
+  </data>
+  <data name="&gt;&gt;DimensionDropDown.Name" xml:space="preserve">
+    <value>DimensionDropDown</value>
+  </data>
+  <data name="Detail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="winControlContainer2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>525, 137.5</value>
+  </data>
+  <data name="winControlContainer3.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>73, 15</value>
+  </data>
+  <data name="ReportHeader1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="xrTableCell71.Text" xml:space="preserve">
+    <value>Quote Success Rate</value>
+  </data>
+  <data name="xrTableRow2.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>194, 226, 255</value>
+  </data>
+  <data name="LeadNumberCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrPageInfo3.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>116.999817, 23.0000038</value>
+  </data>
+  <data name="xrTableCell6.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="xrChart1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>35.00004, 27.4999943</value>
+  </data>
+  <data name="DimensionCell.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="BottomMargin.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;DimensionDropDown.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="tableDetail.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>244, 155, 24</value>
+  </data>
+  <data name="DimensionCell.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>84, 132, 213</value>
+  </data>
+  <data name="QuoteSuccessRateCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="DimensionCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell6.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
+    <value>labelControl1</value>
+  </data>
+  <data name="xrTableCell61.Text" xml:space="preserve">
+    <value>Lead Number</value>
+  </data>
+  <data name="xrTableCell10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="xrTableCell63.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="technicianTotalEffortsHeaderCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="tableDetail.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="xrTableCell71.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lookUpEdit1.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="xrTableCell6.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>84, 132, 213</value>
+  </data>
+  <data name="tableDetail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 8pt</value>
+  </data>
+  <data name="xrTableCell2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="headerTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt</value>
+  </data>
+  <data name="xrTableCell72.Text" xml:space="preserve">
+    <value>Rate Of Old Customer</value>
+  </data>
+  <data name="xrTableCell72.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="xrChart1.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Black</value>
+  </data>
+  <data name="xrTableCell69.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="targetDropDown.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="headerTable.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>10.0000067, 0</value>
+  </data>
+  <data name="xrLine1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1159, 9</value>
+  </data>
+  <data name="lookUpEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="OpportunityNumberCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="dimensionCellRow.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 237, 196</value>
+  </data>
+  <data name="lbTitle.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>437.5, 0</value>
+  </data>
+  <data name="RateOfOldCustomerCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrTableCell63.Text" xml:space="preserve">
+    <value>First Email Count</value>
+  </data>
+  <data name="NumberOfTheDeadCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbTitle.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>84, 132, 213</value>
+  </data>
+  <data name="ContractAmountCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="ContractNumberCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrTableCell6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell67.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="Detail.HeightF" type="System.Single, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;targetDropDown.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="xrTableCell68.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="Detail.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="lookUpEdit1.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="tableDetail.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="xrTableCell74.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="xrPageInfo2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>857.000061, 52</value>
+  </data>
+  <data name="xrTableCell72.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="Detail.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="lbTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 18pt</value>
+  </data>
+  <data name="xrPageInfo2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>BottomRight</value>
+  </data>
+  <data name="xrTableCell74.Text" xml:space="preserve">
+    <value>Contract Number</value>
+  </data>
+  <data name="xrPageInfo2.Format" xml:space="preserve">
+    <value>{0:"Current Date: "yyyy'/'M'/'d}</value>
+  </data>
+  <data name="xrTableCell70.Text" xml:space="preserve">
+    <value>Opportunity Number</value>
+  </data>
+  <data name="xrTableCell61.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell12.Text" xml:space="preserve">
+    <value>UnitName</value>
+  </data>
+  <data name="xrPageInfo2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="tableDetail.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="xrTableCell4.Text" xml:space="preserve">
+    <value>Opportunity</value>
+  </data>
+  <data name="xrTableRow2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt, style=Italic</value>
+  </data>
+  <data name="DimensionCell.Text" xml:space="preserve">
+    <value>Dimension</value>
+  </data>
+  <data name="&gt;&gt;lookUpEdit1.Name" xml:space="preserve">
+    <value>lookUpEdit1</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PageHeader.HeightF" type="System.Single, mscorlib">
+    <value>64.58334</value>
+  </data>
+  <data name="xrTableCell6.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="DimensionCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="xrTableCell74.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell70.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="ReportFooter.HeightF" type="System.Single, mscorlib">
+    <value>268.75</value>
+  </data>
+  <data name="xrTableCell66.Text" xml:space="preserve">
+    <value>Number Into Opportunity</value>
+  </data>
+  <data name="winControlContainer2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="NumberIntoOpportunityCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="technicianTotalEffortsHeaderCell.Text" xml:space="preserve">
+    <value>Number Into Contract</value>
+  </data>
+  <data name="xrTableCell73.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

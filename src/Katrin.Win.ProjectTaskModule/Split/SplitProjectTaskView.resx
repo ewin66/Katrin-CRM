@@ -1,0 +1,1874 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="TNewActualWorkHoursTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 20</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ActualWorkHoursTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ItemForNewName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;NewNameTextEdit.Name" xml:space="preserve">
+    <value>NewNameTextEdit</value>
+  </data>
+  <data name="EntityDataLayoutControl.Text" xml:space="preserve">
+    <value>dataLayoutControl1</value>
+  </data>
+  <data name="ActualInputTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 66</value>
+  </data>
+  <data name="TItemForNewQuoteWorkHours.Text" xml:space="preserve">
+    <value>Quote Work Hours</value>
+  </data>
+  <data name="&gt;&gt;TItemForNewActualWorkHours.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TNewTaskNumberTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForProjectIteration.Text" xml:space="preserve">
+    <value>Project Iteration</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 20</value>
+  </data>
+  <data name="&gt;&gt;TNewProjectIterationSearchLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ProjectIterationSearchLookUpEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;SplitRate.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v12.1" name="DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="TNewQuoteWorkHoursTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="SplitRate.CustomizationFormText" xml:space="preserve">
+    <value>SplitRate</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="EffortTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 20</value>
+  </data>
+  <data name="splitTypeRadio.Properties.Items2" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ActualWorkHoursTextEdit.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Properties.NullText" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ActualInputTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hourTrackBarControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 45</value>
+  </data>
+  <data name="NewNameTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;SplitTypeGroup.Name" xml:space="preserve">
+    <value>SplitTypeGroup</value>
+  </data>
+  <data name="TaskNumberTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TaskNumberTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;QuoteWorkHoursTextEdit.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="NewNameTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;hourTrackBarControl.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="TNewProjectIterationSearchLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TNewActualWorkHoursTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForActualWorkHours.CustomizationFormText" xml:space="preserve">
+    <value>Actual Work Hours</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;NewTaskOneBindingSource.Name" xml:space="preserve">
+    <value>NewTaskOneBindingSource</value>
+  </data>
+  <data name="NewTaskGroupOne.Text" xml:space="preserve">
+    <value>Modified Original Task</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EffortTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>575, 66</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="NewProjectIterationSearchLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TaskNumberTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="OvertimeTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForEffort.CustomizationFormText" xml:space="preserve">
+    <value>Effort</value>
+  </data>
+  <data name="TNewNameTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EffortTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;NameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="splitType.Text" xml:space="preserve">
+    <value>Split Type</value>
+  </data>
+  <data name="TNewNameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>616, 290</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>(\d*\.)?\d+</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NewNameTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ActualInputTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="&gt;&gt;EffortTextEdit.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;ActualInputTextEdit.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="NewNameTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="TItemForNewQuoteWorkHours.CustomizationFormText" xml:space="preserve">
+    <value>Quote Work Hours</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OvertimeTextEdit.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TItemForNewActualWorkHours.Name" xml:space="preserve">
+    <value>TItemForNewActualWorkHours</value>
+  </data>
+  <data name="&gt;&gt;RemainderTimeTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TaskNumberTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NameTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NewTaskNumberTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 314</value>
+  </data>
+  <data name="&gt;&gt;ItemForNewActualWorkHours.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgGeneral.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="NameTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="splitType.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="ItemForNewTaskNumber.Text" xml:space="preserve">
+    <value>Task Number</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="splitTypeRadio.Properties.Appearance.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForActualWorkHours.Name" xml:space="preserve">
+    <value>ItemForActualWorkHours</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="TItemForNewName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ActualInputTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NameTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OvertimeTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="emptySpaceItem3.Text" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="NewNameTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="EffortTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;itemForOverTime.Name" xml:space="preserve">
+    <value>itemForOverTime</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="EffortTextEdit.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>RegEx</value>
+  </data>
+  <data name="ProjectIterationSearchLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>575, 18</value>
+  </data>
+  <data name="&gt;&gt;lcgGeneral.Name" xml:space="preserve">
+    <value>lcgGeneral</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TItemForNewName.Name" xml:space="preserve">
+    <value>TItemForNewName</value>
+  </data>
+  <data name="TItemForProjectIteration.Text" xml:space="preserve">
+    <value>Project Iteration</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;TItemForNewTaskNumber.Name" xml:space="preserve">
+    <value>TItemForNewTaskNumber</value>
+  </data>
+  <data name="&gt;&gt;ItemForActualWorkHours.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="NewTaskNumberTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForName.Name" xml:space="preserve">
+    <value>ItemForName</value>
+  </data>
+  <data name="OvertimeTextEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RemainderTimeTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="&gt;&gt;ActualWorkHoursTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="EffortTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TNewProjectIterationSearchLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 20</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;NameTextEdit.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TNewQuoteWorkHoursTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="TaskNumberTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TNewTaskNumberTextEdit.Name" xml:space="preserve">
+    <value>TNewTaskNumberTextEdit</value>
+  </data>
+  <data name="&gt;&gt;ActualWorkHoursTextEdit.Name" xml:space="preserve">
+    <value>ActualWorkHoursTextEdit</value>
+  </data>
+  <data name="NewNameTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EffortTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForProjectIterationId.Text" xml:space="preserve">
+    <value>Project Iteration</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RootLayoutControlGroup.Text" xml:space="preserve">
+    <value>RootLayoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;NameTextEdit.Name" xml:space="preserve">
+    <value>NameTextEdit</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Properties.NullText" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="NewProjectIterationSearchLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="emptySpaceItem1.Text" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 14</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;NewTaskTwoBindingSource.Name" xml:space="preserve">
+    <value>NewTaskTwoBindingSource</value>
+  </data>
+  <data name="OvertimeTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>Numeric</value>
+  </data>
+  <data name="TNewNameTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;splitType.Name" xml:space="preserve">
+    <value>splitType</value>
+  </data>
+  <data name="ItemForActualInput.CustomizationFormText" xml:space="preserve">
+    <value>Actual Input</value>
+  </data>
+  <data name="&gt;&gt;splitType.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;NewTaskNumberTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ActualInputTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TaskNumberTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="hourTrackBarControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 187</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>575, 90</value>
+  </data>
+  <data name="&gt;&gt;TNewProjectIterationSearchLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchLookUpEdit, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ItemForRemainderTime.Text" xml:space="preserve">
+    <value>RemainderTime</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;NewTaskGroupOne.Name" xml:space="preserve">
+    <value>NewTaskGroupOne</value>
+  </data>
+  <data name="OvertimeTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NameTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OvertimeTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="TaskNumberTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="OvertimeTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 20</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Katrin.Win.DetailViewModule.DetailView, Katrin.Win.BaseViewModule, Version=1.2.2.52, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="lcgGeneral.Text" xml:space="preserve">
+    <value>Original Task</value>
+  </data>
+  <data name="NewNameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 290</value>
+  </data>
+  <data name="ItemForName.CustomizationFormText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NewTaskNumberTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TNewProjectIterationSearchLookUpEdit.Name" xml:space="preserve">
+    <value>TNewProjectIterationSearchLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;NewQuoteWorkHoursTextEdit.Name" xml:space="preserve">
+    <value>NewQuoteWorkHoursTextEdit</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ActualWorkHoursTextEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TaskNumberTextEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NewProjectIterationSearchLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TaskNumberTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForTaskNumber.CustomizationFormText" xml:space="preserve">
+    <value>Task Number</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 20</value>
+  </data>
+  <data name="TNewNameTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="ActualInputTextEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;NewTaskNumberTextEdit.Name" xml:space="preserve">
+    <value>NewTaskNumberTextEdit</value>
+  </data>
+  <data name="NewNameTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SplitRate.Text" xml:space="preserve">
+    <value>Split Rate</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>(\d*\.)?\d+</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;TNewQuoteWorkHoursTextEdit.Name" xml:space="preserve">
+    <value>TNewQuoteWorkHoursTextEdit</value>
+  </data>
+  <data name="lcgGeneral.CustomizationFormText" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="&gt;&gt;QuoteWorkHoursTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;NewTaskNumberTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TNewNameTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="splitTypeRadio.Properties.Items1" xml:space="preserve">
+    <value>rtr</value>
+  </data>
+  <data name="&gt;&gt;ItemForRemainderTime.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="splitTypeRadio.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="EffortTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="emptySpaceItem3.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.Name" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;TItemForNewQuoteWorkHours.Name" xml:space="preserve">
+    <value>TItemForNewQuoteWorkHours</value>
+  </data>
+  <data name="TaskNumberTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 386</value>
+  </data>
+  <data name="TItemForNewActualWorkHours.Text" xml:space="preserve">
+    <value>Actual Work Hours</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EffortTextEdit.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="&gt;&gt;QuoteWorkHoursTextEdit.Name" xml:space="preserve">
+    <value>QuoteWorkHoursTextEdit</value>
+  </data>
+  <data name="OvertimeTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NameTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;hourTrackBarControl.Name" xml:space="preserve">
+    <value>hourTrackBarControl</value>
+  </data>
+  <data name="&gt;&gt;RootLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="NewProjectIterationSearchLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 338</value>
+  </data>
+  <data name="&gt;&gt;NewTaskGroupOne.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ValidationProvider.Name" xml:space="preserve">
+    <value>ValidationProvider</value>
+  </data>
+  <data name="NewTaskNumberTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="NameTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;ItemForRemainderTime.Name" xml:space="preserve">
+    <value>ItemForRemainderTime</value>
+  </data>
+  <data name="ItemForActualWorkHours.Text" xml:space="preserve">
+    <value>Actual Work Hours</value>
+  </data>
+  <data name="emptySpaceItem2.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="ActualInputTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="ActualInputTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>RegEx</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;TNewNameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;TNewTaskNumberTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TNewNameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="splitTypeRadio.TabIndex" type="System.Int32, mscorlib">
+    <value>124</value>
+  </data>
+  <data name="NewTaskNumberTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="splitTypeRadio.Properties.Items3" xml:space="preserve">
+    <value>tr4</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;NewTaskGroupTwo.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForNewQuoteWorkHours.Name" xml:space="preserve">
+    <value>ItemForNewQuoteWorkHours</value>
+  </data>
+  <data name="TaskNumberTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="TNewNameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v12.1" name="DevExpress.Utils.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="ProjectIterationSearchLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;TItemForNewName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForProjectIteration.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem3</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 20</value>
+  </data>
+  <data name="TaskNumberTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="hourTrackBarControl.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ActualWorkHoursTextEdit.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TNewProjectIterationSearchLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TItemForProjectIteration.CustomizationFormText" xml:space="preserve">
+    <value>Project Iteration</value>
+  </data>
+  <data name="TNewNameTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>948, 473</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 362</value>
+  </data>
+  <data name="&gt;&gt;NewProjectIterationSearchLookUpEdit.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="OvertimeTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 90</value>
+  </data>
+  <data name="&gt;&gt;RemainderTimeTextEdit.Name" xml:space="preserve">
+    <value>RemainderTimeTextEdit</value>
+  </data>
+  <data name="ProjectIterationSearchLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 20</value>
+  </data>
+  <data name="&gt;&gt;TNewTaskNumberTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;TNewNameTextEdit.Name" xml:space="preserve">
+    <value>TNewNameTextEdit</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>RegEx</value>
+  </data>
+  <data name="&gt;&gt;ItemForEffort.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForRemainderTime.CustomizationFormText" xml:space="preserve">
+    <value>RemainderTime</value>
+  </data>
+  <data name="SplitTypeGroup.Text" xml:space="preserve">
+    <value>Split Type</value>
+  </data>
+  <data name="TNewProjectIterationSearchLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="EffortTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ActualInputTextEdit.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="EffortTextEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TaskNumberTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="&gt;&gt;TNewQuoteWorkHoursTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EffortTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="EffortTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ActualInputTextEdit.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="&gt;&gt;ItemForProjectIterationId.Name" xml:space="preserve">
+    <value>ItemForProjectIterationId</value>
+  </data>
+  <data name="&gt;&gt;ItemForNewTaskNumber.Name" xml:space="preserve">
+    <value>ItemForNewTaskNumber</value>
+  </data>
+  <data name="NewTaskNumberTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;hourTrackBarControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TrackBarControl, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;NameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>(\d*\.)?\d+</value>
+  </data>
+  <data name="ItemForNewQuoteWorkHours.Text" xml:space="preserve">
+    <value>Quote Work Hours</value>
+  </data>
+  <data name="&gt;&gt;NewNameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>616, 362</value>
+  </data>
+  <data name="&gt;&gt;TNewActualWorkHoursTextEdit.Name" xml:space="preserve">
+    <value>TNewActualWorkHoursTextEdit</value>
+  </data>
+  <data name="ItemForNewActualWorkHours.Text" xml:space="preserve">
+    <value>Actual Work Hours</value>
+  </data>
+  <data name="ProjectIterationSearchLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForQuoteWorkHours.Name" xml:space="preserve">
+    <value>ItemForQuoteWorkHours</value>
+  </data>
+  <data name="EffortTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ActualWorkHoursTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>RegEx</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="NewTaskNumberTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.Properties.NullText" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TNewProjectIterationSearchLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;splitTypeRadio.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="NewProjectIterationSearchLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;ItemForNewTaskNumber.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ActualWorkHoursTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;ActualInputTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="hourTrackBarControl.Properties.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="TItemForNewActualWorkHours.CustomizationFormText" xml:space="preserve">
+    <value>Actual Work Hours</value>
+  </data>
+  <data name="ActualInputTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ActualInputTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TNewNameTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;ProjectIterationSearchLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchLookUpEdit, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>RegEx</value>
+  </data>
+  <data name="ProjectIterationSearchLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NewNameTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 42</value>
+  </data>
+  <data name="&gt;&gt;TItemForNewQuoteWorkHours.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ActualInputTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 20</value>
+  </data>
+  <data name="&gt;&gt;splitTypeRadio.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="splitTypeRadio.Properties.Items" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="NewTaskNumberTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NewTaskGroupTwo.Text" xml:space="preserve">
+    <value>New Task </value>
+  </data>
+  <data name="TNewProjectIterationSearchLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>616, 338</value>
+  </data>
+  <data name="&gt;&gt;RemainderTimeTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TaskNumberTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 20</value>
+  </data>
+  <data name="TNewProjectIterationSearchLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>(\d*\.)?\d+</value>
+  </data>
+  <data name="ItemForNewActualWorkHours.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem7</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="EffortTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Properties.NullText" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="OvertimeTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NewTaskNumberTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NewProjectIterationSearchLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ProjectIterationSearchLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ActualInputTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;TItemForProjectIteration.Name" xml:space="preserve">
+    <value>TItemForProjectIteration</value>
+  </data>
+  <data name="TNewNameTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForNewTaskNumber.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;NewNameTextEdit.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="itemForOverTime.Text" xml:space="preserve">
+    <value>Over Time</value>
+  </data>
+  <data name="NewTaskNumberTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForNewQuoteWorkHours.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;NewProjectIterationSearchLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="resource.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TNewQuoteWorkHoursTextEdit.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="TaskNumberTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SplitTypeGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ActualInputTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;hourTrackBarControl.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="NewProjectIterationSearchLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="splitTypeRadio.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TNewNameTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;OvertimeTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TItemForNewTaskNumber.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TNewProjectIterationSearchLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="NewNameTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="emptySpaceItem1.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="TNewNameTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TaskNumberTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;EffortTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;TNewActualWorkHoursTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NewTaskNumberTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="NewNameTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NewTaskNumberTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ProjectIterationSearchLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TaskNumberTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TNewNameTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NameTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="splitTypeRadio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 25</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NameTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="NewTaskNumberTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;TNewActualWorkHoursTextEdit.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>(\d*\.)?\d+</value>
+  </data>
+  <data name="&gt;&gt;NewTaskGroupTwo.Name" xml:space="preserve">
+    <value>NewTaskGroupTwo</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EffortTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TNewNameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 20</value>
+  </data>
+  <data name="NewNameTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OvertimeTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="splitTypeRadio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 158</value>
+  </data>
+  <data name="&gt;&gt;searchLookUpEdit1View.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EntityBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ItemForProjectIterationId.CustomizationFormText" xml:space="preserve">
+    <value>Project Iteration</value>
+  </data>
+  <data name="NewTaskGroupOne.CustomizationFormText" xml:space="preserve">
+    <value>Maintain Task </value>
+  </data>
+  <data name="&gt;&gt;RootLayoutControlGroup.Name" xml:space="preserve">
+    <value>RootLayoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;NewTaskTwoBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ItemForEffort.Text" xml:space="preserve">
+    <value>Effort</value>
+  </data>
+  <data name="EffortTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="TaskNumberTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RemainderTimeTextEdit.EditValue" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="NewProjectIterationSearchLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OvertimeTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="EntityDataLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>948, 440</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="NewTaskNumberTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OvertimeTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ActualInputTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NewTaskNumberTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;ItemForNewName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="NameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, -6</value>
+  </data>
+  <data name="&gt;&gt;ItemForEffort.Name" xml:space="preserve">
+    <value>ItemForEffort</value>
+  </data>
+  <data name="OvertimeTextEdit.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="NameTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SplitProjectTaskView</value>
+  </data>
+  <data name="ProjectIterationSearchLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TaskNumberTextEdit.Name" xml:space="preserve">
+    <value>TaskNumberTextEdit</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NameTextEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TNewNameTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ItemForActualInput.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EntityBindingSource.Name" xml:space="preserve">
+    <value>EntityBindingSource</value>
+  </data>
+  <data name="TNewNameTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="NewActualWorkHoursTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="&gt;&gt;ItemForTaskNumber.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="EffortTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;EffortTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="NewProjectIterationSearchLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TNewNameTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="TaskNumberTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NewTaskNumberTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;NewTaskOneBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="NewNameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="SplitTypeGroup.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;ItemForQuoteWorkHours.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="splitTypeRadio.Properties.Items5" xml:space="preserve">
+    <value>gr</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;NewProjectIterationSearchLookUpEdit.Name" xml:space="preserve">
+    <value>NewProjectIterationSearchLookUpEdit</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>616, 314</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>RegEx</value>
+  </data>
+  <data name="OvertimeTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForQuoteWorkHours.Text" xml:space="preserve">
+    <value>Quote Work Hours</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NewNameTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OvertimeTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;OvertimeTextEdit.Name" xml:space="preserve">
+    <value>OvertimeTextEdit</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>616, 386</value>
+  </data>
+  <data name="itemForOverTime.CustomizationFormText" xml:space="preserve">
+    <value>Over Time</value>
+  </data>
+  <data name="&gt;&gt;NewQuoteWorkHoursTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="EffortTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="splitTypeRadio.Properties.Appearance.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
+    <value>Horizontal</value>
+  </data>
+  <data name="splitTypeRadio.Properties.Items4" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NewTaskNumberTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForQuoteWorkHours.CustomizationFormText" xml:space="preserve">
+    <value>Quote Work Hours</value>
+  </data>
+  <data name="&gt;&gt;SplitRate.Name" xml:space="preserve">
+    <value>SplitRate</value>
+  </data>
+  <data name="ActualInputTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RemainderTimeTextEdit.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="&gt;&gt;ItemForNewName.Name" xml:space="preserve">
+    <value>ItemForNewName</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="TNewProjectIterationSearchLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;NewActualWorkHoursTextEdit.Name" xml:space="preserve">
+    <value>NewActualWorkHoursTextEdit</value>
+  </data>
+  <data name="&gt;&gt;TNewProjectIterationSearchLookUpEdit.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;NewTaskNumberTextEdit.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForTaskNumber.Name" xml:space="preserve">
+    <value>ItemForTaskNumber</value>
+  </data>
+  <data name="resource.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;ProjectIterationSearchLookUpEdit.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="NewNameTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;splitTypeRadio.Name" xml:space="preserve">
+    <value>splitTypeRadio</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;RemainderTimeTextEdit.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForNewName.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem5</value>
+  </data>
+  <data name="EffortTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ActualInputTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;NewActualWorkHoursTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForActualInput.Name" xml:space="preserve">
+    <value>ItemForActualInput</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Properties.NullText" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ItemForProjectIteration.Name" xml:space="preserve">
+    <value>ItemForProjectIteration</value>
+  </data>
+  <data name="&gt;&gt;NewQuoteWorkHoursTextEdit.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;ItemForProjectIterationId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TItemForNewName.CustomizationFormText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;splitTypeRadio.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;OvertimeTextEdit.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;TNewTaskNumberTextEdit.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;ItemForProjectIteration.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="&gt;&gt;ActualInputTextEdit.Name" xml:space="preserve">
+    <value>ActualInputTextEdit</value>
+  </data>
+  <data name="&gt;&gt;ItemForNewActualWorkHours.Name" xml:space="preserve">
+    <value>ItemForNewActualWorkHours</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 20</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TNewNameTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ActualInputTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 20</value>
+  </data>
+  <data name="hourTrackBarControl.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>575, 42</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="splitTypeRadio.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="NewActualWorkHoursTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ItemForActualInput.Text" xml:space="preserve">
+    <value>Actual Input</value>
+  </data>
+  <data name="emptySpaceItem2.Text" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="NameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 20</value>
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraDataLayout.DataLayoutControl, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;itemForOverTime.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TNewQuoteWorkHoursTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ProjectIterationSearchLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;NewActualWorkHoursTextEdit.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="NewNameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="&gt;&gt;searchLookUpEdit1View.Name" xml:space="preserve">
+    <value>searchLookUpEdit1View</value>
+  </data>
+  <data name="RemainderTimeTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="NewTaskGroupTwo.CustomizationFormText" xml:space="preserve">
+    <value>New Task Two</value>
+  </data>
+  <data name="NameTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;EffortTextEdit.Name" xml:space="preserve">
+    <value>EffortTextEdit</value>
+  </data>
+  <data name="&gt;&gt;TaskNumberTextEdit.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;NewNameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>(\d*\.)?\d+</value>
+  </data>
+  <data name="ActualInputTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OvertimeTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TaskNumberTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 18</value>
+  </data>
+  <data name="OvertimeTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OvertimeTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;QuoteWorkHoursTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;OvertimeTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ItemForNewQuoteWorkHours.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem6</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TItemForNewTaskNumber.Text" xml:space="preserve">
+    <value>Task Number</value>
+  </data>
+  <data name="hourTrackBarControl.EditValue" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ActualInputTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="QuoteWorkHoursTextEdit.Properties.NullText" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ProjectIterationSearchLookUpEdit.Name" xml:space="preserve">
+    <value>ProjectIterationSearchLookUpEdit</value>
+  </data>
+  <data name="NameTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;NewActualWorkHoursTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="ItemForTaskNumber.Text" xml:space="preserve">
+    <value>Task Number</value>
+  </data>
+  <data name="NewNameTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="ProjectIterationSearchLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NewQuoteWorkHoursTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ActualWorkHoursTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ValidationProvider.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TNewNameTextEdit.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;NewQuoteWorkHoursTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="hourTrackBarControl.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="NameTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="splitTypeRadio.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="&gt;&gt;TItemForProjectIteration.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TNewActualWorkHoursTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;NewProjectIterationSearchLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchLookUpEdit, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TNewTaskNumberTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TItemForNewTaskNumber.CustomizationFormText" xml:space="preserve">
+    <value>Task Number</value>
+  </data>
+  <metadata name="EntityBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+  <metadata name="NewTaskTwoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>564, 17</value>
+  </metadata>
+  <metadata name="NewTaskOneBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>349, 17</value>
+  </metadata>
+  <metadata name="ValidationProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>188, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
+</root>

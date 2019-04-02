@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<ArrayOfFormatCondition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FormatCondition>
+    <Name>In Arrear</Name>
+    <Backcolor />
+    <BackcolorArgb>0</BackcolorArgb>
+    <Forecolor />
+    <ForecolorArgb>-65536</ForecolorArgb>
+    <FontName>微软雅黑</FontName>
+    <Size>8.5</Size>
+    <Bold>false</Bold>
+    <Unit>false</Unit>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <Conditions>[StatusCode] = 3</Conditions>
+    <Active>true</Active>
+  </FormatCondition>
+  <FormatCondition>
+    <Name>Bad Debts</Name>
+    <Backcolor />
+    <BackcolorArgb>0</BackcolorArgb>
+    <Forecolor />
+    <ForecolorArgb>-8355712</ForecolorArgb>
+    <FontName>微软雅黑</FontName>
+    <Size>8.5</Size>
+    <Bold>false</Bold>
+    <Unit>false</Unit>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <Conditions>[StatusCode] = 4</Conditions>
+    <Active>true</Active>
+  </FormatCondition>
+  <FormatCondition>
+    <Name>Sent More Than Half A Month And The Statu Still Be Sent</Name>
+    <Backcolor />
+    <BackcolorArgb>0</BackcolorArgb>
+    <Forecolor />
+    <ForecolorArgb>-16777024</ForecolorArgb>
+    <FontName>微软雅黑</FontName>
+    <Size>8.5</Size>
+    <Bold>false</Bold>
+    <Unit>false</Unit>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <Conditions>IsPriorDays([DateDelivered],15) And [StatusCode] = 1</Conditions>
+    <Active>true</Active>
+  </FormatCondition>
+</ArrayOfFormatCondition>

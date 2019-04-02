@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.BaseViewModule.dll">
+      <ConditionEvaluator name="DetailEnabledConditionEvaluator" class="Katrin.Win.DetailViewModule.ConditionEvaluators.EnabledConditionEvaluator"/>
+      <ConditionEvaluator name="DetailVisibilityConditionEvaluator" class="Katrin.Win.DetailViewModule.ConditionEvaluators.VisibilityConditionEvaluator"/>
+      <ConditionEvaluator name="CheckConditionEvaluator" class="Katrin.Win.DetailViewModule.ConditionEvaluators.CheckConditionEvaluator"/>
+    </Import>
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll"/>
+  </Runtime>
+
+  <Path name = "/Detail">
+    <Path id="Commands">
+      <Condition name = "DetailVisibilityConditionEvaluator" affect="Visibility" type="save" action="Exclude">
+        <Condition name = "DetailEnabledConditionEvaluator" affect="Enabled" type="save" action="Disable">
+          <MenuItem id = "SaveAndClose" source ="Custom" type = "Item" label = "${res:SaveAndClose}"
+                    imageName="Save" overlay="overlay_exit" builderid ="BarButtonItemBuilder"
+                    class ="Katrin.Win.DetailViewModule.Commands.SaveAndCloseCommand" />
+          <MenuItem id = "Save" source ="Custom" type = "Item" label = "${res:Save}"
+                    imageName="Save" builderid ="BarButtonItemBuilder"
+                    class ="Katrin.Win.DetailViewModule.Commands.SaveCommand" />
+        </Condition>
+      </Condition>
+      <Condition name = "DetailVisibilityConditionEvaluator" affect="Visibility" type="edit" priviledge="Write" action="Exclude">
+        <MenuItem id = "EditMode" source ="Custom" type = "Item" label = "${res:Edit}"
+                  imageName="Edit" builderid ="BarButtonItemBuilder"
+                  class ="Katrin.Win.DetailViewModule.Commands.EditCommand" />
+      </Condition>
+      <Condition name = "DetailVisibilityConditionEvaluator" affect="Visibility"  type="copyandnew" action="Exclude">
+        <Condition name = "DetailEnabledConditionEvaluator" affect="Enabled" type="copyandnew" action="Disable">
+          <MenuItem id = "CopyAndNew" source ="Custom" type = "Item" label = "${res:CopyAndNew}"
+                    imageName="Save" builderid ="BarButtonItemBuilder" overlay="overlay_copy"
+                    class ="Katrin.Win.DetailViewModule.Commands.CopyAndNewCommand" />
+        </Condition>
+      </Condition>
+      <Condition name = "CheckConditionEvaluator" affect="Down" viewName="DefaultDetailView">
+        <MenuItem id = "ShowGeneral" source ="Custom" type = "Item" label = "${res:General}" ButtonStyle="Check"
+                  builderid ="BarButtonItemBuilder"
+                  class ="Katrin.Win.DetailViewModule.Commands.ShowGeneralCommand" />
+      </Condition>
+    </Path>
+    <Path id="Ribbon">
+      <MenuItem id = "Home" type = "Page" label = "${res:Home}" builderid ="RibbonPageBuilder">
+        <MenuItem id = "General" type = "Group" label = "${res:General}" OrderNumber="0" builderid ="RibbonPageGroupBuilder">
+          <MenuItem id = "SaveAndClose" type = "Item" cmdId="SaveAndClose" />
+          <MenuItem id = "Save" type = "Item" cmdId="Save" />
+          <MenuItem id = "EditMode" type = "Item" cmdId="EditMode" />
+          <MenuItem id = "CopyAndNew" type = "Item" cmdId="CopyAndNew" />
+        </MenuItem>
+      </MenuItem>
+      <MenuItem id = "Show" type = "Group" label = "${res:Show}" OrderNumber="1" builderid ="RibbonPageGroupBuilder">
+        <MenuItem id = "ShowGeneral" type = "Item" cmdId="ShowGeneral" />
+      </MenuItem>
+    </Path>
+  </Path>
+</AddIn>

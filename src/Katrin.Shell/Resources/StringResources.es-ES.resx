@@ -1,0 +1,1622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConfirmPasswordNotMatch" xml:space="preserve">
+    <value>Las contraseñas no coinciden.</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Quote" xml:space="preserve">
+    <value>Cita</value>
+  </data>
+  <data name="Related" xml:space="preserve">
+    <value>Relacionado</value>
+  </data>
+  <data name="NewCommand" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
+  <data name="ValidateDate" xml:space="preserve">
+    <value>Esta fecha no es válida</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Historia</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Acciones</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
+  <data name="UserNameAndPasswordInvalid" xml:space="preserve">
+    <value>El usuario y la contraseña no son válidos</value>
+  </data>
+  <data name="EntityDetailsCaptionFormat" xml:space="preserve">
+    <value>{0} Detalles - {1}</value>
+  </data>
+  <data name="SaveAndClose" xml:space="preserve">
+    <value>Save&amp;&amp;Close</value>
+  </data>
+  <data name="RecordManagement" xml:space="preserve">
+    <value>Gestión del Registro</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Mostrar</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contacto</value>
+    <comment>o</comment>
+  </data>
+  <data name="PopupContract" xml:space="preserve">
+    <value>Contrato</value>
+  </data>
+  <data name="PopupQuote" xml:space="preserve">
+    <value>Cita</value>
+  </data>
+  <data name="CannotUnregisterSiteRegisteredWithParent" xml:space="preserve">
+    <value>Cannot unregister site that was registered in parent: {0}</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Factura</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Atrás</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Cuenta</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="DisableDeleteRecord" xml:space="preserve">
+    <value>¡No puede borrar este {0} mientras se encuentra en uso!</value>
+  </data>
+  <data name="LeadConvert" xml:space="preserve">
+    <value>Convertir</value>
+  </data>
+  <data name="ServiceManagement" xml:space="preserve">
+    <value>Gestión de Servicios</value>
+  </data>
+  <data name="ConfirmDeletion" xml:space="preserve">
+    <value>Confirmar Borrado</value>
+  </data>
+  <data name="DeadRecord" xml:space="preserve">
+    <value>¿Desea eliminar el registro  {0}?</value>
+  </data>
+  <data name="DeleteRecord" xml:space="preserve">
+    <value>Ha seleccionado 1 {0} para su borrado.
+
+El sistema eliminará este registro. Está acción no puede deshacerse. Pulse OK para continuar.</value>
+  </data>
+  <data name="EntityListCaptionFormat" xml:space="preserve">
+    <value>{0} Lista</value>
+  </data>
+  <data name="Lead" xml:space="preserve">
+    <value>Oferta</value>
+  </data>
+  <data name="AddNote" xml:space="preserve">
+    <value>Añadir Nota</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="PasswordLengthValidation" xml:space="preserve">
+    <value>La contraseña debe contener al menos 6 carácteres</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Pregunta</value>
+  </data>
+  <data name="PopupInvoice" xml:space="preserve">
+    <value>Factura</value>
+  </data>
+  <data name="DeadLead" xml:space="preserve">
+    <value>Oportunidades Perdidas</value>
+  </data>
+  <data name="NewEntity" xml:space="preserve">
+    <value>Nuevo {0}</value>
+  </data>
+  <data name="Opportunity" xml:space="preserve">
+    <value>Oportunidad</value>
+  </data>
+  <data name="DeleteNote" xml:space="preserve">
+    <value>Borrar Nota</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="Addition" xml:space="preserve">
+    <value>Añadir</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Vista</value>
+  </data>
+  <data name="ValidateNotBlankMessage" xml:space="preserve">
+    <value>{0} no puede estar vacío</value>
+    <comment>Validation</comment>
+  </data>
+  <data name="DuplicateUIExtensionSite" xml:space="preserve">
+    <value>Ya existe un sitio de extensión de U Icon este nombre: {0}</value>
+  </data>
+  <data name="ListScreenTitle" xml:space="preserve">
+    <value>{0} Lista</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Notas</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Añadir</value>
+  </data>
+  <data name="EditNote" xml:space="preserve">
+    <value>Editar Nota</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Alerta</value>
+  </data>
+  <data name="Contract" xml:space="preserve">
+    <value>Contracto</value>
+  </data>
+  <data name="Skins" xml:space="preserve">
+    <value>Skins</value>
+  </data>
+  <data name="ViewPageCaption" xml:space="preserve">
+    <value>Vista</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="TimeTracking" xml:space="preserve">
+    <value>Historia</value>
+  </data>
+  <data name="AddTimeTracking" xml:space="preserve">
+    <value>Añadir Tiempo</value>
+  </data>
+  <data name="DeleteTimeTracking" xml:space="preserve">
+    <value>Fecha de Borrado</value>
+  </data>
+  <data name="EditTimeTracking" xml:space="preserve">
+    <value>Editar Tiempo</value>
+  </data>
+  <data name="ShowTimeTracking" xml:space="preserve">
+    <value>Mostrar Historia</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Administración</value>
+  </data>
+  <data name="Sales" xml:space="preserve">
+    <value>Ventas</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Servicios</value>
+  </data>
+  <data name="SystemSetting" xml:space="preserve">
+    <value>Configuración del Sistema</value>
+  </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Auditoría</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+  <data name="TimeTrackings" xml:space="preserve">
+    <value>Historia</value>
+  </data>
+  <data name="FastOperate" xml:space="preserve">
+    <value>Acción Rápida</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>Formato</value>
+  </data>
+  <data name="AddFilter" xml:space="preserve">
+    <value>Añadir Filtro</value>
+  </data>
+  <data name="EditFilter" xml:space="preserve">
+    <value>Editar Filtro</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+    <value>Filtros</value>
+  </data>
+  <data name="ManageFilter" xml:space="preserve">
+    <value>Gestionar Filtro</value>
+  </data>
+  <data name="DeleteFilter" xml:space="preserve">
+    <value>Borrar Filtro</value>
+  </data>
+  <data name="DeleteListItemWarning" xml:space="preserve">
+    <value>¿Desea borrar este elemento?</value>
+  </data>
+  <data name="DeleteFilterTip" xml:space="preserve">
+    <value>¿Desea borrar este filtro&lt;{0}&gt;?</value>
+  </data>
+  <data name="ClearSetting" xml:space="preserve">
+    <value>Limpiar Configuraciones</value>
+  </data>
+  <data name="ClearSettingConfirm" xml:space="preserve">
+    <value>El sistema borrará la configuración. Está acción no puede deshacerse. Acepte para continuar.</value>
+  </data>
+  <data name="NoRelatedData" xml:space="preserve">
+    <value>No existen datos relacionados.</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="Katrin" xml:space="preserve">
+    <value>Katrin</value>
+  </data>
+  <data name="AcceptedQuotes" xml:space="preserve">
+    <value>Cotizaciones Aceptadas</value>
+    <comment>zd</comment>
+  </data>
+  <data name="AllMyContracts" xml:space="preserve">
+    <value>Todos mi Contratos</value>
+    <comment>a</comment>
+  </data>
+  <data name="AllMyInvoices" xml:space="preserve">
+    <value>Todas mis Facturas</value>
+    <comment>g</comment>
+  </data>
+  <data name="AllMyLeads" xml:space="preserve">
+    <value>Todas mis Ofertas</value>
+    <comment>m</comment>
+  </data>
+  <data name="AllMyOpportunities" xml:space="preserve">
+    <value>Todas mis Oportunidades</value>
+    <comment>u</comment>
+  </data>
+  <data name="AllMyOpportunitiesInThisMonth" xml:space="preserve">
+    <value>Oportunidades del Mes</value>
+    <comment>t</comment>
+  </data>
+  <data name="AllMyQuotes" xml:space="preserve">
+    <value>Todas mis Cuotas</value>
+    <comment>ze</comment>
+  </data>
+  <data name="BadDebtInvoices" xml:space="preserve">
+    <value>Deudas Dudoso Pago</value>
+    <comment>h</comment>
+  </data>
+  <data name="ClosedContracts" xml:space="preserve">
+    <value>Contratos Cerrados</value>
+    <comment>b</comment>
+  </data>
+  <data name="ConvertedLeads" xml:space="preserve">
+    <value>Ofertas Convertidas</value>
+    <comment>n</comment>
+  </data>
+  <data name="DeadLeads" xml:space="preserve">
+    <value>Oportunidades Perdidas</value>
+    <comment>o</comment>
+  </data>
+  <data name="FailedContracts" xml:space="preserve">
+    <value>Contratos Fallados</value>
+    <comment>c</comment>
+  </data>
+  <data name="FinishedContracts" xml:space="preserve">
+    <value>Contratos Finalizados</value>
+    <comment>d</comment>
+  </data>
+  <data name="InArrearInvoices" xml:space="preserve">
+    <value>Facturas Atrasadas</value>
+    <comment>i</comment>
+  </data>
+  <data name="LeadOpenedLastWeek" xml:space="preserve">
+    <value>Oferta creada la semanta anterior</value>
+    <comment>p</comment>
+  </data>
+  <data name="LeadOpenedThisWeek" xml:space="preserve">
+    <value>Oferta creada esta semana</value>
+    <comment>q</comment>
+  </data>
+  <data name="LostOpportunities" xml:space="preserve">
+    <value>Oportunidades Perdidas</value>
+    <comment>v</comment>
+  </data>
+  <data name="LostQuotes" xml:space="preserve">
+    <value>Citas Perdidas</value>
+    <comment>zf</comment>
+  </data>
+  <data name="MyOpenContracts" xml:space="preserve">
+    <value>Mis Contratos Abiertos</value>
+    <comment>e</comment>
+  </data>
+  <data name="MyOpenLeads" xml:space="preserve">
+    <value>Mis Ofertas Abiertas</value>
+    <comment>r</comment>
+  </data>
+  <data name="MyOpenOpportunities" xml:space="preserve">
+    <value>Mis Oportunidades Abiertas</value>
+    <comment>w</comment>
+  </data>
+  <data name="MyOpenQuotes" xml:space="preserve">
+    <value>Mis Citas abiertas</value>
+    <comment>zg</comment>
+  </data>
+  <data name="OpenContracts" xml:space="preserve">
+    <value>Contratos Abiertos</value>
+    <comment>f</comment>
+  </data>
+  <data name="OpenLeads" xml:space="preserve">
+    <value>Ofertas Abiertas</value>
+    <comment>s</comment>
+  </data>
+  <data name="OpenMyOpportunitiesBeforeThisMonth" xml:space="preserve">
+    <value>Abrir Oportunidades anteriores a un mse</value>
+    <comment>x</comment>
+  </data>
+  <data name="OpenOpportunities" xml:space="preserve">
+    <value>Abrir Oportunidades</value>
+    <comment>y</comment>
+  </data>
+  <data name="OpenQuotes" xml:space="preserve">
+    <value>Abrir Citas</value>
+    <comment>zh</comment>
+  </data>
+  <data name="OpportunitiesCreatedinThisMonth" xml:space="preserve">
+    <value>Oportunidades Creadas Este Mes</value>
+    <comment>z</comment>
+  </data>
+  <data name="OpportunityOpenedLastWeek" xml:space="preserve">
+    <value>Oportunidad Creada La Última Semana</value>
+    <comment>za</comment>
+  </data>
+  <data name="OpportunityOpenedThisWeek" xml:space="preserve">
+    <value>Oportunidad Creada esta Semana</value>
+    <comment>zb</comment>
+  </data>
+  <data name="PaidInvoices" xml:space="preserve">
+    <value>Facturas Pagadas</value>
+    <comment>j</comment>
+  </data>
+  <data name="PlannedInvoices" xml:space="preserve">
+    <value>Facturas Planificadas</value>
+    <comment>k</comment>
+  </data>
+  <data name="SentInvoices" xml:space="preserve">
+    <value>Enviar Facturas</value>
+    <comment>l</comment>
+  </data>
+  <data name="WonOpportunity" xml:space="preserve">
+    <value>Oportunidad Ganada</value>
+    <comment>opportunity</comment>
+  </data>
+  <data name="Effort" xml:space="preserve">
+    <value>Esfuerzo</value>
+  </data>
+  <data name="Covert" xml:space="preserve">
+    <value>Convertir a {0}</value>
+  </data>
+  <data name="ConvertTitle" xml:space="preserve">
+    <value>Convertir</value>
+  </data>
+  <data name="ProjectTask" xml:space="preserve">
+    <value>Tarea de Proyecto</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Proyecto</value>
+  </data>
+  <data name="EditEffort" xml:space="preserve">
+    <value>Editar Esfuerzo</value>
+  </data>
+  <data name="ProjectTaskEffort" xml:space="preserve">
+    <value>Esfuerzo de Tarea de Proyecto</value>
+  </data>
+  <data name="ProjectIteration" xml:space="preserve">
+    <value>Iteración de Proyecto</value>
+  </data>
+  <data name="AddIteration" xml:space="preserve">
+    <value>Añadir Iteración</value>
+  </data>
+  <data name="DeleteProjectIterationTip" xml:space="preserve">
+    <value>¿Desea borrar esta iteración de proyecto?</value>
+  </data>
+  <data name="DeleteProjectTaskTip" xml:space="preserve">
+    <value>¿Desea borrar esta tarea de proyecto?</value>
+  </data>
+  <data name="WeekReport" xml:space="preserve">
+    <value>Reporte Semanal</value>
+  </data>
+  <data name="ProjectWeekReport" xml:space="preserve">
+    <value>Reporte Semanal</value>
+  </data>
+  <data name="GenerateWeekReport" xml:space="preserve">
+    <value>Generar Reporte</value>
+  </data>
+  <data name="ColumnCaptionFormat" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="GenerateDayReport" xml:space="preserve">
+    <value>Reporte Diario</value>
+  </data>
+  <data name="colSumActualInput" xml:space="preserve">
+    <value>Suma</value>
+  </data>
+  <data name="colSumActualWorkHours" xml:space="preserve">
+    <value>Suma Horas Reales de Trabajo</value>
+  </data>
+  <data name="colSumEffort" xml:space="preserve">
+    <value>Suma de Esfuerzo</value>
+  </data>
+  <data name="colSumOvertime" xml:space="preserve">
+    <value>Suma de Overtime</value>
+  </data>
+  <data name="colSumQuoteWorkHours" xml:space="preserve">
+    <value>Suma Cuota de Horas de Trabajo</value>
+  </data>
+  <data name="colSumRemainderTime" xml:space="preserve">
+    <value>Suma Hora de Recordatorio</value>
+  </data>
+  <data name="AcceptanceTasks" xml:space="preserve">
+    <value>Tareas de Aceptación</value>
+  </data>
+  <data name="AllMyProjects" xml:space="preserve">
+    <value>Todos mis Proyectos</value>
+  </data>
+  <data name="AllMyTasks" xml:space="preserve">
+    <value>Todas mis Tareas</value>
+  </data>
+  <data name="AllMyWeekReports" xml:space="preserve">
+    <value>Todos mis Reportes Semanales</value>
+  </data>
+  <data name="CompletedProjects" xml:space="preserve">
+    <value>Proyectos Completados</value>
+  </data>
+  <data name="CompletedTasks" xml:space="preserve">
+    <value>Tareas Completadas</value>
+  </data>
+  <data name="InProgressProjects" xml:space="preserve">
+    <value>Proyectos en Progreso</value>
+  </data>
+  <data name="InProgressTasks" xml:space="preserve">
+    <value>Tareas en Progreso</value>
+  </data>
+  <data name="NotStartedProjects" xml:space="preserve">
+    <value>Proyectos No Empezados</value>
+  </data>
+  <data name="NotStartedTasks" xml:space="preserve">
+    <value>Tareas No Empezadas</value>
+  </data>
+  <data name="colEvaluateExactlyRate" xml:space="preserve">
+    <value>Evaluar Tasa</value>
+  </data>
+  <data name="colInputEffortRate" xml:space="preserve">
+    <value>Introducir Tasa de Esfuerzo</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>Enviar E-mail</value>
+  </data>
+  <data name="EditTaskEffort" xml:space="preserve">
+    <value>Editar Esfuerzo de Tarea</value>
+  </data>
+  <data name="NewProjectTaskEffort" xml:space="preserve">
+    <value>Nueva Tarea de Esfuerzo</value>
+  </data>
+  <data name="Diagram" xml:space="preserve">
+    <value>Diagrama</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>Lista</value>
+    <comment>a</comment>
+  </data>
+  <data name="CopyAndNew" xml:space="preserve">
+    <value>Copy&amp;&amp;New</value>
+  </data>
+  <data name="ReportTool" xml:space="preserve">
+    <value>Herramienta de Reporte</value>
+  </data>
+  <data name="AddVersion" xml:space="preserve">
+    <value>Añadir Versión</value>
+  </data>
+  <data name="Attendance" xml:space="preserve">
+    <value>Asistencia</value>
+  </data>
+  <data name="ProjectVersion" xml:space="preserve">
+    <value>Versión de Proyecto</value>
+  </data>
+  <data name="TheAttendanceInLastMonth" xml:space="preserve">
+    <value>Asistencia durante el Último Mes</value>
+  </data>
+  <data name="TheAttendanceInThisMonth" xml:space="preserve">
+    <value>Asistencia durante Este Mes</value>
+  </data>
+  <data name="TheAttendanceInThisYear" xml:space="preserve">
+    <value>Asistencia durante Este Año</value>
+  </data>
+  <data name="TheRecentActiveContacts" xml:space="preserve">
+    <value>Contactos Recientemente Activos</value>
+  </data>
+  <data name="TheRecentActiveCustomers" xml:space="preserve">
+    <value>Clientes Recientemente Activos</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Notificaciones</value>
+  </data>
+  <data name="DeleteNotification" xml:space="preserve">
+    <value>Borrar Notificación</value>
+  </data>
+  <data name="DeleteProjectVersionTip" xml:space="preserve">
+    <value>¿Desea borrar esta versión de proyecto?</value>
+  </data>
+  <data name="SendSysMessage" xml:space="preserve">
+    <value>Enviar Mensaje</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Administración</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Servicios</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>(Todo)</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="LastMonth" xml:space="preserve">
+    <value>Último Mes</value>
+  </data>
+  <data name="LastQuarter" xml:space="preserve">
+    <value>Último Trimestre</value>
+  </data>
+  <data name="LastWeek" xml:space="preserve">
+    <value>Última Semana</value>
+  </data>
+  <data name="LastYear" xml:space="preserve">
+    <value>Último Año</value>
+  </data>
+  <data name="ThisMonth" xml:space="preserve">
+    <value>Este Mes</value>
+  </data>
+  <data name="ThisQuarter" xml:space="preserve">
+    <value>Este Trimestre</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>Esta Semana</value>
+  </data>
+  <data name="ThisYear" xml:space="preserve">
+    <value>Este Año</value>
+  </data>
+  <data name="InProgress" xml:space="preserve">
+    <value>En Progreso</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>Perdido</value>
+  </data>
+  <data name="Won" xml:space="preserve">
+    <value>Ganado</value>
+    <comment>opportunity</comment>
+  </data>
+  <data name="OpportunityReport" xml:space="preserve">
+    <value>Reporte de Oportunidades</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Reportes</value>
+  </data>
+  <data name="RecommendWarning" xml:space="preserve">
+    <value>El Campo Recomendado está vacío. ¿Desea continuar?</value>
+  </data>
+  <data name="SaleStageChangeTip" xml:space="preserve">
+    <value>No puede seleccionar este elemento. Tiene una operación anterior.</value>
+  </data>
+  <data name="ReasonNullTip" xml:space="preserve">
+    <value>La Razón no puede estar vacía</value>
+  </data>
+  <data name="DeleteNoteTip" xml:space="preserve">
+    <value>¿Desea borrar esta nota?</value>
+  </data>
+  <data name="DeleteTimingTip" xml:space="preserve">
+    <value>¿Desea eliminar este registro de tiempo?</value>
+  </data>
+  <data name="ProjectManagement" xml:space="preserve">
+    <value>Gestión de Proyecto</value>
+  </data>
+  <data name="AddTask" xml:space="preserve">
+    <value>Añadir Tarea</value>
+  </data>
+  <data name="OverTimeTip" xml:space="preserve">
+    <value>El tiempo Over Time no puede ser superior al esfuerzo.</value>
+  </data>
+  <data name="ProjectReport" xml:space="preserve">
+    <value>Reporte de Proyecto</value>
+  </data>
+  <data name="ProbabilityCode" xml:space="preserve">
+    <value>Probabilidad: </value>
+  </data>
+  <data name="ProjectMember" xml:space="preserve">
+    <value>Miembro de Proyecto:</value>
+  </data>
+  <data name="ProjectTypeCode" xml:space="preserve">
+    <value>Tipo de Proyecto:</value>
+  </data>
+  <data name="TechnologyCode" xml:space="preserve">
+    <value>Tecnología:</value>
+  </data>
+  <data name="WeekReportTemplate" xml:space="preserve">
+    <value>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" &gt;
+&lt;head&gt;
+    &lt;title&gt;NewWeekReporter&lt;/title&gt;
+    &lt;style type="text/css"&gt;
+        body.Sumbody{ lang:ZH-CN ;link:blue;vlink:purple;text-justify-trim:punctuation;}
+        div.Section1{page:Section1;}
+        .MsoNormal{margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:"Calibri","sans-serif";}
+        #RowWord{lang:EN-US;font-size:11.0pt;}
+        #RowWord1{lang:EN-US;font-size:11.0pt;line-height:120%;}
+        #Table1-2 td{border:solid black 1.0pt;background:#DAEEF3;padding:0cm 5.4pt 0cm 5.4pt;width:494pt;valign:top;}
+        .ShortTd{border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt;valign:top;background:#DAEEF3;}
+        .LongTd{border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height: 15.75pt;valign:top;background: white;font-size:10.5pt;font-family:"Calibri","sans-serif";}
+        .MiddleTd{border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height: 2.4pt;valign:top;background:#B8CCE4;}
+        .ImpTd{border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt;valign:top;background:#92D050;}
+        .style1 {
+            width: 494pt;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+    &lt;body class="Sumbody"&gt;
+        &lt;div class="Section1"&gt;
+            &lt;div&gt;
+            &lt;p class="MsoNormal"&gt;&lt;span id="RowWord"&gt;Dear $CustomerName$,&lt;span&gt;&lt;/p&gt;
+            &lt;p class="MsoNormal"&gt;&amp;nbsp;&lt;/p&gt;
+            &lt;p class="MsoNormal"&gt;&lt;span id="RowWord"&gt;Hope everything is going well with you.&lt;/span&gt;&lt;/p&gt;
+            &lt;p class="MsoNormal"&gt;&amp;nbsp;&lt;/p&gt;
+            &lt;p class="MsoNormal"&gt;&lt;span id="RowWord"&gt;As this is the end of this week, I’d like to summarize our work of this week.&lt;/span&gt;&lt;/p&gt;
+            &lt;p class="MsoNormal"&gt;&amp;nbsp;&lt;/p&gt;
+            &lt;p class="MsoNormal"&gt;&lt;span id="RowWord"&gt;This week, we have finished these things:&lt;/span&gt;&lt;/p&gt;
+           &lt;/div&gt;
+            &lt;table id="Table1-2"  style='border-collapse:collapse'&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;
+                        &lt;p class=MsoNormal style='margin-bottom:10.0pt;line-height:120%; text-align:center;';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;Tasks of this week:&lt;/span&gt;&lt;/b&gt;
+                     &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;&lt;td style="background-color: white" class="MsoNormal"&gt;$ThisWeekTask$&lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;div&gt;
+                &lt;p class="MsoNormal"&gt;&amp;nbsp;&lt;/p&gt;
+                &lt;p class="MsoNormal"&gt;&lt;span id="RowWord"&gt;Next week, we plan to work on these things:&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;table id="Table1-2"  style='border-collapse:collapse'&gt;
+                &lt;tr&gt;
+                    &lt;td class="style1"&gt;
+                        &lt;p class=MsoNormal style='margin-bottom:10.0pt;line-height:120%; text-align:center;'&gt;&lt;b&gt;&lt;span id="RowWord1";&gt;Tasks of next week&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;&lt;td style="background-color: white" class="MsoNormal"&gt;$NextWeekTask$&lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;div&gt;
+                &lt;p class="MsoNormal"&gt;&amp;nbsp;&lt;/p&gt;
+                &lt;p class="MsoNormal"&gt;&lt;span id="RowWord"&gt;And my comments for this week’s progress and quality are:&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;table style='width:488pt; border-collapse:collapse'&gt;
+                &lt;tr style='height:15.75pt'&gt;
+                    &lt;td class="ShortTd"&gt;
+                        &lt;p class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span id="RowWord1"&gt;Project&amp;nbsp;Name&lt;/p&gt;&lt;b&gt;&lt;/span&gt;
+                    &lt;/td&gt;
+                    &lt;td  nowrap colspan="4" valign="top" class="LongTd"&gt;
+                        $ProjectName$ 
+                    &lt;/td&gt;
+                &lt;/tr&gt;   
+                &lt;tr style='height:26.25pt'&gt;
+                    &lt;td class="ShortTd"&gt;
+                        &lt;p class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span id="RowWord1"&gt;Long-term&amp;nbsp;Goal&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td nowrap colspan="4" valign="top" class="LongTd"&gt;
+                        $LongTermGoal$ 
+                    &lt;/td&gt;
+                &lt;/tr&gt; 
+                &lt;tr style='height:15.75pt'&gt;
+                    &lt;td rowspan="2" class="ShortTd"&gt;
+                        &lt;p class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span id="RowWord1"&gt;Short-term Goal&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td nowrap colspan="4" valign="top" class="LongTd"&gt;
+                        $ShortTermGoal$
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class="ShortTd" style="background: #DBE5F1";&gt;
+                        &lt;p class="MsoNormal" style='margin-bottom:10.0pt';&gt;&lt;b&gt;&lt;span id="Span1"&gt;Start Date&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td valign="top" class="LongTd"&gt;$StartDate$&lt;/td&gt;
+                    &lt;td class="ShortTd" style="background: #DBE5F1";&gt;
+                        &lt;p class="MsoNormal" style='margin-bottom:10.0pt';&gt;&lt;b&gt;&lt;span id="RowWord"&gt;Deadline&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td valign="top" class="LongTd"&gt;$DeadLine$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td rowspan="3" class="ShortTd"&gt;
+                        &lt;p class="MsoNormal" style='margin-bottom:10.0pt;mso-line-height-alt:2.4pt'&gt;&lt;b&gt;&lt;span id="RowWord"&gt;Data&amp;nbsp;Analysis&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="MiddleTd" colspan="2"&gt;
+                        &lt;p class="MsoNormal" style='margin-bottom:10.0pt;mso-line-height-alt:2.4pt'&gt;&lt;b&gt;&lt;span id="RowWord"&gt;Remaining&amp;nbsp;Workload (man-day)&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="MiddleTd" colspan="2"&gt;
+                        &lt;p class="MsoNormal" style='margin-bottom:10.0pt;mso-line-height-alt:2.4pt'&gt;&lt;b&gt;&lt;span id="RowWord"&gt;Available&amp;nbsp;Workload (man-day)&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class="ShortTd" style="background: #DBE5F1"&gt;
+                        &lt;p class=MsoNormal style='margin-bottom:10.0pt';&gt;&lt;b&gt;&lt;span  id="RowWord"&gt;Programming&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd"&gt;$RemainingProgramming$ &lt;/td&gt;
+                    &lt;td class="ShortTd" style="background: #DBE5F1"&gt;
+                        &lt;p class="MsoNormal" style='margin-bottom:10.0pt';&gt;&lt;b&gt;&lt;span id="RowWord"&gt;Programming&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd"&gt;$AvailableProgramming$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class="ShortTd" style="background: #DBE5F1" colspan="2"&gt;
+                        &lt;p class="MsoNormal" style='margin-bottom:10.0pt';&gt;&lt;b&gt;&lt;span id="RowWord1"&gt;Work&amp;nbsp;Amount&amp;nbsp;of&amp;nbsp;This&amp;nbsp;Week (H)&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd" colspan="2"&gt;$WorkAmountOfThisWeek$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr style='height:30.95pt'&gt;
+                    &lt;td class="ShortTd"&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord"&gt;Assessment&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord"&gt;of Progress&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd" colspan="2"&gt;$CurrentProgress$ &lt;/td&gt;
+                    &lt;td class="ShortTd" &gt;
+                        &lt;p&gt;&lt;b&gt;&lt;span&gt;Outlook&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd"&gt;$OutlookProgress$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr style='height:57.0pt'&gt;
+                    &lt;td class="ShortTd" &gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord"&gt;Assessment&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord"&gt;Criteria&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd" colspan="4"&gt;$CriteriaProgress$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr style='height:35.05pt'&gt;
+                    &lt;td class="ShortTd"&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;Assessment&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;of Quality&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd" colspan="2"&gt;$CurrentQuality$&lt;/td&gt;
+                    &lt;td class="ShortTd"&gt;&lt;p&gt;&lt;b&gt;&lt;span&gt;Outlook&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd"&gt;$OutlookQuality$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr style='height:57.0pt'&gt;
+                    &lt;td class="ShortTd" &gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;Assessment&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;Criteria&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd" colspan="4"&gt;$CriteriaProgress$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr style='height:96.95pt'&gt;
+                     &lt;td   class="ImpTd" &gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;Issues &amp; &lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;Suggestions&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd" colspan="4"&gt;$Suggestions$ &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr style='height:67.5pt'&gt;
+                     &lt;td class="ShortTd"&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;Review &lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;of&amp;nbsp;Team&amp;nbsp;Member&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd" colspan="4"&gt;$Reviews$&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;div&gt;
+                &lt;p class=MsoNormal&gt;&lt;span  id="RowWord"&gt;Please feel free to let us know if you have any question.&lt;/span&gt;&lt;/p&gt;
+                &lt;p class=MsoNormal&gt;&lt;span id="RowWord"&gt;&amp;nbsp;&lt;/span&gt;
+                &lt;!--&lt;p class=MsoNormal&gt;&lt;span  id="RowWord"&gt;Hai Feng Ma | Project Manager | Nova Software Inc. &lt;/span&gt;&lt;/p&gt;
+                &lt;p class=MsoNormal&gt;&lt;span id="RowWord"&gt;T: (+86 23) 68795169 | MSN: &lt;a href="mailto:hudawq@sina.com"&gt;ma.haifeng@msn.com&lt;/a&gt; | Skype: ningdev&lt;/span&gt;&lt;/p&gt;
+                &lt;p class=MsoNormal&gt;&lt;span  id="RowWord"&gt;&lt;a href="http://www.novasoftware.com/"&gt;www.novasoftware.com&lt;/a&gt;&lt;span&gt;&lt;span&gt;|&lt;/span&gt;&lt;b&gt;&lt;span&gt;For your success!&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;--&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="DayReportTemplate" xml:space="preserve">
+    <value>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+    &lt;meta name="Generator" content="Microsoft Word 12 (filtered medium)"&gt;
+    &lt;title&gt;DailyReport&lt;/title&gt;
+    &lt;style type="text/css"&gt;
+        h1
+        {
+            margin: 0cm;
+            text-align: justify;
+            font-family: "Calibri" , "sans-serif";
+            font-weight: normal;
+            margin-top: 1cm;
+            margin-right: 0cm;
+            margin-bottom: 5.0pt;
+            margin-left: 0cm;
+            line-height: 110%;
+            background: #F2DBDB;
+            font-size: 11.0pt;
+            color: #622423;
+        }
+        body.Show
+        {
+            margin: 0px 0px 0px  0px;
+            margin-bottom: .0001pt;
+            font-size: 11.0pt;
+            font-family: "Calibri" , "sans-serif";
+        }
+        a:link
+        {
+            mso-style-priority: 99;
+            color: blue;
+            text-decoration: underline;
+        }
+        a:visited
+        {
+            mso-style-priority: 99;
+            color: purple;
+            text-decoration: underline;
+        }
+        tr.FirstLine
+        {
+            line-height: 150%;
+            font-weight:bold;
+            border-top: solid #9BBB59 1.0pt;
+            background: #9BBB59;
+            vertical-align:top;
+            padding: 0cm 5.4pt 0cm 5.4pt;
+        }
+        tr.NormalLine
+        {
+            line-height: 150%;
+            padding: 0cm 5.4pt 0cm 5.4pt;
+            font-size: 11.0pt;
+            font-family: "Calibri" , "sans-serif";
+        }
+        td.FirstLeft
+        {
+            border-left: solid #9BBB59 1.0pt;
+            border-bottom: solid #9BBB59 1.0pt;
+            border-right: none;
+            text-align: Left;
+            vertical-align:top;
+        }
+        td.Right
+        {
+            border-left: none;
+            border-bottom: solid #9BBB59 1.0pt;
+            border-right: solid #9BBB59 1.0pt;
+            text-align: center;
+            vertical-align: top;
+        }
+        td.LineMid
+        {
+            border-left: none;
+            border-bottom: solid #9BBB59 1.0pt;
+            border-right: none;
+            text-align: center;
+            vertical-align: top;
+        }
+        td.Left
+        {
+            border-left: solid #9BBB59 1.0pt;
+            border-bottom: solid #9BBB59 1.0pt;
+            border-right: none;
+            text-align: left;
+            vertical-align: top;
+        }
+        table.Display
+        {
+            width: 100.0%;
+            border-collapse: collapse;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body lang="EN-US" class="Show"&gt;
+    &lt;p&gt;
+        Hi $CustomerName$,
+    &lt;/p&gt;
+    &lt;p&gt;
+        Wish you a good day&lt;/p&gt;
+    &lt;p&gt;
+        Following is my daily work report, please take a look and make your comments.Thank
+        you!&lt;/p&gt;
+    &lt;h1&gt;
+        &lt;i&gt;&lt;b&gt;A–Week's Tasks&lt;/b&gt;&lt;/i&gt;&lt;/h1&gt;
+    &lt;table class="Display"&gt;
+        &lt;tr class="FirstLine"&gt;
+            &lt;td width="30.42%" class="FirstLeft"&gt;
+                Tasks
+            &lt;/td&gt;
+            &lt;td width="8.38%" class="LineMid"&gt;
+                Start Date
+            &lt;/td&gt;
+            &lt;td width="8.38%" class="LineMid"&gt;
+                End Date
+            &lt;/td&gt;
+            &lt;td width="10.96%" class="LineMid"&gt;
+                Estimate progress
+            &lt;/td&gt;
+            &lt;td width="10.96%" class="LineMid"&gt;
+                Actual progress
+            &lt;/td&gt;
+            &lt;td width="30.9%" class="Right"&gt;
+                Description
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        $ThisWeekTask$
+    &lt;/table&gt;
+    &lt;h1&gt;
+        &lt;i&gt;&lt;b&gt;B–Summary&lt;/b&gt;&lt;/i&gt;&lt;/h1&gt;
+    None
+    &lt;h1&gt;
+        &lt;i&gt;&lt;b&gt;C–Today's Tasks&lt;/b&gt;&lt;/i&gt;&lt;/h1&gt;
+    &lt;table class="Display"&gt;
+        &lt;tr class="FirstLine"&gt;
+            &lt;td width="20%" class="FirstLeft"&gt;
+                Tasks
+            &lt;/td&gt;
+            &lt;td class="LineMid" style="width: 14%"&gt;
+                Estimate work amount (hrs)
+            &lt;/td&gt;
+            &lt;td class="LineMid" style="width: 14%"&gt;
+                Actually work amount (hrs)
+            &lt;/td&gt;
+            &lt;td width="13%" class="LineMid"&gt;
+                Status
+            &lt;/td&gt;
+            &lt;td width="37%" class="Right"&gt;
+                Description
+            &lt;/td&gt;
+        &lt;/tr&gt;
+       $TodayTask$
+    &lt;/table&gt;
+    &lt;h1&gt;
+        &lt;i&gt;&lt;b&gt;D–Next Plan&lt;/b&gt;&lt;/i&gt;&lt;/h1&gt;
+    &lt;table class="Display"&gt;
+        &lt;tr class="FirstLine"&gt;
+            &lt;td width="31%" class="Left"&gt;
+                Tasks
+            &lt;/td&gt;
+            &lt;td width="8%" class="LineMid"&gt;
+                Date
+            &lt;/td&gt;
+            &lt;td width="16%" class="LineMid"&gt;
+                Estimate work amount (hours)
+            &lt;/td&gt;
+            &lt;td width="29%" class="Right"&gt;
+                Description
+            &lt;/td&gt;
+        &lt;/tr&gt;
+       $NextDayTask$
+    &lt;/table&gt;
+    &lt;p&gt;
+        Please do not hesitate to let me know if you have any question.&lt;/p&gt;
+    &lt;p&gt;
+        Best Regards,&lt;/p&gt;
+    &lt;p&gt;
+        $ReportPeople$&lt;/p&gt;
+&lt;!--    &lt;p&gt;
+        Project Manager | Nova Software Inc.&lt;/p&gt;
+    &lt;p&gt;
+        T: (+86 23) 68795169 | Skype: chenjunno18 | E-mail: &lt;a href="mailto:chenj@shinetechchina.com"&gt;
+            chenj@shinetechchina.com&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;
+        &lt;a href="http://www.novasoftware.com"&gt;www.novasoftware.com&lt;/a&gt; | &lt;b&gt;For your success!&lt;/b&gt;&lt;/p&gt;--&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="IterationDateErrorMessage" xml:space="preserve">
+    <value>La duración de las iteraciones no deberían solaparse.</value>
+  </data>
+  <data name="NoTaskTip" xml:space="preserve">
+    <value>No tiene tareas.</value>
+  </data>
+  <data name="IterationDateCompareMessage" xml:space="preserve">
+    <value>La fecha de deadline debería ser superior a la fecha de inicio.</value>
+  </data>
+  <data name="OverEffortMessage" xml:space="preserve">
+    <value>El esfuerzo estimado no debería ser superior al total de horas trabajadas hasta el momento.</value>
+  </data>
+  <data name="NoNewTaskMessage" xml:space="preserve">
+    <value>No tiene tareas hoy.</value>
+  </data>
+  <data name="BeginDate" xml:space="preserve">
+    <value>Fecha Inicio</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>Fecha Fin</value>
+  </data>
+  <data name="IterationName" xml:space="preserve">
+    <value>Nombre de Iteración.</value>
+  </data>
+  <data name="ProjectName" xml:space="preserve">
+    <value>Nombre de Proyecto</value>
+  </data>
+  <data name="RecordPerson" xml:space="preserve">
+    <value>Registro de Persona</value>
+  </data>
+  <data name="DateRang" xml:space="preserve">
+    <value>Rango de Fecha</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="WorkUnit" xml:space="preserve">
+    <value>Unidad de Trabajo</value>
+  </data>
+  <data name="CurrentDate" xml:space="preserve">
+    <value>Fecha Actual</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completado</value>
+  </data>
+  <data name="NotStarted" xml:space="preserve">
+    <value>No empezado</value>
+  </data>
+  <data name="ProjectManager" xml:space="preserve">
+    <value>Gestión de Proyecto</value>
+  </data>
+  <data name="SumActualInputRate" xml:space="preserve">
+    <value>Tasa de Entrada</value>
+  </data>
+  <data name="SumEffortRate" xml:space="preserve">
+    <value>Tasa de Esfuerzo</value>
+  </data>
+  <data name="ErrorDirection" xml:space="preserve">
+    <value>Estado avanzado no debería arrastrarse a Estado Inicial.</value>
+  </data>
+  <data name="OwnerPerson" xml:space="preserve">
+    <value>Vendedor</value>
+  </data>
+  <data name="TechnologyPerson" xml:space="preserve">
+    <value>Técnico</value>
+  </data>
+  <data name="Unassigned" xml:space="preserve">
+    <value>No asignado</value>
+  </data>
+  <data name="IdealRemainTime" xml:space="preserve">
+    <value>Ideal</value>
+  </data>
+  <data name="ToDoRemainTime" xml:space="preserve">
+    <value>ToDo</value>
+  </data>
+  <data name="btnCloseCaption" xml:space="preserve">
+    <value>Cerrar</value>
+    <comment>????</comment>
+  </data>
+  <data name="btnDetailCaption" xml:space="preserve">
+    <value>Detalles</value>
+    <comment>????</comment>
+  </data>
+  <data name="btnSendExInfoCaption" xml:space="preserve">
+    <value>SendExceptionInfo</value>
+    <comment>????</comment>
+  </data>
+  <data name="frmExceptionTitle" xml:space="preserve">
+    <value>ExceptionInfo</value>
+    <comment>????</comment>
+  </data>
+  <data name="frmException_suggestion" xml:space="preserve">
+    <value>Le recomendamos que envíe la información de la excepción al grupo de trabajo de Katrin.</value>
+    <comment>????</comment>
+  </data>
+  <data name="frmException_Text" xml:space="preserve">
+    <value>El sistema encontró una excepción:{0};</value>
+    <comment>????</comment>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirmar</value>
+    <comment>????</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+    <comment>????</comment>
+  </data>
+  <data name="Warn" xml:space="preserve">
+    <value>alerta</value>
+    <comment>????</comment>
+  </data>
+  <data name="Fail" xml:space="preserve">
+    <value>Fallo</value>
+    <comment>opportunity</comment>
+  </data>
+  <data name="Recyle" xml:space="preserve">
+    <value>Reciclar</value>
+    <comment>opportunity</comment>
+  </data>
+  <data name="ProjectModule" xml:space="preserve">
+    <value>Módulo de Proyecto</value>
+  </data>
+  <data name="AddModule" xml:space="preserve">
+    <value>Añadir Módulo</value>
+  </data>
+  <data name="ProjectChart" xml:space="preserve">
+    <value>Gráfica de Proyecto</value>
+  </data>
+  <data name="ProjectTaskChart" xml:space="preserve">
+    <value>Grafico de Tareas de Proyecto</value>
+  </data>
+  <data name="ConfirmWon" xml:space="preserve">
+    <value>Si selecciona el estado Ganado para la Oportunidad seleccionada, no podrá reciclarlo. ¿Desea continuar?</value>
+    <comment>opportunity</comment>
+  </data>
+  <data name="Global.QuestionText" xml:space="preserve">
+    <value>Katrin</value>
+  </data>
+  <data name="NotificationRecipient" xml:space="preserve">
+    <value>Notificación</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="ActualInputIsZero" xml:space="preserve">
+    <value>El valor no puede ser 0</value>
+  </data>
+  <data name="ActualInput" xml:space="preserve">
+    <value>Input</value>
+  </data>
+  <data name="ActualWorkHours" xml:space="preserve">
+    <value>Horas de Trabajo Reales</value>
+  </data>
+  <data name="EvaluateExactlyRate" xml:space="preserve">
+    <value>Evaluar Tasa</value>
+  </data>
+  <data name="InputEffortRate" xml:space="preserve">
+    <value>Tasa de Esfuerzo</value>
+  </data>
+  <data name="QuoteWorkHours" xml:space="preserve">
+    <value>Tasa de Horas trabajadas</value>
+  </data>
+  <data name="MemberActualInput" xml:space="preserve">
+    <value>Input</value>
+  </data>
+  <data name="MemberActualWorkHours" xml:space="preserve">
+    <value>Horas Reales Trabajadas</value>
+  </data>
+  <data name="MemberEffort" xml:space="preserve">
+    <value>Esfuerzo</value>
+  </data>
+  <data name="MemberEvaluateExactlyRate" xml:space="preserve">
+    <value>Evaluar Tasa</value>
+  </data>
+  <data name="MemberInputEffortRate" xml:space="preserve">
+    <value>Tasa de Esfuerzo</value>
+  </data>
+  <data name="MemberQuoteWorkHours" xml:space="preserve">
+    <value>Horas de Trabajo de Citas</value>
+  </data>
+  <data name="EliminateWeekend" xml:space="preserve">
+    <value>Eliminar Fin de Semana</value>
+  </data>
+  <data name="AlertSave" xml:space="preserve">
+    <value>¿Desea guardar los cambios?</value>
+  </data>
+  <data name="ActiveCustomersDidn'tUpdateInAMonth" xml:space="preserve">
+    <value>Clientes activos no actualizados un mes</value>
+  </data>
+  <data name="CleanAll" xml:space="preserve">
+    <value>Limpiar</value>
+  </data>
+  <data name="ActiveLeadsDidn'tUpdateInTwoWeeks" xml:space="preserve">
+    <value>Oportunidades activas no actualizadas en dos semanas</value>
+  </data>
+  <data name="ActiveOpportuniesDidn'tUpdateInAmonth" xml:space="preserve">
+    <value>Oportunidades activas no actualizadas en un mes</value>
+  </data>
+  <data name="ClearNotificationConfirm" xml:space="preserve">
+    <value>El sistema borrará la notificación. Está acción no puede deshacerse. Acepte para continuar.</value>
+  </data>
+  <data name="BadDebts" xml:space="preserve">
+    <value>Deudas Incobrables</value>
+  </data>
+  <data name="BadSatisfaction" xml:space="preserve">
+    <value>Mala Satisfacción</value>
+  </data>
+  <data name="ContractExpiresOnNextWeek" xml:space="preserve">
+    <value>El contrato expira la semana que viene</value>
+  </data>
+  <data name="Dead" xml:space="preserve">
+    <value>Oportunidad Perdida</value>
+  </data>
+  <data name="DeadlineEarlierThanNextWeek" xml:space="preserve">
+    <value>Deadline en menos de una semana</value>
+  </data>
+  <data name="GreatEstimatedValue" xml:space="preserve">
+    <value>Valor Estimado</value>
+  </data>
+  <data name="HighPriority" xml:space="preserve">
+    <value>Prioridad Elevado</value>
+  </data>
+  <data name="InArrear" xml:space="preserve">
+    <value>Atrasado</value>
+  </data>
+  <data name="QuoteExpiresOnNextWeek" xml:space="preserve">
+    <value>La cita activa expira la semana que viene.</value>
+  </data>
+  <data name="SentMoreThanHalfAMonthAndTheStatuStillBeSent" xml:space="preserve">
+    <value>Se envío hace más de un mes y el estado sigue siendo Enviado.</value>
+  </data>
+  <data name="TotalAmountGreaterThanTenThousand" xml:space="preserve">
+    <value>Importe superior a 10.000€</value>
+  </data>
+  <data name="NotReaded" xml:space="preserve">
+    <value>No relacionado</value>
+  </data>
+  <data name="Readed" xml:space="preserve">
+    <value>Leído</value>
+  </data>
+  <data name="colNotificationStatus" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="SetReaded" xml:space="preserve">
+    <value>Marcar como Leído</value>
+  </data>
+  <data name="SaleReport" xml:space="preserve">
+    <value>Reporte de Ventas</value>
+  </data>
+  <data name="Dimension" xml:space="preserve">
+    <value>Dimensión</value>
+  </data>
+  <data name="UnitType" xml:space="preserve">
+    <value>Periodo de Tiempo</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Mes</value>
+  </data>
+  <data name="Season" xml:space="preserve">
+    <value>Estación</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Año</value>
+  </data>
+  <data name="DepartMentName" xml:space="preserve">
+    <value>DepartaMento</value>
+  </data>
+  <data name="SalesName" xml:space="preserve">
+    <value>Ventas</value>
+  </data>
+  <data name="TechnologyName" xml:space="preserve">
+    <value>Tecnología</value>
+  </data>
+  <data name="ClosureRate" xml:space="preserve">
+    <value>Tasa de Cierre</value>
+  </data>
+  <data name="ContractAmount" xml:space="preserve">
+    <value>Montante del Contrato</value>
+  </data>
+  <data name="ContractNumber" xml:space="preserve">
+    <value>Número de Contrato</value>
+  </data>
+  <data name="FirstEmailCount" xml:space="preserve">
+    <value>Cuenta E-mail de Respuesta.</value>
+  </data>
+  <data name="LeadNumber" xml:space="preserve">
+    <value>Número de Oferta</value>
+  </data>
+  <data name="NumberIntoContract" xml:space="preserve">
+    <value>Número en Contrato</value>
+  </data>
+  <data name="NumberIntoOpportunity" xml:space="preserve">
+    <value>Número en Oportunidad</value>
+  </data>
+  <data name="NumberOfTheDead" xml:space="preserve">
+    <value>Número de la Muerte</value>
+  </data>
+  <data name="OpportunityNumber" xml:space="preserve">
+    <value>Número de Oportunidad</value>
+  </data>
+  <data name="QuoteSuccessRate" xml:space="preserve">
+    <value>Tasa de Éxito de Citas</value>
+  </data>
+  <data name="RateIntoOpportunity" xml:space="preserve">
+    <value>Tasa a Oportunidad</value>
+  </data>
+  <data name="RateOfOldCustomer" xml:space="preserve">
+    <value>Tasa de Cliente Antiguo</value>
+  </data>
+  <data name="ResponseRate" xml:space="preserve">
+    <value>Tasa de Respuesta</value>
+  </data>
+  <data name="UnitName" xml:space="preserve">
+    <value>Nombre de Unidad</value>
+  </data>
+  <data name="ActiveCustomersDidn'tUpdateInAWeek" xml:space="preserve">
+    <value>Clientes activos no actualizadas en una semana</value>
+  </data>
+  <data name="UserExisted" xml:space="preserve">
+    <value>No puede usar este nombre. Se encuentra en uso o pertenece a un usuario eliminado.</value>
+  </data>
+  <data name="beginMonth" xml:space="preserve">
+    <value>Mes Inicio</value>
+  </data>
+  <data name="beginSeasion" xml:space="preserve">
+    <value>Estación Inicio</value>
+  </data>
+  <data name="beginYear" xml:space="preserve">
+    <value>Año Inicio</value>
+  </data>
+  <data name="ChartOperator" xml:space="preserve">
+    <value>Chart Operator</value>
+  </data>
+  <data name="endMonth" xml:space="preserve">
+    <value>Mes Final</value>
+  </data>
+  <data name="endSeasion" xml:space="preserve">
+    <value>Estación Final</value>
+  </data>
+  <data name="endYear" xml:space="preserve">
+    <value>Año Final</value>
+  </data>
+  <data name="AutoColumn" xml:space="preserve">
+    <value>Auto Columna</value>
+  </data>
+  <data name="DiagramColumn" xml:space="preserve">
+    <value>Diagrama de Columna</value>
+  </data>
+  <data name="TargetName" xml:space="preserve">
+    <value>Objetivo</value>
+  </data>
+  <data name="BarDiagram" xml:space="preserve">
+    <value>Diagrama de Barras</value>
+  </data>
+  <data name="ChartType" xml:space="preserve">
+    <value>Chart Type</value>
+  </data>
+  <data name="LineDiagram" xml:space="preserve">
+    <value>Diagrama de Línea</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>Tasa</value>
+  </data>
+  <data name="UpdateDetailEntity" xml:space="preserve">
+    <value>Los datos de esta ventana han sido modificados externamente. Los cambios no guardados se perderán.</value>
+  </data>
+  <data name="EmailExceptionTip" xml:space="preserve">
+    <value>Outlook no está abierto o no se ha obtenido autorización de acceso a la dirección de correo.</value>
+  </data>
+  <data name="DeleteProjectIteration" xml:space="preserve">
+    <value>Borrar Iteración de Proyecto</value>
+  </data>
+  <data name="DeleteProjectModule" xml:space="preserve">
+    <value>Borrar </value>
+  </data>
+  <data name="DeleteProjectTask" xml:space="preserve">
+    <value>Borrar Tarea de Proyecto</value>
+  </data>
+  <data name="DeleteProjectVersion" xml:space="preserve">
+    <value>Borrar Versión de Proyecto</value>
+  </data>
+  <data name="EditProjectIteration" xml:space="preserve">
+    <value>Editar Iteración de Proyecto</value>
+  </data>
+  <data name="EditProjectModule" xml:space="preserve">
+    <value>Editar Módulo de Proyecto</value>
+  </data>
+  <data name="EditProjectTask" xml:space="preserve">
+    <value>Editar Tarea de Proyecto</value>
+  </data>
+  <data name="EditProjectVersion" xml:space="preserve">
+    <value>Editar Versión de Proyecto</value>
+  </data>
+  <data name="PieDiagram" xml:space="preserve">
+    <value>Diagrama de Tarta</value>
+  </data>
+  <data name="sortName" xml:space="preserve">
+    <value>Ordenar</value>
+  </data>
+  <data name="Iteration" xml:space="preserve">
+    <value>Iteración</value>
+  </data>
+  <data name="Member" xml:space="preserve">
+    <value>Miembro</value>
+  </data>
+  <data name="SplitProjectTask" xml:space="preserve">
+    <value>Dividir Tarea</value>
+  </data>
+  <data name="Manual" xml:space="preserve">
+    <value>Control Manual</value>
+  </data>
+  <data name="RemainderTime" xml:space="preserve">
+    <value>Recordatorio</value>
+  </data>
+  <data name="SplitRate" xml:space="preserve">
+    <value>Dividir por Tasa</value>
+  </data>
+  <data name="SplitTaskTip" xml:space="preserve">
+    <value>El esfuerzo estimado  no puede superar las horas actuales de trabajo y la entrada actual no debería superar la bolsa de horas.</value>
+  </data>
+  <data name="Appointment" xml:space="preserve">
+    <value>Reunión en Sala de Reuniones</value>
+  </data>
+  <data name="DayView" xml:space="preserve">
+    <value>Día</value>
+  </data>
+  <data name="MonthView" xml:space="preserve">
+    <value>Mes</value>
+  </data>
+  <data name="WorkWeekView" xml:space="preserve">
+    <value>Trabajo Semanal</value>
+  </data>
+  <data name="GotoToday" xml:space="preserve">
+    <value>Ir a Hoy</value>
+  </data>
+  <data name="GroupBy" xml:space="preserve">
+    <value>Agrupar por</value>
+  </data>
+  <data name="GroupByDate" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="GroupByNone" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="GroupByResource" xml:space="preserve">
+    <value>Sala de Reuniones</value>
+  </data>
+  <data name="Navigate" xml:space="preserve">
+    <value>Navegar</value>
+  </data>
+  <data name="sysMsg" xml:space="preserve">
+    <value>Mensaje del Sistema</value>
+  </data>
+  <data name="GiveTaskToIteration" xml:space="preserve">
+    <value>Añadir Tarea en la Iteración</value>
+    <comment>ProjectTask</comment>
+  </data>
+  <data name="GiveTaskToMember" xml:space="preserve">
+    <value>Añadir Tarea a un Miembro</value>
+    <comment>ProjectTask</comment>
+  </data>
+  <data name="DoLanguageSetting" xml:space="preserve">
+    <value>La configuración del idioma seleccionado se aplicará tras el reinicio de la aplicaión.</value>
+    <comment>MainForm</comment>
+  </data>
+  <data name="en-US" xml:space="preserve">
+    <value>Inglés</value>
+    <comment>MainForm</comment>
+  </data>
+  <data name="languageSetting" xml:space="preserve">
+    <value>Cambiar Idioma</value>
+    <comment>MainForm</comment>
+  </data>
+  <data name="zh-CN" xml:space="preserve">
+    <value>Chino</value>
+    <comment>MainForm</comment>
+  </data>
+  <data name="AppointmentConflict" xml:space="preserve">
+    <value>La sala de reunión está ocupada por otra reunión</value>
+  </data>
+  <data name="SentMoreThanOneDayAndTheStatuStillBePlan" xml:space="preserve">
+    <value>Se envío hace no más de un día y el estado sigue siendo Planificado.</value>
+  </data>
+  <data name="DataDeletedTip" xml:space="preserve">
+    <value>Este objeto de relación ha sido eliminado.</value>
+  </data>
+  <data name="es-ES" xml:space="preserve">
+    <value>Español</value>
+    <comment>MainForm</comment>
+  </data>
+</root>

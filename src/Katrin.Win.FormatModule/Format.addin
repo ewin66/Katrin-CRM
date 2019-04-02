@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.FormatModule.dll" />
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+
+  <Path name = "/FormatView/Format">
+    <MenuItem id = "FormatGroup" type = "Group" label = "${res:Format}" builderid ="RibbonPageGroupBuilder">
+      <MenuItem id = "Format" type = "Item" cmdId="Format"/>
+    </MenuItem>
+  </Path>
+
+  <Path name ="/Controllers">
+    <Controller id = "Format" class = "Katrin.Win.FormatModule.FormatCondition.FormatConditionController"/>
+  </Path>
+
+  <Path name ="/Views">
+    <View id = "DefaultFormatView" class = "Katrin.Win.FormatModule.FormatCondition.FormatConditionList"/>
+  </Path>
+
+  <Path name ="/Workbench/Service">
+    <Class id = "FormatService" class = "Katrin.Win.FormatModule.FormatService" />
+  </Path>
+
+  <Path name ="/Format/Commands">
+    <MenuItem id = "Format" source ="Custom" type = "Item" 
+              imageName="Format" label = "${res:Format}" 
+              class ="Katrin].Win.FormatModule.Commands.FormatCommand"  
+              builderid ="BarButtonItemBuilder"/>
+  </Path>
+</AddIn>

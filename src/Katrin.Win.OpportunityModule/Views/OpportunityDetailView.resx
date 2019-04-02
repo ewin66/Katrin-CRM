@@ -1,0 +1,2114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ItemForOriginatingLeadId.Text" xml:space="preserve">
+    <value>Originating Lead</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="textEdit2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 20</value>
+  </data>
+  <data name="estimatedWorkAmountItem.Text" xml:space="preserve">
+    <value>Estimated Work Amount</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 191</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="StepNameTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="technologyItem.Text" xml:space="preserve">
+    <value>Technology</value>
+  </data>
+  <data name="EntityDataLayoutControl.Text" xml:space="preserve">
+    <value>dataLayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;StatusCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CustomerIdSearchLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit4.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="CloseProbabilitySpinEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForTransacitionCurrencyId.Name" xml:space="preserve">
+    <value>ItemForTransacitionCurrencyId</value>
+  </data>
+  <data name="StepNameTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="technologyItem.CustomizationFormText" xml:space="preserve">
+    <value>Technology</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.VistaTimeProperties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;textEdit4.Name" xml:space="preserve">
+    <value>textEdit4</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForStepName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForOwnerId.CustomizationFormText" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="PriorityCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;DepartmentLookUpEdit.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EstimatedValueSpinEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="EstimatedValueSpinEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForPriorityCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EstimatedValueSpinEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;ItemForEstimatedCloseDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ValidationProvider.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit3.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="OpportunityTypeCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 247</value>
+  </data>
+  <data name="&gt;&gt;SalesStageCodeLookUpEdit.Name" xml:space="preserve">
+    <value>SalesStageCodeLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;OpportunityRatingCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v12.1" name="DevExpress.Utils.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="technologyCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.VistaTimeProperties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="StepNameTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 20</value>
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="expectedStartOnDateEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="SalesStageCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.VistaTimeProperties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OriginatingLeadIdSearchLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="technicianIdSearchLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PriorityCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 247</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 95</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForOpportunityTypeCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PriorityCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit1.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ItemForEstimatedValue.Text" xml:space="preserve">
+    <value>Estimated Revenue</value>
+  </data>
+  <data name="&gt;&gt;ItemForModifiedBy.Name" xml:space="preserve">
+    <value>ItemForModifiedBy</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StepNameTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="OpportunityRatingCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 95</value>
+  </data>
+  <data name="&gt;&gt;technologyCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ValidationProviderRecommend.Name" xml:space="preserve">
+    <value>ValidationProviderRecommend</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.VistaTimeProperties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="managementLayoutControlGroup.CustomizationFormText" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="&gt;&gt;StepNameTextEdit.Name" xml:space="preserve">
+    <value>StepNameTextEdit</value>
+  </data>
+  <data name="&gt;&gt;gridView3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v12.1" name="DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="textEdit4.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;searchLookUpEdit1View.Name" xml:space="preserve">
+    <value>searchLookUpEdit1View</value>
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;managementLayoutControlGroup.Name" xml:space="preserve">
+    <value>managementLayoutControlGroup</value>
+  </data>
+  <data name="ItemForEstimatedValue.CustomizationFormText" xml:space="preserve">
+    <value>Estimated Revenue</value>
+  </data>
+  <data name="&gt;&gt;estimatedWorkAmountSpinEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;ItemForDescription.Name" xml:space="preserve">
+    <value>ItemForDescription</value>
+  </data>
+  <data name="EstimatedValueSpinEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="topicTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;OriginatingLeadIdSearchLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchLookUpEdit, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SalesStageCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;lcgGeneral.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.VistaTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;PriorityCodeLookUpEdit.Name" xml:space="preserve">
+    <value>PriorityCodeLookUpEdit</value>
+  </data>
+  <data name="ItemForCreatedBy.CustomizationFormText" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value>[EditValue is null]</value>
+  </data>
+  <data name="&gt;&gt;CustomerIdSearchLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchLookUpEdit, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="DescriptionTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="projectTypeCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit3.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 47</value>
+  </data>
+  <data name="resource.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v12.1">
+    <value>None</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;technologyItem.Name" xml:space="preserve">
+    <value>technologyItem</value>
+  </data>
+  <data name="ItemForStepName.Text" xml:space="preserve">
+    <value>Next Step</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 20</value>
+  </data>
+  <data name="CloseProbabilitySpinEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.VistaTimeProperties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="DepartmentLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="technicianIdSearchLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 20</value>
+  </data>
+  <data name="ItemForPriorityCode.Text" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 20</value>
+  </data>
+  <data name="&gt;&gt;CloseProbabilitySpinEdit.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;DescriptionTextEdit.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>DateTime</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lcgGeneral.Name" xml:space="preserve">
+    <value>lcgGeneral</value>
+  </data>
+  <data name="textEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;TransacitionCurrencyIdLookUpEdit.Name" xml:space="preserve">
+    <value>TransacitionCurrencyIdLookUpEdit</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;expectedStartOnDateEdit.Type" xml:space="preserve">
+    <value>Katrin.AppFramework.WinForms.Controls.DropDownDateEdit, Katrin.AppFramework.WinForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="ItemForStepName.CustomizationFormText" xml:space="preserve">
+    <value>Next Step</value>
+  </data>
+  <data name="&gt;&gt;topicTextEdit.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;DescriptionTextEdit.Name" xml:space="preserve">
+    <value>DescriptionTextEdit</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.VistaTimeProperties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit4.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;OpportunityTypeCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="DepartmentLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="DescriptionTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.VistaTimeProperties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForSalesStageCode.Name" xml:space="preserve">
+    <value>ItemForSalesStageCode</value>
+  </data>
+  <data name="StepNameTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;PriorityCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OpportunityTypeCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="textEdit1.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="latestFeedbackOnItem.Text" xml:space="preserve">
+    <value>Latest Feed Back On</value>
+  </data>
+  <data name="EstimatedValueSpinEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 167</value>
+  </data>
+  <data name="DepartmentLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;textEdit2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="tabbedControlGroup1.Text" xml:space="preserve">
+    <value>tabbedControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;ItemForDepartment.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ValidationProvider.Name" xml:space="preserve">
+    <value>ValidationProvider</value>
+  </data>
+  <data name="managementLayoutControlGroup.Text" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.Name" xml:space="preserve">
+    <value>textEdit2</value>
+  </data>
+  <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 71</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EstimatedValueSpinEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="emptySpaceItem1.Text" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.VistaTimeProperties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForSalesStageCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 14</value>
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;searchLookUpEdit1View.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EstimatedCloseDateTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="ItemForTransacitionCurrencyId.CustomizationFormText" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="DescriptionTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ItemForDescription.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="&gt;&gt;latestFeedBackOnDateEdit.Name" xml:space="preserve">
+    <value>latestFeedBackOnDateEdit</value>
+  </data>
+  <data name="OriginatingLeadIdSearchLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="projectTypeItem.CustomizationFormText" xml:space="preserve">
+    <value>Project Type</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.VistaTimeProperties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OpportunityRatingCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForTransacitionCurrencyId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="technicianIdSearchLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;ItemForOwnerId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.VistaTimeProperties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StepNameTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TransacitionCurrencyIdLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CloseProbabilitySpinEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 191</value>
+  </data>
+  <data name="technicianIdSearchLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Katrin.Win.DetailViewModule.DetailView, Katrin.Win.BaseViewModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;EstimatedCloseDateTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="lcgGeneral.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;managementLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit4.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.VistaTimeProperties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DepartmentLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 47</value>
+  </data>
+  <data name="&gt;&gt;OpportunityRatingCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;EstimatedValueSpinEdit.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;latestFeedbackOnItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ItemForCloseProbability.Text" xml:space="preserve">
+    <value>Probability(%)</value>
+  </data>
+  <data name="&gt;&gt;ItemForEstimatedCloseDate.Name" xml:space="preserve">
+    <value>ItemForEstimatedCloseDate</value>
+  </data>
+  <data name="expectedStartOnItem.CustomizationFormText" xml:space="preserve">
+    <value>Expected Start On</value>
+  </data>
+  <data name="&gt;&gt;OpportunityTypeCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="StepNameTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ItemForName.Text" xml:space="preserve">
+    <value>Topic</value>
+  </data>
+  <data name="PriorityCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;technologyItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit2.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="StepNameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 271</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForCreatedBy.Text" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="technologyCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="PriorityCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForModifiedOn.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.VistaTimeProperties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CloseProbabilitySpinEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>P0</value>
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CloseProbabilitySpinEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="lcgGeneral.CustomizationFormText" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.VistaTimeProperties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EstimatedValueSpinEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="EstimatedValueSpinEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="StepNameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 20</value>
+  </data>
+  <data name="OpportunityRatingCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 20</value>
+  </data>
+  <data name="ItemForModifiedOn.CustomizationFormText" xml:space="preserve">
+    <value>Modified On</value>
+  </data>
+  <data name="OpportunityRatingCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 20</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;OpportunityTypeCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.Name" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;StepNameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="RootLayoutControlGroup.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;ItemForCreatedBy.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;OwnerIdSearchLookUpEdit.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="DepartmentLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CloseProbabilitySpinEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForModifiedOn.Name" xml:space="preserve">
+    <value>ItemForModifiedOn</value>
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.VistaTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.VistaTimeProperties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;RootLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit3.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="projectTypeCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;technicianItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PriorityCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OpportunityRatingCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="DepartmentLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CloseProbabilitySpinEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DescriptionTextEdit.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 86</value>
+  </data>
+  <data name="CloseProbabilitySpinEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OpportunityTypeCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.VistaTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="&gt;&gt;estimatedWorkAmountSpinEdit.Name" xml:space="preserve">
+    <value>estimatedWorkAmountSpinEdit</value>
+  </data>
+  <data name="CloseProbabilitySpinEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 20</value>
+  </data>
+  <data name="&gt;&gt;projectTypeCodeLookUpEdit.Name" xml:space="preserve">
+    <value>projectTypeCodeLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;OwnerIdSearchLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="textEdit4.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CustomerIdSearchLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="EstimatedValueSpinEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="projectTypeCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="topicTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SalesStageCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>Numeric</value>
+  </data>
+  <data name="SalesStageCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;StepNameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;StatusCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="technicianIdSearchLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 95</value>
+  </data>
+  <data name="DescriptionTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>682, 86</value>
+  </data>
+  <data name="projectTypeCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 71</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 20</value>
+  </data>
+  <data name="&gt;&gt;estimatedWorkAmountItem.Name" xml:space="preserve">
+    <value>estimatedWorkAmountItem</value>
+  </data>
+  <data name="SalesStageCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 20</value>
+  </data>
+  <data name="&gt;&gt;PriorityCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="technicianIdSearchLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;DepartmentLookUpEdit.Name" xml:space="preserve">
+    <value>DepartmentLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
+    <value>gridView1</value>
+  </data>
+  <data name="&gt;&gt;EstimatedValueSpinEdit.Name" xml:space="preserve">
+    <value>EstimatedValueSpinEdit</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="topicTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OpportunityRatingCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="OriginatingLeadIdSearchLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 143</value>
+  </data>
+  <data name="ItemForCreatedOn.Text" xml:space="preserve">
+    <value>Created On</value>
+  </data>
+  <data name="&gt;&gt;projectTypeCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgDetails.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="CloseProbabilitySpinEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>Numeric</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CloseProbabilitySpinEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForDepartment.Name" xml:space="preserve">
+    <value>ItemForDepartment</value>
+  </data>
+  <data name="ItemForStatusCode.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="topicTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>706, 20</value>
+  </data>
+  <data name="&gt;&gt;DepartmentLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit3.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit1.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForOriginatingLeadId.CustomizationFormText" xml:space="preserve">
+    <value>Originating Lead</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.VistaTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>DateTime</value>
+  </data>
+  <data name="SalesStageCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;expectedStartOnDateEdit.Name" xml:space="preserve">
+    <value>expectedStartOnDateEdit</value>
+  </data>
+  <data name="EstimatedValueSpinEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>Numeric</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForCloseProbability.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForSalesStageCode.Text" xml:space="preserve">
+    <value>Sales Stage</value>
+  </data>
+  <data name="ItemForCloseProbability.CustomizationFormText" xml:space="preserve">
+    <value>Probability(%)</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ItemForModifiedBy.CustomizationFormText" xml:space="preserve">
+    <value>Modified By</value>
+  </data>
+  <data name="textEdit4.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;DescriptionTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 143</value>
+  </data>
+  <data name="topicTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;estimatedWorkAmountSpinEdit.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="textEdit2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 71</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="technologyCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="projectTypeCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DescriptionTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="expectedStartOnItem.Text" xml:space="preserve">
+    <value>Expected Start On</value>
+  </data>
+  <data name="estimatedWorkAmountItem.CustomizationFormText" xml:space="preserve">
+    <value>Estimated Work Amount</value>
+  </data>
+  <data name="textEdit4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 95</value>
+  </data>
+  <data name="textEdit2.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 20</value>
+  </data>
+  <data name="EstimatedValueSpinEdit.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;projectTypeCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="StepNameTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EstimatedValueSpinEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="topicTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;projectTypeItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForStatusCode.Name" xml:space="preserve">
+    <value>ItemForStatusCode</value>
+  </data>
+  <data name="ItemForModifiedOn.Text" xml:space="preserve">
+    <value>Modified On</value>
+  </data>
+  <data name="TransacitionCurrencyIdLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 20</value>
+  </data>
+  <data name="&gt;&gt;CloseProbabilitySpinEdit.Name" xml:space="preserve">
+    <value>CloseProbabilitySpinEdit</value>
+  </data>
+  <data name="ItemForStatusCode.CustomizationFormText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="OpportunityTypeCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="projectTypeCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="topicTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="DescriptionTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 319</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.VistaTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="projectTypeCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;latestFeedBackOnDateEdit.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ItemForStatusCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="ItemForModifiedBy.Text" xml:space="preserve">
+    <value>Modified By</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.VistaTimeProperties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForModifiedBy.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;technicianIdSearchLookUpEdit.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ItemForOpportunityTypeCode.Text" xml:space="preserve">
+    <value>Opportunity Type</value>
+  </data>
+  <data name="&gt;&gt;ItemForOriginatingLeadId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForEstimatedCloseDate.Text" xml:space="preserve">
+    <value>Estimated Close Date</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.VistaTimeProperties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CloseProbabilitySpinEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit1.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.VistaTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;OriginatingLeadIdSearchLookUpEdit.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;ItemForCloseProbability.Name" xml:space="preserve">
+    <value>ItemForCloseProbability</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="technicianItem.Text" xml:space="preserve">
+    <value>Technician</value>
+  </data>
+  <data name="&gt;&gt;technologyCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="OpportunityTypeCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForOpportunityTypeCode.Name" xml:space="preserve">
+    <value>ItemForOpportunityTypeCode</value>
+  </data>
+  <data name="&gt;&gt;gridView3.Name" xml:space="preserve">
+    <value>gridView3</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.VistaTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;OpportunityRatingCodeLookUpEdit.Name" xml:space="preserve">
+    <value>OpportunityRatingCodeLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;CustomerIdSearchLookUpEdit.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="tabbedControlGroup1.CustomizationFormText" xml:space="preserve">
+    <value>tabbedControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;estimatedWorkAmountSpinEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit2.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ItemForTransacitionCurrencyId.Text" xml:space="preserve">
+    <value> Currency</value>
+  </data>
+  <data name="&gt;&gt;CloseProbabilitySpinEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="technologyCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="StepNameTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="SalesStageCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="technicianIdSearchLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;ItemForOpportunityRatingCode.Name" xml:space="preserve">
+    <value>ItemForOpportunityRatingCode</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 20</value>
+  </data>
+  <data name="&gt;&gt;ItemForEstimatedValue.Name" xml:space="preserve">
+    <value>ItemForEstimatedValue</value>
+  </data>
+  <data name="StepNameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="TransacitionCurrencyIdLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DepartmentLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.VistaTimeProperties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;OwnerIdSearchLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PopupContainerEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CloseProbabilitySpinEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ValidationProviderRecommend.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OriginatingLeadIdSearchLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 20</value>
+  </data>
+  <data name="&gt;&gt;DescriptionTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="OriginatingLeadIdSearchLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;textEdit3.Name" xml:space="preserve">
+    <value>textEdit3</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;CustomerIdSearchLookUpEdit.Name" xml:space="preserve">
+    <value>CustomerIdSearchLookUpEdit</value>
+  </data>
+  <data name="OriginatingLeadIdSearchLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForDescription.CustomizationFormText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="&gt;&gt;TransacitionCurrencyIdLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="OpportunityRatingCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="technologyCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 71</value>
+  </data>
+  <data name="technicianIdSearchLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.VistaTimeProperties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit4.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForOwnerId.Text" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="ItemForOpportunityRatingCode.CustomizationFormText" xml:space="preserve">
+    <value>Opportunity Rating</value>
+  </data>
+  <data name="&gt;&gt;ItemForCustomerId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="CustomerIdSearchLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 20</value>
+  </data>
+  <data name="DescriptionTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lcgDetails.Text" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="emptySpaceItem1.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.VistaTimeProperties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OriginatingLeadIdSearchLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;SalesStageCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.VistaTimeProperties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;estimatedWorkAmountItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="CloseProbabilitySpinEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="OpportunityRatingCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 271</value>
+  </data>
+  <data name="OpportunityTypeCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="EstimatedValueSpinEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit3.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TransacitionCurrencyIdLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="ItemForDepartment.Text" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="&gt;&gt;OpportunityTypeCodeLookUpEdit.Name" xml:space="preserve">
+    <value>OpportunityTypeCodeLookUpEdit</value>
+  </data>
+  <data name="projectTypeItem.Text" xml:space="preserve">
+    <value>Project Type</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.VistaTimeProperties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="DepartmentLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 20</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EstimatedValueSpinEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="SalesStageCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit1.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit1.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="topicTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CloseProbabilitySpinEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="StepNameTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="resource.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OpportunityTypeCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 20</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EntityBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;expectedStartOnItem.Name" xml:space="preserve">
+    <value>expectedStartOnItem</value>
+  </data>
+  <data name="&gt;&gt;RootLayoutControlGroup.Name" xml:space="preserve">
+    <value>RootLayoutControlGroup</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.VistaTimeProperties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>DateTime</value>
+  </data>
+  <data name="textEdit4.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="latestFeedbackOnItem.CustomizationFormText" xml:space="preserve">
+    <value>Latest Feed Back On</value>
+  </data>
+  <data name="textEdit3.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="StepNameTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit2.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="technologyCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EntityDataLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>910, 436</value>
+  </data>
+  <data name="&gt;&gt;DepartmentLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.VistaTimeProperties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StepNameTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="EstimatedValueSpinEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 119</value>
+  </data>
+  <data name="&gt;&gt;latestFeedBackOnDateEdit.Type" xml:space="preserve">
+    <value>Katrin.AppFramework.WinForms.Controls.DropDownDateEdit, Katrin.AppFramework.WinForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;OriginatingLeadIdSearchLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;PriorityCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;ItemForOriginatingLeadId.Name" xml:space="preserve">
+    <value>ItemForOriginatingLeadId</value>
+  </data>
+  <data name="PriorityCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;expectedStartOnItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="projectTypeCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 20</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>OpportunityDetailView</value>
+  </data>
+  <data name="textEdit1.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForCustomerId.Name" xml:space="preserve">
+    <value>ItemForCustomerId</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.VistaTimeProperties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForOwnerId.Name" xml:space="preserve">
+    <value>ItemForOwnerId</value>
+  </data>
+  <data name="&gt;&gt;topicTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;OriginatingLeadIdSearchLookUpEdit.Name" xml:space="preserve">
+    <value>OriginatingLeadIdSearchLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;EntityBindingSource.Name" xml:space="preserve">
+    <value>EntityBindingSource</value>
+  </data>
+  <data name="&gt;&gt;technicianIdSearchLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchLookUpEdit, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;OwnerIdSearchLookUpEdit.Name" xml:space="preserve">
+    <value>OwnerIdSearchLookUpEdit</value>
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;projectTypeCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="textEdit2.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="StepNameTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.VistaTimeProperties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="projectTypeCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;technicianIdSearchLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TransacitionCurrencyIdLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OpportunityTypeCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="topicTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;SalesStageCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Name" xml:space="preserve">
+    <value>textEdit1</value>
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForCreatedOn.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForCreatedOn.CustomizationFormText" xml:space="preserve">
+    <value>Created On</value>
+  </data>
+  <data name="SalesStageCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 295</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="technicianItem.CustomizationFormText" xml:space="preserve">
+    <value>Technician</value>
+  </data>
+  <data name="technologyCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OriginatingLeadIdSearchLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;topicTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForOpportunityRatingCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup1.Name" xml:space="preserve">
+    <value>tabbedControlGroup1</value>
+  </data>
+  <data name="TransacitionCurrencyIdLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OpportunityTypeCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;latestFeedbackOnItem.Name" xml:space="preserve">
+    <value>latestFeedbackOnItem</value>
+  </data>
+  <data name="ItemForDepartment.CustomizationFormText" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="&gt;&gt;topicTextEdit.Name" xml:space="preserve">
+    <value>topicTextEdit</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.VistaTimeProperties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lcgDetails.CustomizationFormText" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="EstimatedValueSpinEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OpportunityTypeCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SalesStageCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="ItemForOpportunityTypeCode.CustomizationFormText" xml:space="preserve">
+    <value>Opportunity Type</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>910, 469</value>
+  </data>
+  <data name="topicTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EstimatedValueSpinEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 20</value>
+  </data>
+  <data name="ItemForPriorityCode.CustomizationFormText" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.VistaTimeProperties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="TransacitionCurrencyIdLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 167</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;EstimatedCloseDateTextEdit.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="technicianIdSearchLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;latestFeedBackOnDateEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="topicTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OpportunityRatingCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ItemForOpportunityRatingCode.Text" xml:space="preserve">
+    <value>Opportunity Rating</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CloseProbabilitySpinEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;technologyCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="DepartmentLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;projectTypeItem.Name" xml:space="preserve">
+    <value>projectTypeItem</value>
+  </data>
+  <data name="topicTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="textEdit4.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;StatusCodeLookUpEdit.Name" xml:space="preserve">
+    <value>StatusCodeLookUpEdit</value>
+  </data>
+  <data name="projectTypeCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForEstimatedValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 119</value>
+  </data>
+  <data name="&gt;&gt;StepNameTextEdit.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="topicTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;ItemForDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="TransacitionCurrencyIdLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ItemForCustomerId.CustomizationFormText" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="textEdit4.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;ItemForPriorityCode.Name" xml:space="preserve">
+    <value>ItemForPriorityCode</value>
+  </data>
+  <data name="&gt;&gt;EstimatedCloseDateTextEdit.Type" xml:space="preserve">
+    <value>Katrin.AppFramework.WinForms.Controls.DropDownDateEdit, Katrin.AppFramework.WinForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.VistaTimeProperties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;ItemForName.Name" xml:space="preserve">
+    <value>ItemForName</value>
+  </data>
+  <data name="StepNameTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit3.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.VistaTimeProperties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.VistaTimeProperties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;SalesStageCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;technicianIdSearchLookUpEdit.Name" xml:space="preserve">
+    <value>technicianIdSearchLookUpEdit</value>
+  </data>
+  <data name="OriginatingLeadIdSearchLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 20</value>
+  </data>
+  <data name="&gt;&gt;technologyCodeLookUpEdit.Name" xml:space="preserve">
+    <value>technologyCodeLookUpEdit</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForSalesStageCode.CustomizationFormText" xml:space="preserve">
+    <value>Sales Stage</value>
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;ItemForCreatedBy.Name" xml:space="preserve">
+    <value>ItemForCreatedBy</value>
+  </data>
+  <data name="PriorityCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraDataLayout.DataLayoutControl, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="CloseProbabilitySpinEdit.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;expectedStartOnDateEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="topicTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="topicTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 20</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.VistaTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>DateTime</value>
+  </data>
+  <data name="&gt;&gt;ItemForStepName.Name" xml:space="preserve">
+    <value>ItemForStepName</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 295</value>
+  </data>
+  <data name="&gt;&gt;EstimatedValueSpinEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForCustomerId.Text" xml:space="preserve">
+    <value>Potential Customer</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;StatusCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="estimatedWorkAmountSpinEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="EstimatedValueSpinEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="technologyCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PriorityCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;technicianItem.Name" xml:space="preserve">
+    <value>technicianItem</value>
+  </data>
+  <data name="&gt;&gt;ItemForName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="technologyCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit2.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.VistaTimeProperties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="CloseProbabilitySpinEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TransacitionCurrencyIdLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit3.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;expectedStartOnDateEdit.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="CloseProbabilitySpinEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;lcgDetails.Name" xml:space="preserve">
+    <value>lcgDetails</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="expectedStartOnDateEdit.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="topicTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.VistaTimeProperties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PriorityCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 20</value>
+  </data>
+  <data name="ItemForName.CustomizationFormText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="EstimatedCloseDateTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;OpportunityRatingCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TransacitionCurrencyIdLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="OpportunityRatingCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="expectedStartOnDateEdit.Properties.VistaTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>DateTime</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;EstimatedCloseDateTextEdit.Name" xml:space="preserve">
+    <value>EstimatedCloseDateTextEdit</value>
+  </data>
+  <data name="topicTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 47</value>
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.VistaTimeProperties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="latestFeedBackOnDateEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;TransacitionCurrencyIdLookUpEdit.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;ItemForCreatedOn.Name" xml:space="preserve">
+    <value>ItemForCreatedOn</value>
+  </data>
+  <data name="technologyCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 20</value>
+  </data>
+  <data name="ItemForEstimatedCloseDate.CustomizationFormText" xml:space="preserve">
+    <value>Estimated Close Date</value>
+  </data>
+  <data name="EstimatedValueSpinEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <metadata name="EntityBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>58</value>
+  </metadata>
+  <metadata name="ValidationProviderRecommend.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>349, 17</value>
+  </metadata>
+  <metadata name="ValidationProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>188, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
+</root>

@@ -1,0 +1,2690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;FirstNameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ManangerPhoneTextEdit.Name" xml:space="preserve">
+    <value>ManangerPhoneTextEdit</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AnniversaryTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LastNameTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BirthDateTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NickNameTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ItemForAssistantPhone.CustomizationFormText" xml:space="preserve">
+    <value>Assistant Phone</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Telephone2TextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="JobTitleTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v12.1" name="DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="ManagerNameTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;GenderCodeLookUpEdit.Name" xml:space="preserve">
+    <value>GenderCodeLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;JobTitleTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForEmployeeId.Text" xml:space="preserve">
+    <value>Employee Id</value>
+  </data>
+  <data name="&gt;&gt;lcgGeneral.Name" xml:space="preserve">
+    <value>lcgGeneral</value>
+  </data>
+  <data name="&gt;&gt;HasChildrenCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="textEdit2.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit3.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;RootLayoutControlGroup.Name" xml:space="preserve">
+    <value>RootLayoutControlGroup</value>
+  </data>
+  <data name="layoutControlItem3.CustomizationFormText" xml:space="preserve">
+    <value>Modified On</value>
+  </data>
+  <data name="&gt;&gt;EmployeeIdTextEdit.Name" xml:space="preserve">
+    <value>EmployeeIdTextEdit</value>
+  </data>
+  <data name="&gt;&gt;ItemForFirstName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;OriginatingLeadIdLookUpEdit.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="FaxTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Name" xml:space="preserve">
+    <value>layoutControlItem3</value>
+  </data>
+  <data name="ItemForAnniversary.CustomizationFormText" xml:space="preserve">
+    <value>Anniversary</value>
+  </data>
+  <data name="ManagerNameTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="LastNameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;managementLayoutControlGroup.Name" xml:space="preserve">
+    <value>managementLayoutControlGroup</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DepartmentTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ManagerNameTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;lcgPersonal.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BirthDateTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="OriginatingLeadIdLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="NickNameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 71</value>
+  </data>
+  <data name="AssistantNameTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;NumberOfChildrenTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="DepartmentTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AnniversaryTextEdit.Properties.VistaTimeProperties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="MobilePhoneTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NickNameTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ManangerPhoneTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForDepartment.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForParentCustomerId.CustomizationFormText" xml:space="preserve">
+    <value>Parent Customer Id</value>
+  </data>
+  <data name="LastNameTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DescriptionTextEdit.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 86</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.VistaTimeProperties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EducationCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 71</value>
+  </data>
+  <data name="Telephone2TextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>347, 20</value>
+  </data>
+  <data name="DepartmentTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="ItemForSpousesName.CustomizationFormText" xml:space="preserve">
+    <value>Spouses Name</value>
+  </data>
+  <data name="&gt;&gt;ItemForManangerPhone.Name" xml:space="preserve">
+    <value>ItemForManangerPhone</value>
+  </data>
+  <data name="&gt;&gt;Telephone1TextEdit.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.VistaTimeProperties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SuffixTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="SuffixTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;EntityBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ParentCustomerIdLookUpEdit.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;ItemForJobTitle.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForSpousesName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;JobTitleTextEdit.Name" xml:space="preserve">
+    <value>JobTitleTextEdit</value>
+  </data>
+  <data name="ItemForDepartment.CustomizationFormText" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ManagerNameTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;DepartmentTextEdit.Name" xml:space="preserve">
+    <value>DepartmentTextEdit</value>
+  </data>
+  <data name="DepartmentTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;EMailAddress1TextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="AccountRoleCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 312</value>
+  </data>
+  <data name="AssistantNameTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="lcgPersonal.Text" xml:space="preserve">
+    <value>Personal Information</value>
+  </data>
+  <data name="&gt;&gt;GenderCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v12.1" name="DevExpress.Utils.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="AnniversaryTextEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.Name" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AnniversaryTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 20</value>
+  </data>
+  <data name="EMailAddress1TextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 119</value>
+  </data>
+  <data name="ParentCustomerIdLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="JobTitleTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 95</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EMailAddress1TextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForFamilyStatusCode.CustomizationFormText" xml:space="preserve">
+    <value>Family Status Code</value>
+  </data>
+  <data name="&gt;&gt;ItemForAssistantPhone.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.VistaTimeProperties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;NickNameTextEdit.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="FaxTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="EmployeeIdTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="FaxTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;EMailAddress1TextEdit.Name" xml:space="preserve">
+    <value>EMailAddress1TextEdit</value>
+  </data>
+  <data name="ParentCustomerIdLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForLastName.Text" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="&gt;&gt;NickNameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EducationCodeLookUpEdit.Name" xml:space="preserve">
+    <value>EducationCodeLookUpEdit</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 119</value>
+  </data>
+  <data name="Telephone1TextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="ItemForFax.CustomizationFormText" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="&gt;&gt;ItemForDepartment.Name" xml:space="preserve">
+    <value>ItemForDepartment</value>
+  </data>
+  <data name="DepartmentTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="AssistantNameTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;MobilePhoneTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.Name" xml:space="preserve">
+    <value>textEdit2</value>
+  </data>
+  <data name="&gt;&gt;ManangerPhoneTextEdit.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="SpousesNameTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="LastNameTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;textEdit3.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="EducationCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Telephone1TextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="SpousesNameTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ContactDetailView</value>
+  </data>
+  <data name="NickNameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForOriginatingLeadId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit4.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForEMailAddress1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="tabbedControlGroup1.CustomizationFormText" xml:space="preserve">
+    <value>tabbedControlGroup1</value>
+  </data>
+  <data name="DescriptionTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="AssistantNameTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForFax.Name" xml:space="preserve">
+    <value>ItemForFax</value>
+  </data>
+  <data name="&gt;&gt;lcgGeneral.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForNickName.Text" xml:space="preserve">
+    <value>Nick Name</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 20</value>
+  </data>
+  <data name="EducationCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 20</value>
+  </data>
+  <data name="EducationCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EntityDataLayoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 33</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.VistaTimeProperties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="DepartmentTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="FamilyStatusCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="FamilyStatusCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;AnniversaryTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ManagerNameTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForLastName.Name" xml:space="preserve">
+    <value>ItemForLastName</value>
+  </data>
+  <data name="NumberOfChildrenTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>Numeric</value>
+  </data>
+  <data name="SuffixTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="EmployeeIdTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.VistaTimeProperties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;SuffixTextEdit.Name" xml:space="preserve">
+    <value>SuffixTextEdit</value>
+  </data>
+  <data name="&gt;&gt;ItemForTelephone1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="OriginatingLeadIdLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 20</value>
+  </data>
+  <data name="NickNameTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="DepartmentTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 20</value>
+  </data>
+  <data name="SpousesNameTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForBirthDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EntityBindingSource.Name" xml:space="preserve">
+    <value>EntityBindingSource</value>
+  </data>
+  <data name="layoutControlItem1.Text" xml:space="preserve">
+    <value>Created On</value>
+  </data>
+  <data name="AccountRoleCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForHasChildrenCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;LastNameTextEdit.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;EMailAddress1TextEdit.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Telephone2TextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ManangerPhoneTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;DescriptionTextEdit.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="layoutControlItem2.CustomizationFormText" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="Telephone1TextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HasChildrenCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ItemForAssistantName.Text" xml:space="preserve">
+    <value>Assistant Name</value>
+  </data>
+  <data name="DescriptionTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ManagerNameTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;OwnerIdLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PopupContainerEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;MobilePhoneTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="SuffixTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BirthDateTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EmployeeIdTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lcgPersonal.CustomizationFormText" xml:space="preserve">
+    <value>Personal Information</value>
+  </data>
+  <data name="GenderCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 20</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="BirthDateTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>584, 47</value>
+  </data>
+  <data name="AnniversaryTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="DepartmentTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ItemForNumberOfChildren.Text" xml:space="preserve">
+    <value>Number Of Children</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.VistaTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="NickNameTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForMobilePhone.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="JobTitleTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;ItemForEmployeeId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForManangerPhone.Text" xml:space="preserve">
+    <value>Mananger Phone</value>
+  </data>
+  <data name="&gt;&gt;LastNameTextEdit.Name" xml:space="preserve">
+    <value>LastNameTextEdit</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.VistaTimeProperties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DepartmentTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 14</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DepartmentTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForAssistantName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.VistaTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>DateTime</value>
+  </data>
+  <data name="lcgGeneral.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="AccountRoleCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 20</value>
+  </data>
+  <data name="&gt;&gt;LastNameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="AssistantNameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 20</value>
+  </data>
+  <data name="EmployeeIdTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 20</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Katrin.Win.DetailViewModule.DetailView, Katrin.Win.BaseViewModule, Version=1.2.2.52, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ItemForLastName.CustomizationFormText" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="FaxTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit4.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Telephone2TextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraDataLayout.DataLayoutControl, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForSpousesName.Text" xml:space="preserve">
+    <value>Spouses Name</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ParentCustomerIdLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 336</value>
+  </data>
+  <data name="AssistantNameTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.VistaTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="EducationCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GenderCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;AnniversaryTextEdit.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="managementLayoutControlGroup.Text" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="ManangerPhoneTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 20</value>
+  </data>
+  <data name="&gt;&gt;ValidationProvider.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="emptySpaceItem1.Text" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="FirstNameTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.VistaTimeProperties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="EmployeeIdTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForEducationCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;managementLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="EmployeeIdTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForSpousesName.Name" xml:space="preserve">
+    <value>ItemForSpousesName</value>
+  </data>
+  <data name="Telephone2TextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EMailAddress1TextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="AssistantPhoneTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NumberOfChildrenTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>584, 119</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="FirstNameTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ItemForFax.Text" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="&gt;&gt;JobTitleTextEdit.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="DepartmentTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Telephone2TextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForFirstName.CustomizationFormText" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="&gt;&gt;AccountRoleCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="AccountRoleCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;EducationCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="JobTitleTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;AssistantNameTextEdit.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ItemForMobilePhone.Name" xml:space="preserve">
+    <value>ItemForMobilePhone</value>
+  </data>
+  <data name="&gt;&gt;ItemForFax.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForParentCustomerId.Name" xml:space="preserve">
+    <value>ItemForParentCustomerId</value>
+  </data>
+  <data name="FirstNameTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;textEdit2.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="FamilyStatusCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ManagerNameTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ManangerPhoneTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="HasChildrenCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;NumberOfChildrenTextEdit.Name" xml:space="preserve">
+    <value>NumberOfChildrenTextEdit</value>
+  </data>
+  <data name="&gt;&gt;lcgPersonal.Name" xml:space="preserve">
+    <value>lcgPersonal</value>
+  </data>
+  <data name="&gt;&gt;lcgProfessinal.Name" xml:space="preserve">
+    <value>lcgProfessinal</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup1.Name" xml:space="preserve">
+    <value>tabbedControlGroup1</value>
+  </data>
+  <data name="AnniversaryTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>584, 71</value>
+  </data>
+  <data name="&gt;&gt;FaxTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="resource.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="layoutControlItem2.Text" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="&gt;&gt;ItemForAssistantPhone.Name" xml:space="preserve">
+    <value>ItemForAssistantPhone</value>
+  </data>
+  <data name="JobTitleTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ManangerPhoneTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 384</value>
+  </data>
+  <data name="LastNameTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="Telephone2TextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;AccountRoleCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SpousesNameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 20</value>
+  </data>
+  <data name="ItemForOriginatingLeadId.CustomizationFormText" xml:space="preserve">
+    <value>Originating Lead Id</value>
+  </data>
+  <data name="Telephone1TextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForManagerName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ManagerNameTextEdit.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="textEdit2.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit4.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="SuffixTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForGenderCode.Text" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ParentCustomerIdLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EMailAddress1TextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ItemForSuffix.CustomizationFormText" xml:space="preserve">
+    <value>Suffix</value>
+  </data>
+  <data name="Telephone2TextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EducationCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FaxTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FirstNameTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;FamilyStatusCodeLookUpEdit.Name" xml:space="preserve">
+    <value>FamilyStatusCodeLookUpEdit</value>
+  </data>
+  <data name="ParentCustomerIdLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;ItemForJobTitle.Name" xml:space="preserve">
+    <value>ItemForJobTitle</value>
+  </data>
+  <data name="&gt;&gt;HasChildrenCodeLookUpEdit.Name" xml:space="preserve">
+    <value>HasChildrenCodeLookUpEdit</value>
+  </data>
+  <data name="AccountRoleCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ItemForTelephone1.Name" xml:space="preserve">
+    <value>ItemForTelephone1</value>
+  </data>
+  <data name="NumberOfChildrenTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForDepartment.Text" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="FirstNameTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="Telephone1TextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit2.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="AssistantNameTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FirstNameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="BirthDateTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="DescriptionTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 167</value>
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AnniversaryTextEdit.Type" xml:space="preserve">
+    <value>Katrin.AppFramework.WinForms.Controls.DropDownDateEdit, Katrin.AppFramework.WinForms, Version=1.2.2.52, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="SuffixTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EntityDataLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>948, 440</value>
+  </data>
+  <data name="AssistantNameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;DepartmentTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="GenderCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 47</value>
+  </data>
+  <data name="EMailAddress1TextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DepartmentTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NumberOfChildrenTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="ManagerNameTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="FamilyStatusCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 20</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="SuffixTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OriginatingLeadIdLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="JobTitleTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;ItemForDescription.Name" xml:space="preserve">
+    <value>ItemForDescription</value>
+  </data>
+  <data name="&gt;&gt;Telephone1TextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="Telephone2TextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="JobTitleTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 20</value>
+  </data>
+  <data name="FaxTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="resource.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v12.1">
+    <value>None</value>
+  </data>
+  <data name="Telephone1TextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForBirthDate.Name" xml:space="preserve">
+    <value>ItemForBirthDate</value>
+  </data>
+  <data name="FirstNameTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="JobTitleTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 312</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;SpousesNameTextEdit.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="textEdit2.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 20</value>
+  </data>
+  <data name="&gt;&gt;ItemForNumberOfChildren.Name" xml:space="preserve">
+    <value>ItemForNumberOfChildren</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EMailAddress1TextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForEmployeeId.CustomizationFormText" xml:space="preserve">
+    <value>Employee Id</value>
+  </data>
+  <data name="ItemForDescription.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="ItemForJobTitle.CustomizationFormText" xml:space="preserve">
+    <value>Job Title</value>
+  </data>
+  <data name="layoutControlItem3.Text" xml:space="preserve">
+    <value>Modified On</value>
+  </data>
+  <data name="Telephone1TextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>327, 20</value>
+  </data>
+  <data name="FaxTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>347, 20</value>
+  </data>
+  <data name="Telephone1TextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="FaxTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 20</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.VistaTimeProperties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="JobTitleTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="DepartmentTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForNickName.Name" xml:space="preserve">
+    <value>ItemForNickName</value>
+  </data>
+  <data name="HasChildrenCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BirthDateTextEdit.Name" xml:space="preserve">
+    <value>BirthDateTextEdit</value>
+  </data>
+  <data name="&gt;&gt;ItemForAccountRoleCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;MobilePhoneTextEdit.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ItemForMobilePhone.Text" xml:space="preserve">
+    <value>Mobile Phone</value>
+  </data>
+  <data name="SuffixTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EmployeeIdTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.VistaTimeProperties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Telephone2TextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Telephone2TextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 119</value>
+  </data>
+  <data name="MobilePhoneTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;AssistantPhoneTextEdit.Name" xml:space="preserve">
+    <value>AssistantPhoneTextEdit</value>
+  </data>
+  <data name="textEdit4.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AssistantNameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>588, 360</value>
+  </data>
+  <data name="textEdit4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 20</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.VistaTimeProperties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="FirstNameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>347, 20</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>948, 473</value>
+  </data>
+  <data name="EmployeeIdTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 336</value>
+  </data>
+  <data name="EducationCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="FirstNameTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FaxTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForNickName.CustomizationFormText" xml:space="preserve">
+    <value>Nick Name</value>
+  </data>
+  <data name="Telephone1TextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="JobTitleTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Telephone2TextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SpousesNameTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="LastNameTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="JobTitleTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value>[EditValue is null]</value>
+  </data>
+  <data name="&gt;&gt;AssistantNameTextEdit.Name" xml:space="preserve">
+    <value>AssistantNameTextEdit</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem4.Name" xml:space="preserve">
+    <value>layoutControlItem4</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="DepartmentTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 71</value>
+  </data>
+  <data name="&gt;&gt;OwnerIdLookUpEdit.Name" xml:space="preserve">
+    <value>OwnerIdLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;EmployeeIdTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="textEdit3.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;SuffixTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lcgGeneral.CustomizationFormText" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="&gt;&gt;ItemForOriginatingLeadId.Name" xml:space="preserve">
+    <value>ItemForOriginatingLeadId</value>
+  </data>
+  <data name="NumberOfChildrenTextEdit.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="SpousesNameTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NickNameTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NickNameTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;AccountRoleCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="SpousesNameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="NickNameTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="Telephone2TextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="FirstNameTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FirstNameTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FirstNameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>577, 47</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Name" xml:space="preserve">
+    <value>textEdit1</value>
+  </data>
+  <data name="ItemForHasChildrenCode.CustomizationFormText" xml:space="preserve">
+    <value>Has Children Code</value>
+  </data>
+  <data name="DescriptionTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="FirstNameTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;OwnerIdLookUpEdit.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="EMailAddress1TextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 143</value>
+  </data>
+  <data name="JobTitleTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit4.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ManangerPhoneTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AccountRoleCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AssistantNameTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>327, 20</value>
+  </data>
+  <data name="SpousesNameTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Telephone2TextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.VistaTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="NumberOfChildrenTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AssistantNameTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit4.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForOriginatingLeadId.Text" xml:space="preserve">
+    <value>Originating Lead</value>
+  </data>
+  <data name="ManangerPhoneTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit4.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.VistaTimeProperties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NickNameTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="ItemForEMailAddress1.CustomizationFormText" xml:space="preserve">
+    <value>EMail Address1</value>
+  </data>
+  <data name="EMailAddress1TextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>.+@.+\..+</value>
+  </data>
+  <data name="LastNameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 47</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextEdit.Name" xml:space="preserve">
+    <value>FirstNameTextEdit</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;BirthDateTextEdit.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="layoutControlItem4.Text" xml:space="preserve">
+    <value>Modified By</value>
+  </data>
+  <data name="FamilyStatusCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForTelephone2.CustomizationFormText" xml:space="preserve">
+    <value>Telephone2</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="ManangerPhoneTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BirthDateTextEdit.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ItemForManangerPhone.CustomizationFormText" xml:space="preserve">
+    <value>Mananger Phone</value>
+  </data>
+  <data name="emptySpaceItem1.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="textEdit2.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="EMailAddress1TextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;FamilyStatusCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ItemForManagerName.CustomizationFormText" xml:space="preserve">
+    <value>Manager Name</value>
+  </data>
+  <data name="&gt;&gt;ItemForTelephone2.Name" xml:space="preserve">
+    <value>ItemForTelephone2</value>
+  </data>
+  <data name="FaxTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NumberOfChildrenTextEdit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Disable</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.VistaTimeProperties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EmployeeIdTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OriginatingLeadIdLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="layoutControlItem4.CustomizationFormText" xml:space="preserve">
+    <value>Modified By</value>
+  </data>
+  <data name="OriginatingLeadIdLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 47</value>
+  </data>
+  <data name="HasChildrenCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForLastName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="ManangerPhoneTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SuffixTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>577, 71</value>
+  </data>
+  <data name="&gt;&gt;ItemForNickName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="GenderCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="EmployeeIdTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;Telephone2TextEdit.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.VistaTimeProperties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ManagerNameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;AssistantPhoneTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="JobTitleTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="GenderCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForJobTitle.Text" xml:space="preserve">
+    <value>Job Title</value>
+  </data>
+  <data name="ManangerPhoneTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="AssistantNameTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OriginatingLeadIdLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ManagerNameTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;SuffixTextEdit.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;NickNameTextEdit.Name" xml:space="preserve">
+    <value>NickNameTextEdit</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForGenderCode.CustomizationFormText" xml:space="preserve">
+    <value>Gender Code</value>
+  </data>
+  <data name="textEdit3.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ItemForOwnerId.Text" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="FaxTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;Telephone1TextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SuffixTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;NumberOfChildrenTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SpousesNameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ParentCustomerIdLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="FaxTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Telephone2TextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>577, 119</value>
+  </data>
+  <data name="Telephone1TextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForTelephone1.CustomizationFormText" xml:space="preserve">
+    <value>Telephone1</value>
+  </data>
+  <data name="&gt;&gt;OwnerIdLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;HasChildrenCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="FamilyStatusCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="FirstNameTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NickNameTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NumberOfChildrenTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;NickNameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="Telephone1TextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="resource.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LastNameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit4.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;ParentCustomerIdLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ParentCustomerIdLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="FaxTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForTelephone2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="NickNameTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="SuffixTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;ManagerNameTextEdit.Name" xml:space="preserve">
+    <value>ManagerNameTextEdit</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="NumberOfChildrenTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="JobTitleTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;OriginatingLeadIdLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;AnniversaryTextEdit.Name" xml:space="preserve">
+    <value>AnniversaryTextEdit</value>
+  </data>
+  <data name="&gt;&gt;ItemForFirstName.Name" xml:space="preserve">
+    <value>ItemForFirstName</value>
+  </data>
+  <data name="textEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="ItemForParentCustomerId.Text" xml:space="preserve">
+    <value>Parent Customer</value>
+  </data>
+  <data name="NumberOfChildrenTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ParentCustomerIdLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lcgProfessinal.CustomizationFormText" xml:space="preserve">
+    <value>Professinal Information</value>
+  </data>
+  <data name="FamilyStatusCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Telephone1TextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;DepartmentTextEdit.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;EmployeeIdTextEdit.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="EMailAddress1TextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="NumberOfChildrenTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>588, 384</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="ManagerNameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 20</value>
+  </data>
+  <data name="AccountRoleCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForSuffix.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;AssistantPhoneTextEdit.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;NumberOfChildrenTextEdit.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForEducationCode.Name" xml:space="preserve">
+    <value>ItemForEducationCode</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ManangerPhoneTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="NickNameTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AnniversaryTextEdit.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="SuffixTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;ItemForGenderCode.Name" xml:space="preserve">
+    <value>ItemForGenderCode</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="ItemForAnniversary.Text" xml:space="preserve">
+    <value>Anniversary</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemForBirthDate.CustomizationFormText" xml:space="preserve">
+    <value>Birth Date</value>
+  </data>
+  <data name="&gt;&gt;FaxTextEdit.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="SpousesNameTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;AssistantNameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="LastNameTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ManangerPhoneTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="FirstNameTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="FaxTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NumberOfChildrenTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n0</value>
+  </data>
+  <data name="DepartmentTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit2.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="textEdit1.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Telephone2TextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;ValidationProvider.Name" xml:space="preserve">
+    <value>ValidationProvider</value>
+  </data>
+  <data name="DescriptionTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="Telephone1TextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="GenderCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AnniversaryTextEdit.Properties.VistaTimeProperties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>DateTime</value>
+  </data>
+  <data name="LastNameTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="LastNameTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;FamilyStatusCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;HasChildrenCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="HasChildrenCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="EMailAddress1TextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="ManagerNameTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="SpousesNameTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;DescriptionTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DepartmentTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForAssistantName.CustomizationFormText" xml:space="preserve">
+    <value>Assistant Name</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AssistantNameTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForDescription.CustomizationFormText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="&gt;&gt;lcgProfessinal.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="NumberOfChildrenTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;OriginatingLeadIdLookUpEdit.Name" xml:space="preserve">
+    <value>OriginatingLeadIdLookUpEdit</value>
+  </data>
+  <data name="ItemForOwnerId.CustomizationFormText" xml:space="preserve">
+    <value>Owner Id</value>
+  </data>
+  <data name="ItemForNumberOfChildren.CustomizationFormText" xml:space="preserve">
+    <value>Number Of Children</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.VistaTimeProperties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="LastNameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>327, 20</value>
+  </data>
+  <data name="EmployeeIdTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForEmployeeId.Name" xml:space="preserve">
+    <value>ItemForEmployeeId</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForParentCustomerId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForManagerName.Text" xml:space="preserve">
+    <value>Manager Name</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextEdit.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="AssistantNameTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="NumberOfChildrenTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ItemForAssistantPhone.Text" xml:space="preserve">
+    <value>Assistant Phone</value>
+  </data>
+  <data name="AccountRoleCodeLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="JobTitleTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;FaxTextEdit.Name" xml:space="preserve">
+    <value>FaxTextEdit</value>
+  </data>
+  <data name="FaxTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForOwnerId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ManagerNameTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="AssistantNameTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;Telephone2TextEdit.Name" xml:space="preserve">
+    <value>Telephone2TextEdit</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.VistaTimeProperties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ManangerPhoneTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit1.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;JobTitleTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;ItemForSuffix.Name" xml:space="preserve">
+    <value>ItemForSuffix</value>
+  </data>
+  <data name="&gt;&gt;BirthDateTextEdit.Type" xml:space="preserve">
+    <value>Katrin.AppFramework.WinForms.Controls.DropDownDateEdit, Katrin.AppFramework.WinForms, Version=1.2.2.52, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="ItemForAccountRoleCode.CustomizationFormText" xml:space="preserve">
+    <value>Account Role Code</value>
+  </data>
+  <data name="&gt;&gt;AssistantPhoneTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit3.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="NumberOfChildrenTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="LastNameTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="BirthDateTextEdit.Properties.VistaTimeProperties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ItemForEducationCode.CustomizationFormText" xml:space="preserve">
+    <value>Education Code</value>
+  </data>
+  <data name="tabbedControlGroup1.Text" xml:space="preserve">
+    <value>tabbedControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="ItemForFirstName.Text" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="ManagerNameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 360</value>
+  </data>
+  <data name="SpousesNameTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 47</value>
+  </data>
+  <data name="FirstNameTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;ItemForGenderCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="AssistantNameTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ParentCustomerIdLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 20</value>
+  </data>
+  <data name="SpousesNameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>584, 95</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="OriginatingLeadIdLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;OriginatingLeadIdLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmployeeIdTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit3.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="MobilePhoneTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AccountRoleCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Telephone1TextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textEdit4.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit1.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LastNameTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="EntityDataLayoutControl.Text" xml:space="preserve">
+    <value>dataLayoutControl1</value>
+  </data>
+  <data name="BirthDateTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 20</value>
+  </data>
+  <data name="textEdit4.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NumberOfChildrenTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Telephone1TextEdit.Name" xml:space="preserve">
+    <value>Telephone1TextEdit</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.VistaTimeProperties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ManagerNameTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Telephone2TextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RootLayoutControlGroup.Text" xml:space="preserve">
+    <value>RootLayoutControlGroup</value>
+  </data>
+  <data name="HasChildrenCodeLookUpEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit4.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EducationCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="ItemForTelephone1.Text" xml:space="preserve">
+    <value>Business Phone</value>
+  </data>
+  <data name="&gt;&gt;ManangerPhoneTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="LastNameTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ManagerNameTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EducationCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ManagerNameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;DescriptionTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="NickNameTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.VistaTimeProperties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OriginatingLeadIdLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EmployeeIdTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ItemForTelephone2.Text" xml:space="preserve">
+    <value>Home Phone</value>
+  </data>
+  <data name="ParentCustomerIdLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SuffixTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>347, 20</value>
+  </data>
+  <data name="&gt;&gt;ManangerPhoneTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="EmployeeIdTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ManangerPhoneTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;textEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NumberOfChildrenTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForNumberOfChildren.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="GenderCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AnniversaryTextEdit.Properties.VistaTimeProperties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EmployeeIdTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Telephone2TextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HasChildrenCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="SuffixTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForAnniversary.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="FamilyStatusCodeLookUpEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textEdit4.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForAssistantName.Name" xml:space="preserve">
+    <value>ItemForAssistantName</value>
+  </data>
+  <data name="HasChildrenCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 119</value>
+  </data>
+  <data name="GenderCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="EmployeeIdTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EMailAddress1TextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>789, 20</value>
+  </data>
+  <data name="&gt;&gt;RootLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForAccountRoleCode.Text" xml:space="preserve">
+    <value>Account Role</value>
+  </data>
+  <data name="&gt;&gt;SpousesNameTextEdit.Name" xml:space="preserve">
+    <value>SpousesNameTextEdit</value>
+  </data>
+  <data name="managementLayoutControlGroup.CustomizationFormText" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 95</value>
+  </data>
+  <data name="&gt;&gt;AssistantNameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="OriginatingLeadIdLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ItemForFamilyStatusCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.VistaTimeProperties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="LastNameTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="FamilyStatusCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 95</value>
+  </data>
+  <data name="&gt;&gt;AccountRoleCodeLookUpEdit.Name" xml:space="preserve">
+    <value>AccountRoleCodeLookUpEdit</value>
+  </data>
+  <data name="textEdit4.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;SpousesNameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ItemForMobilePhone.CustomizationFormText" xml:space="preserve">
+    <value>Mobile Phone</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.VistaTimeProperties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ManangerPhoneTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ItemForSuffix.Text" xml:space="preserve">
+    <value>Salutation</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 20</value>
+  </data>
+  <data name="ManagerNameTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="HasChildrenCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 20</value>
+  </data>
+  <data name="EMailAddress1TextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit4.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;GenderCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;ItemForAccountRoleCode.Name" xml:space="preserve">
+    <value>ItemForAccountRoleCode</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Name" xml:space="preserve">
+    <value>textEdit4</value>
+  </data>
+  <data name="layoutControlItem1.CustomizationFormText" xml:space="preserve">
+    <value>Created On</value>
+  </data>
+  <data name="&gt;&gt;ItemForManagerName.Name" xml:space="preserve">
+    <value>ItemForManagerName</value>
+  </data>
+  <data name="&gt;&gt;ItemForManangerPhone.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="LastNameTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit2.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HasChildrenCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SpousesNameTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="ItemForEMailAddress1.Text" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="SpousesNameTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FaxTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>577, 95</value>
+  </data>
+  <data name="textEdit3.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="AnniversaryTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="ItemForBirthDate.Text" xml:space="preserve">
+    <value>Birth Date</value>
+  </data>
+  <data name="GenderCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="SpousesNameTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AnniversaryTextEdit.Properties.VistaTimeProperties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DepartmentTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="EmployeeIdTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;EducationCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;ItemForHasChildrenCode.Name" xml:space="preserve">
+    <value>ItemForHasChildrenCode</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Telephone1TextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 95</value>
+  </data>
+  <data name="&gt;&gt;EducationCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="textEdit1.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lcgProfessinal.Text" xml:space="preserve">
+    <value>Professinal Information</value>
+  </data>
+  <data name="DescriptionTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 20</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="textEdit1.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ItemForEducationCode.Text" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="SpousesNameTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;GenderCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="EMailAddress1TextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>RegEx</value>
+  </data>
+  <data name="EMailAddress1TextEdit.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AssistantNameTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;FamilyStatusCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="EducationCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ItemForDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit2.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;FaxTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="DepartmentTextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="GenderCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EMailAddress1TextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ItemForFamilyStatusCode.Text" xml:space="preserve">
+    <value>Family Status</value>
+  </data>
+  <data name="&gt;&gt;ParentCustomerIdLookUpEdit.Name" xml:space="preserve">
+    <value>ParentCustomerIdLookUpEdit</value>
+  </data>
+  <data name="JobTitleTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ManangerPhoneTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;MobilePhoneTextEdit.Name" xml:space="preserve">
+    <value>MobilePhoneTextEdit</value>
+  </data>
+  <data name="BirthDateTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="OwnerIdLookUpEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Name" xml:space="preserve">
+    <value>textEdit3</value>
+  </data>
+  <data name="LastNameTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForAnniversary.Name" xml:space="preserve">
+    <value>ItemForAnniversary</value>
+  </data>
+  <data name="&gt;&gt;ItemForFamilyStatusCode.Name" xml:space="preserve">
+    <value>ItemForFamilyStatusCode</value>
+  </data>
+  <data name="SpousesNameTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NickNameTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textEdit1.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NumberOfChildrenTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 20</value>
+  </data>
+  <data name="NickNameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>327, 20</value>
+  </data>
+  <data name="FirstNameTextEdit.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="SuffixTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="AccountRoleCodeLookUpEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="NumberOfChildrenTextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="ManangerPhoneTextEdit.Properties.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ItemForHasChildrenCode.Text" xml:space="preserve">
+    <value>Has Children</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>None</value>
+  </data>
+  <data name="textEdit3.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="FamilyStatusCodeLookUpEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SuffixTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="FaxTextEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemForEMailAddress1.Name" xml:space="preserve">
+    <value>ItemForEMailAddress1</value>
+  </data>
+  <data name="SuffixTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="EMailAddress1TextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="EMailAddress1TextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="JobTitleTextEdit.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AssistantPhoneTextEdit.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NickNameTextEdit.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SuffixTextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EmployeeIdTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="AnniversaryTextEdit.Properties.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Telephone1TextEdit.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v12.1">
+    <value>Default</value>
+  </data>
+  <data name="Telephone1TextEdit.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForOwnerId.Name" xml:space="preserve">
+    <value>ItemForOwnerId</value>
+  </data>
+  <data name="DescriptionTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>789, 109</value>
+  </data>
+  <data name="&gt;&gt;ManagerNameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="Telephone2TextEdit.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;DescriptionTextEdit.Name" xml:space="preserve">
+    <value>DescriptionTextEdit</value>
+  </data>
+  <metadata name="EntityBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>47</value>
+  </metadata>
+  <metadata name="ValidationProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>188, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
+</root>

@@ -1,0 +1,1334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Account" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Addition" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddNote" xml:space="preserve">
+    <value>添加注释</value>
+  </data>
+  <data name="AddTimeTracking" xml:space="preserve">
+    <value>添加时间</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="AllProject" xml:space="preserve">
+    <value>所有项目</value>
+  </data>
+  <data name="AllTime" xml:space="preserve">
+    <value>所有时间</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>倒退</value>
+  </data>
+  <data name="CannotUnregisterSiteRegisteredWithParent" xml:space="preserve">
+    <value>Cannot unregister site that was registered in parent: {0}</value>
+  </data>
+  <data name="ConfirmDeletion" xml:space="preserve">
+    <value>确认删除</value>
+  </data>
+  <data name="ConfirmPasswordNotMatch" xml:space="preserve">
+    <value>两次输入密码不一致，请重新输入。</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="Contract" xml:space="preserve">
+    <value>合同</value>
+  </data>
+  <data name="custonHours" xml:space="preserve">
+    <value>自定义时段</value>
+  </data>
+  <data name="DeadLead" xml:space="preserve">
+    <value>失败</value>
+  </data>
+  <data name="DeadRecord" xml:space="preserve">
+    <value>确定要删除 {0}?</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="DeleteNote" xml:space="preserve">
+    <value>删除注释</value>
+  </data>
+  <data name="DeleteRecord" xml:space="preserve">
+    <value>你已经选择了 1 {0} 删除.
+
+系统将删除本条记录。 本次操作不可撤销。 继续, 请单击 OK.</value>
+  </data>
+  <data name="DeleteTimeTracking" xml:space="preserve">
+    <value>删除时间</value>
+  </data>
+  <data name="DisableDeleteRecord" xml:space="preserve">
+    <value>你不可以删除 {0}， 因为本条记录正在被另一程序所使用。</value>
+  </data>
+  <data name="DuplicateUIExtensionSite" xml:space="preserve">
+    <value>A UI extension site with this name already exists: {0}</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="EditNote" xml:space="preserve">
+    <value>编辑注释</value>
+  </data>
+  <data name="EditTimeTracking" xml:space="preserve">
+    <value>修改时间</value>
+  </data>
+  <data name="EntityDetailsCaptionFormat" xml:space="preserve">
+    <value>{0}详细信息</value>
+  </data>
+  <data name="EntityListCaptionFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="failPro" xml:space="preserve">
+    <value>失败</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>常规</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>历史</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>发票</value>
+  </data>
+  <data name="LastMonth" xml:space="preserve">
+    <value>上月</value>
+  </data>
+  <data name="LastQuarter" xml:space="preserve">
+    <value>上季度</value>
+  </data>
+  <data name="LastYear" xml:space="preserve">
+    <value>上一年</value>
+  </data>
+  <data name="Lead" xml:space="preserve">
+    <value>潜在顾客</value>
+  </data>
+  <data name="LeadConvert" xml:space="preserve">
+    <value>转换</value>
+  </data>
+  <data name="ListScreenTitle" xml:space="preserve">
+    <value>{0} 列表</value>
+  </data>
+  <data name="LWmts" xml:space="preserve">
+    <value>上周</value>
+  </data>
+  <data name="LWofworking" xml:space="preserve">
+    <value>上个工作周</value>
+  </data>
+  <data name="LWsts" xml:space="preserve">
+    <value>上周(周日至周六)</value>
+  </data>
+  <data name="NewCommand" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="NewEntity" xml:space="preserve">
+    <value>新建 {0}</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>注释</value>
+  </data>
+  <data name="Opportunity" xml:space="preserve">
+    <value>商业机遇</value>
+  </data>
+  <data name="OwnerPerson" xml:space="preserve">
+    <value>销售人员</value>
+  </data>
+  <data name="PasswordLengthValidation" xml:space="preserve">
+    <value>密码长度必须不小于6位</value>
+  </data>
+  <data name="PastForteenDay" xml:space="preserve">
+    <value>过去14天</value>
+  </data>
+  <data name="PastServenDay" xml:space="preserve">
+    <value>过去7天</value>
+  </data>
+  <data name="PastThirtyDay" xml:space="preserve">
+    <value>过去30天</value>
+  </data>
+  <data name="PopupContract" xml:space="preserve">
+    <value>合同</value>
+  </data>
+  <data name="PopupInvoice" xml:space="preserve">
+    <value>发票</value>
+  </data>
+  <data name="PopupQuote" xml:space="preserve">
+    <value>报价</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="ProjectReport" xml:space="preserve">
+    <value>报价分析表</value>
+  </data>
+  <data name="QualitySituation" xml:space="preserve">
+    <value>总体情况：</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>问题</value>
+  </data>
+  <data name="Quote" xml:space="preserve">
+    <value>报价</value>
+  </data>
+  <data name="QuoteFail" xml:space="preserve">
+    <value>报价失败</value>
+  </data>
+  <data name="QuoteState" xml:space="preserve">
+    <value>进展情况：</value>
+  </data>
+  <data name="QuoteSuccess" xml:space="preserve">
+    <value>报价成功</value>
+  </data>
+  <data name="Quoting" xml:space="preserve">
+    <value>报价中项目</value>
+  </data>
+  <data name="RecordManagement" xml:space="preserve">
+    <value>记录管理</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="Related" xml:space="preserve">
+    <value>相关</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>报表</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="runingPro" xml:space="preserve">
+    <value>进行中</value>
+  </data>
+  <data name="Sales" xml:space="preserve">
+    <value>销售</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="SaveAndClose" xml:space="preserve">
+    <value>保存&amp;&amp;关闭</value>
+  </data>
+  <data name="SearchTime" xml:space="preserve">
+    <value>查询时间:</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>服务</value>
+  </data>
+  <data name="ServiceManagement" xml:space="preserve">
+    <value>服务管理</value>
+  </data>
+  <data name="SetOpportunityFail" xml:space="preserve">
+    <value>失败</value>
+  </data>
+  <data name="SetOpportunityResurrection" xml:space="preserve">
+    <value>复活</value>
+  </data>
+  <data name="SetOpportunitySuccess" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="ShowTimeTracking" xml:space="preserve">
+    <value>记录时间</value>
+  </data>
+  <data name="Skins" xml:space="preserve">
+    <value>风格</value>
+  </data>
+  <data name="successPro" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="SystemSetting" xml:space="preserve">
+    <value>系统设置</value>
+  </data>
+  <data name="TechnologyPerson" xml:space="preserve">
+    <value>技术人员</value>
+  </data>
+  <data name="ThisMonth" xml:space="preserve">
+    <value>本月</value>
+  </data>
+  <data name="ThisQuarter" xml:space="preserve">
+    <value>本季度</value>
+  </data>
+  <data name="ThisYear" xml:space="preserve">
+    <value>本年</value>
+  </data>
+  <data name="TimeTracking" xml:space="preserve">
+    <value>时间记录</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="TWmtt" xml:space="preserve">
+    <value>本周</value>
+  </data>
+  <data name="TWstt" xml:space="preserve">
+    <value>本周(周日至今天)</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="UserNameAndPasswordInvalid" xml:space="preserve">
+    <value>非法用户名和密码。</value>
+  </data>
+  <data name="ValidateDate" xml:space="preserve">
+    <value>日期不合法。</value>
+  </data>
+  <data name="ValidateNotBlankMessage" xml:space="preserve">
+    <value>{0} 不能为空。</value>
+    <comment>Validation</comment>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>查看</value>
+  </data>
+  <data name="ViewPageCaption" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="Yesterday" xml:space="preserve">
+    <value>昨天</value>
+  </data>
+  <data name="FastOperate" xml:space="preserve">
+    <value>快捷操作</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>格式化</value>
+  </data>
+  <data name="AddFilter" xml:space="preserve">
+    <value>添加过滤条件</value>
+  </data>
+  <data name="EditFilter" xml:space="preserve">
+    <value>编辑过滤条件</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+    <value>过滤</value>
+  </data>
+  <data name="ManageFilter" xml:space="preserve">
+    <value>管理过滤条件</value>
+  </data>
+  <data name="DeleteFilter" xml:space="preserve">
+    <value>删除过滤条件</value>
+  </data>
+  <data name="DeleteListItemWarning" xml:space="preserve">
+    <value>确定要删除此项吗?</value>
+  </data>
+  <data name="DeleteFilterTip" xml:space="preserve">
+    <value>确定要删除此过滤条件&lt;{0}&gt;?</value>
+  </data>
+  <data name="ClearSetting" xml:space="preserve">
+    <value>清除设置</value>
+  </data>
+  <data name="ClearSettingConfirm" xml:space="preserve">
+    <value>系统将清除您的本地设置。此操作不可撤消。若要继续，单击“确定”</value>
+  </data>
+  <data name="NoRelatedData" xml:space="preserve">
+    <value>没有相关联的数据!</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="Katrin" xml:space="preserve">
+    <value>Katrin</value>
+  </data>
+  <data name="ProjectVersion" xml:space="preserve">
+    <value>项目版本</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>服务</value>
+  </data>
+  <data name="LastWeek" xml:space="preserve">
+    <value>上周</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>本周</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>自定义</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>（所有）</value>
+  </data>
+  <data name="InProgress" xml:space="preserve">
+    <value>进行中</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>失败</value>
+  </data>
+  <data name="Won" xml:space="preserve">
+    <value>成功</value>
+    <comment>opportunity</comment>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>报表</value>
+  </data>
+  <data name="OpportunityReport" xml:space="preserve">
+    <value>商机报表</value>
+  </data>
+  <data name="RecommendWarning" xml:space="preserve">
+    <value>推荐填写的项目为空,确定继续吗?</value>
+  </data>
+  <data name="SaleStageChangeTip" xml:space="preserve">
+    <value>不能选择此项，任务栏中有此项操作！</value>
+  </data>
+  <data name="ReasonNullTip" xml:space="preserve">
+    <value>失败原因不能空！</value>
+  </data>
+  <data name="DeleteNoteTip" xml:space="preserve">
+    <value>确认要删除此注释？</value>
+  </data>
+  <data name="DeleteTimingTip" xml:space="preserve">
+    <value>确认要删除此时间记录?</value>
+  </data>
+  <data name="Effort" xml:space="preserve">
+    <value>有效产出</value>
+  </data>
+  <data name="ProjectManagement" xml:space="preserve">
+    <value>项目管理</value>
+  </data>
+  <data name="ProjectTask" xml:space="preserve">
+    <value>项目任务</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="AddTask" xml:space="preserve">
+    <value>添加任务</value>
+  </data>
+  <data name="EditEffort" xml:space="preserve">
+    <value>管理工时</value>
+  </data>
+  <data name="OverTimeTip" xml:space="preserve">
+    <value>加班产出不能大于有效产出，请查证</value>
+  </data>
+  <data name="ProjectTaskEffort" xml:space="preserve">
+    <value>添加工时</value>
+  </data>
+  <data name="ProjectIteration" xml:space="preserve">
+    <value>项目迭代</value>
+  </data>
+  <data name="AddIteration" xml:space="preserve">
+    <value>添加迭代</value>
+  </data>
+  <data name="DeleteProjectIterationTip" xml:space="preserve">
+    <value>确认要删除此迭代记录?</value>
+  </data>
+  <data name="DeleteProjectTaskTip" xml:space="preserve">
+    <value>确认要删除此任务记录?</value>
+  </data>
+  <data name="ProbabilityCode" xml:space="preserve">
+    <value>后续可能性:</value>
+  </data>
+  <data name="ProjectMember" xml:space="preserve">
+    <value>项目成员</value>
+  </data>
+  <data name="ProjectTypeCode" xml:space="preserve">
+    <value>类型:</value>
+  </data>
+  <data name="TechnologyCode" xml:space="preserve">
+    <value>技术:</value>
+  </data>
+  <data name="ProjectWeekReport" xml:space="preserve">
+    <value>项目周报</value>
+  </data>
+  <data name="GenerateWeekReport" xml:space="preserve">
+    <value>生成周报</value>
+  </data>
+  <data name="GenerateDayReport" xml:space="preserve">
+    <value>生成日报</value>
+  </data>
+  <data name="IterationDateErrorMessage" xml:space="preserve">
+    <value>不同迭代时间段不能重叠。</value>
+  </data>
+  <data name="NoTaskTip" xml:space="preserve">
+    <value>你今天没有任何任务.</value>
+  </data>
+  <data name="colSumActualInput" xml:space="preserve">
+    <value>总投入工时</value>
+  </data>
+  <data name="colSumActualWorkHours" xml:space="preserve">
+    <value>总实际工时</value>
+  </data>
+  <data name="colSumEffort" xml:space="preserve">
+    <value>总有效产出</value>
+  </data>
+  <data name="colSumOvertime" xml:space="preserve">
+    <value>总加班工时</value>
+  </data>
+  <data name="colSumQuoteWorkHours" xml:space="preserve">
+    <value>总报价工时</value>
+  </data>
+  <data name="colSumRemainderTime" xml:space="preserve">
+    <value>总剩余工作量</value>
+  </data>
+  <data name="IterationDateCompareMessage" xml:space="preserve">
+    <value>结束日期不能小于开始日期。</value>
+  </data>
+  <data name="OverEffortMessage" xml:space="preserve">
+    <value>总的有效产出不能大于总的计划工时。</value>
+  </data>
+  <data name="colEvaluateExactlyRate" xml:space="preserve">
+    <value>评估准确率</value>
+  </data>
+  <data name="colInputEffortRate" xml:space="preserve">
+    <value>投入产出比</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>发送邮件</value>
+  </data>
+  <data name="EditTaskEffort" xml:space="preserve">
+    <value>添加工时</value>
+  </data>
+  <data name="NoNewTaskMessage" xml:space="preserve">
+    <value>今天没有新的任务。</value>
+  </data>
+  <data name="BeginDate" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>结束日期</value>
+  </data>
+  <data name="IterationName" xml:space="preserve">
+    <value>迭代名称</value>
+  </data>
+  <data name="ProjectName" xml:space="preserve">
+    <value>项目名称：</value>
+  </data>
+  <data name="RecordPerson" xml:space="preserve">
+    <value>记录人</value>
+  </data>
+  <data name="DateRang" xml:space="preserve">
+    <value>时间范围</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>状    态</value>
+  </data>
+  <data name="WorkUnit" xml:space="preserve">
+    <value>工时(单位:小时)</value>
+  </data>
+  <data name="CurrentDate" xml:space="preserve">
+    <value>当前日期</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>已完成</value>
+  </data>
+  <data name="NotStarted" xml:space="preserve">
+    <value>未开始</value>
+  </data>
+  <data name="ProjectManager" xml:space="preserve">
+    <value>项目经理：</value>
+  </data>
+  <data name="AddVersion" xml:space="preserve">
+    <value>添加版本</value>
+  </data>
+  <data name="DeleteProjectVersionTip" xml:space="preserve">
+    <value>确认要删除此版本记录?</value>
+  </data>
+  <data name="VersionNumber" xml:space="preserve">
+    <value>版本号</value>
+  </data>
+  <data name="Attendance" xml:space="preserve">
+    <value>考勤</value>
+  </data>
+  <data name="SumActualInputRate" xml:space="preserve">
+    <value>实际投入比</value>
+  </data>
+  <data name="SumEffortRate" xml:space="preserve">
+    <value>有效产出比</value>
+  </data>
+  <data name="ErrorDirection" xml:space="preserve">
+    <value>任务不能从高状态变成低状态。</value>
+  </data>
+  <data name="Unassigned" xml:space="preserve">
+    <value>未分配的</value>
+  </data>
+  <data name="IdealRemainTime" xml:space="preserve">
+    <value>理想剩余工作量</value>
+  </data>
+  <data name="ToDoRemainTime" xml:space="preserve">
+    <value>实际剩余工作量</value>
+  </data>
+  <data name="AcceptedQuotes" xml:space="preserve">
+    <value>已接受报价</value>
+    <comment>zd</comment>
+  </data>
+  <data name="AllMyContracts" xml:space="preserve">
+    <value>我的合同</value>
+    <comment>a</comment>
+  </data>
+  <data name="AllMyInvoices" xml:space="preserve">
+    <value>我的发票</value>
+    <comment>g</comment>
+  </data>
+  <data name="AllMyLeads" xml:space="preserve">
+    <value>我的潜在顾客</value>
+    <comment>m</comment>
+  </data>
+  <data name="AllMyOpportunities" xml:space="preserve">
+    <value>我的机会</value>
+    <comment>u</comment>
+  </data>
+  <data name="AllMyOpportunitiesInThisMonth" xml:space="preserve">
+    <value>我的本月机会</value>
+    <comment>t</comment>
+  </data>
+  <data name="AllMyQuotes" xml:space="preserve">
+    <value>我的报价</value>
+    <comment>ze</comment>
+  </data>
+  <data name="BadDebtInvoices" xml:space="preserve">
+    <value>坏账发票</value>
+    <comment>h</comment>
+  </data>
+  <data name="ClosedContracts" xml:space="preserve">
+    <value>已关闭合同</value>
+    <comment>b</comment>
+  </data>
+  <data name="ConvertedLeads" xml:space="preserve">
+    <value>已转化潜在顾客</value>
+    <comment>n</comment>
+  </data>
+  <data name="DeadLeads" xml:space="preserve">
+    <value>失败潜在顾客</value>
+    <comment>o</comment>
+  </data>
+  <data name="FailedContracts" xml:space="preserve">
+    <value>失败合同</value>
+    <comment>c</comment>
+  </data>
+  <data name="FinishedContracts" xml:space="preserve">
+    <value>已完成合同</value>
+    <comment>d</comment>
+  </data>
+  <data name="InArrearInvoices" xml:space="preserve">
+    <value>拖欠发票</value>
+    <comment>i</comment>
+  </data>
+  <data name="LeadOpenedLastWeek" xml:space="preserve">
+    <value>上周潜在顾客</value>
+    <comment>p</comment>
+  </data>
+  <data name="LeadOpenedThisWeek" xml:space="preserve">
+    <value>本周潜在顾客</value>
+    <comment>q</comment>
+  </data>
+  <data name="LostOpportunities" xml:space="preserve">
+    <value>失败机会</value>
+    <comment>v</comment>
+  </data>
+  <data name="LostQuotes" xml:space="preserve">
+    <value>未被接受报价</value>
+    <comment>zf</comment>
+  </data>
+  <data name="MyOpenContracts" xml:space="preserve">
+    <value>我的活跃合同</value>
+    <comment>e</comment>
+  </data>
+  <data name="MyOpenLeads" xml:space="preserve">
+    <value>我的活跃潜在顾客</value>
+    <comment>r</comment>
+  </data>
+  <data name="MyOpenOpportunities" xml:space="preserve">
+    <value>我的活跃机会</value>
+    <comment>w</comment>
+  </data>
+  <data name="MyOpenQuotes" xml:space="preserve">
+    <value>我的活跃报价</value>
+    <comment>zg</comment>
+  </data>
+  <data name="OpenContracts" xml:space="preserve">
+    <value>活跃合同</value>
+    <comment>f</comment>
+  </data>
+  <data name="OpenLeads" xml:space="preserve">
+    <value>活跃潜在顾客</value>
+    <comment>s</comment>
+  </data>
+  <data name="OpenMyOpportunitiesBeforeThisMonth" xml:space="preserve">
+    <value>本月之前活跃机会</value>
+    <comment>x</comment>
+  </data>
+  <data name="OpenOpportunities" xml:space="preserve">
+    <value>活跃机会</value>
+    <comment>y</comment>
+  </data>
+  <data name="OpenQuotes" xml:space="preserve">
+    <value>活跃报价</value>
+    <comment>zh</comment>
+  </data>
+  <data name="OpportunitiesCreatedinThisMonth" xml:space="preserve">
+    <value>本月机会</value>
+    <comment>z</comment>
+  </data>
+  <data name="OpportunityOpenedLastWeek" xml:space="preserve">
+    <value>上周机会</value>
+    <comment>za</comment>
+  </data>
+  <data name="OpportunityOpenedThisWeek" xml:space="preserve">
+    <value>本周机会</value>
+    <comment>zb</comment>
+  </data>
+  <data name="PaidInvoices" xml:space="preserve">
+    <value>已付款发票</value>
+    <comment>j</comment>
+  </data>
+  <data name="PlannedInvoices" xml:space="preserve">
+    <value>已规划发票</value>
+    <comment>k</comment>
+  </data>
+  <data name="SentInvoices" xml:space="preserve">
+    <value>已寄送发票</value>
+    <comment>l</comment>
+  </data>
+  <data name="WonOpportunity" xml:space="preserve">
+    <value>成功机会</value>
+    <comment>zc</comment>
+  </data>
+  <data name="Covert" xml:space="preserve">
+    <value>转换为{0}</value>
+  </data>
+  <data name="ConvertTitle" xml:space="preserve">
+    <value>转换</value>
+  </data>
+  <data name="WeekReport" xml:space="preserve">
+    <value>项目周报</value>
+  </data>
+  <data name="ColumnCaptionFormat" xml:space="preserve">
+    <value>{0}{1}</value>
+  </data>
+  <data name="AcceptanceTasks" xml:space="preserve">
+    <value>已验收任务</value>
+  </data>
+  <data name="AllMyProjects" xml:space="preserve">
+    <value>我的项目</value>
+  </data>
+  <data name="AllMyTasks" xml:space="preserve">
+    <value>我的任务</value>
+  </data>
+  <data name="AllMyWeekReports" xml:space="preserve">
+    <value>我的周报</value>
+  </data>
+  <data name="CompletedProjects" xml:space="preserve">
+    <value>已完成项目</value>
+  </data>
+  <data name="CompletedTasks" xml:space="preserve">
+    <value>已完成任务</value>
+  </data>
+  <data name="InProgressProjects" xml:space="preserve">
+    <value>进行中项目</value>
+  </data>
+  <data name="InProgressTasks" xml:space="preserve">
+    <value>进行中任务</value>
+  </data>
+  <data name="NotStartedProjects" xml:space="preserve">
+    <value>未开始项目</value>
+  </data>
+  <data name="NotStartedTasks" xml:space="preserve">
+    <value>未开始任务</value>
+  </data>
+  <data name="NewProjectTaskEffort" xml:space="preserve">
+    <value>批量添加工时</value>
+  </data>
+  <data name="Diagram" xml:space="preserve">
+    <value>图表</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="CopyAndNew" xml:space="preserve">
+    <value>拷贝&amp;&amp;新建</value>
+  </data>
+  <data name="ReportTool" xml:space="preserve">
+    <value>报表工具</value>
+  </data>
+  <data name="TheRecentActiveContacts" xml:space="preserve">
+    <value>近期活跃联系人</value>
+  </data>
+  <data name="TheRecentActiveCustomers" xml:space="preserve">
+    <value>近期活跃客户</value>
+  </data>
+  <data name="TheAttendanceInLastMonth" xml:space="preserve">
+    <value>上月的考勤</value>
+  </data>
+  <data name="TheAttendanceInThisMonth" xml:space="preserve">
+    <value>本月的考勤</value>
+  </data>
+  <data name="TheAttendanceInThisYear" xml:space="preserve">
+    <value>本年度的考勤</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>提醒</value>
+  </data>
+  <data name="DeleteNotification" xml:space="preserve">
+    <value>删除提醒</value>
+  </data>
+  <data name="SendSysMessage" xml:space="preserve">
+    <value>发送消息</value>
+  </data>
+  <data name="btnCloseCaption" xml:space="preserve">
+    <value>关闭</value>
+    <comment>消息服务</comment>
+  </data>
+  <data name="btnDetailCaption" xml:space="preserve">
+    <value>详细</value>
+    <comment>消息服务</comment>
+  </data>
+  <data name="btnSendExInfoCaption" xml:space="preserve">
+    <value>发送异常报告</value>
+    <comment>消息服务</comment>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>确认</value>
+    <comment>消息服务</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>错误</value>
+    <comment>消息服务</comment>
+  </data>
+  <data name="frmExceptionTitle" xml:space="preserve">
+    <value>系统异常</value>
+    <comment>消息服务</comment>
+  </data>
+  <data name="frmException_suggestion" xml:space="preserve">
+    <value>我们强烈建议你将 此异常信息发送给Katrin工作组以改进用户体验。</value>
+    <comment>消息服务</comment>
+  </data>
+  <data name="frmException_Text" xml:space="preserve">
+    <value>系统遇到一个异常，原因是：{0}</value>
+    <comment>消息服务</comment>
+  </data>
+  <data name="Warn" xml:space="preserve">
+    <value>警告</value>
+    <comment>消息服务</comment>
+  </data>
+  <data name="Fail" xml:space="preserve">
+    <value>失败</value>
+    <comment>opportunity</comment>
+  </data>
+  <data name="Recyle" xml:space="preserve">
+    <value>复活</value>
+    <comment>opportunity</comment>
+  </data>
+  <data name="ProjectModule" xml:space="preserve">
+    <value>项目模块</value>
+  </data>
+  <data name="AddModule" xml:space="preserve">
+    <value>添加模块</value>
+  </data>
+  <data name="ProjectChart" xml:space="preserve">
+    <value>项目图表</value>
+  </data>
+  <data name="ProjectTaskChart" xml:space="preserve">
+    <value>任务图表</value>
+  </data>
+  <data name="ConfirmWon" xml:space="preserve">
+    <value>如果你设置为成功，该操作不能恢复。继续吗？</value>
+    <comment>opportunity</comment>
+  </data>
+  <data name="NotificationRecipient" xml:space="preserve">
+    <value>提醒</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="ActualInputIsZero" xml:space="preserve">
+    <value>实际投入不能为0</value>
+  </data>
+  <data name="ActualInput" xml:space="preserve">
+    <value>实际投入</value>
+  </data>
+  <data name="ActualWorkHours" xml:space="preserve">
+    <value>计划工时</value>
+  </data>
+  <data name="EvaluateExactlyRate" xml:space="preserve">
+    <value>评估准确率</value>
+  </data>
+  <data name="InputEffortRate" xml:space="preserve">
+    <value>投入产出比</value>
+  </data>
+  <data name="QuoteWorkHours" xml:space="preserve">
+    <value>报价工时</value>
+  </data>
+  <data name="MemberActualInput" xml:space="preserve">
+    <value>实际投入</value>
+  </data>
+  <data name="MemberActualWorkHours" xml:space="preserve">
+    <value>计划工时</value>
+  </data>
+  <data name="MemberEffort" xml:space="preserve">
+    <value>有效产出</value>
+  </data>
+  <data name="MemberEvaluateExactlyRate" xml:space="preserve">
+    <value>评估准确率</value>
+  </data>
+  <data name="MemberInputEffortRate" xml:space="preserve">
+    <value>投入产出比</value>
+  </data>
+  <data name="MemberQuoteWorkHours" xml:space="preserve">
+    <value>报价工时</value>
+  </data>
+  <data name="EliminateWeekend" xml:space="preserve">
+    <value>排除周末</value>
+  </data>
+  <data name="AlertSave" xml:space="preserve">
+    <value>是否保存更改？</value>
+  </data>
+  <data name="ActiveCustomersDidn'tUpdateInAMonth" xml:space="preserve">
+    <value>一个月以上没有更新的活跃客户</value>
+  </data>
+  <data name="CleanAll" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="ActiveLeadsDidn'tUpdateInTwoWeeks" xml:space="preserve">
+    <value>两周以上没有更新的活跃客户</value>
+  </data>
+  <data name="ClearNotificationConfirm" xml:space="preserve">
+    <value>系统将清除所有提醒。此操作不可撤消。若要继续，单击“确定”</value>
+  </data>
+  <data name="BadDebts" xml:space="preserve">
+    <value>坏帐</value>
+  </data>
+  <data name="BadSatisfaction" xml:space="preserve">
+    <value>客户满意度为较差或非常差</value>
+  </data>
+  <data name="Dead" xml:space="preserve">
+    <value>已终止的潜在客户</value>
+  </data>
+  <data name="DeadlineEarlierThanNextWDeadlineEarlierThanNextWeek" xml:space="preserve">
+    <value>合同结束日期小于下周（包括过去）的进行中项目</value>
+  </data>
+  <data name="ExpiresOnNextWeek" xml:space="preserve">
+    <value>期满失效日期小于下周（包括过去）的活跃合同</value>
+  </data>
+  <data name="GreatEstimatedValue" xml:space="preserve">
+    <value>估计收入超过10000</value>
+  </data>
+  <data name="HighPriority" xml:space="preserve">
+    <value>优先级为“非常高”或者“高”</value>
+  </data>
+  <data name="InArrear" xml:space="preserve">
+    <value>拖欠发票</value>
+  </data>
+  <data name="QuoteExpiresOnNextWeek" xml:space="preserve">
+    <value>终止日期小于下周（包括过去）的活跃报价</value>
+  </data>
+  <data name="SentMoreThanHalfAMonthAndTheStatuStillBeSent" xml:space="preserve">
+    <value>寄送日期超过半个月，但状态仍然为“已寄送”</value>
+  </data>
+  <data name="TotalAmountGreaterThanTenThousand" xml:space="preserve">
+    <value>报价金额超过10000</value>
+  </data>
+  <data name="DeadlineEarlierThanNextWeek" xml:space="preserve">
+    <value>合同结束日期小于下周（包括过去）的进行中项目</value>
+  </data>
+  <data name="NotReaded" xml:space="preserve">
+    <value>未读</value>
+  </data>
+  <data name="Readed" xml:space="preserve">
+    <value>已读</value>
+  </data>
+  <data name="colNotificationStatus" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="SetReaded" xml:space="preserve">
+    <value>设置已读</value>
+  </data>
+  <data name="SaleReport" xml:space="preserve">
+    <value>销售报表</value>
+  </data>
+  <data name="Dimension" xml:space="preserve">
+    <value>维  度</value>
+  </data>
+  <data name="UnitType" xml:space="preserve">
+    <value>时间范围</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>月份</value>
+  </data>
+  <data name="Season" xml:space="preserve">
+    <value>季度</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="DepartMentName" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="SalesName" xml:space="preserve">
+    <value>销售</value>
+  </data>
+  <data name="TechnologyName" xml:space="preserve">
+    <value>技术</value>
+  </data>
+  <data name="ClosureRate" xml:space="preserve">
+    <value>关闭率</value>
+  </data>
+  <data name="ContractAmount" xml:space="preserve">
+    <value>合同金额</value>
+  </data>
+  <data name="ContractNumber" xml:space="preserve">
+    <value>合同数量</value>
+  </data>
+  <data name="FirstEmailCount" xml:space="preserve">
+    <value>邮件回复数量</value>
+  </data>
+  <data name="LeadNumber" xml:space="preserve">
+    <value>潜在客户数量</value>
+  </data>
+  <data name="NumberIntoContract" xml:space="preserve">
+    <value>机遇转化数</value>
+  </data>
+  <data name="NumberIntoOpportunity" xml:space="preserve">
+    <value>客户转化数</value>
+  </data>
+  <data name="NumberOfTheDead" xml:space="preserve">
+    <value>Dead的数量</value>
+  </data>
+  <data name="OpportunityNumber" xml:space="preserve">
+    <value>机遇数量</value>
+  </data>
+  <data name="QuoteSuccessRate" xml:space="preserve">
+    <value>机遇转化率</value>
+  </data>
+  <data name="RateIntoOpportunity" xml:space="preserve">
+    <value>客户转化率</value>
+  </data>
+  <data name="RateOfOldCustomer" xml:space="preserve">
+    <value>老客户占合同比例</value>
+  </data>
+  <data name="ResponseRate" xml:space="preserve">
+    <value>回复率</value>
+  </data>
+  <data name="UnitName" xml:space="preserve">
+    <value>单位</value>
+  </data>
+  <data name="ActiveCustomersDidn'tUpdateInAWeek" xml:space="preserve">
+    <value>一周以上没有更新的活跃客户</value>
+  </data>
+  <data name="ActiveOpportuniesDidn'tUpdateInAmonth" xml:space="preserve">
+    <value>一个月以上没有更新的活跃客户</value>
+  </data>
+  <data name="UserExisted" xml:space="preserve">
+    <value>用户名不可用，该用户已存在或已被删除！</value>
+  </data>
+  <data name="beginMonth" xml:space="preserve">
+    <value>开始月份</value>
+  </data>
+  <data name="beginSeasion" xml:space="preserve">
+    <value>开始季度</value>
+  </data>
+  <data name="beginYear" xml:space="preserve">
+    <value>开始年</value>
+  </data>
+  <data name="ChartOperator" xml:space="preserve">
+    <value>图表操作</value>
+  </data>
+  <data name="endMonth" xml:space="preserve">
+    <value>结束月份</value>
+  </data>
+  <data name="endSeasion" xml:space="preserve">
+    <value>结束季度</value>
+  </data>
+  <data name="endYear" xml:space="preserve">
+    <value>结束年</value>
+  </data>
+  <data name="AutoColumn" xml:space="preserve">
+    <value>可选列</value>
+  </data>
+  <data name="DiagramColumn" xml:space="preserve">
+    <value>图列</value>
+  </data>
+  <data name="TargetName" xml:space="preserve">
+    <value>指标</value>
+  </data>
+  <data name="BarDiagram" xml:space="preserve">
+    <value>柱状图</value>
+  </data>
+  <data name="ChartType" xml:space="preserve">
+    <value>图类型</value>
+  </data>
+  <data name="LineDiagram" xml:space="preserve">
+    <value>线状图</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>比例</value>
+  </data>
+  <data name="UpdateDetailEntity" xml:space="preserve">
+    <value>页面的数据在外部被修改，当前未保存的更改已丢失。</value>
+  </data>
+  <data name="EmailExceptionTip" xml:space="preserve">
+    <value>没有打开outlook或者没有选择允许访问e-mail地址</value>
+  </data>
+  <data name="DeleteProjectIteration" xml:space="preserve">
+    <value>删除迭代</value>
+  </data>
+  <data name="DeleteProjectModule" xml:space="preserve">
+    <value>删除模块</value>
+  </data>
+  <data name="DeleteProjectTask" xml:space="preserve">
+    <value>删除任务</value>
+  </data>
+  <data name="DeleteProjectVersion" xml:space="preserve">
+    <value>删除版本</value>
+  </data>
+  <data name="EditProjectIteration" xml:space="preserve">
+    <value>编辑迭代</value>
+  </data>
+  <data name="EditProjectModule" xml:space="preserve">
+    <value>编辑模块</value>
+  </data>
+  <data name="EditProjectTask" xml:space="preserve">
+    <value>编辑任务</value>
+  </data>
+  <data name="EditProjectVersion" xml:space="preserve">
+    <value>编辑版本</value>
+  </data>
+  <data name="PieDiagram" xml:space="preserve">
+    <value>饼状图</value>
+  </data>
+  <data name="sortName" xml:space="preserve">
+    <value>排序列</value>
+  </data>
+  <data name="Iteration" xml:space="preserve">
+    <value>迭代</value>
+  </data>
+  <data name="SplitProjectTask" xml:space="preserve">
+    <value>拆分任务</value>
+  </data>
+  <data name="Member" xml:space="preserve">
+    <value>成员</value>
+  </data>
+  <data name="Manual" xml:space="preserve">
+    <value>手动分解</value>
+  </data>
+  <data name="RemainderTime" xml:space="preserve">
+    <value>按剩余工作量</value>
+  </data>
+  <data name="SplitRate" xml:space="preserve">
+    <value>按比例</value>
+  </data>
+  <data name="SplitTaskTip" xml:space="preserve">
+    <value>拆分后的原任务计划工时不能小于有效产出并且报价工时不能小于实际投入工时</value>
+  </data>
+  <data name="Appointment" xml:space="preserve">
+    <value>会议室预约</value>
+  </data>
+  <data name="DayView" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="ReadUnread" xml:space="preserve">
+    <value>未读/已读</value>
+  </data>
+  <data name="GroupBy" xml:space="preserve">
+    <value>分组</value>
+  </data>
+  <data name="GroupByDate" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="GroupByNone" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="GroupByResource" xml:space="preserve">
+    <value>会议室</value>
+  </data>
+  <data name="MonthView" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Navigate" xml:space="preserve">
+    <value>转到</value>
+  </data>
+  <data name="WorkWeekView" xml:space="preserve">
+    <value>工作周</value>
+  </data>
+  <data name="sysMsg" xml:space="preserve">
+    <value>系统消息</value>
+  </data>
+  <data name="GotoToday" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="DeleteItemTip" xml:space="preserve">
+    <value>确认要删除此行吗？</value>
+  </data>
+  <data name="LikeToDelete" xml:space="preserve">
+    <value>你真想删除此</value>
+  </data>
+  <data name="QuestionMark" xml:space="preserve">
+    <value>？</value>
+  </data>
+  <data name="GiveTaskToIteration" xml:space="preserve">
+    <value>移动到迭代</value>
+    <comment>ProjectTask</comment>
+  </data>
+  <data name="GiveTaskToMember" xml:space="preserve">
+    <value>指派给</value>
+    <comment>ProjectTask</comment>
+  </data>
+  <data name="DoLanguageSetting" xml:space="preserve">
+    <value>你的设置将会在系统下次启动时生效.</value>
+    <comment>MainForm</comment>
+  </data>
+  <data name="en-US" xml:space="preserve">
+    <value>英文</value>
+    <comment>MainForm</comment>
+  </data>
+  <data name="languageSetting" xml:space="preserve">
+    <value>设置语言</value>
+    <comment>MainForm</comment>
+  </data>
+  <data name="zh-CN" xml:space="preserve">
+    <value>中文</value>
+    <comment>MainForm</comment>
+  </data>
+  <data name="AppointmentConflict" xml:space="preserve">
+    <value>该会议室预约与其他预约冲突。</value>
+  </data>
+  <data name="SentMoreThanOneDayAndTheStatuStillBePlan" xml:space="preserve">
+    <value>发票寄送日期小于或等于今天，但状态仍然为“计划”</value>
+  </data>
+  <data name="DataDeletedTip" xml:space="preserve">
+    <value>相关项不存在或被删除。</value>
+  </data>
+  <data name="es-ES" xml:space="preserve">
+    <value>西班牙人</value>
+  </data>
+</root>

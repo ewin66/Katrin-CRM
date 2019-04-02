@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Katrin.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{565c6f0e-c37f-4d0f-9db9-bc6e3078fb2a}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Katrin.Database</RootNamespace>
+    <AssemblyName>Katrin.Database</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <GenerateCreateScript>False</GenerateCreateScript>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\Upgrade" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\UserRole.sql" />
+    <Build Include="dbo\Tables\User.sql" />
+    <Build Include="dbo\Tables\TransactionCurrency.sql" />
+    <Build Include="dbo\Tables\TimeTracking.sql" />
+    <Build Include="dbo\Tables\TaskTimeHistory.sql" />
+    <Build Include="dbo\Tables\SystemSetting.sql" />
+    <Build Include="dbo\Tables\SavedQuery.sql" />
+    <Build Include="dbo\Tables\RolePrivilege.sql" />
+    <Build Include="dbo\Tables\Role.sql" />
+    <Build Include="dbo\Tables\QuoteLineItem.sql" />
+    <Build Include="dbo\Tables\Quote.sql" />
+    <Build Include="dbo\Tables\ProjectWeekReport.sql" />
+    <Build Include="dbo\Tables\ProjectVersion.sql" />
+    <Build Include="dbo\Tables\ProjectTask.sql" />
+    <Build Include="dbo\Tables\ProjectMember.sql" />
+    <Build Include="dbo\Tables\ProjectIteration.sql" />
+    <Build Include="dbo\Tables\Project.sql" />
+    <Build Include="dbo\Tables\Product.sql" />
+    <Build Include="dbo\Tables\PrivilegeEntity.sql" />
+    <Build Include="dbo\Tables\Privilege.sql" />
+    <Build Include="dbo\Tables\PickListMapping.sql" />
+    <Build Include="dbo\Tables\Opportunity.sql" />
+    <Build Include="dbo\Tables\Note.sql" />
+    <Build Include="dbo\Tables\Metadata_Relationship.sql" />
+    <Build Include="dbo\Tables\Metadata_OptionSet.sql" />
+    <Build Include="dbo\Tables\Metadata_LocalizedLabel.sql" />
+    <Build Include="dbo\Tables\Metadata_EntityRelationshipRole.sql" />
+    <Build Include="dbo\Tables\Metadata_EntityRelationshipRelationships.sql" />
+    <Build Include="dbo\Tables\Metadata_EntityRelationship.sql" />
+    <Build Include="dbo\Tables\Metadata_Entity.sql" />
+    <Build Include="dbo\Tables\Metadata_AttributeType.sql" />
+    <Build Include="dbo\Tables\Metadata_AttributePicklistValueMap.sql" />
+    <Build Include="dbo\Tables\Metadata_AttributePicklistValue.sql" />
+    <Build Include="dbo\Tables\Metadata_AttributeLookupValue.sql" />
+    <Build Include="dbo\Tables\Metadata_Attribute.sql" />
+    <Build Include="dbo\Tables\LookupMapping.sql" />
+    <Build Include="dbo\Tables\Lead.sql" />
+    <Build Include="dbo\Tables\InvoiceContract.sql" />
+    <Build Include="dbo\Tables\Invoice.sql" />
+    <Build Include="dbo\Tables\ImportMap.sql" />
+    <Build Include="dbo\Tables\ImportEntityMapping.sql" />
+    <Build Include="dbo\Tables\Department.sql" />
+    <Build Include="dbo\Tables\CustomerAddress.sql" />
+    <Build Include="dbo\Tables\Contract.sql" />
+    <Build Include="dbo\Tables\Contact.sql" />
+    <Build Include="dbo\Tables\ColumnMapping.sql" />
+    <Build Include="dbo\Tables\Audit.sql" />
+    <Build Include="dbo\Tables\Attendance.sql" />
+    <Build Include="dbo\Tables\Account.sql" />
+    <None Include="Scripts\Upgrade\AccountAddCountryCode.sql" />
+    <None Include="Scripts\Upgrade\AddCustomerSatisfaction.sql" />
+    <None Include="Scripts\Upgrade\AddProjectVersion.sql" />
+    <None Include="Scripts\Upgrade\FixStatusCode.sql" />
+    <None Include="Scripts\Upgrade\UpdateSaleCode.sql" />
+    <None Include="Scripts\0001.InitEntityAttributes.sql" />
+    <None Include="Scripts\0002.InitPicklistData.sql" />
+    <None Include="Scripts\0003.SetLookupColumns.sql" />
+    <None Include="Scripts\0004.InitRelationship.sql" />
+    <None Include="Scripts\0005.InitImportMap.sql" />
+    <None Include="Scripts\0006.InitInvoiceBillingCustomerId.sql" />
+    <None Include="Scripts\0007.UpdateAuditEnabled.sql" />
+    <None Include="Scripts\0008.InitConfiguration.sql" />
+    <None Include="Scripts\0010.InitModulesAndActions.sql" />
+    <None Include="Scripts\0011.InitAdminUser.sql" />
+    <None Include="Scripts\0012.InsertDefaultSavedQuery.sql" />
+    <None Include="Scripts\ClearAllData.sql" />
+    <None Include="Scripts\Upgrade\UpdateAttributeCopy.sql" />
+    <Build Include="dbo\Tables\NotificationProfile.sql" />
+    <Build Include="dbo\Tables\NotificationRecipientAttributes.sql" />
+    <Build Include="dbo\Tables\Criteria.sql" />
+    <Build Include="dbo\Tables\CriteriaNode.sql" />
+    <Build Include="dbo\Tables\Notification.sql" />
+    <Build Include="dbo\Tables\NotificationRecipient.sql" />
+    <Build Include="dbo\Tables\NotificationVariable.sql" />
+    <Build Include="dbo\Tables\NotificationTemplate.sql" />
+    <Build Include="dbo\Tables\ProfileVariable.sql" />
+    <Build Include="dbo\Tables\Subscription.sql" />
+    <None Include="Scripts\Upgrade\UpdateIterationLayOut.sql" />
+    <None Include="Scripts\Upgrade\AddProjectManager.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\execute_scripts.bat" />
+    <None Include="Scripts\script_files.txt" />
+    <None Include="Scripts\0009.ChineseLocalization.sql" />
+    <None Include="SqlSchemaCompare1.scmp" />
+    <None Include="Scripts\0013.InintNotificationConfig.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Katrin.Database.refactorlog" />
+  </ItemGroup>
+</Project>

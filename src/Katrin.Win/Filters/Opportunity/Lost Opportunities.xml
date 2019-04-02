@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <FilterName key="LostOpportunities">Lost Opportunities</FilterName>
+  <property name="ActiveFilterString">[StatusCode] = 4</property>
+  <order>4</order>
+</Filter>

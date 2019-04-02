@@ -1,0 +1,1692 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CABDevExpress.ExtensionKit</name>
+    </assembly>
+    <members>
+        <member name="T:CABDevExpress.SmartPartInfos.XtraWindowSmartPartInfo">
+            <summary>
+            Provides information to show smartparts in the <see cref="T:CABDevExpress.Workspaces.XtraWindowWorkspace"/>.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraWindowSmartPartInfo.StartPosition">
+            
+             The start position of the Modal form
+            
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraWindowSmartPartInfo.ShowInTaskbar">
+            
+             Whether the form shows in the Windows taskbar
+            
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraWindowSmartPartInfo.AcceptButton">
+            
+             Form's Accept Button
+            
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraWindowSmartPartInfo.CancelButton">
+            
+             Form's Cancel Button
+            
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraWindowSmartPartInfo.FormBorderStyle">
+            
+             Form's Border Style
+            
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraWindowSmartPartInfo.WindowState">
+            
+             Form's Window State
+            
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraWindowSmartPartInfo.Size">
+            
+             Form's Size
+            
+        </member>
+        <member name="T:CABDevExpress.UIElements.RibbonGalleryGroupUIAdapter">
+            <summary>
+            An adapter that wraps a <see cref="T:DevExpress.XtraBars.Ribbon.GalleryItemGroup"/> for use
+            as an <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonGalleryGroupUIAdapter.#ctor(DevExpress.XtraBars.Ribbon.GalleryItemGroup)">
+            <summary>
+            Initializes a new instance of the
+            <see cref="T:CABDevExpress.UIElements.RibbonGalleryGroupUIAdapter"/> class.
+            </summary>
+            <param name="ribbonGalleryGroup"></param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonGalleryGroupUIAdapter.Add(DevExpress.XtraBars.Ribbon.GalleryItem)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Add(`0)"/> for
+            more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonGalleryGroupUIAdapter.ValidateUiElement(DevExpress.XtraBars.Ribbon.GalleryItem)">
+            <summary>
+            Validates a UIElement to ensure that the GalleryItem.Tag property
+            contains a non-empty string value. This value is assumed to be a
+            CommandName associated with an instantiated CAB Command.
+            </summary>
+            <param name="uiElement">The UIElement to be validated.</param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonGalleryGroupUIAdapter.Remove(DevExpress.XtraBars.Ribbon.GalleryItem)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Remove(`0)"/> for
+            more information.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.UIElements.RibbonGalleryUIAdapter">
+            <summary>
+            An adapter that wraps a <see cref="T:DevExpress.XtraBars.RibbonGalleryBarItem"/> for use
+            as an <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonGalleryUIAdapter.#ctor(DevExpress.XtraBars.RibbonGalleryBarItem,Microsoft.Practices.CompositeUI.WorkItem)">
+            <summary>
+            Initializes a new instance of the
+            <see cref="T:CABDevExpress.UIElements.RibbonApplicationMenuUIAdapter"/> class.
+            </summary>
+            <param name="ribbonGallery">The application menu.</param>
+            <param name="workItem">The work item which added the command.
+            We need to access the Commands property of the work item to
+            fire the Command associated with the GalleryItem.</param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonGalleryUIAdapter.ItemClick(System.Object,DevExpress.XtraBars.Ribbon.GalleryItemClickEventArgs)">
+            <summary>
+            Fired when any <see cref="T:DevExpress.XtraBars.Ribbon.GalleryItem"/> contained in this
+            <see cref="T:DevExpress.XtraBars.RibbonGalleryBarItem"/> is clicked. If the
+            GalleryItem.Tag property contains an active CommandName string,
+            that command is fired.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:DevExpress.XtraBars.Ribbon.GalleryItemClickEventArgs"/>
+            instance containing the event data.</param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonGalleryUIAdapter.Add(DevExpress.XtraBars.Ribbon.GalleryItemGroup)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Add(`0)"/>
+            for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonGalleryUIAdapter.Remove(DevExpress.XtraBars.Ribbon.GalleryItemGroup)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Remove(`0)"/>
+            for more information.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.UIElements.RibbonGalleryUIAdapter.WorkItem">
+            <summary>
+            Gets the work item which was passed in at creation.
+            </summary>
+            <value>The work item.</value>
+        </member>
+        <member name="T:CABDevExpress.Workspaces.RibbonWindowWorkspace">
+            <summary>
+            Implements a Workspace that shows smartparts in windows.
+            <remarks>Uses DevExpress XtraForm to enable form-skinning</remarks>
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.RibbonWindowWorkspace.#ctor">
+            <summary>
+            Initializes the workspace with a no-owner form to use to show a new windows
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.RibbonWindowWorkspace.#ctor(System.Windows.Forms.IWin32Window)">
+            <summary>
+            Initializes the workspace with the form to use as the owner of 
+            all windows shown through the workspace.
+            </summary>
+            <param name="ownerForm">The owner of windows shown through the workspace</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.RibbonWindowWorkspace.GetOrCreateForm(System.Windows.Forms.Control)">
+            <summary>
+            Creates a form if it does not already exist and adds the given control.
+            </summary>
+            <param name="control"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.RibbonWindowWorkspace.SetWindowProperties(DevExpress.XtraBars.Ribbon.RibbonForm,CABDevExpress.SmartPartInfos.RibbonWindowSmartPartInfo)">
+            <summary>
+            Sets specific properties for the given form.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.RibbonWindowWorkspace.SetWindowLocation(System.Windows.Forms.Form,CABDevExpress.SmartPartInfos.RibbonWindowSmartPartInfo)">
+            <summary>
+            Sets the location information for the given form, providing that CenterParent
+            is not the StartPosition
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.RibbonWindowWorkspace.OnActivate(System.Windows.Forms.Control)">
+            <summary>
+            Shows the form for the smart part and brings it to the front.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.RibbonWindowWorkspace.OnHide(System.Windows.Forms.Control)">
+            <summary>
+            Hides the form where the smart part is being shown.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.RibbonWindowWorkspace.OnClose(System.Windows.Forms.Control)">
+            <summary>
+            Closes the form where the smart part is being shown.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.RibbonWindowWorkspace.OnApplySmartPartInfo(System.Windows.Forms.Control,CABDevExpress.SmartPartInfos.RibbonWindowSmartPartInfo)">
+            <summary>
+            When overridden in a derived class, applies the smartPartInfo
+            to the smartPart that lives in the workspace.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.RibbonWindowWorkspace.OnShow(System.Windows.Forms.Control,CABDevExpress.SmartPartInfos.RibbonWindowSmartPartInfo)">
+            <summary>
+            When overridden in a derived class, shows the smartPart  on the workspace.
+            </summary>
+            <param name="smartPart">The smart part to show.</param>
+            <param name="smartPartInfo">The information to apply to the smart part.</param>
+        </member>
+        <member name="P:CABDevExpress.Workspaces.RibbonWindowWorkspace.Windows">
+            <summary>
+            Read-only view of WindowDictionary.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.Workspaces.RibbonWindowWorkspace.RibbonWindowForm">
+            <summary>
+            WindowForm class
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.RibbonWindowWorkspace.RibbonWindowForm.OnActivated(System.EventArgs)">
+            <summary>
+            Handles Activated Event.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.RibbonWindowWorkspace.RibbonWindowForm.OnClosing(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Handles the Closing Event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.RibbonWindowWorkspace.RibbonWindowForm.OnClosed(System.EventArgs)">
+            <summary>
+            Handles the Closed Event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="E:CABDevExpress.Workspaces.RibbonWindowWorkspace.RibbonWindowForm.WindowFormClosing">
+            <summary>
+            Fires when form is closing
+            </summary>
+        </member>
+        <member name="E:CABDevExpress.Workspaces.RibbonWindowWorkspace.RibbonWindowForm.WindowFormClosed">
+            <summary>
+            Fires when form is closed
+            </summary>
+        </member>
+        <member name="E:CABDevExpress.Workspaces.RibbonWindowWorkspace.RibbonWindowForm.WindowFormActivated">
+            <summary>
+            Fires when form is activated
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.XtraFormApplication`2">
+            <summary>
+            A CAB shell application class used to start an application using a specified Form.
+            </summary>
+            <typeparam name="TWorkItem">The type of the root application work item.</typeparam>
+            <typeparam name="TShell">The type of the form for the shell to use. Should be an XtraForm for skin support.</typeparam>
+        </member>
+        <member name="T:CABDevExpress.XtraFormApplicationBase`2">
+            <summary>
+            Defines an abstract CAB application which shows a shell based on a Form that uses DevExpress WinForms components.
+            </summary>
+            <typeparam name="TWorkItem">The type of the root application work item.</typeparam>
+            <typeparam name="TShell">The type of the form for the shell to use. Should be an XtraForm for skin support.</typeparam>
+        </member>
+        <member name="M:CABDevExpress.XtraFormApplicationBase`2.AfterShellCreated">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.CabShellApplication`2.AfterShellCreated"/>
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.XtraFormApplication`2.Start">
+            <summary>
+            Used to start a message pump using the specified shell form.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.Commands.BarItemCommandAdapter">
+            <summary>
+            An <see cref="T:Microsoft.Practices.CompositeUI.Commands.EventCommandAdapter`1"/> that updates a <see cref="T:DevExpress.XtraBars.BarItem"/> based on the changes to 
+            the <see cref="P:Microsoft.Practices.CompositeUI.Commands.Command.Status"/> property value.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Commands.BarItemCommandAdapter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CABDevExpress.Commands.BarItemCommandAdapter"/> class
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Commands.BarItemCommandAdapter.#ctor(DevExpress.XtraBars.BarItem,System.String)">
+            <summary>
+            Initializes the adapter with the given <see cref="T:DevExpress.XtraBars.BarItem"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Commands.BarItemCommandAdapter.OnCommandChanged(Microsoft.Practices.CompositeUI.Commands.Command)">
+            <summary>
+            Handles the changes in the <see cref="T:Microsoft.Practices.CompositeUI.Commands.Command"/> by refreshing 
+            the <see cref="P:DevExpress.XtraBars.BarItem.Enabled"/> property.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.Commands.DXMenuItemCommandAdapter">
+            <summary>
+            An <see cref="T:Microsoft.Practices.CompositeUI.Commands.EventCommandAdapter`1"/> that updates a 
+            <see cref="T:DevExpress.Utils.Menu.DXMenuItem"/> based on the changes to the <see cref="P:Microsoft.Practices.CompositeUI.Commands.Command.Status"/> property value.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Commands.DXMenuItemCommandAdapter.#ctor">
+            <summary>
+            Initializes a new <see cref="T:CABDevExpress.Commands.DXMenuItemCommandAdapter"/>
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Commands.DXMenuItemCommandAdapter.#ctor(DevExpress.Utils.Menu.DXMenuItem,System.String)">
+            <summary>
+            Initializes  a new <see cref="T:CABDevExpress.Commands.DXMenuItemCommandAdapter"/> with the 
+            given <see cref="T:DevExpress.Utils.Menu.DXMenuItem"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Commands.DXMenuItemCommandAdapter.OnCommandChanged(Microsoft.Practices.CompositeUI.Commands.Command)">
+            <summary>
+            Handles the changes in the <see cref="T:Microsoft.Practices.CompositeUI.Commands.Command"/> by refreshing 
+            the <see cref="P:DevExpress.Utils.Menu.DXMenuItem.Enabled"/> property.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.Commands.NavBarItemCommandAdapter">
+            <summary>
+            An <see cref="T:Microsoft.Practices.CompositeUI.Commands.EventCommandAdapter`1"/> that updates a <see cref="T:DevExpress.XtraNavBar.NavBarItem"/> based on the changes to 
+            the <see cref="P:Microsoft.Practices.CompositeUI.Commands.Command.Status"/> property value.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Commands.NavBarItemCommandAdapter.#ctor">
+            <summary>
+            Initializes a new <see cref="T:CABDevExpress.Commands.NavBarItemCommandAdapter"/>
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Commands.NavBarItemCommandAdapter.#ctor(DevExpress.XtraNavBar.NavBarItem,System.String)">
+            <summary>
+            Initializes  a new <see cref="T:CABDevExpress.Commands.NavBarItemCommandAdapter"/> with the given <see cref="T:DevExpress.XtraNavBar.NavBarItem"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Commands.NavBarItemCommandAdapter.OnCommandChanged(Microsoft.Practices.CompositeUI.Commands.Command)">
+            <summary>
+            Handles the changes in the <see cref="T:Microsoft.Practices.CompositeUI.Commands.Command"/> by refreshing 
+            the <see cref="P:DevExpress.XtraNavBar.NavBarItem.Enabled"/> property.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.Commands.RepositoryItemHyperLinkEditCommandAdapter">
+            <summary>
+            An <see cref="T:Microsoft.Practices.CompositeUI.Commands.EventCommandAdapter`1"/> that updates a <see cref="T:DevExpress.XtraEditors.Repository.RepositoryItemHyperLinkEdit"/> based on the changes to 
+            the <see cref="P:Microsoft.Practices.CompositeUI.Commands.Command.Status"/> property value.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Commands.RepositoryItemHyperLinkEditCommandAdapter.#ctor">
+            <summary>
+            Initializes a new <see cref="T:CABDevExpress.Commands.RepositoryItemHyperLinkEditCommandAdapter"/>
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Commands.RepositoryItemHyperLinkEditCommandAdapter.#ctor(DevExpress.XtraEditors.Repository.RepositoryItemHyperLinkEdit,System.String)">
+            <summary>
+            Initializes  a new <see cref="T:CABDevExpress.Commands.RepositoryItemHyperLinkEditCommandAdapter"/> with the 
+            given <see cref="T:DevExpress.XtraEditors.Repository.RepositoryItemHyperLinkEdit"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Commands.RepositoryItemHyperLinkEditCommandAdapter.OnCommandChanged(Microsoft.Practices.CompositeUI.Commands.Command)">
+            <summary>
+            Handles the changes in the <see cref="T:Microsoft.Practices.CompositeUI.Commands.Command"/> by refreshing 
+            the <see cref="P:DevExpress.XtraEditors.Repository.RepositoryItem.Enabled"/> property.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.Commands.RibbonPageGroupCommandAdapter">
+            <summary>
+            An <see cref="T:Microsoft.Practices.CompositeUI.Commands.EventCommandAdapter`1"/> that updates a 
+            <see cref="T:DevExpress.XtraBars.Ribbon.RibbonPageGroup"/> based on the changes to the <see cref="P:Microsoft.Practices.CompositeUI.Commands.Command.Status"/> property value.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Commands.RibbonPageGroupCommandAdapter.#ctor">
+            <summary>
+            Initializes a new <see cref="T:CABDevExpress.Commands.RibbonPageGroupCommandAdapter"/>
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Commands.RibbonPageGroupCommandAdapter.#ctor(DevExpress.XtraBars.Ribbon.RibbonPageGroup,System.String)">
+            <summary>
+            Initializes  a new <see cref="T:CABDevExpress.Commands.RibbonPageGroupCommandAdapter"/> with the 
+            given <see cref="T:DevExpress.Utils.Menu.DXMenuItem"/>.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo">
+            <summary>
+            Provides information to show smartparts in the <see cref="T:CABDevExpress.Workspaces.DockManagerWorkspace"/>
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.Dock">
+            <summary>
+             Gets or sets a value specifying how the dock panel is aligned within its
+              parent control
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.FloatLocation">
+            <summary>
+             Gets or sets the floating panel's location
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.FloatSize">
+            <summary>
+             Gets or sets the size of the panel when it is floating
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.FloatVertical">
+            <summary>
+             Gets or sets whether the current panel's children should be arranged vertically
+                 or horizontally when the panel is floated
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.Hint">
+            <summary>
+             Gets or sets the dock panel's hint text
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.ID">
+            <summary>
+             Gets or sets the dock panel's unique identifier
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.ImageIndex">
+            <summary>
+             Gets or sets the index of an image associated with the dock panel
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.Index">
+            <summary>
+             Gets or sets the index of an image associated with the dock panel
+             //TODO is it really necessary to hard-code the dll version?
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.SavedDock">
+            <summary>
+             Gets or sets the docking style applied to a panel before it's made to float
+             or is hidden
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.SavedIndex">
+            <summary>
+             Gets or sets the panel's index before it's made to float or is hidden
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.SavedParent">
+            <summary>
+             Gets or sets the panel's parent before it's made to float or is hidden.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.SavedTabbed">
+            <summary>
+             Gets or sets a value indicating whether the panel was a tab container, before
+             it was made to float or was hidden.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.Tabbed">
+            <summary>
+             Gets or sets whether the current panel represents a tab container
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.TabsPosition">
+            <summary>
+             Gets or sets the position of tabs
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.TabsScroll">
+            <summary>
+             Specifies whether tab navigation buttons are displayed when tabs don't fit
+             into the tab container's width/height.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.TabText">
+            <summary>
+             Gets or sets the panel's short caption
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.Visibility">
+            <summary>
+             Gets or sets the panel's visible state
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.Visible">
+            <summary>
+             Gets or sets whether the dock panel is visible.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.XtraBounds">
+            <summary>
+             Gets or sets the dock panel's bounds.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.ParentPanelName">
+            <summary>
+             Gets or sets the Panel which the current panel will be docked in.
+             Leave blank if no ParentPanel is needed
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo.Name">
+            <summary>
+             Gets or sets the DockPanel's name.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.SmartPartInfos.XtraNavBarGroupSmartPartInfo">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.SmartPartInfos.XtraImageSmartPartInfo">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.SmartPartInfos.XtraImageSmartPartInfo.#ctor">
+            <summary>
+            Initializes the smart part info without any values.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.SmartPartInfos.XtraImageSmartPartInfo.#ctor(System.String,System.String)">
+            <summary>
+            Initializes the smart part info with the title and description values.
+            </summary>
+            <param name="title">Display name used by the <see cref="T:Microsoft.Practices.CompositeUI.SmartParts.IWorkspace"/> for the associated smart part</param>
+            <param name="description">String used to describe the associated smart part.</param>
+        </member>
+        <member name="M:CABDevExpress.SmartPartInfos.XtraImageSmartPartInfo.#ctor(System.String,System.String,System.Drawing.Image)">
+            <summary>
+            Initializes the smart part info with the title, description and LargeImage values.
+            </summary>
+            <param name="title">Display name used by the <see cref="T:Microsoft.Practices.CompositeUI.SmartParts.IWorkspace"/> for the associated smart part</param>
+            <param name="description">String used to describe the associated smart part.</param>
+            <param name="largeImage">LargeImage displayed by the <see cref="T:Microsoft.Practices.CompositeUI.SmartParts.IWorkspace"/> to represent the associated smart part.</param>
+        </member>
+        <member name="M:CABDevExpress.SmartPartInfos.XtraImageSmartPartInfo.#ctor(System.String,System.String,System.Drawing.Image,System.Drawing.Image)">
+            <summary>
+            Initializes the smart part info with the title, description and LargeImage values.
+            </summary>
+            <param name="title">Display name used by the <see cref="T:Microsoft.Practices.CompositeUI.SmartParts.IWorkspace"/> for the associated smart part</param>
+            <param name="description">String used to describe the associated smart part.</param>
+            <param name="largeImage">LargeImage displayed by the <see cref="T:Microsoft.Practices.CompositeUI.SmartParts.IWorkspace"/> to represent the associated smart part.</param>
+            <param name="smallImage">SmallImage displayed by the <see cref="T:Microsoft.Practices.CompositeUI.SmartParts.IWorkspace"/> to represent the associated smart part.</param>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraImageSmartPartInfo.LargeImage">
+            <summary>
+            Returns or sets the LargeImage that is displayed in associated with the smart part.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraImageSmartPartInfo.SmallImage">
+            <summary>
+            Returns or sets the SmallImage that is displayed in associated with the smart part.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="F:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo.pageHeaderFont">
+            <summary>
+            Gets or sets the page header font (CABDevExpress added property)
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo.BackColor">
+            <summary>
+            Gets or sets the background color of the tab page's client region.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo.Enabled">
+            <summary>
+            Gets or sets whether a tab page can be selected.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo.ForeColor">
+            <summary>
+            Gets or sets the foreground color of the tab page's client region.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo.Image">
+            <summary>
+            Gets or sets the image displayed within the tab page's header
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo.ImageIndex">
+            <summary>
+            Gets or sets the index of the image displayed within the tab page's header.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo.PageEnabled">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo.PageVisible">
+            <summary>
+             Gets or sets whether the tab page is visible.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo.Size">
+            <summary>
+            Gets or sets the control's height and width.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo.TabIndex">
+            <summary>
+            Gets or sets the tab order of the control within its container.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo.TabStop">
+            <summary>
+            Gets or sets a value indicating whether an end user can focus this page using the TAB key.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo.Text">
+            <summary>
+            Gets or sets the tab page's caption.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo.Tooltip">
+            <summary>
+            Gets or sets a tooltip for the tab page.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo.Visible">
+            <summary>
+            Gets or sets whether the tab page is visible
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo.PageHeaderFont">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.UIElements.BarItemWrapper">
+            <summary>
+             A wrapper around the BarItem and BarItemLinkCollection combination of classes
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.BarItemWrapper.#ctor(DevExpress.XtraBars.BarItemLinkCollection,DevExpress.XtraBars.BarItem)">
+            <summary>
+             constructor
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.UIElements.BarItemWrapper.Item">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.UIElements.BarItemWrapper.ItemLinks">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.UIElements.BarLinksCollectionUIAdapter">
+            <summary>
+            An adapter that wraps a <see cref="T:DevExpress.XtraBars.BarItems"/> for use as an <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.BarLinksCollectionUIAdapter.#ctor(DevExpress.XtraBars.BarItemLinkCollection,DevExpress.XtraBars.BarItems)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CABDevExpress.UIElements.BarLinksCollectionUIAdapter"/> class.
+            </summary>
+            <param name="linkCollection"></param>
+            <param name="itemCollection"></param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.BarLinksCollectionUIAdapter.Add(DevExpress.XtraBars.BarItem)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Add(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.BarLinksCollectionUIAdapter.Remove(DevExpress.XtraBars.BarItem)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Remove(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.BarLinksCollectionUIAdapter.GetInsertingIndex(System.Object)">
+            <summary>
+            When overridden in a derived class, returns the correct index for the item being added. By default,
+            it will return the length of the itemCollection.
+            </summary>
+            <param name="uiElement"></param>
+            <returns></returns>
+        </member>
+        <member name="P:CABDevExpress.UIElements.BarLinksCollectionUIAdapter.InternalCollection">
+            <summary>
+            Returns the internal itemCollection managed by the <see cref="T:CABDevExpress.UIElements.BarLinksCollectionUIAdapter"/>
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.UIElements.BarsUIAdapter">
+            <summary>
+            An adapter that wraps a <see cref="T:DevExpress.XtraBars.Bars"/> for use as an <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.BarsUIAdapter.#ctor(DevExpress.XtraBars.Bars)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CABDevExpress.UIElements.BarsUIAdapter"/> class.
+            </summary>
+            <param name="bars"></param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.BarsUIAdapter.Add(DevExpress.XtraBars.Bar)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Add(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.BarsUIAdapter.Remove(DevExpress.XtraBars.Bar)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Remove(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.BarsUIAdapter.GetInsertingIndex(System.Object)">
+            <summary>
+            When overridden in a derived class, returns the correct index for the item being added. By default,
+            it will return the length of the bars.
+            </summary>
+            <param name="uiElement"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CABDevExpress.UIElements.BarLinksOwnerCollectionUIAdapter">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CABDevExpress.UIElements.BarLinksOwnerCollectionUIAdapter.item">
+            <summary>
+            Provides an adapter for BarItems where new items will be added to the item's owner collection, 
+            after the item to which the adapter is attached.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.BarLinksOwnerCollectionUIAdapter.#ctor(DevExpress.XtraBars.BarItem,DevExpress.XtraBars.BarItemLinkCollection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CABDevExpress.UIElements.BarLinksOwnerCollectionUIAdapter"/> using the
+            specified item and linkCollection
+            </summary>
+            <param name="item"></param>
+            <param name="linkCollection"></param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.BarLinksOwnerCollectionUIAdapter.GetInsertingIndex(System.Object)">
+            <summary>
+            Returns the index immediately after the <see cref="T:DevExpress.XtraBars.BarItemLink"/> that
+            was provided to the constructor.
+            </summary>
+            <param name="uiElement"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CABDevExpress.UIElements.EditorButtonCollectionUIAdapter">
+            <summary>
+            An adapter that wraps a <see cref="T:DevExpress.XtraEditors.Controls.EditorButtonCollection"/> for use as an <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.EditorButtonCollectionUIAdapter.#ctor(DevExpress.XtraEditors.Controls.EditorButtonCollection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CABDevExpress.UIElements.EditorButtonCollectionUIAdapter"/> class.
+            </summary>
+            <param name="collection"></param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.EditorButtonCollectionUIAdapter.Add(DevExpress.XtraEditors.Controls.EditorButton)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Add(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.EditorButtonCollectionUIAdapter.Remove(DevExpress.XtraEditors.Controls.EditorButton)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Remove(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.EditorButtonCollectionUIAdapter.GetInsertingIndex(System.Object)">
+            <summary>
+            When overridden in a derived class, returns the correct index for the item being added. By default,
+            it will return the length of the buttonCollection.
+            </summary>
+            <param name="uiElement"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CABDevExpress.UIElements.NavigatorCustomButtonUIAdapter">
+            <summary>
+            An adapter that wraps a <see cref="T:DevExpress.XtraEditors.NavigatorCustomButtons"/> for use as an <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.NavigatorCustomButtonUIAdapter.#ctor(DevExpress.XtraEditors.NavigatorCustomButtons)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CABDevExpress.UIElements.NavigatorCustomButtonUIAdapter"/> class.
+            </summary>
+            <param name="buttonCollection"></param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.NavigatorCustomButtonUIAdapter.Add(DevExpress.XtraEditors.NavigatorCustomButton)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Add(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.NavigatorCustomButtonUIAdapter.Remove(DevExpress.XtraEditors.NavigatorCustomButton)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Remove(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.NavigatorCustomButtonUIAdapter.GetInsertingIndex(System.Object)">
+            <summary>
+            Returns the correct index for the item being added. By default,
+            it will return the length of the buttonCollection.
+            </summary>
+            <param name="uiElement"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CABDevExpress.UIElements.NavigatorCustomButtonUIAdapterFactory">
+            <summary>
+            A <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapterFactory"/> that produces adapters for NavigatorCustomButtons-related UI Elements.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.NavigatorCustomButtonUIAdapterFactory.GetAdapter(System.Object)">
+            <summary>
+            Returns a <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/> for the specified uielement.
+            </summary>
+            <param name="uiElement">uiElement for which to return a <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/></param>
+            <returns>A <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/> that represents the specified element</returns>
+        </member>
+        <member name="M:CABDevExpress.UIElements.NavigatorCustomButtonUIAdapterFactory.Supports(System.Object)">
+            <summary>
+            Indicates if the specified ui element is supported by the adapter factory.
+            </summary>
+            <param name="uiElement">UI Element to evaluate</param>
+            <returns>Returns true for supported elements, otherwise returns false.</returns>
+        </member>
+        <member name="T:CABDevExpress.UIElements.EditorButtonCollectionUIAdapterFactory">
+            <summary>
+            A <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapterFactory"/> that produces adapters for EditorButtonCollection-related UI Elements.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.EditorButtonCollectionUIAdapterFactory.GetAdapter(System.Object)">
+            <summary>
+            Returns a <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/> for the specified uielement.
+            </summary>
+            <param name="uiElement">uiElement for which to return a <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/></param>
+            <returns>A <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/> that represents the specified element</returns>
+        </member>
+        <member name="M:CABDevExpress.UIElements.EditorButtonCollectionUIAdapterFactory.Supports(System.Object)">
+            <summary>
+            Indicates if the specified ui element is supported by the adapter factory.
+            </summary>
+            <param name="uiElement">UI Element to evaluate</param>
+            <returns>Returns true for supported elements, otherwise returns false.</returns>
+        </member>
+        <member name="T:CABDevExpress.UIElements.NavBarGroupCollectionUIAdapter">
+            <summary>
+            An adapter that wraps a <see cref="T:DevExpress.XtraNavBar.NavGroupCollection"/> for use as an <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.NavBarGroupCollectionUIAdapter.#ctor(DevExpress.XtraNavBar.NavGroupCollection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CABDevExpress.UIElements.NavBarGroupCollectionUIAdapter"/> class.
+            </summary>
+            <param name="collection"></param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.NavBarGroupCollectionUIAdapter.Add(DevExpress.XtraNavBar.NavBarGroup)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Add(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.NavBarGroupCollectionUIAdapter.Remove(DevExpress.XtraNavBar.NavBarGroup)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Remove(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.NavBarGroupCollectionUIAdapter.GetInsertingIndex(System.Object)">
+            <summary>
+            When overridden in a derived class, returns the correct index for the item being added. By default,
+            it will return the length of the navGroupCollection.
+            </summary>
+            <param name="uiElement"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CABDevExpress.UIElements.NavBarItemCollectionUIAdapter">
+            <summary>
+            An adapter that wraps a <see cref="T:DevExpress.XtraNavBar.NavItemCollection"/> for use as an <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.NavBarItemCollectionUIAdapter.#ctor(DevExpress.XtraNavBar.NavBarGroup)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CABDevExpress.UIElements.NavBarItemCollectionUIAdapter"/> class.
+            </summary>
+            <param name="navBarGroup"></param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.NavBarItemCollectionUIAdapter.#ctor(DevExpress.XtraNavBar.NavLinkCollection,DevExpress.XtraNavBar.NavItemCollection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CABDevExpress.UIElements.NavBarItemCollectionUIAdapter"/> class.
+            </summary>
+            <param name="linkCollection"></param>
+            <param name="itemCollection"></param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.NavBarItemCollectionUIAdapter.Add(DevExpress.XtraNavBar.NavBarItem)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Add(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.NavBarItemCollectionUIAdapter.Remove(DevExpress.XtraNavBar.NavBarItem)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Remove(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.NavBarItemCollectionUIAdapter.GetInsertingIndex(System.Object)">
+            <summary>
+            When overridden in a derived class, returns the correct index for the item being added. By default,
+            it will return the length of the itemCollection.
+            </summary>
+            <param name="uiElement"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CABDevExpress.UIElements.RibbonApplicationMenuUIAdapter">
+            <summary>
+            An adapter that wraps an <see cref="T:DevExpress.XtraBars.Ribbon.ApplicationMenu"/> for use as an <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonApplicationMenuUIAdapter.#ctor(DevExpress.XtraBars.Ribbon.ApplicationMenu)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CABDevExpress.UIElements.RibbonApplicationMenuUIAdapter"/> class.
+            </summary>
+            <param name="applicationMenu"></param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonApplicationMenuUIAdapter.Add(DevExpress.XtraBars.BarItem)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Add(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonApplicationMenuUIAdapter.Remove(DevExpress.XtraBars.BarItem)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Remove(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.UIElements.RibbonGroupUI">
+            <summary>
+            Drag this component to your smartpart control and set the Page/group and button items
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.UIElements.RibbonGroupUI.RibbonPageGroup">
+            <summary>
+            Actual base ribbon page group object
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.UIElements.RibbonGroupUI.RibbonPageName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.UIElements.RibbonGroupUI.UniqueRibbonGroupName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.UIElements.RibbonGroupUI.BarButtonItems">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.UIElements.RibbonGroupUI.BarCheckItems">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.UIElements.DXCheckItem">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.UIElements.DXCheckItem.CabUIEvent">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.UIElements.DXCheckItem.BarCheckItem">
+            <summary>
+            Actual BarCheckItem 
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.UIElements.DXButtonItem">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.DXButtonItem.#ctor">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.UIElements.DXButtonItem.CabUIEvent">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.UIElements.DXButtonItem.BarButtonItem">
+            <summary>
+            Actual BarButtonItem 
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.UIElements.DXItemEvents">
+            <summary>
+             Enumeration of events 
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.UIElements.UIEvent">
+            <summary>
+            Class to define UI Events to attach to CAB Bar Items
+            </summary>
+            
+        </member>
+        <member name="P:CABDevExpress.UIElements.UIEvent.Event">
+            <summary>
+            Control Event
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.UIElements.UIEvent.CommandName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.UIElements.UIEvent.PublicationScope">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.UIElements.RibbonPageCollectionUIAdapter">
+            <summary>
+            An adapter that wraps a <see cref="T:DevExpress.XtraBars.Ribbon.RibbonPageCollection"/> for use as an <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonPageCollectionUIAdapter.#ctor(DevExpress.XtraBars.Ribbon.RibbonPageCollection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CABDevExpress.UIElements.RibbonPageCollectionUIAdapter"/> class.
+            </summary>
+            <param name="ribbonPageCollection"></param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonPageCollectionUIAdapter.Add(DevExpress.XtraBars.Ribbon.RibbonPage)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Add(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonPageCollectionUIAdapter.Remove(DevExpress.XtraBars.Ribbon.RibbonPage)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Remove(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonPageCollectionUIAdapter.GetInsertingIndex(System.Object)">
+            <summary>
+            When overridden in a derived class, returns the correct index for the item being added. By default,
+            it will return the length of the ribbonPageCollection.
+            </summary>
+            <param name="uiElement"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CABDevExpress.UIElements.RibbonPageGroupCollectionUIAdapter">
+            <summary>
+            An adapter that wraps a <see cref="T:DevExpress.XtraBars.Ribbon.RibbonPageGroupCollection"/> for use as an <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/>.
+            It is used to Manage groups added and removed from a ribbon Page
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonPageGroupCollectionUIAdapter.#ctor(DevExpress.XtraBars.Ribbon.RibbonPageGroupCollection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CABDevExpress.UIElements.RibbonPageGroupCollectionUIAdapter"/> class.
+            </summary>
+            <param name="collection"></param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonPageGroupCollectionUIAdapter.Add(DevExpress.XtraBars.Ribbon.RibbonPageGroup)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Add(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonPageGroupCollectionUIAdapter.Remove(DevExpress.XtraBars.Ribbon.RibbonPageGroup)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Remove(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonPageGroupCollectionUIAdapter.GetInsertingIndex(System.Object)">
+            <summary>
+            When overridden in a derived class, returns the correct index for the item being added. By default,
+            it will return the length of the ribbonPageGroupCollection.
+            </summary>
+            <param name="uiElement"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CABDevExpress.UIElements.RibbonPageHeaderUIAdapter">
+            <summary>
+            An adapter that wraps a <see cref="T:DevExpress.XtraBars.Ribbon.RibbonPageHeaderItemLinkCollection"/> for use as an <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonPageHeaderUIAdapter.#ctor(DevExpress.XtraBars.Ribbon.RibbonPageHeaderItemLinkCollection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CABDevExpress.UIElements.RibbonPageHeaderUIAdapter"/> class.
+            </summary>
+            <param name="ribbonPageHeader"></param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonPageHeaderUIAdapter.Add(DevExpress.XtraBars.BarItem)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Add(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonPageHeaderUIAdapter.Remove(DevExpress.XtraBars.BarItem)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Remove(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.UIElements.RibbonQuickAccessToolbarUIAdapter">
+            <summary>
+            An adapter that wraps a <see cref="T:DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbar"/> for use as an <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonQuickAccessToolbarUIAdapter.#ctor(DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbar)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CABDevExpress.UIElements.BarsUIAdapter"/> class.
+            </summary>
+            <param name="ribbonQuickAccessToolbar"></param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonQuickAccessToolbarUIAdapter.Add(DevExpress.XtraBars.BarItem)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Add(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonQuickAccessToolbarUIAdapter.Remove(DevExpress.XtraBars.BarItem)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Remove(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.UIElements.RibbonStatusBarUIAdapter">
+            <summary>
+            An adapter that wraps a <see cref="T:DevExpress.XtraBars.Ribbon.RibbonStatusBar"/> for use as an <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/>.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonStatusBarUIAdapter.#ctor(DevExpress.XtraBars.Ribbon.RibbonStatusBar)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CABDevExpress.UIElements.BarsUIAdapter"/> class.
+            </summary>
+            <param name="ribbonStatusBar"></param>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonStatusBarUIAdapter.Add(DevExpress.XtraBars.BarItem)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Add(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonStatusBarUIAdapter.Remove(DevExpress.XtraBars.BarItem)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.UIElements.UIElementAdapter`1.Remove(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonStatusBarUIAdapter.GetInsertingIndex(System.Object)">
+            <summary>
+            Returns the correct index for the item being added
+            </summary>
+            <param name="uiElement"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CABDevExpress.UIElements.XtraBarUIAdapterFactory">
+            <summary>
+            A <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapterFactory"/> that produces adapters for XtraBar-related UI Elements.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.XtraBarUIAdapterFactory.GetAdapter(System.Object)">
+            <summary>
+            Returns a <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/> for the specified uielement.
+            </summary>
+            <param name="uiElement">uiElement for which to return a <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/></param>
+            <returns>A <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/> that represents the specified element</returns>
+        </member>
+        <member name="M:CABDevExpress.UIElements.XtraBarUIAdapterFactory.Supports(System.Object)">
+            <summary>
+            Indicates if the specified ui element is supported by the adapter factory.
+            </summary>
+            <param name="uiElement">UI Element to evaluate</param>
+            <returns>Returns true for supported elements, otherwise returns false.</returns>
+        </member>
+        <member name="T:CABDevExpress.UIElements.XtraNavBarUIAdapterFactory">
+            <summary>
+            A <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapterFactory"/> that produces adapters for XtraNavBar-related UI Elements.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.XtraNavBarUIAdapterFactory.GetAdapter(System.Object)">
+            <summary>
+            Returns a <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/> for the specified uielement.
+            </summary>
+            <param name="uiElement">uiElement for which to return a <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/></param>
+            <returns>A <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/> that represents the specified element</returns>
+        </member>
+        <member name="M:CABDevExpress.UIElements.XtraNavBarUIAdapterFactory.Supports(System.Object)">
+            <summary>
+            Indicates if the specified ui element is supported by the adapter factory.
+            </summary>
+            <param name="uiElement">UI Element to evaluate</param>
+            <returns>Returns true for supported elements, otherwise returns false.</returns>
+        </member>
+        <member name="T:CABDevExpress.UIElements.RibbonUIAdapterFactory">
+            <summary>
+            A <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapterFactory"/> that produces adapters for RibbonControl-related UI Elements.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonUIAdapterFactory.GetAdapter(System.Object)">
+            <summary>
+            Returns a <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/> for the specified uielement.
+            </summary>
+            <param name="uiElement">uiElement for which to return a <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/></param>
+            <returns>A <see cref="T:Microsoft.Practices.CompositeUI.UIElements.IUIElementAdapter"/> that represents the specified element</returns>
+        </member>
+        <member name="M:CABDevExpress.UIElements.RibbonUIAdapterFactory.Supports(System.Object)">
+            <summary>
+            Indicates if the specified ui element is supported by the adapter factory.
+            </summary>
+            <param name="uiElement">UI Element to evaluate</param>
+            <returns>Returns true for supported elements, otherwise returns false.</returns>
+        </member>
+        <member name="T:CABDevExpress.Workspaces.DockManagerWorkspace">
+            <summary>
+            Implements a Workspace that shows smartparts in DockedWindows
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.DockManagerWorkspace.#ctor">
+            <summary>
+            Initializes the workspace with no DockManager windows.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.DockManagerWorkspace.#ctor(DevExpress.XtraBars.Docking.DockManager)">
+            <summary>
+            Initializes the workspace with the DockManager which all new DockPanels are added to. 
+            </summary>
+            <param name="dockManager">The DockManager that new DockPanels are added to</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.DockManagerWorkspace.GetOrCreateDockPanel(System.Windows.Forms.Control,CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo)">
+            <summary>
+            Creates a DockPanel if it does not already exist and adds the given control.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.DockManagerWorkspace.SetDockPanelProperties(DevExpress.XtraBars.Docking.DockPanel,CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo)">
+            <summary>
+            Sets  <see cref="T:CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo"/> specific properties for the given DockPanel 
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.DockManagerWorkspace.OnActivate(System.Windows.Forms.Control)">
+            <summary>
+            Shows the DockPanel for the smart part and brings it to the front.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.DockManagerWorkspace.OnApplySmartPartInfo(System.Windows.Forms.Control,CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo)">
+            <summary>
+            Sets the properties on the DockPanel based on the information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.DockManagerWorkspace.OnShow(System.Windows.Forms.Control,CABDevExpress.SmartPartInfos.DockManagerSmartPartInfo)">
+            <summary>
+            Shows a DockPanel for the smart part and sets its properties.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.DockManagerWorkspace.OnHide(System.Windows.Forms.Control)">
+            <summary>
+            Hides the DockPanel where the smart part is being shown.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.DockManagerWorkspace.OnClose(System.Windows.Forms.Control)">
+            <summary>
+            Closes the DockPanel where the smart part is being shown.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.Workspaces.DockManagerWorkspace.DockManger">
+            <summary>
+            Dock manager
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.Workspaces.DockManagerWorkspace.DockPanels">
+            <summary>
+            Read-only view of DockPanelDictionary.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.Workspaces.XtraNavBarWorkspace">
+            <summary>
+            A workspace that displays smart parts within an <see cref="T:DevExpress.XtraNavBar.NavBarControl"/>
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.#ctor">
+            <summary>
+            Initializes a new <see cref="T:CABDevExpress.Workspaces.XtraNavBarWorkspace"/>
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.OnActivate(System.Windows.Forms.Control)">
+            <summary>
+            Activates the smart part within the workspace.
+            </summary>
+            <param name="smartPart">The smart part to activate</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.OnApplySmartPartInfo(System.Windows.Forms.Control,CABDevExpress.SmartPartInfos.XtraNavBarGroupSmartPartInfo)">
+            <summary>
+            Applies the smart part info to the smart part within the workspace.
+            </summary>
+            <param name="smartPart">The smart part to which the smart part info should be applied.</param>
+            <param name="smartPartInfo">The smart part info to apply</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.OnClose(System.Windows.Forms.Control)">
+            <summary>
+            Closes/removes the smart part.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.OnHide(System.Windows.Forms.Control)">
+            <summary>
+            Hides the smart part.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.OnShow(System.Windows.Forms.Control,CABDevExpress.SmartPartInfos.XtraNavBarGroupSmartPartInfo)">
+            <summary>
+            Shows the smart part in the workspace.
+            </summary>
+            <param name="smartPart">The smart part to show</param>
+            <param name="smartPartInfo">The associated smart part info for the smart part being shown.</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.OnSmartPartActivated(Microsoft.Practices.CompositeUI.SmartParts.WorkspaceEventArgs)">
+            <summary>
+            Raises the <see cref="E:CABDevExpress.Workspaces.XtraNavBarWorkspace.SmartPartActivated"/> event.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.OnSmartPartClosing(Microsoft.Practices.CompositeUI.SmartParts.WorkspaceCancelEventArgs)">
+            <summary>
+            Raises the <see cref="E:CABDevExpress.Workspaces.XtraNavBarWorkspace.SmartPartClosing"/> event.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.OnConvertFrom(Microsoft.Practices.CompositeUI.SmartParts.ISmartPartInfo)">
+            <summary>
+            Converts a smart part information to a compatible one for the workspace.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraNavBarGroupSmartPartInfo}#OnActivate(System.Windows.Forms.Control)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.OnActivate(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraNavBarGroupSmartPartInfo}#OnApplySmartPartInfo(System.Windows.Forms.Control,CABDevExpress.SmartPartInfos.XtraNavBarGroupSmartPartInfo)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.OnApplySmartPartInfo(`0,`1)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraNavBarGroupSmartPartInfo}#OnShow(System.Windows.Forms.Control,CABDevExpress.SmartPartInfos.XtraNavBarGroupSmartPartInfo)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.OnShow(`0,`1)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraNavBarGroupSmartPartInfo}#OnHide(System.Windows.Forms.Control)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.OnHide(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraNavBarGroupSmartPartInfo}#OnClose(System.Windows.Forms.Control)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.OnClose(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraNavBarGroupSmartPartInfo}#RaiseSmartPartActivated(Microsoft.Practices.CompositeUI.SmartParts.WorkspaceEventArgs)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.RaiseSmartPartActivated(Microsoft.Practices.CompositeUI.SmartParts.WorkspaceEventArgs)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraNavBarGroupSmartPartInfo}#RaiseSmartPartClosing(Microsoft.Practices.CompositeUI.SmartParts.WorkspaceCancelEventArgs)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.RaiseSmartPartClosing(Microsoft.Practices.CompositeUI.SmartParts.WorkspaceCancelEventArgs)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraNavBarGroupSmartPartInfo}#ConvertFrom(Microsoft.Practices.CompositeUI.SmartParts.ISmartPartInfo)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.ConvertFrom(Microsoft.Practices.CompositeUI.SmartParts.ISmartPartInfo)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.Activate(System.Object)">
+            <summary>
+            Activates the specified smart part within the workspace.
+            </summary>
+            <param name="smartPart">Smart part to activate</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.ApplySmartPartInfo(System.Object,Microsoft.Practices.CompositeUI.SmartParts.ISmartPartInfo)">
+            <summary>
+            Applies the specified smart part info to the specified smart part within the workspace.
+            </summary>
+            <param name="smartPart">Smart part to update</param>
+            <param name="smartPartInfo">Smart part info to apply to the <paramref name="smartPart"/></param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.Show(System.Object,Microsoft.Practices.CompositeUI.SmartParts.ISmartPartInfo)">
+            <summary>
+            Shows the smart part within the workspace using the specified smart part info.
+            </summary>
+            <param name="smartPart">Smart part that should be displayed</param>
+            <param name="smartPartInfo">Smart part info to applied to the smart part</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.Show(System.Object)">
+            <summary>
+            Shows the specified smart part within the workspace.
+            </summary>
+            <param name="smartPart">Smart part to show.</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.Hide(System.Object)">
+            <summary>
+            Hides the specified smart part.
+            </summary>
+            <param name="smartPart">Smart part within the workspace that should be hidden.</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraNavBarWorkspace.Close(System.Object)">
+            <summary>
+            Closes the specified smart part and removes it from the workspace.
+            </summary>
+            <param name="smartPart">Smart part to close and remove.</param>
+        </member>
+        <member name="P:CABDevExpress.Workspaces.XtraNavBarWorkspace.WorkItem">
+            <summary>
+            Dependency injection setter property to get the <see cref="P:CABDevExpress.Workspaces.XtraNavBarWorkspace.WorkItem"/> where the object is contained.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.Workspaces.XtraNavBarWorkspace.ActiveSmartPart">
+            <summary>
+            See <see cref="P:Microsoft.Practices.CompositeUI.SmartParts.IWorkspace.ActiveSmartPart"/> for more information.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.Workspaces.XtraNavBarWorkspace.SmartParts">
+            <summary>
+            See <see cref="P:Microsoft.Practices.CompositeUI.SmartParts.IWorkspace.SmartParts"/> for more information.
+            </summary>
+        </member>
+        <member name="E:CABDevExpress.Workspaces.XtraNavBarWorkspace.SmartPartClosing">
+            <summary>
+            See <see cref="E:Microsoft.Practices.CompositeUI.SmartParts.IWorkspace.SmartPartClosing"/> for more information.
+            </summary>
+        </member>
+        <member name="E:CABDevExpress.Workspaces.XtraNavBarWorkspace.SmartPartActivated">
+            <summary>
+            See <see cref="E:Microsoft.Practices.CompositeUI.SmartParts.IWorkspace.SmartPartActivated"/> for more information.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.Workspaces.XtraTabWorkspace">
+            <summary>
+            A workspace that displays smart parts within a <see cref="T:DevExpress.XtraTab.XtraTabControl"/>
+            <remarks>
+            The code here was copied and adapted from CAB's plain-vanilla <see cref="T:Microsoft.Practices.CompositeUI.WinForms.TabWorkspace"/>
+            It couldn't be inherited because some property names and features of the XtraTab are different
+            </remarks>
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.#ctor">
+            <summary>
+            Initializes a new <see cref="T:CABDevExpress.Workspaces.XtraTabWorkspace"/>
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.OnSelectedPageChanged(System.Object,DevExpress.XtraTab.ViewInfo.ViewInfoTabPageChangedEventArgs)">
+            <summary>
+            Fires the <see cref="E:CABDevExpress.Workspaces.XtraTabWorkspace.SmartPartActivated"/> event whenever 
+            the selected tab index changes.
+            </summary>
+            <param name="sender"></param>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.OnCreateControl">
+            <summary>
+            Hooks up tab pages added at design-time.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.OnActivate(System.Windows.Forms.Control)">
+            <summary>
+            Activates the smart part within the workspace.
+            </summary>
+            <param name="smartPart">The smart part to activate</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.OnApplySmartPartInfo(System.Windows.Forms.Control,CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo)">
+            <summary>
+            Applies the smart part info to the smart part within the workspace.
+            </summary>
+            <param name="smartPart">The smart part to which the smart part info should be applied.</param>
+            <param name="smartPartInfo">The smart part info to apply</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.OnClose(System.Windows.Forms.Control)">
+            <summary>
+            Closes/removes the smart part.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.OnHide(System.Windows.Forms.Control)">
+            <summary>
+            Hides the smart part.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.OnShow(System.Windows.Forms.Control,CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo)">
+            <summary>
+            Shows the smart part in the workspace.
+            </summary>
+            <param name="smartPart">The smart part to show</param>
+            <param name="smartPartInfo">The associated smart part info for the smart part being shown.</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.OnSmartPartActivated(Microsoft.Practices.CompositeUI.SmartParts.WorkspaceEventArgs)">
+            <summary>
+            Raises the <see cref="E:CABDevExpress.Workspaces.XtraTabWorkspace.SmartPartActivated"/> event.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.OnSmartPartClosing(Microsoft.Practices.CompositeUI.SmartParts.WorkspaceCancelEventArgs)">
+            <summary>
+            Raises the <see cref="E:CABDevExpress.Workspaces.XtraTabWorkspace.SmartPartClosing"/> event.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.ConvertFrom(Microsoft.Practices.CompositeUI.SmartParts.ISmartPartInfo)">
+            <summary>
+            Converts a smart part information to a compatible one for the workspace.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraTabSmartPartInfo}#OnActivate(System.Windows.Forms.Control)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.OnActivate(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraTabSmartPartInfo}#OnApplySmartPartInfo(System.Windows.Forms.Control,CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.OnApplySmartPartInfo(`0,`1)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraTabSmartPartInfo}#OnShow(System.Windows.Forms.Control,CABDevExpress.SmartPartInfos.XtraTabSmartPartInfo)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.OnShow(`0,`1)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraTabSmartPartInfo}#OnHide(System.Windows.Forms.Control)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.OnHide(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraTabSmartPartInfo}#OnClose(System.Windows.Forms.Control)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.OnClose(`0)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraTabSmartPartInfo}#RaiseSmartPartActivated(Microsoft.Practices.CompositeUI.SmartParts.WorkspaceEventArgs)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.RaiseSmartPartActivated(Microsoft.Practices.CompositeUI.SmartParts.WorkspaceEventArgs)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraTabSmartPartInfo}#RaiseSmartPartClosing(Microsoft.Practices.CompositeUI.SmartParts.WorkspaceCancelEventArgs)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.RaiseSmartPartClosing(Microsoft.Practices.CompositeUI.SmartParts.WorkspaceCancelEventArgs)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.Microsoft#Practices#CompositeUI#SmartParts#IComposableWorkspace{System#Windows#Forms#Control@CABDevExpress#SmartPartInfos#XtraTabSmartPartInfo}#ConvertFrom(Microsoft.Practices.CompositeUI.SmartParts.ISmartPartInfo)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.ConvertFrom(Microsoft.Practices.CompositeUI.SmartParts.ISmartPartInfo)"/> for more information.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.Activate(System.Object)">
+            <summary>
+            Activates the specified smart part within the workspace.
+            </summary>
+            <param name="smartPart">Smart part to activate</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.ApplySmartPartInfo(System.Object,Microsoft.Practices.CompositeUI.SmartParts.ISmartPartInfo)">
+            <summary>
+            Applies the specified smart part info to the specified smart part within the workspace.
+            </summary>
+            <param name="smartPart">Smart part to update</param>
+            <param name="smartPartInfo">Smart part info to apply to the <paramref name="smartPart"/></param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.Show(System.Object,Microsoft.Practices.CompositeUI.SmartParts.ISmartPartInfo)">
+            <summary>
+            Shows the smart part within the workspace using the specified smart part info.
+            </summary>
+            <param name="smartPart">Smart part that should be displayed</param>
+            <param name="smartPartInfo">Smart part info to applied to the smart part</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.Show(System.Object)">
+            <summary>
+            Shows the specified smart part within the workspace.
+            </summary>
+            <param name="smartPart">Smart part to show.</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.Hide(System.Object)">
+            <summary>
+            Hides the specified smart part.
+            </summary>
+            <param name="smartPart">Smart part within the workspace that should be hidden.</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraTabWorkspace.Close(System.Object)">
+            <summary>
+            Closes the specified smart part and removes it from the workspace.
+            </summary>
+            <param name="smartPart">Smart part to close and remove.</param>
+        </member>
+        <member name="P:CABDevExpress.Workspaces.XtraTabWorkspace.WorkItem">
+            <summary>
+            Dependency injection setter property to get the <see cref="P:CABDevExpress.Workspaces.XtraTabWorkspace.WorkItem"/> where object is contained.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.Workspaces.XtraTabWorkspace.Pages">
+            <summary>
+            Gets the collection of pages that the tab workspace uses.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.Workspaces.XtraTabWorkspace.ActiveSmartPart">
+            <summary>
+            See <see cref="P:Microsoft.Practices.CompositeUI.SmartParts.IWorkspace.ActiveSmartPart"/> for more information.
+            </summary>
+        </member>
+        <member name="P:CABDevExpress.Workspaces.XtraTabWorkspace.SmartParts">
+            <summary>
+            See <see cref="P:Microsoft.Practices.CompositeUI.SmartParts.IWorkspace.SmartParts"/> for more information.
+            </summary>
+        </member>
+        <member name="E:CABDevExpress.Workspaces.XtraTabWorkspace.SmartPartClosing">
+            <summary>
+            See <see cref="E:Microsoft.Practices.CompositeUI.SmartParts.IWorkspace.SmartPartClosing"/> for more information.
+            </summary>
+        </member>
+        <member name="E:CABDevExpress.Workspaces.XtraTabWorkspace.SmartPartActivated">
+            <summary>
+            See <see cref="E:Microsoft.Practices.CompositeUI.SmartParts.IWorkspace.SmartPartActivated"/> for more information.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.Workspaces.XtraWindowWorkspace">
+            <summary>
+            Implements a Workspace that shows smartparts in windows.
+            <remarks>Uses DevExpress XtraForm to enable form-skinning</remarks>
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraWindowWorkspace.#ctor">
+            <summary>
+            Initializes the workspace with a no-owner form to use to show a new windows
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraWindowWorkspace.#ctor(System.Windows.Forms.IWin32Window)">
+            <summary>
+            Initializes the workspace with the form to use as the owner of 
+            all windows shown through the workspace.
+            </summary>
+            <param name="ownerForm">The owner of windows shown through the workspace</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraWindowWorkspace.GetOrCreateForm(System.Windows.Forms.Control)">
+            <summary>
+            Creates a form if it does not already exist and adds the given control.
+            </summary>
+            <param name="control"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraWindowWorkspace.SetWindowProperties(System.Windows.Forms.Form,CABDevExpress.SmartPartInfos.XtraWindowSmartPartInfo)">
+            <summary>
+            Sets specific properties for the given form.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraWindowWorkspace.SetWindowLocation(System.Windows.Forms.Form,CABDevExpress.SmartPartInfos.XtraWindowSmartPartInfo)">
+            <summary>
+            Sets the location information for the given form, providing that CenterParent
+            is not the StartPosition
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraWindowWorkspace.OnActivate(System.Windows.Forms.Control)">
+            <summary>
+            Shows the form for the smart part and brings it to the front.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraWindowWorkspace.OnHide(System.Windows.Forms.Control)">
+            <summary>
+            Hides the form where the smart part is being shown.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraWindowWorkspace.OnClose(System.Windows.Forms.Control)">
+            <summary>
+            Closes the form where the smart part is being shown.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraWindowWorkspace.OnApplySmartPartInfo(System.Windows.Forms.Control,CABDevExpress.SmartPartInfos.XtraWindowSmartPartInfo)">
+            <summary>
+            When overridden in a derived class, applies the smartPartInfo
+            to the smartPart that lives in the workspace.
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraWindowWorkspace.OnShow(System.Windows.Forms.Control,CABDevExpress.SmartPartInfos.XtraWindowSmartPartInfo)">
+            <summary>
+            When overridden in a derived class, shows the smartPart  on the workspace.
+            </summary>
+            <param name="smartPart">The smart part to show.</param>
+            <param name="smartPartInfo">The information to apply to the smart part.</param>
+        </member>
+        <member name="P:CABDevExpress.Workspaces.XtraWindowWorkspace.Windows">
+            <summary>
+            Read-only view of WindowDictionary.
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.Workspaces.XtraWindowWorkspace.XtraWindowForm">
+            <summary>
+            WindowForm class
+            </summary>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraWindowWorkspace.XtraWindowForm.OnActivated(System.EventArgs)">
+            <summary>
+            Handles Activated Event.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraWindowWorkspace.XtraWindowForm.OnClosing(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Handles the Closing Event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraWindowWorkspace.XtraWindowForm.OnClosed(System.EventArgs)">
+            <summary>
+            Handles the Closed Event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="E:CABDevExpress.Workspaces.XtraWindowWorkspace.XtraWindowForm.WindowFormClosing">
+            <summary>
+            Fires when form is closing
+            </summary>
+        </member>
+        <member name="E:CABDevExpress.Workspaces.XtraWindowWorkspace.XtraWindowForm.WindowFormClosed">
+            <summary>
+            Fires when form is closed
+            </summary>
+        </member>
+        <member name="E:CABDevExpress.Workspaces.XtraWindowWorkspace.XtraWindowForm.WindowFormActivated">
+            <summary>
+            Fires when form is activated
+            </summary>
+        </member>
+        <member name="T:CABDevExpress.Workspaces.XtraWorkspaceComposer`2">
+            <summary>
+            Helper class for dealing with a composable workspace where the smart parts are controls.
+            </summary>
+            <typeparam name="TSmartPartInfo">Type of the smart part info for the workspace</typeparam>
+            <typeparam name="TWorkspaceItem">Type of the item that represents the smart parts in the workspace.</typeparam>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraWorkspaceComposer`2.#ctor(Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace{System.Windows.Forms.Control,`1},System.Boolean)">
+            <summary>
+            Initializes a new XtraWorkspaceComposer
+            </summary>
+            <param name="composedWorkspace">ComposableWorkspace that will be delegated to.</param>
+            <param name="activateSmartPartOnControlEnter">Boolean indicating whether to automatically activate the smart part when the control's Enter event is invoked.</param>
+        </member>
+        <member name="M:CABDevExpress.Workspaces.XtraWorkspaceComposer`2.OnActivate(System.Windows.Forms.Control)">
+            <summary>
+            Calls <see cref="M:Microsoft.Practices.CompositeUI.SmartParts.IComposableWorkspace`2.OnActivate(`0)"/> 
+            on the composed workspace.
+            </summary>
+        </member>
+    </members>
+</doc>

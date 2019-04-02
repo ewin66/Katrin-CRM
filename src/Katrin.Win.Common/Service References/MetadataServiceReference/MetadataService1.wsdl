@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MetadataService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4832/MetadataService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4832/MetadataService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4832/MetadataService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" />
+      <xsd:import schemaLocation="http://localhost:4832/MetadataService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Katrin.Services.DTO" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMetadataService_GetMetaEntities_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMetaEntities" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetMetaEntities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMetaEntitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetMetaEntityById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMetaEntityById" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetMetaEntityById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMetaEntityByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetLocalizedLabels_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocalizedLabels" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetLocalizedLabels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocalizedLabelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetEntityRelationshipRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntityRelationshipRoles" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetEntityRelationshipRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntityRelationshipRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetOptionSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOptionSet" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetOptionSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOptionSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetAttributePicklistValue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributePicklistValue" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetAttributePicklistValue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributePicklistValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetAttributeType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeType" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetAttributeType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_SaveEntityAttribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEntityAttribute" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_SaveEntityAttribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEntityAttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetEntityAttribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntityAttribute" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetEntityAttribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntityAttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_DeleteEntityAttribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEntityAttribute" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_DeleteEntityAttribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEntityAttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_DeleteEntityView_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEntityView" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_DeleteEntityView_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEntityViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_SaveEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEntity" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_SaveEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_DeleteEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEntity" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_DeleteEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetOptionSetById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOptionSetById" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetOptionSetById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOptionSetByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_SaveOptionSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveOptionSet" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_SaveOptionSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveOptionSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetColumnMapping_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetColumnMapping" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetColumnMapping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetColumnMappingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetSavedQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSavedQuery" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetSavedQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSavedQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_SaveSavedQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveSavedQuery" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_SaveSavedQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveSavedQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetNotificationProfiles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNotificationProfiles" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetNotificationProfiles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNotificationProfilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetNotificationVariablesById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNotificationVariablesById" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_GetNotificationVariablesById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNotificationVariablesByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_CreateCommonNotification_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCommonNotification" />
+  </wsdl:message>
+  <wsdl:message name="IMetadataService_CreateCommonNotification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCommonNotificationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMetadataService">
+    <wsdl:operation name="GetMetaEntities">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/GetMetaEntities" message="tns:IMetadataService_GetMetaEntities_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/GetMetaEntitiesResponse" message="tns:IMetadataService_GetMetaEntities_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMetaEntityById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/GetMetaEntityById" message="tns:IMetadataService_GetMetaEntityById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/GetMetaEntityByIdResponse" message="tns:IMetadataService_GetMetaEntityById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalizedLabels">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/GetLocalizedLabels" message="tns:IMetadataService_GetLocalizedLabels_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/GetLocalizedLabelsResponse" message="tns:IMetadataService_GetLocalizedLabels_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityRelationshipRoles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/GetEntityRelationshipRoles" message="tns:IMetadataService_GetEntityRelationshipRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/GetEntityRelationshipRolesResponse" message="tns:IMetadataService_GetEntityRelationshipRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOptionSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/GetOptionSet" message="tns:IMetadataService_GetOptionSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/GetOptionSetResponse" message="tns:IMetadataService_GetOptionSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributePicklistValue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/GetAttributePicklistValue" message="tns:IMetadataService_GetAttributePicklistValue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/GetAttributePicklistValueResponse" message="tns:IMetadataService_GetAttributePicklistValue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/GetAttributeType" message="tns:IMetadataService_GetAttributeType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/GetAttributeTypeResponse" message="tns:IMetadataService_GetAttributeType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveEntityAttribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/SaveEntityAttribute" message="tns:IMetadataService_SaveEntityAttribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/SaveEntityAttributeResponse" message="tns:IMetadataService_SaveEntityAttribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityAttribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/GetEntityAttribute" message="tns:IMetadataService_GetEntityAttribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/GetEntityAttributeResponse" message="tns:IMetadataService_GetEntityAttribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEntityAttribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/DeleteEntityAttribute" message="tns:IMetadataService_DeleteEntityAttribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/DeleteEntityAttributeResponse" message="tns:IMetadataService_DeleteEntityAttribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEntityView">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/DeleteEntityView" message="tns:IMetadataService_DeleteEntityView_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/DeleteEntityViewResponse" message="tns:IMetadataService_DeleteEntityView_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/SaveEntity" message="tns:IMetadataService_SaveEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/SaveEntityResponse" message="tns:IMetadataService_SaveEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/DeleteEntity" message="tns:IMetadataService_DeleteEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/DeleteEntityResponse" message="tns:IMetadataService_DeleteEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOptionSetById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/GetOptionSetById" message="tns:IMetadataService_GetOptionSetById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/GetOptionSetByIdResponse" message="tns:IMetadataService_GetOptionSetById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveOptionSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/SaveOptionSet" message="tns:IMetadataService_SaveOptionSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/SaveOptionSetResponse" message="tns:IMetadataService_SaveOptionSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetColumnMapping">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/GetColumnMapping" message="tns:IMetadataService_GetColumnMapping_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/GetColumnMappingResponse" message="tns:IMetadataService_GetColumnMapping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSavedQuery">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/GetSavedQuery" message="tns:IMetadataService_GetSavedQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/GetSavedQueryResponse" message="tns:IMetadataService_GetSavedQuery_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveSavedQuery">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/SaveSavedQuery" message="tns:IMetadataService_SaveSavedQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/SaveSavedQueryResponse" message="tns:IMetadataService_SaveSavedQuery_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNotificationProfiles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/GetNotificationProfiles" message="tns:IMetadataService_GetNotificationProfiles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/GetNotificationProfilesResponse" message="tns:IMetadataService_GetNotificationProfiles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNotificationVariablesById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/GetNotificationVariablesById" message="tns:IMetadataService_GetNotificationVariablesById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/GetNotificationVariablesByIdResponse" message="tns:IMetadataService_GetNotificationVariablesById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateCommonNotification">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetadataService/CreateCommonNotification" message="tns:IMetadataService_CreateCommonNotification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetadataService/CreateCommonNotificationResponse" message="tns:IMetadataService_CreateCommonNotification_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMetadataService" type="tns:IMetadataService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMetaEntities">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/GetMetaEntities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMetaEntityById">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/GetMetaEntityById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalizedLabels">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/GetLocalizedLabels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityRelationshipRoles">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/GetEntityRelationshipRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOptionSet">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/GetOptionSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributePicklistValue">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/GetAttributePicklistValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeType">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/GetAttributeType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveEntityAttribute">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/SaveEntityAttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityAttribute">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/GetEntityAttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEntityAttribute">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/DeleteEntityAttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEntityView">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/DeleteEntityView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveEntity">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/SaveEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEntity">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/DeleteEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOptionSetById">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/GetOptionSetById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveOptionSet">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/SaveOptionSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetColumnMapping">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/GetColumnMapping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSavedQuery">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/GetSavedQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveSavedQuery">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/SaveSavedQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNotificationProfiles">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/GetNotificationProfiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNotificationVariablesById">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/GetNotificationVariablesById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCommonNotification">
+      <soap:operation soapAction="http://tempuri.org/IMetadataService/CreateCommonNotification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MetadataService">
+    <wsdl:port name="BasicHttpBinding_IMetadataService" binding="tns:BasicHttpBinding_IMetadataService">
+      <soap:address location="http://localhost:4832/MetadataService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

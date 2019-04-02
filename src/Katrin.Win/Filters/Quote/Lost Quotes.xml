@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <FilterName key="LostQuotes">Lost Quotes</FilterName>
+  <property name="ActiveFilterString">[StageCode] IN (5,6)</property>
+  <order>5</order>
+</Filter>

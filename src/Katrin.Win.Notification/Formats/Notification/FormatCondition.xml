@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<ArrayOfFormatCondition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FormatCondition>
+    <Name>NotReaded</Name>
+    <ConditionName>NotReaded</ConditionName>
+    <Backcolor />
+    <BackcolorArgb>0</BackcolorArgb>
+    <Forecolor />
+    <ForecolorArgb>0</ForecolorArgb>
+    <FontName></FontName>
+    <Size></Size>
+    <Bold>true</Bold>
+    <Unit>false</Unit>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <Conditions>[NotificationStatus] = 1</Conditions>
+    <Active>true</Active>
+    <UseFont>true</UseFont>
+    <UseForeColor>false</UseForeColor>
+    <UseBackColor>false</UseBackColor>
+  </FormatCondition>
+  <FormatCondition>
+    <Name>Readed</Name>
+    <ConditionName>Readed</ConditionName>
+    <Backcolor />
+    <BackcolorArgb>0</BackcolorArgb>
+    <Forecolor />
+    <ForecolorArgb>0</ForecolorArgb>
+    <FontName></FontName>
+    <Size></Size>
+    <Bold>false</Bold>
+    <Unit>false</Unit>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <Conditions>[NotificationStatus] = 0</Conditions>
+    <Active>true</Active>
+    <UseFont>false</UseFont>
+    <UseForeColor>true</UseForeColor>
+    <UseBackColor>false</UseBackColor>
+  </FormatCondition>
+</ArrayOfFormatCondition>

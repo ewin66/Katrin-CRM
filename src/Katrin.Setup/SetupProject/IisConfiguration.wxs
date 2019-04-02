@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix  xmlns="http://schemas.microsoft.com/wix/2006/wi"
+	    xmlns:iis="http://schemas.microsoft.com/wix/IIsExtension"
+      xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+
+  <Fragment>
+    <Property Id="VIRTUAL_DIR_VAL" Value="KatrinServer" />
+    <Property Id="WEB_APP_NAME" Value="KatrinServer" />
+    <Property Id="WEB_APP_POOL_IDENTITY_DOMAIN" Value="KatrinServer_Domain" />
+    <Property Id="WEB_APP_POOL_IDENTITY_NAME" Value="Admin" />
+    <Property Id="WEB_APP_POOL_IDENTITY_PWD" Hidden="yes" />
+
+    <!-- Install to default web site -->
+    <iis:WebSite Id="DefaultWebSite" Description='Default Web Site'>
+      <iis:WebAddress Id="AllUnassigned" Port="80" />
+    </iis:WebSite>
+
+    <DirectoryRef Id="INSTALLLOCATION">
+      <!-- Configuring app pool -->
+      <Component Id="WebAppPoolCmp" Guid="{E2144E33-A827-4DA9-9E4F-76860833AE1C}" KeyPath="yes">
+        <util:User Id="WebAppPoolUser"
+						   CreateUser="no"
+						   Name="[WEB_APP_POOL_IDENTITY_NAME]"
+						   Password="[WEB_APP_POOL_IDENTITY_PWD]" 
+						   Domain="[WEB_APP_POOL_IDENTITY_DOMAIN]"/>
+         
+        <iis:WebAppPool Id="WebAppPool"
+								Name="[WEB_APP_NAME]"
+								Identity="localSystem" 
+                ManagedRuntimeVersion="v4.0"
+                ManagedPipelineMode="Integrated"
+							 />
+      </Component>
+
+      <!-- Configure virtual dir -->
+      <Component Id="WebVirtualDirCmp" Guid="{751DEB01-ECC1-48ff-869A-65BCEE9E0528}" KeyPath="yes" >
+        <iis:WebVirtualDir Id="WebVirtualDir" Alias="[VIRTUAL_DIR_VAL]" Directory="INSTALLLOCATION" WebSite="DefaultWebSite">
+          <iis:WebDirProperties Id="WebVirtDirProperties" AnonymousAccess="yes" BasicAuthentication="no" WindowsAuthentication="yes" />
+          <iis:WebApplication Id="WebWebApplication" Name="[VIRTUAL_DIR_VAL]"  WebAppPool="WebAppPool"/>
+        </iis:WebVirtualDir>
+      </Component>
+    </DirectoryRef>
+
+    <ComponentGroup Id="WebIssConfiguration">
+      <ComponentRef Id="WebVirtualDirCmp" />
+      <ComponentRef Id="WebAppPoolCmp" />
+    </ComponentGroup>
+
+  </Fragment>
+</Wix>

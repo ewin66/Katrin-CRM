@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.FilterModule.dll" />
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+
+  <Path name = "/FilterView/FilterGroup">
+    <MenuItem id = "Filters" type = "Group" label = "${res:Filters}" OrderNumber="100" builderid ="RibbonPageGroupBuilder">
+      <MenuItem id = "FilterGallery" type = "FilterGalleryBarItem" label = "FilterGallery" builderid ="FilterGalleryBarItemBuilder" />
+    </MenuItem>
+  </Path>
+
+  <Path name ="/Workbench/RibbonBuilders">
+    <Class id = "FilterGalleryBarItemBuilder" class = "Katrin.Win.FilterModule.RibbonBuilder.FilterGalleryBarItemBuilder"/>
+  </Path>
+
+
+  <Path name ="/Controllers">
+    <Controller id = "Filter" class = "Katrin.Win.FilterModule.FilterCondition.FilterConditionControl"/>
+  </Path>
+
+  <Path name ="/Views">
+    <View id = "DefaultFilterView" class = "Katrin.Win.FilterModule.FilterCondition.FilterConditionList"/>
+  </Path>
+  
+</AddIn>

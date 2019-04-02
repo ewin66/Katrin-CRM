@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <FilterName key="OpenContracts">Open Contracts</FilterName>
+  <property name="ActiveFilterString">[StatusCode] In (1, 2)</property>
+  <order>3</order>
+</Filter>

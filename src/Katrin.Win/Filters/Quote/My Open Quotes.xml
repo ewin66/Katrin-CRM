@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <FilterName key="MyOpenQuotes">My Open Quotes</FilterName>
+  <property name="ActiveFilterString">[Owner_p_FullName] = '$UserName$' AND Not [StageCode] IN (3,5,6)</property>
+  <order>2</order>
+</Filter>

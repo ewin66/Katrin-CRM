@@ -1,0 +1,1316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="EntityBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="technologyCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 119</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v12.1" name="DevExpress.Utils.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="technologyCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="technologyCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="technologyCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="technologyCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="&gt;&gt;technologyCodeLookUpEdit.Name" xml:space="preserve">
+    <value>technologyCodeLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;technologyCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;technologyCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;technologyCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textEdit4.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>553, 95</value>
+  </data>
+  <data name="textEdit4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 20</value>
+  </data>
+  <data name="textEdit4.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Name" xml:space="preserve">
+    <value>textEdit4</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="textEdit3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 95</value>
+  </data>
+  <data name="textEdit3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 20</value>
+  </data>
+  <data name="textEdit3.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Name" xml:space="preserve">
+    <value>textEdit3</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="textEdit2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>553, 71</value>
+  </data>
+  <data name="textEdit2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 20</value>
+  </data>
+  <data name="textEdit2.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.Name" xml:space="preserve">
+    <value>textEdit2</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="textEdit1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 71</value>
+  </data>
+  <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 20</value>
+  </data>
+  <data name="textEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Name" xml:space="preserve">
+    <value>textEdit1</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="SubjectTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 47</value>
+  </data>
+  <data name="SubjectTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 20</value>
+  </data>
+  <data name="SubjectTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;SubjectTextEdit.Name" xml:space="preserve">
+    <value>SubjectTextEdit</value>
+  </data>
+  <data name="&gt;&gt;SubjectTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SubjectTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;SubjectTextEdit.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="FirstNameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>553, 71</value>
+  </data>
+  <data name="FirstNameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 20</value>
+  </data>
+  <data name="FirstNameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextEdit.Name" xml:space="preserve">
+    <value>FirstNameTextEdit</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextEdit.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="CompanyNameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>553, 95</value>
+  </data>
+  <data name="CompanyNameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 20</value>
+  </data>
+  <data name="CompanyNameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;CompanyNameTextEdit.Name" xml:space="preserve">
+    <value>CompanyNameTextEdit</value>
+  </data>
+  <data name="&gt;&gt;CompanyNameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CompanyNameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;CompanyNameTextEdit.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="LeadSourceCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 95</value>
+  </data>
+  <data name="LeadSourceCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="LeadSourceCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 20</value>
+  </data>
+  <data name="LeadSourceCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;LeadSourceCodeLookUpEdit.Name" xml:space="preserve">
+    <value>LeadSourceCodeLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;LeadSourceCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LeadSourceCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;LeadSourceCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="NumberOfEmployeesSpinEdit.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="NumberOfEmployeesSpinEdit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Disable</value>
+  </data>
+  <data name="NumberOfEmployeesSpinEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 199</value>
+  </data>
+  <data name="NumberOfEmployeesSpinEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>[1-9]\d{0,4}</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v12.1" name="DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="NumberOfEmployeesSpinEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>RegEx</value>
+  </data>
+  <data name="NumberOfEmployeesSpinEdit.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NumberOfEmployeesSpinEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 20</value>
+  </data>
+  <data name="NumberOfEmployeesSpinEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;NumberOfEmployeesSpinEdit.Name" xml:space="preserve">
+    <value>NumberOfEmployeesSpinEdit</value>
+  </data>
+  <data name="&gt;&gt;NumberOfEmployeesSpinEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;NumberOfEmployeesSpinEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;NumberOfEmployeesSpinEdit.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="PriorityCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 175</value>
+  </data>
+  <data name="PriorityCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="PriorityCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PriorityCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 20</value>
+  </data>
+  <data name="PriorityCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;PriorityCodeLookUpEdit.Name" xml:space="preserve">
+    <value>PriorityCodeLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;PriorityCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PriorityCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;PriorityCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="RevenueTextEdit.EditValue" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RevenueTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>556, 199</value>
+  </data>
+  <data name="RevenueTextEdit.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RevenueTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>[1-9]{1}\d{0,9}[.]?\d{0,2}|0</value>
+  </data>
+  <data name="RevenueTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>RegEx</value>
+  </data>
+  <data name="RevenueTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 20</value>
+  </data>
+  <data name="RevenueTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;RevenueTextEdit.Name" xml:space="preserve">
+    <value>RevenueTextEdit</value>
+  </data>
+  <data name="&gt;&gt;RevenueTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RevenueTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;RevenueTextEdit.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="LastNameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 71</value>
+  </data>
+  <data name="LastNameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 20</value>
+  </data>
+  <data name="LastNameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;LastNameTextEdit.Name" xml:space="preserve">
+    <value>LastNameTextEdit</value>
+  </data>
+  <data name="&gt;&gt;LastNameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LastNameTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;LastNameTextEdit.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="DepartmentIdLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 47</value>
+  </data>
+  <data name="DepartmentIdLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="DepartmentIdLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DepartmentIdLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 20</value>
+  </data>
+  <data name="DepartmentIdLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;DepartmentIdLookUpEdit.Name" xml:space="preserve">
+    <value>DepartmentIdLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;DepartmentIdLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DepartmentIdLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;DepartmentIdLookUpEdit.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>556, 175</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StatusCodeLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 20</value>
+  </data>
+  <data name="StatusCodeLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="&gt;&gt;StatusCodeLookUpEdit.Name" xml:space="preserve">
+    <value>StatusCodeLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;StatusCodeLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;StatusCodeLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;StatusCodeLookUpEdit.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="DescriptionMemoEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 247</value>
+  </data>
+  <data name="DescriptionMemoEdit.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 86</value>
+  </data>
+  <data name="DescriptionMemoEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>652, 86</value>
+  </data>
+  <data name="DescriptionMemoEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;DescriptionMemoEdit.Name" xml:space="preserve">
+    <value>DescriptionMemoEdit</value>
+  </data>
+  <data name="&gt;&gt;DescriptionMemoEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DescriptionMemoEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;DescriptionMemoEdit.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="OriginalMessageTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 223</value>
+  </data>
+  <data name="OriginalMessageTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>(https?|ftp|file)://[-A-Za-z0-9+&amp;@#/%?=~_|!:,.;]*[-A-Za-z0-9+&amp;@#/%=~_|]</value>
+  </data>
+  <data name="OriginalMessageTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>RegEx</value>
+  </data>
+  <data name="OriginalMessageTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>652, 20</value>
+  </data>
+  <data name="OriginalMessageTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="&gt;&gt;OriginalMessageTextEdit.Name" xml:space="preserve">
+    <value>OriginalMessageTextEdit</value>
+  </data>
+  <data name="&gt;&gt;OriginalMessageTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;OriginalMessageTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;OriginalMessageTextEdit.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="Telephone1TextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 381</value>
+  </data>
+  <data name="Telephone1TextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 20</value>
+  </data>
+  <data name="Telephone1TextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;Telephone1TextEdit.Name" xml:space="preserve">
+    <value>Telephone1TextEdit</value>
+  </data>
+  <data name="&gt;&gt;Telephone1TextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Telephone1TextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;Telephone1TextEdit.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="FaxTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>561, 405</value>
+  </data>
+  <data name="FaxTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 20</value>
+  </data>
+  <data name="FaxTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;FaxTextEdit.Name" xml:space="preserve">
+    <value>FaxTextEdit</value>
+  </data>
+  <data name="&gt;&gt;FaxTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FaxTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;FaxTextEdit.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 405</value>
+  </data>
+  <data name="MobilePhoneTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 20</value>
+  </data>
+  <data name="MobilePhoneTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;MobilePhoneTextEdit.Name" xml:space="preserve">
+    <value>MobilePhoneTextEdit</value>
+  </data>
+  <data name="&gt;&gt;MobilePhoneTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;MobilePhoneTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;MobilePhoneTextEdit.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="Telephone2TextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>561, 381</value>
+  </data>
+  <data name="Telephone2TextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 20</value>
+  </data>
+  <data name="Telephone2TextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;Telephone2TextEdit.Name" xml:space="preserve">
+    <value>Telephone2TextEdit</value>
+  </data>
+  <data name="&gt;&gt;Telephone2TextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Telephone2TextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;Telephone2TextEdit.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="EmailAddressTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 429</value>
+  </data>
+  <data name="EmailAddressTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>.+@.+\..+</value>
+  </data>
+  <data name="EmailAddressTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>RegEx</value>
+  </data>
+  <data name="EmailAddressTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 20</value>
+  </data>
+  <data name="EmailAddressTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;EmailAddressTextEdit.Name" xml:space="preserve">
+    <value>EmailAddressTextEdit</value>
+  </data>
+  <data name="&gt;&gt;EmailAddressTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmailAddressTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;EmailAddressTextEdit.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="WebSiteUrlTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>561, 429</value>
+  </data>
+  <data name="WebSiteUrlTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>(https?|ftp|file)://[-A-Za-z0-9+&amp;@#/%?=~_|!:,.;]*[-A-Za-z0-9+&amp;@#/%=~_|]</value>
+  </data>
+  <data name="WebSiteUrlTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>RegEx</value>
+  </data>
+  <data name="WebSiteUrlTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 20</value>
+  </data>
+  <data name="WebSiteUrlTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;WebSiteUrlTextEdit.Name" xml:space="preserve">
+    <value>WebSiteUrlTextEdit</value>
+  </data>
+  <data name="&gt;&gt;WebSiteUrlTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;WebSiteUrlTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;WebSiteUrlTextEdit.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="CityTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>561, 453</value>
+  </data>
+  <data name="CityTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 20</value>
+  </data>
+  <data name="CityTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;CityTextEdit.Name" xml:space="preserve">
+    <value>CityTextEdit</value>
+  </data>
+  <data name="&gt;&gt;CityTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CityTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;CityTextEdit.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="AddressTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 477</value>
+  </data>
+  <data name="AddressTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 20</value>
+  </data>
+  <data name="AddressTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;AddressTextEdit.Name" xml:space="preserve">
+    <value>AddressTextEdit</value>
+  </data>
+  <data name="&gt;&gt;AddressTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;AddressTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;AddressTextEdit.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ZIPTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>561, 477</value>
+  </data>
+  <data name="ZIPTextEdit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>\d\d\d\d\d-\d?\d?\d?\d?</value>
+  </data>
+  <data name="ZIPTextEdit.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v12.1">
+    <value>Regular</value>
+  </data>
+  <data name="ZIPTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 20</value>
+  </data>
+  <data name="ZIPTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="&gt;&gt;ZIPTextEdit.Name" xml:space="preserve">
+    <value>ZIPTextEdit</value>
+  </data>
+  <data name="&gt;&gt;ZIPTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ZIPTextEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;ZIPTextEdit.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="CountryLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 453</value>
+  </data>
+  <data name="CountryLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="CountryLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 20</value>
+  </data>
+  <data name="CountryLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;CountryLookUpEdit.Name" xml:space="preserve">
+    <value>CountryLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;CountryLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CountryLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;CountryLookUpEdit.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>553, 47</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v12.1">
+    <value>Combo</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Properties.NullText" xml:space="preserve">
+    <value>[EditValue is null]</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 20</value>
+  </data>
+  <data name="OwnerIdSearchLookUpEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="&gt;&gt;OwnerIdSearchLookUpEdit.Name" xml:space="preserve">
+    <value>OwnerIdSearchLookUpEdit</value>
+  </data>
+  <data name="&gt;&gt;OwnerIdSearchLookUpEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PopupContainerEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;OwnerIdSearchLookUpEdit.Parent" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;OwnerIdSearchLookUpEdit.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="EntityDataLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>867, 476</value>
+  </data>
+  <data name="EntityDataLayoutControl.Text" xml:space="preserve">
+    <value>Lead Detail Layout Control</value>
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.Name" xml:space="preserve">
+    <value>EntityDataLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraDataLayout.DataLayoutControl, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;EntityDataLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="infotabbedControlGroup.CustomizationFormText" xml:space="preserve">
+    <value>infotabbedControlGroup</value>
+  </data>
+  <data name="lcgGeneral.CustomizationFormText" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="ItemForSubject.CustomizationFormText" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="ItemForSubject.Text" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="ItemForFirstName.CustomizationFormText" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="ItemForFirstName.Text" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="contactGroup.CustomizationFormText" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="ItemForEmailAddress.CustomizationFormText" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="ItemForEmailAddress.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ItemForWebSiteUrl.CustomizationFormText" xml:space="preserve">
+    <value>Web Site</value>
+  </data>
+  <data name="ItemForWebSiteUrl.Text" xml:space="preserve">
+    <value>Web Site</value>
+  </data>
+  <data name="ItemForCountry.CustomizationFormText" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="ItemForCountry.Text" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="ItemForCity.CustomizationFormText" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="ItemForCity.Text" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="ItemForAddress.CustomizationFormText" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="ItemForAddress.Text" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="ItemForZIP.CustomizationFormText" xml:space="preserve">
+    <value>ZIP</value>
+  </data>
+  <data name="ItemForZIP.Text" xml:space="preserve">
+    <value>ZIP</value>
+  </data>
+  <data name="ItemForTelephone2.CustomizationFormText" xml:space="preserve">
+    <value>Home Phone</value>
+  </data>
+  <data name="ItemForTelephone2.Text" xml:space="preserve">
+    <value>Home Phone</value>
+  </data>
+  <data name="ItemForMobilePhone.CustomizationFormText" xml:space="preserve">
+    <value>Mobile Phone</value>
+  </data>
+  <data name="ItemForMobilePhone.Text" xml:space="preserve">
+    <value>Mobile Phone</value>
+  </data>
+  <data name="ItemForTelephone1.CustomizationFormText" xml:space="preserve">
+    <value>Business Phone</value>
+  </data>
+  <data name="ItemForTelephone1.Text" xml:space="preserve">
+    <value>Business Phone</value>
+  </data>
+  <data name="ItemForFax.CustomizationFormText" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="ItemForFax.Text" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="contactGroup.Text" xml:space="preserve">
+    <value>Contact Information</value>
+  </data>
+  <data name="detailsGroup.CustomizationFormText" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="ItemForNumberOfEmployees.CustomizationFormText" xml:space="preserve">
+    <value>Number Of Employees</value>
+  </data>
+  <data name="ItemForNumberOfEmployees.Text" xml:space="preserve">
+    <value>Number Of Employees</value>
+  </data>
+  <data name="ItemForRevenue.CustomizationFormText" xml:space="preserve">
+    <value>Revenue</value>
+  </data>
+  <data name="ItemForRevenue.Text" xml:space="preserve">
+    <value>Revenue</value>
+  </data>
+  <data name="ItemForDescription.CustomizationFormText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ItemForDescription.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ItemForOriginalMessage.CustomizationFormText" xml:space="preserve">
+    <value>Original Message</value>
+  </data>
+  <data name="ItemForOriginalMessage.Text" xml:space="preserve">
+    <value>Original Message</value>
+  </data>
+  <data name="ItemForStatusCode.CustomizationFormText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ItemForStatusCode.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ItemForPriorityCode.CustomizationFormText" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="ItemForPriorityCode.Text" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="detailsGroup.Text" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="ItemForCompanyName.CustomizationFormText" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="ItemForCompanyName.Text" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="emptySpaceItem1.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="emptySpaceItem1.Text" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="ItemForTechnology.CustomizationFormText" xml:space="preserve">
+    <value>Technology</value>
+  </data>
+  <data name="ItemForTechnology.Text" xml:space="preserve">
+    <value>Technology</value>
+  </data>
+  <data name="ItemForLeadSourceCode.CustomizationFormText" xml:space="preserve">
+    <value>Lead Source</value>
+  </data>
+  <data name="ItemForLeadSourceCode.Text" xml:space="preserve">
+    <value>Lead Source</value>
+  </data>
+  <data name="ItemForLastName.CustomizationFormText" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="ItemForLastName.Text" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="lcgGeneral.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="managementLayoutControlGroup.CustomizationFormText" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="emptySpaceItem3.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="emptySpaceItem3.Text" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="ItemForDepartmentId.CustomizationFormText" xml:space="preserve">
+    <value>Department Id</value>
+  </data>
+  <data name="ItemForDepartmentId.Text" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="ItemForOwnerId.CustomizationFormText" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="ItemForOwnerId.Text" xml:space="preserve">
+    <value> Owner</value>
+  </data>
+  <data name="layoutControlItem1.CustomizationFormText" xml:space="preserve">
+    <value>Created On</value>
+  </data>
+  <data name="layoutControlItem1.Text" xml:space="preserve">
+    <value>Created On</value>
+  </data>
+  <data name="layoutControlItem2.CustomizationFormText" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="layoutControlItem2.Text" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="layoutControlItem3.CustomizationFormText" xml:space="preserve">
+    <value>Modified On</value>
+  </data>
+  <data name="layoutControlItem3.Text" xml:space="preserve">
+    <value>Modified On</value>
+  </data>
+  <data name="layoutControlItem4.CustomizationFormText" xml:space="preserve">
+    <value>Modified By</value>
+  </data>
+  <data name="layoutControlItem4.Text" xml:space="preserve">
+    <value>Modified By</value>
+  </data>
+  <data name="managementLayoutControlGroup.Text" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="infotabbedControlGroup.Text" xml:space="preserve">
+    <value>infotabbedControlGroup</value>
+  </data>
+  <metadata name="ValidationProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>188, 17</value>
+  </metadata>
+  <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 71</value>
+  </data>
+  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 14</value>
+  </data>
+  <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
+    <value>labelControl1</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>68</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 14</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>867, 509</value>
+  </data>
+  <data name="&gt;&gt;EntityBindingSource.Name" xml:space="preserve">
+    <value>EntityBindingSource</value>
+  </data>
+  <data name="&gt;&gt;EntityBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RootLayoutControlGroup.Name" xml:space="preserve">
+    <value>RootLayoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;RootLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ValidationProvider.Name" xml:space="preserve">
+    <value>ValidationProvider</value>
+  </data>
+  <data name="&gt;&gt;ValidationProvider.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;infotabbedControlGroup.Name" xml:space="preserve">
+    <value>infotabbedControlGroup</value>
+  </data>
+  <data name="&gt;&gt;infotabbedControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgGeneral.Name" xml:space="preserve">
+    <value>lcgGeneral</value>
+  </data>
+  <data name="&gt;&gt;lcgGeneral.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForSubject.Name" xml:space="preserve">
+    <value>ItemForSubject</value>
+  </data>
+  <data name="&gt;&gt;ItemForSubject.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForFirstName.Name" xml:space="preserve">
+    <value>ItemForFirstName</value>
+  </data>
+  <data name="&gt;&gt;ItemForFirstName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;contactGroup.Name" xml:space="preserve">
+    <value>contactGroup</value>
+  </data>
+  <data name="&gt;&gt;contactGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForEmailAddress.Name" xml:space="preserve">
+    <value>ItemForEmailAddress</value>
+  </data>
+  <data name="&gt;&gt;ItemForEmailAddress.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForWebSiteUrl.Name" xml:space="preserve">
+    <value>ItemForWebSiteUrl</value>
+  </data>
+  <data name="&gt;&gt;ItemForWebSiteUrl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForCountry.Name" xml:space="preserve">
+    <value>ItemForCountry</value>
+  </data>
+  <data name="&gt;&gt;ItemForCountry.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForCity.Name" xml:space="preserve">
+    <value>ItemForCity</value>
+  </data>
+  <data name="&gt;&gt;ItemForCity.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForAddress.Name" xml:space="preserve">
+    <value>ItemForAddress</value>
+  </data>
+  <data name="&gt;&gt;ItemForAddress.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForZIP.Name" xml:space="preserve">
+    <value>ItemForZIP</value>
+  </data>
+  <data name="&gt;&gt;ItemForZIP.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForTelephone2.Name" xml:space="preserve">
+    <value>ItemForTelephone2</value>
+  </data>
+  <data name="&gt;&gt;ItemForTelephone2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForMobilePhone.Name" xml:space="preserve">
+    <value>ItemForMobilePhone</value>
+  </data>
+  <data name="&gt;&gt;ItemForMobilePhone.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForTelephone1.Name" xml:space="preserve">
+    <value>ItemForTelephone1</value>
+  </data>
+  <data name="&gt;&gt;ItemForTelephone1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForFax.Name" xml:space="preserve">
+    <value>ItemForFax</value>
+  </data>
+  <data name="&gt;&gt;ItemForFax.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;detailsGroup.Name" xml:space="preserve">
+    <value>detailsGroup</value>
+  </data>
+  <data name="&gt;&gt;detailsGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForNumberOfEmployees.Name" xml:space="preserve">
+    <value>ItemForNumberOfEmployees</value>
+  </data>
+  <data name="&gt;&gt;ItemForNumberOfEmployees.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForRevenue.Name" xml:space="preserve">
+    <value>ItemForRevenue</value>
+  </data>
+  <data name="&gt;&gt;ItemForRevenue.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForDescription.Name" xml:space="preserve">
+    <value>ItemForDescription</value>
+  </data>
+  <data name="&gt;&gt;ItemForDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForOriginalMessage.Name" xml:space="preserve">
+    <value>ItemForOriginalMessage</value>
+  </data>
+  <data name="&gt;&gt;ItemForOriginalMessage.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForStatusCode.Name" xml:space="preserve">
+    <value>ItemForStatusCode</value>
+  </data>
+  <data name="&gt;&gt;ItemForStatusCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForPriorityCode.Name" xml:space="preserve">
+    <value>ItemForPriorityCode</value>
+  </data>
+  <data name="&gt;&gt;ItemForPriorityCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForCompanyName.Name" xml:space="preserve">
+    <value>ItemForCompanyName</value>
+  </data>
+  <data name="&gt;&gt;ItemForCompanyName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForTechnology.Name" xml:space="preserve">
+    <value>ItemForTechnology</value>
+  </data>
+  <data name="&gt;&gt;ItemForTechnology.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForLeadSourceCode.Name" xml:space="preserve">
+    <value>ItemForLeadSourceCode</value>
+  </data>
+  <data name="&gt;&gt;ItemForLeadSourceCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForLastName.Name" xml:space="preserve">
+    <value>ItemForLastName</value>
+  </data>
+  <data name="&gt;&gt;ItemForLastName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;managementLayoutControlGroup.Name" xml:space="preserve">
+    <value>managementLayoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;managementLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForDepartmentId.Name" xml:space="preserve">
+    <value>ItemForDepartmentId</value>
+  </data>
+  <data name="&gt;&gt;ItemForDepartmentId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ItemForOwnerId.Name" xml:space="preserve">
+    <value>ItemForOwnerId</value>
+  </data>
+  <data name="&gt;&gt;ItemForOwnerId.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Name" xml:space="preserve">
+    <value>layoutControlItem3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem4.Name" xml:space="preserve">
+    <value>layoutControlItem4</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LeadDetailView</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Katrin.Win.Common.Core.AbstractDetailView, Katrin.Win.Common, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

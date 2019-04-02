@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4832/MetadataService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Entity" nillable="true" type="tns:Entity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntity" nillable="true" type="tns:ArrayOfEntity" />
+  <xs:complexType name="Entity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Attributes" nillable="true" type="tns:ArrayOfEntityAttribute" />
+      <xs:element minOccurs="0" name="EntityId" type="ser:guid" />
+      <xs:element minOccurs="0" name="IsAuditEnabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LogicalName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NotificationRecipientAttributes" nillable="true" type="tns:ArrayOfNotificationRecipientAttribute" />
+      <xs:element minOccurs="0" name="NotificationVariables" nillable="true" type="tns:ArrayOfNotificationVariable" />
+      <xs:element minOccurs="0" name="PhysicalName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RelationshipRoles" nillable="true" type="tns:ArrayOfEntityRelationshipRole" />
+      <xs:element minOccurs="0" name="TableName" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Entity" nillable="true" type="tns:Entity" />
+  <xs:complexType name="ArrayOfEntityAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityAttribute" nillable="true" type="tns:EntityAttribute" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntityAttribute" nillable="true" type="tns:ArrayOfEntityAttribute" />
+  <xs:complexType name="EntityAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AppDefaultValue" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="AttributeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="AttributeLookupValues" nillable="true" type="tns:ArrayOfAttributeLookupValue" />
+      <xs:element minOccurs="0" name="AttributeType" nillable="true" type="tns:AttributeType" />
+      <xs:element minOccurs="0" name="AttributeTypeId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="ColumnNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="CriteriaNodes" nillable="true" type="tns:ArrayOfCriteriaNode" />
+      <xs:element minOccurs="0" name="DefaultValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Entity" nillable="true" type="tns:Entity" />
+      <xs:element minOccurs="0" name="EntityId" type="ser:guid" />
+      <xs:element minOccurs="0" name="IsAuditEnabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsCopyEnabled" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsNullable" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsPKAttribute" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Length" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="LogicalName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LogicalType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaxLength" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="MaxValue" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="MinValue" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NotificationRecipientAttributes" nillable="true" type="tns:ArrayOfNotificationRecipientAttribute" />
+      <xs:element minOccurs="0" name="NotificationVariables" nillable="true" type="tns:ArrayOfNotificationVariable" />
+      <xs:element minOccurs="0" name="OptionSet" nillable="true" type="tns:OptionSet" />
+      <xs:element minOccurs="0" name="OptionSetId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="PhysicalName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TableColumnName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VersionNumber" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="EntityAttribute" nillable="true" type="tns:EntityAttribute" />
+  <xs:complexType name="ArrayOfAttributeLookupValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AttributeLookupValue" nillable="true" type="tns:AttributeLookupValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAttributeLookupValue" nillable="true" type="tns:ArrayOfAttributeLookupValue" />
+  <xs:complexType name="AttributeLookupValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AttributeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="AttributeLookupValueId" type="ser:guid" />
+      <xs:element minOccurs="0" name="DisplayEntityAttributeId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="Entity" nillable="true" type="tns:Entity" />
+      <xs:element minOccurs="0" name="EntityId" type="ser:guid" />
+      <xs:element minOccurs="0" name="VersionNumber" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="AttributeLookupValue" nillable="true" type="tns:AttributeLookupValue" />
+  <xs:complexType name="EntityRelationshipRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Entity" nillable="true" type="tns:Entity" />
+      <xs:element minOccurs="0" name="EntityId" type="ser:guid" />
+      <xs:element minOccurs="0" name="EntityRelationship" nillable="true" type="tns:EntityRelationship" />
+      <xs:element minOccurs="0" name="EntityRelationshipId" type="ser:guid" />
+      <xs:element minOccurs="0" name="EntityRelationshipRoleId" type="ser:guid" />
+      <xs:element minOccurs="0" name="NavPaneOrder" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="NavPanelDisplayOption" nillable="true" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="RelationshipRoleType" type="xs:unsignedByte" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="EntityRelationshipRole" nillable="true" type="tns:EntityRelationshipRole" />
+  <xs:complexType name="EntityRelationship">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EntityRelationshipId" type="ser:guid" />
+      <xs:element minOccurs="0" name="EntityRelationshipRelationships" nillable="true" type="tns:ArrayOfEntityRelationshipRelationships" />
+      <xs:element minOccurs="0" name="EntityRelationshipRoles" nillable="true" type="tns:ArrayOfEntityRelationshipRole" />
+      <xs:element minOccurs="0" name="EntityRelationshipType" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="IsCustomRelationship" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsCustomizable" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SchemaName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VersionNumber" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="EntityRelationship" nillable="true" type="tns:EntityRelationship" />
+  <xs:complexType name="ArrayOfEntityRelationshipRelationships">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityRelationshipRelationships" nillable="true" type="tns:EntityRelationshipRelationships" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntityRelationshipRelationships" nillable="true" type="tns:ArrayOfEntityRelationshipRelationships" />
+  <xs:complexType name="EntityRelationshipRelationships">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EntityRelationship" nillable="true" type="tns:EntityRelationship" />
+      <xs:element minOccurs="0" name="EntityRelationshipId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="EntityRelationshipRelationshipsId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Relationship" nillable="true" type="tns:Relationship" />
+      <xs:element minOccurs="0" name="RelationshipId" type="ser:guid" />
+      <xs:element minOccurs="0" name="VersionNumber" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="EntityRelationshipRelationships" nillable="true" type="tns:EntityRelationshipRelationships" />
+  <xs:complexType name="Relationship">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CascadeDelete" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="EntityRelationshipRelationships" nillable="true" type="tns:ArrayOfEntityRelationshipRelationships" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReferencedAttribute" nillable="true" type="tns:EntityAttribute" />
+      <xs:element minOccurs="0" name="ReferencedAttributeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ReferencedEntity" nillable="true" type="tns:Entity" />
+      <xs:element minOccurs="0" name="ReferencedEntityId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ReferencingAttribute" nillable="true" type="tns:EntityAttribute" />
+      <xs:element minOccurs="0" name="ReferencingAttributeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ReferencingEntity" nillable="true" type="tns:Entity" />
+      <xs:element minOccurs="0" name="ReferencingEntityId" type="ser:guid" />
+      <xs:element minOccurs="0" name="RelationshipId" type="ser:guid" />
+      <xs:element minOccurs="0" name="RelationshipType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="VersionNumber" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Relationship" nillable="true" type="tns:Relationship" />
+  <xs:complexType name="AttributeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AttributeTypeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="AttributeType" nillable="true" type="tns:AttributeType" />
+  <xs:complexType name="OptionSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AttributePicklistValues" nillable="true" type="tns:ArrayOfAttributePicklistValue" />
+      <xs:element minOccurs="0" name="IsCustomizable" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OptionSetId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OptionSet" nillable="true" type="tns:OptionSet" />
+  <xs:complexType name="ArrayOfAttributePicklistValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AttributePicklistValue" nillable="true" type="tns:AttributePicklistValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAttributePicklistValue" nillable="true" type="tns:ArrayOfAttributePicklistValue" />
+  <xs:complexType name="AttributePicklistValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AttributePicklistValueId" type="ser:guid" />
+      <xs:element minOccurs="0" name="DisplayOrder" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="OptionSetId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="VersionNumber" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AttributePicklistValue" nillable="true" type="tns:AttributePicklistValue" />
+  <xs:complexType name="ArrayOfEntityRelationshipRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityRelationshipRole" nillable="true" type="tns:EntityRelationshipRole" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntityRelationshipRole" nillable="true" type="tns:ArrayOfEntityRelationshipRole" />
+  <xs:complexType name="ArrayOfCriteriaNode">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CriteriaNode" nillable="true" type="tns:CriteriaNode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCriteriaNode" nillable="true" type="tns:ArrayOfCriteriaNode" />
+  <xs:complexType name="CriteriaNode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompareAttributeId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="CompareValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CriteriaId" type="ser:guid" />
+      <xs:element minOccurs="0" name="CriteriaNodeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Criterion" nillable="true" type="tns:Criterion" />
+      <xs:element minOccurs="0" name="Metadata_Attribute" nillable="true" type="tns:EntityAttribute" />
+      <xs:element minOccurs="0" name="Operator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OperatorType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentNodeId" type="ser:guid" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="CriteriaNode" nillable="true" type="tns:CriteriaNode" />
+  <xs:complexType name="Criterion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CriteriaId" type="ser:guid" />
+      <xs:element minOccurs="0" name="CriteriaNodes" nillable="true" type="tns:ArrayOfCriteriaNode" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NotificationProfiles" nillable="true" type="tns:ArrayOfNotificationProfile" />
+      <xs:element minOccurs="0" name="NotificationRecipientAttributes" nillable="true" type="tns:ArrayOfNotificationRecipientAttribute" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Criterion" nillable="true" type="tns:Criterion" />
+  <xs:complexType name="ArrayOfNotificationProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="NotificationProfile" nillable="true" type="tns:NotificationProfile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNotificationProfile" nillable="true" type="tns:ArrayOfNotificationProfile" />
+  <xs:complexType name="NotificationProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CriteriaId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="Criterion" nillable="true" type="tns:Criterion" />
+      <xs:element minOccurs="0" name="IsSys" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="NotificationProfileId" type="ser:guid" />
+      <xs:element minOccurs="0" name="NotificationRecipientAttributes" nillable="true" type="tns:ArrayOfNotificationRecipientAttribute" />
+      <xs:element minOccurs="0" name="NotificationTemplate" nillable="true" type="tns:NotificationTemplate" />
+      <xs:element minOccurs="0" name="NotificationTemplateId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="ProfileVariables" nillable="true" type="tns:ArrayOfProfileVariable" />
+      <xs:element minOccurs="0" name="SubjectNotificationTemplate" nillable="true" type="tns:NotificationTemplate" />
+      <xs:element minOccurs="0" name="SubjectTemplateId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="Subscriptions" nillable="true" type="tns:ArrayOfSubscription" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="NotificationProfile" nillable="true" type="tns:NotificationProfile" />
+  <xs:complexType name="ArrayOfNotificationRecipientAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="NotificationRecipientAttribute" nillable="true" type="tns:NotificationRecipientAttribute" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNotificationRecipientAttribute" nillable="true" type="tns:ArrayOfNotificationRecipientAttribute" />
+  <xs:complexType name="NotificationRecipientAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AttributeId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="CriteriaId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="Criterion" nillable="true" type="tns:Criterion" />
+      <xs:element minOccurs="0" name="Metadata_Attribute" nillable="true" type="tns:EntityAttribute" />
+      <xs:element minOccurs="0" name="Metadata_Entity" nillable="true" type="tns:Entity" />
+      <xs:element minOccurs="0" name="NotificationProfile" nillable="true" type="tns:NotificationProfile" />
+      <xs:element minOccurs="0" name="NotificationProfileId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="NotificationRecipientAttributeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="RecipientEntityId" nillable="true" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NotificationRecipientAttribute" nillable="true" type="tns:NotificationRecipientAttribute" />
+  <xs:complexType name="NotificationTemplate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NotificationProfiles" nillable="true" type="tns:ArrayOfNotificationProfile" />
+      <xs:element minOccurs="0" name="NotificationProfiles1" nillable="true" type="tns:ArrayOfNotificationProfile" />
+      <xs:element minOccurs="0" name="NotificationTemplateId" type="ser:guid" />
+      <xs:element minOccurs="0" name="SubjectTemplate" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="NotificationTemplate" nillable="true" type="tns:NotificationTemplate" />
+  <xs:complexType name="NotificationRecipientAttributes">
+    <xs:sequence />
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="NotificationRecipientAttributes" nillable="true" type="tns:NotificationRecipientAttributes" />
+  <xs:complexType name="Criteria">
+    <xs:sequence />
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Criteria" nillable="true" type="tns:Criteria" />
+  <xs:complexType name="ProfileVariable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NotificationProfile" nillable="true" type="tns:NotificationProfile" />
+      <xs:element minOccurs="0" name="NotificationProfileId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="NotificationVariable" nillable="true" type="tns:NotificationVariable" />
+      <xs:element minOccurs="0" name="NotificationVariableId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="ProfileVariableId" type="ser:guid" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="ProfileVariable" nillable="true" type="tns:ProfileVariable" />
+  <xs:complexType name="NotificationVariable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EntityId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="Metadata_Attribute" nillable="true" type="tns:EntityAttribute" />
+      <xs:element minOccurs="0" name="Metadata_Entity" nillable="true" type="tns:Entity" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NotificationUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NotificationVariableId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ParentId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="ProfileVariables" nillable="true" type="tns:ArrayOfProfileVariable" />
+      <xs:element minOccurs="0" name="RelatedAttributeId" nillable="true" type="ser:guid" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="NotificationVariable" nillable="true" type="tns:NotificationVariable" />
+  <xs:complexType name="ArrayOfProfileVariable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProfileVariable" nillable="true" type="tns:ProfileVariable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProfileVariable" nillable="true" type="tns:ArrayOfProfileVariable" />
+  <xs:complexType name="Subscription">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NotificationProfile" nillable="true" type="tns:NotificationProfile" />
+      <xs:element minOccurs="0" name="NotificationProfileId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="SubscriptionId" type="ser:guid" />
+      <xs:element minOccurs="0" name="UserId" nillable="true" type="ser:guid" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Subscription" nillable="true" type="tns:Subscription" />
+  <xs:complexType name="ArrayOfSubscription">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Subscription" nillable="true" type="tns:Subscription" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubscription" nillable="true" type="tns:ArrayOfSubscription" />
+  <xs:complexType name="ArrayOfNotificationVariable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="NotificationVariable" nillable="true" type="tns:NotificationVariable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNotificationVariable" nillable="true" type="tns:ArrayOfNotificationVariable" />
+  <xs:complexType name="ArrayOfLocalizedLabel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LocalizedLabel" nillable="true" type="tns:LocalizedLabel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLocalizedLabel" nillable="true" type="tns:ArrayOfLocalizedLabel" />
+  <xs:complexType name="LocalizedLabel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Label" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LanguageId" type="xs:int" />
+      <xs:element minOccurs="0" name="LocalizedLabelId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ObjectColumnName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ObjectId" type="ser:guid" />
+      <xs:element minOccurs="0" name="VersionNumber" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LocalizedLabel" nillable="true" type="tns:LocalizedLabel" />
+  <xs:complexType name="ArrayOfOptionSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OptionSet" nillable="true" type="tns:OptionSet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOptionSet" nillable="true" type="tns:ArrayOfOptionSet" />
+  <xs:complexType name="ArrayOfAttributeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AttributeType" nillable="true" type="tns:AttributeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAttributeType" nillable="true" type="tns:ArrayOfAttributeType" />
+  <xs:complexType name="ArrayOfColumnMapping">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ColumnMapping" nillable="true" type="tns:ColumnMapping" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfColumnMapping" nillable="true" type="tns:ArrayOfColumnMapping" />
+  <xs:complexType name="ColumnMapping">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ColumnMappingId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ImportMap" nillable="true" type="tns:ImportMap" />
+      <xs:element minOccurs="0" name="ImportMapId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="SourceAttributeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SourceEntityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TargetAttributeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TargetEntityName" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="ColumnMapping" nillable="true" type="tns:ColumnMapping" />
+  <xs:complexType name="ImportMap">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ColumnMappings" nillable="true" type="tns:ArrayOfColumnMapping" />
+      <xs:element minOccurs="0" name="ImportMapId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="ImportMap" nillable="true" type="tns:ImportMap" />
+  <xs:complexType name="ArrayOfSavedQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SavedQuery" nillable="true" type="tns:SavedQuery" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSavedQuery" nillable="true" type="tns:ArrayOfSavedQuery" />
+  <xs:complexType name="SavedQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdvancedGroupBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CanBeDeleted" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ColumnSetXml" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ConditionalFormatting" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="CreatedOn" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FetchXml" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsCustomizable" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsDefault" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsPrivate" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsQuickFindQuery" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsUserDefined" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LayoutXml" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="ModifiedOn" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QueryParentId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="QueryType" type="xs:int" />
+      <xs:element minOccurs="0" name="ReturnedTypeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="SavedQueryId" type="ser:guid" />
+      <xs:element minOccurs="0" name="StatusCode" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="VersionNumber" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SavedQuery" nillable="true" type="tns:SavedQuery" />
+</xs:schema>

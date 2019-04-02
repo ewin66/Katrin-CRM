@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.AccountModule.dll" />
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+  <Path name="/Account">
+    <Path id="List">
+      <Path id="DockPanels">
+        <View id = "DefaultListView" controller="AccountList" guid="{C50B420E-D70A-4727-96D1-4C46E9A5184F}"/>
+        <DockPanel id="NoteList" ViewType="Layout" width="400" controller="NoteList" label="Note" guid="{8B0CECFE-22B6-4C40-8F52-53E34D3D91DD}"></DockPanel>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/List/Commands"/>
+        <Include id = "FormatCommand" path = "/Format/Commands" />
+        <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude">
+          <Condition name = "EnabledConditionEvaluator" affect="Enabled" action="Disable">
+            <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+            <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+            <Include id = "HistoryCommand" path = "/History/Commands/List" />
+            <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+          </Condition>
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "Base" path = "/List/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" builderid ="RibbonPageGroupBuilder">
+            <Include id = "ShowNote" path = "/NoteView/Show"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/ShowWindow"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+          </MenuItem>
+          <RelatedDoozer id="Related" entityName="Account"></RelatedDoozer>
+          <CovertDoozer id="Convert" entityName="Account"></CovertDoozer>
+          <Include id = "FilterGroup" path = "/FilterView/FilterGroup"/>
+        </MenuItem>
+        <MenuItem id = "Appearance" type = "Page" label = "${res:ViewPageCaption}" builderid ="RibbonPageBuilder">
+          <Include id = "Format" path = "/FormatView/Format"/>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id="Detail">
+      <Path id="DockPanels">
+        <View id = "DefaultDetailView" controller="AccountDetail"/>
+        <DockPanel id="NoteList" dock="Fill" lazy="true" controller="NoteList"></DockPanel>
+        <DockPanel id="History" dock="Fill" lazy="true" controller="HistoryList"></DockPanel>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/Detail/Commands"/>
+        <Condition name = "DetailEnabledConditionEvaluator" affect="Enabled" action="Disable">
+          <Include id = "HistoryCommand" path = "/History/Commands/Detail" />
+          <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+          <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+          <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "Base" path = "/Detail/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" OrderNumber="1" builderid ="RibbonPageGroupBuilder">
+            <Include id = "Base" path = "/Detail/Ribbon/Show" />
+            <Include id = "ShowNote" path = "/NoteView/Activate"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/Show"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" OrderNumber="2" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+          </MenuItem>
+          <RelatedDoozer id="Related" entityName="Account"></RelatedDoozer>
+          <CovertDoozer id="Convert" entityName="Account"></CovertDoozer>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id ="ContextMenu">
+      <!--MenuItem default type is normal.-->
+      <MenuItem id = "AccountListViewMenu" viewid = "DefaultListView" module ="Account">
+        <MenuItem id ="Edit" cmdId ="Edit" />
+        <MenuItem id ="View" cmdId ="View"/>
+        <MenuItem id ="Delete" cmdId ="Delete"/>
+        <MenuItem id ="AddNote" cmdId ="AddNote" beginGroup ="true"/>
+        <MenuItem id ="Refresh" cmdId ="Refresh" beginGroup ="true"/>
+        <MenuItem id ="RelatedGroup" cmdId ="RelatedGroup" beginGroup ="true"  type ="dynamicGroup" label ="${res:Related}"/>
+        <MenuItem id ="ConvertGroup" cmdId ="ConvertGroup" beginGroup ="true"  type ="dynamicGroup" label ="${res:ConvertTitle}"/>
+      </MenuItem>
+      <MenuItem id = "AccountNoteViewMenu" viewid = "NoteList" module ="Account">
+        <MenuItem id ="EditNote" cmdId ="EditNote"/>
+        <MenuItem id ="DeleteNote" cmdId ="DeleteNote"/>
+      </MenuItem>
+    </Path>
+  </Path>
+
+  <Path name = "/Workbench/Navigation/Sales">
+    <NavItem id = "Account"
+		          type = "Item"
+		          label = "${res:Account}"
+              icon ="account"
+              class ="Katrin.Win.AccountModule.OpenAccountListCommand"
+              builderid ="NavBarItemBuilder"
+             insertafter="Contact"
+             />
+  </Path>
+
+
+  <Path name ="/Controllers">
+    <Controller id = "Account" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="Account"/>
+    <Controller id = "AccountList" class = "Katrin.Win.AccountModule.AccountController"/>
+    <Controller id = "AccountDetail" class = "Katrin.Win.AccountModule.Detail.AccountDetailController"/>
+  </Path>
+  <Path name ="/ObjectListViews/AccountCommand">
+    <Class id = "AccountCommand" class = "Katrin.Win.AccountModule.OpenAccountListCommand"/>
+  </Path>
+
+  <Path name ="/Views">
+    <View id = "DefaultAccountDetailView" class = "Katrin.Win.AccountModule.Detail.AccountDetailView"/>
+  </Path>
+
+</AddIn>

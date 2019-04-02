@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ArrayOfFormatCondition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FormatCondition>
+    <Name>Deadline Earlier Than Next Week</Name>
+    <ConditionName>DeadlineEarlierThanNextWeek</ConditionName>
+    <Backcolor />
+    <BackcolorArgb>0</BackcolorArgb>
+    <Forecolor />
+    <ForecolorArgb>0</ForecolorArgb>
+    <FontName>微软雅黑</FontName>
+    <Size>8.5</Size>
+    <Bold>true</Bold>
+    <Unit>false</Unit>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <Conditions>IsEarlierNextWeek([PlannedEndDate])</Conditions>
+    <Active>true</Active>
+    <UseFont>true</UseFont>
+    <UseForeColor>false</UseForeColor>
+    <UseBackColor>false</UseBackColor>
+  </FormatCondition>
+</ArrayOfFormatCondition>

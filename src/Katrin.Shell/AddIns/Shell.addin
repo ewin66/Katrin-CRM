@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+
+  <Manifest>
+    <!-- unique name of the AddIn, used when others AddIns want to reference this AddIn -->
+    <Identity name="Katrin.Shell" version = "@..\Katrin.exe"/>
+    <!--
+		others AddIns can specify dependencies like this:
+		<Dependency addin="ICSharpCode.Core.Demo" version="1.0.0.x-1.0.0.y"/>
+		-->
+  </Manifest>
+
+  <Runtime>
+    <Import assembly = "..\Katrin.exe"/>
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll">
+      <Doozer name="NavItem" class="Katrin.AppFramework.WinForms.Doozers.NavItemDoozer"/>
+      <Doozer name="DockPanel" class="Katrin.AppFramework.WinForms.Doozers.DockPanelDoozer"/>
+      <Doozer name="Controller" class="Katrin.AppFramework.WinForms.Doozers.ControllerDoozer"/>
+      <Doozer name="View" class="Katrin.AppFramework.WinForms.Doozers.ViewDoozer"/>
+    </Import>
+  </Runtime>
+
+  <Path name = "/Workbench/Navigation">
+    <NavItem id = "Sales"
+		          type = "Group"
+              icon ="sales"
+		          label = "${res:Sales}"
+             builderid ="NavBarGroupBuilder"/>
+    <NavItem id = "Services"
+		          type = "Group"
+              icon ="services"
+		          label = "${res:Services}"
+             builderid ="NavBarGroupBuilder"/>
+
+    <NavItem id = "ProjectManagement"
+		          type = "Group"
+              icon ="projectmanagement"
+		          label = "${res:ProjectManagement}"
+             builderid ="NavBarGroupBuilder"/>
+
+    <NavItem id = "Reports"
+           type = "Group"
+           icon ="report"
+           label = "${res:Reports}"
+          builderid ="NavBarGroupBuilder"/>
+
+    <NavItem id = "Administration"
+           type = "Group"
+           icon ="Administration"
+           label = "${res:Administration}"
+          builderid ="NavBarGroupBuilder"/>
+  </Path>
+
+  <Path name = "/Workbench/MainMenu">
+    <MenuItem id = "Home"
+		          type = "Page"
+		          label = "${res:Home}"
+               builderid ="RibbonPageBuilder" mergeOrder="1">
+    </MenuItem>
+    <MenuItem id = "Appearance"
+		          type = "Page"
+		          label = "${res:ViewPageCaption}"
+              mergeOrder="999"
+              builderid ="RibbonPageBuilder">
+      <MenuItem id = "Skin"
+                type = "Group"
+			          label = "${res:Skins}"
+                builderid ="RibbonPageGroupBuilder">
+        <MenuItem id = "SkinGallery"
+			          label = "${res:Skins}"
+			          shortcut = "Control|N"
+                builderid ="skin" initializer="skin"/>
+      </MenuItem>
+    </MenuItem>
+  </Path>
+
+  <Path name ="/Workbench/RibbonBuilders">
+    <Class id = "NavBarGroupBuilder" class = "Katrin.AppFramework.WinForms.NavBarBuilder.NavBarGroupBuilder"/>
+    <Class id = "NavBarItemBuilder" class = "Katrin.AppFramework.WinForms.NavBarBuilder.NavBarItemBuilder"/>
+    <Class id = "BarButtonItemBuilder" class = "Katrin.AppFramework.WinForms.RibbonBuilder.BarButtonItemBuilder"/>
+    <Class id = "skin" class = "Katrin.AppFramework.WinForms.RibbonBuilder.SkinGalleryBuilder"/>
+    <Class id = "RibbonPageBuilder" class = "Katrin.AppFramework.WinForms.RibbonBuilder.RibbonPageBuilder"/>
+    <Class id = "RibbonPageGroupBuilder" class = "Katrin.AppFramework.WinForms.RibbonBuilder.RibbonPageGroupBuilder"/>
+  </Path>
+  <Path name ="/Workbench/UIElementInitializers">
+    <Class id = "skin" class = "Katrin.AppFramework.WinForms.RibbonBuilder.SkinGalleryInitializer"/>
+  </Path>
+
+  <Path name ="/Workbench/StartCommands">
+    <Include id = "Base" path = "/ObjectListViews/LeadCommand" />
+  </Path>
+
+ 
+</AddIn>

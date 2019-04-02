@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+    <UI Id="MyWixUI_Mondo">
+      <UIRef Id="WixUI_Mondo" />
+      <UIRef Id="WixUI_ErrorProgressText" />
+
+      <DialogRef Id="IisSetupDlg" />
+      <DialogRef Id="DBConfigDlg" />
+
+      <Publish Dialog="LicenseAgreementDlg" Control="Next" Event="NewDialog" Value="IisSetupDlg" Order="2">
+        LicenseAccepted = "1"
+      </Publish>
+      <Publish Dialog="SetupTypeDlg" Control="Back" Event="NewDialog" Value="IisSetupDlg">1</Publish>
+    </UI>
+	</Fragment>
+</Wix>

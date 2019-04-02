@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="be11baf63df341c6a3d154311bdd079e" Name="Diagram" ZoomLevel="78">
+        <EntityTypeShape EntityType="MetadataModel.EntityAttribute" Width="1.5" PointX="6.625" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.AttributeLookupValue" Width="1.5" PointX="8.875" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.AttributePicklistValue" Width="1.5" PointX="6.625" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.AttributeType" Width="1.5" PointX="4.375" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.Entity" Width="2.125" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.EntityRelationship" Width="2.25" PointX="11.875" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.EntityRelationshipRelationships" Width="2.75" PointX="14.125" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.EntityRelationshipRole" Width="1.5" PointX="3.625" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.OptionSet" Width="1.5" PointX="4.375" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.Relationship" Width="1.5" PointX="11.875" PointY="4.375" IsExpanded="true" />
+        <AssociationConnector Association="MetadataModel.FK_Attribute_AttributeType" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_Attribute_Entity" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_Attribute_OptionSet" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_AttributeLookupValue_For_Attribute" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencedAttribute" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencingAttribute" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_AttributeLookupValue_Entity" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_AttributePicklistValue_OptionSet" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_EntityRelationshipRole_Metadata_Entity" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencedEntity" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencingEntity" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_EntityRelationshipRelationships_EntityRelationship" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_EntityRelationshipRole_EntityRelationship" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_EntityRelationshipRelationships_Relationship" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MetadataModel.LocalizedLabel" Width="1.5" PointX="10.622038665517252" PointY="28.093393622009732" />
+        <EntityTypeShape EntityType="MetadataModel.ColumnMapping" Width="1.5" PointX="8.2489102949616075" PointY="0.66602614552994543" />
+        <EntityTypeShape EntityType="MetadataModel.ImportMap" Width="1.5" PointX="11.851548101683868" PointY="22.859784718071943" />
+        <EntityTypeShape EntityType="MetadataModel.SavedQuery" Width="1.5" PointX="4.125" PointY="17.375" />
+        <AssociationConnector Association="MetadataModel.FK_ColumnMapping_ImportMap" />
+        <EntityTypeShape EntityType="MetadataModel.Criterion" Width="2.5" PointX="12" PointY="27" />
+        <EntityTypeShape EntityType="MetadataModel.CriteriaNode" Width="2.5" PointX="15" PointY="28.5" />
+        <EntityTypeShape EntityType="MetadataModel.NotificationProfile" Width="2.5" PointX="18" PointY="30" />
+        <EntityTypeShape EntityType="MetadataModel.NotificationRecipientAttribute" Width="2.5" PointX="0.5" PointY="31.5" />
+        <EntityTypeShape EntityType="MetadataModel.NotificationTemplate" Width="2.5" PointX="2.875" PointY="34.625" />
+        <EntityTypeShape EntityType="MetadataModel.NotificationVariable" Width="2.5" PointX="6" PointY="34.5" />
+        <EntityTypeShape EntityType="MetadataModel.ProfileVariable" Width="2.5" PointX="9" PointY="36" />
+        <AssociationConnector Association="MetadataModel.FK_CriteriaNode_Criteria" />
+        <AssociationConnector Association="MetadataModel.FK_NotificationProfile_Criteria" />
+        <AssociationConnector Association="MetadataModel.FK_NotificationRecipientAttributes_Criteria" />
+        <AssociationConnector Association="MetadataModel.FK_CriteriaNode_Attribute" />
+        <AssociationConnector Association="MetadataModel.FK_NotificationRecipientAttributes_Attribute" />
+        <AssociationConnector Association="MetadataModel.FK_NotificationVariable_Metadata_Attribute" />
+        <AssociationConnector Association="MetadataModel.FK_NotificationRecipientAttributes_Entity" />
+        <AssociationConnector Association="MetadataModel.FK_NotificationVariable_Metadata_Entity" />
+        <AssociationConnector Association="MetadataModel.FK_NotificationProfile_NotificationTemplate" />
+        <AssociationConnector Association="MetadataModel.FK_NotificationRecipientAttributes_NotificationProfile" />
+        <AssociationConnector Association="MetadataModel.FK_ProfileVariable_NotificationProfile" />
+        <AssociationConnector Association="MetadataModel.FK_ProfileVariable_NotificationVariable" />
+        <AssociationConnector Association="MetadataModel.FK_NotificationProfile_NotificationTemplate_Subject" />
+        <EntityTypeShape EntityType="MetadataModel.Subscription" Width="1.5" PointX="10.29658497790647" PointY="2.6472820651937656" />
+        <AssociationConnector Association="MetadataModel.FK_Subscription_NotificationProfile" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

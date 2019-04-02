@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<ArrayOfFormatCondition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FormatCondition>
+    <Name>Bad Satisfaction</Name>
+    <ConditionName>BadSatisfaction</ConditionName>
+    <Backcolor />
+    <BackcolorArgb>0</BackcolorArgb>
+    <Forecolor />
+    <ForecolorArgb>-65536</ForecolorArgb>
+    <FontName>微软雅黑</FontName>
+    <Size>8.5</Size>
+    <Bold>false</Bold>
+    <Unit>false</Unit>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <Conditions>[CustomerSatisfactionCode] = 4 Or [CustomerSatisfactionCode] = 5</Conditions>
+    <Active>true</Active>
+    <UseFont>false</UseFont>
+    <UseForeColor>true</UseForeColor>
+    <UseBackColor>false</UseBackColor>
+  </FormatCondition>
+  <FormatCondition>
+    <Name>Expires On Next Week</Name>
+    <ConditionName>ExpiresOnNextWeek</ConditionName>
+    <Backcolor />
+    <BackcolorArgb>0</BackcolorArgb>
+    <Forecolor />
+    <ForecolorArgb>0</ForecolorArgb>
+    <FontName>微软雅黑</FontName>
+    <Size>8.5</Size>
+    <Bold>true</Bold>
+    <Unit>false</Unit>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <Conditions>IsEarlierNextWeek([ExpiresOn])</Conditions>
+    <Active>true</Active>
+    <UseFont>true</UseFont>
+    <UseForeColor>false</UseForeColor>
+    <UseBackColor>false</UseBackColor>
+  </FormatCondition>
+  <FormatCondition>
+    <Name>Active Customers Didn't Update In A Month</Name>
+    <ConditionName>ActiveCustomersDidn'tUpdateInAMonth</ConditionName>
+    <Backcolor />
+    <BackcolorArgb>0</BackcolorArgb>
+    <Forecolor />
+    <ForecolorArgb>-16777024</ForecolorArgb>
+    <FontName>微软雅黑</FontName>
+    <Size>8.5</Size>
+    <Bold>false</Bold>
+    <Unit>false</Unit>
+    <Italic>false</Italic>
+    <Underline>false</Underline>
+    <Conditions>[StatusCode] In (1, 2) And IsPriorDays([ModifiedOn],30)</Conditions>
+    <Active>true</Active>
+    <UseFont>false</UseFont>
+    <UseForeColor>true</UseForeColor>
+    <UseBackColor>false</UseBackColor>
+  </FormatCondition>
+</ArrayOfFormatCondition>

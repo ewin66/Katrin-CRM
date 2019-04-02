@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="DevExpress.Data.v12.1" name="DevExpress.Data.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="xrTableCell1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell8.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="xrTableCell60.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="xrTable1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1159, 22</value>
+  </data>
+  <data name="xrTableCell59.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="progressDescriptionCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="xrTableCell69.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="xrTableCell71.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="lbTitle.Text" xml:space="preserve">
+    <value>Opportunity Analysis</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v12.1" name="DevExpress.Utils.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="xrTable2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>0, 0</value>
+  </data>
+  <data name="summaryDescriptionCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="noteCreatedByCell.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>232, 205, 162</value>
+  </data>
+  <data name="xrTableCell63.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="progressDescriptionHeaderCell.Text" xml:space="preserve">
+    <value>Progress Description</value>
+  </data>
+  <data name="xrTableCell70.Text" xml:space="preserve">
+    <value>Work Amount</value>
+  </data>
+  <data name="progressDescriptionHeaderCell.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>243, 243, 243</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="topMarginBand1.HeightF" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="probabilityCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrTableRow1.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>ControlText</value>
+  </data>
+  <data name="xrTableCell68.Text" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="latestFeadbackCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="noteCreatedByCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTableRow17.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="xrTableCell59.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell66.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTable6.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>0, 0</value>
+  </data>
+  <data name="xrTableCell58.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="progressDescriptionHeaderCell.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>232, 205, 162</value>
+  </data>
+  <data name="xrLine1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>0, 75</value>
+  </data>
+  <data name="xrTableCell4.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="technicianTotalEffortsHeaderCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell12.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>232, 205, 162</value>
+  </data>
+  <data name="xrTableRow1.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 237, 196</value>
+  </data>
+  <data name="xrTableCell12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="xrLine1.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>84, 132, 213</value>
+  </data>
+  <data name="noteCreatedOnCell.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>232, 205, 162</value>
+  </data>
+  <data name="xrTable1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>0, 0</value>
+  </data>
+  <data name="xrTableCell58.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="xrTableCell73.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell73.Text" xml:space="preserve">
+    <value>Cost Ratio</value>
+  </data>
+  <data name="xrTableCell62.Text" xml:space="preserve">
+    <value>Probability</value>
+  </data>
+  <data name="salesCurrentEffortCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="BottomMargin.HeightF" type="System.Single, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="xrTableCell60.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell61.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTable1.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="ReportHeader1.HeightF" type="System.Single, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="progressDescriptionHeaderCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="xrTableCell12.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTableRow3.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>232, 205, 162</value>
+  </data>
+  <data name="Detail1.HeightF" type="System.Single, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="xrTableCell8.Text" xml:space="preserve">
+    <value>Customer Name</value>
+  </data>
+  <data name="technicianCurrentEffortsCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="noteCreatedByCell.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>243, 243, 243</value>
+  </data>
+  <data name="xrPageInfo2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>292, 23</value>
+  </data>
+  <data name="xrTableCell4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="xrTableCell10.Text" xml:space="preserve">
+    <value>Technician</value>
+  </data>
+  <data name="xrTableCell1.Text" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="xrTableCell69.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lbTitle.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>281.0417, 38</value>
+  </data>
+  <data name="xrTable3.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="xrTable5.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>0, 22</value>
+  </data>
+  <data name="xrTableCell10.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="closedDateCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTable5.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1159, 25</value>
+  </data>
+  <data name="xrTableCell72.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell64.Text" xml:space="preserve">
+    <value>Contract Total</value>
+  </data>
+  <data name="progressDescriptionCell.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>232, 205, 162</value>
+  </data>
+  <data name="lbTitle.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>BottomCenter</value>
+  </data>
+  <data name="noteCreatedByCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="xrTableCell67.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="headerTable.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1159, 64</value>
+  </data>
+  <data name="xrTableCell68.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xrTableRow2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="workAmountCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrTableRow2.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 103, 196</value>
+  </data>
+  <data name="progressDescriptionCell.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>243, 243, 243</value>
+  </data>
+  <data name="xrTableCell62.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell67.Text" xml:space="preserve">
+    <value>Current Effort</value>
+  </data>
+  <data name="salesTotalEffortsCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="Detail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="xrTable1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="ReportHeader1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="noteCreatedOnCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="noteCreatedOnCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="xrTableCell71.Text" xml:space="preserve">
+    <value>Current Efforts</value>
+  </data>
+  <data name="xrTableRow2.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>194, 226, 255</value>
+  </data>
+  <data name="xrTableCell1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="xrTable3.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>0, 0</value>
+  </data>
+  <data name="xrTableCell62.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="BottomMargin.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="xrTableCell64.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="technicianTotalEffortsCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="projectNameCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrPageInfo2.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>84, 132, 213</value>
+  </data>
+  <data name="xrPageInfo2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>BottomRight</value>
+  </data>
+  <data name="xrTableCell61.Text" xml:space="preserve">
+    <value>Technology</value>
+  </data>
+  <data name="xrTableCell10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="xrTableCell63.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="contractTotalCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrTableCell2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="technicianTotalEffortsHeaderCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="progressDescriptionCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTableCell71.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell66.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="headerTable.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="statusCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTableCell2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="headerTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt</value>
+  </data>
+  <data name="noteCreatedOnCell.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>243, 243, 243</value>
+  </data>
+  <data name="xrTableCell60.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="xrTableCell2.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="xrTableCell72.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="xrTableCell72.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell12.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>243, 243, 243</value>
+  </data>
+  <data name="xrTable3.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1159, 25</value>
+  </data>
+  <data name="xrTableCell69.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableRow1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="customerNameCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTableCell64.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="headerTable.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>0, 0</value>
+  </data>
+  <data name="xrLine1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1159, 9</value>
+  </data>
+  <data name="lbTitle.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>437.5, 0</value>
+  </data>
+  <data name="xrTableCell63.Text" xml:space="preserve">
+    <value>Latest Feadback</value>
+  </data>
+  <data name="lbTitle.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>84, 132, 213</value>
+  </data>
+  <data name="xrTable4.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1159, 25</value>
+  </data>
+  <data name="costRatioCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="expectedStartDateCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTableCell67.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell74.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="headerTable.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="progressDescriptionHeaderCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="Detail.HeightF" type="System.Single, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="xrTableCell68.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="Detail.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="salesNameCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTable1.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="xrTableCell74.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="xrPageInfo2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>867.0001, 0</value>
+  </data>
+  <data name="xrTableCell59.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Detail.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="lbTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 18pt</value>
+  </data>
+  <data name="xrTableCell74.Text" xml:space="preserve">
+    <value>Closed Date</value>
+  </data>
+  <data name="xrPageInfo2.Format" xml:space="preserve">
+    <value>{0:"Current Date: " D}</value>
+  </data>
+  <data name="DetailReportBand.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="summaryDescriptionCell.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>232, 205, 162</value>
+  </data>
+  <data name="xrTableCell12.Text" xml:space="preserve">
+    <value>Summary Description</value>
+  </data>
+  <data name="xrPageInfo2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="xrTableRow1.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>232, 205, 162</value>
+  </data>
+  <data name="xrTableCell70.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="summaryDescriptionCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="xrTable6.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1159, 24</value>
+  </data>
+  <data name="xrTableRow2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt, style=Italic</value>
+  </data>
+  <data name="xrTableCell58.Text" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="xrTableCell61.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="Detail1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="PageHeader.HeightF" type="System.Single, mscorlib">
+    <value>64.58334</value>
+  </data>
+  <data name="xrTableCell4.Text" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="projectTechnologyCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="technicianNameCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTable4.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Utils.v12.1">
+    <value>0, 25</value>
+  </data>
+  <data name="xrTableCell70.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="ReportFooter.HeightF" type="System.Single, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="xrTable2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1159, 25</value>
+  </data>
+  <data name="xrTableCell66.Text" xml:space="preserve">
+    <value>Total Efforts</value>
+  </data>
+  <data name="summaryDescriptionCell.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>243, 243, 243</value>
+  </data>
+  <data name="xrTable1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 8pt</value>
+  </data>
+  <data name="technicianTotalEffortsHeaderCell.Text" xml:space="preserve">
+    <value>Total Efforts</value>
+  </data>
+  <data name="projectTypeCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTableCell73.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v12.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTable1.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>244, 155, 24</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
+</root>

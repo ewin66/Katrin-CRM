@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.ProjectIterationModule.dll">
+      <ConditionEvaluator name="ProjectIterationEnabledConditionEvaluator"
+                         class="Katrin.Win.ProjectIterationModule.ConditionEvaluators.EnabledConditionEvaluator"/>
+      <ConditionEvaluator name="ProjectVersionEnabledConditionEvaluator"
+                            class="Katrin.Win.ProjectIterationModule.ConditionEvaluators.EnabledConditionEvaluator"/>
+      <ConditionEvaluator name="ProjectModuleEnabledConditionEvaluator"
+                              class="Katrin.Win.ProjectIterationModule.ConditionEvaluators.EnabledConditionEvaluator"/>
+    </Import>
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+
+  <!-- project iteration path-->
+  <Path name="/ProjectIteration">
+    <Path id ="Commands">
+      <Path id="MenuCommand">
+        <MenuItem id ="DeleteProjectIteration" source ="Custom" type = "Item" label = "${res:DeleteProjectIteration}"
+                    imageName="delete" builderid ="BarButtonItemBuilder"
+                    class ="Katrin.Win.ProjectIterationModule.Commands.DeleteCommand"
+                    controllerId ="ProjectIterationList" />
+        <MenuItem id ="EditProjectIteration" source ="Custom" type = "Item" label = "${res:EditProjectIteration}"
+                  imageName="edit" builderid ="BarButtonItemBuilder"
+                  class ="Katrin.Win.ProjectIterationModule.Commands.EditCommand"
+                  controllerId ="ProjectIterationList" />
+      </Path>
+      <Path id="RibbonCommand">
+        <Condition name = "CheckConditionEvaluator" affect="Down" viewName="ProjectIteration">
+          <MenuItem id = "ShowIterationInList" source ="Custom"  type = "Item"
+                    label = "${res:ProjectIteration}" imageName="ProjectIteration" ButtonStyle="Check"
+                    class ="Katrin.Win.ProjectIterationModule.Commands.ShowIterationCommand"
+                    builderid ="BarButtonItemBuilder"/>
+        </Condition>
+        <MenuItem id = "AddIterationInList" source ="Custom" type = "Item" label = "${res:AddIteration}"
+                      imageName="ProjectIteration" overlay="overlay_add"
+                      class ="Katrin.Win.ProjectIterationModule.Commands.AddIterationCommand"
+                      builderid ="BarButtonItemBuilder" />
+      </Path>
+    </Path>
+    <Path id="Show">
+      <MenuItem id = "ShowIterationInList"  type = "Item" cmdId="ShowIterationInList"/>
+    </Path>
+    <Path id="Add">
+      <MenuItem id = "AddIterationInList" type = "Item" cmdId="AddIterationInList" />
+    </Path>
+    <Path id="List">
+      <Path id = "DockPanels">
+        <View id="DefaultListView" controller="ProjectIterationList" guid="{DF474E97-B329-44D5-8396-CD1F68984E90}"></View>
+      </Path>
+    </Path>
+    <Path id="Detail">
+      <Path id = "DockPanels">
+        <View id="DefaultDetailView" controller="ProjectIterationDetail"></View>
+        <DockPanel id="NoteList" dock="Fill" lazy="true" controller="NoteList"></DockPanel>
+        <DockPanel id="History" dock="Fill" lazy="true" controller="HistoryList"></DockPanel>
+      </Path>
+      <Path id ="Commands">
+        <Include id = "Base" path = "/Detail/Commands"/>
+        <Condition name = "DetailEnabledConditionEvaluator" affect="Enabled" action="Disable">
+          <Include id = "HistoryCommand" path = "/History/Commands/Detail" />
+          <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "Base" path = "/Detail/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" OrderNumber="1" builderid ="RibbonPageGroupBuilder">
+            <Include id = "Base" path = "/Detail/Ribbon/Show" />
+            <Include id = "ShowNote" path = "/NoteView/Activate"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/Show"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" OrderNumber="2" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+          </MenuItem>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id ="ContextMenu">
+      <!--MenuItem default type is normal.-->
+      <MenuItem id = "ProjectIterationNoteViewMenu" viewid = "NoteList" module ="ProjectIteration">
+        <MenuItem id ="EditNote" cmdId ="EditNote"/>
+        <MenuItem id ="DeleteNote" cmdId ="DeleteNote"/>
+      </MenuItem>
+    </Path>
+  </Path>
+
+
+
+  <!-- project version dock panels-->
+  <Path name="/ProjectVersion">
+    <Path id ="Commands">
+      <Path id="MenuCommand">
+        <MenuItem id ="DeleteProjectVersion" source ="Custom" type = "Item" label = "${res:DeleteProjectVersion}"
+                    imageName="delete" builderid ="BarButtonItemBuilder"
+                    class ="Katrin.Win.ProjectIterationModule.Commands.DeleteCommand"
+                    controllerId ="ProjectVersionList" />
+        <MenuItem id ="EditProjectVersion" source ="Custom" type = "Item" label = "${res:EditProjectVersion}"
+                  imageName="edit" builderid ="BarButtonItemBuilder"
+                  class ="Katrin.Win.ProjectIterationModule.Commands.EditCommand"
+                  controllerId ="ProjectVersionList" />
+      </Path>
+      <Path id="RibbonCommand">
+        <Condition name = "CheckConditionEvaluator" affect="Down" viewName="ProjectVersion">
+          <MenuItem id = "ShowProjectVersionInList" source ="Custom" type = "Item" label = "${res:ProjectVersion}"
+                    imageName="ProjectVersion" ButtonStyle="Check"
+                    class ="Katrin.Win.ProjectIterationModule.Commands.ShowVersionCommand"
+                    builderid ="BarButtonItemBuilder"/>
+        </Condition>
+        <MenuItem id = "AddProjectVersionInList" source ="Custom" type = "Item" label = "${res:AddVersion}"
+                    imageName="ProjectVersion" overlay="overlay_add"
+                    class ="Katrin.Win.ProjectIterationModule.Commands.AddVersionCommand"
+                    builderid ="BarButtonItemBuilder" />
+      </Path>
+    </Path>
+    <Path id="Show">
+      <MenuItem id = "ShowProjectVersionInList"  type = "Item" cmdId="ShowProjectVersionInList"/>
+    </Path>
+    <Path id="Add">
+      <MenuItem id = "AddProjectVersionInList" type = "Item" cmdId="AddProjectVersionInList" />
+    </Path>
+    <Path id="List">
+      <Path id = "DockPanels">
+        <View id="DefaultListView" controller="ProjectVersionList" guid="{4F03FDB7-97EF-4CEF-B3C2-887B0529B544}"></View>
+      </Path>
+    </Path>
+    <Path id="Detail">
+      <Path id = "DockPanels">
+        <View id="DefaultDetailView" controller="ProjectVersionDetail"></View>
+        <DockPanel id="NoteList" dock="Fill" lazy="true" controller="NoteList"></DockPanel>
+        <DockPanel id="History" dock="Fill" lazy="true" controller="HistoryList"></DockPanel>
+      </Path>
+      <Path id ="Commands">
+        <Include id = "Base" path = "/Detail/Commands"/>
+        <Condition name = "DetailEnabledConditionEvaluator" affect="Enabled" action="Disable">
+          <Include id = "HistoryCommand" path = "/History/Commands/Detail" />
+          <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "Base" path = "/Detail/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" OrderNumber="1" builderid ="RibbonPageGroupBuilder">
+            <Include id = "Base" path = "/Detail/Ribbon/Show" />
+            <Include id = "ShowNote" path = "/NoteView/Activate"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/Show"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" OrderNumber="2" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+          </MenuItem>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id ="ContextMenu">
+      <!--MenuItem default type is normal.-->
+      <MenuItem id = "ProjectVersionNoteViewMenu" viewid = "NoteList" module ="ProjectVersion">
+        <MenuItem id ="EditNote" cmdId ="EditNote"/>
+        <MenuItem id ="DeleteNote" cmdId ="DeleteNote"/>
+      </MenuItem>
+    </Path>
+  </Path>
+
+
+  <!-- Project Module  dock panels-->
+  <Path name="/ProjectModule">
+    <Path id ="Commands">
+      <Path id="MenuCommand">
+        <MenuItem id ="DeleteProjectModule" source ="Custom" type = "Item" label = "${res:DeleteProjectModule}"
+                    imageName="delete" builderid ="BarButtonItemBuilder"
+                    class ="Katrin.Win.ProjectIterationModule.Commands.DeleteCommand"
+                    controllerId ="ProjectModuleList" />
+        <MenuItem id ="EditProjectModule" source ="Custom" type = "Item" label = "${res:EditProjectModule}"
+                  imageName="edit" builderid ="BarButtonItemBuilder"
+                  class ="Katrin.Win.ProjectIterationModule.Commands.EditCommand"
+                  controllerId ="ProjectModuleList" />
+      </Path>
+      <Path id="RibbonCommand">
+        <Condition name = "CheckConditionEvaluator" affect="Down" viewName="ProjectModule">
+          <MenuItem id = "ShowProjectModuleInList" source ="Custom" type = "Item"
+                    label = "${res:ProjectModule}" imageName="ProjectModule"
+                    ButtonStyle="Check" class ="Katrin.Win.ProjectIterationModule.Commands.ShowModuleCommand"
+                    builderid ="BarButtonItemBuilder"/>
+        </Condition>
+        <MenuItem id = "AddProjectModuleInList" source ="Custom" type = "Item"
+                  label = "${res:AddModule}" imageName="ProjectModule" overlay="overlay_add"
+                  class ="Katrin.Win.ProjectIterationModule.Commands.AddModuleCommand"
+                  builderid ="BarButtonItemBuilder" />
+      </Path>
+    </Path>
+    <Path id="Show">
+      <MenuItem id = "ShowProjectModuleInList"  type = "Item" cmdId="ShowProjectModuleInList"/>
+    </Path>
+    <Path id="Add">
+      <MenuItem id = "AddProjectModuleInList" type = "Item" cmdId="AddProjectModuleInList" />
+    </Path>
+    <Path id="List">
+      <Path id = "DockPanels">
+        <View id="DefaultListView" controller="ProjectModuleList" guid="{A5494C59-E9B4-4C5C-A1FB-06C577CA7BA5}"></View>
+      </Path>
+    </Path>
+    <Path id="Detail">
+      <Path id = "DockPanels">
+        <View id="DefaultDetailView" controller="ProjectModuleDetail"></View>
+        <DockPanel id="NoteList" dock="Fill" lazy="true" controller="NoteList"></DockPanel>
+        <DockPanel id="History" dock="Fill" lazy="true" controller="HistoryList"></DockPanel>
+      </Path>
+      <Path id ="Commands">
+        <Include id = "Base" path = "/Detail/Commands"/>
+        <Condition name = "DetailEnabledConditionEvaluator" affect="Enabled" action="Disable">
+          <Include id = "HistoryCommand" path = "/History/Commands/Detail" />
+          <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "Base" path = "/Detail/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" OrderNumber="1" builderid ="RibbonPageGroupBuilder">
+            <Include id = "Base" path = "/Detail/Ribbon/Show" />
+            <Include id = "ShowNote" path = "/NoteView/Activate"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/Show"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" OrderNumber="2" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+          </MenuItem>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id ="ContextMenu">
+      <!--MenuItem default type is normal.-->
+      <MenuItem id = "ProjectModuleNoteViewMenu" viewid = "NoteList" module ="ProjectModule">
+        <MenuItem id ="EditNote" cmdId ="EditNote"/>
+        <MenuItem id ="DeleteNote" cmdId ="DeleteNote"/>
+      </MenuItem>
+    </Path>
+  </Path>
+
+
+  <Path name ="/Controllers">
+    <Controller id = "ProjectIteration" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="ProjectIteration"/>
+    <Controller id = "ProjectVersion" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="ProjectVersion"/>
+    <Controller id = "ProjectModule" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="ProjectModule"/>
+
+    <Controller id = "ProjectIterationList" class = "Katrin.Win.ProjectIterationModule.ProjectController"/>
+    <Controller id = "ProjectIterationDetail" class = "Katrin.Win.ProjectIterationModule.ProjectIteration.ProjectIterationDetailController"/>
+    <Controller id = "ProjectVersionDetail" class = "Katrin.Win.ProjectIterationModule.Version.ProjectVersionDetailController"/>
+    <Controller id = "ProjectModuleDetail" class = "Katrin.Win.ProjectIterationModule.Module.ProjectModuleDetailController"/>
+    <Controller id = "ProjectVersionList" class = "Katrin.Win.ProjectIterationModule.Version.ProjectVersionController"/>
+    <Controller id = "ProjectModuleList" class = "Katrin.Win.ProjectIterationModule.Module.ProjectModuleController"/>
+  </Path>
+
+  <Path name ="/Views">
+    <View id = "DefaultProjectIterationDetailView" class = "Katrin.Win.ProjectIterationModule.ProjectIteration.ProjectIterationDetailView"/>
+    <View id = "DefaultProjectVersionDetailView" class = "Katrin.Win.ProjectIterationModule.Version.ProjectVersionDetailView"/>
+    <View id = "DefaultProjectModuleDetailView" class = "Katrin.Win.ProjectIterationModule.Module.ProjectModuleDetailView"/>
+  </Path>
+</AddIn>

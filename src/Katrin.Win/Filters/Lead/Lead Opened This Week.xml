@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <FilterName key="LeadOpenedThisWeek">Lead Opened This Week</FilterName>
+  <property name="ActiveFilterString">IsOutlookIntervalEarlierThisWeek([CreatedOn])</property>
+  <order>7</order>
+</Filter>

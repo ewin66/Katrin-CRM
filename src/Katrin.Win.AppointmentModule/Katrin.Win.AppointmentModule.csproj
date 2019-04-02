@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9527070-C4CF-4DBD-97CB-085D309F0058}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Katrin.Win.AppointmentModule</RootNamespace>
+    <AssemblyName>Katrin.Win.AppointmentModule</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Shell\AddIns\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Katrin.Domain, Version=1.2.2.52, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Katrin.Domain\bin\Debug\Katrin.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="Katrin.Win.BaseViewModule, Version=1.2.2.52, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Katrin.Win.RoleModule, Version=1.2.2.52, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Shell\AddIns\Katrin.Win.RoleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Katrin.Win.TimeTrackingModule, Version=1.2.2.52, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Shell\AddIns\Katrin.Win.TimeTrackingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Win.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v12.1.Reporting.Extensions, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="LateBindingApi.Core, Version=1.4.0.1, Culture=neutral, PublicKeyToken=297f57b43ae7c1de" />
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Services.Client.5.1.0\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppointmentController.cs" />
+    <Compile Include="AppointmentView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppointmentView.Designer.cs">
+      <DependentUpon>AppointmentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\AddAppointmentCommand.cs" />
+    <Compile Include="Commands\RefreshAppointmentCommand.cs" />
+    <Compile Include="Commands\EditAppointmentCommand.cs" />
+    <Compile Include="Commands\ViewAppointmentCommand.cs" />
+    <Compile Include="Commands\DeleteAppointmentCommand.cs" />
+    <Compile Include="Commands\GroupByNoneCommand.cs" />
+    <Compile Include="Commands\GroupByResourceCommand.cs" />
+    <Compile Include="Commands\GroupByDateCommand.cs" />
+    <Compile Include="Commands\GotoTodayCommand.cs" />
+    <Compile Include="Commands\MonthViewCommand.cs" />
+    <Compile Include="Commands\WorkWeekViewCommand.cs" />
+    <Compile Include="Commands\DayViewCommand.cs" />
+    <Compile Include="Conditions\AppointmentEnabledConditionEvaluator.cs" />
+    <Compile Include="Conditions\ActiveViewCheckConditionEvaluator.cs" />
+    <Compile Include="Conditions\GroupTypeCheckConditionEvaluator.cs" />
+    <Compile Include="Detail\AppointmentDetailController.cs" />
+    <Compile Include="Detail\AppointmentDetailView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detail\AppointmentDetailView.Designer.cs">
+      <DependentUpon>AppointmentDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IAppointmentView.cs" />
+    <Compile Include="OpenAppointmentListCommand.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Appointment.addin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Katrin.AppFramework.WinForms\Katrin.AppFramework.WinForms.csproj">
+      <Project>{763E4A0C-17C0-4031-9748-A38D5EB4933E}</Project>
+      <Name>Katrin.AppFramework.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Katrin.AppFramework\Katrin.AppFramework.csproj">
+      <Project>{9E788887-F89F-4F4B-96B5-5651158C0D36}</Project>
+      <Name>Katrin.AppFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ICSharpCode\ICSharpCode.Core\ICSharpCode.Core.csproj">
+      <Project>{35CEF10F-2D4C-45F2-9DD1-161E0FEC583C}</Project>
+      <Name>ICSharpCode.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppointmentView.resx">
+      <DependentUpon>AppointmentView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detail\AppointmentDetailView.resx">
+      <DependentUpon>AppointmentDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>cd.&gt;$(ProjectDir)Properties\licenses.licx</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

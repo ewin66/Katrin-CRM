@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ri_Katrin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Katrin.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConfirmPasswordNotMatch" xml:space="preserve">
+    <value>Confirm password doesn't match the password field.</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Quote" xml:space="preserve">
+    <value>Quote</value>
+  </data>
+  <data name="Related" xml:space="preserve">
+    <value>Related</value>
+  </data>
+  <data name="NewCommand" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="ValidateDate" xml:space="preserve">
+    <value>This date is invalidation</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="UserNameAndPasswordInvalid" xml:space="preserve">
+    <value>User name and password are invalid.</value>
+  </data>
+  <data name="EntityDetailsCaptionFormat" xml:space="preserve">
+    <value>{0} Details</value>
+  </data>
+  <data name="SaveAndClose" xml:space="preserve">
+    <value>Save&amp;&amp;Close</value>
+  </data>
+  <data name="RecordManagement" xml:space="preserve">
+    <value>Record Management</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="PopupContract" xml:space="preserve">
+    <value>Contract</value>
+  </data>
+  <data name="PopupQuote" xml:space="preserve">
+    <value>Quote</value>
+  </data>
+  <data name="CannotUnregisterSiteRegisteredWithParent" xml:space="preserve">
+    <value>Cannot unregister site that was registered in parent: {0}</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="DisableDeleteRecord" xml:space="preserve">
+    <value>You can't delete this {0} when it is used!</value>
+  </data>
+  <data name="LeadConvert" xml:space="preserve">
+    <value>Convert</value>
+  </data>
+  <data name="ServiceManagement" xml:space="preserve">
+    <value>ServiceManagement</value>
+  </data>
+  <data name="ConfirmDeletion" xml:space="preserve">
+    <value>Confirm Deletion</value>
+  </data>
+  <data name="DeadRecord" xml:space="preserve">
+    <value>Do you want to dead the {0}?</value>
+  </data>
+  <data name="DeleteRecord" xml:space="preserve">
+    <value>You have selected 1 {0} for deletion.
+
+The system will delete this record. This action cannot be undone. To continue, click OK.</value>
+  </data>
+  <data name="EntityListCaptionFormat" xml:space="preserve">
+    <value>{0} List</value>
+  </data>
+  <data name="Lead" xml:space="preserve">
+    <value>Lead</value>
+  </data>
+  <data name="AddNote" xml:space="preserve">
+    <value>Add Note</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="PasswordLengthValidation" xml:space="preserve">
+    <value>The password length should not be less than 6</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="PopupInvoice" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="DeadLead" xml:space="preserve">
+    <value>Dead</value>
+  </data>
+  <data name="NewEntity" xml:space="preserve">
+    <value>New {0}</value>
+  </data>
+  <data name="Opportunity" xml:space="preserve">
+    <value>Opportunity</value>
+  </data>
+  <data name="DeleteNote" xml:space="preserve">
+    <value>Delete Note</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Addition" xml:space="preserve">
+    <value>Addition</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ValidateNotBlankMessage" xml:space="preserve">
+    <value>{0} cannot be empty</value>
+    <comment>Validation</comment>
+  </data>
+  <data name="DuplicateUIExtensionSite" xml:space="preserve">
+    <value>A UI extension site with this name already exists: {0}</value>
+  </data>
+  <data name="ListScreenTitle" xml:space="preserve">
+    <value>{0} List</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="EditNote" xml:space="preserve">
+    <value>Edit Note</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Contract" xml:space="preserve">
+    <value>Contract</value>
+  </data>
+  <data name="Skins" xml:space="preserve">
+    <value>Skins</value>
+  </data>
+  <data name="ViewPageCaption" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="TimeTracking" xml:space="preserve">
+    <value>Time Tracking</value>
+  </data>
+  <data name="AddTimeTracking" xml:space="preserve">
+    <value>Add Time</value>
+  </data>
+  <data name="DeleteTimeTracking" xml:space="preserve">
+    <value>Delete Time</value>
+  </data>
+  <data name="EditTimeTracking" xml:space="preserve">
+    <value>Edit Time</value>
+  </data>
+  <data name="ShowTimeTracking" xml:space="preserve">
+    <value>Show Time Tracking</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="Sales" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="SystemSetting" xml:space="preserve">
+    <value>System Setting</value>
+  </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Audit</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="TimeTrackings" xml:space="preserve">
+    <value>TimeTrackings</value>
+  </data>
+  <data name="FastOperate" xml:space="preserve">
+    <value>Fast Operate</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="AddFilter" xml:space="preserve">
+    <value>Add Filter</value>
+  </data>
+  <data name="EditFilter" xml:space="preserve">
+    <value>Edit Filter</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="ManageFilter" xml:space="preserve">
+    <value>Manage Filter</value>
+  </data>
+  <data name="DeleteFilter" xml:space="preserve">
+    <value>Delete Filter</value>
+  </data>
+  <data name="DeleteListItemWarning" xml:space="preserve">
+    <value>Do you want to delete this item?</value>
+  </data>
+  <data name="DeleteFilterTip" xml:space="preserve">
+    <value>Do you want to delete this filter?</value>
+  </data>
+  <data name="ClearSetting" xml:space="preserve">
+    <value>Clear Setting</value>
+  </data>
+  <data name="ClearSettingConfirm" xml:space="preserve">
+    <value>The system will clear your local settings. This action cannot be undone. To continue, click OK</value>
+  </data>
+  <data name="NoRelatedData" xml:space="preserve">
+    <value>No Related Data!</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Katrin" xml:space="preserve">
+    <value>Katrin</value>
+  </data>
+</root>

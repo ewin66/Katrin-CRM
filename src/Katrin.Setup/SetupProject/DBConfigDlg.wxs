@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+    <UI>
+      <Property Id="DBNAME" Value="Katrin_Wip" />
+      <Property Id="SERVERNAME" Value="(local)" />
+      <Property Id="SETUPCONNECTIONLIST" Value="WINDOWS" />
+      <Property Id="DBUSERNAME" Value="sa" />
+      <Property Id="DBPASSWORD" Value="123456" />
+
+      <ComboBox Property="SETUPCONNECTIONLIST">
+        <ListItem Text="Windows Authentication" Value="WINDOWS" />
+        <ListItem Text="SQL Server Authentication" Value="SQLSERVER" />
+      </ComboBox>
+
+      <Dialog Id="DBConfigDlg" Width="370" Height="270" Title="[ProductName] [Setup]" NoMinimize="yes">
+        <Control Id="DBNameLabel" Type="Text" X="45" Y="50" Width="100" Height="15" TabSkip="no" Text="&amp;Database Name:" />
+        <Control Id="DBNameEdit" Type="Edit" X="45" Y="62" Width="280" Height="18" Property="DBNAME" Text="{32}" />
+        <Control Id="ServerLabel" Type="Text" X="45" Y="82" Width="100" Height="15" TabSkip="no" Text="&amp;Server Name:" />
+        <Control Id="ServerEdit" Type="Edit" X="45" Y="94" Width="280" Height="18" Property="SERVERNAME" Text="{32}" />
+        <Control Id="AuthenticationTypeLable" Type="Text" X="45" Y="114" Width="100" Height="15" TabSkip="no" Text="&amp;Authentication:"></Control>
+        <Control Id="AuthenticationTypeEdit" Type="ComboBox" X="45" Y="126" Width="280" Height="18" ComboList="yes" Property="SETUPCONNECTIONLIST"></Control>
+        <Control Id="UserNameLable" Type="Text" X="45" Y="146" Width="100" Height="15" TabSkip="no" Text="&amp;Username:"></Control>
+        <Control Id="UserNameEdit" Type="Edit" X="45" Y="158" Width="280" Height="18" Property="DBUSERNAME" Text="{32}" >
+          <Condition Action="disable"><![CDATA[SETUPCONNECTIONLIST <> "SQLSERVER"]]></Condition>
+          <Condition Action="enable"><![CDATA[SETUPCONNECTIONLIST <> "WINDOWS"]]></Condition>
+        </Control>
+        <Control Id="PasswordLabel" Type="Text" X="45" Y="178" Width="100" Height="15" TabSkip="no" Text="&amp;Password:" />
+        <Control Id="PasswordEdit" Type="Edit" Password="yes" X="45" Y="190" Width="280" Height="18" Property="DBPASSWORD" Text="{32}">
+          <Condition Action="disable"><![CDATA[SETUPCONNECTIONLIST <> "SQLSERVER"]]></Condition>
+          <Condition Action="enable"><![CDATA[SETUPCONNECTIONLIST <> "WINDOWS"]]></Condition>
+        </Control>
+        <Control Id="TestConnect" Type="PushButton" X="45" Y="243" Width="100" Height="17" Text="&amp;Test Connection">
+          <Publish Event="DoAction" Value="ConnectDB" Order="2" >1</Publish>
+          <Publish Event="SpawnDialog" Value="InvalidDBDlg" Order="3">1</Publish>
+        </Control>
+        <Control Id="Back" Type="PushButton" X="180" Y="243" Width="56" Height="17" Text="!(loc.WixUIBack)">
+          <Publish Event="NewDialog" Value="LicenseAgreementDlg">1</Publish>
+        </Control>
+        <Control Id="Next" Type="PushButton" X="236" Y="243" Width="56" Height="17" Default="yes" Text="!(loc.WixUINext)">
+          <Condition Action="disable"><![CDATA[CONNECTSUCCESS <> "1"]]></Condition>
+          <Condition Action="enable">CONNECTSUCCESS = "1"</Condition>
+          <Publish Event="NewDialog" Value="SetupTypeDlg">1</Publish>
+        </Control>
+        <Control Id="Cancel" Type="PushButton" X="304" Y="243" Width="56" Height="17" Cancel="yes" Text="!(loc.WixUICancel)">
+          <Publish Event="SpawnDialog" Value="CancelDlg">1</Publish>
+        </Control>
+        <Control Id="BannerBitmap" Type="Bitmap" X="0" Y="0" Width="370" Height="44" TabSkip="no" Text="WixUI_Bmp_Banner" />
+        <Control Id="Description" NoWrap="no" Type="Text" X="25" Y="23" Width="280" Height="30" Transparent="yes" NoPrefix="yes">
+          <Text>Please entry the following information correctly.</Text>
+        </Control>
+        <Control Id="BottomLine" Type="Line" X="0" Y="234" Width="370" Height="0" />
+        <Control Id="Title" Type="Text" X="15" Y="6" Width="200" Height="15" Transparent="yes" NoPrefix="yes">
+          <Text>Database configuration</Text>
+        </Control>
+        <Control Id="BannerLine" Type="Line" X="0" Y="44" Width="370" Height="0" />
+      </Dialog>
+
+      <Dialog Id="InvalidDBDlg" Width="200" Height="60" Title="[ProductName] [Setup]" NoMinimize="yes">
+        <Control Id="Return" Type="PushButton" X="130" Y="37" Width="60" Height="17" Default="yes" Cancel="yes" Text="&amp;OK">
+          <Publish Event="EndDialog" Value="Return">1</Publish>
+        </Control>
+        <Control Id="ConnError" Type="Text" NoWrap="no" X="20" Y="15" Width="180" Height="20" TabSkip="no">
+          <Text>Test connection failed.</Text>
+          <Condition Action="show"><![CDATA[CONNECTSUCCESS <> "1"]]></Condition>
+          <Condition Action="hide">CONNECTSUCCESS = "1"</Condition>
+        </Control>
+        <Control Id="ConnYes" Type="Text" NoWrap="no" X="20" Y="15" Width="180" Height="20" TabSkip="no">
+          <Text>Test connection successed.</Text>
+          <Condition Action="show">CONNECTSUCCESS = "1"</Condition>
+          <Condition Action="hide"><![CDATA[CONNECTSUCCESS <> "1"]]></Condition>
+        </Control>
+      </Dialog>
+    </UI>
+	</Fragment>
+</Wix>

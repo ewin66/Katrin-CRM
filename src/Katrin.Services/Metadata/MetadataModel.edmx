@@ -1,0 +1,1858 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MetadataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="MetadataModelStoreContainer">
+          <EntitySet Name="ColumnMapping" EntityType="MetadataModel.Store.ColumnMapping" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Criteria" EntityType="MetadataModel.Store.Criteria" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CriteriaNode" EntityType="MetadataModel.Store.CriteriaNode" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ImportMap" EntityType="MetadataModel.Store.ImportMap" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Metadata_Attribute" EntityType="MetadataModel.Store.Metadata_Attribute" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Metadata_AttributeLookupValue" EntityType="MetadataModel.Store.Metadata_AttributeLookupValue" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Metadata_AttributePicklistValue" EntityType="MetadataModel.Store.Metadata_AttributePicklistValue" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Metadata_AttributeType" EntityType="MetadataModel.Store.Metadata_AttributeType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Metadata_Entity" EntityType="MetadataModel.Store.Metadata_Entity" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Metadata_EntityRelationship" EntityType="MetadataModel.Store.Metadata_EntityRelationship" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Metadata_EntityRelationshipRelationships" EntityType="MetadataModel.Store.Metadata_EntityRelationshipRelationships" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Metadata_EntityRelationshipRole" EntityType="MetadataModel.Store.Metadata_EntityRelationshipRole" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Metadata_LocalizedLabel" EntityType="MetadataModel.Store.Metadata_LocalizedLabel" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Metadata_OptionSet" EntityType="MetadataModel.Store.Metadata_OptionSet" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Metadata_Relationship" EntityType="MetadataModel.Store.Metadata_Relationship" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="NotificationProfile" EntityType="MetadataModel.Store.NotificationProfile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="NotificationRecipientAttributes" EntityType="MetadataModel.Store.NotificationRecipientAttributes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="NotificationTemplate" EntityType="MetadataModel.Store.NotificationTemplate" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="NotificationVariable" EntityType="MetadataModel.Store.NotificationVariable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProfileVariable" EntityType="MetadataModel.Store.ProfileVariable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SavedQuery" EntityType="MetadataModel.Store.SavedQuery" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Subscription" EntityType="MetadataModel.Store.Subscription" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Attribute_AttributeType" Association="MetadataModel.Store.FK_Attribute_AttributeType">
+            <End Role="Metadata_AttributeType" EntitySet="Metadata_AttributeType" />
+            <End Role="Metadata_Attribute" EntitySet="Metadata_Attribute" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Attribute_Entity" Association="MetadataModel.Store.FK_Attribute_Entity">
+            <End Role="Metadata_Entity" EntitySet="Metadata_Entity" />
+            <End Role="Metadata_Attribute" EntitySet="Metadata_Attribute" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Attribute_OptionSet" Association="MetadataModel.Store.FK_Attribute_OptionSet">
+            <End Role="Metadata_OptionSet" EntitySet="Metadata_OptionSet" />
+            <End Role="Metadata_Attribute" EntitySet="Metadata_Attribute" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AttributeLookupValue_Entity" Association="MetadataModel.Store.FK_AttributeLookupValue_Entity">
+            <End Role="Metadata_Entity" EntitySet="Metadata_Entity" />
+            <End Role="Metadata_AttributeLookupValue" EntitySet="Metadata_AttributeLookupValue" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AttributeLookupValue_For_Attribute" Association="MetadataModel.Store.FK_AttributeLookupValue_For_Attribute">
+            <End Role="Metadata_Attribute" EntitySet="Metadata_Attribute" />
+            <End Role="Metadata_AttributeLookupValue" EntitySet="Metadata_AttributeLookupValue" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AttributePicklistValue_OptionSet" Association="MetadataModel.Store.FK_AttributePicklistValue_OptionSet">
+            <End Role="Metadata_OptionSet" EntitySet="Metadata_OptionSet" />
+            <End Role="Metadata_AttributePicklistValue" EntitySet="Metadata_AttributePicklistValue" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ColumnMapping_ImportMap" Association="MetadataModel.Store.FK_ColumnMapping_ImportMap">
+            <End Role="ImportMap" EntitySet="ImportMap" />
+            <End Role="ColumnMapping" EntitySet="ColumnMapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CriteriaNode_Attribute" Association="MetadataModel.Store.FK_CriteriaNode_Attribute">
+            <End Role="Metadata_Attribute" EntitySet="Metadata_Attribute" />
+            <End Role="CriteriaNode" EntitySet="CriteriaNode" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CriteriaNode_Criteria" Association="MetadataModel.Store.FK_CriteriaNode_Criteria">
+            <End Role="Criteria" EntitySet="Criteria" />
+            <End Role="CriteriaNode" EntitySet="CriteriaNode" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EntityRelationshipRelationships_EntityRelationship" Association="MetadataModel.Store.FK_EntityRelationshipRelationships_EntityRelationship">
+            <End Role="Metadata_EntityRelationship" EntitySet="Metadata_EntityRelationship" />
+            <End Role="Metadata_EntityRelationshipRelationships" EntitySet="Metadata_EntityRelationshipRelationships" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EntityRelationshipRelationships_Relationship" Association="MetadataModel.Store.FK_EntityRelationshipRelationships_Relationship">
+            <End Role="Metadata_Relationship" EntitySet="Metadata_Relationship" />
+            <End Role="Metadata_EntityRelationshipRelationships" EntitySet="Metadata_EntityRelationshipRelationships" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EntityRelationshipRole_EntityRelationship" Association="MetadataModel.Store.FK_EntityRelationshipRole_EntityRelationship">
+            <End Role="Metadata_EntityRelationship" EntitySet="Metadata_EntityRelationship" />
+            <End Role="Metadata_EntityRelationshipRole" EntitySet="Metadata_EntityRelationshipRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EntityRelationshipRole_Metadata_Entity" Association="MetadataModel.Store.FK_EntityRelationshipRole_Metadata_Entity">
+            <End Role="Metadata_Entity" EntitySet="Metadata_Entity" />
+            <End Role="Metadata_EntityRelationshipRole" EntitySet="Metadata_EntityRelationshipRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Metadata_Relationship_Metadata_ReferencedAttribute" Association="MetadataModel.Store.FK_Metadata_Relationship_Metadata_ReferencedAttribute">
+            <End Role="Metadata_Attribute" EntitySet="Metadata_Attribute" />
+            <End Role="Metadata_Relationship" EntitySet="Metadata_Relationship" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Metadata_Relationship_Metadata_ReferencedEntity" Association="MetadataModel.Store.FK_Metadata_Relationship_Metadata_ReferencedEntity">
+            <End Role="Metadata_Entity" EntitySet="Metadata_Entity" />
+            <End Role="Metadata_Relationship" EntitySet="Metadata_Relationship" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Metadata_Relationship_Metadata_ReferencingAttribute" Association="MetadataModel.Store.FK_Metadata_Relationship_Metadata_ReferencingAttribute">
+            <End Role="Metadata_Attribute" EntitySet="Metadata_Attribute" />
+            <End Role="Metadata_Relationship" EntitySet="Metadata_Relationship" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Metadata_Relationship_Metadata_ReferencingEntity" Association="MetadataModel.Store.FK_Metadata_Relationship_Metadata_ReferencingEntity">
+            <End Role="Metadata_Entity" EntitySet="Metadata_Entity" />
+            <End Role="Metadata_Relationship" EntitySet="Metadata_Relationship" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationProfile_Criteria" Association="MetadataModel.Store.FK_NotificationProfile_Criteria">
+            <End Role="Criteria" EntitySet="Criteria" />
+            <End Role="NotificationProfile" EntitySet="NotificationProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationProfile_NotificationTemplate" Association="MetadataModel.Store.FK_NotificationProfile_NotificationTemplate">
+            <End Role="NotificationTemplate" EntitySet="NotificationTemplate" />
+            <End Role="NotificationProfile" EntitySet="NotificationProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationProfile_NotificationTemplate_Subject" Association="MetadataModel.Store.FK_NotificationProfile_NotificationTemplate_Subject">
+            <End Role="NotificationTemplate" EntitySet="NotificationTemplate" />
+            <End Role="NotificationProfile" EntitySet="NotificationProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationRecipientAttributes_Attribute" Association="MetadataModel.Store.FK_NotificationRecipientAttributes_Attribute">
+            <End Role="Metadata_Attribute" EntitySet="Metadata_Attribute" />
+            <End Role="NotificationRecipientAttributes" EntitySet="NotificationRecipientAttributes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationRecipientAttributes_Criteria" Association="MetadataModel.Store.FK_NotificationRecipientAttributes_Criteria">
+            <End Role="Criteria" EntitySet="Criteria" />
+            <End Role="NotificationRecipientAttributes" EntitySet="NotificationRecipientAttributes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationRecipientAttributes_Entity" Association="MetadataModel.Store.FK_NotificationRecipientAttributes_Entity">
+            <End Role="Metadata_Entity" EntitySet="Metadata_Entity" />
+            <End Role="NotificationRecipientAttributes" EntitySet="NotificationRecipientAttributes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationRecipientAttributes_NotificationProfile" Association="MetadataModel.Store.FK_NotificationRecipientAttributes_NotificationProfile">
+            <End Role="NotificationProfile" EntitySet="NotificationProfile" />
+            <End Role="NotificationRecipientAttributes" EntitySet="NotificationRecipientAttributes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationVariable_Metadata_Attribute" Association="MetadataModel.Store.FK_NotificationVariable_Metadata_Attribute">
+            <End Role="Metadata_Attribute" EntitySet="Metadata_Attribute" />
+            <End Role="NotificationVariable" EntitySet="NotificationVariable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationVariable_Metadata_Entity" Association="MetadataModel.Store.FK_NotificationVariable_Metadata_Entity">
+            <End Role="Metadata_Entity" EntitySet="Metadata_Entity" />
+            <End Role="NotificationVariable" EntitySet="NotificationVariable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProfileVariable_NotificationProfile" Association="MetadataModel.Store.FK_ProfileVariable_NotificationProfile">
+            <End Role="NotificationProfile" EntitySet="NotificationProfile" />
+            <End Role="ProfileVariable" EntitySet="ProfileVariable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProfileVariable_NotificationVariable" Association="MetadataModel.Store.FK_ProfileVariable_NotificationVariable">
+            <End Role="NotificationVariable" EntitySet="NotificationVariable" />
+            <End Role="ProfileVariable" EntitySet="ProfileVariable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Subscription_NotificationProfile" Association="MetadataModel.Store.FK_Subscription_NotificationProfile">
+            <End Role="NotificationProfile" EntitySet="NotificationProfile" />
+            <End Role="Subscription" EntitySet="Subscription" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ColumnMapping">
+          <Key>
+            <PropertyRef Name="ColumnMappingId" />
+          </Key>
+          <Property Name="ColumnMappingId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="SourceEntityName" Type="nvarchar" MaxLength="160" />
+          <Property Name="SourceAttributeName" Type="nvarchar" MaxLength="160" />
+          <Property Name="TargetEntityName" Type="nvarchar" MaxLength="160" />
+          <Property Name="TargetAttributeName" Type="nvarchar" MaxLength="160" />
+          <Property Name="ImportMapId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="Criteria">
+          <Key>
+            <PropertyRef Name="CriteriaId" />
+          </Key>
+          <Property Name="CriteriaId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="CriteriaNode">
+          <Key>
+            <PropertyRef Name="CriteriaNodeId" />
+          </Key>
+          <Property Name="CriteriaNodeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CriteriaId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ParentNodeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Operator" Type="nvarchar" MaxLength="100" />
+          <Property Name="OperatorType" Type="nvarchar" MaxLength="100" />
+          <Property Name="CompareAttributeId" Type="uniqueidentifier" />
+          <Property Name="CompareValue" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="ImportMap">
+          <Key>
+            <PropertyRef Name="ImportMapId" />
+          </Key>
+          <Property Name="ImportMapId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="320" />
+          <Property Name="Source" Type="nvarchar" MaxLength="160" />
+        </EntityType>
+        <EntityType Name="Metadata_Attribute">
+          <Key>
+            <PropertyRef Name="AttributeId" />
+          </Key>
+          <Property Name="AttributeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="AttributeTypeId" Type="uniqueidentifier" />
+          <Property Name="LogicalType" Type="nvarchar" MaxLength="50" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="PhysicalName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Length" Type="int" />
+          <Property Name="IsNullable" Type="bit" />
+          <Property Name="EntityId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DefaultValue" Type="nvarchar" MaxLength="100" />
+          <Property Name="ColumnNumber" Type="int" Nullable="false" />
+          <Property Name="LogicalName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="VersionNumber" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="MaxLength" Type="int" />
+          <Property Name="MinValue" Type="float" />
+          <Property Name="MaxValue" Type="float" />
+          <Property Name="IsAuditEnabled" Type="bit" Nullable="false" />
+          <Property Name="TableColumnName" Type="nvarchar" MaxLength="50" />
+          <Property Name="OptionSetId" Type="uniqueidentifier" />
+          <Property Name="AppDefaultValue" Type="int" />
+          <Property Name="IsPKAttribute" Type="bit" />
+          <Property Name="IsCopyEnabled" Type="bit" />
+        </EntityType>
+        <EntityType Name="Metadata_AttributeLookupValue">
+          <Key>
+            <PropertyRef Name="AttributeLookupValueId" />
+          </Key>
+          <Property Name="AttributeLookupValueId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="AttributeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="EntityId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DisplayEntityAttributeId" Type="uniqueidentifier" />
+          <Property Name="VersionNumber" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Metadata_AttributePicklistValue">
+          <Key>
+            <PropertyRef Name="AttributePicklistValueId" />
+          </Key>
+          <Property Name="AttributePicklistValueId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Value" Type="int" />
+          <Property Name="DisplayOrder" Type="int" />
+          <Property Name="VersionNumber" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="OptionSetId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Metadata_AttributeType">
+          <Key>
+            <PropertyRef Name="AttributeTypeId" />
+          </Key>
+          <Property Name="AttributeTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Metadata_Entity">
+          <Key>
+            <PropertyRef Name="EntityId" />
+          </Key>
+          <Property Name="EntityId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="64" />
+          <Property Name="PhysicalName" Type="nvarchar" MaxLength="64" />
+          <Property Name="LogicalName" Type="nvarchar" MaxLength="64" />
+          <Property Name="TableName" Type="nvarchar" MaxLength="64" />
+          <Property Name="IsAuditEnabled" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Metadata_EntityRelationship">
+          <Key>
+            <PropertyRef Name="EntityRelationshipId" />
+          </Key>
+          <Property Name="EntityRelationshipId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="SchemaName" Type="nvarchar" MaxLength="255" />
+          <Property Name="EntityRelationshipType" Type="tinyint" Nullable="false" />
+          <Property Name="IsCustomRelationship" Type="bit" Nullable="false" />
+          <Property Name="IsCustomizable" Type="bit" Nullable="false" />
+          <Property Name="VersionNumber" Type="timestamp" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Metadata_EntityRelationshipRelationships">
+          <Key>
+            <PropertyRef Name="EntityRelationshipRelationshipsId" />
+          </Key>
+          <Property Name="EntityRelationshipRelationshipsId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="EntityRelationshipId" Type="uniqueidentifier" />
+          <Property Name="RelationshipId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="VersionNumber" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Metadata_EntityRelationshipRole">
+          <Key>
+            <PropertyRef Name="EntityRelationshipRoleId" />
+          </Key>
+          <Property Name="EntityRelationshipRoleId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="EntityRelationshipId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="EntityId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RelationshipRoleType" Type="tinyint" Nullable="false" />
+          <Property Name="NavPanelDisplayOption" Type="tinyint" />
+          <Property Name="NavPaneOrder" Type="int" />
+        </EntityType>
+        <EntityType Name="Metadata_LocalizedLabel">
+          <Key>
+            <PropertyRef Name="LocalizedLabelId" />
+          </Key>
+          <Property Name="LocalizedLabelId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="LanguageId" Type="int" Nullable="false" />
+          <Property Name="ObjectId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ObjectColumnName" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="Label" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="VersionNumber" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Metadata_OptionSet">
+          <Key>
+            <PropertyRef Name="OptionSetId" />
+          </Key>
+          <Property Name="OptionSetId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="IsCustomizable" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Metadata_Relationship">
+          <Key>
+            <PropertyRef Name="RelationshipId" />
+          </Key>
+          <Property Name="RelationshipId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="ReferencingEntityId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ReferencingAttributeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ReferencedEntityId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ReferencedAttributeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RelationshipType" Type="int" />
+          <Property Name="CascadeDelete" Type="tinyint" Nullable="false" />
+          <Property Name="VersionNumber" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="NotificationProfile">
+          <Key>
+            <PropertyRef Name="NotificationProfileId" />
+          </Key>
+          <Property Name="NotificationProfileId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CriteriaId" Type="uniqueidentifier" />
+          <Property Name="NotificationTemplateId" Type="uniqueidentifier" />
+          <Property Name="SubjectTemplateId" Type="uniqueidentifier" />
+          <Property Name="IsSys" Type="bit" />
+        </EntityType>
+        <EntityType Name="NotificationRecipientAttributes">
+          <Key>
+            <PropertyRef Name="NotificationRecipientAttributeId" />
+          </Key>
+          <Property Name="NotificationRecipientAttributeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RecipientEntityId" Type="uniqueidentifier" />
+          <Property Name="AttributeId" Type="uniqueidentifier" />
+          <Property Name="NotificationProfileId" Type="uniqueidentifier" />
+          <Property Name="CriteriaId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="NotificationTemplate">
+          <Key>
+            <PropertyRef Name="NotificationTemplateId" />
+          </Key>
+          <Property Name="NotificationTemplateId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="SubjectTemplate" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="NotificationVariable">
+          <Key>
+            <PropertyRef Name="NotificationVariableId" />
+          </Key>
+          <Property Name="NotificationVariableId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ParentId" Type="uniqueidentifier" />
+          <Property Name="RelatedAttributeId" Type="uniqueidentifier" />
+          <Property Name="Name" Type="nvarchar" MaxLength="200" />
+          <Property Name="EntityId" Type="uniqueidentifier" />
+          <Property Name="NotificationUrl" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="ProfileVariable">
+          <Key>
+            <PropertyRef Name="ProfileVariableId" />
+          </Key>
+          <Property Name="ProfileVariableId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="NotificationProfileId" Type="uniqueidentifier" />
+          <Property Name="NotificationVariableId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="SavedQuery">
+          <Key>
+            <PropertyRef Name="SavedQueryId" />
+          </Key>
+          <Property Name="SavedQueryId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="QueryType" Type="int" Nullable="false" />
+          <Property Name="IsDefault" Type="bit" Nullable="false" />
+          <Property Name="ReturnedTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="IsUserDefined" Type="bit" />
+          <Property Name="FetchXml" Type="nvarchar(max)" />
+          <Property Name="IsCustomizable" Type="bit" Nullable="false" />
+          <Property Name="IsQuickFindQuery" Type="bit" Nullable="false" />
+          <Property Name="ColumnSetXml" Type="nvarchar(max)" />
+          <Property Name="LayoutXml" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="uniqueidentifier" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="uniqueidentifier" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="VersionNumber" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="IsPrivate" Type="bit" Nullable="false" />
+          <Property Name="AdvancedGroupBy" Type="nvarchar" MaxLength="160" />
+          <Property Name="ConditionalFormatting" Type="nvarchar(max)" />
+          <Property Name="CanBeDeleted" Type="bit" Nullable="false" />
+          <Property Name="StatusCode" Type="int" />
+          <Property Name="QueryParentId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="Subscription">
+          <Key>
+            <PropertyRef Name="SubscriptionId" />
+          </Key>
+          <Property Name="SubscriptionId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" />
+          <Property Name="NotificationProfileId" Type="uniqueidentifier" />
+        </EntityType>
+        <Association Name="FK_Attribute_AttributeType">
+          <End Role="Metadata_AttributeType" Type="MetadataModel.Store.Metadata_AttributeType" Multiplicity="0..1" />
+          <End Role="Metadata_Attribute" Type="MetadataModel.Store.Metadata_Attribute" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_AttributeType">
+              <PropertyRef Name="AttributeTypeId" />
+            </Principal>
+            <Dependent Role="Metadata_Attribute">
+              <PropertyRef Name="AttributeTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Attribute_Entity">
+          <End Role="Metadata_Entity" Type="MetadataModel.Store.Metadata_Entity" Multiplicity="1" />
+          <End Role="Metadata_Attribute" Type="MetadataModel.Store.Metadata_Attribute" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Entity">
+              <PropertyRef Name="EntityId" />
+            </Principal>
+            <Dependent Role="Metadata_Attribute">
+              <PropertyRef Name="EntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Attribute_OptionSet">
+          <End Role="Metadata_OptionSet" Type="MetadataModel.Store.Metadata_OptionSet" Multiplicity="0..1" />
+          <End Role="Metadata_Attribute" Type="MetadataModel.Store.Metadata_Attribute" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_OptionSet">
+              <PropertyRef Name="OptionSetId" />
+            </Principal>
+            <Dependent Role="Metadata_Attribute">
+              <PropertyRef Name="OptionSetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AttributeLookupValue_Entity">
+          <End Role="Metadata_Entity" Type="MetadataModel.Store.Metadata_Entity" Multiplicity="1" />
+          <End Role="Metadata_AttributeLookupValue" Type="MetadataModel.Store.Metadata_AttributeLookupValue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Entity">
+              <PropertyRef Name="EntityId" />
+            </Principal>
+            <Dependent Role="Metadata_AttributeLookupValue">
+              <PropertyRef Name="EntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AttributeLookupValue_For_Attribute">
+          <End Role="Metadata_Attribute" Type="MetadataModel.Store.Metadata_Attribute" Multiplicity="1" />
+          <End Role="Metadata_AttributeLookupValue" Type="MetadataModel.Store.Metadata_AttributeLookupValue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Attribute">
+              <PropertyRef Name="AttributeId" />
+            </Principal>
+            <Dependent Role="Metadata_AttributeLookupValue">
+              <PropertyRef Name="AttributeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AttributePicklistValue_OptionSet">
+          <End Role="Metadata_OptionSet" Type="MetadataModel.Store.Metadata_OptionSet" Multiplicity="1" />
+          <End Role="Metadata_AttributePicklistValue" Type="MetadataModel.Store.Metadata_AttributePicklistValue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_OptionSet">
+              <PropertyRef Name="OptionSetId" />
+            </Principal>
+            <Dependent Role="Metadata_AttributePicklistValue">
+              <PropertyRef Name="OptionSetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ColumnMapping_ImportMap">
+          <End Role="ImportMap" Type="MetadataModel.Store.ImportMap" Multiplicity="0..1" />
+          <End Role="ColumnMapping" Type="MetadataModel.Store.ColumnMapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ImportMap">
+              <PropertyRef Name="ImportMapId" />
+            </Principal>
+            <Dependent Role="ColumnMapping">
+              <PropertyRef Name="ImportMapId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CriteriaNode_Attribute">
+          <End Role="Metadata_Attribute" Type="MetadataModel.Store.Metadata_Attribute" Multiplicity="0..1" />
+          <End Role="CriteriaNode" Type="MetadataModel.Store.CriteriaNode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Attribute">
+              <PropertyRef Name="AttributeId" />
+            </Principal>
+            <Dependent Role="CriteriaNode">
+              <PropertyRef Name="CompareAttributeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CriteriaNode_Criteria">
+          <End Role="Criteria" Type="MetadataModel.Store.Criteria" Multiplicity="1" />
+          <End Role="CriteriaNode" Type="MetadataModel.Store.CriteriaNode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Criteria">
+              <PropertyRef Name="CriteriaId" />
+            </Principal>
+            <Dependent Role="CriteriaNode">
+              <PropertyRef Name="CriteriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EntityRelationshipRelationships_EntityRelationship">
+          <End Role="Metadata_EntityRelationship" Type="MetadataModel.Store.Metadata_EntityRelationship" Multiplicity="0..1" />
+          <End Role="Metadata_EntityRelationshipRelationships" Type="MetadataModel.Store.Metadata_EntityRelationshipRelationships" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_EntityRelationship">
+              <PropertyRef Name="EntityRelationshipId" />
+            </Principal>
+            <Dependent Role="Metadata_EntityRelationshipRelationships">
+              <PropertyRef Name="EntityRelationshipId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EntityRelationshipRelationships_Relationship">
+          <End Role="Metadata_Relationship" Type="MetadataModel.Store.Metadata_Relationship" Multiplicity="1" />
+          <End Role="Metadata_EntityRelationshipRelationships" Type="MetadataModel.Store.Metadata_EntityRelationshipRelationships" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Relationship">
+              <PropertyRef Name="RelationshipId" />
+            </Principal>
+            <Dependent Role="Metadata_EntityRelationshipRelationships">
+              <PropertyRef Name="RelationshipId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EntityRelationshipRole_EntityRelationship">
+          <End Role="Metadata_EntityRelationship" Type="MetadataModel.Store.Metadata_EntityRelationship" Multiplicity="1" />
+          <End Role="Metadata_EntityRelationshipRole" Type="MetadataModel.Store.Metadata_EntityRelationshipRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_EntityRelationship">
+              <PropertyRef Name="EntityRelationshipId" />
+            </Principal>
+            <Dependent Role="Metadata_EntityRelationshipRole">
+              <PropertyRef Name="EntityRelationshipId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EntityRelationshipRole_Metadata_Entity">
+          <End Role="Metadata_Entity" Type="MetadataModel.Store.Metadata_Entity" Multiplicity="1" />
+          <End Role="Metadata_EntityRelationshipRole" Type="MetadataModel.Store.Metadata_EntityRelationshipRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Entity">
+              <PropertyRef Name="EntityId" />
+            </Principal>
+            <Dependent Role="Metadata_EntityRelationshipRole">
+              <PropertyRef Name="EntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Metadata_Relationship_Metadata_ReferencedAttribute">
+          <End Role="Metadata_Attribute" Type="MetadataModel.Store.Metadata_Attribute" Multiplicity="1" />
+          <End Role="Metadata_Relationship" Type="MetadataModel.Store.Metadata_Relationship" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Attribute">
+              <PropertyRef Name="AttributeId" />
+            </Principal>
+            <Dependent Role="Metadata_Relationship">
+              <PropertyRef Name="ReferencedAttributeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Metadata_Relationship_Metadata_ReferencedEntity">
+          <End Role="Metadata_Entity" Type="MetadataModel.Store.Metadata_Entity" Multiplicity="1" />
+          <End Role="Metadata_Relationship" Type="MetadataModel.Store.Metadata_Relationship" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Entity">
+              <PropertyRef Name="EntityId" />
+            </Principal>
+            <Dependent Role="Metadata_Relationship">
+              <PropertyRef Name="ReferencedEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Metadata_Relationship_Metadata_ReferencingAttribute">
+          <End Role="Metadata_Attribute" Type="MetadataModel.Store.Metadata_Attribute" Multiplicity="1" />
+          <End Role="Metadata_Relationship" Type="MetadataModel.Store.Metadata_Relationship" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Attribute">
+              <PropertyRef Name="AttributeId" />
+            </Principal>
+            <Dependent Role="Metadata_Relationship">
+              <PropertyRef Name="ReferencingAttributeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Metadata_Relationship_Metadata_ReferencingEntity">
+          <End Role="Metadata_Entity" Type="MetadataModel.Store.Metadata_Entity" Multiplicity="1" />
+          <End Role="Metadata_Relationship" Type="MetadataModel.Store.Metadata_Relationship" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Entity">
+              <PropertyRef Name="EntityId" />
+            </Principal>
+            <Dependent Role="Metadata_Relationship">
+              <PropertyRef Name="ReferencingEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationProfile_Criteria">
+          <End Role="Criteria" Type="MetadataModel.Store.Criteria" Multiplicity="0..1" />
+          <End Role="NotificationProfile" Type="MetadataModel.Store.NotificationProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Criteria">
+              <PropertyRef Name="CriteriaId" />
+            </Principal>
+            <Dependent Role="NotificationProfile">
+              <PropertyRef Name="CriteriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationProfile_NotificationTemplate">
+          <End Role="NotificationTemplate" Type="MetadataModel.Store.NotificationTemplate" Multiplicity="0..1" />
+          <End Role="NotificationProfile" Type="MetadataModel.Store.NotificationProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NotificationTemplate">
+              <PropertyRef Name="NotificationTemplateId" />
+            </Principal>
+            <Dependent Role="NotificationProfile">
+              <PropertyRef Name="NotificationTemplateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationProfile_NotificationTemplate_Subject">
+          <End Role="NotificationTemplate" Type="MetadataModel.Store.NotificationTemplate" Multiplicity="0..1" />
+          <End Role="NotificationProfile" Type="MetadataModel.Store.NotificationProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NotificationTemplate">
+              <PropertyRef Name="NotificationTemplateId" />
+            </Principal>
+            <Dependent Role="NotificationProfile">
+              <PropertyRef Name="SubjectTemplateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationRecipientAttributes_Attribute">
+          <End Role="Metadata_Attribute" Type="MetadataModel.Store.Metadata_Attribute" Multiplicity="0..1" />
+          <End Role="NotificationRecipientAttributes" Type="MetadataModel.Store.NotificationRecipientAttributes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Attribute">
+              <PropertyRef Name="AttributeId" />
+            </Principal>
+            <Dependent Role="NotificationRecipientAttributes">
+              <PropertyRef Name="AttributeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationRecipientAttributes_Criteria">
+          <End Role="Criteria" Type="MetadataModel.Store.Criteria" Multiplicity="0..1" />
+          <End Role="NotificationRecipientAttributes" Type="MetadataModel.Store.NotificationRecipientAttributes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Criteria">
+              <PropertyRef Name="CriteriaId" />
+            </Principal>
+            <Dependent Role="NotificationRecipientAttributes">
+              <PropertyRef Name="CriteriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationRecipientAttributes_Entity">
+          <End Role="Metadata_Entity" Type="MetadataModel.Store.Metadata_Entity" Multiplicity="0..1" />
+          <End Role="NotificationRecipientAttributes" Type="MetadataModel.Store.NotificationRecipientAttributes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Entity">
+              <PropertyRef Name="EntityId" />
+            </Principal>
+            <Dependent Role="NotificationRecipientAttributes">
+              <PropertyRef Name="RecipientEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationRecipientAttributes_NotificationProfile">
+          <End Role="NotificationProfile" Type="MetadataModel.Store.NotificationProfile" Multiplicity="0..1" />
+          <End Role="NotificationRecipientAttributes" Type="MetadataModel.Store.NotificationRecipientAttributes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NotificationProfile">
+              <PropertyRef Name="NotificationProfileId" />
+            </Principal>
+            <Dependent Role="NotificationRecipientAttributes">
+              <PropertyRef Name="NotificationProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationVariable_Metadata_Attribute">
+          <End Role="Metadata_Attribute" Type="MetadataModel.Store.Metadata_Attribute" Multiplicity="0..1" />
+          <End Role="NotificationVariable" Type="MetadataModel.Store.NotificationVariable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Attribute">
+              <PropertyRef Name="AttributeId" />
+            </Principal>
+            <Dependent Role="NotificationVariable">
+              <PropertyRef Name="RelatedAttributeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationVariable_Metadata_Entity">
+          <End Role="Metadata_Entity" Type="MetadataModel.Store.Metadata_Entity" Multiplicity="0..1" />
+          <End Role="NotificationVariable" Type="MetadataModel.Store.NotificationVariable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Entity">
+              <PropertyRef Name="EntityId" />
+            </Principal>
+            <Dependent Role="NotificationVariable">
+              <PropertyRef Name="EntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProfileVariable_NotificationProfile">
+          <End Role="NotificationProfile" Type="MetadataModel.Store.NotificationProfile" Multiplicity="0..1" />
+          <End Role="ProfileVariable" Type="MetadataModel.Store.ProfileVariable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NotificationProfile">
+              <PropertyRef Name="NotificationProfileId" />
+            </Principal>
+            <Dependent Role="ProfileVariable">
+              <PropertyRef Name="NotificationProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProfileVariable_NotificationVariable">
+          <End Role="NotificationVariable" Type="MetadataModel.Store.NotificationVariable" Multiplicity="0..1" />
+          <End Role="ProfileVariable" Type="MetadataModel.Store.ProfileVariable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NotificationVariable">
+              <PropertyRef Name="NotificationVariableId" />
+            </Principal>
+            <Dependent Role="ProfileVariable">
+              <PropertyRef Name="NotificationVariableId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Subscription_NotificationProfile">
+          <End Role="NotificationProfile" Type="MetadataModel.Store.NotificationProfile" Multiplicity="0..1" />
+          <End Role="Subscription" Type="MetadataModel.Store.Subscription" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NotificationProfile">
+              <PropertyRef Name="NotificationProfileId" />
+            </Principal>
+            <Dependent Role="Subscription">
+              <PropertyRef Name="NotificationProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MetadataModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="KatrinEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="EntityAttributes" EntityType="MetadataModel.EntityAttribute" />
+          <EntitySet Name="AttributeLookupValues" EntityType="MetadataModel.AttributeLookupValue" />
+          <EntitySet Name="AttributePicklistValues" EntityType="MetadataModel.AttributePicklistValue" />
+          <EntitySet Name="AttributeTypes" EntityType="MetadataModel.AttributeType" />
+          <EntitySet Name="Entities" EntityType="MetadataModel.Entity" />
+          <EntitySet Name="EntityRelationships" EntityType="MetadataModel.EntityRelationship" />
+          <EntitySet Name="EntityRelationshipRelationships" EntityType="MetadataModel.EntityRelationshipRelationships" />
+          <EntitySet Name="EntityRelationshipRoles" EntityType="MetadataModel.EntityRelationshipRole" />
+          <EntitySet Name="OptionSets" EntityType="MetadataModel.OptionSet" />
+          <EntitySet Name="Relationships" EntityType="MetadataModel.Relationship" />
+          <AssociationSet Name="FK_Attribute_AttributeType" Association="MetadataModel.FK_Attribute_AttributeType">
+            <End Role="Metadata_AttributeType" EntitySet="AttributeTypes" />
+            <End Role="Metadata_Attribute" EntitySet="EntityAttributes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Attribute_Entity" Association="MetadataModel.FK_Attribute_Entity">
+            <End Role="Metadata_Entity" EntitySet="Entities" />
+            <End Role="Metadata_Attribute" EntitySet="EntityAttributes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Attribute_OptionSet" Association="MetadataModel.FK_Attribute_OptionSet">
+            <End Role="Metadata_OptionSet" EntitySet="OptionSets" />
+            <End Role="Metadata_Attribute" EntitySet="EntityAttributes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AttributeLookupValue_For_Attribute" Association="MetadataModel.FK_AttributeLookupValue_For_Attribute">
+            <End Role="Metadata_Attribute" EntitySet="EntityAttributes" />
+            <End Role="Metadata_AttributeLookupValue" EntitySet="AttributeLookupValues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Metadata_Relationship_Metadata_ReferencedAttribute" Association="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencedAttribute">
+            <End Role="Metadata_Attribute" EntitySet="EntityAttributes" />
+            <End Role="Metadata_Relationship" EntitySet="Relationships" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Metadata_Relationship_Metadata_ReferencingAttribute" Association="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencingAttribute">
+            <End Role="Metadata_Attribute" EntitySet="EntityAttributes" />
+            <End Role="Metadata_Relationship" EntitySet="Relationships" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AttributeLookupValue_Entity" Association="MetadataModel.FK_AttributeLookupValue_Entity">
+            <End Role="Metadata_Entity" EntitySet="Entities" />
+            <End Role="Metadata_AttributeLookupValue" EntitySet="AttributeLookupValues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AttributePicklistValue_OptionSet" Association="MetadataModel.FK_AttributePicklistValue_OptionSet">
+            <End Role="Metadata_OptionSet" EntitySet="OptionSets" />
+            <End Role="Metadata_AttributePicklistValue" EntitySet="AttributePicklistValues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EntityRelationshipRole_Metadata_Entity" Association="MetadataModel.FK_EntityRelationshipRole_Metadata_Entity">
+            <End Role="Metadata_Entity" EntitySet="Entities" />
+            <End Role="Metadata_EntityRelationshipRole" EntitySet="EntityRelationshipRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Metadata_Relationship_Metadata_ReferencedEntity" Association="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencedEntity">
+            <End Role="Metadata_Entity" EntitySet="Entities" />
+            <End Role="Metadata_Relationship" EntitySet="Relationships" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Metadata_Relationship_Metadata_ReferencingEntity" Association="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencingEntity">
+            <End Role="Metadata_Entity" EntitySet="Entities" />
+            <End Role="Metadata_Relationship" EntitySet="Relationships" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EntityRelationshipRelationships_EntityRelationship" Association="MetadataModel.FK_EntityRelationshipRelationships_EntityRelationship">
+            <End Role="Metadata_EntityRelationship" EntitySet="EntityRelationships" />
+            <End Role="Metadata_EntityRelationshipRelationships" EntitySet="EntityRelationshipRelationships" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EntityRelationshipRole_EntityRelationship" Association="MetadataModel.FK_EntityRelationshipRole_EntityRelationship">
+            <End Role="Metadata_EntityRelationship" EntitySet="EntityRelationships" />
+            <End Role="Metadata_EntityRelationshipRole" EntitySet="EntityRelationshipRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EntityRelationshipRelationships_Relationship" Association="MetadataModel.FK_EntityRelationshipRelationships_Relationship">
+            <End Role="Metadata_Relationship" EntitySet="Relationships" />
+            <End Role="Metadata_EntityRelationshipRelationships" EntitySet="EntityRelationshipRelationships" />
+          </AssociationSet>
+          <EntitySet Name="LocalizedLabels" EntityType="MetadataModel.LocalizedLabel" />
+          <EntitySet Name="ColumnMappings" EntityType="MetadataModel.ColumnMapping" />
+          <EntitySet Name="ImportMaps" EntityType="MetadataModel.ImportMap" />
+          <EntitySet Name="SavedQueries" EntityType="MetadataModel.SavedQuery" />
+          <AssociationSet Name="FK_ColumnMapping_ImportMap" Association="MetadataModel.FK_ColumnMapping_ImportMap">
+            <End Role="ImportMap" EntitySet="ImportMaps" />
+            <End Role="ColumnMapping" EntitySet="ColumnMappings" />
+          </AssociationSet>
+          <EntitySet Name="Criteria" EntityType="MetadataModel.Criterion" />
+          <EntitySet Name="CriteriaNodes" EntityType="MetadataModel.CriteriaNode" />
+          <EntitySet Name="NotificationProfiles" EntityType="MetadataModel.NotificationProfile" />
+          <EntitySet Name="NotificationRecipientAttributes" EntityType="MetadataModel.NotificationRecipientAttribute" />
+          <EntitySet Name="NotificationTemplates" EntityType="MetadataModel.NotificationTemplate" />
+          <EntitySet Name="NotificationVariables" EntityType="MetadataModel.NotificationVariable" />
+          <EntitySet Name="ProfileVariables" EntityType="MetadataModel.ProfileVariable" />
+          <AssociationSet Name="FK_CriteriaNode_Criteria" Association="MetadataModel.FK_CriteriaNode_Criteria">
+            <End Role="Criterion" EntitySet="Criteria" />
+            <End Role="CriteriaNode" EntitySet="CriteriaNodes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationProfile_Criteria" Association="MetadataModel.FK_NotificationProfile_Criteria">
+            <End Role="Criterion" EntitySet="Criteria" />
+            <End Role="NotificationProfile" EntitySet="NotificationProfiles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationRecipientAttributes_Criteria" Association="MetadataModel.FK_NotificationRecipientAttributes_Criteria">
+            <End Role="Criterion" EntitySet="Criteria" />
+            <End Role="NotificationRecipientAttribute" EntitySet="NotificationRecipientAttributes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CriteriaNode_Attribute" Association="MetadataModel.FK_CriteriaNode_Attribute">
+            <End Role="EntityAttribute" EntitySet="EntityAttributes" />
+            <End Role="CriteriaNode" EntitySet="CriteriaNodes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationRecipientAttributes_Attribute" Association="MetadataModel.FK_NotificationRecipientAttributes_Attribute">
+            <End Role="EntityAttribute" EntitySet="EntityAttributes" />
+            <End Role="NotificationRecipientAttribute" EntitySet="NotificationRecipientAttributes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationVariable_Metadata_Attribute" Association="MetadataModel.FK_NotificationVariable_Metadata_Attribute">
+            <End Role="EntityAttribute" EntitySet="EntityAttributes" />
+            <End Role="NotificationVariable" EntitySet="NotificationVariables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationRecipientAttributes_Entity" Association="MetadataModel.FK_NotificationRecipientAttributes_Entity">
+            <End Role="Entity" EntitySet="Entities" />
+            <End Role="NotificationRecipientAttribute" EntitySet="NotificationRecipientAttributes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationVariable_Metadata_Entity" Association="MetadataModel.FK_NotificationVariable_Metadata_Entity">
+            <End Role="Entity" EntitySet="Entities" />
+            <End Role="NotificationVariable" EntitySet="NotificationVariables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationProfile_NotificationTemplate" Association="MetadataModel.FK_NotificationProfile_NotificationTemplate">
+            <End Role="NotificationTemplate" EntitySet="NotificationTemplates" />
+            <End Role="NotificationProfile" EntitySet="NotificationProfiles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationRecipientAttributes_NotificationProfile" Association="MetadataModel.FK_NotificationRecipientAttributes_NotificationProfile">
+            <End Role="NotificationProfile" EntitySet="NotificationProfiles" />
+            <End Role="NotificationRecipientAttribute" EntitySet="NotificationRecipientAttributes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProfileVariable_NotificationProfile" Association="MetadataModel.FK_ProfileVariable_NotificationProfile">
+            <End Role="NotificationProfile" EntitySet="NotificationProfiles" />
+            <End Role="ProfileVariable" EntitySet="ProfileVariables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProfileVariable_NotificationVariable" Association="MetadataModel.FK_ProfileVariable_NotificationVariable">
+            <End Role="NotificationVariable" EntitySet="NotificationVariables" />
+            <End Role="ProfileVariable" EntitySet="ProfileVariables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NotificationProfile_NotificationTemplate_Subject" Association="MetadataModel.FK_NotificationProfile_NotificationTemplate_Subject">
+            <End Role="NotificationTemplate" EntitySet="NotificationTemplates" />
+            <End Role="NotificationProfile" EntitySet="NotificationProfiles" />
+          </AssociationSet>
+          <EntitySet Name="Subscriptions" EntityType="MetadataModel.Subscription" />
+          <AssociationSet Name="FK_Subscription_NotificationProfile" Association="MetadataModel.FK_Subscription_NotificationProfile">
+            <End Role="NotificationProfile" EntitySet="NotificationProfiles" />
+            <End Role="Subscription" EntitySet="Subscriptions" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="EntityAttribute">
+          <Key>
+            <PropertyRef Name="AttributeId" />
+          </Key>
+          <Property Name="AttributeId" Type="Guid" Nullable="false" />
+          <Property Name="AttributeTypeId" Type="Guid" />
+          <Property Name="LogicalType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PhysicalName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Length" Type="Int32" />
+          <Property Name="IsNullable" Type="Boolean" />
+          <Property Name="EntityId" Type="Guid" Nullable="false" />
+          <Property Name="DefaultValue" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ColumnNumber" Type="Int32" Nullable="false" />
+          <Property Name="LogicalName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="VersionNumber" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="MaxLength" Type="Int32" />
+          <Property Name="MinValue" Type="Double" />
+          <Property Name="MaxValue" Type="Double" />
+          <Property Name="IsAuditEnabled" Type="Boolean" Nullable="false" />
+          <Property Name="TableColumnName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="OptionSetId" Type="Guid" />
+          <Property Name="AppDefaultValue" Type="Int32" />
+          <Property Name="IsPKAttribute" Type="Boolean" />
+          <NavigationProperty Name="AttributeType" Relationship="MetadataModel.FK_Attribute_AttributeType" FromRole="Metadata_Attribute" ToRole="Metadata_AttributeType" />
+          <NavigationProperty Name="Entity" Relationship="MetadataModel.FK_Attribute_Entity" FromRole="Metadata_Attribute" ToRole="Metadata_Entity" />
+          <NavigationProperty Name="OptionSet" Relationship="MetadataModel.FK_Attribute_OptionSet" FromRole="Metadata_Attribute" ToRole="Metadata_OptionSet" />
+          <NavigationProperty Name="AttributeLookupValues" Relationship="MetadataModel.FK_AttributeLookupValue_For_Attribute" FromRole="Metadata_Attribute" ToRole="Metadata_AttributeLookupValue" />
+          <Property Type="Boolean" Name="IsCopyEnabled" />
+          <NavigationProperty Name="CriteriaNodes" Relationship="MetadataModel.FK_CriteriaNode_Attribute" FromRole="EntityAttribute" ToRole="CriteriaNode" />
+          <NavigationProperty Name="NotificationRecipientAttributes" Relationship="MetadataModel.FK_NotificationRecipientAttributes_Attribute" FromRole="EntityAttribute" ToRole="NotificationRecipientAttribute" />
+          <NavigationProperty Name="NotificationVariables" Relationship="MetadataModel.FK_NotificationVariable_Metadata_Attribute" FromRole="EntityAttribute" ToRole="NotificationVariable" />
+          </EntityType>
+        <EntityType Name="AttributeLookupValue">
+          <Key>
+            <PropertyRef Name="AttributeLookupValueId" />
+          </Key>
+          <Property Name="AttributeLookupValueId" Type="Guid" Nullable="false" />
+          <Property Name="AttributeId" Type="Guid" Nullable="false" />
+          <Property Name="EntityId" Type="Guid" Nullable="false" />
+          <Property Name="DisplayEntityAttributeId" Type="Guid" />
+          <Property Name="VersionNumber" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <NavigationProperty Name="Entity" Relationship="MetadataModel.FK_AttributeLookupValue_Entity" FromRole="Metadata_AttributeLookupValue" ToRole="Metadata_Entity" />
+        </EntityType>
+        <EntityType Name="AttributePicklistValue">
+          <Key>
+            <PropertyRef Name="AttributePicklistValueId" />
+          </Key>
+          <Property Name="AttributePicklistValueId" Type="Guid" Nullable="false" />
+          <Property Name="Value" Type="Int32" />
+          <Property Name="DisplayOrder" Type="Int32" />
+          <Property Name="VersionNumber" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="OptionSetId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AttributeType">
+          <Key>
+            <PropertyRef Name="AttributeTypeId" />
+          </Key>
+          <Property Name="AttributeTypeId" Type="Guid" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Entity">
+          <Key>
+            <PropertyRef Name="EntityId" />
+          </Key>
+          <Property Name="EntityId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="PhysicalName" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="LogicalName" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="TableName" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="IsAuditEnabled" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Attributes" Relationship="MetadataModel.FK_Attribute_Entity" FromRole="Metadata_Entity" ToRole="Metadata_Attribute" />
+          <NavigationProperty Name="RelationshipRoles" Relationship="MetadataModel.FK_EntityRelationshipRole_Metadata_Entity" FromRole="Metadata_Entity" ToRole="Metadata_EntityRelationshipRole" />
+          <NavigationProperty Name="NotificationRecipientAttributes" Relationship="MetadataModel.FK_NotificationRecipientAttributes_Entity" FromRole="Entity" ToRole="NotificationRecipientAttribute" />
+          <NavigationProperty Name="NotificationVariables" Relationship="MetadataModel.FK_NotificationVariable_Metadata_Entity" FromRole="Entity" ToRole="NotificationVariable" />
+          </EntityType>
+        <EntityType Name="EntityRelationship">
+          <Key>
+            <PropertyRef Name="EntityRelationshipId" />
+          </Key>
+          <Property Name="EntityRelationshipId" Type="Guid" Nullable="false" />
+          <Property Name="SchemaName" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="EntityRelationshipType" Type="Byte" Nullable="false" />
+          <Property Name="IsCustomRelationship" Type="Boolean" Nullable="false" />
+          <Property Name="IsCustomizable" Type="Boolean" Nullable="false" />
+          <Property Name="VersionNumber" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <NavigationProperty Name="EntityRelationshipRelationships" Relationship="MetadataModel.FK_EntityRelationshipRelationships_EntityRelationship" FromRole="Metadata_EntityRelationship" ToRole="Metadata_EntityRelationshipRelationships" />
+          <NavigationProperty Name="EntityRelationshipRoles" Relationship="MetadataModel.FK_EntityRelationshipRole_EntityRelationship" FromRole="Metadata_EntityRelationship" ToRole="Metadata_EntityRelationshipRole" />
+        </EntityType>
+        <EntityType Name="EntityRelationshipRelationships">
+          <Key>
+            <PropertyRef Name="EntityRelationshipRelationshipsId" />
+          </Key>
+          <Property Name="EntityRelationshipRelationshipsId" Type="Guid" Nullable="false" />
+          <Property Name="EntityRelationshipId" Type="Guid" />
+          <Property Name="RelationshipId" Type="Guid" Nullable="false" />
+          <Property Name="VersionNumber" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <NavigationProperty Name="EntityRelationship" Relationship="MetadataModel.FK_EntityRelationshipRelationships_EntityRelationship" FromRole="Metadata_EntityRelationshipRelationships" ToRole="Metadata_EntityRelationship" />
+          <NavigationProperty Name="Relationship" Relationship="MetadataModel.FK_EntityRelationshipRelationships_Relationship" FromRole="Metadata_EntityRelationshipRelationships" ToRole="Metadata_Relationship" />
+        </EntityType>
+        <EntityType Name="EntityRelationshipRole">
+          <Key>
+            <PropertyRef Name="EntityRelationshipRoleId" />
+          </Key>
+          <Property Name="EntityRelationshipRoleId" Type="Guid" Nullable="false" />
+          <Property Name="EntityRelationshipId" Type="Guid" Nullable="false" />
+          <Property Name="EntityId" Type="Guid" Nullable="false" />
+          <Property Name="RelationshipRoleType" Type="Byte" Nullable="false" />
+          <Property Name="NavPanelDisplayOption" Type="Byte" />
+          <Property Name="NavPaneOrder" Type="Int32" />
+          <NavigationProperty Name="Entity" Relationship="MetadataModel.FK_EntityRelationshipRole_Metadata_Entity" FromRole="Metadata_EntityRelationshipRole" ToRole="Metadata_Entity" />
+          <NavigationProperty Name="EntityRelationship" Relationship="MetadataModel.FK_EntityRelationshipRole_EntityRelationship" FromRole="Metadata_EntityRelationshipRole" ToRole="Metadata_EntityRelationship" />
+        </EntityType>
+        <EntityType Name="OptionSet">
+          <Key>
+            <PropertyRef Name="OptionSetId" />
+          </Key>
+          <Property Name="OptionSetId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="IsCustomizable" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="AttributePicklistValues" Relationship="MetadataModel.FK_AttributePicklistValue_OptionSet" FromRole="Metadata_OptionSet" ToRole="Metadata_AttributePicklistValue" />
+        </EntityType>
+        <EntityType Name="Relationship">
+          <Key>
+            <PropertyRef Name="RelationshipId" />
+          </Key>
+          <Property Name="RelationshipId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ReferencingEntityId" Type="Guid" Nullable="false" />
+          <Property Name="ReferencingAttributeId" Type="Guid" Nullable="false" />
+          <Property Name="ReferencedEntityId" Type="Guid" Nullable="false" />
+          <Property Name="ReferencedAttributeId" Type="Guid" Nullable="false" />
+          <Property Name="RelationshipType" Type="Int32" />
+          <Property Name="CascadeDelete" Type="Byte" Nullable="false" />
+          <Property Name="VersionNumber" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <NavigationProperty Name="ReferencedAttribute" Relationship="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencedAttribute" FromRole="Metadata_Relationship" ToRole="Metadata_Attribute" />
+          <NavigationProperty Name="ReferencingAttribute" Relationship="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencingAttribute" FromRole="Metadata_Relationship" ToRole="Metadata_Attribute" />
+          <NavigationProperty Name="ReferencedEntity" Relationship="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencedEntity" FromRole="Metadata_Relationship" ToRole="Metadata_Entity" />
+          <NavigationProperty Name="ReferencingEntity" Relationship="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencingEntity" FromRole="Metadata_Relationship" ToRole="Metadata_Entity" />
+          <NavigationProperty Name="EntityRelationshipRelationships" Relationship="MetadataModel.FK_EntityRelationshipRelationships_Relationship" FromRole="Metadata_Relationship" ToRole="Metadata_EntityRelationshipRelationships" />
+        </EntityType>
+        <Association Name="FK_Attribute_AttributeType">
+          <End Role="Metadata_AttributeType" Type="MetadataModel.AttributeType" Multiplicity="0..1" />
+          <End Role="Metadata_Attribute" Type="MetadataModel.EntityAttribute" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_AttributeType">
+              <PropertyRef Name="AttributeTypeId" />
+            </Principal>
+            <Dependent Role="Metadata_Attribute">
+              <PropertyRef Name="AttributeTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Attribute_Entity">
+          <End Role="Metadata_Entity" Type="MetadataModel.Entity" Multiplicity="1" />
+          <End Role="Metadata_Attribute" Type="MetadataModel.EntityAttribute" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Entity">
+              <PropertyRef Name="EntityId" />
+            </Principal>
+            <Dependent Role="Metadata_Attribute">
+              <PropertyRef Name="EntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Attribute_OptionSet">
+          <End Role="Metadata_OptionSet" Type="MetadataModel.OptionSet" Multiplicity="0..1" />
+          <End Role="Metadata_Attribute" Type="MetadataModel.EntityAttribute" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_OptionSet">
+              <PropertyRef Name="OptionSetId" />
+            </Principal>
+            <Dependent Role="Metadata_Attribute">
+              <PropertyRef Name="OptionSetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AttributeLookupValue_For_Attribute">
+          <End Role="Metadata_Attribute" Type="MetadataModel.EntityAttribute" Multiplicity="1" />
+          <End Role="Metadata_AttributeLookupValue" Type="MetadataModel.AttributeLookupValue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Attribute">
+              <PropertyRef Name="AttributeId" />
+            </Principal>
+            <Dependent Role="Metadata_AttributeLookupValue">
+              <PropertyRef Name="AttributeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Metadata_Relationship_Metadata_ReferencedAttribute">
+          <End Role="Metadata_Attribute" Type="MetadataModel.EntityAttribute" Multiplicity="1" />
+          <End Role="Metadata_Relationship" Type="MetadataModel.Relationship" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Attribute">
+              <PropertyRef Name="AttributeId" />
+            </Principal>
+            <Dependent Role="Metadata_Relationship">
+              <PropertyRef Name="ReferencedAttributeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Metadata_Relationship_Metadata_ReferencingAttribute">
+          <End Role="Metadata_Attribute" Type="MetadataModel.EntityAttribute" Multiplicity="1" />
+          <End Role="Metadata_Relationship" Type="MetadataModel.Relationship" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Attribute">
+              <PropertyRef Name="AttributeId" />
+            </Principal>
+            <Dependent Role="Metadata_Relationship">
+              <PropertyRef Name="ReferencingAttributeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AttributeLookupValue_Entity">
+          <End Role="Metadata_Entity" Type="MetadataModel.Entity" Multiplicity="1" />
+          <End Role="Metadata_AttributeLookupValue" Type="MetadataModel.AttributeLookupValue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Entity">
+              <PropertyRef Name="EntityId" />
+            </Principal>
+            <Dependent Role="Metadata_AttributeLookupValue">
+              <PropertyRef Name="EntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AttributePicklistValue_OptionSet">
+          <End Role="Metadata_OptionSet" Type="MetadataModel.OptionSet" Multiplicity="1" />
+          <End Role="Metadata_AttributePicklistValue" Type="MetadataModel.AttributePicklistValue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_OptionSet">
+              <PropertyRef Name="OptionSetId" />
+            </Principal>
+            <Dependent Role="Metadata_AttributePicklistValue">
+              <PropertyRef Name="OptionSetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EntityRelationshipRole_Metadata_Entity">
+          <End Role="Metadata_Entity" Type="MetadataModel.Entity" Multiplicity="1" />
+          <End Role="Metadata_EntityRelationshipRole" Type="MetadataModel.EntityRelationshipRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Entity">
+              <PropertyRef Name="EntityId" />
+            </Principal>
+            <Dependent Role="Metadata_EntityRelationshipRole">
+              <PropertyRef Name="EntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Metadata_Relationship_Metadata_ReferencedEntity">
+          <End Role="Metadata_Entity" Type="MetadataModel.Entity" Multiplicity="1" />
+          <End Role="Metadata_Relationship" Type="MetadataModel.Relationship" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Entity">
+              <PropertyRef Name="EntityId" />
+            </Principal>
+            <Dependent Role="Metadata_Relationship">
+              <PropertyRef Name="ReferencedEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Metadata_Relationship_Metadata_ReferencingEntity">
+          <End Role="Metadata_Entity" Type="MetadataModel.Entity" Multiplicity="1" />
+          <End Role="Metadata_Relationship" Type="MetadataModel.Relationship" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Entity">
+              <PropertyRef Name="EntityId" />
+            </Principal>
+            <Dependent Role="Metadata_Relationship">
+              <PropertyRef Name="ReferencingEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EntityRelationshipRelationships_EntityRelationship">
+          <End Role="Metadata_EntityRelationship" Type="MetadataModel.EntityRelationship" Multiplicity="0..1" />
+          <End Role="Metadata_EntityRelationshipRelationships" Type="MetadataModel.EntityRelationshipRelationships" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_EntityRelationship">
+              <PropertyRef Name="EntityRelationshipId" />
+            </Principal>
+            <Dependent Role="Metadata_EntityRelationshipRelationships">
+              <PropertyRef Name="EntityRelationshipId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EntityRelationshipRole_EntityRelationship">
+          <End Role="Metadata_EntityRelationship" Type="MetadataModel.EntityRelationship" Multiplicity="1" />
+          <End Role="Metadata_EntityRelationshipRole" Type="MetadataModel.EntityRelationshipRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_EntityRelationship">
+              <PropertyRef Name="EntityRelationshipId" />
+            </Principal>
+            <Dependent Role="Metadata_EntityRelationshipRole">
+              <PropertyRef Name="EntityRelationshipId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EntityRelationshipRelationships_Relationship">
+          <End Role="Metadata_Relationship" Type="MetadataModel.Relationship" Multiplicity="1" />
+          <End Role="Metadata_EntityRelationshipRelationships" Type="MetadataModel.EntityRelationshipRelationships" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Metadata_Relationship">
+              <PropertyRef Name="RelationshipId" />
+            </Principal>
+            <Dependent Role="Metadata_EntityRelationshipRelationships">
+              <PropertyRef Name="RelationshipId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="LocalizedLabel">
+          <Key>
+            <PropertyRef Name="LocalizedLabelId" />
+          </Key>
+          <Property Type="Guid" Name="LocalizedLabelId" Nullable="false" />
+          <Property Type="Int32" Name="LanguageId" Nullable="false" />
+          <Property Type="Guid" Name="ObjectId" Nullable="false" />
+          <Property Type="String" Name="ObjectColumnName" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Label" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Binary" Name="VersionNumber" Nullable="false" MaxLength="8" FixedLength="true" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        </EntityType>
+        <EntityType Name="ColumnMapping">
+          <Key>
+            <PropertyRef Name="ColumnMappingId" />
+          </Key>
+          <Property Type="Guid" Name="ColumnMappingId" Nullable="false" />
+          <Property Type="String" Name="SourceEntityName" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SourceAttributeName" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TargetEntityName" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TargetAttributeName" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Type="Guid" Name="ImportMapId" />
+          <NavigationProperty Name="ImportMap" Relationship="MetadataModel.FK_ColumnMapping_ImportMap" FromRole="ColumnMapping" ToRole="ImportMap" />
+        </EntityType>
+        <EntityType Name="ImportMap">
+          <Key>
+            <PropertyRef Name="ImportMapId" />
+          </Key>
+          <Property Type="Guid" Name="ImportMapId" Nullable="false" />
+          <Property Type="String" Name="Name" MaxLength="320" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Source" MaxLength="160" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ColumnMappings" Relationship="MetadataModel.FK_ColumnMapping_ImportMap" FromRole="ImportMap" ToRole="ColumnMapping" />
+        </EntityType>
+        <EntityType Name="SavedQuery">
+          <Key>
+            <PropertyRef Name="SavedQueryId" />
+          </Key>
+          <Property Type="Guid" Name="SavedQueryId" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="QueryType" Nullable="false" />
+          <Property Type="Boolean" Name="IsDefault" Nullable="false" />
+          <Property Type="Guid" Name="ReturnedTypeId" Nullable="false" />
+          <Property Type="Boolean" Name="IsUserDefined" />
+          <Property Type="String" Name="FetchXml" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsCustomizable" Nullable="false" />
+          <Property Type="Boolean" Name="IsQuickFindQuery" Nullable="false" />
+          <Property Type="String" Name="ColumnSetXml" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LayoutXml" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Guid" Name="CreatedBy" />
+          <Property Type="DateTime" Name="CreatedOn" Precision="3" />
+          <Property Type="Guid" Name="ModifiedBy" />
+          <Property Type="DateTime" Name="ModifiedOn" Precision="3" />
+          <Property Type="Binary" Name="VersionNumber" MaxLength="8" FixedLength="true" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Boolean" Name="IsPrivate" Nullable="false" />
+          <Property Type="String" Name="AdvancedGroupBy" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ConditionalFormatting" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="CanBeDeleted" Nullable="false" />
+          <Property Type="Int32" Name="StatusCode" />
+          <Property Type="Guid" Name="QueryParentId" />
+        </EntityType>
+        <Association Name="FK_ColumnMapping_ImportMap">
+          <End Type="MetadataModel.ImportMap" Role="ImportMap" Multiplicity="0..1" />
+          <End Type="MetadataModel.ColumnMapping" Role="ColumnMapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ImportMap">
+              <PropertyRef Name="ImportMapId" />
+            </Principal>
+            <Dependent Role="ColumnMapping">
+              <PropertyRef Name="ImportMapId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Criterion">
+          <Key>
+            <PropertyRef Name="CriteriaId" />
+          </Key>
+          <Property Type="Guid" Name="CriteriaId" Nullable="false" />
+          <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CriteriaNodes" Relationship="MetadataModel.FK_CriteriaNode_Criteria" FromRole="Criterion" ToRole="CriteriaNode" />
+          <NavigationProperty Name="NotificationProfiles" Relationship="MetadataModel.FK_NotificationProfile_Criteria" FromRole="Criterion" ToRole="NotificationProfile" />
+          <NavigationProperty Name="NotificationRecipientAttributes" Relationship="MetadataModel.FK_NotificationRecipientAttributes_Criteria" FromRole="Criterion" ToRole="NotificationRecipientAttribute" />
+        </EntityType>
+        <EntityType Name="CriteriaNode">
+          <Key>
+            <PropertyRef Name="CriteriaNodeId" />
+          </Key>
+          <Property Type="Guid" Name="CriteriaNodeId" Nullable="false" />
+          <Property Type="Guid" Name="CriteriaId" Nullable="false" />
+          <Property Type="Guid" Name="ParentNodeId" Nullable="false" />
+          <Property Type="String" Name="Operator" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="OperatorType" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Guid" Name="CompareAttributeId" />
+          <Property Type="String" Name="CompareValue" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Criterion" Relationship="MetadataModel.FK_CriteriaNode_Criteria" FromRole="CriteriaNode" ToRole="Criterion" />
+          <NavigationProperty Name="Metadata_Attribute" Relationship="MetadataModel.FK_CriteriaNode_Attribute" FromRole="CriteriaNode" ToRole="EntityAttribute" />
+        </EntityType>
+        <EntityType Name="NotificationProfile">
+          <Key>
+            <PropertyRef Name="NotificationProfileId" />
+          </Key>
+          <Property Type="Guid" Name="NotificationProfileId" Nullable="false" />
+          <Property Type="Guid" Name="CriteriaId" />
+          <Property Type="Guid" Name="NotificationTemplateId" />
+          <Property Type="Boolean" Name="IsSys" />
+          <NavigationProperty Name="Criterion" Relationship="MetadataModel.FK_NotificationProfile_Criteria" FromRole="NotificationProfile" ToRole="Criterion" />
+          <NavigationProperty Name="NotificationTemplate" Relationship="MetadataModel.FK_NotificationProfile_NotificationTemplate" FromRole="NotificationProfile" ToRole="NotificationTemplate" />
+          <NavigationProperty Name="NotificationRecipientAttributes" Relationship="MetadataModel.FK_NotificationRecipientAttributes_NotificationProfile" FromRole="NotificationProfile" ToRole="NotificationRecipientAttribute" />
+          <NavigationProperty Name="ProfileVariables" Relationship="MetadataModel.FK_ProfileVariable_NotificationProfile" FromRole="NotificationProfile" ToRole="ProfileVariable" />
+          <Property Type="Guid" Name="SubjectTemplateId" />
+          <NavigationProperty Name="SubjectNotificationTemplate" Relationship="MetadataModel.FK_NotificationProfile_NotificationTemplate_Subject" FromRole="NotificationProfile" ToRole="NotificationTemplate" />
+          <NavigationProperty Name="Subscriptions" Relationship="MetadataModel.FK_Subscription_NotificationProfile" FromRole="NotificationProfile" ToRole="Subscription" />
+        </EntityType>
+        <EntityType Name="NotificationRecipientAttribute">
+          <Key>
+            <PropertyRef Name="NotificationRecipientAttributeId" />
+          </Key>
+          <Property Type="Guid" Name="NotificationRecipientAttributeId" Nullable="false" />
+          <Property Type="Guid" Name="RecipientEntityId" />
+          <Property Type="Guid" Name="AttributeId" />
+          <Property Type="Guid" Name="NotificationProfileId" />
+          <Property Type="Guid" Name="CriteriaId" />
+          <NavigationProperty Name="Criterion" Relationship="MetadataModel.FK_NotificationRecipientAttributes_Criteria" FromRole="NotificationRecipientAttribute" ToRole="Criterion" />
+          <NavigationProperty Name="Metadata_Attribute" Relationship="MetadataModel.FK_NotificationRecipientAttributes_Attribute" FromRole="NotificationRecipientAttribute" ToRole="EntityAttribute" />
+          <NavigationProperty Name="Metadata_Entity" Relationship="MetadataModel.FK_NotificationRecipientAttributes_Entity" FromRole="NotificationRecipientAttribute" ToRole="Entity" />
+          <NavigationProperty Name="NotificationProfile" Relationship="MetadataModel.FK_NotificationRecipientAttributes_NotificationProfile" FromRole="NotificationRecipientAttribute" ToRole="NotificationProfile" />
+        </EntityType>
+        <EntityType Name="NotificationTemplate">
+          <Key>
+            <PropertyRef Name="NotificationTemplateId" />
+          </Key>
+          <Property Type="Guid" Name="NotificationTemplateId" Nullable="false" />
+          <Property Type="String" Name="SubjectTemplate" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="NotificationProfiles" Relationship="MetadataModel.FK_NotificationProfile_NotificationTemplate" FromRole="NotificationTemplate" ToRole="NotificationProfile" />
+          <NavigationProperty Name="NotificationProfiles1" Relationship="MetadataModel.FK_NotificationProfile_NotificationTemplate_Subject" FromRole="NotificationTemplate" ToRole="NotificationProfile" />
+        </EntityType>
+        <EntityType Name="NotificationVariable">
+          <Key>
+            <PropertyRef Name="NotificationVariableId" />
+          </Key>
+          <Property Type="Guid" Name="NotificationVariableId" Nullable="false" />
+          <Property Type="Guid" Name="ParentId" />
+          <Property Type="Guid" Name="RelatedAttributeId" />
+          <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="Guid" Name="EntityId" />
+          <Property Type="String" Name="NotificationUrl" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Metadata_Attribute" Relationship="MetadataModel.FK_NotificationVariable_Metadata_Attribute" FromRole="NotificationVariable" ToRole="EntityAttribute" />
+          <NavigationProperty Name="Metadata_Entity" Relationship="MetadataModel.FK_NotificationVariable_Metadata_Entity" FromRole="NotificationVariable" ToRole="Entity" />
+          <NavigationProperty Name="ProfileVariables" Relationship="MetadataModel.FK_ProfileVariable_NotificationVariable" FromRole="NotificationVariable" ToRole="ProfileVariable" />
+        </EntityType>
+        <EntityType Name="ProfileVariable">
+          <Key>
+            <PropertyRef Name="ProfileVariableId" />
+          </Key>
+          <Property Type="Guid" Name="ProfileVariableId" Nullable="false" />
+          <Property Type="Guid" Name="NotificationProfileId" />
+          <Property Type="Guid" Name="NotificationVariableId" />
+          <NavigationProperty Name="NotificationProfile" Relationship="MetadataModel.FK_ProfileVariable_NotificationProfile" FromRole="ProfileVariable" ToRole="NotificationProfile" />
+          <NavigationProperty Name="NotificationVariable" Relationship="MetadataModel.FK_ProfileVariable_NotificationVariable" FromRole="ProfileVariable" ToRole="NotificationVariable" />
+        </EntityType>
+        <Association Name="FK_CriteriaNode_Criteria">
+          <End Type="MetadataModel.Criterion" Role="Criterion" Multiplicity="1" />
+          <End Type="MetadataModel.CriteriaNode" Role="CriteriaNode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Criterion">
+              <PropertyRef Name="CriteriaId" />
+            </Principal>
+            <Dependent Role="CriteriaNode">
+              <PropertyRef Name="CriteriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationProfile_Criteria">
+          <End Type="MetadataModel.Criterion" Role="Criterion" Multiplicity="0..1" />
+          <End Type="MetadataModel.NotificationProfile" Role="NotificationProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Criterion">
+              <PropertyRef Name="CriteriaId" />
+            </Principal>
+            <Dependent Role="NotificationProfile">
+              <PropertyRef Name="CriteriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationRecipientAttributes_Criteria">
+          <End Type="MetadataModel.Criterion" Role="Criterion" Multiplicity="0..1" />
+          <End Type="MetadataModel.NotificationRecipientAttribute" Role="NotificationRecipientAttribute" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Criterion">
+              <PropertyRef Name="CriteriaId" />
+            </Principal>
+            <Dependent Role="NotificationRecipientAttribute">
+              <PropertyRef Name="CriteriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CriteriaNode_Attribute">
+          <End Type="MetadataModel.EntityAttribute" Role="EntityAttribute" Multiplicity="0..1" />
+          <End Type="MetadataModel.CriteriaNode" Role="CriteriaNode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EntityAttribute">
+              <PropertyRef Name="AttributeId" />
+            </Principal>
+            <Dependent Role="CriteriaNode">
+              <PropertyRef Name="CompareAttributeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationRecipientAttributes_Attribute">
+          <End Type="MetadataModel.EntityAttribute" Role="EntityAttribute" Multiplicity="0..1" />
+          <End Type="MetadataModel.NotificationRecipientAttribute" Role="NotificationRecipientAttribute" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EntityAttribute">
+              <PropertyRef Name="AttributeId" />
+            </Principal>
+            <Dependent Role="NotificationRecipientAttribute">
+              <PropertyRef Name="AttributeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationVariable_Metadata_Attribute">
+          <End Type="MetadataModel.EntityAttribute" Role="EntityAttribute" Multiplicity="0..1" />
+          <End Type="MetadataModel.NotificationVariable" Role="NotificationVariable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EntityAttribute">
+              <PropertyRef Name="AttributeId" />
+            </Principal>
+            <Dependent Role="NotificationVariable">
+              <PropertyRef Name="RelatedAttributeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationRecipientAttributes_Entity">
+          <End Type="MetadataModel.Entity" Role="Entity" Multiplicity="0..1" />
+          <End Type="MetadataModel.NotificationRecipientAttribute" Role="NotificationRecipientAttribute" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Entity">
+              <PropertyRef Name="EntityId" />
+            </Principal>
+            <Dependent Role="NotificationRecipientAttribute">
+              <PropertyRef Name="RecipientEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationVariable_Metadata_Entity">
+          <End Type="MetadataModel.Entity" Role="Entity" Multiplicity="0..1" />
+          <End Type="MetadataModel.NotificationVariable" Role="NotificationVariable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Entity">
+              <PropertyRef Name="EntityId" />
+            </Principal>
+            <Dependent Role="NotificationVariable">
+              <PropertyRef Name="EntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationProfile_NotificationTemplate">
+          <End Type="MetadataModel.NotificationTemplate" Role="NotificationTemplate" Multiplicity="0..1" />
+          <End Type="MetadataModel.NotificationProfile" Role="NotificationProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NotificationTemplate">
+              <PropertyRef Name="NotificationTemplateId" />
+            </Principal>
+            <Dependent Role="NotificationProfile">
+              <PropertyRef Name="NotificationTemplateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationRecipientAttributes_NotificationProfile">
+          <End Type="MetadataModel.NotificationProfile" Role="NotificationProfile" Multiplicity="0..1" />
+          <End Type="MetadataModel.NotificationRecipientAttribute" Role="NotificationRecipientAttribute" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NotificationProfile">
+              <PropertyRef Name="NotificationProfileId" />
+            </Principal>
+            <Dependent Role="NotificationRecipientAttribute">
+              <PropertyRef Name="NotificationProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProfileVariable_NotificationProfile">
+          <End Type="MetadataModel.NotificationProfile" Role="NotificationProfile" Multiplicity="0..1" />
+          <End Type="MetadataModel.ProfileVariable" Role="ProfileVariable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NotificationProfile">
+              <PropertyRef Name="NotificationProfileId" />
+            </Principal>
+            <Dependent Role="ProfileVariable">
+              <PropertyRef Name="NotificationProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProfileVariable_NotificationVariable">
+          <End Type="MetadataModel.NotificationVariable" Role="NotificationVariable" Multiplicity="0..1" />
+          <End Type="MetadataModel.ProfileVariable" Role="ProfileVariable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NotificationVariable">
+              <PropertyRef Name="NotificationVariableId" />
+            </Principal>
+            <Dependent Role="ProfileVariable">
+              <PropertyRef Name="NotificationVariableId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NotificationProfile_NotificationTemplate_Subject">
+          <End Type="MetadataModel.NotificationTemplate" Role="NotificationTemplate" Multiplicity="0..1" />
+          <End Type="MetadataModel.NotificationProfile" Role="NotificationProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NotificationTemplate">
+              <PropertyRef Name="NotificationTemplateId" />
+            </Principal>
+            <Dependent Role="NotificationProfile">
+              <PropertyRef Name="SubjectTemplateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Subscription">
+          <Key>
+            <PropertyRef Name="SubscriptionId" />
+          </Key>
+          <Property Type="Guid" Name="SubscriptionId" Nullable="false" />
+          <Property Type="Guid" Name="UserId" />
+          <Property Type="Guid" Name="NotificationProfileId" />
+          <NavigationProperty Name="NotificationProfile" Relationship="MetadataModel.FK_Subscription_NotificationProfile" FromRole="Subscription" ToRole="NotificationProfile" />
+        </EntityType>
+        <Association Name="FK_Subscription_NotificationProfile">
+          <End Type="MetadataModel.NotificationProfile" Role="NotificationProfile" Multiplicity="0..1" />
+          <End Type="MetadataModel.Subscription" Role="Subscription" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NotificationProfile">
+              <PropertyRef Name="NotificationProfileId" />
+            </Principal>
+            <Dependent Role="Subscription">
+              <PropertyRef Name="NotificationProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MetadataModelStoreContainer" CdmEntityContainer="KatrinEntities">
+          <EntitySetMapping Name="EntityAttributes">
+            <EntityTypeMapping TypeName="MetadataModel.EntityAttribute">
+              <MappingFragment StoreEntitySet="Metadata_Attribute">
+                <ScalarProperty Name="IsCopyEnabled" ColumnName="IsCopyEnabled" />
+                <ScalarProperty Name="AttributeId" ColumnName="AttributeId" />
+                <ScalarProperty Name="AttributeTypeId" ColumnName="AttributeTypeId" />
+                <ScalarProperty Name="LogicalType" ColumnName="LogicalType" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="PhysicalName" ColumnName="PhysicalName" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="IsNullable" ColumnName="IsNullable" />
+                <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+                <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+                <ScalarProperty Name="ColumnNumber" ColumnName="ColumnNumber" />
+                <ScalarProperty Name="LogicalName" ColumnName="LogicalName" />
+                <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+                <ScalarProperty Name="MaxLength" ColumnName="MaxLength" />
+                <ScalarProperty Name="MinValue" ColumnName="MinValue" />
+                <ScalarProperty Name="MaxValue" ColumnName="MaxValue" />
+                <ScalarProperty Name="IsAuditEnabled" ColumnName="IsAuditEnabled" />
+                <ScalarProperty Name="TableColumnName" ColumnName="TableColumnName" />
+                <ScalarProperty Name="OptionSetId" ColumnName="OptionSetId" />
+                <ScalarProperty Name="AppDefaultValue" ColumnName="AppDefaultValue" />
+                <ScalarProperty Name="IsPKAttribute" ColumnName="IsPKAttribute" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AttributeLookupValues">
+            <EntityTypeMapping TypeName="MetadataModel.AttributeLookupValue">
+              <MappingFragment StoreEntitySet="Metadata_AttributeLookupValue">
+                <ScalarProperty Name="AttributeLookupValueId" ColumnName="AttributeLookupValueId" />
+                <ScalarProperty Name="AttributeId" ColumnName="AttributeId" />
+                <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+                <ScalarProperty Name="DisplayEntityAttributeId" ColumnName="DisplayEntityAttributeId" />
+                <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AttributePicklistValues">
+            <EntityTypeMapping TypeName="MetadataModel.AttributePicklistValue">
+              <MappingFragment StoreEntitySet="Metadata_AttributePicklistValue">
+                <ScalarProperty Name="AttributePicklistValueId" ColumnName="AttributePicklistValueId" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+                <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+                <ScalarProperty Name="OptionSetId" ColumnName="OptionSetId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AttributeTypes">
+            <EntityTypeMapping TypeName="MetadataModel.AttributeType">
+              <MappingFragment StoreEntitySet="Metadata_AttributeType">
+                <ScalarProperty Name="AttributeTypeId" ColumnName="AttributeTypeId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Entities">
+            <EntityTypeMapping TypeName="MetadataModel.Entity">
+              <MappingFragment StoreEntitySet="Metadata_Entity">
+                <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="PhysicalName" ColumnName="PhysicalName" />
+                <ScalarProperty Name="LogicalName" ColumnName="LogicalName" />
+                <ScalarProperty Name="TableName" ColumnName="TableName" />
+                <ScalarProperty Name="IsAuditEnabled" ColumnName="IsAuditEnabled" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EntityRelationships">
+            <EntityTypeMapping TypeName="MetadataModel.EntityRelationship">
+              <MappingFragment StoreEntitySet="Metadata_EntityRelationship">
+                <ScalarProperty Name="EntityRelationshipId" ColumnName="EntityRelationshipId" />
+                <ScalarProperty Name="SchemaName" ColumnName="SchemaName" />
+                <ScalarProperty Name="EntityRelationshipType" ColumnName="EntityRelationshipType" />
+                <ScalarProperty Name="IsCustomRelationship" ColumnName="IsCustomRelationship" />
+                <ScalarProperty Name="IsCustomizable" ColumnName="IsCustomizable" />
+                <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EntityRelationshipRelationships">
+            <EntityTypeMapping TypeName="MetadataModel.EntityRelationshipRelationships">
+              <MappingFragment StoreEntitySet="Metadata_EntityRelationshipRelationships">
+                <ScalarProperty Name="EntityRelationshipRelationshipsId" ColumnName="EntityRelationshipRelationshipsId" />
+                <ScalarProperty Name="EntityRelationshipId" ColumnName="EntityRelationshipId" />
+                <ScalarProperty Name="RelationshipId" ColumnName="RelationshipId" />
+                <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EntityRelationshipRoles">
+            <EntityTypeMapping TypeName="MetadataModel.EntityRelationshipRole">
+              <MappingFragment StoreEntitySet="Metadata_EntityRelationshipRole">
+                <ScalarProperty Name="EntityRelationshipRoleId" ColumnName="EntityRelationshipRoleId" />
+                <ScalarProperty Name="EntityRelationshipId" ColumnName="EntityRelationshipId" />
+                <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+                <ScalarProperty Name="RelationshipRoleType" ColumnName="RelationshipRoleType" />
+                <ScalarProperty Name="NavPanelDisplayOption" ColumnName="NavPanelDisplayOption" />
+                <ScalarProperty Name="NavPaneOrder" ColumnName="NavPaneOrder" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OptionSets">
+            <EntityTypeMapping TypeName="MetadataModel.OptionSet">
+              <MappingFragment StoreEntitySet="Metadata_OptionSet">
+                <ScalarProperty Name="OptionSetId" ColumnName="OptionSetId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="IsCustomizable" ColumnName="IsCustomizable" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Relationships">
+            <EntityTypeMapping TypeName="MetadataModel.Relationship">
+              <MappingFragment StoreEntitySet="Metadata_Relationship">
+                <ScalarProperty Name="RelationshipId" ColumnName="RelationshipId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ReferencingEntityId" ColumnName="ReferencingEntityId" />
+                <ScalarProperty Name="ReferencingAttributeId" ColumnName="ReferencingAttributeId" />
+                <ScalarProperty Name="ReferencedEntityId" ColumnName="ReferencedEntityId" />
+                <ScalarProperty Name="ReferencedAttributeId" ColumnName="ReferencedAttributeId" />
+                <ScalarProperty Name="RelationshipType" ColumnName="RelationshipType" />
+                <ScalarProperty Name="CascadeDelete" ColumnName="CascadeDelete" />
+                <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LocalizedLabels">
+            <EntityTypeMapping TypeName="MetadataModel.LocalizedLabel">
+              <MappingFragment StoreEntitySet="Metadata_LocalizedLabel">
+                <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+                <ScalarProperty Name="Label" ColumnName="Label" />
+                <ScalarProperty Name="ObjectColumnName" ColumnName="ObjectColumnName" />
+                <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+                <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+                <ScalarProperty Name="LocalizedLabelId" ColumnName="LocalizedLabelId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ColumnMappings">
+            <EntityTypeMapping TypeName="MetadataModel.ColumnMapping">
+              <MappingFragment StoreEntitySet="ColumnMapping">
+                <ScalarProperty Name="ImportMapId" ColumnName="ImportMapId" />
+                <ScalarProperty Name="TargetAttributeName" ColumnName="TargetAttributeName" />
+                <ScalarProperty Name="TargetEntityName" ColumnName="TargetEntityName" />
+                <ScalarProperty Name="SourceAttributeName" ColumnName="SourceAttributeName" />
+                <ScalarProperty Name="SourceEntityName" ColumnName="SourceEntityName" />
+                <ScalarProperty Name="ColumnMappingId" ColumnName="ColumnMappingId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ImportMaps">
+            <EntityTypeMapping TypeName="MetadataModel.ImportMap">
+              <MappingFragment StoreEntitySet="ImportMap">
+                <ScalarProperty Name="Source" ColumnName="Source" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ImportMapId" ColumnName="ImportMapId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SavedQueries">
+            <EntityTypeMapping TypeName="MetadataModel.SavedQuery">
+              <MappingFragment StoreEntitySet="SavedQuery">
+                <ScalarProperty Name="QueryParentId" ColumnName="QueryParentId" />
+                <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+                <ScalarProperty Name="CanBeDeleted" ColumnName="CanBeDeleted" />
+                <ScalarProperty Name="ConditionalFormatting" ColumnName="ConditionalFormatting" />
+                <ScalarProperty Name="AdvancedGroupBy" ColumnName="AdvancedGroupBy" />
+                <ScalarProperty Name="IsPrivate" ColumnName="IsPrivate" />
+                <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="LayoutXml" ColumnName="LayoutXml" />
+                <ScalarProperty Name="ColumnSetXml" ColumnName="ColumnSetXml" />
+                <ScalarProperty Name="IsQuickFindQuery" ColumnName="IsQuickFindQuery" />
+                <ScalarProperty Name="IsCustomizable" ColumnName="IsCustomizable" />
+                <ScalarProperty Name="FetchXml" ColumnName="FetchXml" />
+                <ScalarProperty Name="IsUserDefined" ColumnName="IsUserDefined" />
+                <ScalarProperty Name="ReturnedTypeId" ColumnName="ReturnedTypeId" />
+                <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+                <ScalarProperty Name="QueryType" ColumnName="QueryType" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SavedQueryId" ColumnName="SavedQueryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Criteria">
+            <EntityTypeMapping TypeName="MetadataModel.Criterion">
+              <MappingFragment StoreEntitySet="Criteria">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="CriteriaId" ColumnName="CriteriaId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CriteriaNodes">
+            <EntityTypeMapping TypeName="MetadataModel.CriteriaNode">
+              <MappingFragment StoreEntitySet="CriteriaNode">
+                <ScalarProperty Name="CompareValue" ColumnName="CompareValue" />
+                <ScalarProperty Name="CompareAttributeId" ColumnName="CompareAttributeId" />
+                <ScalarProperty Name="OperatorType" ColumnName="OperatorType" />
+                <ScalarProperty Name="Operator" ColumnName="Operator" />
+                <ScalarProperty Name="ParentNodeId" ColumnName="ParentNodeId" />
+                <ScalarProperty Name="CriteriaId" ColumnName="CriteriaId" />
+                <ScalarProperty Name="CriteriaNodeId" ColumnName="CriteriaNodeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NotificationProfiles">
+            <EntityTypeMapping TypeName="MetadataModel.NotificationProfile">
+              <MappingFragment StoreEntitySet="NotificationProfile">
+                <ScalarProperty Name="SubjectTemplateId" ColumnName="SubjectTemplateId" />
+                <ScalarProperty Name="IsSys" ColumnName="IsSys" />
+                <ScalarProperty Name="NotificationTemplateId" ColumnName="NotificationTemplateId" />
+                <ScalarProperty Name="CriteriaId" ColumnName="CriteriaId" />
+                <ScalarProperty Name="NotificationProfileId" ColumnName="NotificationProfileId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NotificationRecipientAttributes">
+            <EntityTypeMapping TypeName="MetadataModel.NotificationRecipientAttribute">
+              <MappingFragment StoreEntitySet="NotificationRecipientAttributes">
+                <ScalarProperty Name="CriteriaId" ColumnName="CriteriaId" />
+                <ScalarProperty Name="NotificationProfileId" ColumnName="NotificationProfileId" />
+                <ScalarProperty Name="AttributeId" ColumnName="AttributeId" />
+                <ScalarProperty Name="RecipientEntityId" ColumnName="RecipientEntityId" />
+                <ScalarProperty Name="NotificationRecipientAttributeId" ColumnName="NotificationRecipientAttributeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NotificationTemplates">
+            <EntityTypeMapping TypeName="MetadataModel.NotificationTemplate">
+              <MappingFragment StoreEntitySet="NotificationTemplate">
+                <ScalarProperty Name="SubjectTemplate" ColumnName="SubjectTemplate" />
+                <ScalarProperty Name="NotificationTemplateId" ColumnName="NotificationTemplateId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NotificationVariables">
+            <EntityTypeMapping TypeName="MetadataModel.NotificationVariable">
+              <MappingFragment StoreEntitySet="NotificationVariable">
+                <ScalarProperty Name="NotificationUrl" ColumnName="NotificationUrl" />
+                <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="RelatedAttributeId" ColumnName="RelatedAttributeId" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="NotificationVariableId" ColumnName="NotificationVariableId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProfileVariables">
+            <EntityTypeMapping TypeName="MetadataModel.ProfileVariable">
+              <MappingFragment StoreEntitySet="ProfileVariable">
+                <ScalarProperty Name="NotificationVariableId" ColumnName="NotificationVariableId" />
+                <ScalarProperty Name="NotificationProfileId" ColumnName="NotificationProfileId" />
+                <ScalarProperty Name="ProfileVariableId" ColumnName="ProfileVariableId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subscriptions">
+            <EntityTypeMapping TypeName="MetadataModel.Subscription">
+              <MappingFragment StoreEntitySet="Subscription">
+                <ScalarProperty Name="NotificationProfileId" ColumnName="NotificationProfileId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="SubscriptionId" ColumnName="SubscriptionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram DiagramId="2de0764b257f4a5e9fa9d7aba8cf3382" Name="Diagram1">
+        <EntityTypeShape EntityType="MetadataModel.EntityAttribute" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.AttributeLookupValue" Width="1.5" PointX="8.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.AttributePicklistValue" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.AttributeType" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.Entity" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.EntityRelationship" Width="1.5" PointX="5.25" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.EntityRelationshipRelationships" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.EntityRelationshipRole" Width="1.5" PointX="6" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.OptionSet" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MetadataModel.Relationship" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="MetadataModel.FK_Attribute_AttributeType" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_Attribute_Entity" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_Attribute_OptionSet" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_AttributeLookupValue_For_Attribute" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencedAttribute" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencingAttribute" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_AttributeLookupValue_Entity" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_AttributePicklistValue_OptionSet" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_EntityRelationshipRole_Metadata_Entity" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencedEntity" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_Metadata_Relationship_Metadata_ReferencingEntity" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_EntityRelationshipRelationships_EntityRelationship" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_EntityRelationshipRole_EntityRelationship" ManuallyRouted="false" />
+        <AssociationConnector Association="MetadataModel.FK_EntityRelationshipRelationships_Relationship" ManuallyRouted="false" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

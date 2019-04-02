@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8081/MetadataService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" />
+  <xs:import schemaLocation="http://localhost:8081/MetadataService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost:8081/MetadataService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Katrin.Services.DTO" />
+  <xs:element name="GetMetaEntities">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMetaEntitiesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="GetMetaEntitiesResult" nillable="true" type="q1:ArrayOfEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMetaEntityById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="entityId" type="q2:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMetaEntityByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="GetMetaEntityByIdResult" nillable="true" type="q3:Entity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocalizedLabels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="languageId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocalizedLabelsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="GetLocalizedLabelsResult" nillable="true" type="q4:ArrayOfLocalizedLabel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEntityRelationshipRoles">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEntityRelationshipRolesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="GetEntityRelationshipRolesResult" nillable="true" type="q5:ArrayOfEntityRelationshipRole" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOptionSet">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOptionSetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="GetOptionSetResult" nillable="true" type="q6:ArrayOfOptionSet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAttributePicklistValue">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAttributePicklistValueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="GetAttributePicklistValueResult" nillable="true" type="q7:ArrayOfAttributePicklistValue" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAttributeType">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAttributeTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="GetAttributeTypeResult" nillable="true" type="q8:ArrayOfAttributeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveEntityAttribute">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="attribute" nillable="true" type="q9:EntityAttribute" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="relationShip" nillable="true" type="q10:Relationship" />
+        <xs:element minOccurs="0" name="isAdd" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveEntityAttributeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEntityAttribute">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="attributeId" type="q11:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEntityAttributeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="GetEntityAttributeResult" nillable="true" type="q12:EntityAttribute" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteEntityAttribute">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="attributeId" type="q13:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteEntityAttributeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteEntityView">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="savedQueryId" type="q14:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteEntityViewResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="entity" nillable="true" type="q15:Entity" />
+        <xs:element minOccurs="0" name="isAdd" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="entityId" type="q16:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteEntityResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOptionSetById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="optionSetId" type="q17:guid" />
+        <xs:element minOccurs="0" name="languageId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOptionSetByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Katrin.Services.DTO" minOccurs="0" name="GetOptionSetByIdResult" nillable="true" type="q18:ArrayOfOptionSetDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveOptionSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Katrin.Services.DTO" minOccurs="0" name="optionSet" nillable="true" type="q19:OptionSetDTO" />
+        <xs:element minOccurs="0" name="languageId" type="xs:int" />
+        <xs:element minOccurs="0" name="isAdd" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveOptionSetResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetColumnMapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mappingName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sourceEntityName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="targetEntityName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetColumnMappingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="GetColumnMappingResult" nillable="true" type="q20:ArrayOfColumnMapping" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSavedQuery">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="entityId" type="q21:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSavedQueryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="GetSavedQueryResult" nillable="true" type="q22:ArrayOfSavedQuery" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveSavedQuery">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="savedQuery" nillable="true" type="q23:SavedQuery" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveSavedQueryResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNotificationProfiles">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNotificationProfilesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="GetNotificationProfilesResult" nillable="true" type="q24:ArrayOfNotificationProfile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNotificationVariablesById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="rootVariableId" type="q25:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNotificationVariablesByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Katrin.Services.Metadata" minOccurs="0" name="GetNotificationVariablesByIdResult" nillable="true" type="q26:ArrayOfNotificationVariable" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

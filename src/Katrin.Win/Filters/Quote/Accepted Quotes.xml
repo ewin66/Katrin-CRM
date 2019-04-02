@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <FilterName key="AcceptedQuotes">Accepted Quotes</FilterName>
+  <property name="ActiveFilterString">[StageCode] = 3</property>
+  <order>4</order>
+</Filter>

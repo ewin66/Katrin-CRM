@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Filter>
+  <FilterName key="TheAttendanceInThisMonth">The Attendance In This Month</FilterName>
+  <property name="ActiveFilterString">IsThisMonth([RecordOn])</property>
+  <order>1</order>
+</Filter>

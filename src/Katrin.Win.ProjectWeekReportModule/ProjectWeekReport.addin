@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.ProjectWeekReportModule.dll" />
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+
+  <Path name ="/ProjectWeekReport">
+    <Path id="List" >
+      <Path id="DockPanels">
+        <View id="DefaultListView" controller="ProjectWeekReportList" guid="{62188FB8-DBEE-4F7F-ABAD-581FBFA0D722}"></View>
+        <DockPanel id="NoteList" width="400" ViewType="Layout"  controller="NoteList" label="Note" guid="{A262EAE1-32EE-4D10-9BD4-68BDA3779B7B}"></DockPanel>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/List/Commands"/>
+        <Include id = "FormatCommand" path = "/Format/Commands" />
+        <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude">
+          <Condition name = "EnabledConditionEvaluator" affect="Enabled" action="Disable">
+            <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+            <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+            <Include id = "HistoryCommand" path = "/History/Commands/List" />
+            <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+          </Condition>
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "Base" path = "/List/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" builderid ="RibbonPageGroupBuilder">
+            <Include id = "ShowNote" path = "/NoteView/Show"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/ShowWindow"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+          </MenuItem>
+          <RelatedDoozer id="Related" entityName="ProjectWeekReport"></RelatedDoozer>
+          <CovertDoozer id="Convert" entityName="ProjectWeekReport"></CovertDoozer>
+          <Include id = "FilterGroup" path = "/FilterView/FilterGroup"/>
+        </MenuItem>
+        <MenuItem id = "Appearance" type = "Page" label = "${res:ViewPageCaption}" builderid ="RibbonPageBuilder">
+          <Include id = "Format" path = "/FormatView/Format"/>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id="Detail" >
+      <Path id="DockPanels">
+        <View id="DefaultDetailView" controller="ProjectWeekReportDetail"></View>
+        <DockPanel id="NoteList" dock="Fill" lazy="true" controller="NoteList"></DockPanel>
+        <DockPanel id="History" dock="Fill" lazy="true" controller="HistoryList"></DockPanel>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/Detail/Commands"/>
+        <Condition name = "DetailEnabledConditionEvaluator" affect="Enabled" action="Disable">
+          <Include id = "HistoryCommand" path = "/History/Commands/Detail" />
+          <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+          <MenuItem id = "GenerateWeekReport" source ="Custom" type = "Item"
+                    label = "${res:GenerateWeekReport}" imageName="GenerateWeekReport"
+                    builderid ="BarButtonItemBuilder"
+                    class ="Katrin.Win.ProjectWeekReportModule.Commands.GenerateWeekReportCommand" />
+          <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+          <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder" mergeOrder="1">
+          <Include id = "Base" path = "/Detail/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" OrderNumber="1" builderid ="RibbonPageGroupBuilder">
+            <Include id = "Base" path = "/Detail/Ribbon/Show" />
+            <Include id = "ShowNote" path = "/NoteView/Activate"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/Show"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" OrderNumber="2" builderid ="RibbonPageGroupBuilder">
+            <MenuItem id = "GenerateWeekReport" type = "Item" cmdId="GenerateWeekReport" />
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+          </MenuItem>
+          <RelatedDoozer id="Related" entityName="ProjectWeekReport"></RelatedDoozer>
+          <CovertDoozer id="Convert" entityName="ProjectWeekReport"></CovertDoozer>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id="ContextMenu">
+      <MenuItem id = "ProjectWeekReportListViewMenu" viewid = "DefaultListView" module ="ProjectWeekReport">
+        <MenuItem id ="Edit" cmdId ="Edit" />
+        <MenuItem id ="View" cmdId ="View"/>
+        <MenuItem id ="Delete" cmdId ="Delete"/>
+        <MenuItem id ="AddNote" cmdId ="AddNote" beginGroup ="true"/>
+        <MenuItem id ="Refresh" cmdId ="Refresh" beginGroup ="true"/>
+      </MenuItem>
+      <MenuItem id = "ProjectWeekReportNoteViewMenu" viewid = "NoteList" module ="ProjectWeekReport">
+        <MenuItem id ="EditNote" cmdId ="EditNote"/>
+        <MenuItem id ="DeleteNote" cmdId ="DeleteNote"/>
+      </MenuItem>
+    </Path>
+  </Path>
+
+
+  <Path name = "/Workbench/Navigation/ProjectManagement">
+    <NavItem id = "ProjectWeekReport"
+           type = "Item"
+           icon="projectweekreport"
+           label = "${res:ProjectWeekReport}"
+           class ="Katrin.Win.ProjectWeekReportModule.OpenProjectWeekReportListCommand"
+           builderid ="NavBarItemBuilder"/>
+
+  </Path>
+
+  <Path name ="/Controllers">
+    <Controller id = "ProjectWeekReport" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="ProjectWeekReport"/>
+    <Controller id = "ProjectWeekReportList" class = "Katrin.Win.ProjectWeekReportModule.ProjectWeekReportController"/>
+    <Controller id = "ProjectWeekReportDetail" class = "Katrin.Win.ProjectWeekReportModule.Detail.ProjectWeekReportDetailController"/>
+  </Path>
+  <Path name ="/Views">
+    <View id = "DefaultProjectWeekReportDetailView" class = "Katrin.Win.ProjectWeekReportModule.Detail.ProjectWeekReportDetailView"/>
+  </Path>
+
+</AddIn>

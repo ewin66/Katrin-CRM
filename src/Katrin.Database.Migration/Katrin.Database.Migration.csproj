@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB025460-3B59-42B1-AFE6-D1347DC87CE1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Katrin.Database.Migrations</RootNamespace>
+    <AssemblyName>Katrin.Database.Migration</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentMigrator">
+      <HintPath>..\packages\FluentMigrator.1.0.3.0\lib\40\FluentMigrator.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentMigrator.Runner">
+      <HintPath>..\packages\FluentMigrator.1.0.3.0\tools\FluentMigrator.Runner.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="20121009050055_CreateInitialDB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121009051836_InitMetadataEntityTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010091025_InitMetadataOptionSetTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010092324_InitMetadataAttributeTypeTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010102529_InitMetadataAttributeTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010152534_IntiMetadataAttributePicklistValueTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010154139_InitMetadataLocalizedLabelTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010160315_InitMetadataAttributeLookupValueTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010161758_InitMetadataRelationshipTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010163139_InitMetadataEntityRelationship.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010163824_InitMetadataEntityRelationshipRoleTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010170612_InitMetadataEntityRelationshipRelationshipsTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010171556_InitImportMapTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010171625_InitImportEntityMappingTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010172011_InitColumnMappingTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010172420_InitPickListMappingTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010173224_InitLookupMappingTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121010175655_InitSystemSettingTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121011090805_InitRoleTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121011091453_InitPrivilegeTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121011092038_InitPrivilegeEntityTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121011092608_InitRolePrivilegeTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121011093039_InitAdminUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121011093141_InitUserRoleTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121011094007_InitSavedQueryTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121015101005_InitCriteriaTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121015101558_InitCriteriaNodeTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121015102536_InitNotificationTemplateTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121015103212_InitNotificationVariableTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121015104658_InitNotificationProfileTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121015110455_InitNotificationRecipientAttributesTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121015113410_InitProfileVariableTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121017161811_AddProjectManagerRole.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121018095334_AddTechnologyField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121024095026_AddProjectModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121025111324_AddProjectModuleListLayout.cs" />
+    <Compile Include="20121025120526_UpdateMetadataLocalizedLabel.cs" />
+    <Compile Include="20121025153522_UpdateProjectDefaultListLayoutXml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121025163935_UpdateNotificationProfileTable.cs" />
+    <Compile Include="20121026091835_UpdateNotificationTemplateTable.cs" />
+    <Compile Include="20121106151926_InitChartPrivileges.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20121109133533_NotificationList.cs" />
+    <Compile Include="20121112093245_AddStatusInInvoice.cs" />
+    <Compile Include="20121113155155_AddTaskTypeInProjectTask.cs" />
+    <Compile Include="20121113163426_UpdateSaveQueryTable.cs" />
+    <Compile Include="20121114133327_AddContractStatus.cs" />
+    <Compile Include="20121114160354_DisposeContactSkipToRelatedAccount.cs" />
+    <Compile Include="20121119101241_AddIsDeletedForRole.cs" />
+    <Compile Include="20121119165236_AddTechnologyCode.cs" />
+    <Compile Include="20121119133254_AddNotificationConfig.cs" />
+    <Compile Include="20121120133254_ModifyNotificationConfig.cs" />
+    <Compile Include="20121119174425_AddTechnology.cs" />
+    <Compile Include="20121120104215_UpdateSaveQueryTable.cs" />
+    <Compile Include="20121120135136_SortTechnology.cs" />
+    <Compile Include="20121121145326_UpdateSaveQueryTable.cs" />
+    <Compile Include="20121126143445_AddTaskType.cs" />
+    <Compile Include="20121127095941_AddDateTimeForLead.cs" />
+    <Compile Include="20121127144330_UpdateSaveQueryTable.cs" />
+    <Compile Include="20121127171645_AddTaskPriority.cs" />
+    <Compile Include="20121128171555_AddPrivilegesOfSaleReport.cs" />
+    <Compile Include="20121128151945_ModifyIsAuditEnabled.cs" />
+    <Compile Include="20121128174012_AddReadPrivilegesOfAccount.cs" />
+    <Compile Include="20121129100445_UpdateTechnologyIsAuditEnabled.cs" />
+    <Compile Include="20121130150445_SetAttributeName.cs" />
+    <Compile Include="20121204102444_AddRolesInAttendanceModule.cs" />
+    <Compile Include="20121204093945_UpdateLeadClosedOn.cs" />
+    <Compile Include="20121206171244_AddRolesInAppointmentModule.cs" />
+    <Compile Include="20121207114344_DeleteAuditData.cs" />
+    <Compile Include="20121210175326_UpdateNotification.cs" />
+    <Compile Include="20121211142426_UpdateNotificationData.cs" />
+    <Compile Include="20121212092626_UpdateAuditLayout.cs" />
+    <Compile Include="20121214091626_AddAppointmentModule.cs" />
+    <Compile Include="20121216161726_UpdateAppointmentAttribute.cs" />
+    <Compile Include="20121214170126_DeleteAuditData.cs" />
+    <Compile Include="20121217090426_UpdateSubscription.cs" />
+    <Compile Include="20121218175326_AddProjectRelation.cs" />
+    <Compile Include="20121218175415_AddStatusCodeForProjectIteration.cs" />
+    <Compile Include="20121219093026_AddSavedQueryAndLocalizedLabelForAppointmentModule.cs" />
+    <Compile Include="MigratorExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Runner.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FM.Core.ttinclude">
+      <LastGenOutput>FM.Core1.cs</LastGenOutput>
+    </None>
+    <None Include="IntialMigrationCode.tt" />
+    <None Include="migrate.bat" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CreateUserRole.sql" />
+    <Content Include="CreateVersionInfoTable.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

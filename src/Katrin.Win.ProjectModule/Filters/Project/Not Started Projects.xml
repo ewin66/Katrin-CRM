@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <FilterName key="NotStartedProjects">Not Started Projects</FilterName>
+  <property name="ActiveFilterString">[StatusCode] = 1</property>
+  <order>2</order>
+</Filter>

@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E012AED0-2708-4B8D-B5D8-4C1456261FEB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Katrin.Win.Common</RootNamespace>
+    <AssemblyName>Katrin.Win.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr4.StringTemplate">
+      <HintPath>..\packages\Antlr4.StringTemplate.4.0.6.9004\lib\net35\Antlr4.StringTemplate.dll</HintPath>
+    </Reference>
+    <Reference Include="C5">
+      <HintPath>..\packages\Quartz\C5.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\packages\Quartz\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Reports.v12.1.Designer, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Office.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v12.1.Win, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v12.1.Extensions, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="inflector_extension, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\inflector_extension.0.0.8\lib\Net40\inflector_extension.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.1.0-rc2\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.OData.5.1.0-rc2\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Services.Client.5.1.0-rc2\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\packages\CAB\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\packages\Quartz\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Spatial, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Spatial.5.1.0-rc2\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersionInfo.cs">
+      <Link>Properties\AssemblyVersionInfo.cs</Link>
+    </Compile>
+    <Compile Include="Notification\AlertManage.cs" />
+    <Compile Include="Notification\ISendSysNotification.cs" />
+    <Compile Include="Notification\NotificationList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Notification\NotificationPresenter.cs" />
+    <Compile Include="Notification\INotificationList.cs" />
+    <Compile Include="Notification\ReceiveNotification.cs" />
+    <Compile Include="ChangeTracking\ChangeTracker.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChangeTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeTracking\Class1.cs" />
+    <Compile Include="ChangeTracking\DoNotSerializeAttribute.cs" />
+    <Compile Include="ChangeTracking\EntityBaseObject.cs" />
+    <Compile Include="ChangeTracking\EntityObjectTemplate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityObjectTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Constants\CommandNames.cs" />
+    <Compile Include="Constants\EventTopicNames.cs" />
+    <Compile Include="Constants\ExtensionSiteNames.cs" />
+    <Compile Include="Controls\BarButtonItemEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DropDownDateEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DynamicWcfInstantFeedbackSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GaugesControl.cs" />
+    <Compile Include="Controls\GridCheckMarksSelection.cs" />
+    <Compile Include="Controls\GridLookUpExtention.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LookBoard\LookBoardByStage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LookBoard\LookBoardByStage.Designer.cs">
+      <DependentUpon>LookBoardByStage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LookBoard\LookBoardColumn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LookBoard\LookBoardColumn.Designer.cs">
+      <DependentUpon>LookBoardColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PopupContainerControlExtention.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ProgressTrackBarControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RibbonController.cs" />
+    <Compile Include="Controls\RibbonGalleryBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\WcfSearchLookUpEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\AbstractDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\AbstractDetailView.designer.cs">
+      <DependentUpon>AbstractDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\ActionContext.cs" />
+    <Compile Include="Core\ActionParameter.cs" />
+    <Compile Include="Core\Controller.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\RecordDetailController.cs" />
+    <Compile Include="Core\DetailLayoutView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\DetailLayoutView.Designer.cs">
+      <DependentUpon>DetailLayoutView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\DetailLayoutViewPresenter.cs" />
+    <Compile Include="Core\DynamicEntity.cs" />
+    <Compile Include="Core\EnityDetailController.cs" />
+    <Compile Include="Core\EntityDetailPresenter.cs" />
+    <Compile Include="Core\EntityDetailWorkingMode.cs" />
+    <Compile Include="Core\EntityListController.cs" />
+    <Compile Include="Core\EntityListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\EntityListView.Designer.cs">
+      <DependentUpon>EntityListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\EntityRelationshipType.cs" />
+    <Compile Include="Core\IEntityDetailView.cs" />
+    <Compile Include="Core\ISingleWorkItemService.cs" />
+    <Compile Include="Core\ListFilterItem.cs" />
+    <Compile Include="Core\RecordListController.cs" />
+    <Compile Include="Core\RecordListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\RecordListView.Designer.cs">
+      <DependentUpon>RecordListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\RelationshipRoleType.cs" />
+    <Compile Include="Core\SingleWorkItemService.cs" />
+    <Compile Include="CultureManager.cs" />
+    <Compile Include="CustomerFunctions\IsDuringDaysFunction.cs" />
+    <Compile Include="CustomerFunctions\IsLastMonthFunction.cs" />
+    <Compile Include="CustomerFunctions\IsEarlierNextWeekFunction.cs" />
+    <Compile Include="CustomerFunctions\IsPriorDaysFunction.cs" />
+    <Compile Include="DataServiceContextExtension.cs" />
+    <Compile Include="Dynamic.cs" />
+    <Compile Include="DynamicDataServiceContext.cs" />
+    <Compile Include="DynamicProxies\DynamicProxy.cs" />
+    <Compile Include="DynamicProxies\EditableProxy.cs" />
+    <Compile Include="DynamicProxies\FullAccessProxy.cs" />
+    <Compile Include="DynamicProxies\GlobalTypeInfoCache.cs" />
+    <Compile Include="DynamicProxies\NotifyingProxy.cs" />
+    <Compile Include="DynamicProxies\PropertyInfoExtensions.cs" />
+    <Compile Include="DynamicProxies\ReflectionProxy.cs" />
+    <Compile Include="DynamicTypeBuilder.cs" />
+    <Compile Include="Extension\GridLookUpEditExtension.cs" />
+    <Compile Include="Extension\GridViewExtension.cs" />
+    <Compile Include="Extension\GuidExtension.cs" />
+    <Compile Include="Extension\ObjectExtension.cs" />
+    <Compile Include="Extension\RepositoryItemLookUpEditExtension.cs" />
+    <Compile Include="Extension\SearchLookUpEditExtension.cs" />
+    <Compile Include="Extension\XtraSerializerExtenison.cs" />
+    <Compile Include="FilterCondition\FilterCondition.cs" />
+    <Compile Include="FilterCondition\FilterConditionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterCondition\FilterConditionList.Designer.cs">
+      <DependentUpon>FilterConditionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterCondition\FilterConditionListPresenter.cs" />
+    <Compile Include="FilterCondition\IFilterCondition.cs" />
+    <Compile Include="FormatCondition\FormatCondition.cs" />
+    <Compile Include="FormatCondition\FormatConditionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatCondition\FormatConditionList.Designer.cs">
+      <DependentUpon>FormatConditionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormatCondition\FormatConditionListPresenter.cs" />
+    <Compile Include="FormatCondition\IFormatCondition.cs" />
+    <Compile Include="IDynamicDataServiceContext.cs" />
+    <Compile Include="MetadataProvider.cs" />
+    <Compile Include="Notification\SendSysNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Notification\SendSysNotification.Designer.cs">
+      <DependentUpon>SendSysNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notification\SendSysNotificationPresenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Constants\WorkspaceNames.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Security\AuthorizationManager.cs" />
+    <Compile Include="Security\CustomIdentity.cs" />
+    <Compile Include="Security\CustomPrincipal.cs" />
+    <Compile Include="Security\Privilege.cs" />
+    <Compile Include="Service References\MetadataServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="WcfServerMode\AsyncWcfServerModeSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WcfServerMode\DataServiceQueryTranslator.cs" />
+    <Compile Include="WcfServerMode\CriteriaToQueryExpressionConverter.cs" />
+    <Compile Include="WcfServerMode\WcfServerModeCore.cs" />
+    <Compile Include="WcfServerMode\WcfServerModeSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChangeTracking\ChangeTracker.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ChangeTracker.cs</LastGenOutput>
+    </None>
+    <None Include="ChangeTracking\EntityObjectTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>EntityObjectTemplate.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MetadataServiceReference\Katrin.Win.Common.MetadataServiceReference.AttributePicklistValue.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MetadataServiceReference\Katrin.Win.Common.MetadataServiceReference.AttributeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MetadataServiceReference\Katrin.Win.Common.MetadataServiceReference.ColumnMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MetadataServiceReference\Katrin.Win.Common.MetadataServiceReference.Entity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MetadataServiceReference\Katrin.Win.Common.MetadataServiceReference.EntityAttribute.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MetadataServiceReference\Katrin.Win.Common.MetadataServiceReference.EntityRelationshipRole.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MetadataServiceReference\Katrin.Win.Common.MetadataServiceReference.LocalizedLabel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MetadataServiceReference\Katrin.Win.Common.MetadataServiceReference.NotificationProfile.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MetadataServiceReference\Katrin.Win.Common.MetadataServiceReference.NotificationVariable.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MetadataServiceReference\Katrin.Win.Common.MetadataServiceReference.OptionSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MetadataServiceReference\Katrin.Win.Common.MetadataServiceReference.OptionSetDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Compile Include="Utils.Date.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Notification\NotificationList.resx">
+      <DependentUpon>NotificationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LookBoard\LookBoardByStage.resx">
+      <DependentUpon>LookBoardByStage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LookBoard\LookBoardColumn.resx">
+      <DependentUpon>LookBoardColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PopupContainerControlExtention.resx">
+      <DependentUpon>PopupContainerControlExtention.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RibbonController.resx">
+      <DependentUpon>RibbonController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\RecordListView.resx">
+      <DependentUpon>RecordListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterCondition\FilterConditionList.resx">
+      <DependentUpon>FilterConditionList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterCondition\FilterConditionList.zh-CN.resx">
+      <DependentUpon>FilterConditionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatCondition\FormatConditionList.resx">
+      <DependentUpon>FormatConditionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatCondition\FormatConditionList.zh-CN.resx">
+      <DependentUpon>FormatConditionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notification\SendSysNotification.resx">
+      <DependentUpon>SendSysNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notification\SendSysNotification.zh-CN.resx">
+      <DependentUpon>SendSysNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\audit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\MetadataServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MetadataServiceReference\Katrin.Win.Common.MetadataServiceReference.SavedQuery.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MetadataServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MetadataServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MetadataServiceReference\MetadataService1.wsdl" />
+    <None Include="Service References\MetadataServiceReference\MetadataService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MetadataServiceReference\MetadataService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MetadataServiceReference\MetadataService32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MetadataServiceReference\MetadataService33.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MetadataServiceReference\MetadataService34.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MetadataServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Core\AbstractDetailView.resx">
+      <DependentUpon>AbstractDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\DetailLayoutView.resx">
+      <DependentUpon>DetailLayoutView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\EntityListView.resx">
+      <DependentUpon>EntityListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Katrin.Common\Katrin.Common.csproj">
+      <Project>{37bdfea4-34cf-42cc-8379-c74b35bbf596}</Project>
+      <Name>Katrin.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Katrin.Win.Infrastructure\Katrin.Win.Infrastructure.csproj">
+      <Project>{56A33ED0-4C9C-4579-A3E8-2C858FD3B8AD}</Project>
+      <Name>Katrin.Win.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\packages\CAB\Source\CABDevExpress.ExtensionKit\CABDevExpress.ExtensionKit.csproj">
+      <Project>{811DD8C8-6696-4566-A142-8ED28759D7A5}</Project>
+      <Name>CABDevExpress.ExtensionKit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\packages\CAB\Source\CompositeUI.WinForms\CompositeUI.WinForms.csproj">
+      <Project>{073BCD60-F2FB-4DB9-92FB-403C8F9E8DD0}</Project>
+      <Name>CompositeUI.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\packages\CAB\Source\CompositeUI\CompositeUI.csproj">
+      <Project>{C478E40B-A05E-4C69-9AB3-7A3BB374243F}</Project>
+      <Name>CompositeUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\account.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\admin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Katrin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\contact.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\contract.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Contract2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\history.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\invoice.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\lead.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\note.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\opportunity.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\overlay_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\overlay_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\overlay_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\overlay_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\overlay_view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\overlay_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\overlay_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\product.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\qualify.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\quote.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\role.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\sales.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\service.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SplashImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\systemsetting.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\timetracking.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\userinfo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\entity.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\addnote.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\addtimetracking.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\format.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\tag.png" />
+    <EmbeddedResource Include="Resources\setopportunityresurrection.ico" />
+    <EmbeddedResource Include="Resources\setopportunitysuccess.ico" />
+    <EmbeddedResource Include="Resources\setopportunityfail.ico" />
+    <EmbeddedResource Include="Resources\userinfo.png" />
+    <EmbeddedResource Include="Resources\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\overlay_convert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\projectmanagement.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\projecttask.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\project.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\delete.ico" />
+    <EmbeddedResource Include="Resources\opportunityreport.ico" />
+    <EmbeddedResource Include="Resources\report.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MetadataServiceReference\MetadataService1.disco" />
+    <EmbeddedResource Include="Resources\projectweekreport.ico" />
+    <EmbeddedResource Include="Resources\add.ico" />
+    <Content Include="Resources\Administration.ico" />
+    <EmbeddedResource Include="Resources\editeffort.ico" />
+    <EmbeddedResource Include="Resources\projectreport.ico" />
+    <EmbeddedResource Include="Resources\projectiteration.ico" />
+    <EmbeddedResource Include="Resources\generateweekreport.ico" />
+    <EmbeddedResource Include="Resources\generatedayreport.ico" />
+    <EmbeddedResource Include="Resources\projectversion.ico" />
+    <EmbeddedResource Include="Resources\copy.ico" />
+    <EmbeddedResource Include="Resources\newprojecttaskeffort.ico" />
+    <EmbeddedResource Include="Resources\attendance.ico" />
+    <EmbeddedResource Include="Resources\notification.png" />
+    <EmbeddedResource Include="Resources\notification.ico" />
+    <EmbeddedResource Include="Resources\projectmodule.ico" />
+    <Content Include="Resources\reports.ico" />
+    <EmbeddedResource Include="Resources\sendemail.ico" />
+    <EmbeddedResource Include="Resources\search.ico" />
+    <None Include="Resources\SendSysMsg.png" />
+    <Content Include="Resources\services.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>cd.&gt;$(ProjectDir)Properties\licenses.licx</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

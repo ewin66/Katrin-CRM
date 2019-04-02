@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Filter>
+  <FilterName key="TheAttendanceInLastMonth">The Attendance In Last Month</FilterName>
+  <property name="ActiveFilterString">IsLastMonth([RecordOn])</property>
+  <order>1</order>
+</Filter>

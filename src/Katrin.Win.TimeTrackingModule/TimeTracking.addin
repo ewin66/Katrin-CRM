@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.TimeTrackingModule.dll">
+      <ConditionEvaluator name="TimeTrackingEnabledConditionEvaluator" class="Katrin.Win.TimeTrackingModule.ConditionEvaluators.EnabledConditionEvaluator"/>
+      <Doozer name="TimeTrackingDoozer"  class="Katrin.Win.TimeTrackingModule.TimeTrackingDoozer"/>
+    </Import>
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+  
+  <!--TimeTracking Ribbon-->
+  <Path name = "/TimeTrackingView/Show">
+    <MenuItem id = "TimeTracking" type = "Item" cmdId="ShowTimeTracking" />
+  </Path>
+  <Path name = "/TimeTrackingView/Activate">
+    <MenuItem id = "TimeTracking" type = "Item" cmdId="ActivateTimeTracking"/>
+  </Path>
+  <Path name = "/TimeTrackingView/Add">
+    <MenuItem id = "AddTimeTracking" type = "Item" cmdId="AddTimeTracking"/>
+  </Path>
+  
+  <!--TimeTracking PANEL-->
+  <Path name = "/TimeTracking/Detail/DockPanels">
+    <View id = "DefaultDetailView" controller="TimeTrackingDetail"/>
+  </Path>
+  
+  <!--TimeTracking VIEW-->
+  <Path name ="/Views">
+    <View id = "DefaultTimeTrackingView"   class = "Katrin.Win.TimeTrackingModule.TimeTracking.TimeTrackingDetailForm"/>
+  </Path>
+  
+  <!-- TimeTracking Controllers-->
+  <Path name ="/Controllers">
+    <Controller id = "TimeTrackingDetail" class = "Katrin.Win.TimeTrackingModule.TimeTracking.TimeTrackingDetailController"/>
+    <Controller id = "TimeTrackingList"  class = "Katrin.Win.TimeTrackingModule.TimeTrackingController"/>
+    <Controller id = "TimeTracking" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="TimeTracking"/>
+  </Path>
+
+  <!--TimeTracking Commands-->
+  <Path name ="/TimeTracking/Commands">
+    <Path id="MenuCommand">
+      <MenuItem id ="DeleteTimeTracking" source ="Custom" type = "Item" label = "${res:DeleteTimeTracking}"
+                  imageName="delete" builderid ="BarButtonItemBuilder"
+                  class ="Katrin.Win.TimeTrackingModule.Commands.DeleteTimeTrackingCommand"
+                  controllerId ="TimeTrackingList" />
+      <MenuItem id ="EditTimeTracking" source ="Custom" type = "Item" label = "${res:EditTimeTracking}"
+                imageName="edit" builderid ="BarButtonItemBuilder"
+                class ="Katrin.Win.TimeTrackingModule.Commands.EditTimeTrackingCommand"
+                controllerId ="TimeTrackingList" />
+    </Path>
+    <Path id="RibbonCommand">
+      <MenuItem id = "AddTimeTracking" source ="Custom" type = "Item" label = "${res:AddTimeTracking}" 
+                imageName="timetracking" overlay="overlay_add" 
+                class ="Katrin.Win.TimeTrackingModule.Commands.AddTimeTrackingCommand" 
+                builderid ="BarButtonItemBuilder" />
+      <Condition name = "CheckConditionEvaluator" affect="Down" viewName="TimeTrackingList">
+        <MenuItem id = "ShowTimeTracking" source ="Custom" type = "Item" label = "${res:TimeTracking}" 
+                  ButtonStyle="Check" imageName="timetracking" 
+                  class ="Katrin.Win.TimeTrackingModule.Commands.ShowTimeTrackingCommand" 
+                  builderid ="BarButtonItemBuilder" />
+      </Condition>
+      <Condition name = "CheckConditionEvaluator" affect="Down" viewName="TimeTrackingList">
+        <MenuItem id = "ActivateTimeTracking" source ="Custom" type = "Item" label = "${res:TimeTracking}"
+                  imageName="TimeTracking" ButtonStyle="Check"
+                  class ="Katrin.Win.TimeTrackingModule.Commands.ActivateTimeTrackingListCommand"
+                  builderid ="BarButtonItemBuilder"/>
+      </Condition>
+    </Path>
+  </Path>
+  
+</AddIn>

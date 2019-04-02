@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="eliminateWeekendCheckEdit.Properties.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="IterationLookUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 108</value>
+  </data>
+  <data name="IterationLookUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 20</value>
+  </data>
+  <data name="DateGaugeControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, -139</value>
+  </data>
+  <data name="DateGaugeControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 196</value>
+  </data>
+  <data name="colCaption.Caption" xml:space="preserve">
+    <value>统计指标</value>
+  </data>
+  <data name="gaugeControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>907, -139</value>
+  </data>
+  <data name="gaugeControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 196</value>
+  </data>
+  <data name="gaugeControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>512, -139</value>
+  </data>
+  <data name="gaugeControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>299, 196</value>
+  </data>
+  <data name="textEdit10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>899, -211</value>
+  </data>
+  <data name="textEdit10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 20</value>
+  </data>
+  <data name="ManagerName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, -211</value>
+  </data>
+  <data name="ManagerName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 20</value>
+  </data>
+  <data name="saleServiceName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, -211</value>
+  </data>
+  <data name="saleServiceName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 20</value>
+  </data>
+  <data name="textEdit6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>900, -163</value>
+  </data>
+  <data name="textEdit6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 20</value>
+  </data>
+  <data name="textEdit5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>507, -163</value>
+  </data>
+  <data name="textEdit5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>302, 20</value>
+  </data>
+  <data name="textEdit4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, -163</value>
+  </data>
+  <data name="textEdit4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 20</value>
+  </data>
+  <data name="textEdit3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>900, -187</value>
+  </data>
+  <data name="textEdit3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 20</value>
+  </data>
+  <data name="textEdit2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>507, -187</value>
+  </data>
+  <data name="textEdit2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>302, 20</value>
+  </data>
+  <data name="ProjectMember.Caption" xml:space="preserve">
+    <value>成员名称</value>
+  </data>
+  <data name="MemberQuoteWorkHours.Caption" xml:space="preserve">
+    <value>报价工时</value>
+  </data>
+  <data name="MemberActualWorkHours.Caption" xml:space="preserve">
+    <value>计划工时</value>
+  </data>
+  <data name="MemberActualInput.Caption" xml:space="preserve">
+    <value>投入工时</value>
+  </data>
+  <data name="MemberEffort.Caption" xml:space="preserve">
+    <value>有效产出</value>
+  </data>
+  <data name="MemberEvaluateExactlyRate.Caption" xml:space="preserve">
+    <value>评估准确率</value>
+  </data>
+  <data name="MemberInputEffortRate.Caption" xml:space="preserve">
+    <value>投入产出比</value>
+  </data>
+  <data name="IterationName.Caption" xml:space="preserve">
+    <value>迭代名称</value>
+  </data>
+  <data name="QuoteWorkHours.Caption" xml:space="preserve">
+    <value>报价工时</value>
+  </data>
+  <data name="ActualWorkHours.Caption" xml:space="preserve">
+    <value>计划工时</value>
+  </data>
+  <data name="ActualInput.Caption" xml:space="preserve">
+    <value>实际投入</value>
+  </data>
+  <data name="Effort.Caption" xml:space="preserve">
+    <value>有效产出</value>
+  </data>
+  <data name="EvaluateExactlyRate.Caption" xml:space="preserve">
+    <value>评估准确率</value>
+  </data>
+  <data name="InputEffortRate.Caption" xml:space="preserve">
+    <value>投入产出比</value>
+  </data>
+  <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, -187</value>
+  </data>
+  <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 20</value>
+  </data>
+  <data name="projectNameLookUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, -235</value>
+  </data>
+  <data name="projectNameLookUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>697, 20</value>
+  </data>
+  <data name="iterationGridGroup.Text" xml:space="preserve">
+    <value>迭代统计</value>
+  </data>
+  <data name="IterationPieChartGroup.Text" xml:space="preserve">
+    <value>迭代甘特图</value>
+  </data>
+  <data name="IterationBarChart.Text" xml:space="preserve">
+    <value>迭代工时</value>
+  </data>
+  <data name="ItemForIterationList.Text" xml:space="preserve">
+    <value>迭代</value>
+  </data>
+  <data name="IterationBurndown.Text" xml:space="preserve">
+    <value>燃尽图</value>
+  </data>
+  <data name="PersonGroup.Text" xml:space="preserve">
+    <value>成员统计</value>
+  </data>
+  <data name="MemberActualInputGroup.Text" xml:space="preserve">
+    <value>成员图表</value>
+  </data>
+  <data name="ItemForSumEffort.Text" xml:space="preserve">
+    <value>总有效产出</value>
+  </data>
+  <data name="ItemForSale.Text" xml:space="preserve">
+    <value>售后服务</value>
+  </data>
+  <data name="ItemForEvaluateExactlyRate.Text" xml:space="preserve">
+    <value>评估准确率监控</value>
+  </data>
+  <data name="ItemForInputEffortRate.Text" xml:space="preserve">
+    <value>投入产出比监控</value>
+  </data>
+  <data name="ItemForManager.Text" xml:space="preserve">
+    <value>项目经理</value>
+  </data>
+  <data name="ItemForSumQuoteWorkHours.Text" xml:space="preserve">
+    <value>总报价工时</value>
+  </data>
+  <data name="ItemForSumActualWorkHours.Text" xml:space="preserve">
+    <value>总计划工时</value>
+  </data>
+  <data name="ItemForSumOvertime.Text" xml:space="preserve">
+    <value>总加班工时</value>
+  </data>
+  <data name="ItemForDate.Text" xml:space="preserve">
+    <value>日期监控</value>
+  </data>
+  <data name="ItemForProjectName.Text" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="ItemForContact.Text" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="ItemForSumActualInput.Text" xml:space="preserve">
+    <value>总投入工时</value>
+  </data>
+  <data name="ItemForSumRemainderTime.Text" xml:space="preserve">
+    <value>总剩余工作量</value>
+  </data>
+</root>

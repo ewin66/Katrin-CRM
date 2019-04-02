@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.NotificationModule.dll"></Import>
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+
+  <Path name="/Notification">
+    <Path id="List">
+      <Path id = "DockPanels">
+        <View id = "DefaultListView" controller="NotificationList" guid="{D50B420E-D70A-4727-96D1-4C46E9A5184F}"/>
+      </Path>
+      <Path id="Commands" >
+        <MenuItem id = "SendSysMessage"  source ="Custom" type = "Item" label = "${res:SendSysMessage}" imageName="notification1"
+                    builderid ="BarButtonItemBuilder"   class ="Katrin.Win.NotificationModule.Commands.SendMessageCommand" />
+        <Condition name = "EnabledConditionEvaluator" affect="Enabled" action="Disable">
+          <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude">
+            <MenuItem id = "CleanAll" source ="Custom" type = "Item" label = "${res:CleanAll}" imageName="clear1"
+                      builderid ="BarButtonItemBuilder" beginGroup="true"  class ="Katrin.Win.NotificationModule.Commands.CleanAllCommand" />
+            <MenuItem id = "Delete" source ="Custom" type = "Item" label = "${res:Delete}" imageName="setopportunityfail"
+                      class ="Katrin.Win.NotificationModule.Commands.DeleteCommand"  builderid ="BarButtonItemBuilder"/>
+            <MenuItem id = "SetReaded" source ="Custom" type = "Item" label = "${res:ReadUnread}" imageName="sendsysmsg"
+                      builderid ="BarButtonItemBuilder"   class ="Katrin.Win.NotificationModule.Commands.SetReaded" />
+          </Condition>
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <MenuItem id = "General" type = "Group" label = "${res:General}" OrderNumber="0" builderid ="RibbonPageGroupBuilder">
+            <MenuItem id = "SendSysMessage" type = "Item"  cmdId="SendSysMessage" />
+            <Condition name = "EnabledConditionEvaluator" affect="Enabled" action="Disable">
+              <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude">
+                <MenuItem id = "CleanAll" type = "Item"  cmdId="CleanAll" />
+                <MenuItem id = "Delete" type = "Item"  cmdId="Delete"/>
+                <MenuItem id = "SetReaded" type = "Item"  cmdId="SetReaded" />
+              </Condition>
+            </Condition>
+          </MenuItem>
+          <Include id = "FilterGroup" path = "/FilterView/FilterGroup"/>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id="Detail">
+      <Path id = "DockPanels">
+        <View id = "DefaultNotificationView" controller="NotificationDetail" guid="{170013B5-8F63-493B-B697-C9BEECCD3E08}"/>
+      </Path>
+    </Path>
+    <Path id ="ContextMenu">
+      <!--MenuItem default type is normal.-->
+      <MenuItem id = "NotificationListViewMenu" viewid = "DefaultListView" module ="Notification">
+        <MenuItem id ="Delete" cmdId ="Delete"/>
+      </MenuItem>
+    </Path>
+  </Path>
+
+  
+ 
+  <Path name ="/Views">
+    <View id = "DefaultNotificationView"   class = "Katrin.Win.Common.Notification.SendSysNotification"/>
+  </Path>
+  
+  <Path name ="/Controllers">
+    <Controller id = "Notification" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="Notification"/>
+    <Controller id = "NotificationList" class = "Katrin.Win.NotificationModule.NotificationRecipientController"/>
+    <Controller id = "NotificationDetail" class = "Katrin.Win.Common.Notification.SendSysNotificationController"/>
+  </Path>
+  
+  <Path name ="/Notification/StartNotification">
+    <Class id = "Notification" class = "Katrin.Win.Common.Notification.ReceiveNotification"/>
+  </Path>
+
+ 
+</AddIn>

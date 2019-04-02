@@ -1,0 +1,821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ri_account" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\account.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_admin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\admin.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_Katrin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Katrin.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_contact" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contact.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_contract" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contract.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_Contract2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Contract2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_history" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\history.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_invoice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\invoice.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_lead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lead.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_note" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\note.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_opportunity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\opportunity.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_product" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\product.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_qualify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qualify.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_quote" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quote.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_role" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\role.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_sales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sales.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_service" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\service.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_systemsetting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\systemsetting.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_timetracking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\timetracking.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_userinfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\userinfo.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConfirmPasswordNotMatch" xml:space="preserve">
+    <value>Confirm password doesn't match the password field.</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Quote" xml:space="preserve">
+    <value>Quote</value>
+  </data>
+  <data name="Related" xml:space="preserve">
+    <value>Related</value>
+  </data>
+  <data name="NewCommand" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="ValidateDate" xml:space="preserve">
+    <value>This date is invalidation</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="UserNameAndPasswordInvalid" xml:space="preserve">
+    <value>User name and password are invalid.</value>
+  </data>
+  <data name="EntityDetailsCaptionFormat" xml:space="preserve">
+    <value>{0} Details</value>
+  </data>
+  <data name="SaveAndClose" xml:space="preserve">
+    <value>Save&amp;&amp;Close</value>
+  </data>
+  <data name="RecordManagement" xml:space="preserve">
+    <value>Record Management</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="PopupContract" xml:space="preserve">
+    <value>Contract</value>
+  </data>
+  <data name="PopupQuote" xml:space="preserve">
+    <value>Quote</value>
+  </data>
+  <data name="CannotUnregisterSiteRegisteredWithParent" xml:space="preserve">
+    <value>Cannot unregister site that was registered in parent: {0}</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="DisableDeleteRecord" xml:space="preserve">
+    <value>You can't delete this {0} when it is used!</value>
+  </data>
+  <data name="LeadConvert" xml:space="preserve">
+    <value>Convert</value>
+  </data>
+  <data name="ServiceManagement" xml:space="preserve">
+    <value>ServiceManagement</value>
+  </data>
+  <data name="ConfirmDeletion" xml:space="preserve">
+    <value>Confirm Deletion</value>
+  </data>
+  <data name="DeadRecord" xml:space="preserve">
+    <value>Do you want to dead the {0}?</value>
+  </data>
+  <data name="DeleteRecord" xml:space="preserve">
+    <value>You have selected 1 {0} for deletion.
+
+The system will delete this record. This action cannot be undone. To continue, click OK.</value>
+  </data>
+  <data name="EntityListCaptionFormat" xml:space="preserve">
+    <value>{0} List</value>
+  </data>
+  <data name="Lead" xml:space="preserve">
+    <value>Lead</value>
+  </data>
+  <data name="AddNote" xml:space="preserve">
+    <value>Add Note</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="PasswordLengthValidation" xml:space="preserve">
+    <value>The password length should not be less than 6</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="PopupInvoice" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="DeadLead" xml:space="preserve">
+    <value>Dead</value>
+  </data>
+  <data name="NewEntity" xml:space="preserve">
+    <value>New {0}</value>
+  </data>
+  <data name="Opportunity" xml:space="preserve">
+    <value>Opportunity</value>
+  </data>
+  <data name="DeleteNote" xml:space="preserve">
+    <value>Delete Note</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Addition" xml:space="preserve">
+    <value>Addition</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ValidateNotBlankMessage" xml:space="preserve">
+    <value>{0} cannot be empty</value>
+    <comment>Validation</comment>
+  </data>
+  <data name="DuplicateUIExtensionSite" xml:space="preserve">
+    <value>A UI extension site with this name already exists: {0}</value>
+  </data>
+  <data name="ListScreenTitle" xml:space="preserve">
+    <value>{0} List</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="EditNote" xml:space="preserve">
+    <value>Edit Note</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Contract" xml:space="preserve">
+    <value>Contract</value>
+  </data>
+  <data name="Skins" xml:space="preserve">
+    <value>Skins</value>
+  </data>
+  <data name="ViewPageCaption" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="TimeTracking" xml:space="preserve">
+    <value>Time Tracking</value>
+  </data>
+  <data name="AddTimeTracking" xml:space="preserve">
+    <value>Add Time</value>
+  </data>
+  <data name="DeleteTimeTracking" xml:space="preserve">
+    <value>Delete Time</value>
+  </data>
+  <data name="EditTimeTracking" xml:space="preserve">
+    <value>Edit Time</value>
+  </data>
+  <data name="ShowTimeTracking" xml:space="preserve">
+    <value>Show Time Tracking</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="Sales" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="SystemSetting" xml:space="preserve">
+    <value>System Setting</value>
+  </data>
+  <data name="ri_overlay_ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_overlay_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_entity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\entity.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_audit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\audit.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Audit</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="TimeTrackings" xml:space="preserve">
+    <value>TimeTrackings</value>
+  </data>
+  <data name="ri_addnote" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addnote.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_addtimetracking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addtimetracking.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FastOperate" xml:space="preserve">
+    <value>Fast Operate</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="ri_format" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\format.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddFilter" xml:space="preserve">
+    <value>Add Filter</value>
+  </data>
+  <data name="EditFilter" xml:space="preserve">
+    <value>Edit Filter</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="ManageFilter" xml:space="preserve">
+    <value>Manage Filter</value>
+  </data>
+  <data name="DeleteFilter" xml:space="preserve">
+    <value>Delete Filter</value>
+  </data>
+  <data name="ri_clear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="userinfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\userinfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_setopportunityfail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setopportunityfail.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_setopportunityresurrection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setopportunityresurrection.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_setopportunitysuccess" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setopportunitysuccess.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeleteListItemWarning" xml:space="preserve">
+    <value>Do you want to delete this item?</value>
+  </data>
+  <data name="DeleteFilterTip" xml:space="preserve">
+    <value>Do you want to delete this filter?</value>
+  </data>
+  <data name="ClearSetting" xml:space="preserve">
+    <value>Clear Setting</value>
+  </data>
+  <data name="ClearSettingConfirm" xml:space="preserve">
+    <value>The system will clear your local settings. This action cannot be undone. To continue, click OK</value>
+  </data>
+  <data name="NoRelatedData" xml:space="preserve">
+    <value>No Related Data!</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="AcceptedQuotes" xml:space="preserve">
+    <value>Accepted Quotes</value>
+    <comment>zd</comment>
+  </data>
+  <data name="AllMyContracts" xml:space="preserve">
+    <value>All My Contracts</value>
+    <comment>a</comment>
+  </data>
+  <data name="AllMyInvoices" xml:space="preserve">
+    <value>All My Invoices</value>
+    <comment>g</comment>
+  </data>
+  <data name="AllMyLeads" xml:space="preserve">
+    <value>All My Leads</value>
+    <comment>m</comment>
+  </data>
+  <data name="AllMyOpportunities" xml:space="preserve">
+    <value>All My Opportunities</value>
+    <comment>u</comment>
+  </data>
+  <data name="AllMyOpportunitiesInThisMonth" xml:space="preserve">
+    <value>All My Opportunities In This Month</value>
+    <comment>t</comment>
+  </data>
+  <data name="AllMyQuotes" xml:space="preserve">
+    <value>All My Quotes</value>
+    <comment>ze</comment>
+  </data>
+  <data name="BadDebtInvoices" xml:space="preserve">
+    <value>Bad Debt Invoices</value>
+    <comment>h</comment>
+  </data>
+  <data name="ClosedContracts" xml:space="preserve">
+    <value>Closed Contracts</value>
+    <comment>b</comment>
+  </data>
+  <data name="ConvertedLeads" xml:space="preserve">
+    <value>Converted Leads</value>
+    <comment>n</comment>
+  </data>
+  <data name="DeadLeads" xml:space="preserve">
+    <value>Dead Leads</value>
+    <comment>o</comment>
+  </data>
+  <data name="FailedContracts" xml:space="preserve">
+    <value>Failed Contracts</value>
+    <comment>c</comment>
+  </data>
+  <data name="FinishedContracts" xml:space="preserve">
+    <value>Finished Contracts</value>
+    <comment>d</comment>
+  </data>
+  <data name="InArrearInvoices" xml:space="preserve">
+    <value>In Arrear Invoices</value>
+    <comment>i</comment>
+  </data>
+  <data name="LeadOpenedLastWeek" xml:space="preserve">
+    <value>Lead Opened Last Week</value>
+    <comment>p</comment>
+  </data>
+  <data name="LeadOpenedThisWeek" xml:space="preserve">
+    <value>Lead Opened This Week</value>
+    <comment>q</comment>
+  </data>
+  <data name="LostOpportunities" xml:space="preserve">
+    <value>Lost Opportunities</value>
+    <comment>v</comment>
+  </data>
+  <data name="LostQuotes" xml:space="preserve">
+    <value>Lost Quotes</value>
+    <comment>zf</comment>
+  </data>
+  <data name="MyOpenContracts" xml:space="preserve">
+    <value>My Open Contracts</value>
+    <comment>e</comment>
+  </data>
+  <data name="MyOpenLeads" xml:space="preserve">
+    <value>My Open Leads</value>
+    <comment>r</comment>
+  </data>
+  <data name="MyOpenOpportunities" xml:space="preserve">
+    <value>My Open Opportunities</value>
+    <comment>w</comment>
+  </data>
+  <data name="MyOpenQuotes" xml:space="preserve">
+    <value>My Open Quotes</value>
+    <comment>zg</comment>
+  </data>
+  <data name="OpenContracts" xml:space="preserve">
+    <value>Open Contracts</value>
+    <comment>f</comment>
+  </data>
+  <data name="OpenLeads" xml:space="preserve">
+    <value>Open Leads</value>
+    <comment>s</comment>
+  </data>
+  <data name="OpenMyOpportunitiesBeforeThisMonth" xml:space="preserve">
+    <value>Open My Opportunities Before This Month</value>
+    <comment>x</comment>
+  </data>
+  <data name="OpenOpportunities" xml:space="preserve">
+    <value>Open Opportunities</value>
+    <comment>y</comment>
+  </data>
+  <data name="OpenQuotes" xml:space="preserve">
+    <value>Open Quotes</value>
+    <comment>zh</comment>
+  </data>
+  <data name="OpportunitiesCreatedinThisMonth" xml:space="preserve">
+    <value>Opportunities Created in This Month</value>
+    <comment>z</comment>
+  </data>
+  <data name="OpportunityOpenedLastWeek" xml:space="preserve">
+    <value>Opportunity Opened Last Week</value>
+    <comment>za</comment>
+  </data>
+  <data name="OpportunityOpenedThisWeek" xml:space="preserve">
+    <value>Opportunity Opened This Week</value>
+    <comment>zb</comment>
+  </data>
+  <data name="PaidInvoices" xml:space="preserve">
+    <value>Paid Invoices</value>
+    <comment>j</comment>
+  </data>
+  <data name="PlannedInvoices" xml:space="preserve">
+    <value>Planned Invoices</value>
+    <comment>k</comment>
+  </data>
+  <data name="SentInvoices" xml:space="preserve">
+    <value>Sent Invoices</value>
+    <comment>l</comment>
+  </data>
+  <data name="WonOpportunity" xml:space="preserve">
+    <value>Won Opportunity</value>
+    <comment>zc</comment>
+  </data>
+  <data name="Effort" xml:space="preserve">
+    <value>Effort</value>
+  </data>
+  <data name="Covert" xml:space="preserve">
+    <value>Covert to {0}</value>
+  </data>
+  <data name="ConvertTitle" xml:space="preserve">
+    <value>Convert</value>
+  </data>
+  <data name="ri_project" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\project.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_projecttask" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\projecttask.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProjectTask" xml:space="preserve">
+    <value>Project Task</value>
+  </data>
+  <data name="overlay_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay_convert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_convert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay_view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_view.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="EditEffort" xml:space="preserve">
+    <value>Edit Effort</value>
+  </data>
+  <data name="ProjectTaskEffort" xml:space="preserve">
+    <value>Project Task Effort</value>
+  </data>
+  <data name="Katrin" xml:space="preserve">
+    <value>Katrin</value>
+  </data>
+  <data name="ProjectIteration" xml:space="preserve">
+    <value>Project Iteration</value>
+  </data>
+  <data name="AddIteration" xml:space="preserve">
+    <value>Add Iteration</value>
+  </data>
+  <data name="DeleteProjectIterationTip" xml:space="preserve">
+    <value>Do you want to delete this Project Iteration?</value>
+  </data>
+  <data name="DeleteProjectTaskTip" xml:space="preserve">
+    <value>Do you want to delete this Project Task?</value>
+  </data>
+  <data name="WeekReport" xml:space="preserve">
+    <value>Week Report</value>
+  </data>
+  <data name="ProjectWeekReport" xml:space="preserve">
+    <value>Week Report</value>
+  </data>
+  <data name="GenerateWeekReport" xml:space="preserve">
+    <value>Generate Report</value>
+  </data>
+  <data name="ColumnCaptionFormat" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="GenerateDayReport" xml:space="preserve">
+    <value>Day Report</value>
+  </data>
+  <data name="colSumActualInput" xml:space="preserve">
+    <value>Sum ActualInput</value>
+  </data>
+  <data name="colSumActualWorkHours" xml:space="preserve">
+    <value>Sum ActualWorkHours</value>
+  </data>
+  <data name="colSumEffort" xml:space="preserve">
+    <value>Sum Effort</value>
+  </data>
+  <data name="colSumOvertime" xml:space="preserve">
+    <value>Sum Overtime</value>
+  </data>
+  <data name="colSumQuoteWorkHours" xml:space="preserve">
+    <value>Sum QuoteWorkHours</value>
+  </data>
+  <data name="colSumRemainderTime" xml:space="preserve">
+    <value>Sum RemainderTime</value>
+  </data>
+  <data name="AcceptanceTasks" xml:space="preserve">
+    <value>Acceptance Tasks</value>
+  </data>
+  <data name="AllMyProjects" xml:space="preserve">
+    <value>All My Projects</value>
+  </data>
+  <data name="AllMyTasks" xml:space="preserve">
+    <value>All My Tasks</value>
+  </data>
+  <data name="AllMyWeekReports" xml:space="preserve">
+    <value>All My Week Reports</value>
+  </data>
+  <data name="CompletedProjects" xml:space="preserve">
+    <value>Completed Projects</value>
+  </data>
+  <data name="CompletedTasks" xml:space="preserve">
+    <value>Completed Tasks</value>
+  </data>
+  <data name="InProgressProjects" xml:space="preserve">
+    <value>In Progress Projects</value>
+  </data>
+  <data name="InProgressTasks" xml:space="preserve">
+    <value>In Progress Tasks</value>
+  </data>
+  <data name="NotStartedProjects" xml:space="preserve">
+    <value>Not Started Projects</value>
+  </data>
+  <data name="NotStartedTasks" xml:space="preserve">
+    <value>Not Started Tasks</value>
+  </data>
+  <data name="colEvaluateExactlyRate" xml:space="preserve">
+    <value>Evaluate Exactly Rate</value>
+  </data>
+  <data name="colInputEffortRate" xml:space="preserve">
+    <value>Input Effort Rate</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>Send Email</value>
+  </data>
+  <data name="EditTaskEffort" xml:space="preserve">
+    <value>Edit Task Effort</value>
+  </data>
+  <data name="NewProjectTaskEffort" xml:space="preserve">
+    <value>New Project Task Effort</value>
+  </data>
+  <data name="Diagram" xml:space="preserve">
+    <value>Diagram</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="CopyAndNew" xml:space="preserve">
+    <value>Copy&amp;&amp;New</value>
+  </data>
+  <data name="ReportTool" xml:space="preserve">
+    <value>Report Tool</value>
+  </data>
+  <data name="AddVersion" xml:space="preserve">
+    <value>Add Version</value>
+  </data>
+  <data name="Attendance" xml:space="preserve">
+    <value>Attendance</value>
+  </data>
+  <data name="ProjectVersion" xml:space="preserve">
+    <value>ProjectVersion</value>
+  </data>
+  <data name="TheAttendanceInLastMonth" xml:space="preserve">
+    <value>The Attendance In Last Month</value>
+  </data>
+  <data name="TheAttendanceInThisMonth" xml:space="preserve">
+    <value>The Attendance In This Month</value>
+  </data>
+  <data name="TheAttendanceInThisYear" xml:space="preserve">
+    <value>The Attendance In This Year</value>
+  </data>
+  <data name="TheRecentActiveContacts" xml:space="preserve">
+    <value>The Recent Active Contacts</value>
+  </data>
+  <data name="TheRecentActiveCustomers" xml:space="preserve">
+    <value>The Recent Active Customers</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status      </value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="DeleteNotification" xml:space="preserve">
+    <value>Delete Notification</value>
+  </data>
+  <data name="notificationb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\notification.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeleteProjectVersionTip" xml:space="preserve">
+    <value>Do you want to delete this Project Version?</value>
+  </data>
+  <data name="SendSysMessage" xml:space="preserve">
+    <value>Send Message</value>
+  </data>
+  <data name="sendsysmsg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SendSysMsg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

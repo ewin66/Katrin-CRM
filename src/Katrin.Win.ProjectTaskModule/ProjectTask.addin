@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.ProjectTaskModule.dll">
+      <ConditionEvaluator name="ProjectTaskEnabledConditionEvaluator"
+                          class="Katrin.Win.ProjectTaskModule.ConditionEvaluators.EnabledConditionEvaluator"/>
+    </Import>
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+
+  <!--ProjectTask-->
+  <Path name="/ProjectTask">
+    <Path id ="Commands">
+      <Path id="MenuCommand">
+        <MenuItem id ="DeleteProjectTask" source ="Custom" type = "Item" label = "${res:DeleteProjectTask}"
+                    imageName="delete" builderid ="BarButtonItemBuilder"
+                    class ="Katrin.Win.ProjectTaskModule.Commands.DeleteCommand"
+                    controllerId ="ProjectTaskList" />
+        <MenuItem id ="EditProjectTask" source ="Custom" type = "Item" label = "${res:EditProjectTask}"
+                  imageName="edit" builderid ="BarButtonItemBuilder"
+                  class ="Katrin.Win.ProjectTaskModule.Commands.EditCommand"
+                  controllerId ="ProjectTaskList" />
+      </Path>
+      <Path id="RibbonCommand">
+        <Condition name = "CheckConditionEvaluator" affect="Down" viewName="ProjectTask">
+          <MenuItem id = "ShowProjectTaskInList" source ="Custom" type = "Item"
+                    label = "${res:ProjectTask}" imageName="ProjectTask"
+                    ButtonStyle="Check"
+                    class ="Katrin.Win.ProjectTaskModule.Commands.ShowProjectTaskCommand"
+                    builderid ="BarButtonItemBuilder"/>
+        </Condition>
+        <MenuItem id = "AddProjectTaskInList" source ="Custom" type = "Item"
+                  label = "${res:AddTask}" imageName="ProjectTask"
+                  overlay="overlay_add"
+                  class ="Katrin.Win.ProjectTaskModule.Commands.AddProjectTaskCommand"
+                  builderid ="BarButtonItemBuilder" />
+      </Path>
+    </Path>
+    <Path id = "Show">
+      <MenuItem id = "ShowProjectTaskInList" type = "Item" cmdId="ShowProjectTaskInList"/>
+    </Path>
+    <Path id = "Add">
+      <MenuItem id = "AddProjectTaskInList" type = "Item" cmdId="AddProjectTaskInList"/>
+    </Path>
+    <Path id="List">
+      <Path id = "DockPanels">
+        <View id="DefaultListView" MainView="true" controller="ProjectTaskList" guid="{8F538FD9-2A3F-4C62-93DC-0059ED5928B4}"></View>
+        <View id="DefaultTaskFilterView" controller="BaseControllerList" Dock="Top" guid="{BAC38FD9-2A3F-4C62-93DC-0059ED5928B4}"></View>
+        <DockPanel id="NoteList" ViewType="Layout" width="400" controller="NoteList" label="Note" guid="{6C859D2F-D9CA-4FDE-8048-C05BE4499E4E}"></DockPanel>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/List/Commands"/>
+        <Include id = "FormatCommand" path = "/Format/Commands" />
+        <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude">
+          <MenuItem id = "EditEffort" source ="Custom" type = "Item" label = "${res:EditEffort}"
+                    imageName="EditEffort" builderid ="BarButtonItemBuilder"
+                    class ="Katrin.Win.ProjectTaskModule.Commands.EditEffortCommand" />
+          <MenuItem id = "NewProjectTaskEffort" source ="Custom" type = "Item"
+                    label = "${res:NewProjectTaskEffort}" imageName="NewProjectTaskEffort"
+                    overlay="overlay_add" builderid ="BarButtonItemBuilder"
+                    class ="Katrin.Win.ProjectTaskModule.Commands.BatchEffortCommand" />
+          <MenuItem id = "GenerateDayReport" source ="Custom" type = "Item"
+                    label = "${res:GenerateDayReport}" imageName="GenerateDayReport"
+                    builderid ="BarButtonItemBuilder"
+                    class ="Katrin.Win.ProjectTaskModule.Commands.DayReportCommand" />
+          <Condition name = "EnabledConditionEvaluator" affect="Enabled" action="Disable">
+            <MenuItem id = "EditTaskEffort" source ="Custom" type = "Item"
+                      label = "${res:EditTaskEffort}" imageName="EditEffort"
+                      overlay="overlay_edit" builderid ="BarButtonItemBuilder"
+                      class ="Katrin.Win.ProjectTaskModule.Commands.AddEffortCommand" />
+            <MenuItem id = "SplitProjectTask" source ="Custom" type = "Item"
+                      label = "${res:SplitProjectTask}" imageName="SplitProjectTask"
+                      builderid ="BarButtonItemBuilder"
+                      class ="Katrin.Win.ProjectTaskModule.Commands.SplitProjectTaskCommand" />
+            <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+            <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+            <MenuItem id ="GiveTaskToMemberGroup"   source ="RibbonDynamicGroup" groupName ="GiveTaskToMemberGroup"
+                      label ="${res:GiveTaskToMember}" class ="Katrin.Win.ProjectTaskModule.Commands.AddMemberMenuCommand"/>
+            <MenuItem id ="MoveTaskToIteration"   source ="RibbonDynamicGroup" groupName ="MoveTaskToIteration"
+                       label ="${res:GiveTaskToIteration}" class ="Katrin.Win.ProjectTaskModule.Commands.AddIterationMenuCommand"/>
+            <Include id = "HistoryCommand" path = "/History/Commands/List" />
+            <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+          </Condition>
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+       
+      </Path>
+      <Path id="CommandOverrides">
+        <MenuItem id = "AddProjectTask" cmdId ="Add" class ="Katrin.Win.ProjectTaskModule.Commands.AddProjectTaskInTaskManageCommand"/>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "Base" path = "/List/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" builderid ="RibbonPageGroupBuilder">
+            <MenuItem id = "EditEffort" type = "Item" cmdId="EditEffort" />
+            <Include id = "ShowNote" path = "/NoteView/Show"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/ShowWindow"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" builderid ="RibbonPageGroupBuilder">
+            <MenuItem id = "EditTaskEffort" type = "Item" cmdId="EditTaskEffort" />
+            <MenuItem id = "NewProjectTaskEffort" type = "Item" cmdId="NewProjectTaskEffort"/>
+            <MenuItem id = "SplitProjectTask" type = "Item" cmdId="SplitProjectTask"/>
+            <MenuItem id = "GenerateDayReport" type = "Item" cmdId="GenerateDayReport" />
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+          </MenuItem>
+          <RelatedDoozer id="Related" entityName="ProjectTask"></RelatedDoozer>
+          <CovertDoozer id="Convert" entityName="ProjectTask"></CovertDoozer>
+          <Include id = "FilterGroup" path = "/FilterView/FilterGroup"/>
+        </MenuItem>
+        <MenuItem id = "Appearance" type = "Page" label = "${res:ViewPageCaption}" builderid ="RibbonPageBuilder">
+          <Include id = "Format" path = "/FormatView/Format"/>
+        </MenuItem>
+      </Path>
+    
+    </Path>
+    <Path id="Detail">
+      <Path id = "DockPanels">
+        <DockPanel id="NoteList" dock="Fill" lazy="true" controller="NoteList"></DockPanel>
+        <DockPanel id="History" dock="Fill" lazy="true" controller="HistoryList"></DockPanel>
+        <View id="DefaultDetailView" controller="ProjectTaskDetail"></View>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/Detail/Commands"/>
+        <Condition name = "DetailEnabledConditionEvaluator" affect="Enabled" action="Disable">
+          <Include id = "HistoryCommand" path = "/History/Commands/Detail" />
+          <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+          <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+          <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder" mergeOrder="1">
+          <Include id = "Base" path = "/Detail/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" OrderNumber="1" builderid ="RibbonPageGroupBuilder">
+            <Include id = "Base" path = "/Detail/Ribbon/Show" />
+            <Include id = "ShowNote" path = "/NoteView/Activate"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/Show"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" OrderNumber="2" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+          </MenuItem>
+          <RelatedDoozer id="Related" entityName="ProjectTask"></RelatedDoozer>
+          <CovertDoozer id="Convert" entityName="ProjectTask"></CovertDoozer>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id ="ContextMenu">
+      <!--MenuItem default type is normal.-->
+      <MenuItem id = "ProjectTaskListViewMenu" viewid = "DefaultListView" module ="ProjectTask">
+        <MenuItem id ="Edit" cmdId ="Edit" />
+        <MenuItem id ="View" cmdId ="View"/>
+        <MenuItem id ="Delete" cmdId ="Delete"/>
+        <MenuItem id ="EditTaskEffort" cmdId ="EditTaskEffort" beginGroup ="true"/>
+        <MenuItem id ="SplitProjectTask" cmdId ="SplitProjectTask"/>
+        <MenuItem id ="GiveTaskToMemberGroup" cmdId ="GiveTaskToMemberGroup"  type ="dynamicGroup"/>
+        <MenuItem id ="MoveTaskToIteration" cmdId ="MoveTaskToIteration"  type ="dynamicGroup"/>
+        <MenuItem id ="AddNote" cmdId ="AddNote"/>
+        <MenuItem id ="Refresh" cmdId ="Refresh" beginGroup ="true"/>
+      </MenuItem>
+      <MenuItem id = "ProjectTaskNoteViewMenu" viewid = "NoteList" module ="ProjectTask">
+        <MenuItem id ="EditNote" cmdId ="EditNote"/>
+        <MenuItem id ="DeleteNote" cmdId ="DeleteNote"/>
+      </MenuItem>
+    </Path>
+  </Path>
+
+
+  <!--Split Project Task-->
+  <Path name="/SplitProjectTask">
+    <Path id="Detail">
+      <Path id = "DockPanels">
+        <View id="DefaultDetailView" controller="SplitProjectTaskDetail"></View>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/Detail/Commands"/>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder" mergeOrder="1">
+          <MenuItem id = "General" type = "Group" label = "${res:General}" OrderNumber="0" builderid ="RibbonPageGroupBuilder">
+            <MenuItem id = "SaveAndClose" type = "Item" cmdId="SaveAndClose" />
+          </MenuItem>
+        </MenuItem>
+      </Path>
+    </Path>
+  </Path>
+  
+  <!--ProjectTaskChart-->
+  <Path name="/ProjectTaskChart">
+    <Path id="List">
+      <Path id = "DockPanels">
+        <View id="DefaultProjectTaskChartView"  controller="ProjectTaskChartList" guid="{963AD6A9-8E00-4F15-A2FD-67E8121E8FD6}"></View>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "FilterGroup" path = "/FilterView/FilterGroup"/>
+        </MenuItem>
+      </Path>
+    </Path>
+  </Path>
+
+  <!--EditEffort-->
+  <Path name="/EditEffort">
+    <Path id="Detail">
+      <Path id = "DockPanels">
+        <View id="DefaultDetailView" controller="EditEffortDetail"></View>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/Detail/Commands"/>
+        <MenuItem id = "RefreshEditEffort" source ="Custom" type = "Item"
+                      label = "${res:Refresh}" imageName="Refresh"
+                      builderid ="BarButtonItemBuilder"
+                      class ="Katrin.Win.ProjectTaskModule.Commands.RefreshEditEffort" />
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder" mergeOrder="1">
+          <MenuItem id = "General" type = "Group" label = "${res:General}" OrderNumber="0" builderid ="RibbonPageGroupBuilder">
+            <MenuItem id = "SaveAndClose" type = "Item" cmdId="SaveAndClose" />
+            <MenuItem id = "Save" type = "Item" cmdId="Save" />
+            <MenuItem id = "EditMode" type = "Item" cmdId="EditMode" />
+            <MenuItem id = "RefreshEditEffort" type = "Item" cmdId="RefreshEditEffort" />
+          </MenuItem>
+        </MenuItem>
+      </Path>
+    </Path>
+  </Path>
+
+  <!--ProjectTaskEffort-->
+  <Path name="/ProjectTaskEffort">
+    <Path id="Detail">
+      <Path id = "DockPanels">
+        <View id="DefaultDetailView" controller="ProjectTaskEffortDetail"></View>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/Detail/Commands"/>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder" mergeOrder="1">
+          <MenuItem id = "General" type = "Group" label = "${res:General}" OrderNumber="0" builderid ="RibbonPageGroupBuilder">
+            <MenuItem id = "SaveAndClose" type = "Item" cmdId="SaveAndClose" />
+            <MenuItem id = "Save" type = "Item" cmdId="Save" />
+            <MenuItem id = "EditMode" type = "Item" cmdId="EditMode" />
+          </MenuItem>
+        </MenuItem>
+      </Path>
+    </Path>
+  </Path>
+
+  <!--NewProjectTaskEffort-->
+  <Path name="/NewProjectTaskEffort">
+    <Path id="Detail">
+      <Path id = "DockPanels">
+        <View id="DefaultDetailView" controller="NewProjectTaskEffortDetail"></View>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/Detail/Commands"/>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder" mergeOrder="1">
+          <MenuItem id = "General" type = "Group" label = "${res:General}" OrderNumber="0" builderid ="RibbonPageGroupBuilder">
+            <MenuItem id = "SaveAndClose" type = "Item" cmdId="SaveAndClose" />
+            <MenuItem id = "Save" type = "Item" cmdId="Save" />
+            <MenuItem id = "EditMode" type = "Item" cmdId="EditMode" />
+          </MenuItem>
+        </MenuItem>
+      </Path>
+    </Path>
+  </Path>
+
+  <Path name = "/Workbench/Navigation/ProjectManagement">
+    <NavItem id = "ProjectTask"
+          type = "Item"
+          icon="ProjectTask"
+          label = "${res:ProjectTask}"
+          class ="Katrin.Win.ProjectTaskModule.OpenProjectTaskListCommand"
+          builderid ="NavBarItemBuilder"/>
+    <NavItem id = "ProjectTaskChart"
+         type = "Item"
+         icon="projecttaskchart"
+         label = "${res:ProjectTaskChart}"
+         class ="Katrin.Win.ProjectTaskModule.OpenTaskChartCommand"
+        builderid ="NavBarItemBuilder"/>
+  </Path>
+
+
+  <Path name ="/Controllers">
+    <Controller id = "ProjectTask" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="ProjectTask"/>
+    <Controller id = "SplitProjectTask" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="SplitProjectTask"/>
+    <Controller id = "ProjectTaskChart" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="ProjectTaskChart"/>
+    <Controller id = "EditEffort" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="EditEffort"/>
+    <Controller id = "ProjectTaskEffort" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="ProjectTaskEffort"/>
+    <Controller id = "NewProjectTaskEffort" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="NewProjectTaskEffort"/>
+    <Controller id = "ProjectTaskList" class = "Katrin.Win.ProjectTaskModule.ProjectTaskController"/>
+    <Controller id = "BaseControllerList" class = "Katrin.Win.MainModule.Views.ProjectTask.BaseController"/>
+    <Controller id = "ProjectTaskDetail" class = "Katrin.Win.ProjectTaskModule.Detail.ProjectTaskDetailController"/>
+    <Controller id = "EditEffortDetail" class = "Katrin.Win.ProjectTaskModule.EditEffort.ManageEffortDetailController"/>
+    <Controller id = "ProjectTaskEffortDetail" class = "Katrin.Win.ProjectTaskModule.AddEffort.TaskEffortDetailController"/>
+    <Controller id = "NewProjectTaskEffortDetail" class = "Katrin.Win.ProjectTaskModule.BatchEffort.NewTaskEffortDetailController"/>
+    <Controller id = "ProjectTaskChartList" class = "Katrin.Win.ProjectTaskModule.Chart.ProjectTaskChartController"/>
+    <Controller id = "SplitProjectTaskDetail" class = "Katrin.Win.ProjectTaskModule.Split.SplitProjectTaskController"/>
+  </Path>
+
+
+  <Path name ="/Views">
+    <View id = "DefaultEditEffortDetailView" class = "Katrin.Win.ProjectTaskModule.EditEffort.ManageEffortDetailView"/>
+    <View id = "DefaultProjectTaskDetailView" class = "Katrin.Win.ProjectTaskModule.Detail.ProjectTaskDetailView"/>
+    <View id = "DefaultProjectTaskEffortDetailView" class = "Katrin.Win.ProjectTaskModule.AddEffort.TaskEffortDetailView"/>
+    <View id = "DefaultNewProjectTaskEffortDetailView" class = "Katrin.Win.ProjectTaskModule.BatchEffort.NewTaskEffortDetailView"/>
+    <View id = "DefaultProjectTaskChartView" class = "Katrin.Win.ProjectTaskModule.Chart.ProjectTaskChartView"/>
+    <View id = "DefaultSplitProjectTaskDetailView" class = "Katrin.Win.ProjectTaskModule.Split.SplitProjectTaskView"/>
+    <View id = "DefaultTaskFilterView" class = "Katrin.Win.ProjectTaskModule.Common.TaskFilterControl"/>
+  </Path>
+</AddIn>

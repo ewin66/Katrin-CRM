@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <FilterName key="AllMyWeekReports">All My WeekReports</FilterName>
+  <property name="ActiveFilterString">[CreatedBy_p_FullName] = '$UserName$'</property>
+  <order>1</order>
+</Filter>

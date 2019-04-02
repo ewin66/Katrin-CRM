@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <FilterName key="MyOpenOpportunities">My Open Opportunities</FilterName>
+  <property name="ActiveFilterString">([Owner_p_FullName] = '$UserName$' Or [Technician_p_FullName] = '$UserName$') And [StatusCode] = 1</property>
+  <order>2</order>
+</Filter>

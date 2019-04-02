@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.HistoryModule.dll" />
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+
+  <!-- history ribbon-->
+  <Path name = "/HistoryViews/Show">
+    <MenuItem id = "History" type = "Item" cmdId="ShowHistory" />
+  </Path>
+  <Path name = "/HistoryViews/ShowWindow">
+    <MenuItem id = "History" type = "Item" cmdId="ShowHistoryWindow" />
+  </Path>
+
+
+  <Path name = "/History/List/DockPanels">
+    <View id = "DefaultListView" controller="HistoryList" guid="{B4D95A04-0EEE-44E5-9F14-A739400B9975}"/>
+  </Path>
+
+  <Path name ="/Controllers">
+    <Controller id = "History" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="History"/>
+    <Controller id = "HistoryList" class = "Katrin.Win.HistoryModule.HistoryController"/>
+    <Controller id = "Audit" class = "Katrin.Win.HistoryModule.HistoryController"/>
+  </Path>
+
+  <Path name ="/History/Commands">
+    <Path id="List">
+      <MenuItem id = "ShowHistoryWindow" source ="Custom" type = "Item"
+                label = "${res:History}" imageName="history"
+                class ="Katrin.Win.HistoryModule.Commands.ShowHistoryCommand"
+                builderid ="BarButtonItemBuilder" />
+    </Path>
+    <Path id="Detail">
+      <Condition name = "CheckConditionEvaluator" affect="Down" viewName="History">
+        <MenuItem id = "ShowHistory" type = "Item" source ="Custom"
+                  label = "${res:History}" imageName="history" ButtonStyle="Check"
+                  class ="Katrin.Win.HistoryModule.Commands.ShowHistoryCommand"
+                  builderid ="BarButtonItemBuilder" />
+      </Condition>
+    </Path>
+  </Path>
+</AddIn>

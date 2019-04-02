@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="Generator" content="Microsoft Word 12 (filtered medium)">
+    <title>DailyReport</title>
+    <style type="text/css">
+        h1
+        {
+            margin: 0cm;
+            text-align: justify;
+            font-family: "Calibri" , "sans-serif";
+            font-weight: normal;
+            margin-top: 1cm;
+            margin-right: 0cm;
+            margin-bottom: 5.0pt;
+            margin-left: 0cm;
+            line-height: 110%;
+            background: #F2DBDB;
+            font-size: 11.0pt;
+            color: #622423;
+        }
+        body.Show
+        {
+            margin: 0px 0px 0px  0px;
+            margin-bottom: .0001pt;
+            font-size: 11.0pt;
+            font-family: "Calibri" , "sans-serif";
+        }
+        a:link
+        {
+            mso-style-priority: 99;
+            color: blue;
+            text-decoration: underline;
+        }
+        a:visited
+        {
+            mso-style-priority: 99;
+            color: purple;
+            text-decoration: underline;
+        }
+        tr.FirstLine
+        {
+            line-height: 150%;
+            font-weight:bold;
+            border-top: solid #9BBB59 1.0pt;
+            background: #9BBB59;
+            vertical-align:top;
+            padding: 0cm 5.4pt 0cm 5.4pt;
+        }
+        tr.NormalLine
+        {
+            line-height: 150%;
+            padding: 0cm 5.4pt 0cm 5.4pt;
+            font-size: 11.0pt;
+            font-family: "Calibri" , "sans-serif";
+        }
+        td.FirstLeft
+        {
+            border-left: solid #9BBB59 1.0pt;
+            border-bottom: solid #9BBB59 1.0pt;
+            border-right: none;
+            text-align: Left;
+            vertical-align:top;
+        }
+        td.Right
+        {
+            border-left: none;
+            border-bottom: solid #9BBB59 1.0pt;
+            border-right: solid #9BBB59 1.0pt;
+            text-align: center;
+            vertical-align: top;
+        }
+        td.LineMid
+        {
+            border-left: none;
+            border-bottom: solid #9BBB59 1.0pt;
+            border-right: none;
+            text-align: center;
+            vertical-align: top;
+        }
+        td.Left
+        {
+            border-left: solid #9BBB59 1.0pt;
+            border-bottom: solid #9BBB59 1.0pt;
+            border-right: none;
+            text-align: left;
+            vertical-align: top;
+        }
+        table.Display
+        {
+            width: 100.0%;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body lang="EN-US" class="Show">
+    <p>
+        Hi $CustomerName$,
+    </p>
+    <p>
+        Wish you a good day</p>
+    <p>
+        Following is my daily work report, please take a look and make your comments.Thank
+        you!</p>
+    <h1>
+        <i><b>A–Week's Tasks</b></i></h1>
+    <table class="Display">
+        <tr class="FirstLine">
+            <td width="30.42%" class="FirstLeft">
+                Tasks
+            </td>
+            <td width="8.38%" class="LineMid">
+                Start Date
+            </td>
+            <td width="8.38%" class="LineMid">
+                End Date
+            </td>
+            <td width="10.96%" class="LineMid">
+                Estimate progress
+            </td>
+            <td width="10.96%" class="LineMid">
+                Actual progress
+            </td>
+            <td width="30.9%" class="Right">
+                Description
+            </td>
+        </tr>
+        $ThisWeekTask$
+    </table>
+    <h1>
+        <i><b>B–Summary</b></i></h1>
+    None
+    <h1>
+        <i><b>C–Today's Tasks</b></i></h1>
+    <table class="Display">
+        <tr class="FirstLine">
+            <td width="20%" class="FirstLeft">
+                Tasks
+            </td>
+            <td class="LineMid" style="width: 14%">
+                Estimate work amount (hrs)
+            </td>
+            <td class="LineMid" style="width: 14%">
+                Actually work amount (hrs)
+            </td>
+            <td width="13%" class="LineMid">
+                Status
+            </td>
+            <td width="37%" class="Right">
+                Description
+            </td>
+        </tr>
+       $TodayTask$
+    </table>
+    <h1>
+        <i><b>D–Next Plan</b></i></h1>
+    <table class="Display">
+        <tr class="FirstLine">
+            <td width="31%" class="Left">
+                Tasks
+            </td>
+            <td width="8%" class="LineMid">
+                Date
+            </td>
+            <td width="16%" class="LineMid">
+                Estimate work amount (hours)
+            </td>
+            <td width="29%" class="Right">
+                Description
+            </td>
+        </tr>
+       $NextDayTask$
+    </table>
+    <p>
+        Please do not hesitate to let me know if you have any question.</p>
+    <p>
+        Best Regards,</p>
+    <p>
+        $ReportPeople$</p>
+<!--    <p>
+        Project Manager | Nova Software Inc.</p>
+    <p>
+        T: (+86 23) 68795169 | Skype: chenjunno18 | E-mail: <a href="mailto:chenj@shinetechchina.com">
+            chenj@shinetechchina.com</a></p>
+    <p>
+        <a href="http://www.novasoftware.com">www.novasoftware.com</a> | <b>For your success!</b></p>-->
+</body>
+</html>

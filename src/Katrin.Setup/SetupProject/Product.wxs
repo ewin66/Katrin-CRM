@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+	   xmlns:iis="http://schemas.microsoft.com/wix/IIsExtension"
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension"
+     xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension"
+     xmlns:sql='http://schemas.microsoft.com/wix/SqlExtension'>
+  
+	<Product Id="*" Name="Katrin Server" Language="1033" Version="1.0.0" Manufacturer="Novasoftware" UpgradeCode="e29eb29b-393b-4a49-a1c4-75026d7644bd">
+		<Package Id="*" InstallerVersion="200" Compressed="yes" />
+
+    <Media Id="1" Cabinet="KatrinServer.cab" EmbedCab="yes" />
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLLOCATION" Name="Katrin Server">          
+         
+         </Directory>
+      </Directory>
+    </Directory>
+    
+    <Feature Id="ProductFeature" Title="KatrinServer" Level="1">
+      <ComponentGroupRef Id="WebIssConfiguration" />
+      <ComponentRef Id="WebConfigCmp" />
+      <ComponentRef Id="cmp33BC14AD01C031D8969C131490758FDA" />
+      <ComponentRef Id="cmp93645FCD1A13835D0DFCD156CF2C6C64" />
+      <ComponentRef Id="cmp1381A3B7B4DDEDFAA255AFBE6E04B293" />
+      <ComponentRef Id="cmp6AE9C47412B7EC2C8681DA260ADFF50E" />
+      <ComponentRef Id="cmpC649BCDACCB44888801CFA771296C9F1" />
+      <ComponentRef Id="cmpFED9CE4C040C6D017106CB6B92C2F157" />
+      <!--<ComponentRef Id="cmpFB33635B7D7AF5906B5DFB25D7E4F343" />-->
+      <ComponentRef Id="cmpB0D320A1850AE9658627D09B201AED95" />
+      <ComponentRef Id="cmp031D1295C19D374434C7C3F1871A0999" />
+      <ComponentRef Id="cmpA6810144A1E819F7752900C63B2486AD" />
+      <ComponentRef Id="cmp7D7C829DFB1D500989355B659C806318" />
+      <ComponentRef Id="cmp5ACDA042A796FF8C91FA657F800BFD3F" />
+      <ComponentRef Id="cmp96094E6B73922043B43FC7A69E3CF164" />
+      <ComponentRef Id="cmp83C369C8C5D3167884310FA2146D5BAE" />
+      <ComponentRef Id="cmp3D8F7A091348223A4D8D6B969300CBE5" />
+      <ComponentRef Id="cmp57930F201576273CC8B7E952BF6C4DC1" />
+      <ComponentRef Id="cmp3B9BFE1BDD074BE1F87A20D55B4D3C2C" />
+      <ComponentRef Id="cmpE16972F5B4CEDB0762A19AFD684EEACE" />
+      <ComponentRef Id="cmp1A97EE1DAB80FED3B1E1921FA0C66E33" />
+      <ComponentRef Id="cmpEBD1ED6200BBC9CE908DE00C1D7A1E81" />
+      <ComponentRef Id="cmp2D78D26EF9169634637A672B7DC33ADA" />
+      <ComponentRef Id="cmp8F019C504C373F633688D0EC79A53B6A" />
+      <ComponentRef Id="cmp52337BCED74059F30783761F19361AD0" />
+      <ComponentRef Id="cmp5038791728E4BF15E4FB1DB260B41B95" />
+      <ComponentRef Id="cmp78DF22C75BEA9438182FBB8F77EEB9F0" />
+      <ComponentRef Id="cmpE65CB92B9EC39DD90CEB72B8EEE53D95" />
+      <ComponentRef Id="cmp86BAEA2519B7B3B37526D4928515FBAC" />
+      <ComponentRef Id="cmp65377008FF2AAD3A1823C903CA5C1E3C" />
+      <ComponentRef Id="cmp34361F755976A452D1509FFD805C503B" />
+      <ComponentRef Id="cmp3DA5138D935DB224905117281472484D" />
+      <ComponentRef Id="cmp728E1153D6CE1E1C01095415BABF3B8B" />
+      <ComponentRef Id="cmpFDF331B9226E8A31D8922444D39325CA" />
+      <ComponentRef Id="cmpB26127328E611120ECA34A3EF2E5824D" />
+      <ComponentRef Id="cmp22E2C9E57627630AD1AB49E7E4AD0D3D" />
+      <ComponentRef Id="cmp47100E43A497059020D87FFE5B619F48" />
+      <ComponentRef Id="cmp3973B1ED5BAA40AA27FBD9E32F283796" />
+      <ComponentRef Id="cmp000E1669D83EB25985EB421F06A0DC32" />
+      <ComponentRef Id="cmp9EBAF5DB11BCFD2792F9949627E6C7F5" />
+      <ComponentRef Id="cmp500D9462A4918902752F26ACD655FE7E" />
+      <ComponentRef Id="cmpFD13FE145F822B3137023789AD85B6F5" />
+      <ComponentRef Id="cmp6C32D8F544290FA476A06401B677B1D1" />
+      <ComponentRef Id="cmpABCBD950CF4012D3994719817A6D63C3" />
+      <ComponentRef Id="cmpBE3A967FE3BA9E6D139A4541D716DB81" />
+      <ComponentRef Id="cmpD1CD92850BD113605296FEAED1F59123" />
+      <ComponentRef Id="cmpF137D9C570732ACB07282195EFF34F20" />
+      <ComponentRef Id="cmpB693DF3260DCF9ADCF372AFF1C7CB507" />
+      <ComponentRef Id="cmp3D5C319E5F7FBB718505E2CCE4297BE3" />
+      <ComponentRef Id="cmpE6B0F25686DE65A1C745BA033C73F61D" />
+      <ComponentRef Id="cmp7412A96BE7ADB5FC8094B5633783D3D8" />
+      <ComponentRef Id="cmp01ABEE1CA556C797B226F883E3853BC5" />
+      <ComponentRef Id="cmp5DF5D059065719542F3414B874EA3CFA" />
+      <ComponentRef Id="cmp73BF0B2B2D4E0A22B389E7E6B4D4F5F7" />
+      <ComponentRef Id="cmp405E7EDF5836CF3E224FDDFBE5F4F66E" />
+      <ComponentRef Id="cmpB221BC96F5C4EEE764BE5CDAE095CEB6" />
+      <ComponentRef Id="cmp47545B8E638E4F9BEE456AB5A3A6F8A2" />
+      <ComponentRef Id="cmpC8EA6D9DF84D6FF788264CA4E7D24E81" />
+      <ComponentRef Id="cmpBDF11ED18A160889BEEB211D99B068D3" />
+      <ComponentRef Id="cmp94A2CF6796572E28CE1579CCCE3A325C" />
+      <ComponentRef Id="cmpE924C9FBC26DFD47AD7D3D03D26CAA31" />
+      <ComponentRef Id="cmp03E1885C2F95FE42F3792A036FA97A76" />
+      <ComponentRef Id="cmp276990D7FE0FC5F39A1953C34F1D5148" />
+      <ComponentRef Id="cmp380D3F3BDA7EF028B195C32D08C0C2A2" />
+      <ComponentRef Id="cmp84737F5B948586EF14B0496F14786486" />
+      <ComponentRef Id="cmp1B68DA27C910B19BC93A698EB2AB7F9C" />
+      <ComponentRef Id="cmp7E3353636E8406196386F02C6B778C73" />
+      <ComponentRef Id="cmp9C013018757DB97269460948A301B0E5" />
+      <ComponentRef Id="cmp6AEA326CB8BBC2B25AF689BA8C57BDD4" />
+      <ComponentRef Id="cmpED9FBED68BA4BBEED342C6E80B18A9F9" />
+      <ComponentRef Id="cmp2E92298A9017C3E647C901AF88EEEA0E" />
+      <ComponentRef Id="cmp5C4FD47166ACE7CEE4FC485F656065D2" />
+      <ComponentRef Id="cmpA77448F8A0ED56638F9711F7CD55A8D6" />
+      <ComponentRef Id="cmpFC0B25FF8CECC4C5AAEE2383FD8FDE3E" />
+      <ComponentRef Id="cmpB0419B3EEF5277680D0A150BDBD5884E" />
+      <ComponentRef Id="cmpDDB832F49578A5C2F1E3A715BABB0ED2" />
+      <ComponentRef Id="cmp8BA6F5049D24078D166C8E3C102BB87E" />
+      <ComponentRef Id="cmpBC5B9770FA676DB97B84F10FAC027618" />
+    </Feature>
+    <DirectoryRef Id="INSTALLLOCATION">
+      <Component Id="WebConfigCmp" Guid="{CF43AC6F-759C-4EDE-B0BC-63EF24ECE3CB}">
+        <File Id="WebConfigFile" KeyPath="yes" Source="..\Publish\Web.config" Vital="yes" />
+        <util:XmlFile Id="ModifyConnectionString"
+                		 Action="setValue"
+                		 Permanent="yes"
+                		 ElementPath="/configuration/connectionStrings/add[\[]@name='Katrin'[\]]"
+                		 Name="connectionString"
+                		 File="[#WebConfigFile]"
+                		 Value="[CONNECTIONSTRING]"
+                		 SelectionLanguage="XSLPattern"
+                		 Sequence="1" />
+      </Component>
+    </DirectoryRef>
+  
+    <!--Upgrade or check the newer version-->
+    <Upgrade Id='e29eb29b-393b-4a49-a1c4-75026d7644bd'>
+      <UpgradeVersion OnlyDetect='no' Property='PREVIOUSFOUND'
+        Minimum='1.0.0' IncludeMinimum='yes'
+        Maximum='2.0.0' IncludeMaximum='no' />
+      <UpgradeVersion OnlyDetect='yes' Property='NEWERFOUND'
+        Minimum='1.0.0' IncludeMinimum='no' />
+    </Upgrade>
+
+    <CustomAction Id='NoDowngrade' Error='A later version of [ProductName] is already installed.' />
+    <!--End Upgrade or check the newer version-->
+
+    <!--Begin Check Entity Framework (NETFRAMEWORK40CLIENT or NETFRAMEWORK40FULL)-->
+    <PropertyRef Id="NETFRAMEWORK40CLIENT"/>
+    <Condition Message='This setup requires the .NET Framework 4.0 installed.'>
+      <![CDATA[Installed OR NETFRAMEWORK40CLIENT]]>
+    </Condition>
+    <!--End Check Entity Framework-->
+
+    <!--Begin Check to see if IIS is installed. It it's not, error out. -->
+    <Property Id="IIS_MAJOR_VERSION">
+      <RegistrySearch Id="CheckIISVersion"
+                      Root="HKLM"
+                      Key="SOFTWARE\Microsoft\InetStp"
+                      Name="MajorVersion"
+                      Type="raw" />
+    </Property>
+
+    <Condition Message="The IIS must be installed">
+      Installed OR IIS_MAJOR_VERSION
+    </Condition>
+    <!-- Go find the IIS root directory from the registry. On most machines 
+         that defaults to C:\inetpub\wwwroot. This will be the directory we 
+         install into. -->
+    <Property Id="IISROOT">
+      <RegistrySearch Id="IISROOT"
+                      Type="directory"
+                      Root="HKLM"
+                      Key="Software\Microsoft\InetStp"
+                      Name="PathWWWRoot" />
+    </Property>
+    <Condition Message="IIS does not appear to be installed correctly, the root directory is not set.">
+      Installed OR IISROOT
+    </Condition>
+    <!--ENd Check IIS-->
+
+    <!--CustomAction for DBconfig-->
+    <Binary Id='ConnectDBClass' SourceFile='../DBConfigAction/bin/Debug/DBConfigAction.CA.dll' />
+    <Property Id="CONNECTIONSTRING" Value="Data Source=(local);Initial Catalog=master;User Id=sa;Password=sa;" />
+
+    <CustomAction Id='ConnectDB' BinaryKey='ConnectDBClass' DllEntry='ConnectDataBase' />
+    <CustomAction Id='ConnectError' Error='Connection fail' />
+    <!--End CustomAction for DBconfig-->
+
+    <InstallExecuteSequence>
+      <Custom Action='NoDowngrade' After='FindRelatedProducts'>NEWERFOUND</Custom>
+      <RemoveExistingProducts Before="InstallInitialize" />
+      <Custom Action='ConnectDB' After='CostFinalize' />
+      <Custom Action='ConnectError' After='ConnectDB'><![CDATA[CONNECTSUCCESS <> "1" AND NOT Installed]]></Custom>
+    </InstallExecuteSequence>
+    
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLLOCATION" />
+
+    <WixVariable Id="WixUIBannerBmp" Value="../SetupProject/banner.bmp" />
+    <WixVariable Id="WixUIDialogBmp" Value="../SetupProject/bigback.bmp" />
+
+    <UIRef Id="MyWixUI_Mondo" />
+   
+	</Product>
+</Wix>

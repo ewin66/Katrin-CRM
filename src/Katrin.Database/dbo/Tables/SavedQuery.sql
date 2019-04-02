@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[SavedQuery] (
+    [SavedQueryId]          UNIQUEIDENTIFIER NOT NULL,
+    [Name]                  NVARCHAR (200)   NOT NULL,
+    [Description]           NVARCHAR (MAX)   NULL,
+    [QueryType]             INT              NOT NULL,
+    [IsDefault]             BIT              CONSTRAINT [DF_SavedQuery_IsDefault] DEFAULT ((0)) NOT NULL,
+    [ReturnedTypeId]        UNIQUEIDENTIFIER NOT NULL,
+    [IsUserDefined]         BIT              CONSTRAINT [DF_SavedQuery_IsUserDefined] DEFAULT ((1)) NULL,
+    [FetchXml]              NVARCHAR (MAX)   NULL,
+    [IsCustomizable]        BIT              CONSTRAINT [DF_SavedQuery_IsCustomizable] DEFAULT ((1)) NOT NULL,
+    [IsQuickFindQuery]      BIT              CONSTRAINT [DF_SavedQuery_IsQuickFindQuery] DEFAULT ((0)) NOT NULL,
+    [ColumnSetXml]          NVARCHAR (MAX)   NULL,
+    [LayoutXml]             NVARCHAR (MAX)   NULL,
+    [CreatedBy]             UNIQUEIDENTIFIER NULL,
+    [CreatedOn]             DATETIME         NULL,
+    [ModifiedBy]            UNIQUEIDENTIFIER NULL,
+    [ModifiedOn]            DATETIME         NULL,
+    [VersionNumber]         ROWVERSION       NULL,
+    [IsPrivate]             BIT              CONSTRAINT [DF_SavedQuery_IsPrivate] DEFAULT ((0)) NOT NULL,
+    [AdvancedGroupBy]       NVARCHAR (160)   NULL,
+    [ConditionalFormatting] NVARCHAR (MAX)   NULL,
+    [CanBeDeleted]          BIT              CONSTRAINT [DF_SavedQuery_CanBeDeleted] DEFAULT ((1)) NOT NULL,
+    [StatusCode]            INT              NULL,
+    CONSTRAINT [PK_SavedQuery] PRIMARY KEY CLUSTERED ([SavedQueryId] ASC)
+);
+

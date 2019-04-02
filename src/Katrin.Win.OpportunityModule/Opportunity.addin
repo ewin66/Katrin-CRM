@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+    <Import assembly = "Katrin.Win.OpportunityModule.dll">
+      <ConditionEvaluator name="OpEnableConditionEvaluator" class="Katrin.Win.OpportunityModule.OpEnableConditionEvaluator"/>
+      <ConditionEvaluator name="OpVisibilityConditionEvaluator" class="Katrin.Win.OpportunityModule.OpVisibilityConditionEvaluator"/>
+    </Import>
+  </Runtime>
+
+  <Path name="/Opportunity">
+    <Path id="List">
+      <Path id="DockPanels">
+        <View id = "DefaultListView" controller="OpportunityList" guid ="{971DBF8E-2842-4030-9925-7EFF98C407A3}"/>
+        <DockPanel id="NoteList" ViewType="Layout" width="400" controller="NoteList" label="Note"
+                   guid ="{77994BF0-AB5F-4604-897A-47456633DF49}"></DockPanel>
+        <DockPanel id="TimeTrackingList" width="400" controller="TimeTrackingList" label="TimeTracking" DockType="Tab"
+                   DockTo="NoteList"  guid="{C47D0830-49ED-4798-9C32-9658ACB1819D}"/>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/List/Commands"/>
+        <Include id = "FormatCommand" path = "/Format/Commands" />
+        <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude">
+          <Condition name = "EnabledConditionEvaluator" affect="Enabled" action="Disable">
+            <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+            <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+            <Include id = "HistoryCommand" path = "/History/Commands/List" />
+            <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+            <Include id = "TimeTrackingCommand" path = "/TimeTracking/Commands/RibbonCommand" />
+          </Condition>
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+        <Condition name = "TimeTrackingEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "TimeTrackingCommand" path = "/TimeTracking/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "Base" path = "/List/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" builderid ="RibbonPageGroupBuilder">
+            <Include id = "ShowNote" path = "/NoteView/Show"/>
+            <Include id = "ShowTimeTracking" path = "/TimeTrackingView/Show"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/ShowWindow"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+            <Include id = "AddTimeTracking" path = "/TimeTrackingView/Add"/>
+          </MenuItem>
+          <RelatedDoozer id="Related" entityName="Opportunity"></RelatedDoozer>
+          <CovertDoozer id="Convert" entityName="Opportunity"></CovertDoozer>
+          <Include id = "FilterGroup" path = "/FilterView/FilterGroup"/>
+        </MenuItem>
+        <MenuItem id = "Appearance" type = "Page" label = "${res:ViewPageCaption}" builderid ="RibbonPageBuilder">
+          <Include id = "Format" path = "/FormatView/Format"/>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id="Detail">
+      <Path id="DockPanels">
+        <View id = "DefaultDetailView" controller="OpportunityDetail"/>
+        <DockPanel id="NoteList" dock="Fill" lazy="true" controller="NoteList"></DockPanel>
+        <DockPanel id="History" dock="Fill" lazy="true" controller="HistoryList"></DockPanel>
+        <DockPanel id="TimeTrackingList" dock="Fill" lazy="true" controller="TimeTrackingList"></DockPanel>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/Detail/Commands"/>
+        <Condition name = "DetailEnabledConditionEvaluator" affect="Enabled" action="Disable">
+          <Include id = "HistoryCommand" path = "/History/Commands/Detail" />
+          <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+          <Include id = "TimeTrackingCommand" path = "/TimeTracking/Commands/RibbonCommand" />
+          <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+          <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+        </Condition>
+        <Condition name = "OpVisibilityConditionEvaluator" affect="Visibility" type="Won"  action="Exclude">
+          <Condition name = "OpEnableConditionEvaluator" affect="Enabled" type="Won" action="Disable">
+            <MenuItem id = "Won" source ="Custom" type = "Item" label = "${res:Won}"
+                      imageName="setopportunitysuccess" builderid ="BarButtonItemBuilder"
+                      class =" Katrin.Win.OpportunityModule.Commands.WonCommand" />
+          </Condition>
+        </Condition>
+        <Condition name = "OpVisibilityConditionEvaluator" affect="Visibility" type="Fail"  action="Exclude">
+          <Condition name = "OpEnableConditionEvaluator" affect="Enabled" type="Fail" action="Disable">
+            <MenuItem id = "Fail" source ="Custom" type = "Item" label = "${res:Fail}"
+                      imageName="setopportunityfail"  builderid ="BarButtonItemBuilder"
+                      class =" Katrin.Win.OpportunityModule.Commands.FailCommand" />
+          </Condition>
+        </Condition>
+        <Condition name = "OpVisibilityConditionEvaluator" affect="Visibility" type="Recyle"  action="Exclude">
+          <Condition name = "OpEnableConditionEvaluator" affect="Enabled" type="Recyle" action="Disable">
+            <MenuItem id = "Recyle" source ="Custom" type = "Item" label = "${res:Recyle}"
+                      imageName="setopportunityresurrection" builderid ="BarButtonItemBuilder"
+                      class =" Katrin.Win.OpportunityModule.Commands.RecyleCommand" />
+          </Condition>
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+        <Condition name = "TimeTrackingEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "TimeTrackingCommand" path = "/TimeTracking/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder" mergeOrder="1">
+          <MenuItem id = "General" type = "Group" label = "${res:General}" OrderNumber="0" builderid ="RibbonPageGroupBuilder">
+            <Include id = "Base" path = "/Detail/Ribbon/Home/General" />
+            <MenuItem id = "Won" type = "Item" cmdId="Won" />
+            <MenuItem id = "Fail" type = "Item" cmdId="Fail" />
+            <MenuItem id = "Recyle" type = "Item" cmdId="Recyle" />
+          </MenuItem>
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" OrderNumber="1" builderid ="RibbonPageGroupBuilder">
+            <Include id = "Base" path = "/Detail/Ribbon/Show" />
+            <Include id = "ShowNote" path = "/NoteView/Activate"/>
+            <Include id = "ShowTimeTracking" path = "/TimeTrackingView/Activate"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/Show"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" OrderNumber="2" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+            <Include id = "AddTimeTracking" path = "/TimeTrackingView/Add"/>
+          </MenuItem>
+          <RelatedDoozer id="Related" entityName="Opportunity"></RelatedDoozer>
+          <CovertDoozer id="Convert" entityName="Opportunity"></CovertDoozer>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id="ContextMenu">
+      <!--MenuItem default type is normal.-->
+      <MenuItem id = "OpportunityListViewMenu" viewid = "DefaultListView" module ="Opportunity">
+        <MenuItem id ="Edit" cmdId ="Edit" />
+        <MenuItem id ="View" cmdId ="View"/>
+        <MenuItem id ="Delete" cmdId ="Delete"/>
+        <MenuItem id ="AddNote" cmdId ="AddNote" beginGroup ="true"/>
+        <MenuItem id ="AddTimeTracking" cmdId ="AddTimeTracking"/>
+        <MenuItem id ="Refresh" cmdId ="Refresh" beginGroup ="true"/>
+        <MenuItem id ="RelatedGroup" cmdId ="RelatedGroup" beginGroup ="true"  type ="dynamicGroup" label ="${res:Related}"/>
+        <MenuItem id ="ConvertGroup" cmdId ="ConvertGroup" beginGroup ="true"  type ="dynamicGroup" label ="${res:ConvertTitle}"/>
+      </MenuItem>
+      <MenuItem id = "OpportunityNoteViewMenu" viewid = "NoteList" module ="Opportunity">
+        <MenuItem id ="EditNote" cmdId ="EditNote"/>
+        <MenuItem id ="DeleteNote" cmdId ="DeleteNote"/>
+      </MenuItem>
+      <MenuItem id = "OpportunityTimeTrackingViewMenu" viewid = "TimeTrackingList" module ="Opportunity">
+        <MenuItem id ="EditTimeTracking" cmdId ="EditTimeTracking"/>
+        <MenuItem id ="DeleteTimeTracking" cmdId ="DeleteTimeTracking"/>
+      </MenuItem>
+    </Path>
+  </Path>
+
+  <Path name = "/Workbench/Navigation/Sales">
+    <NavItem id = "Opportunity"
+		          type = "Item"
+		          label = "${res:Opportunity}"
+              icon ="Opportunity"
+              class ="Katrin.Win.OpportunityModule.OpenOpportunityListCommand"
+              builderid ="NavBarItemBuilder"
+              insertafter="Lead"
+             />
+  </Path>
+  <Path name ="/ObjectListViews/OpportunityCommand">
+    <Class id = "OpportunityCommand" class = "Katrin.Win.OpportunityModule.OpenOpportunityListCommand"/>
+  </Path>
+
+ 
+  <!-- Detail is key word,the appframework will use this format to invoke-->
+  <Path name ="/Controllers">
+    <Controller id = "Opportunity" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="Opportunity"/>
+    <Controller id = "OpportunityList" class = "Katrin.Win.OpportunityModule.OpportunityController"/>
+    <Controller id = "OpportunityDetail" class = "Katrin.Win.OpportunityModule.OpportunityDetailController"/>
+  </Path>
+
+  <Path name ="/Views">
+    <View id = "DefaultOpportunityDetailView" class = " Katrin.Win.OpportunityModule.OpportunityDetailView"/>
+  </Path>
+</AddIn>

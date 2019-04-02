@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <FilterName key="OpenOpportunities">Open Opportunities</FilterName>
+  <property name="ActiveFilterString">[StatusCode] = 1</property>
+  <order>3</order>
+</Filter>

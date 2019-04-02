@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D1F9EB9-87DD-44F7-ADFE-0E95A1F76C29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Katrin.Shell</RootNamespace>
+    <AssemblyName>Katrin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\10.10.120.4\Katrin\WinApp\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Katrin</ProductName>
+    <PublisherName>Nova Software</PublisherName>
+    <SuiteName>Katrin Beta</SuiteName>
+    <ApplicationRevision>55</ApplicationRevision>
+    <ApplicationVersion>1.2.3.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Shell\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>26AC23E51C67D9026884A21464A2A68FAFD460A7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Katrin.Win_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr4.StringTemplate, Version=4.0.6.9004, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Antlr4.StringTemplate.4.0.6.9004\lib\net35\Antlr4.StringTemplate.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.2.6.3.862\lib\NET40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Configuration">
+      <HintPath>..\packages\Autofac.2.6.3.862\lib\NET40\Autofac.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\packages\Common.Logging.2.1.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.1.UI, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v12.1.Win, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Reports.v12.1.Designer, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1.Extensions, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v12.1.Extensions, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.1.Extensions, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.1.Reporting, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.1.Reporting.Extensions, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MefContrib">
+      <HintPath>..\packages\MefContrib.1.2.2.1\lib\net40-Client\MefContrib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.1.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.OData.5.1.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Services.Client.5.1.0\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Spatial, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Spatial.5.1.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingFormManager.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecurityContext.cs" />
+    <Compile Include="UIElements\BarItemWrapper.cs" />
+    <Compile Include="UIElements\BarLinksCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\BarLinksOwnerCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\BarsUIAdapter.cs" />
+    <Compile Include="UIElements\EditorButtonCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\EditorButtonCollectionUIAdapterFactory.cs" />
+    <Compile Include="UIElements\ExceptionFactory.cs" />
+    <Compile Include="UIElements\NavBarGroupCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\NavBarItemCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\NavigatorCustomButtonsUIAdapter.cs" />
+    <Compile Include="UIElements\NavigatorCustomButtonsUIAdapterFactory.cs" />
+    <Compile Include="UIElements\RibbonApplicationMenuUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonGalleryGroupUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonGalleryUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonGroupUI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\RibbonPageCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonPageGroupCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonPageHeaderUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonQuickAccessToolbarUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonStatusBarUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonUIAdapterFactory.cs" />
+    <Compile Include="UIElements\XtraBarUIAdapterFactory.cs" />
+    <Compile Include="UIElements\XtraNavBarUIAdapterFactory.cs" />
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.af.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.es-ES.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.zh-CN.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.es-ES.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.zh-CN.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\StringResources.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ImageResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\StringResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\StringResources.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Katrin.Win_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Katrin.AppFramework.WinForms\Katrin.AppFramework.WinForms.csproj">
+      <Project>{763e4a0c-17c0-4031-9748-a38d5eb4933e}</Project>
+      <Name>Katrin.AppFramework.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Katrin.AppFramework\Katrin.AppFramework.csproj">
+      <Project>{9e788887-f89f-4f4b-96b5-5651158c0d36}</Project>
+      <Name>Katrin.AppFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Katrin.Domain\Katrin.Domain.csproj">
+      <Project>{826f4113-642a-4b50-bc09-02acc966e511}</Project>
+      <Name>Katrin.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ICSharpCode\ICSharpCode.Core\ICSharpCode.Core.csproj">
+      <Project>{35cef10f-2d4c-45f2-9dd1-161e0fec583c}</Project>
+      <Name>ICSharpCode.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddIns\Shell.addin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\Images\all.ico" />
+    <Content Include="Resources\Images\appointment.png" />
+    <Content Include="Resources\Images\bardiagram.ico" />
+    <Content Include="Resources\Images\clear.ico" />
+    <Content Include="Resources\Images\dayview.png" />
+    <Content Include="Resources\Images\diagram.ico" />
+    <Content Include="Resources\Images\gototoday.png" />
+    <Content Include="Resources\Images\groupbydate.png" />
+    <Content Include="Resources\Images\groupbynone.png" />
+    <Content Include="Resources\Images\groupbyresource.png" />
+    <Content Include="Resources\Images\import.ico" />
+    <Content Include="Resources\Images\linediagram.ico" />
+    <Content Include="Resources\Images\list.ico" />
+    <Content Include="Resources\Images\monthview.png" />
+    <Content Include="Resources\Images\nback.png" />
+    <Content Include="Resources\Images\notificationreaded.png" />
+    <Content Include="Resources\Images\overlay_copy.png" />
+    <Content Include="Resources\Images\piediagram.ico" />
+    <Content Include="Resources\Images\projectchart.ico" />
+    <Content Include="Resources\Images\projecttaskchart.ico" />
+    <Content Include="Resources\Images\readcol.png" />
+    <Content Include="Resources\Images\recurrence.png" />
+    <Content Include="Resources\Images\salereport .ico" />
+    <Content Include="Resources\Images\salereport.ico" />
+    <Content Include="Resources\Images\splitprojecttask.ico" />
+    <Content Include="Resources\Images\workweekview.png" />
+    <Content Include="Resources\Images\sysmsg.ico" />
+    <None Include="Resources\Images\projectmodule.ico" />
+    <None Include="Resources\Images\userinfo.ico" />
+    <None Include="Resources\Images\user.ico" />
+    <None Include="Resources\Images\timetracking.ico" />
+    <None Include="Resources\Images\systemsetting.ico" />
+    <None Include="Resources\Images\setopportunitysuccess.ico" />
+    <None Include="Resources\Images\setopportunityresurrection.ico" />
+    <None Include="Resources\Images\setopportunityfail.ico" />
+    <None Include="Resources\Images\services.ico" />
+    <None Include="Resources\Images\service.ico" />
+    <None Include="Resources\Images\sendemail.ico" />
+    <None Include="Resources\Images\search.ico" />
+    <None Include="Resources\Images\save.ico" />
+    <None Include="Resources\Images\sales.ico" />
+    <None Include="Resources\Images\role.ico" />
+    <None Include="Resources\Images\reports.ico" />
+    <None Include="Resources\Images\report.ico" />
+    <None Include="Resources\Images\refresh.ico" />
+    <None Include="Resources\Images\quote.ico" />
+    <None Include="Resources\Images\qualify.ico" />
+    <None Include="Resources\Images\projectweekreport.ico" />
+    <None Include="Resources\Images\projectversion.ico" />
+    <None Include="Resources\Images\projecttask.ico" />
+    <None Include="Resources\Images\projectreport.ico" />
+    <None Include="Resources\Images\projectmanagement.ico" />
+    <None Include="Resources\Images\projectiteration.ico" />
+    <None Include="Resources\Images\project.ico" />
+    <None Include="Resources\Images\product.ico" />
+    <None Include="Resources\Images\opportunityreport.ico" />
+    <None Include="Resources\Images\opportunity.ico" />
+    <None Include="Resources\Images\notification.ico" />
+    <None Include="Resources\Images\note.ico" />
+    <None Include="Resources\Images\newprojecttaskeffort.ico" />
+    <None Include="Resources\Images\lead.ico" />
+    <None Include="Resources\Images\invoice.ico" />
+    <None Include="Resources\Images\history.ico" />
+    <None Include="Resources\Images\generateweekreport.ico" />
+    <None Include="Resources\Images\generatedayreport.ico" />
+    <None Include="Resources\Images\format.ico" />
+    <None Include="Resources\Images\exit.ico" />
+    <None Include="Resources\Images\error.ico" />
+    <None Include="Resources\Images\entity.ico" />
+    <None Include="Resources\Images\editeffort.ico" />
+    <None Include="Resources\Images\edit.ico" />
+    <None Include="Resources\Images\delete.ico" />
+    <None Include="Resources\Images\copy.ico" />
+    <None Include="Resources\Images\Contract2.ico" />
+    <None Include="Resources\Images\contract.ico" />
+    <None Include="Resources\Images\contact.ico" />
+    <None Include="Resources\Images\audit.ico" />
+    <None Include="Resources\Images\Attendance.ico" />
+    <None Include="Resources\Images\Administration.ico" />
+    <None Include="Resources\Images\admin.ico" />
+    <None Include="Resources\Images\addtimetracking.ico" />
+    <None Include="Resources\Images\addnote.ico" />
+    <None Include="Resources\Images\add.ico" />
+    <None Include="Resources\Images\account.ico" />
+    <None Include="Resources\Images\userinfo.png" />
+    <None Include="Resources\Images\tag.png" />
+    <None Include="Resources\Images\SplashImage.png" />
+    <None Include="Resources\Images\SendSysMsg.png" />
+    <None Include="Resources\Images\overlay_view.png" />
+    <None Include="Resources\Images\overlay_search.png" />
+    <None Include="Resources\Images\overlay_ok.png" />
+    <None Include="Resources\Images\overlay_exit.png" />
+    <None Include="Resources\Images\overlay_edit.png" />
+    <None Include="Resources\Images\overlay_delete.png" />
+    <None Include="Resources\Images\overlay_convert.png" />
+    <None Include="Resources\Images\overlay_add.png" />
+    <None Include="Resources\Images\notification.png" />
+    <None Include="Resources\Images\clear.png" />
+    <None Include="Resources\Images\login.png" />
+    <None Include="Resources\Images\Katrin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>cd.&gt;$(ProjectDir)Properties\licenses.licx</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

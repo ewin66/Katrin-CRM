@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="a8af3c6a-ab75-4ce6-93d7-26c12fb64e06" ChangeDateTime="09/12/2012 03:55:29">
+    <Property Name="ElementName" Value="[dbo].[Metadata_Attribute].[EnableCopy]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_Attribute]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsCopyEnabled" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5ac35676-440e-4b19-8dde-1c7f5a8eba58" ChangeDateTime="09/24/2012 02:49:01">
+    <Property Name="ElementName" Value="[dbo].[Metadata_Attention].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_Attention]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AttentionConfigId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e7910e77-c897-48ac-b502-48a8de1e690d" ChangeDateTime="09/24/2012 03:00:51">
+    <Property Name="ElementName" Value="[dbo].[Metadata_AttentionMemberConfig].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_AttentionMemberConfig]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AttentionMember" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="227ddbab-48b8-44c1-8f09-b826eb60f73d" ChangeDateTime="09/24/2012 03:00:57">
+    <Property Name="ElementName" Value="[dbo].[Metadata_AttentionMemberConfig].[AttentionMember]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_AttentionMemberConfig]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AttentionMemberId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="078c32a8-3246-4cd0-84c2-7259a5d450aa" ChangeDateTime="09/24/2012 03:23:51">
+    <Property Name="ElementName" Value="[dbo].[Metadata_FilterConditon].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_FilterConditon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FilterConditionId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="68143769-ef82-475a-8049-2c00850e3f2b" ChangeDateTime="09/24/2012 03:26:38">
+    <Property Name="ElementName" Value="[dbo].[MetaData_FilterConditionDetail].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData_FilterConditionDetail]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FilterConditionDetailId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dc7ea730-e4fc-4783-840c-48b102cf69e2" ChangeDateTime="09/24/2012 03:30:16">
+    <Property Name="ElementName" Value="[dbo].[Metadata_Attention].[CompareNumber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_Attention]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CompareValue" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f0efe71f-8f00-4df0-a2e9-9db7723b48de" ChangeDateTime="09/24/2012 03:33:50">
+    <Property Name="ElementName" Value="[dbo].[MetaData_FilterConditionDetail].[CompareAttribute]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData_FilterConditionDetail]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CompareAttributeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="270cf98c-eb4f-4b7a-9f95-3583e2801912" ChangeDateTime="09/24/2012 03:35:23">
+    <Property Name="ElementName" Value="[dbo].[AttentionInfo].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AttentionInfo]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AttentionInfoId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e983bef7-81f4-4726-9edf-21e7b6a7cdd7" ChangeDateTime="09/24/2012 03:43:03">
+    <Property Name="ElementName" Value="[dbo].[AttentionMember].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AttentionMember]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AttentionMemberId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="99ee8160-c196-4df7-b7fb-38b748eaa484" ChangeDateTime="09/24/2012 03:47:22">
+    <Property Name="ElementName" Value="[dbo].[AttentionMember].[Readed]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AttentionMember]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ReadedOn" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3588f83e-8ab9-4516-aede-386749df6b30" ChangeDateTime="09/24/2012 05:20:57">
+    <Property Name="ElementName" Value="[dbo].[Metadata_FilterConditon]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Metadata_FilterConditon_]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5c930cbd-272b-48cd-ad85-f43e09319e66" ChangeDateTime="09/24/2012 05:22:18">
+    <Property Name="ElementName" Value="[dbo].[FK_MetaData_FilterConditionDetail_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData_FilterConditionDetail]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_MetaData_FilterConditionDetail_FilterCondition]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c7b93f41-01a1-4b22-9093-ec388d535b25" ChangeDateTime="09/24/2012 05:35:30">
+    <Property Name="ElementName" Value="[dbo].[FK_Metadata_AttentionConfig_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_AttentionConfig]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Metadata_AttentionConfig_Attribute]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9006ae81-ae86-4d92-9121-f191408beb65" ChangeDateTime="09/24/2012 06:40:20">
+    <Property Name="ElementName" Value="[dbo].[FK_Metadata_AttentionMemberConfig_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_AttentionMemberConfig]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Metadata_AttentionMemberConfig_AttentionConfig]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e7941e37-ed0a-4a1a-85cf-c44e70dc532f" ChangeDateTime="09/27/2012 05:19:43">
+    <Property Name="ElementName" Value="[dbo].[AttentionInfomation].[Abou]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AttentionInfomation]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AboutAttributeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="566a584f-aefe-4c17-b79e-84aa47d0129a" ChangeDateTime="09/28/2012 01:14:07">
+    <Property Name="ElementName" Value="[dbo].[Metadata_AttentionConfig].[AboutAttributeId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_AttentionConfig]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AboutAttributeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="be1cfa38-7537-44ae-abdf-41870d64945b" ChangeDateTime="09/28/2012 01:14:11">
+    <Property Name="ElementName" Value="[dbo].[Metadata_AttentionConfig].[AboutEntityId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_AttentionConfig]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AboutEntityId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e9d96e62-d763-4ccc-b0e2-5a365868e727" ChangeDateTime="09/28/2012 01:14:17">
+    <Property Name="ElementName" Value="[dbo].[Metadata_AttentionConfig].[AboutDisplayName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_AttentionConfig]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AboutDisplayName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6ff16196-4497-4859-830b-b2895138b4d6" ChangeDateTime="09/28/2012 01:14:21">
+    <Property Name="ElementName" Value="[dbo].[Metadata_AttentionConfig].[AboutUrl]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_AttentionConfig]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AboutUrl" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a47d3dcc-e44d-42f6-9fb6-cc6551be0617" ChangeDateTime="09/28/2012 01:15:33">
+    <Property Name="ElementName" Value="[dbo].[AttentionInfomation].[AboutAttributeId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AttentionInfomation]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AboutAttributeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c07860ec-4800-4831-8b63-f1d9333fb676" ChangeDateTime="09/28/2012 01:15:37">
+    <Property Name="ElementName" Value="[dbo].[AttentionInfomation].[AboutUrl]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AttentionInfomation]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AboutUrl" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6bbd9a61-7434-42e4-ba31-f3cd9c632207" ChangeDateTime="10/10/2012 06:46:25">
+    <Property Name="ElementName" Value="[dbo].[AttentionInfomation].[AttentionInfoId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AttentionInfomation]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d961c93a-0818-4d1c-b7f5-28b61da1fbb4" ChangeDateTime="10/10/2012 06:46:41">
+    <Property Name="ElementName" Value="[dbo].[AttentionInfomation].[Content]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AttentionInfomation]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Body" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7cd493a7-cad9-4381-b533-44f911cca7c7" ChangeDateTime="10/10/2012 06:47:29">
+    <Property Name="ElementName" Value="[dbo].[AttentionInfomation].[AttentionUrl]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AttentionInfomation]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationUrl" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="76f60346-e81f-4376-ac3e-5c447848202d" ChangeDateTime="10/10/2012 06:50:34">
+    <Property Name="ElementName" Value="[dbo].[NotificationRecipient].[AttentionMemberId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationRecipient]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationRecipientId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c57f499b-b111-4544-91e3-0c21068e4d64" ChangeDateTime="10/10/2012 06:50:41">
+    <Property Name="ElementName" Value="[dbo].[NotificationRecipient].[AttentionInfoId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationRecipient]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8feefe48-6336-4a7c-9959-2b75b6484be6" ChangeDateTime="10/10/2012 06:50:50">
+    <Property Name="ElementName" Value="[dbo].[NotificationRecipient].[AttentionUserId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationRecipient]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RecipientId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6799968b-db76-49bd-8b1b-057f0c363ed5" ChangeDateTime="10/10/2012 06:55:11">
+    <Property Name="ElementName" Value="[dbo].[NotificationProfile].[AttentionConfigId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationProfile]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationProfileId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fb2f337a-92e2-4189-b867-743ef04c6a00" ChangeDateTime="10/10/2012 06:55:29">
+    <Property Name="ElementName" Value="[dbo].[NotificationProfile].[AttentionEntityId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationProfile]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationEntityId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c858ee6a-9e19-49d6-a0ce-9ef6976dcb0c" ChangeDateTime="10/10/2012 06:58:13">
+    <Property Name="ElementName" Value="[dbo].[NotificationProfile].[AttentionUrl]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationProfile]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationUrl" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cedaea71-458c-4ea7-a5e2-0e3b86a7a224" ChangeDateTime="10/10/2012 07:02:41">
+    <Property Name="ElementName" Value="[dbo].[Metadata_FilterConditon].[FilterConditionId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_FilterConditon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CriteriaId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="565f31a7-a9a6-45c6-80b8-5e79d320e3ea" ChangeDateTime="10/10/2012 07:02:51">
+    <Property Name="ElementName" Value="[dbo].[Metadata_FilterConditon].[FilterConditionText]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_FilterConditon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="08d38fb0-943d-41ed-9657-bf0c4de3d6a8" ChangeDateTime="10/10/2012 07:04:32">
+    <Property Name="ElementName" Value="[dbo].[CriteriaNode].[FilterConditionDetailId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CriteriaNode]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CriteriaNodeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2805d398-7338-43a4-8e4c-411ac10e951b" ChangeDateTime="10/10/2012 07:04:44">
+    <Property Name="ElementName" Value="[dbo].[CriteriaNode].[FilterConditionId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CriteriaNode]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CriteriaId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d0c51c1e-1bc8-4721-80c1-6a7076b458c8" ChangeDateTime="10/10/2012 07:05:02">
+    <Property Name="ElementName" Value="[dbo].[CriteriaNode].[ParentDetailId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CriteriaNode]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ParentNodeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4933145a-3d86-445c-aed3-b5c05e5a0d90" ChangeDateTime="10/10/2012 07:07:59">
+    <Property Name="ElementName" Value="[dbo].[NotificationTemplate].[FilterConditionId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationTemplate]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationTemplateId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="61c1714f-5b1a-42f4-bb54-874706602495" ChangeDateTime="10/10/2012 07:08:12">
+    <Property Name="ElementName" Value="[dbo].[NotificationTemplate].[FilterObjectId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationTemplate]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SubjectTemplate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2fc4412d-2e17-448e-9036-5c644653da68" ChangeDateTime="10/10/2012 07:08:21">
+    <Property Name="ElementName" Value="[dbo].[NotificationTemplate].[FilterConditionText]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationTemplate]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SubjectTemplate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d5409500-0954-4d80-a3be-2f8762f11356" ChangeDateTime="10/10/2012 07:10:33">
+    <Property Name="ElementName" Value="[dbo].[Metadata_FilterConditon].[FilterConditionId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_FilterConditon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationTemplateId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="aab7ea15-ea6f-45ef-88f4-9781d40610f3" ChangeDateTime="10/10/2012 07:10:39">
+    <Property Name="ElementName" Value="[dbo].[Metadata_FilterConditon].[FilterConditionText]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Metadata_FilterConditon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SubjectTemplate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6601ec6e-16d5-4555-9dfb-288e62a60b71" ChangeDateTime="10/10/2012 07:11:10">
+    <Property Name="ElementName" Value="[dbo].[NotificationTemplate].[NotificationTemplateId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationTemplate]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationTemplateAttributes" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0dbc776c-8d45-4de3-977b-f339c54aad60" ChangeDateTime="10/10/2012 07:13:07">
+    <Property Name="ElementName" Value="[dbo].[NotificationTemplate].[SubjectTemplate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationTemplate]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AttributeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="58ded0ab-56b9-40a2-b23c-e0f5ce1eaa60" ChangeDateTime="10/10/2012 07:17:09">
+    <Property Name="ElementName" Value="[dbo].[NotificationTemplate].[isAboult]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationTemplate]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsAboult" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fb44bd56-e08c-41e5-bb9d-3ca1aa4e036b" ChangeDateTime="10/10/2012 07:30:10">
+    <Property Name="ElementName" Value="[dbo].[NotificationTemplateAttributes].[NotificationTemplateId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationTemplateAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationProfileId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="db526def-fe80-4547-adb5-ff16add0726d" ChangeDateTime="10/10/2012 07:51:44">
+    <Property Name="ElementName" Value="[dbo].[NotificationRecipientAttributes].[AttentionMemberId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationRecipientAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationRecipientAttributeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5de7a8d4-6372-412e-a6b6-56e330378657" ChangeDateTime="10/10/2012 07:52:01">
+    <Property Name="ElementName" Value="[dbo].[NotificationRecipientAttributes].[MemberAttributeId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationRecipientAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AttributeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f6a9698b-0b5b-43c6-8294-4b1bf9f6e9da" ChangeDateTime="10/10/2012 07:52:11">
+    <Property Name="ElementName" Value="[dbo].[NotificationRecipientAttributes].[AttentionConfigId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationRecipientAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationProfileId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d3dc6297-3511-4690-b3ca-9e9ac291bbc9" ChangeDateTime="10/10/2012 07:52:39">
+    <Property Name="ElementName" Value="[dbo].[NotificationRecipientAttributes].[MemberEntityId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationRecipientAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RecipientEntityId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a46b8be2-0132-4675-ae8c-5ea32ea2dc0e" ChangeDateTime="10/10/2012 08:08:03">
+    <Property Name="ElementName" Value="[dbo].[NotificationTemplateAttributes].[Related]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[NotificationTemplateAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RelatedAttributeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7d8c6bf4-be30-4af8-a45b-36efadf9f29d" ChangeDateTime="10/12/2012 08:53:40">
+    <Property Name="ElementName" Value="[dbo].[Account].[AccountId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Account]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SubscriptionId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d4356102-9344-4cb0-b901-08908d9e1552" ChangeDateTime="10/12/2012 08:54:07">
+    <Property Name="ElementName" Value="[dbo].[Account].[AccountCategoryCode]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Account]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="01fa5b61-6de6-4e7c-a50c-cf176ec2d61e" ChangeDateTime="10/12/2012 08:54:31">
+    <Property Name="ElementName" Value="[dbo].[Account].[CustomerSizeCode]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Account]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationProfileId" />
+  </Operation>
+</Operations>

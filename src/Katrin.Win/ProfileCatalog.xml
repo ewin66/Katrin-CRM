@@ -1,0 +1,12 @@
+﻿<SolutionProfile xmlns="http://schemas.microsoft.com/pag/cab-profile/2.0">
+  <Section Name="Infrastructure">
+    <Modules>
+      <ModuleInfo AssemblyFile="Katrin.Win.MainModule.dll" Name="Main" />
+      <ModuleInfo AssemblyFile="Katrin.Win.MetadataManager.dll">
+        <Dependencies>
+          <Dependency Name="Main"/>
+        </Dependencies>
+      </ModuleInfo>
+    </Modules>
+  </Section>
+</SolutionProfile>

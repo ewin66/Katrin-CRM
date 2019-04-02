@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <FilterName key="PlannedInvoices">Planned Invoices</FilterName>
+  <property name="ActiveFilterString">[StatusCode] = 5</property>
+  <order>6</order>
+</Filter>

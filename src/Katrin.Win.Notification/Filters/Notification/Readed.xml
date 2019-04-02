@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <FilterName key="Readed">Readed</FilterName>
+  <property name="ActiveFilterString">[NotificationStatus] = 0</property>
+  <order>2</order>
+</Filter>

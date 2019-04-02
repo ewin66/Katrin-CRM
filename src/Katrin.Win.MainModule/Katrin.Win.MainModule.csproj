@@ -1,0 +1,982 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4168E4C2-EFC1-48B1-9E61-5013EF9D4EA2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Katrin.Win.MainModule</RootNamespace>
+    <AssemblyName>Katrin.Win.MainModule</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net">
+      <HintPath>..\packages\BCrypt-Official.0.1.107\lib\BCrypt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Reports.v12.1.Designer, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.1.UI, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v12.1.Win, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1.Extensions, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.1.Reporting.Extensions, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.1.Extensions, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="inflector_extension, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\inflector_extension.0.0.8\lib\Net40\inflector_extension.dll</HintPath>
+    </Reference>
+    <Reference Include="LateBindingApi.Core">
+      <HintPath>..\packages\OutLookAPI\LateBindingApi.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.1.0-rc2\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.OData.5.1.0-rc2\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Services.Client.5.1.0-rc2\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\packages\CAB\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="OfficeApi">
+      <HintPath>..\packages\OutLookAPI\OfficeApi.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OutlookApi">
+      <HintPath>..\packages\OutLookAPI\OutlookApi.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Spatial, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Spatial.5.1.0-rc2\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersionInfo.cs">
+      <Link>Properties\AssemblyVersionInfo.cs</Link>
+    </Compile>
+    <Compile Include="Constants\CommandNames.cs" />
+    <Compile Include="Constants\EventTopicNames.cs" />
+    <Compile Include="Constants\ExtensionSiteNames.cs" />
+    <Compile Include="Constants\WorkspaceNames.cs" />
+    <Compile Include="MainModuleInit.cs" />
+    <Compile Include="MainWorkItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Account\AccountController.cs" />
+    <Compile Include="Views\Account\AccountDetailPresenter.cs" />
+    <Compile Include="Views\Account\AccountDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Account\AccountDetailView.Designer.cs">
+      <DependentUpon>AccountDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Account\AccountListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Account\AccountListView.Designer.cs">
+      <DependentUpon>AccountListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Account\IAccountDetailView.cs" />
+    <Compile Include="Views\Attendance\AttendanceController.cs" />
+    <Compile Include="Views\Attendance\AttendanceDetailPresenter.cs" />
+    <Compile Include="Views\Attendance\AttendanceDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Attendance\AttendanceDetailView.Designer.cs">
+      <DependentUpon>AttendanceDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Attendance\AttendanceListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Attendance\AttendanceListView.Designer.cs">
+      <DependentUpon>AttendanceListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Attendance\IAttendanceDetailView.cs" />
+    <Compile Include="Views\Contact\ContactController.cs" />
+    <Compile Include="Views\Contact\ContactDetailPresenter.cs" />
+    <Compile Include="Views\Contact\ContactDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Contact\ContactDetailView.Designer.cs">
+      <DependentUpon>ContactDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Contact\ContactListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Contact\ContactListView.Designer.cs">
+      <DependentUpon>ContactListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Contact\IContactDetailView.cs" />
+    <Compile Include="Views\Contract\ContractController.cs" />
+    <Compile Include="Views\Contract\ContractDetailPresenter.cs" />
+    <Compile Include="Views\Contract\ContractDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Contract\ContractDetailView.Designer.cs">
+      <DependentUpon>ContractDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Contract\ContractListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Contract\ContractListView.Designer.cs">
+      <DependentUpon>ContractListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Contract\IContractDetailView.cs" />
+    <Compile Include="Views\History\EntityListHistoryExtension.cs" />
+    <Compile Include="Views\History\EntityHistoryExtension.cs" />
+    <Compile Include="Views\History\HistoryListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\History\HistoryListView.Designer.cs">
+      <DependentUpon>HistoryListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\History\HistroyListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\History\HistroyListForm.Designer.cs">
+      <DependentUpon>HistroyListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Invoice\IInvoiceDetailView.cs" />
+    <Compile Include="Views\Invoice\InvoiceController.cs" />
+    <Compile Include="Views\Invoice\InvoiceDetailPresenter.cs" />
+    <Compile Include="Views\Invoice\InvoiceDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Invoice\InvoiceDetailView.Designer.cs">
+      <DependentUpon>InvoiceDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Invoice\InvoiceListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Invoice\InvoiceListView.Designer.cs">
+      <DependentUpon>InvoiceListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Lead\ILeadDetailView.cs" />
+    <Compile Include="Views\Lead\LeadDetailPresenter.cs" />
+    <Compile Include="Views\Lead\LeadDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Lead\LeadDetailView.designer.cs">
+      <DependentUpon>LeadDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Lead\LeadController.cs" />
+    <Compile Include="Views\Lead\LeadListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Note\EntityListNoteExtension.cs" />
+    <Compile Include="Views\Note\EntityDetailNoteExtension.cs" />
+    <Compile Include="Views\Note\INoteDetailForm.cs" />
+    <Compile Include="Views\Note\NoteDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Note\NoteDetailForm.Designer.cs">
+      <DependentUpon>NoteDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Note\NoteDetailPresenter.cs" />
+    <Compile Include="Views\Note\NoteListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Opportunity\IOpportunityDetailView.cs" />
+    <Compile Include="Views\Opportunity\OpportunityController.cs" />
+    <Compile Include="Views\Opportunity\OpportunityDetailPresenter.cs" />
+    <Compile Include="Views\Opportunity\OpportunityDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Opportunity\OpportunityDetailView.designer.cs">
+      <DependentUpon>OpportunityDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Opportunity\OpportunityListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Opportunity\OpportunityLossReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Opportunity\OpportunityLossReason.Designer.cs">
+      <DependentUpon>OpportunityLossReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Product\IProductDetailView.cs" />
+    <Compile Include="Views\Product\ProductController.cs" />
+    <Compile Include="Views\Product\ProductDetailPresenter.cs" />
+    <Compile Include="Views\Product\ProductDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Product\ProductDetailView.Designer.cs">
+      <DependentUpon>ProductDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Product\ProductListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Product\ProductListView.Designer.cs">
+      <DependentUpon>ProductListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectIteration\EntityListIterationExtension.cs" />
+    <Compile Include="Views\ProjectIteration\IProjectIterationDetailView.cs" />
+    <Compile Include="Views\ProjectIteration\ProjectIterationDetailPresenter.cs" />
+    <Compile Include="Views\ProjectIteration\ProjectIterationListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectIteration\ProjectIterationListView.Designer.cs">
+      <DependentUpon>ProjectIterationListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectManagement\IProjectChartView.cs" />
+    <Compile Include="Views\ProjectManagement\ProjectChartPresenter.cs" />
+    <Compile Include="Views\ProjectManagement\ProjectChartView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectManagement\ProjectChartView.Designer.cs">
+      <DependentUpon>ProjectChartView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectManagement\IProjectDetailView.cs" />
+    <Compile Include="Views\ProjectManagement\ProjectController.cs" />
+    <Compile Include="Views\ProjectManagement\ProjectDetailPresenter.cs" />
+    <Compile Include="Views\ProjectManagement\ProjectDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectManagement\ProjectDetailView.Designer.cs">
+      <DependentUpon>ProjectDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectManagement\ProjectListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectManagement\ProjectListView.Designer.cs">
+      <DependentUpon>ProjectListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectIteration\ProjectIterationDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectIteration\ProjectIterationDetailView.Designer.cs">
+      <DependentUpon>ProjectIterationDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectModule\ProjectModuleDetailPresenter.cs" />
+    <Compile Include="Views\ProjectModule\IProjectModuleDetailView.cs" />
+    <Compile Include="Views\ProjectModule\ProjectModuleListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectModule\ProjectModuleDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectModule\ProjectModuleDetailView.Designer.cs">
+      <DependentUpon>ProjectModuleDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectReport\IProjectReportView.cs" />
+    <Compile Include="Views\ProjectReport\ProjectOverviewItem.cs" />
+    <Compile Include="Views\ProjectReport\ProjectReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectReport\ProjectReport.Designer.cs">
+      <DependentUpon>ProjectReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectReport\ProjectReportController.cs" />
+    <Compile Include="Views\ProjectReport\ProjectReportPresenter.cs" />
+    <Compile Include="Views\ProjectReport\ProjectReportView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectReport\ProjectReportView.designer.cs">
+      <DependentUpon>ProjectReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectTask\IManageEffortDetailView.cs" />
+    <Compile Include="Views\ProjectTask\IProjectTaskChartView.cs" />
+    <Compile Include="Views\ProjectTask\ManageEffortDetailPresenter.cs" />
+    <Compile Include="Views\ProjectTask\ManageEffortDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectTask\ManageEffortDetailView.Designer.cs">
+      <DependentUpon>ManageEffortDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectTask\INewTaskEffortDetailView.cs" />
+    <Compile Include="Views\ProjectTask\NewTaskEffortDetailPresenter.cs" />
+    <Compile Include="Views\ProjectTask\NewTaskEffortDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectTask\NewTaskEffortDetailView.Designer.cs">
+      <DependentUpon>NewTaskEffortDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectTask\DProjectTaskListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectTask\DProjectTaskListView.Designer.cs">
+      <DependentUpon>DProjectTaskListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectTask\ITaskEffortDetailView.cs" />
+    <Compile Include="Views\ProjectTask\ProjectTaskChartPresenter.cs" />
+    <Compile Include="Views\ProjectTask\ProjectTaskChartView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectTask\ProjectTaskChartView.Designer.cs">
+      <DependentUpon>ProjectTaskChartView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectTask\ProjectTaskPresenter.cs" />
+    <Compile Include="Views\ProjectTask\TaskEffortDetailPresenter.cs" />
+    <Compile Include="Views\ProjectTask\TaskEffortDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectTask\TaskEffortDetailView.Designer.cs">
+      <DependentUpon>TaskEffortDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectTask\ProjectTaskDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectTask\ProjectTaskDetailView.Designer.cs">
+      <DependentUpon>ProjectTaskDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectVersion\IProjectVersionDetailView.cs" />
+    <Compile Include="Views\ProjectVersion\ProjectVersionDetailPresenter.cs" />
+    <Compile Include="Views\ProjectVersion\ProjectVersionDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectVersion\ProjectVersionDetailView.Designer.cs">
+      <DependentUpon>ProjectVersionDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectVersion\ProjectVersionListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectVersion\ProjectVersionListView.designer.cs">
+      <DependentUpon>ProjectVersionListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectWeekReport\ProjectWeekReportDetailPresenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\Quote\IQuoteDetailView.cs" />
+    <Compile Include="Views\Quote\QuoteController.cs" />
+    <Compile Include="Views\Quote\QuoteDetailPresenter.cs" />
+    <Compile Include="Views\Quote\QuoteDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Quote\QuoteDetailView.Designer.cs">
+      <DependentUpon>QuoteDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Quote\QuoteListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Quote\QuoteListView.Designer.cs">
+      <DependentUpon>QuoteListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\DateRange.cs" />
+    <Compile Include="Views\Reports\GridCheckMarksSelection.cs" />
+    <Compile Include="Views\Reports\IOpportunityReportView.cs" />
+    <Compile Include="Views\Reports\OpportunityOverviewItem.cs" />
+    <Compile Include="Views\Reports\OpportunityReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\OpportunityReport.Designer.cs">
+      <DependentUpon>OpportunityReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\OpportunityReportController.cs" />
+    <Compile Include="Views\Reports\OpportunityReportPresenter.cs" />
+    <Compile Include="Views\Reports\OpportunityReportView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\OpportunityReportView.designer.cs">
+      <DependentUpon>OpportunityReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\OpportunityStatus.cs" />
+    <Compile Include="Views\Role\EntityViewModel.cs" />
+    <Compile Include="Views\Role\IRoleDetailView.cs" />
+    <Compile Include="Views\Role\PrivilegeViewModel.cs" />
+    <Compile Include="Views\Role\RoleController.cs" />
+    <Compile Include="Views\Role\RoleDetailPresenter.cs" />
+    <Compile Include="Views\Role\RoleDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Role\RoleDetailView.Designer.cs">
+      <DependentUpon>RoleDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Role\RoleListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Role\RoleListView.Designer.cs">
+      <DependentUpon>RoleListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Role\RoleViewModel.cs" />
+    <Compile Include="Views\SystemSetting\ISystemSettingListView.cs" />
+    <Compile Include="Views\SystemSetting\SystemSettingList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SystemSetting\SystemSettingList.Designer.cs">
+      <DependentUpon>SystemSettingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SystemSetting\SystemSettingListPresenter.cs" />
+    <Compile Include="Views\ProjectTask\IProjectTaskDetailView.cs" />
+    <Compile Include="Views\ProjectTask\ProjectTaskController.cs" />
+    <Compile Include="Views\ProjectTask\ProjectTaskDetailPresenter.cs" />
+    <Compile Include="Views\ProjectTask\ProjectTaskListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectTask\ProjectTaskListView.Designer.cs">
+      <DependentUpon>ProjectTaskListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TimeTracking\ITimeTrackingDetail.cs" />
+    <Compile Include="Views\TimeTracking\OpportunityDetailTimeTrackingExtension.cs" />
+    <Compile Include="Views\TimeTracking\TimeTrackingDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TimeTracking\TimeTrackingDetailForm.Designer.cs">
+      <DependentUpon>TimeTrackingDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TimeTracking\TimeTrackingDetailPresenter.cs" />
+    <Compile Include="Views\TimeTracking\OpportunityListTimeTrackingExtension.cs" />
+    <Compile Include="Views\TimeTracking\TimeTrackingListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\TimeTracking\TimeTrackingListView.Designer.cs">
+      <DependentUpon>TimeTrackingListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User\IUserDetailView.cs" />
+    <Compile Include="Views\User\IUserRoleListView.cs" />
+    <Compile Include="Views\User\UserController.cs" />
+    <Compile Include="Views\User\UserDetailPresenter.cs" />
+    <Compile Include="Views\User\UserDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\User\UserDetailView.Designer.cs">
+      <DependentUpon>UserDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User\UserListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\User\UserListView.Designer.cs">
+      <DependentUpon>UserListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User\UserRoleListPresenter.cs" />
+    <Compile Include="Views\User\UserRoleListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\User\UserRoleListView.Designer.cs">
+      <DependentUpon>UserRoleListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectWeekReport\IProjectWeekReportView.cs" />
+    <Compile Include="Views\ProjectWeekReport\ProjectWeekReportController.cs" />
+    <Compile Include="Views\ProjectWeekReport\ProjectWeekReportDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectWeekReport\ProjectWeekReportDetailView.Designer.cs">
+      <DependentUpon>ProjectWeekReportDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectWeekReport\ProjectWeekReportListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProjectWeekReport\ProjectWeekReportListView.Designer.cs">
+      <DependentUpon>ProjectWeekReportListView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Katrin.Common\Katrin.Common.csproj">
+      <Project>{37bdfea4-34cf-42cc-8379-c74b35bbf596}</Project>
+      <Name>Katrin.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Katrin.Win.Common\Katrin.Win.Common.csproj">
+      <Project>{E012AED0-2708-4B8D-B5D8-4C1456261FEB}</Project>
+      <Name>Katrin.Win.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Katrin.Win.Infrastructure\Katrin.Win.Infrastructure.csproj">
+      <Project>{56A33ED0-4C9C-4579-A3E8-2C858FD3B8AD}</Project>
+      <Name>Katrin.Win.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\packages\CAB\Source\CABDevExpress.ExtensionKit\CABDevExpress.ExtensionKit.csproj">
+      <Project>{811DD8C8-6696-4566-A142-8ED28759D7A5}</Project>
+      <Name>CABDevExpress.ExtensionKit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\packages\CAB\Source\CompositeUI.WinForms\CompositeUI.WinForms.csproj">
+      <Project>{073BCD60-F2FB-4DB9-92FB-403C8F9E8DD0}</Project>
+      <Name>CompositeUI.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\packages\CAB\Source\CompositeUI\CompositeUI.csproj">
+      <Project>{C478E40B-A05E-4C69-9AB3-7A3BB374243F}</Project>
+      <Name>CompositeUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Account\AccountDetailView.resx">
+      <DependentUpon>AccountDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Account\AccountDetailView.zh-CN.resx">
+      <DependentUpon>AccountDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Attendance\AttendanceDetailView.resx">
+      <DependentUpon>AttendanceDetailView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Attendance\AttendanceDetailView.zh-CN.resx">
+      <DependentUpon>AttendanceDetailView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Contact\ContactDetailView.resx">
+      <DependentUpon>ContactDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Contact\ContactDetailView.zh-CN.resx">
+      <DependentUpon>ContactDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Contract\ContractDetailView.resx">
+      <DependentUpon>ContractDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Contract\ContractDetailView.zh-CN.resx">
+      <DependentUpon>ContractDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\History\HistroyListForm.resx">
+      <DependentUpon>HistroyListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\History\HistroyListForm.zh-CN.resx">
+      <DependentUpon>HistroyListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Invoice\InvoiceDetailView.resx">
+      <DependentUpon>InvoiceDetailView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Invoice\InvoiceDetailView.zh-CN.resx">
+      <DependentUpon>InvoiceDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Lead\LeadDetailView.resx">
+      <DependentUpon>LeadDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Lead\LeadDetailView.zh-CN.resx">
+      <DependentUpon>LeadDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Note\NoteDetailForm.resx">
+      <DependentUpon>NoteDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Note\NoteDetailForm.zh-CN.resx">
+      <DependentUpon>NoteDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Opportunity\OpportunityDetailView.resx">
+      <DependentUpon>OpportunityDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Opportunity\OpportunityDetailView.zh-CN.resx">
+      <DependentUpon>OpportunityDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Opportunity\OpportunityLossReason.resx">
+      <DependentUpon>OpportunityLossReason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Product\ProductDetailView.resx">
+      <DependentUpon>ProductDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Product\ProductDetailView.zh-CN.resx">
+      <DependentUpon>ProductDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectManagement\ProjectChartView.resx">
+      <DependentUpon>ProjectChartView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectManagement\ProjectChartView.zh-CN.resx">
+      <DependentUpon>ProjectChartView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectManagement\ProjectDetailView.resx">
+      <DependentUpon>ProjectDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectManagement\ProjectDetailView.zh-CN.resx">
+      <DependentUpon>ProjectDetailView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectManagement\ProjectListView.resx">
+      <DependentUpon>ProjectListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectIteration\ProjectIterationDetailView.resx">
+      <DependentUpon>ProjectIterationDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectIteration\ProjectIterationDetailView.zh-CN.resx">
+      <DependentUpon>ProjectIterationDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectModule\ProjectModuleDetailView.resx">
+      <DependentUpon>ProjectModuleDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectModule\ProjectModuleDetailView.zh-CN.resx">
+      <DependentUpon>ProjectModuleDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectModule\ProjectModuleDetailView.zh-SG.resx">
+      <DependentUpon>ProjectModuleDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectReport\ProjectReport.resx">
+      <DependentUpon>ProjectReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectReport\ProjectReport.zh-CN.resx">
+      <DependentUpon>ProjectReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectReport\ProjectReportView.resx">
+      <DependentUpon>ProjectReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectReport\ProjectReportView.zh-CN.resx">
+      <DependentUpon>ProjectReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectTask\ManageEffortDetailView.resx">
+      <DependentUpon>ManageEffortDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectTask\ManageEffortDetailView.zh-CN.resx">
+      <DependentUpon>ManageEffortDetailView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectTask\NewTaskEffortDetailView.resx">
+      <DependentUpon>NewTaskEffortDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectTask\NewTaskEffortDetailView.zh-CN.resx">
+      <DependentUpon>NewTaskEffortDetailView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectTask\ProjectTaskChartView.resx">
+      <DependentUpon>ProjectTaskChartView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectTask\ProjectTaskChartView.zh-CN.resx">
+      <DependentUpon>ProjectTaskChartView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectTask\ProjectTaskListView.resx">
+      <DependentUpon>ProjectTaskListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectTask\ProjectTaskListView.zh-CN.resx">
+      <DependentUpon>ProjectTaskListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectTask\TaskEffortDetailView.resx">
+      <DependentUpon>TaskEffortDetailView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectTask\TaskEffortDetailView.zh-CN.resx">
+      <DependentUpon>TaskEffortDetailView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectTask\ProjectTaskDetailView.resx">
+      <DependentUpon>ProjectTaskDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectTask\ProjectTaskDetailView.zh-CN.resx">
+      <DependentUpon>ProjectTaskDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectVersion\ProjectVersionDetailView.resx">
+      <DependentUpon>ProjectVersionDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectVersion\ProjectVersionDetailView.zh-CN.resx">
+      <DependentUpon>ProjectVersionDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectVersion\ProjectVersionDetailView.zh-SG.resx">
+      <DependentUpon>ProjectVersionDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Quote\QuoteDetailView.resx">
+      <DependentUpon>QuoteDetailView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Quote\QuoteDetailView.zh-CN.resx">
+      <DependentUpon>QuoteDetailView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\OpportunityReport.resx">
+      <DependentUpon>OpportunityReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\OpportunityReport.zh-CN.resx">
+      <DependentUpon>OpportunityReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\OpportunityReportView.resx">
+      <DependentUpon>OpportunityReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\OpportunityReportView.zh-CN.resx">
+      <DependentUpon>OpportunityReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Role\RoleDetailView.resx">
+      <DependentUpon>RoleDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Role\RoleDetailView.zh-CN.resx">
+      <DependentUpon>RoleDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SystemSetting\SystemSettingList.resx">
+      <DependentUpon>SystemSettingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SystemSetting\SystemSettingList.zh-CN.resx">
+      <DependentUpon>SystemSettingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TimeTracking\TimeTrackingDetailForm.resx">
+      <DependentUpon>TimeTrackingDetailForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TimeTracking\TimeTrackingDetailForm.zh-CN.resx">
+      <DependentUpon>TimeTrackingDetailForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TimeTracking\TimeTrackingListView.resx">
+      <DependentUpon>TimeTrackingListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\User\UserDetailView.resx">
+      <DependentUpon>UserDetailView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\User\UserDetailView.zh-CN.resx">
+      <DependentUpon>UserDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\User\UserRoleListView.resx">
+      <DependentUpon>UserRoleListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\User\UserRoleListView.zh-CN.resx">
+      <DependentUpon>UserRoleListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectWeekReport\ProjectWeekReportDetailView.resx">
+      <DependentUpon>ProjectWeekReportDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectWeekReport\ProjectWeekReportDetailView.zh-CN.resx">
+      <DependentUpon>ProjectWeekReportDetailView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProjectWeekReport\ProjectWeekReportListView.resx">
+      <DependentUpon>ProjectWeekReportListView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\generatedayreport.ico" />
+    <EmbeddedResource Include="Resources\sendemail.ico" />
+    <EmbeddedResource Include="DefaultLayout\ProjectTask\BoardColumn.xml" />
+    <EmbeddedResource Include="Resources\projectversion.ico" />
+    <EmbeddedResource Include="Resources\search.ico" />
+    <EmbeddedResource Include="Resources\newprojecttaskeffort.ico" />
+    <EmbeddedResource Include="Resources\copy.ico" />
+    <EmbeddedResource Include="Resources\attendance.ico" />
+    <EmbeddedResource Include="Resources\projectmodule.ico" />
+    <Content Include="Views\ProjectTask\dayReport.htm" />
+    <Content Include="Views\ProjectWeekReport\weekreport.htm" />
+    <EmbeddedResource Include="Resources\generateweekreport.ico" />
+    <EmbeddedResource Include="Resources\projectweekreport.ico" />
+    <EmbeddedResource Include="Resources\projectiteration.ico" />
+    <EmbeddedResource Include="Resources\projectreport.ico" />
+    <EmbeddedResource Include="Resources\editeffort.ico" />
+    <EmbeddedResource Include="Resources\addnote.ico" />
+    <EmbeddedResource Include="Resources\addtimetracking.ico" />
+    <EmbeddedResource Include="Resources\clear.png" />
+    <EmbeddedResource Include="Resources\entity.ico" />
+    <EmbeddedResource Include="Resources\overlay_convert.png" />
+    <EmbeddedResource Include="Resources\delete.ico" />
+    <EmbeddedResource Include="Resources\setopportunityfail.ico" />
+    <EmbeddedResource Include="Resources\setopportunityresurrection.ico" />
+    <EmbeddedResource Include="Resources\setopportunitysuccess.ico" />
+    <EmbeddedResource Include="Resources\tag.png" />
+    <EmbeddedResource Include="Resources\userinfo.png" />
+    <EmbeddedResource Include="Resources\projectmanagement.ico" />
+    <EmbeddedResource Include="Resources\projecttask.ico" />
+    <EmbeddedResource Include="Resources\project.ico" />
+    <EmbeddedResource Include="DefaultLayout\Lead\DetailzhCN.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefaultLayout\Lead\DetailenUS.xml" />
+    <EmbeddedResource Include="DefaultLayout\Contact\DetailenUS.xml" />
+    <EmbeddedResource Include="DefaultLayout\Contact\DetailzhCN.xml" />
+    <EmbeddedResource Include="DefaultLayout\User\DetailenUS.xml" />
+    <EmbeddedResource Include="DefaultLayout\User\DetailzhCN.xml" />
+    <EmbeddedResource Include="DefaultLayout\Contact\LookUp.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefaultLayout\Project\LookUp.xml" />
+    <EmbeddedResource Include="DefaultLayout\ProjectIteration\LookUp.xml" />
+    <Content Include="LICENSE.txt" />
+    <EmbeddedResource Include="Resources\opportunityreport.ico" />
+    <EmbeddedResource Include="Resources\reports.ico" />
+    <EmbeddedResource Include="Resources\format.ico" />
+    <EmbeddedResource Include="Resources\Administration.ico" />
+    <EmbeddedResource Include="Resources\services.ico" />
+    <EmbeddedResource Include="Resources\audit.ico" />
+    <EmbeddedResource Include="Resources\overlay_exit.png" />
+    <EmbeddedResource Include="Resources\edit.ico" />
+    <EmbeddedResource Include="Resources\overlay_ok.png" />
+    <EmbeddedResource Include="Resources\userinfo.ico" />
+    <EmbeddedResource Include="Resources\user.ico" />
+    <EmbeddedResource Include="Resources\timetracking.ico" />
+    <EmbeddedResource Include="Resources\systemsetting.ico" />
+    <EmbeddedResource Include="Resources\save.ico" />
+    <EmbeddedResource Include="Resources\sales.ico" />
+    <EmbeddedResource Include="Resources\role.ico" />
+    <EmbeddedResource Include="Resources\refresh.ico" />
+    <EmbeddedResource Include="Resources\quote.ico" />
+    <EmbeddedResource Include="Resources\qualify.ico" />
+    <EmbeddedResource Include="Resources\product.ico" />
+    <EmbeddedResource Include="Resources\opportunity.ico" />
+    <EmbeddedResource Include="Resources\note.ico" />
+    <EmbeddedResource Include="Resources\lead.ico" />
+    <EmbeddedResource Include="Resources\invoice.ico" />
+    <EmbeddedResource Include="Resources\history.ico" />
+    <EmbeddedResource Include="Resources\exit.ico" />
+    <EmbeddedResource Include="Resources\error.ico" />
+    <EmbeddedResource Include="Resources\Contract2.ico" />
+    <EmbeddedResource Include="Resources\contract.ico" />
+    <EmbeddedResource Include="Resources\contact.ico" />
+    <EmbeddedResource Include="Resources\Katrin.ico" />
+    <EmbeddedResource Include="Resources\admin.ico" />
+    <EmbeddedResource Include="Resources\account.ico" />
+    <EmbeddedResource Include="Resources\SplashImage.png" />
+    <EmbeddedResource Include="Resources\overlay_view.png" />
+    <EmbeddedResource Include="Resources\overlay_search.png" />
+    <EmbeddedResource Include="Resources\overlay_edit.png" />
+    <EmbeddedResource Include="Resources\overlay_delete.png" />
+    <EmbeddedResource Include="Resources\overlay_add.png" />
+    <EmbeddedResource Include="Resources\login.png" />
+    <EmbeddedResource Include="DefaultLayout\Account\LookUp.xml" />
+    <EmbeddedResource Include="DefaultLayout\Contract\LookUp.xml" />
+    <EmbeddedResource Include="DefaultLayout\Lead\LookUp.xml" />
+    <EmbeddedResource Include="DefaultLayout\Opportunity\LookUp.xml" />
+    <EmbeddedResource Include="DefaultLayout\User\LookUp.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>cd.&gt;$(ProjectDir)Properties\licenses.licx</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

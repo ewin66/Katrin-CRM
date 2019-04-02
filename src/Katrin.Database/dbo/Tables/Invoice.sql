@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[Invoice] (
+    [InvoiceId]             UNIQUEIDENTIFIER NOT NULL,
+    [InvoiceNumber]         NVARCHAR (100)   NOT NULL,
+    [Name]                  NVARCHAR (300)   NULL,
+    [Description]           NVARCHAR (MAX)   NULL,
+    [TotalAmount]           MONEY            NULL,
+    [PaidAmount]            MONEY            NULL,
+    [CreatedById]           UNIQUEIDENTIFIER NULL,
+    [CreatedOn]             DATETIME         NULL,
+    [ModifiedById]          UNIQUEIDENTIFIER NULL,
+    [ModifiedOn]            DATETIME         NULL,
+    [StatusCode]            INT              NOT NULL,
+    [DateDelivered]         DATETIME         NULL,
+    [ReceivedDate]          DATETIME         NULL,
+    [TransactionCurrencyId] UNIQUEIDENTIFIER NULL,
+    [ExchangeRate]          DECIMAL (23, 10) NULL,
+    [OwnerId]               UNIQUEIDENTIFIER NOT NULL,
+    [VersionNumber]         ROWVERSION       NULL,
+    [IsDeleted]             BIT              CONSTRAINT [DF_Invoice_IsDeleted] DEFAULT ((0)) NOT NULL,
+    [BillingCustomerId]     UNIQUEIDENTIFIER NULL,
+    CONSTRAINT [PK_Invoice] PRIMARY KEY CLUSTERED ([InvoiceId] ASC),
+    CONSTRAINT [FK_Invoice_Account] FOREIGN KEY ([BillingCustomerId]) REFERENCES [dbo].[Account] ([AccountId]),
+    CONSTRAINT [FK_Invoice_TransactionCurrency] FOREIGN KEY ([TransactionCurrencyId]) REFERENCES [dbo].[TransactionCurrency] ([TransactionCurrencyId]),
+    CONSTRAINT [FK_Invoice_User] FOREIGN KEY ([OwnerId]) REFERENCES [dbo].[User] ([UserId]),
+    CONSTRAINT [FK_Invoice_User_CreatedBy] FOREIGN KEY ([CreatedById]) REFERENCES [dbo].[User] ([UserId]),
+    CONSTRAINT [FK_Invoice_User_ModifiedBy] FOREIGN KEY ([ModifiedById]) REFERENCES [dbo].[User] ([UserId])
+);
+

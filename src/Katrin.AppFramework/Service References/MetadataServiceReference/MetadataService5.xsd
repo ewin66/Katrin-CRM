@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Katrin.Services.DTO" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Katrin.Services.DTO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8081/MetadataService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfOptionSetDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OptionSetDTO" nillable="true" type="tns:OptionSetDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOptionSetDTO" nillable="true" type="tns:ArrayOfOptionSetDTO" />
+  <xs:complexType name="OptionSetDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OptionList" nillable="true" type="tns:ArrayOfOptionDTO" />
+      <xs:element minOccurs="0" name="OptionSetId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OptionSetDTO" nillable="true" type="tns:OptionSetDTO" />
+  <xs:complexType name="ArrayOfOptionDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OptionDTO" nillable="true" type="tns:OptionDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOptionDTO" nillable="true" type="tns:ArrayOfOptionDTO" />
+  <xs:complexType name="OptionDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayOrder" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="OptionId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OptionDTO" nillable="true" type="tns:OptionDTO" />
+</xs:schema>

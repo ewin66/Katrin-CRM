@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <FilterName key="InProgressProjects">In Progress Projects</FilterName>
+  <property name="ActiveFilterString">[StatusCode] = 2</property>
+  <order>3</order>
+</Filter>

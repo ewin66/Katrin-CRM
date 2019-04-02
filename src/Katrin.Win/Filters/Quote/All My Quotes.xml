@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <FilterName key="AllMyQuotes">All My Quotes</FilterName>
+  <property name="ActiveFilterString">[Owner_p_FullName] = '$UserName$'</property>
+  <order>1</order>
+</Filter>

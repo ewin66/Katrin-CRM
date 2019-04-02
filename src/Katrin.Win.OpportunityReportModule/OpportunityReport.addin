@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.OpportunityReportModule.dll" />
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+
+  <!--RIGHT DOCK PANELS-->
+  <Path name = "/OpportunityReport/List/DockPanels">
+    <View id="DefaultOpportunityReportView" controller="OpportunityReportList" guid="{DD1CF477-48DF-4626-A406-EF2013D98F3A}"/>
+  </Path>
+
+  <!--LIST RIBBON-->
+  <Path name="/OpportunityReport/List/Ribbon">
+    <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+      <MenuItem id = "General" type = "Group" label = "${res:General}" OrderNumber="0" builderid ="RibbonPageGroupBuilder">
+      </MenuItem>
+    </MenuItem>
+  </Path>
+
+  <Path name = "/Workbench/Navigation/Reports">
+    <NavItem id = "OpportunityReport"
+		          type = "Item"
+		          label = "${res:OpportunityReport}"
+              icon ="OpportunityReport"
+              class ="Katrin.Win.OpportunityReportModule.OpenOpportunityReportCommand"
+              builderid ="NavBarItemBuilder"
+             />
+  </Path>
+
+
+  <Path name ="/Controllers">
+    <Controller id = "OpportunityReport" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="OpportunityReport"/>
+    <Controller id = "OpportunityReportList" class = "Katrin.Win.OpportunityReportModule.Report.OpportunityReportController"/>
+  </Path>
+
+  <Path name ="/Views">
+    <View id = "DefaultOpportunityReportView" class = "Katrin.Win.OpportunityReportModule.Report.OpportunityReportView"/>
+  </Path>
+
+</AddIn>

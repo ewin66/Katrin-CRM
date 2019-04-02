@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{31436345-61C6-4A3A-83BF-4FD40E844F65}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Katrin.Services</RootNamespace>
+    <AssemblyName>Katrin.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr4.StringTemplate">
+      <HintPath>..\packages\Antlr4.StringTemplate.4.0.6.9004\lib\net35\Antlr4.StringTemplate.dll</HintPath>
+    </Reference>
+    <Reference Include="BCrypt.Net">
+      <HintPath>..\packages\BCrypt-Official.0.1.107\lib\BCrypt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="C5">
+      <HintPath>..\packages\Quartz\C5.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\packages\Quartz\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="inflector_extension, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\inflector_extension.0.0.8\lib\Net40\inflector_extension.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.1.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.OData.5.1.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Services.5.1.0\lib\net40\Microsoft.Data.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Services.Client.5.1.0\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\packages\protobuf-net.2.0.0.601\lib\net40\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\packages\Quartz\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\packages\Quartz\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Spatial, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Spatial.5.1.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETCore\v4.5\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETCore\v4.5\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETCore\v4.5\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Authentication.svc" />
+    <Content Include="EntityDataService.svc" />
+    <Content Include="Global.asax" />
+    <Content Include="LICENSE.txt" />
+    <Content Include="Login.aspx" />
+    <Content Include="MetadataService.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KatrinDbContext.cs" />
+    <Compile Include="DTO\OptionSetDTO.cs" />
+    <Compile Include="DynamicModelBuilder.cs" />
+    <Compile Include="DynamicTypeBuilder.cs" />
+    <Compile Include="EntityDataService.svc.cs">
+      <DependentUpon>EntityDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\AttributeLookupValue.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\AttributePicklistValue.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\AttributeType.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\ColumnMapping.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\ConnectionStringBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Metadata\CriteriaNode.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\Criterion.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\CycleReferenceResolver.cs" />
+    <Compile Include="Metadata\Entity.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\EntityAttribute.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\EntityRelationship.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\EntityRelationshipRelationships.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\EntityRelationshipRole.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\IMetadataService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Metadata\ImportMap.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\LocalizedLabel.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\MetadataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MetadataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\MetadataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\MetadataService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Metadata\NotificationProfile.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\NotificationRecipientAttribute.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\NotificationTemplate.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\NotificationVariable.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\ObjectQueryExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Metadata\OptionSet.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\ProfileVariable.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\Relationship.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\SavedQuery.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata\Subscription.cs">
+      <DependentUpon>MetadataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Notification\CreateNotification.cs" />
+    <Compile Include="Notification\FilterCriteriaHelper.cs" />
+    <Compile Include="Notification\MetadataProvider.cs" />
+    <Compile Include="Notification\NotificationJob.cs" />
+    <Compile Include="Notification\NotificationStart.cs" />
+    <Compile Include="Notification\VariableRenderer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\KatrinMembershipProvider.cs" />
+    <Compile Include="Security\KatrinRoleProvider.cs" />
+    <Compile Include="Security\CookieAuthenticationHttpModule.cs" />
+    <Compile Include="Security\CustomServicePrincipal.cs" />
+    <Compile Include="Security\Permission.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Metadata\MetadataModel.edmx">
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Metadata\MetadataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MetadataModel.Context.cs</LastGenOutput>
+      <DependentUpon>MetadataModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Metadata\MetadataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MetadataModel.cs</LastGenOutput>
+      <DependentUpon>MetadataModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Metadata\MetadataModel.edmx.diagram">
+      <DependentUpon>MetadataModel.edmx</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Notification\quartz.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Katrin.Common\Katrin.Common.csproj">
+      <Project>{37bdfea4-34cf-42cc-8379-c74b35bbf596}</Project>
+      <Name>Katrin.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Katrin.Common\Katrin.Common.csproj">
+      <Project>{37bdfea4-34cf-42cc-8379-c74b35bbf596}</Project>
+      <Name>Katrin.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\hecq.pubxml" />
+    <None Include="Properties\PublishProfiles\publish.pubxml" />
+    <None Include="Properties\PublishProfiles\publish_wip.pubxml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>8081</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

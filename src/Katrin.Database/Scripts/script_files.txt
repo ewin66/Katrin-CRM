@@ -1,0 +1,11 @@
+0001.InitEntityAttributes.sql
+0002.InitPicklistData.sql
+0003.SetLookupColumns.sql
+0004.InitRelationship.sql
+0005.InitImportMap.sql
+0006.InitInvoiceBillingCustomerId.sql
+0007.UpdateAuditEnabled.sql
+0008.InitConfiguration.sql
+0009.Chinesization.sql
+0011.InitAdminUser.sql
+0010.InitModulesAndActions.sql

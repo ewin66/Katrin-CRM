@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.ProjectReportModule.dll" />
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+
+  <!--RIGHT DOCK PANELS-->
+  <Path name = "/ProjectReport/List/DockPanels">
+    <View id="DefaultProjectReportView" controller="ProjectReportList" guid="{50CCF078-4201-4B54-A552-D8FA310278DA}"/>
+    
+  </Path>
+
+  <!--LIST RIBBON-->
+  <Path name="/ProjectReport/List/Ribbon">
+    <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+      <MenuItem id = "General" type = "Group" label = "${res:General}" OrderNumber="0" builderid ="RibbonPageGroupBuilder">
+      </MenuItem>
+    </MenuItem>
+  </Path>
+
+  <Path name = "/Workbench/Navigation/Reports">
+    <NavItem id = "ProjectReport"
+		          type = "Item"
+		          label = "${res:ProjectReport}"
+              icon ="ProjectReport"
+              class ="Katrin.Win.ProjectReportModule.OpenProjectReportCommand"
+              builderid ="NavBarItemBuilder"
+             />
+  </Path>
+
+
+  <Path name ="/Controllers">
+    <Controller id = "ProjectReport" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="ProjectReport"/>
+    <Controller id = "ProjectReportList" class = "Katrin.Win.ProjectReportModule.Report.ProjectReportController"/>
+  </Path>
+
+  <Path name ="/Views">
+    <View id = "DefaultProjectReportView" class = "Katrin.Win.ProjectReportModule.Report.ProjectReportView"/>
+  </Path>
+</AddIn>

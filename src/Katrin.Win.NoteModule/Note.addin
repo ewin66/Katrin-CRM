@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.NoteModule.dll">
+      <ConditionEvaluator name="NoteEnabledConditionEvaluator" class="Katrin.Win.NoteModule.ConditionEvaluators.EnabledConditionEvaluator"/>
+      <Doozer name="NoteDoozer"  class="Katrin.Win.NoteModule.NoteDoozer"/>
+    </Import>
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+  
+  <!--note ribbon-->
+  <Path name = "/NoteView/Show">
+    <MenuItem id = "Note" type = "Item" cmdId="ShowNote"/>
+  </Path>
+  <Path name = "/NoteView/Activate">
+      <MenuItem id = "Note" type = "Item" cmdId="ActivateNote"/>
+  </Path>
+  <Path name = "/NoteView/Add">
+    <MenuItem id = "AddNote" type = "Item" cmdId="AddNote" />
+  </Path>
+
+
+  <!--note panel-->
+  <Path name = "/Note/Detail/DockPanels">
+    <View id = "DefaultDetailView" controller="NoteDetail"/>
+  </Path>
+  
+  <!--note view-->
+  <Path name ="/Views">
+    <View id = "DefaultNoteDetailView"   class = "Katrin.Win.NoteModule.Note.NoteDetailForm"/>
+  </Path>
+  
+  <!--note controllers-->
+  <Path name ="/Controllers">
+    <Controller id = "NoteDetail" class = "Katrin.Win.NoteModule.Note.NoteDetailController"/>
+    <Controller id = "NoteList"  class = "Katrin.Win.NoteModule.NoteController"/>
+    <Controller id = "Note" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="Note"/>
+  </Path>
+
+  <!--note commands-->
+  <Path name ="/Note/Commands">
+    <Path id="MenuCommand">
+      <MenuItem id ="DeleteNote" source ="Custom" type = "Item" label = "${res:DeleteNote}"
+                  imageName="delete" builderid ="BarButtonItemBuilder"
+                  class ="Katrin.Win.NoteModule.Commands.DeleteNoteCommand"
+                  controllerId ="NoteList" />
+      <MenuItem id ="EditNote" source ="Custom" type = "Item" label = "${res:EditNote}"
+                imageName="edit" builderid ="BarButtonItemBuilder"
+                class ="Katrin.Win.NoteModule.Commands.EditNoteCommand"
+                controllerId ="NoteList" />
+    </Path>
+    <Path id="RibbonCommand">
+      <MenuItem id = "AddNote" source ="Custom" type = "Item" label = "${res:AddNote}"
+                imageName="note" overlay="overlay_add"
+                class ="Katrin.Win.NoteModule.Commands.AddNoteCommand"
+                builderid ="BarButtonItemBuilder" />
+      <Condition name = "CheckConditionEvaluator" affect="Down" viewName="NoteList">
+        <MenuItem id = "ShowNote" source ="Custom" type = "Item" label = "${res:Note}"
+                  imageName="note" ButtonStyle="Check"
+                  class ="Katrin.Win.NoteModule.Commands.ShowNoteCommand"
+                  builderid ="BarButtonItemBuilder"/>
+      </Condition>
+      <Condition name = "CheckConditionEvaluator" affect="Down" viewName="NoteList">
+        <MenuItem id = "ActivateNote" source ="Custom" type = "Item" label = "${res:Note}"
+                  imageName="note" ButtonStyle="Check"
+                  class ="Katrin.Win.NoteModule.Commands.ActivateNoteListCommand"
+                  builderid ="BarButtonItemBuilder"/>
+      </Condition>
+    </Path>
+  </Path>
+  
+</AddIn>

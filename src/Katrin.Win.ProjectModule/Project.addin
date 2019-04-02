@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.ProjectModule.dll" />
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+
+
+  <Path name="/Project">
+    <Path id="List">
+      <Path id = "DockPanels">
+        <View id="DefaultListView" controller="ProjectList" guid="{62188FB8-DB80-4F7F-ABAD-581FBFA0D722}"></View>
+        <DockPanel id="NoteList" width="400" ViewType="Layout"  controller="NoteList" label="Note"
+                   guid="{A262EAE1-32AC-4D10-9BD4-68BDA3779B7B}"></DockPanel>
+        <DockPanel id="ProjectIterationList" width="400" controller="ProjectIterationList" label="ProjectIteration" DockType="Tab"
+                   DockTo="NoteList" guid="{FDAE7471-C2E1-43B4-A44B-E19E385D8226}"></DockPanel>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/List/Commands"/>
+        <Include id = "FormatCommand" path = "/Format/Commands" />
+        <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude">
+          <Condition name = "EnabledConditionEvaluator" affect="Enabled" action="Disable">
+            <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+            <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+            <Include id = "HistoryCommand" path = "/History/Commands/List" />
+            <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+            <Include id = "ProjectIterationCommand" path = "/ProjectIteration/Commands/RibbonCommand" />
+          </Condition>
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+        <Condition name = "ProjectIterationEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "ProjectIterationCommand" path = "/ProjectIteration/Commands/MenuCommand" />
+        </Condition>
+        <Condition name = "ProjectVersionEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "ProjectVersionCommand" path = "/ProjectVersion/Commands/MenuCommand" />
+        </Condition>
+        <Condition name = "ProjectModuleEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "ProjectModuleCommand" path = "/ProjectModule/Commands/MenuCommand" />
+        </Condition>
+        <Condition name = "ProjectTaskEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "ProjectTaskCommand" path = "/ProjectTask/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "Base" path = "/List/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" builderid ="RibbonPageGroupBuilder">
+            <Include id = "ShowNote" path = "/NoteView/Show"/>
+            <Include id = "ShowIteration" path = "/ProjectIteration/Show"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/ShowWindow"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+            <Include id = "AddIteration" path = "/ProjectIteration/Add"/>
+          </MenuItem>
+          <RelatedDoozer id="Related" entityName="Project"></RelatedDoozer>
+          <CovertDoozer id="Convert" entityName="Project"></CovertDoozer>
+          <Include id = "FilterGroup" path = "/FilterView/FilterGroup"/>
+        </MenuItem>
+        <MenuItem id = "Appearance" type = "Page" label = "${res:ViewPageCaption}" builderid ="RibbonPageBuilder">
+          <Include id = "Format" path = "/FormatView/Format"/>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id="Detail">
+      <Path id = "DockPanels">
+        <View id="DefaultDetailView" controller="ProjectDetail"></View>
+        <DockPanel id="NoteList" dock="Fill" lazy="true" controller="NoteList"></DockPanel>
+        <DockPanel id="History" dock="Fill" lazy="true" controller="HistoryList"></DockPanel>
+        <DockPanel id="ProjectIteration" dock="Fill" lazy="true" controller="ProjectIterationList"></DockPanel>
+        <DockPanel id="ProjectTask" dock="Fill" lazy="true" controller="ProjectTaskList"></DockPanel>
+        <DockPanel id="ProjectModule" dock="Fill" lazy="true" controller="ProjectModuleList"></DockPanel>
+        <DockPanel id="ProjectVersion" dock="Fill" lazy="true" controller="ProjectVersionList"></DockPanel>
+      </Path>
+      <Path id="Commands">
+        <Include id = "Base" path = "/Detail/Commands"/>
+        <Condition name = "DetailEnabledConditionEvaluator" affect="Enabled" action="Disable">
+          <Include id = "HistoryCommand" path = "/History/Commands/Detail" />
+          <Include id = "NoteCommand" path = "/Note/Commands/RibbonCommand" />
+          <Include id = "ProjectVersionCommand" path = "/ProjectVersion/Commands/RibbonCommand" />
+          <Include id = "ProjectIterationCommand" path = "/ProjectIteration/Commands/RibbonCommand" />
+          <Include id = "ProjectModuleCommand" path = "/ProjectModule/Commands/RibbonCommand" />
+          <Include id = "ProjectTaskCommand" path = "/ProjectTask/Commands/RibbonCommand" />
+          <MenuItem id ="ConvertGroup"   source ="RibbonDynamicGroup" groupName ="Convert"/>
+          <MenuItem id ="RelatedGroup"   source ="RibbonDynamicGroup" groupName ="Related"/>
+        </Condition>
+        <Condition name = "NoteEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "NoteCommand" path = "/Note/Commands/MenuCommand" />
+        </Condition>
+        <Condition name = "ProjectIterationEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "ProjectIterationCommand" path = "/ProjectIteration/Commands/MenuCommand" />
+        </Condition>
+        <Condition name = "ProjectVersionEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "ProjectVersionCommand" path = "/ProjectVersion/Commands/MenuCommand" />
+        </Condition>
+        <Condition name = "ProjectModuleEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "ProjectModuleCommand" path = "/ProjectModule/Commands/MenuCommand" />
+        </Condition>
+        <Condition name = "ProjectTaskEnabledConditionEvaluator" affect="Enabled" action="Disable" >
+          <Include id = "ProjectTaskCommand" path = "/ProjectTask/Commands/MenuCommand" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "Base" path = "/Detail/Ribbon/Home" />
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" OrderNumber="1" builderid ="RibbonPageGroupBuilder">
+            <Include id = "Base" path = "/Detail/Ribbon/Show" />
+            <Include id = "ShowNote" path = "/NoteView/Activate"/>
+            <Include id = "ShowHistory" path = "/HistoryViews/Show"/>
+            <Include id = "ShowProjectVersion" path = "/ProjectVersion/Show"/>
+            <Include id = "ShowProjectModule" path = "/ProjectModule/Show"/>
+            <Include id = "ShowIteration" path = "/ProjectIteration/Show"/>
+            <Include id = "ShowProjectTask" path = "/ProjectTask/Show"/>
+          </MenuItem>
+          <MenuItem id = "Add" type = "Group" label = "${res:Add}" OrderNumber="2" builderid ="RibbonPageGroupBuilder">
+            <Include id = "AddNote" path = "/NoteView/Add"/>
+            <Include id = "AddProjectVersion" path = "/ProjectVersion/Add"/>
+            <Include id = "AddProjectModule" path = "/ProjectModule/Add"/>
+            <Include id = "AddIteration" path = "/ProjectIteration/Add"/>
+            <Include id = "AddProjectTask" path = "/ProjectTask/Add"/>
+          </MenuItem>
+          <RelatedDoozer id="Related" entityName="Project"></RelatedDoozer>
+          <CovertDoozer id="Convert" entityName="Project"></CovertDoozer>
+        </MenuItem>
+      </Path>
+    </Path>
+    <Path id ="ContextMenu">
+      <!--MenuItem default type is normal.-->
+      <MenuItem id = "ProjectListViewMenu" viewid = "DefaultListView" module ="Project">
+        <MenuItem id ="Edit" cmdId ="Edit" />
+        <MenuItem id ="View" cmdId ="View"/>
+        <MenuItem id ="Delete" cmdId ="Delete"/>
+        <MenuItem id ="AddNote" cmdId ="AddNote" beginGroup ="true"/>
+        <MenuItem id ="AddIterationInList" cmdId ="AddIterationInList"/>
+        <MenuItem id ="Refresh" cmdId ="Refresh" beginGroup ="true"/>
+      </MenuItem>
+      <MenuItem id = "ProjectNoteViewMenu" viewid = "NoteList" module ="Project">
+        <MenuItem id ="EditNote" cmdId ="EditNote"/>
+        <MenuItem id ="DeleteNote" cmdId ="DeleteNote"/>
+      </MenuItem>
+      <MenuItem id = "ProjectIterationListViewMenu" viewid = "ProjectIterationList" module ="Project">
+        <MenuItem id ="EditProjectIteration" cmdId ="EditProjectIteration"/>
+        <MenuItem id ="DeleteProjectIteration" cmdId ="DeleteProjectIteration"/>
+      </MenuItem>
+      <MenuItem id = "ProjectIterationViewMenu" viewid = "ProjectIteration" module ="Project">
+        <MenuItem id ="EditProjectIteration" cmdId ="EditProjectIteration"/>
+        <MenuItem id ="DeleteProjectIteration" cmdId ="DeleteProjectIteration"/>
+      </MenuItem>
+      <MenuItem id = "ProjectVersionViewMenu" viewid = "ProjectVersion" module ="Project">
+        <MenuItem id ="EditProjectVersion" cmdId ="EditProjectVersion"/>
+        <MenuItem id ="DeleteProjectVersion" cmdId ="DeleteProjectVersion"/>
+      </MenuItem>
+      <MenuItem id = "ProjectModuleViewMenu" viewid = "ProjectModule" module ="Project">
+        <MenuItem id ="EditProjectModule" cmdId ="EditProjectModule"/>
+        <MenuItem id ="DeleteProjectModule" cmdId ="DeleteProjectModule"/>
+      </MenuItem>
+      <MenuItem id = "ProjectTaskViewMenu" viewid = "ProjectTask" module ="Project">
+        <MenuItem id ="EditProjectTask" cmdId ="EditProjectTask"/>
+        <MenuItem id ="DeleteProjectTask" cmdId ="DeleteProjectTask"/>
+      </MenuItem>
+    </Path>
+  </Path>
+  <!--RIGHT DOCK PANELS-->
+
+  <!-- project chart panel -->
+  <Path name="/ProjectChart">
+    <Path id="List">
+      <Path id = "DockPanels">
+        <View id="DefaultProjectChartView" controller="ProjectChartList" guid="{B3A45B42-9DAC-4020-9D98-1B6A44DD68A5}"></View>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <Include id = "FilterGroup" path = "/FilterView/FilterGroup"/>
+        </MenuItem>
+      </Path>
+    </Path>
+  </Path>
+  
+
+  <Path name = "/Workbench/Navigation/ProjectManagement">
+    <NavItem id = "Project"
+		          type = "Item"
+              icon="project"
+		          label = "${res:Project}"
+              class ="Katrin.Win.ProjectModule.OpenProjectListCommand"
+              builderid ="NavBarItemBuilder"/>
+    <NavItem id = "ProjectChart"
+		          type = "Item"
+              icon="projectchart"
+		          label = "${res:ProjectChart}"
+              class ="Katrin.Win.ProjectModule.OpenProjectChartCommand"
+              builderid ="NavBarItemBuilder"/>
+  </Path>
+
+  <Path name ="/Controllers">
+    <Controller id = "Project" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="Project"/>
+    <Controller id = "ProjectChart" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="ProjectChart"/>
+    <Controller id = "ProjectList" class = "Katrin.Win.ProjectModule.ProjectController"/>
+    <Controller id = "ProjectChartList" class = "Katrin.Win.ProjectModule.Chart.ProjectChartController"/>
+    <Controller id = "ProjectDetail" class = "Katrin.Win.ProjectModule.Detail.ProjectDetailController"/>
+  </Path>
+
+
+  <Path name ="/Views">
+    <View id = "DefaultProjectDetailView" class = "Katrin.Win.ProjectModule.Detail.ProjectDetailView"/>
+    <View id = "DefaultProjectChartView" class = "Katrin.Win.ProjectModule.Chart.ProjectChartView"/>
+  </Path>
+
+</AddIn>

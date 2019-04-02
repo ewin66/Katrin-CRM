@@ -1,0 +1,20 @@
+﻿DELETE FROM QuoteLineItem
+DELETE FROM Quote
+DELETE FROM InvoiceContract
+DELETE FROM [Contract]
+DELETE FROM Invoice
+DELETE FROM Account
+DELETE FROM Contact
+DELETE FROM TimeTracking
+DELETE FROM Opportunity
+DELETE FROM Lead
+DELETE FROM Product
+DELETE FROM Audit
+DELETE FROM UserRole
+DELETE FROM Note
+DELETE FROM TaskTimeHistory
+DELETE FROM ProjectTask
+DELETE FROM ProjectIteration
+DELETE FROM ProjectWeekReport
+DELETE FROM Project
+DELETE FROM [User] WHERE UserName <> 'admin'

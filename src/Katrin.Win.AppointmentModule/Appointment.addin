@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+
+  <Runtime>
+    <Import assembly = "Katrin.Win.AppointmentModule.dll" >
+      <ConditionEvaluator name="Day" class="Katrin.Win.AppointmentModule.Conditions.ActiveViewCheckConditionEvaluator"/>
+      <ConditionEvaluator name="WorkWeek" class="Katrin.Win.AppointmentModule.Conditions.ActiveViewCheckConditionEvaluator"/>
+      <ConditionEvaluator name="Month" class="Katrin.Win.AppointmentModule.Conditions.ActiveViewCheckConditionEvaluator"/>
+      <ConditionEvaluator name="None" class="Katrin.Win.AppointmentModule.Conditions.GroupTypeCheckConditionEvaluator"/>
+      <ConditionEvaluator name="Date" class="Katrin.Win.AppointmentModule.Conditions.GroupTypeCheckConditionEvaluator"/>
+      <ConditionEvaluator name="Resource" class="Katrin.Win.AppointmentModule.Conditions.GroupTypeCheckConditionEvaluator"/>
+      <ConditionEvaluator name="AppointmentEnabledConditionEvaluator" class="Katrin.Win.AppointmentModule.Conditions.AppointmentEnabledConditionEvaluator"/>
+    </Import>
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll" />
+  </Runtime>
+
+  <Path name="/Appointment">
+    <Path id="List">
+      <Path id = "DockPanels">
+        <View id="DefaultAppointmentView" controller="AppointmentList" guid="{D05EB9CC-3D2D-48DF-AE89-7465EC38F59B}"></View>
+      </Path>
+      <Path id="Commands">
+        <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude" priviledge="Create">
+          <MenuItem id ="Add" label = "${res:Add}" overlay="overlay_add" source ="Custom"
+                    builderid ="BarButtonItemBuilder"
+                    class ="Katrin.Win.AppointmentModule.Commands.AddAppointmentCommand"/>
+        </Condition>
+        <Condition name = "AppointmentEnabledConditionEvaluator" affect="Enabled" action="Disable">
+          <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude" priviledge="Write">
+            <MenuItem id ="Edit" label = "${res:Edit}" overlay="overlay_edit" source ="Custom"
+                      builderid ="BarButtonItemBuilder"
+                      class ="Katrin.Win.AppointmentModule.Commands.EditAppointmentCommand"/>
+          </Condition>
+          <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude" priviledge="Read">
+            <MenuItem id ="View" label = "${res:View}" overlay="overlay_view"  source ="Custom"
+                      builderid ="BarButtonItemBuilder" RibbonStyle="Small" beginGroup ="true"
+                      class ="Katrin.Win.AppointmentModule.Commands.ViewAppointmentCommand"/>
+          </Condition>
+          <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude" priviledge="Delete">
+            <MenuItem id ="Delete" label = "${res:Delete}" overlay="overlay_delete"  source ="Custom"
+                      builderid ="BarButtonItemBuilder" RibbonStyle="Small"
+                      class ="Katrin.Win.AppointmentModule.Commands.DeleteAppointmentCommand"/>
+          </Condition>
+        </Condition>
+        <MenuItem id ="Refresh" label = "${res:Refresh}" imageName="refresh"  source ="Custom"
+                  builderid ="BarButtonItemBuilder" RibbonStyle="Small"
+                  class ="Katrin.Win.AppointmentModule.Commands.RefreshAppointmentCommand"/>
+        <MenuItem id = "GotoToday" source ="Custom" type = "Item" label = "${res:GotoToday}"
+            imageName="gototoday" class ="Katrin.Win.AppointmentModule.Commands.GotoTodayCommand"
+            builderid ="BarButtonItemBuilder" />
+        <Condition name = "Day" affect="Down">
+          <MenuItem id = "DayView" source ="Custom" type = "Item" label = "${res:DayView}"
+               imageName="dayview" ButtonStyle="Check" class ="Katrin.Win.AppointmentModule.Commands.DayViewCommand"
+               builderid ="BarButtonItemBuilder" />
+        </Condition>
+        <Condition name = "WorkWeek" affect="Down">
+          <MenuItem id = "WorkWeekView" source ="Custom" type = "Item" label = "${res:WorkWeekView}"
+             imageName="workweekview" ButtonStyle="Check" class ="Katrin.Win.AppointmentModule.Commands.WorkWeekViewCommand"
+             builderid ="BarButtonItemBuilder" />
+        </Condition>
+        <Condition name = "Month" affect="Down">
+          <MenuItem id = "MonthView" source ="Custom" type = "Item" label = "${res:MonthView}"
+             imageName="monthview" ButtonStyle="Check" class ="Katrin.Win.AppointmentModule.Commands.MonthViewCommand"
+             builderid ="BarButtonItemBuilder" />
+        </Condition>
+        <Condition name = "None" affect="Down">
+          <MenuItem id = "GroupByNone" source ="Custom" type = "Item" label = "${res:GroupByNone}"
+            imageName="groupbynone" ButtonStyle="Check" class ="Katrin.Win.AppointmentModule.Commands.GroupByNoneCommand"
+            builderid ="BarButtonItemBuilder" />
+        </Condition>
+        <Condition name = "Date" affect="Down">
+          <MenuItem id = "GroupByDate" source ="Custom" type = "Item" label = "${res:GroupByDate}"
+             imageName="groupbydate" ButtonStyle="Check" class ="Katrin.Win.AppointmentModule.Commands.GroupByDateCommand"
+             builderid ="BarButtonItemBuilder" />
+        </Condition>
+        <Condition name = "Resource" affect="Down">
+          <MenuItem id = "GroupByResource" source ="Custom" type = "Item" label = "${res:GroupByResource}"
+             imageName="groupbyresource" ButtonStyle="Check" class ="Katrin.Win.AppointmentModule.Commands.GroupByResourceCommand"
+             builderid ="BarButtonItemBuilder" />
+        </Condition>
+      </Path>
+      <Path id="Ribbon">
+        <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+          <MenuItem id = "General" type = "Group" label = "${res:General}" builderid ="RibbonPageGroupBuilder">
+            <MenuItem id = "Add" type = "Item"  cmdId="Add"    />
+            <MenuItem id = "Edit" type = "Item"  cmdId="Edit" />
+            <MenuItem id = "View" type = "Item"  cmdId="View" />
+            <MenuItem id = "Delete" type = "Item" cmdId="Delete" />
+            <MenuItem id = "Refresh" type = "Item" cmdId="Refresh"  />
+          </MenuItem>
+          <MenuItem id = "Navigate" type = "Group" label = "${res:Navigate}" builderid ="RibbonPageGroupBuilder">
+            <MenuItem id = "GotoToday" type = "Item" cmdId="GotoToday"/>
+          </MenuItem>
+          <MenuItem id = "Show" type = "Group" label = "${res:Show}" builderid ="RibbonPageGroupBuilder">
+            <MenuItem id = "DayView" type = "Item" cmdId="DayView"/>
+            <MenuItem id = "WorkWeekView" type = "Item" cmdId="WorkWeekView"/>
+            <MenuItem id = "MonthView" type = "Item" cmdId="MonthView"/>
+          </MenuItem>
+          <MenuItem id = "GroupBy" type = "Group" label = "${res:GroupBy}" builderid ="RibbonPageGroupBuilder">
+            <MenuItem id = "GroupByNone" type = "Item" cmdId="GroupByNone"/>
+            <MenuItem id = "GroupByDate" type = "Item" cmdId="GroupByDate"/>
+            <MenuItem id = "GroupByResource" type = "Item" cmdId="GroupByResource"/>
+          </MenuItem>
+          <Include id = "FilterGroup" path = "/FilterView/FilterGroup"/>
+        </MenuItem>
+      </Path>
+    </Path>
+  </Path>
+
+  <Path name = "/Workbench/Navigation/Administration">
+    <NavItem id = "Appointment"
+             type = "Item"
+             label = "${res:Appointment}"
+             icon ="appointment"
+             class ="Katrin.Win.AppointmentModule.OpenAppointmentListCommand"
+             builderid ="NavBarItemBuilder"
+             insertafter ="Attendance"
+             />
+  </Path>
+
+  <Path name ="/Controllers">
+    <Controller id = "Appointment" class = "Katrin.AppFramework.WinForms.Workspaces.WorkspaceController" objectName="Appointment"/>
+    <Controller id = "AppointmentList" class = "Katrin.Win.AppointmentModule.AppointmentController"/>
+  </Path>
+
+  <Path name ="/Views">
+    <View id = "DefaultAppointmentView" class = "Katrin.Win.AppointmentModule.AppointmentView"/>
+  </Path>
+
+</AddIn>

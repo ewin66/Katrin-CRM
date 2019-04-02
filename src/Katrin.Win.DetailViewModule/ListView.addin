@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddIn name        = "Katrin CRM Application"
+       author      = "Nova Software"
+       url         = "http://Katrin.codeplex.com"
+       description = "Base add-in of Katrin"
+       addInManagerHidden = "true">
+  <Runtime>
+    <Import assembly = "Katrin.Win.BaseViewModule.dll">
+      <ConditionEvaluator name="EnabledConditionEvaluator" class="Katrin.Win.ListViewModule.ConditionEvaluators.EnabledConditionEvaluator"/>
+      <ConditionEvaluator name="VisibilityConditionEvaluator" class="Katrin.Win.ListViewModule.ConditionEvaluators.VisibilityConditionEvaluator"/>
+    </Import>
+    <Import assembly = "..\Katrin.AppFramework.WinForms.dll"/>
+  </Runtime>
+
+  <Path name ="/Views">
+    <View id = "DefaultListView" class = "Katrin.Win.ListViewModule.ListViews.ListView" DoubleClick="Katrin.Win.ListViewModule.Commands.ViewCommand" />
+  </Path>
+
+  <Path name = "/List">
+    <Path id="Commands">
+      <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude" priviledge="Create">
+        <MenuItem id ="Add" label = "${res:Add}" overlay="overlay_add" source ="Custom"
+                  builderid ="BarButtonItemBuilder"
+                  class ="Katrin.Win.ListViewModule.Commands.AddCommand"/>
+      </Condition>
+      <Condition name = "EnabledConditionEvaluator" affect="Enabled" action="Disable">
+        <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude" priviledge="Write">
+          <MenuItem id ="Edit" label = "${res:Edit}" overlay="overlay_edit" source ="Custom"
+                    builderid ="BarButtonItemBuilder"
+                    class ="Katrin.Win.ListViewModule.Commands.EditCommand"/>
+        </Condition>
+        <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude" priviledge="Read">
+          <MenuItem id ="View" label = "${res:View}" overlay="overlay_view"  source ="Custom"
+                    builderid ="BarButtonItemBuilder" RibbonStyle="Small" beginGroup ="true"
+                    class ="Katrin.Win.ListViewModule.Commands.ViewCommand"/>
+        </Condition>
+        <Condition name = "VisibilityConditionEvaluator" affect="Visibility" action="Exclude" priviledge="Delete">
+          <MenuItem id ="Delete" label = "${res:Delete}" overlay="overlay_delete"  source ="Custom"
+                    builderid ="BarButtonItemBuilder" RibbonStyle="Small"
+                    class ="Katrin.Win.ListViewModule.Commands.DeleteCommand"/>
+        </Condition>
+      </Condition>
+      <MenuItem id ="Refresh" label = "${res:Refresh}" imageName="refresh"  source ="Custom"
+                builderid ="BarButtonItemBuilder" RibbonStyle="Small"
+                class ="Katrin.Win.ListViewModule.Commands.RefreshCommand"/>
+      <MenuItem id ="Import" label = "${res:Import}" imageName="import"  source ="Custom"
+                builderid ="BarButtonItemBuilder" RibbonStyle="Small"
+                class ="Katrin.Win.ListViewModule.Commands.ImportCommand"/>
+    </Path>
+    <Path id="Ribbon">
+      <MenuItem id = "Home" type = "Page" label = "${res:Home}"  builderid ="RibbonPageBuilder">
+        <MenuItem id = "General" type = "Group" label = "${res:General}" OrderNumber="0" builderid ="RibbonPageGroupBuilder">
+          <MenuItem id = "Add" type = "Item"  cmdId="Add"    />
+          <MenuItem id = "Edit" type = "Item"  cmdId="Edit" />
+          <MenuItem id = "View" type = "Item"  cmdId="View" />
+          <MenuItem id = "Delete" type = "Item" cmdId="Delete" />
+          <MenuItem id = "Refresh" type = "Item" cmdId="Refresh"  />
+          <MenuItem id = "Import" type = "Item" cmdId="Import" />
+        </MenuItem>
+      </MenuItem>
+    </Path>
+  </Path>
+</AddIn>

@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Account" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Addition" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddNote" xml:space="preserve">
+    <value>添加注释</value>
+  </data>
+  <data name="AddTimeTracking" xml:space="preserve">
+    <value>添加时间</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="AllProject" xml:space="preserve">
+    <value>所有项目</value>
+  </data>
+  <data name="AllTime" xml:space="preserve">
+    <value>所有时间</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>倒退</value>
+  </data>
+  <data name="CannotUnregisterSiteRegisteredWithParent" xml:space="preserve">
+    <value>Cannot unregister site that was registered in parent: {0}</value>
+  </data>
+  <data name="ConfirmDeletion" xml:space="preserve">
+    <value>确认删除</value>
+  </data>
+  <data name="ConfirmPasswordNotMatch" xml:space="preserve">
+    <value>两次输入密码不一致，请重新输入。</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="Contract" xml:space="preserve">
+    <value>合同</value>
+  </data>
+  <data name="custonHours" xml:space="preserve">
+    <value>自定义时段</value>
+  </data>
+  <data name="DeadLead" xml:space="preserve">
+    <value>失败</value>
+  </data>
+  <data name="DeadRecord" xml:space="preserve">
+    <value>确定要删除 {0}?</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="DeleteNote" xml:space="preserve">
+    <value>删除注释</value>
+  </data>
+  <data name="DeleteRecord" xml:space="preserve">
+    <value>你已经选择了 1 {0} 删除.
+
+系统将删除本条记录。 本次操作不可撤销。 继续, 请单击 OK.</value>
+  </data>
+  <data name="DeleteTimeTracking" xml:space="preserve">
+    <value>删除时间</value>
+  </data>
+  <data name="DisableDeleteRecord" xml:space="preserve">
+    <value>你不可以删除 {0}， 因为本条记录正在被另一程序所使用。</value>
+  </data>
+  <data name="DuplicateUIExtensionSite" xml:space="preserve">
+    <value>A UI extension site with this name already exists: {0}</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="EditNote" xml:space="preserve">
+    <value>编辑注释</value>
+  </data>
+  <data name="EditTimeTracking" xml:space="preserve">
+    <value>修改时间</value>
+  </data>
+  <data name="EntityDetailsCaptionFormat" xml:space="preserve">
+    <value>{0} 详细信息 - {1}</value>
+  </data>
+  <data name="EntityListCaptionFormat" xml:space="preserve">
+    <value>{0}列表</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="failPro" xml:space="preserve">
+    <value>失败</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>常规</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>历史</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>发票</value>
+  </data>
+  <data name="LastMonth" xml:space="preserve">
+    <value>上月</value>
+  </data>
+  <data name="LastQuarter" xml:space="preserve">
+    <value>上季度</value>
+  </data>
+  <data name="LastYear" xml:space="preserve">
+    <value>去年</value>
+  </data>
+  <data name="Lead" xml:space="preserve">
+    <value>潜在顾客</value>
+  </data>
+  <data name="LeadConvert" xml:space="preserve">
+    <value>转换</value>
+  </data>
+  <data name="ListScreenTitle" xml:space="preserve">
+    <value>{0} 列表</value>
+  </data>
+  <data name="NewCommand" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="NewEntity" xml:space="preserve">
+    <value>新建 {0}</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>注释</value>
+  </data>
+  <data name="Opportunity" xml:space="preserve">
+    <value>商业机遇</value>
+  </data>
+  <data name="OwnerPerson" xml:space="preserve">
+    <value>销售人员</value>
+  </data>
+  <data name="PasswordLengthValidation" xml:space="preserve">
+    <value>密码长度必须小于6位</value>
+  </data>
+  <data name="PopupContract" xml:space="preserve">
+    <value>合同</value>
+  </data>
+  <data name="PopupInvoice" xml:space="preserve">
+    <value>发票</value>
+  </data>
+  <data name="PopupQuote" xml:space="preserve">
+    <value>报价</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="ProjectReport" xml:space="preserve">
+    <value>项目报表</value>
+  </data>
+  <data name="QualitySituation" xml:space="preserve">
+    <value>总体情况：</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>问题</value>
+  </data>
+  <data name="Quote" xml:space="preserve">
+    <value>报价</value>
+  </data>
+  <data name="QuoteFail" xml:space="preserve">
+    <value>报价失败</value>
+  </data>
+  <data name="QuoteState" xml:space="preserve">
+    <value>进展情况：</value>
+  </data>
+  <data name="QuoteSuccess" xml:space="preserve">
+    <value>报价成功</value>
+  </data>
+  <data name="Quoting" xml:space="preserve">
+    <value>报价中项目</value>
+  </data>
+  <data name="RecordManagement" xml:space="preserve">
+    <value>记录管理</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="Related" xml:space="preserve">
+    <value>相关</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>报表</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="runingPro" xml:space="preserve">
+    <value>进行中</value>
+  </data>
+  <data name="Sales" xml:space="preserve">
+    <value>销售</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="SaveAndClose" xml:space="preserve">
+    <value>保存&amp;&amp;关闭</value>
+  </data>
+  <data name="SearchTime" xml:space="preserve">
+    <value>查询时间:</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>服务</value>
+  </data>
+  <data name="ServiceManagement" xml:space="preserve">
+    <value>服务管理</value>
+  </data>
+  <data name="SetOpportunityFail" xml:space="preserve">
+    <value>失败</value>
+  </data>
+  <data name="SetOpportunityResurrection" xml:space="preserve">
+    <value>复活</value>
+  </data>
+  <data name="SetOpportunitySuccess" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="ShowTimeTracking" xml:space="preserve">
+    <value>记录时间</value>
+  </data>
+  <data name="Skins" xml:space="preserve">
+    <value>风格</value>
+  </data>
+  <data name="successPro" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="SystemSetting" xml:space="preserve">
+    <value>系统设置</value>
+  </data>
+  <data name="TechnologyPerson" xml:space="preserve">
+    <value>技术人员</value>
+  </data>
+  <data name="ThisMonth" xml:space="preserve">
+    <value>本月</value>
+  </data>
+  <data name="ThisQuarter" xml:space="preserve">
+    <value>本季度</value>
+  </data>
+  <data name="ThisYear" xml:space="preserve">
+    <value>今年</value>
+  </data>
+  <data name="TimeTracking" xml:space="preserve">
+    <value>时间记录</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="UserNameAndPasswordInvalid" xml:space="preserve">
+    <value>非法用户名和密码。</value>
+  </data>
+  <data name="ValidateDate" xml:space="preserve">
+    <value>日期不合法。</value>
+  </data>
+  <data name="ValidateNotBlankMessage" xml:space="preserve">
+    <value>{0} 不能为空。</value>
+    <comment>Validation</comment>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>查看</value>
+  </data>
+  <data name="ViewPageCaption" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="Yesterday" xml:space="preserve">
+    <value>昨天</value>
+  </data>
+  <data name="LastWeek" xml:space="preserve">
+    <value>上周</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>本周</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>自定义</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>（所有）</value>
+  </data>
+  <data name="InProgress" xml:space="preserve">
+    <value>进行中</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>失败</value>
+  </data>
+  <data name="Won" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>报表</value>
+  </data>
+  <data name="OpportunityReport" xml:space="preserve">
+    <value>商机报表</value>
+  </data>
+  <data name="RecommendWarning" xml:space="preserve">
+    <value>推荐填写的项目为空,确定继续吗?</value>
+  </data>
+  <data name="SaleStageChangeTip" xml:space="preserve">
+    <value>不能选择此项，任务栏中有此项操作！</value>
+  </data>
+  <data name="ReasonNullTip" xml:space="preserve">
+    <value>失败原因不能空！</value>
+  </data>
+  <data name="DeleteNoteTip" xml:space="preserve">
+    <value>确认要删除此注释？</value>
+  </data>
+  <data name="DeleteTimingTip" xml:space="preserve">
+    <value>确认要删除此时间记录?</value>
+  </data>
+  <data name="Effort" xml:space="preserve">
+    <value>小时</value>
+  </data>
+  <data name="ProjectManagement" xml:space="preserve">
+    <value>项目管理</value>
+  </data>
+  <data name="ProjectTask" xml:space="preserve">
+    <value>项目任务</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="AddTask" xml:space="preserve">
+    <value>添加任务</value>
+  </data>
+  <data name="EditEffort" xml:space="preserve">
+    <value>管理工时</value>
+  </data>
+  <data name="OverTimeTip" xml:space="preserve">
+    <value>加班产出不能大于有效产出，请查证</value>
+  </data>
+  <data name="ProjectTaskEffort" xml:space="preserve">
+    <value>添加工时</value>
+  </data>
+  <data name="Katrin" xml:space="preserve">
+    <value>Katrin</value>
+  </data>
+  <data name="ProjectIteration" xml:space="preserve">
+    <value>项目迭代</value>
+  </data>
+  <data name="AddIteration" xml:space="preserve">
+    <value>添加迭代</value>
+  </data>
+  <data name="DeleteProjectIterationTip" xml:space="preserve">
+    <value>确认要删除此迭代记录?</value>
+  </data>
+  <data name="DeleteProjectTaskTip" xml:space="preserve">
+    <value>确认要删除此任务记录?</value>
+  </data>
+  <data name="ProbabilityCode" xml:space="preserve">
+    <value>后续可能性:</value>
+  </data>
+  <data name="ProjectMember" xml:space="preserve">
+    <value>项目成员:</value>
+  </data>
+  <data name="ProjectTypeCode" xml:space="preserve">
+    <value>类型:</value>
+  </data>
+  <data name="TechnologyCode" xml:space="preserve">
+    <value>技术:</value>
+  </data>
+  <data name="ProjectWeekReport" xml:space="preserve">
+    <value>项目周报</value>
+  </data>
+  <data name="GenerateWeekReport" xml:space="preserve">
+    <value>生成周报</value>
+  </data>
+  <data name="GenerateDayReport" xml:space="preserve">
+    <value>生成日报</value>
+  </data>
+  <data name="IterationDateErrorMessage" xml:space="preserve">
+    <value>不同迭代时间段不能重叠。</value>
+  </data>
+  <data name="NoTaskTip" xml:space="preserve">
+    <value>你今天没有任何任务.</value>
+  </data>
+  <data name="colSumActualInput" xml:space="preserve">
+    <value>总投入工时</value>
+  </data>
+  <data name="colSumActualWorkHours" xml:space="preserve">
+    <value>总计划工时</value>
+  </data>
+  <data name="colSumEffort" xml:space="preserve">
+    <value>总有效产出</value>
+  </data>
+  <data name="colSumOvertime" xml:space="preserve">
+    <value>总加班工时</value>
+  </data>
+  <data name="colSumQuoteWorkHours" xml:space="preserve">
+    <value>总报价工时</value>
+  </data>
+  <data name="colSumRemainderTime" xml:space="preserve">
+    <value>总剩余工作量</value>
+  </data>
+  <data name="IterationDateCompareMessage" xml:space="preserve">
+    <value>结束日期不能小于开始日期。</value>
+  </data>
+  <data name="OverEffortMessage" xml:space="preserve">
+    <value>总的有效产出不能大于总的计划工时。</value>
+  </data>
+  <data name="colEvaluateExactlyRate" xml:space="preserve">
+    <value>评估准确率</value>
+  </data>
+  <data name="colInputEffortRate" xml:space="preserve">
+    <value>投入产出比</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>发送邮件</value>
+  </data>
+  <data name="EditTaskEffort" xml:space="preserve">
+    <value>添加工时</value>
+  </data>
+  <data name="NoNewTaskMessage" xml:space="preserve">
+    <value>今天没有新的任务。</value>
+  </data>
+  <data name="BeginDate" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>结束日期</value>
+  </data>
+  <data name="IterationName" xml:space="preserve">
+    <value>迭代名称</value>
+  </data>
+  <data name="ProjectName" xml:space="preserve">
+    <value>项目名称</value>
+  </data>
+  <data name="RecordPerson" xml:space="preserve">
+    <value>记录人</value>
+  </data>
+  <data name="DateRang" xml:space="preserve">
+    <value>时间范围</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>状       态</value>
+  </data>
+  <data name="WorkUnit" xml:space="preserve">
+    <value>工时(单位:小时)</value>
+  </data>
+  <data name="CurrentDate" xml:space="preserve">
+    <value>当前日期</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>已完成</value>
+  </data>
+  <data name="NotStarted" xml:space="preserve">
+    <value>未开始</value>
+  </data>
+  <data name="ProjectManager" xml:space="preserve">
+    <value>项目经理</value>
+  </data>
+  <data name="AddVersion" xml:space="preserve">
+    <value>添加版本</value>
+  </data>
+  <data name="DeleteProjectVersionTip" xml:space="preserve">
+    <value>确认要删除此版本记录?</value>
+  </data>
+  <data name="ProjectVersion" xml:space="preserve">
+    <value>项目版本</value>
+  </data>
+  <data name="VersionNumber" xml:space="preserve">
+    <value>版本号</value>
+  </data>
+  <data name="Attendance" xml:space="preserve">
+    <value>考勤</value>
+  </data>
+  <data name="SumActualInputRate" xml:space="preserve">
+    <value>实际投入比</value>
+  </data>
+  <data name="SumEffortRate" xml:space="preserve">
+    <value>有效产出比</value>
+  </data>
+  <data name="ErrorDirection" xml:space="preserve">
+    <value>任务不能从高状态变成低状态。</value>
+  </data>
+  <data name="Unassigned" xml:space="preserve">
+    <value>未分配的</value>
+  </data>
+  <data name="IdealRemainTime" xml:space="preserve">
+    <value>理想剩余工作量</value>
+  </data>
+  <data name="ToDoRemainTime" xml:space="preserve">
+    <value>实际剩余工作量</value>
+  </data>
+  <data name="ActualInputIsZero" xml:space="preserve">
+    <value>实际投入不能为0</value>
+  </data>
+  <data name="DeleteProjectModuleTip" xml:space="preserve">
+    <value>确定要删除此模块？</value>
+  </data>
+  <data name="ProjectModule" xml:space="preserve">
+    <value>项目模块</value>
+  </data>
+  <data name="AddModule" xml:space="preserve">
+    <value>添加模块</value>
+  </data>
+</root>

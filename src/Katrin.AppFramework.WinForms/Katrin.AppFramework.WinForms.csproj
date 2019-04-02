@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{763E4A0C-17C0-4031-9748-A38D5EB4933E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Katrin.AppFramework.WinForms</RootNamespace>
+    <AssemblyName>Katrin.AppFramework.WinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\packages\Common.Logging.2.1.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr4.StringTemplate">
+      <HintPath>..\packages\Antlr4.StringTemplate.4.0.6.9004\lib\net35\Antlr4.StringTemplate.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.1.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.OData.5.1.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Services.Client.5.1.0\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Spatial, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Spatial.5.1.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="KatrinApplication.cs" />
+    <Compile Include="CommandManage\CommandDrawer.cs" />
+    <Compile Include="CommandManage\CommandManager.cs" />
+    <Compile Include="CommandManage\CommandSources.cs" />
+    <Compile Include="CommandManage\ICommandRegister.cs" />
+    <Compile Include="CommandManage\IControllerFinder.cs" />
+    <Compile Include="CommandManage\IRunTimeCommandRigister.cs" />
+    <Compile Include="CommandManage\IUICommand.cs" />
+    <Compile Include="CommandManage\UICommand.cs" />
+    <Compile Include="ContextMenu\IBarItemFinder.cs" />
+    <Compile Include="ContextMenu\ISubMemuCreater.cs" />
+    <Compile Include="ContextMenu\MenuCreater.cs" />
+    <Compile Include="Context\ActionContext.cs" />
+    <Compile Include="Context\IAppContext.cs" />
+    <Compile Include="Context\IAppControllerFinder.cs" />
+    <Compile Include="Context\IEde.cs" />
+    <Compile Include="Context\WorkSpaceContext.cs" />
+    <Compile Include="Context\IWorkSpaceContext.cs" />
+    <Compile Include="Controller\ObjectController.cs" />
+    <Compile Include="Controller\ListController.cs" />
+    <Compile Include="Controls\DropDownDateEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GridLookUpEdit.cs" />
+    <Compile Include="Controls\LoadingPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\LoadingPanel.Designer.cs">
+      <DependentUpon>LoadingPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LookBoard\LookBoardByStage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LookBoard\LookBoardByStage.Designer.cs">
+      <DependentUpon>LookBoardByStage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LookBoard\LookBoardColumn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LookBoard\LookBoardColumn.Designer.cs">
+      <DependentUpon>LookBoardColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ODataListSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RibbonControlEx.cs" />
+    <Compile Include="Controls\RibbonController.cs" />
+    <Compile Include="Doozers\ControllerDoozer.cs" />
+    <Compile Include="Doozers\DockPanelDescriptor.cs" />
+    <Compile Include="Doozers\DockPanelDoozer.cs" />
+    <Compile Include="Doozers\NavItemDoozer.cs" />
+    <Compile Include="Doozers\ViewDoozer.cs" />
+    <Compile Include="Doozers\WorkspaceDoozer.cs" />
+    <Compile Include="Extensions\SearchLookUpExtension.cs" />
+    <Compile Include="Grid\ColumnProjection.cs" />
+    <Compile Include="Grid\GridViewExtension.cs" />
+    <Compile Include="Extensions\PopupContainerControlExtention.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IObjectWidget.cs" />
+    <Compile Include="IUIElementInitializer.cs" />
+    <Compile Include="Messages\UpdateContextFilterMessage.cs" />
+    <Compile Include="Messages\UpdateDetailEntityMessage.cs" />
+    <Compile Include="Messages\MessageDefine\AbstractMessage.cs" />
+    <Compile Include="Messages\ActivateViewMessage.cs" />
+    <Compile Include="Messages\FilterChangedMessage.cs" />
+    <Compile Include="Messages\FormatRequestMessage.cs" />
+    <Compile Include="Messages\MessageDefine\MsgAppTypes.cs" />
+    <Compile Include="Messages\MessageDefine\MsgDomainTypes.cs" />
+    <Compile Include="Messages\NotifyRelatedMessage.cs" />
+    <Compile Include="Messages\ViewManageMessage.cs" />
+    <Compile Include="Messages\SelectedObjectChangedMessage.cs" />
+    <Compile Include="Messages\EntityDetailWorkingMode.cs" />
+    <Compile Include="Messages\ObjectSetChangedMessage.cs" />
+    <Compile Include="Messages\ObjectMessage.cs" />
+    <Compile Include="Messages\SelectedWorkSpaceChanged.cs" />
+    <Compile Include="Messages\ToggleVisibilityMessage.cs" />
+    <Compile Include="Messages\UpdateRibbonItemMessage.cs" />
+    <Compile Include="MVC\ActionInvoker.cs" />
+    <Compile Include="MVC\ActionParameters.cs" />
+    <Compile Include="MVC\AsynchronousAttribute.cs" />
+    <Compile Include="MVC\Context\ActionExecutedContext.cs" />
+    <Compile Include="MVC\Context\ActionExecutingContext.cs" />
+    <Compile Include="MVC\Context\AuthorizationContext.cs" />
+    <Compile Include="MVC\Context\ExceptionContext.cs" />
+    <Compile Include="MVC\Context\FilterContext.cs" />
+    <Compile Include="MVC\Context\ResultExecutedContext.cs" />
+    <Compile Include="MVC\Context\ResultExecutingContext.cs" />
+    <Compile Include="MVC\ControllerBase.cs" />
+    <Compile Include="MVC\ControllerFactory.cs" />
+    <Compile Include="MVC\ControllerManager.cs" />
+    <Compile Include="MVC\Data\AbstractBaseData.cs" />
+    <Compile Include="MVC\Data\BindableBase.cs" />
+    <Compile Include="MVC\Data\MessageData.cs" />
+    <Compile Include="MVC\Data\Session.cs" />
+    <Compile Include="MVC\FilterExtension.cs" />
+    <Compile Include="MVC\FilterInfo.cs" />
+    <Compile Include="MVC\IActionFilter.cs" />
+    <Compile Include="MVC\IActionResult.cs" />
+    <Compile Include="MVC\IAuthorizationFilter.cs" />
+    <Compile Include="MVC\IController.cs" />
+    <Compile Include="MVC\IControllerManager.cs" />
+    <Compile Include="MVC\IExceptionFilter.cs" />
+    <Compile Include="MVC\IResultFilter.cs" />
+    <Compile Include="MVC\IView.cs" />
+    <Compile Include="MVC\PartialViewResult.cs" />
+    <Compile Include="MVC\RedirectToActionResult.cs" />
+    <Compile Include="MVC\ViewManager.cs" />
+    <Compile Include="MVC\ViewResult.cs" />
+    <Compile Include="RibbonBuilder\SkinGalleryInitializer.cs" />
+    <Compile Include="Services\CommonLoggingService.cs" />
+    <Compile Include="Services\ServiceManager.cs" />
+    <Compile Include="Services\WinFormMessageService.cs" />
+    <Compile Include="Services\ExceptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Services\ExceptionForm.Designer.cs">
+      <DependentUpon>ExceptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\WinNavigationService.cs" />
+    <Compile Include="RibbonBuilderManager.cs" />
+    <Compile Include="Views\BaseView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\BaseView.Designer.cs">
+      <DependentUpon>BaseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IMdiView.cs" />
+    <Compile Include="Views\IObjectConvert.cs" />
+    <Compile Include="Views\IObjectAware.cs" />
+    <Compile Include="Views\IObjectDetailController.cs" />
+    <Compile Include="Views\IObjectListView.cs" />
+    <Compile Include="Views\IObjectDetailView.cs" />
+    <Compile Include="NavItemManager.cs" />
+    <Compile Include="PartBuilder\IPartBuilder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RibbonBuilder\BarButtonItemBuilder.cs" />
+    <Compile Include="NavBarBuilder\NavBarGroupBuilder.cs" />
+    <Compile Include="NavBarBuilder\NavBarItemBuilder.cs" />
+    <Compile Include="RibbonBuilder\SkinGalleryBuilder.cs" />
+    <Compile Include="RibbonBuilder\RibbonPageBuilder.cs" />
+    <Compile Include="RibbonBuilder\RibbonPageGroupBuilder.cs" />
+    <Compile Include="RibbonManager.cs" />
+    <Compile Include="UIElements\BarItemWrapper.cs" />
+    <Compile Include="UIElements\BarLinksCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\BarLinksOwnerCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\BarsUIAdapter.cs" />
+    <Compile Include="UIElements\EditorButtonCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\EditorButtonCollectionUIAdapterFactory.cs" />
+    <Compile Include="UIElements\ExceptionFactory.cs" />
+    <Compile Include="UIElements\NavBarGroupCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\NavBarItemCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\NavigatorCustomButtonsUIAdapter.cs" />
+    <Compile Include="UIElements\NavigatorCustomButtonsUIAdapterFactory.cs" />
+    <Compile Include="UIElements\RibbonApplicationMenuUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonGalleryGroupUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonGalleryUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonGroupUI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\RibbonPageCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonPageGroupCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonPageHeaderUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonQuickAccessToolbarUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonStatusBarUIAdapter.cs" />
+    <Compile Include="UIElements\RibbonUIAdapterFactory.cs" />
+    <Compile Include="UIElements\XtraBarUIAdapterFactory.cs" />
+    <Compile Include="UIElements\XtraNavBarUIAdapterFactory.cs" />
+    <Compile Include="Views\IObjectView.cs" />
+    <Compile Include="Views\IReceiveNotification.cs" />
+    <Compile Include="Views\ISelection.cs" />
+    <Compile Include="Views\ObjectAwareCommand.cs" />
+    <Compile Include="Views\ObjectListViewResult.cs" />
+    <Compile Include="Views\ViewManager.cs" />
+    <Compile Include="WinFormsResourceService.cs" />
+    <Compile Include="Workspaces\IProcessInfo.cs" />
+    <Compile Include="Workspaces\IWorkspace1.cs" />
+    <Compile Include="Workspaces\IWorkspace.cs" />
+    <Compile Include="Workspaces\IWorkspaceDescriptor.cs" />
+    <Compile Include="Workspaces\MdiWorkspace.cs" />
+    <Compile Include="Workspaces\RibbonFormWorkspace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workspaces\RibbonFormWorkspace.Designer.cs">
+      <DependentUpon>RibbonFormWorkspace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workspaces\WorkspaceController.cs" />
+    <Compile Include="Workspaces\WorkSpaceTextLoader.cs" />
+    <EmbeddedResource Include="Controls\LoadingPanel.resx">
+      <DependentUpon>LoadingPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LookBoard\LookBoardByStage.resx">
+      <DependentUpon>LookBoardByStage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LookBoard\LookBoardColumn.resx">
+      <DependentUpon>LookBoardColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RibbonController.resx">
+      <DependentUpon>RibbonController.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extensions\PopupContainerControlExtention.resx">
+      <DependentUpon>PopupContainerControlExtention.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Services\ExceptionForm.resx">
+      <DependentUpon>ExceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services\ExceptionForm.zh-CN.resx">
+      <DependentUpon>ExceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BaseView.resx">
+      <DependentUpon>BaseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workspaces\RibbonFormWorkspace.resx">
+      <DependentUpon>RibbonFormWorkspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workspaces\RibbonFormWorkspace.zh-CN.resx">
+      <DependentUpon>RibbonFormWorkspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Katrin.AppFramework\Katrin.AppFramework.csproj">
+      <Project>{9e788887-f89f-4f4b-96b5-5651158c0d36}</Project>
+      <Name>Katrin.AppFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ICSharpCode\ICSharpCode.Core\ICSharpCode.Core.csproj">
+      <Project>{35cef10f-2d4c-45f2-9dd1-161e0fec583c}</Project>
+      <Name>ICSharpCode.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>cd.&gt;$(ProjectDir)Properties\licenses.licx</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

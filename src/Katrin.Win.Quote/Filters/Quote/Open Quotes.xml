@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <FilterName key="OpenQuotes">Open Quotes</FilterName>
+  <property name="ActiveFilterString">Not [StageCode] IN (3,5,6)</property>
+  <order>3</order>
+</Filter>

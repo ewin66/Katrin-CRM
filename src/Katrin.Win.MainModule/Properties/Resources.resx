@@ -1,0 +1,1072 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ri_account" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\account.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_admin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\admin.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_Katrin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Katrin.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_contact" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contact.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_contract" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contract.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_Contract2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Contract2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_history" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\history.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_invoice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\invoice.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_lead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lead.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_note" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\note.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_opportunity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\opportunity.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_product" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\product.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_qualify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qualify.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_quote" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quote.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_role" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\role.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_sales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sales.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_systemsetting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\systemsetting.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_timetracking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\timetracking.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_userinfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\userinfo.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConfirmPasswordNotMatch" xml:space="preserve">
+    <value>Confirm password doesn't match the password field.</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Quote" xml:space="preserve">
+    <value>Quote</value>
+  </data>
+  <data name="Related" xml:space="preserve">
+    <value>Related</value>
+  </data>
+  <data name="NewCommand" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="ValidateDate" xml:space="preserve">
+    <value>This date is invalidation</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="UserNameAndPasswordInvalid" xml:space="preserve">
+    <value>User name and password are invalid.</value>
+  </data>
+  <data name="EntityDetailsCaptionFormat" xml:space="preserve">
+    <value>{0} Details - {1}</value>
+  </data>
+  <data name="SaveAndClose" xml:space="preserve">
+    <value>Save&amp;&amp;Close</value>
+  </data>
+  <data name="RecordManagement" xml:space="preserve">
+    <value>Record Management</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="PopupContract" xml:space="preserve">
+    <value>Contract</value>
+  </data>
+  <data name="PopupQuote" xml:space="preserve">
+    <value>Quote</value>
+  </data>
+  <data name="CannotUnregisterSiteRegisteredWithParent" xml:space="preserve">
+    <value>Cannot unregister site that was registered in parent: {0}</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="DisableDeleteRecord" xml:space="preserve">
+    <value>You can't delete this {0} when it is used!</value>
+  </data>
+  <data name="LeadConvert" xml:space="preserve">
+    <value>Convert</value>
+  </data>
+  <data name="ServiceManagement" xml:space="preserve">
+    <value>ServiceManagement</value>
+  </data>
+  <data name="ConfirmDeletion" xml:space="preserve">
+    <value>Confirm Deletion</value>
+  </data>
+  <data name="DeadRecord" xml:space="preserve">
+    <value>Do you want to dead the {0}?</value>
+  </data>
+  <data name="DeleteRecord" xml:space="preserve">
+    <value>You have selected 1 {0} for deletion.
+
+The system will delete this record. This action cannot be undone. To continue, click OK.</value>
+  </data>
+  <data name="EntityListCaptionFormat" xml:space="preserve">
+    <value>{0} List</value>
+  </data>
+  <data name="Lead" xml:space="preserve">
+    <value>Lead</value>
+  </data>
+  <data name="AddNote" xml:space="preserve">
+    <value>Add Note</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="PasswordLengthValidation" xml:space="preserve">
+    <value>The password length should not be less than 6</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="PopupInvoice" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="DeadLead" xml:space="preserve">
+    <value>Dead</value>
+  </data>
+  <data name="NewEntity" xml:space="preserve">
+    <value>New {0}</value>
+  </data>
+  <data name="Opportunity" xml:space="preserve">
+    <value>Opportunity</value>
+  </data>
+  <data name="DeleteNote" xml:space="preserve">
+    <value>Delete Note</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Addition" xml:space="preserve">
+    <value>Addition</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ValidateNotBlankMessage" xml:space="preserve">
+    <value>{0} cannot be empty</value>
+    <comment>Validation</comment>
+  </data>
+  <data name="DuplicateUIExtensionSite" xml:space="preserve">
+    <value>A UI extension site with this name already exists: {0}</value>
+  </data>
+  <data name="ListScreenTitle" xml:space="preserve">
+    <value>{0} List</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="EditNote" xml:space="preserve">
+    <value>Edit Note</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Contract" xml:space="preserve">
+    <value>Contract</value>
+  </data>
+  <data name="Skins" xml:space="preserve">
+    <value>Skins</value>
+  </data>
+  <data name="ViewPageCaption" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="TimeTracking" xml:space="preserve">
+    <value>Time Tracking</value>
+  </data>
+  <data name="AddTimeTracking" xml:space="preserve">
+    <value>Add Time</value>
+  </data>
+  <data name="DeleteTimeTracking" xml:space="preserve">
+    <value>Delete Time</value>
+  </data>
+  <data name="EditTimeTracking" xml:space="preserve">
+    <value>Edit Time</value>
+  </data>
+  <data name="ShowTimeTracking" xml:space="preserve">
+    <value>Show Time Tracking</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="Sales" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="SystemSetting" xml:space="preserve">
+    <value>System Setting</value>
+  </data>
+  <data name="ri_overlay_ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_overlay_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_audit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\audit.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Audit</value>
+  </data>
+  <data name="TimeTrackings" xml:space="preserve">
+    <value>TimeTrackings</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="ri_format" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\format.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>(All)</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="LastMonth" xml:space="preserve">
+    <value>Last Month</value>
+  </data>
+  <data name="LastQuarter" xml:space="preserve">
+    <value>Last Quarter</value>
+  </data>
+  <data name="LastWeek" xml:space="preserve">
+    <value>Last Week</value>
+  </data>
+  <data name="LastYear" xml:space="preserve">
+    <value>Last Year</value>
+  </data>
+  <data name="ThisMonth" xml:space="preserve">
+    <value>This Month</value>
+  </data>
+  <data name="ThisQuarter" xml:space="preserve">
+    <value>This Quarter</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>This Week</value>
+  </data>
+  <data name="ThisYear" xml:space="preserve">
+    <value>This Year</value>
+  </data>
+  <data name="InProgress" xml:space="preserve">
+    <value>In Progress</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>Lost</value>
+  </data>
+  <data name="Won" xml:space="preserve">
+    <value>Won</value>
+  </data>
+  <data name="OpportunityReport" xml:space="preserve">
+    <value>Opportunity Report</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="RecommendWarning" xml:space="preserve">
+    <value>Field Recommended has blank value,do you wish to continue?</value>
+  </data>
+  <data name="SaleStageChangeTip" xml:space="preserve">
+    <value>You can't select this item,it hava this operation above.</value>
+  </data>
+  <data name="ReasonNullTip" xml:space="preserve">
+    <value>Reason Is not nullable</value>
+  </data>
+  <data name="DeleteNoteTip" xml:space="preserve">
+    <value>Do you want to delete this note?</value>
+  </data>
+  <data name="DeleteTimingTip" xml:space="preserve">
+    <value>Do you want to delete this timeTracking?</value>
+  </data>
+  <data name="Effort" xml:space="preserve">
+    <value>Effort</value>
+  </data>
+  <data name="ProjectManagement" xml:space="preserve">
+    <value>Project Management</value>
+  </data>
+  <data name="ri_project" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\project.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ri_projecttask" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\projecttask.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProjectTask" xml:space="preserve">
+    <value>Project Task</value>
+  </data>
+  <data name="ri_projectmanagement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\projectmanagement.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="overlay_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay_view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_view.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddTask" xml:space="preserve">
+    <value>Add Task</value>
+  </data>
+  <data name="EditEffort" xml:space="preserve">
+    <value>Edit Effort</value>
+  </data>
+  <data name="OverTimeTip" xml:space="preserve">
+    <value>Over Time can not be bigger than effort</value>
+  </data>
+  <data name="ProjectTaskEffort" xml:space="preserve">
+    <value>Project Task Effort</value>
+  </data>
+  <data name="ProjectReport" xml:space="preserve">
+    <value>Project Report</value>
+  </data>
+  <data name="Katrin" xml:space="preserve">
+    <value>Katrin</value>
+  </data>
+  <data name="ProjectIteration" xml:space="preserve">
+    <value>Project Iteration</value>
+  </data>
+  <data name="AddIteration" xml:space="preserve">
+    <value>Add Iteration</value>
+  </data>
+  <data name="DeleteProjectIterationTip" xml:space="preserve">
+    <value>Do you want to delete this Project Iteration?</value>
+  </data>
+  <data name="DeleteProjectTaskTip" xml:space="preserve">
+    <value>Do you want to delete this Project Task?</value>
+  </data>
+  <data name="ProbabilityCode" xml:space="preserve">
+    <value>Probability:</value>
+  </data>
+  <data name="ProjectMember" xml:space="preserve">
+    <value>Project Member:</value>
+  </data>
+  <data name="ProjectTypeCode" xml:space="preserve">
+    <value>Project Type:</value>
+  </data>
+  <data name="TechnologyCode" xml:space="preserve">
+    <value>Technology:</value>
+  </data>
+  <data name="ProjectWeekReport" xml:space="preserve">
+    <value>Week Report</value>
+  </data>
+  <data name="GenerateWeekReport" xml:space="preserve">
+    <value>Generate Report</value>
+  </data>
+  <data name="WeekReportTemplate" xml:space="preserve">
+    <value>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" &gt;
+&lt;head&gt;
+    &lt;title&gt;NewWeekReporter&lt;/title&gt;
+    &lt;style type="text/css"&gt;
+        body.Sumbody{ lang:ZH-CN ;link:blue;vlink:purple;text-justify-trim:punctuation;}
+        div.Section1{page:Section1;}
+        .MsoNormal{margin:0cm;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;font-size:10.5pt;font-family:"Calibri","sans-serif";}
+        #RowWord{lang:EN-US;font-size:11.0pt;}
+        #RowWord1{lang:EN-US;font-size:11.0pt;line-height:120%;}
+        #Table1-2 td{border:solid black 1.0pt;background:#DAEEF3;padding:0cm 5.4pt 0cm 5.4pt;width:494pt;valign:top;}
+        .ShortTd{border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt;valign:top;background:#DAEEF3;}
+        .LongTd{border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height: 15.75pt;valign:top;background: white;font-size:10.5pt;font-family:"Calibri","sans-serif";}
+        .MiddleTd{border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height: 2.4pt;valign:top;background:#B8CCE4;}
+        .ImpTd{border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt;valign:top;background:#92D050;}
+        .style1 {
+            width: 494pt;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+    &lt;body class="Sumbody"&gt;
+        &lt;div class="Section1"&gt;
+            &lt;div&gt;
+            &lt;p class="MsoNormal"&gt;&lt;span id="RowWord"&gt;Dear $CustomerName$,&lt;span&gt;&lt;/p&gt;
+            &lt;p class="MsoNormal"&gt;&amp;nbsp;&lt;/p&gt;
+            &lt;p class="MsoNormal"&gt;&lt;span id="RowWord"&gt;Hope everything is going well with you.&lt;/span&gt;&lt;/p&gt;
+            &lt;p class="MsoNormal"&gt;&amp;nbsp;&lt;/p&gt;
+            &lt;p class="MsoNormal"&gt;&lt;span id="RowWord"&gt;As this is the end of this week, I’d like to summarize our work of this week.&lt;/span&gt;&lt;/p&gt;
+            &lt;p class="MsoNormal"&gt;&amp;nbsp;&lt;/p&gt;
+            &lt;p class="MsoNormal"&gt;&lt;span id="RowWord"&gt;This week, we have finished these things:&lt;/span&gt;&lt;/p&gt;
+           &lt;/div&gt;
+            &lt;table id="Table1-2"  style='border-collapse:collapse'&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;
+                        &lt;p class=MsoNormal style='margin-bottom:10.0pt;line-height:120%; text-align:center;';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;Tasks of this week:&lt;/span&gt;&lt;/b&gt;
+                     &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;&lt;td style="background-color: white" class="MsoNormal"&gt;$ThisWeekTask$&lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;div&gt;
+                &lt;p class="MsoNormal"&gt;&amp;nbsp;&lt;/p&gt;
+                &lt;p class="MsoNormal"&gt;&lt;span id="RowWord"&gt;Next week, we plan to work on these things:&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;table id="Table1-2"  style='border-collapse:collapse'&gt;
+                &lt;tr&gt;
+                    &lt;td class="style1"&gt;
+                        &lt;p class=MsoNormal style='margin-bottom:10.0pt;line-height:120%; text-align:center;'&gt;&lt;b&gt;&lt;span id="RowWord1";&gt;Tasks of next week&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;&lt;td style="background-color: white" class="MsoNormal"&gt;$NextWeekTask$&lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;div&gt;
+                &lt;p class="MsoNormal"&gt;&amp;nbsp;&lt;/p&gt;
+                &lt;p class="MsoNormal"&gt;&lt;span id="RowWord"&gt;And my comments for this week’s progress and quality are:&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;table style='width:488pt; border-collapse:collapse'&gt;
+                &lt;tr style='height:15.75pt'&gt;
+                    &lt;td class="ShortTd"&gt;
+                        &lt;p class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span id="RowWord1"&gt;Project&amp;nbsp;Name&lt;/p&gt;&lt;b&gt;&lt;/span&gt;
+                    &lt;/td&gt;
+                    &lt;td  nowrap colspan="4" valign="top" class="LongTd"&gt;
+                        $ProjectName$ 
+                    &lt;/td&gt;
+                &lt;/tr&gt;   
+                &lt;tr style='height:26.25pt'&gt;
+                    &lt;td class="ShortTd"&gt;
+                        &lt;p class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span id="RowWord1"&gt;Long-term&amp;nbsp;Goal&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td nowrap colspan="4" valign="top" class="LongTd"&gt;
+                        $LongTermGoal$ 
+                    &lt;/td&gt;
+                &lt;/tr&gt; 
+                &lt;tr style='height:15.75pt'&gt;
+                    &lt;td rowspan="2" class="ShortTd"&gt;
+                        &lt;p class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span id="RowWord1"&gt;Short-term Goal&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td nowrap colspan="4" valign="top" class="LongTd"&gt;
+                        $ShortTermGoal$
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class="ShortTd" style="background: #DBE5F1";&gt;
+                        &lt;p class="MsoNormal" style='margin-bottom:10.0pt';&gt;&lt;b&gt;&lt;span id="Span1"&gt;Start Date&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td valign="top" class="LongTd"&gt;$StartDate$&lt;/td&gt;
+                    &lt;td class="ShortTd" style="background: #DBE5F1";&gt;
+                        &lt;p class="MsoNormal" style='margin-bottom:10.0pt';&gt;&lt;b&gt;&lt;span id="RowWord"&gt;Deadline&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td valign="top" class="LongTd"&gt;$DeadLine$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td rowspan="3" class="ShortTd"&gt;
+                        &lt;p class="MsoNormal" style='margin-bottom:10.0pt;mso-line-height-alt:2.4pt'&gt;&lt;b&gt;&lt;span id="RowWord"&gt;Data&amp;nbsp;Analysis&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="MiddleTd" colspan="2"&gt;
+                        &lt;p class="MsoNormal" style='margin-bottom:10.0pt;mso-line-height-alt:2.4pt'&gt;&lt;b&gt;&lt;span id="RowWord"&gt;Remaining&amp;nbsp;Workload (man-day)&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="MiddleTd" colspan="2"&gt;
+                        &lt;p class="MsoNormal" style='margin-bottom:10.0pt;mso-line-height-alt:2.4pt'&gt;&lt;b&gt;&lt;span id="RowWord"&gt;Available&amp;nbsp;Workload (man-day)&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class="ShortTd" style="background: #DBE5F1"&gt;
+                        &lt;p class=MsoNormal style='margin-bottom:10.0pt';&gt;&lt;b&gt;&lt;span  id="RowWord"&gt;Programming&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd"&gt;$RemainingProgramming$ &lt;/td&gt;
+                    &lt;td class="ShortTd" style="background: #DBE5F1"&gt;
+                        &lt;p class="MsoNormal" style='margin-bottom:10.0pt';&gt;&lt;b&gt;&lt;span id="RowWord"&gt;Programming&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd"&gt;$AvailableProgramming$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class="ShortTd" style="background: #DBE5F1" colspan="2"&gt;
+                        &lt;p class="MsoNormal" style='margin-bottom:10.0pt';&gt;&lt;b&gt;&lt;span id="RowWord1"&gt;Work&amp;nbsp;Amount&amp;nbsp;of&amp;nbsp;This&amp;nbsp;Week (H)&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd" colspan="2"&gt;$WorkAmountOfThisWeek$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr style='height:30.95pt'&gt;
+                    &lt;td class="ShortTd"&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord"&gt;Assessment&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord"&gt;of Progress&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd" colspan="2"&gt;$CurrentProgress$ &lt;/td&gt;
+                    &lt;td class="ShortTd" &gt;
+                        &lt;p&gt;&lt;b&gt;&lt;span&gt;Outlook&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd"&gt;$OutlookProgress$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr style='height:57.0pt'&gt;
+                    &lt;td class="ShortTd" &gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord"&gt;Assessment&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord"&gt;Criteria&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd" colspan="4"&gt;$CriteriaProgress$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr style='height:35.05pt'&gt;
+                    &lt;td class="ShortTd"&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;Assessment&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;of Quality&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd" colspan="2"&gt;$CurrentQuality$&lt;/td&gt;
+                    &lt;td class="ShortTd"&gt;&lt;p&gt;&lt;b&gt;&lt;span&gt;Outlook&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd"&gt;$OutlookQuality$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr style='height:57.0pt'&gt;
+                    &lt;td class="ShortTd" &gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;Assessment&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;Criteria&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd" colspan="4"&gt;$CriteriaProgress$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr style='height:96.95pt'&gt;
+                     &lt;td   class="ImpTd" &gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;Issues &amp; &lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;Suggestions&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd" colspan="4"&gt;$Suggestions$ &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr style='height:67.5pt'&gt;
+                     &lt;td class="ShortTd"&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;Review &lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                        &lt;p  class=MsoNormal style='margin-bottom:10.0pt;line-height:120%';&gt;&lt;b&gt;&lt;span  id="RowWord1"&gt;of&amp;nbsp;Team&amp;nbsp;Member&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="LongTd" colspan="4"&gt;$Reviews$&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;div&gt;
+                &lt;p class=MsoNormal&gt;&lt;span  id="RowWord"&gt;Please feel free to let us know if you have any question.&lt;/span&gt;&lt;/p&gt;
+                &lt;p class=MsoNormal&gt;&lt;span id="RowWord"&gt;&amp;nbsp;&lt;/span&gt;
+                &lt;!--&lt;p class=MsoNormal&gt;&lt;span  id="RowWord"&gt;Hai Feng Ma | Project Manager | Nova Software Inc. &lt;/span&gt;&lt;/p&gt;
+                &lt;p class=MsoNormal&gt;&lt;span id="RowWord"&gt;T: (+86 23) 68795169 | MSN: &lt;a href="mailto:hudawq@sina.com"&gt;ma.haifeng@msn.com&lt;/a&gt; | Skype: ningdev&lt;/span&gt;&lt;/p&gt;
+                &lt;p class=MsoNormal&gt;&lt;span  id="RowWord"&gt;&lt;a href="http://www.novasoftware.com/"&gt;www.novasoftware.com&lt;/a&gt;&lt;span&gt;&lt;span&gt;|&lt;/span&gt;&lt;b&gt;&lt;span&gt;For your success!&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;--&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="GenerateDayReport" xml:space="preserve">
+    <value>Day Report</value>
+  </data>
+  <data name="DayReportTemplate" xml:space="preserve">
+    <value>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+    &lt;meta name="Generator" content="Microsoft Word 12 (filtered medium)"&gt;
+    &lt;title&gt;DailyReport&lt;/title&gt;
+    &lt;style type="text/css"&gt;
+        h1
+        {
+            margin: 0cm;
+            text-align: justify;
+            font-family: "Calibri" , "sans-serif";
+            font-weight: normal;
+            margin-top: 1cm;
+            margin-right: 0cm;
+            margin-bottom: 5.0pt;
+            margin-left: 0cm;
+            line-height: 110%;
+            background: #F2DBDB;
+            font-size: 11.0pt;
+            color: #622423;
+        }
+        body.Show
+        {
+            margin: 0px 0px 0px  0px;
+            margin-bottom: .0001pt;
+            font-size: 11.0pt;
+            font-family: "Calibri" , "sans-serif";
+        }
+        a:link
+        {
+            mso-style-priority: 99;
+            color: blue;
+            text-decoration: underline;
+        }
+        a:visited
+        {
+            mso-style-priority: 99;
+            color: purple;
+            text-decoration: underline;
+        }
+        tr.FirstLine
+        {
+            line-height: 150%;
+            font-weight:bold;
+            border-top: solid #9BBB59 1.0pt;
+            background: #9BBB59;
+            vertical-align:top;
+            padding: 0cm 5.4pt 0cm 5.4pt;
+        }
+        tr.NormalLine
+        {
+            line-height: 150%;
+            padding: 0cm 5.4pt 0cm 5.4pt;
+            font-size: 11.0pt;
+            font-family: "Calibri" , "sans-serif";
+        }
+        td.FirstLeft
+        {
+            border-left: solid #9BBB59 1.0pt;
+            border-bottom: solid #9BBB59 1.0pt;
+            border-right: none;
+            text-align: Left;
+            vertical-align:top;
+        }
+        td.Right
+        {
+            border-left: none;
+            border-bottom: solid #9BBB59 1.0pt;
+            border-right: solid #9BBB59 1.0pt;
+            text-align: center;
+            vertical-align: top;
+        }
+        td.LineMid
+        {
+            border-left: none;
+            border-bottom: solid #9BBB59 1.0pt;
+            border-right: none;
+            text-align: center;
+            vertical-align: top;
+        }
+        td.Left
+        {
+            border-left: solid #9BBB59 1.0pt;
+            border-bottom: solid #9BBB59 1.0pt;
+            border-right: none;
+            text-align: left;
+            vertical-align: top;
+        }
+        table.Display
+        {
+            width: 100.0%;
+            border-collapse: collapse;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body lang="EN-US" class="Show"&gt;
+    &lt;p&gt;
+        Hi $CustomerName$,
+    &lt;/p&gt;
+    &lt;p&gt;
+        Wish you a good day&lt;/p&gt;
+    &lt;p&gt;
+        Following is my daily work report, please take a look and make your comments.Thank
+        you!&lt;/p&gt;
+    &lt;h1&gt;
+        &lt;i&gt;&lt;b&gt;A–Week's Tasks&lt;/b&gt;&lt;/i&gt;&lt;/h1&gt;
+    &lt;table class="Display"&gt;
+        &lt;tr class="FirstLine"&gt;
+            &lt;td width="30.42%" class="FirstLeft"&gt;
+                Tasks
+            &lt;/td&gt;
+            &lt;td width="8.38%" class="LineMid"&gt;
+                Start Date
+            &lt;/td&gt;
+            &lt;td width="8.38%" class="LineMid"&gt;
+                End Date
+            &lt;/td&gt;
+            &lt;td width="10.96%" class="LineMid"&gt;
+                Estimate progress
+            &lt;/td&gt;
+            &lt;td width="10.96%" class="LineMid"&gt;
+                Actual progress
+            &lt;/td&gt;
+            &lt;td width="30.9%" class="Right"&gt;
+                Description
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        $ThisWeekTask$
+    &lt;/table&gt;
+    &lt;h1&gt;
+        &lt;i&gt;&lt;b&gt;B–Summary&lt;/b&gt;&lt;/i&gt;&lt;/h1&gt;
+    None
+    &lt;h1&gt;
+        &lt;i&gt;&lt;b&gt;C–Today's Tasks&lt;/b&gt;&lt;/i&gt;&lt;/h1&gt;
+    &lt;table class="Display"&gt;
+        &lt;tr class="FirstLine"&gt;
+            &lt;td width="20%" class="FirstLeft"&gt;
+                Tasks
+            &lt;/td&gt;
+            &lt;td class="LineMid" style="width: 14%"&gt;
+                Estimate work amount (hrs)
+            &lt;/td&gt;
+            &lt;td class="LineMid" style="width: 14%"&gt;
+                Actually work amount (hrs)
+            &lt;/td&gt;
+            &lt;td width="13%" class="LineMid"&gt;
+                Status
+            &lt;/td&gt;
+            &lt;td width="37%" class="Right"&gt;
+                Description
+            &lt;/td&gt;
+        &lt;/tr&gt;
+       $TodayTask$
+    &lt;/table&gt;
+    &lt;h1&gt;
+        &lt;i&gt;&lt;b&gt;D–Next Plan&lt;/b&gt;&lt;/i&gt;&lt;/h1&gt;
+    &lt;table class="Display"&gt;
+        &lt;tr class="FirstLine"&gt;
+            &lt;td width="31%" class="Left"&gt;
+                Tasks
+            &lt;/td&gt;
+            &lt;td width="8%" class="LineMid"&gt;
+                Date
+            &lt;/td&gt;
+            &lt;td width="16%" class="LineMid"&gt;
+                Estimate work amount (hours)
+            &lt;/td&gt;
+            &lt;td width="29%" class="Right"&gt;
+                Description
+            &lt;/td&gt;
+        &lt;/tr&gt;
+       $NextDayTask$
+    &lt;/table&gt;
+    &lt;p&gt;
+        Please do not hesitate to let me know if you have any question.&lt;/p&gt;
+    &lt;p&gt;
+        Best Regards,&lt;/p&gt;
+    &lt;p&gt;
+        $ReportPeople$&lt;/p&gt;
+&lt;!--    &lt;p&gt;
+        Project Manager | Nova Software Inc.&lt;/p&gt;
+    &lt;p&gt;
+        T: (+86 23) 68795169 | Skype: chenjunno18 | E-mail: &lt;a href="mailto:chenj@shinetechchina.com"&gt;
+            chenj@shinetechchina.com&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;
+        &lt;a href="http://www.novasoftware.com"&gt;www.novasoftware.com&lt;/a&gt; | &lt;b&gt;For your success!&lt;/b&gt;&lt;/p&gt;--&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="IterationDateErrorMessage" xml:space="preserve">
+    <value>the duration of iterations should not overlap.</value>
+  </data>
+  <data name="NoTaskTip" xml:space="preserve">
+    <value>You do not have any task.</value>
+  </data>
+  <data name="colSumActualInput" xml:space="preserve">
+    <value>Sum ActualInput</value>
+  </data>
+  <data name="colSumActualWorkHours" xml:space="preserve">
+    <value>Sum ActualWorkHours</value>
+  </data>
+  <data name="colSumEffort" xml:space="preserve">
+    <value>Sum Effort</value>
+  </data>
+  <data name="colSumOvertime" xml:space="preserve">
+    <value>Sum Overtime</value>
+  </data>
+  <data name="colSumQuoteWorkHours" xml:space="preserve">
+    <value>Sum QuoteWorkHours</value>
+  </data>
+  <data name="colSumRemainderTime" xml:space="preserve">
+    <value>Sum RemainderTime</value>
+  </data>
+  <data name="IterationDateCompareMessage" xml:space="preserve">
+    <value>Deadline should be greater than Start Date.</value>
+  </data>
+  <data name="OverEffortMessage" xml:space="preserve">
+    <value>Total effort should not greater than total Actual Work Hours</value>
+  </data>
+  <data name="colEvaluateExactlyRate" xml:space="preserve">
+    <value>Evaluate Exactly Rate</value>
+  </data>
+  <data name="colInputEffortRate" xml:space="preserve">
+    <value>Input Effort Rate</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>Send Email</value>
+  </data>
+  <data name="EditTaskEffort" xml:space="preserve">
+    <value>Edit Task Effort</value>
+  </data>
+  <data name="NoNewTaskMessage" xml:space="preserve">
+    <value>you do not have  tasks today.</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="BeginDate" xml:space="preserve">
+    <value>Begin Date</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="IterationName" xml:space="preserve">
+    <value>Iteration Name</value>
+  </data>
+  <data name="ProjectName" xml:space="preserve">
+    <value>Project Name     </value>
+  </data>
+  <data name="RecordPerson" xml:space="preserve">
+    <value>Record Person</value>
+  </data>
+  <data name="DateRang" xml:space="preserve">
+    <value>Date Rang</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status       </value>
+  </data>
+  <data name="WorkUnit" xml:space="preserve">
+    <value>Work Unit</value>
+  </data>
+  <data name="CurrentDate" xml:space="preserve">
+    <value>Current Date</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="NotStarted" xml:space="preserve">
+    <value>Not Started</value>
+  </data>
+  <data name="ProjectManager" xml:space="preserve">
+    <value>Project Manager</value>
+  </data>
+  <data name="SumActualInputRate" xml:space="preserve">
+    <value>Actual Input Rate</value>
+  </data>
+  <data name="SumEffortRate" xml:space="preserve">
+    <value>Effort Rate</value>
+  </data>
+  <data name="ErrorDirection" xml:space="preserve">
+    <value>High status should not drag To low status.</value>
+  </data>
+  <data name="AddVersion" xml:space="preserve">
+    <value>Add Version</value>
+  </data>
+  <data name="Attendance" xml:space="preserve">
+    <value>Attendance</value>
+  </data>
+  <data name="ProjectVersion" xml:space="preserve">
+    <value>ProjectVersion</value>
+  </data>
+  <data name="OwnerPerson" xml:space="preserve">
+    <value>Salesman  </value>
+  </data>
+  <data name="TechnologyPerson" xml:space="preserve">
+    <value>Technical </value>
+  </data>
+  <data name="Unassigned" xml:space="preserve">
+    <value>Unassigned</value>
+  </data>
+  <data name="DeleteProjectVersionTip" xml:space="preserve">
+    <value>Do you want to delete this Project Version?</value>
+  </data>
+  <data name="IdealRemainTime" xml:space="preserve">
+    <value>Ideal</value>
+  </data>
+  <data name="ToDoRemainTime" xml:space="preserve">
+    <value>ToDo</value>
+  </data>
+  <data name="ActualInputIsZero" xml:space="preserve">
+    <value>Actual input can not zero</value>
+  </data>
+  <data name="DeleteProjectModuleTip" xml:space="preserve">
+    <value>Do you want to delete this project module ?</value>
+  </data>
+  <data name="ProjectModule" xml:space="preserve">
+    <value>Project Module</value>
+  </data>
+  <data name="AddModule" xml:space="preserve">
+    <value>Add Module</value>
+  </data>
+</root>

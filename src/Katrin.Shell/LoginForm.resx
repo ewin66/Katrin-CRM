@@ -1,0 +1,829 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="autoLoginCheckEdit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="autoLoginCheckEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 269</value>
+  </data>
+  <data name="autoLoginCheckEdit.Properties.Caption" xml:space="preserve">
+    <value>Auto Login</value>
+  </data>
+  <data name="autoLoginCheckEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 19</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="autoLoginCheckEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;autoLoginCheckEdit.Name" xml:space="preserve">
+    <value>autoLoginCheckEdit</value>
+  </data>
+  <data name="&gt;&gt;autoLoginCheckEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;autoLoginCheckEdit.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;autoLoginCheckEdit.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="rememberPasswordCheckEdit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="rememberPasswordCheckEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 269</value>
+  </data>
+  <data name="rememberPasswordCheckEdit.Properties.Caption" xml:space="preserve">
+    <value>Remember Password</value>
+  </data>
+  <data name="rememberPasswordCheckEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 19</value>
+  </data>
+  <data name="rememberPasswordCheckEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;rememberPasswordCheckEdit.Name" xml:space="preserve">
+    <value>rememberPasswordCheckEdit</value>
+  </data>
+  <data name="&gt;&gt;rememberPasswordCheckEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;rememberPasswordCheckEdit.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;rememberPasswordCheckEdit.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="serviceTextEdit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="serviceTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 182</value>
+  </data>
+  <data name="serviceTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 20</value>
+  </data>
+  <data name="serviceTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;serviceTextEdit.Name" xml:space="preserve">
+    <value>serviceTextEdit</value>
+  </data>
+  <data name="&gt;&gt;serviceTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;serviceTextEdit.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;serviceTextEdit.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="userNameTextEdit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="userNameTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 211</value>
+  </data>
+  <data name="userNameTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 20</value>
+  </data>
+  <data name="userNameTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <metadata name="dxValidationProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="&gt;&gt;userNameTextEdit.Name" xml:space="preserve">
+    <value>userNameTextEdit</value>
+  </data>
+  <data name="&gt;&gt;userNameTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;userNameTextEdit.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;userNameTextEdit.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="passwordTextEdit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="passwordTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 240</value>
+  </data>
+  <data name="passwordTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 20</value>
+  </data>
+  <data name="passwordTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;passwordTextEdit.Name" xml:space="preserve">
+    <value>passwordTextEdit</value>
+  </data>
+  <data name="&gt;&gt;passwordTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;passwordTextEdit.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;passwordTextEdit.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 299</value>
+  </data>
+  <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="cancelButton.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
+    <value>cancelButton</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="serverTextEdit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="serverTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 153</value>
+  </data>
+  <data name="serverTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 20</value>
+  </data>
+  <data name="serverTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;serverTextEdit.Name" xml:space="preserve">
+    <value>serverTextEdit</value>
+  </data>
+  <data name="&gt;&gt;serverTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;serverTextEdit.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;serverTextEdit.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="okButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>282, 299</value>
+  </data>
+  <data name="okButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="okButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="okButton.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;okButton.Name" xml:space="preserve">
+    <value>okButton</value>
+  </data>
+  <data name="&gt;&gt;okButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;okButton.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;okButton.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="pictureEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pictureEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 141</value>
+  </data>
+  <data name="pictureEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;pictureEdit1.Name" xml:space="preserve">
+    <value>pictureEdit1</value>
+  </data>
+  <data name="&gt;&gt;pictureEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;pictureEdit1.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;pictureEdit1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="layoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="rootGroup.CustomizationFormText" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="okLayoutControlItem.CustomizationFormText" xml:space="preserve">
+    <value>OK Button</value>
+  </data>
+  <data name="okLayoutControlItem.Text" xml:space="preserve">
+    <value>OK Button</value>
+  </data>
+  <data name="cancelLayoutControlItem.CustomizationFormText" xml:space="preserve">
+    <value>Cancel Button</value>
+  </data>
+  <data name="cancelLayoutControlItem.Text" xml:space="preserve">
+    <value>Cancel Button</value>
+  </data>
+  <data name="emptySpaceItem1.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="emptySpaceItem1.Text" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="emptySpaceItem2.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="emptySpaceItem2.Text" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="layoutControlItem1.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="layoutControlItem1.Text" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="layoutControlItem2.CustomizationFormText" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="layoutControlItem2.Text" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="layoutControlItem3.CustomizationFormText" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="layoutControlItem3.Text" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="layoutControlItem4.CustomizationFormText" xml:space="preserve">
+    <value>User Name                      </value>
+  </data>
+  <data name="layoutControlItem4.Text" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="layoutControlItem5.CustomizationFormText" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="layoutControlItem5.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="layoutControlItem6.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem6</value>
+  </data>
+  <data name="layoutControlItem6.Text" xml:space="preserve">
+    <value>layoutControlItem6</value>
+  </data>
+  <data name="layoutControlItem7.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem7</value>
+  </data>
+  <data name="layoutControlItem7.Text" xml:space="preserve">
+    <value>layoutControlItem7</value>
+  </data>
+  <data name="emptySpaceItem3.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="emptySpaceItem3.Text" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="emptySpaceItem4.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem4</value>
+  </data>
+  <data name="emptySpaceItem4.Text" xml:space="preserve">
+    <value>emptySpaceItem4</value>
+  </data>
+  <data name="emptySpaceItem6.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem6</value>
+  </data>
+  <data name="emptySpaceItem6.Text" xml:space="preserve">
+    <value>emptySpaceItem6</value>
+  </data>
+  <data name="emptySpaceItem7.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem7</value>
+  </data>
+  <data name="emptySpaceItem7.Text" xml:space="preserve">
+    <value>emptySpaceItem7</value>
+  </data>
+  <data name="emptySpaceItem8.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem8</value>
+  </data>
+  <data name="emptySpaceItem8.Text" xml:space="preserve">
+    <value>emptySpaceItem8</value>
+  </data>
+  <data name="emptySpaceItem9.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem9</value>
+  </data>
+  <data name="emptySpaceItem9.Text" xml:space="preserve">
+    <value>emptySpaceItem9</value>
+  </data>
+  <data name="emptySpaceItem10.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem10</value>
+  </data>
+  <data name="emptySpaceItem10.Text" xml:space="preserve">
+    <value>emptySpaceItem10</value>
+  </data>
+  <data name="emptySpaceItem5.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem5</value>
+  </data>
+  <data name="emptySpaceItem5.Text" xml:space="preserve">
+    <value>emptySpaceItem5</value>
+  </data>
+  <data name="emptySpaceItem11.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem11</value>
+  </data>
+  <data name="emptySpaceItem11.Text" xml:space="preserve">
+    <value>emptySpaceItem11</value>
+  </data>
+  <data name="emptySpaceItem12.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem12</value>
+  </data>
+  <data name="emptySpaceItem12.Text" xml:space="preserve">
+    <value>emptySpaceItem12</value>
+  </data>
+  <data name="rootGroup.Text" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 337</value>
+  </data>
+  <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="layoutControl1.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Name" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>57</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>448, 337</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AP7dkgD83JMA/d2SAP3ckwD93ZMA/d2TAP3ckwD83JIA/NySAPzdkgD93JIA/N2TAP7dkwD+3JIA/t2T
+        AP7ckgD/3JIA/tyTAP/ckgD+3ZMA/t2TAP3dkwD93pkQwgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADckwAA57VQAN6YDQHhoSQC46gyJN+bFZDdlQXo3ZMA+92T
+        APzdkgD83ZMA/d2TAP7dkgD93ZMA/t2SAP7ckwD+3ZMA/t2TAP7ckwD93JIA/dySAP3dkgD+3JIA/d2T
+        AP7dkwD+3JMA/d2TAP3ckgD+3JIA/dyTAP7ckgD93ZMA/d2SAPzdlAPy4aEiYQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3JMAAOe0TwDfnRgA3ZMCAeaw
+        RAfhoyg/35oSo92VBujckgD83ZMA/NyTAP3dkQD93ZMA/t2SAP7ckwD+3ZMA/t2TAP7ckwD93JIA/dyS
+        AP3dkgD+25EA/dyTAP3ckwD+3JMA/dyTAP3ckgD+3JIA/dyTAP7ckgD93ZMA/N2TAvbfnBaQ5bBEDQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN2T
+        AADpul8A46YvAN2UBQHdlAYB5rJJCeKlKzjfnBaG3pcLy92UBPDckgD83JMA/tySAP7ckwD/3JMA/9yT
+        AP/bkgD+25EA/tySAP7ckgD+3JIA/d2UBPPelwrT35sUk9+cF3rdlgrO3ZQE89yTAPzdlAT23ZYI1+Ce
+        HHbkqjgQ35sTAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA3pcLAOi4VwDgnx8B3JMBAd2TAQHmskgD5a4/F+KkKUTgnx1635oRrt+Z
+        ENHemQ/o3ZUG9t2UAvzclQX33pgO6t+aEdXemA614J8dhOKjJkzkrT0c6LhXBOSqNgPlqzsb4qIkTN6X
+        CmLhoB5R5Ks5IuaxSATelwsB5rNLAAAAAAAAAAAAAAAAAAAAAAD//gAAAB/////8AAAAD/////gAAAAP
+        ////4AAAAA/////AAAAAD////4AAAAAP////AAAAAA////4AAAAAD////gAB/AAP///8AA//AA////gA
+        P/+AD///+AD//8Af///wAf//4D///+AD///wf///4AP////////gB//v/////+AP/wH/////4A/+AP//
+        ///gD/wAf////+Af+AA/////4B/wAD/////gH/AAH////+Af8AAf////4B/gAB/////gH+AAD////+Af
+        8AAf////4B/wAB/////gH/AAH////+Af8AA/////4A/4AD/////gD/wAf////+AP/gD/////4Af/Af//
+        ///gA////////+AD///wf///8AH//+A////4AP//wB////gAP/+AD////AAP/wAP///+AAH8AA////4A
+        AAAAD////wAAAAAP////gAAAAA/////AAAAAD////+AAAAAP////+AAAAA/////8AAAAD/////4AAAAf
+        //8=
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Login Katrin</value>
+  </data>
+  <data name="&gt;&gt;rootGroup.Name" xml:space="preserve">
+    <value>rootGroup</value>
+  </data>
+  <data name="&gt;&gt;rootGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;okLayoutControlItem.Name" xml:space="preserve">
+    <value>okLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;okLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cancelLayoutControlItem.Name" xml:space="preserve">
+    <value>cancelLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cancelLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Name" xml:space="preserve">
+    <value>layoutControlItem3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem4.Name" xml:space="preserve">
+    <value>layoutControlItem4</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem5.Name" xml:space="preserve">
+    <value>layoutControlItem5</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem6.Name" xml:space="preserve">
+    <value>layoutControlItem6</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem7.Name" xml:space="preserve">
+    <value>layoutControlItem7</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem4.Name" xml:space="preserve">
+    <value>emptySpaceItem4</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem6.Name" xml:space="preserve">
+    <value>emptySpaceItem6</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem7.Name" xml:space="preserve">
+    <value>emptySpaceItem7</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem8.Name" xml:space="preserve">
+    <value>emptySpaceItem8</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem9.Name" xml:space="preserve">
+    <value>emptySpaceItem9</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem10.Name" xml:space="preserve">
+    <value>emptySpaceItem10</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem10.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem5.Name" xml:space="preserve">
+    <value>emptySpaceItem5</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem11.Name" xml:space="preserve">
+    <value>emptySpaceItem11</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem11.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem12.Name" xml:space="preserve">
+    <value>emptySpaceItem12</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem12.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;dxValidationProvider1.Name" xml:space="preserve">
+    <value>dxValidationProvider1</value>
+  </data>
+  <data name="&gt;&gt;dxValidationProvider1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+</root>

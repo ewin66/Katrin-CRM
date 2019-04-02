@@ -1,0 +1,4 @@
+heat.exe  dir publish -gg -ke -sfrag -template:fragmen
+t -dr INSTALLLOCATION -cg BasicComponentGroup -srd -out  ABC.wxs
+
+
