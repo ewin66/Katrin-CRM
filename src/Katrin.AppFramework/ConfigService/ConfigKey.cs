@@ -7,7 +7,6 @@ namespace Katrin.AppFramework.ConfigService
 {
     /// <summary>
     /// User layout info keys.
-    /// author:hecq
     /// date:2012-11-6
     /// </summary>
     public class ConfigKey

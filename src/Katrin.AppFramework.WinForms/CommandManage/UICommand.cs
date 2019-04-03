@@ -15,7 +15,6 @@ namespace Katrin.AppFramework.WinForms.CommandManage
 {
     /// <summary>
     /// UICommand
-    /// author:hecq
     /// date:2012-11-?
     /// </summary>
     class UICommand : IUICommand

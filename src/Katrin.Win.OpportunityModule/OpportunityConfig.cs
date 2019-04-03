@@ -7,7 +7,6 @@ namespace Katrin.Win.OpportunityModule
 {
     /// <summary>
     /// Opportunity Config info 
-    /// author:hecq
     /// date:2012-10-29
     /// </summary>
     class OpportunityConfig

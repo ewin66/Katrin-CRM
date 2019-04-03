@@ -9,7 +9,6 @@ namespace Katrin.AppFramework.WinForms
     /// <summary>
     /// Ribbon Buider Factory
     /// Get buider by ribbonBuider config in Shell.addin or module.addin
-    /// author:hecq
     /// date:2012-10-23
     /// </summary>
     static class RibbonBuilderManager

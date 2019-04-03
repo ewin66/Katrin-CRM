@@ -12,7 +12,6 @@ namespace Katrin.AppFramework.ConfigService
 {
     /// <summary>
     /// IConfigService implement..
-    /// author:hecq
     /// date:2012-11-6
     /// </summary>
    public class ConfigService:IConfigService

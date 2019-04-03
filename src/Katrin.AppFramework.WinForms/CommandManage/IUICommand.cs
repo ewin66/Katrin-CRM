@@ -11,7 +11,6 @@ namespace Katrin.AppFramework.WinForms.CommandManage
 {
     /// <summary>
     /// UICommand Interface.
-    /// author:hecq
     /// date:2012-11-16
     /// </summary>
     public interface IUICommand:IDisposable

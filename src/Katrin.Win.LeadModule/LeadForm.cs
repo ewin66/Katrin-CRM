@@ -14,7 +14,6 @@ namespace Katrin.Win.LeadModule
 {
     /// <summary>
     /// LeadModule Form
-    /// author:hecq
     /// date:2012-10-29
     /// </summary>
     public partial class LeadForm : DevExpress.XtraEditors.XtraForm,IModuleForm

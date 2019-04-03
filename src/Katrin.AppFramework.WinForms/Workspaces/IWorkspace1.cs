@@ -29,7 +29,6 @@ namespace Katrin.AppFramework.WinForms.Workspaces
     }
     /// <summary>
     /// workspace form
-    /// author:hecq
     /// date:2012-10-29
     /// </summary>
     public interface IWorkspace1 : IObjectAware, IWorkspaceInfo, IControllerFinder

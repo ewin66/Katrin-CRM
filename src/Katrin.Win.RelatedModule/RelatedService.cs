@@ -11,7 +11,6 @@ namespace Katrin.Win.RelatedModule
 {
     /// <summary>
     /// RelatedService 
-    /// author:hecq
     /// date:2012-11-10
     /// </summary>
     class RelatedService : IModuleService, IListener<NotifyRelatedMessage>

@@ -8,7 +8,6 @@ namespace Katrin.AppFramework.WinForms.Workspaces
 {
     /// <summary>
     /// workspace Text Loader
-    /// author: hecq
     /// date:2012-11-5
     /// </summary>
    public class WorkSpaceTextLoader

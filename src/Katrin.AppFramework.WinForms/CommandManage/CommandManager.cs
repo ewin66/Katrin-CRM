@@ -12,7 +12,6 @@ namespace Katrin.AppFramework.WinForms.CommandManage
 {
     /// <summary>
     /// UICommand Manager.
-    /// author:hecq
     /// date:2012-11-16
     /// </summary>
     class CommandManager : ICommandRegister, IBarItemFinder,IDisposable,IRunTimeCommandRigister

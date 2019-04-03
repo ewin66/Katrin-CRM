@@ -10,7 +10,6 @@ namespace Katrin.AppFramework.WinForms.Messages
     /// <summary>
     /// MessageBase
     /// message must base this object
-    /// author:hecq
     /// date:2012-11-15
     /// </summary>
     public abstract class AbstractMessage

@@ -9,7 +9,6 @@ namespace Katrin.AppFramework.WinForms.ContextMenu
 {
     /// <summary>
     /// IBarItemFinder
-    /// author:hecq
     /// date:2012-11-7
     /// </summary>
     interface IBarItemFinder

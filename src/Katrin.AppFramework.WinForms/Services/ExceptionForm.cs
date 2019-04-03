@@ -12,7 +12,6 @@ namespace Katrin.AppFramework.WinForms.Services
 {
     /// <summary>
     /// Exception Info Form
-    /// author:hecq
     /// date:2012-10-19
     /// </summary>
     public partial class ExceptionForm :XtraForm

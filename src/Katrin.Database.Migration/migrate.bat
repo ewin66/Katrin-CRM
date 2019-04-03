@@ -1,1 +1,1 @@
-..\packages\FluentMigrator.1.0.3.0\tools\migrate.exe --conn "data source=.;initial catalog=Katrin_Migrate;integrated security=True;" --provider sqlserver2008 --assembly "Katrin.Database.Migration.dll" --task migrate --output --outputFilename migrated.sql
+..\..\packages\FluentMigrator.1.0.3.0\tools\migrate.exe --conn "data source=.;initial catalog=Katrin_Migrate;integrated security=True;" --provider sqlserver2008 --assembly "Katrin.Database.Migration.dll" --task migrate --output --outputFilename migrated.sql

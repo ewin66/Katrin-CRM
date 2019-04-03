@@ -12,12 +12,13 @@
     <AssemblyName>Katrin.Win.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>..\..\obj\$(Configuration)\$(MSBuildProjectName)\</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -25,14 +26,13 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Practices.ObjectBuilder">
-      <HintPath>..\packages\CAB\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+      <HintPath>..\..\packages\CAB\Microsoft.Practices.ObjectBuilder.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -128,15 +128,15 @@
       <Project>{37bdfea4-34cf-42cc-8379-c74b35bbf596}</Project>
       <Name>Katrin.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\packages\CAB\Source\CABDevExpress.ExtensionKit\CABDevExpress.ExtensionKit.csproj">
+    <ProjectReference Include="..\..\packages\CAB\Source\CABDevExpress.ExtensionKit\CABDevExpress.ExtensionKit.csproj">
       <Project>{811DD8C8-6696-4566-A142-8ED28759D7A5}</Project>
       <Name>CABDevExpress.ExtensionKit</Name>
     </ProjectReference>
-    <ProjectReference Include="..\packages\CAB\Source\CompositeUI.WinForms\CompositeUI.WinForms.csproj">
+    <ProjectReference Include="..\..\packages\CAB\Source\CompositeUI.WinForms\CompositeUI.WinForms.csproj">
       <Project>{073BCD60-F2FB-4DB9-92FB-403C8F9E8DD0}</Project>
       <Name>CompositeUI.WinForms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\packages\CAB\Source\CompositeUI\CompositeUI.csproj">
+    <ProjectReference Include="..\..\packages\CAB\Source\CompositeUI\CompositeUI.csproj">
       <Project>{C478E40B-A05E-4C69-9AB3-7A3BB374243F}</Project>
       <Name>CompositeUI</Name>
     </ProjectReference>

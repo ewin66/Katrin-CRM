@@ -12,7 +12,6 @@ namespace Katrin.AppFramework.WinForms.Messages
 
     /// <summary>
     /// this message sended when object added
-    /// author:hecq
     /// date 2012-11-13
     /// </summary>
     public class ObjectAddedMessage

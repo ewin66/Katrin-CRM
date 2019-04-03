@@ -7,7 +7,6 @@ namespace Katrin.AppFramework.ConfigService
 {
     /// <summary>
     /// ILayoutRemember
-    /// author:hecq
     /// date:2012-11-7
     /// </summary>
     public interface ILayoutRemember

@@ -14,12 +14,13 @@
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <OutputPath>..\..\bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>..\..\obj\$(Configuration)\$(MSBuildProjectName)\</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -28,14 +29,13 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BCrypt.Net">
-      <HintPath>..\packages\BCrypt-Official.0.1.107\lib\BCrypt.Net.dll</HintPath>
+      <HintPath>..\..\packages\BCrypt-Official.0.1.107\lib\BCrypt.Net.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Charts.v12.1.Core, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -131,32 +131,32 @@
     </Reference>
     <Reference Include="inflector_extension, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\inflector_extension.0.0.8\lib\Net40\inflector_extension.dll</HintPath>
+      <HintPath>..\..\packages\inflector_extension.0.0.8\lib\Net40\inflector_extension.dll</HintPath>
     </Reference>
     <Reference Include="LateBindingApi.Core">
-      <HintPath>..\packages\OutLookAPI\LateBindingApi.Core.dll</HintPath>
+      <HintPath>..\..\packages\OutLookAPI\LateBindingApi.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Data.Edm, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.Data.Edm.5.1.0-rc2\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.Data.Edm.5.1.0-rc2\lib\net40\Microsoft.Data.Edm.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Data.OData, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.Data.OData.5.1.0-rc2\lib\net40\Microsoft.Data.OData.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.Data.OData.5.1.0-rc2\lib\net40\Microsoft.Data.OData.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Data.Services.Client, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.Data.Services.Client.5.1.0-rc2\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+      <HintPath>..\..\packages\Microsoft.Data.Services.Client.5.1.0-rc2\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.ObjectBuilder">
-      <HintPath>..\packages\CAB\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+      <HintPath>..\..\packages\CAB\Microsoft.Practices.ObjectBuilder.dll</HintPath>
     </Reference>
     <Reference Include="OfficeApi">
-      <HintPath>..\packages\OutLookAPI\OfficeApi.dll</HintPath>
+      <HintPath>..\..\packages\OutLookAPI\OfficeApi.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="OutlookApi">
-      <HintPath>..\packages\OutLookAPI\OutlookApi.dll</HintPath>
+      <HintPath>..\..\packages\OutLookAPI\OutlookApi.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
@@ -166,7 +166,7 @@
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Spatial, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\System.Spatial.5.1.0-rc2\lib\net40\System.Spatial.dll</HintPath>
+      <HintPath>..\..\packages\System.Spatial.5.1.0-rc2\lib\net40\System.Spatial.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
@@ -605,15 +605,15 @@
       <Project>{56A33ED0-4C9C-4579-A3E8-2C858FD3B8AD}</Project>
       <Name>Katrin.Win.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\packages\CAB\Source\CABDevExpress.ExtensionKit\CABDevExpress.ExtensionKit.csproj">
+    <ProjectReference Include="..\..\packages\CAB\Source\CABDevExpress.ExtensionKit\CABDevExpress.ExtensionKit.csproj">
       <Project>{811DD8C8-6696-4566-A142-8ED28759D7A5}</Project>
       <Name>CABDevExpress.ExtensionKit</Name>
     </ProjectReference>
-    <ProjectReference Include="..\packages\CAB\Source\CompositeUI.WinForms\CompositeUI.WinForms.csproj">
+    <ProjectReference Include="..\..\packages\CAB\Source\CompositeUI.WinForms\CompositeUI.WinForms.csproj">
       <Project>{073BCD60-F2FB-4DB9-92FB-403C8F9E8DD0}</Project>
       <Name>CompositeUI.WinForms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\packages\CAB\Source\CompositeUI\CompositeUI.csproj">
+    <ProjectReference Include="..\..\packages\CAB\Source\CompositeUI\CompositeUI.csproj">
       <Project>{C478E40B-A05E-4C69-9AB3-7A3BB374243F}</Project>
       <Name>CompositeUI</Name>
     </ProjectReference>

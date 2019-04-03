@@ -1,6 +1,5 @@
 /// <summary>
 /// winformmessageservice implement
-/// author:hecq
 /// date:2012-10-19
 /// </summary>
 

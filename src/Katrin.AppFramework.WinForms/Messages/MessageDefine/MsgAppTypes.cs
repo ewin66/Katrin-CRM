@@ -7,7 +7,6 @@ namespace Katrin.AppFramework.WinForms.Messages.MessageDefine
 {
     /// <summary>
     /// Message AppType.
-    /// author:hecq
     /// date:2012-11-15
     /// </summary>
     public enum MsgAppTypes

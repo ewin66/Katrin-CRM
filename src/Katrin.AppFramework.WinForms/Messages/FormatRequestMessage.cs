@@ -7,7 +7,6 @@ namespace Katrin.AppFramework.WinForms.Messages
 {
     /// <summary>
     /// this message sended when gridview need formating service.
-    /// author:hecq
     /// date:2012-11-13
     /// </summary>
    public class FormatRequestMessage

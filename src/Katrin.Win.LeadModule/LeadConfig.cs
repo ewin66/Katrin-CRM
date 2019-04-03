@@ -7,7 +7,6 @@ namespace Katrin.Win.LeadModule
 {
     /// <summary>
     /// LeadModule Config info Manage
-    /// author:hecq
     /// date:2012-10-29
     /// </summary>
     class LeadConfig

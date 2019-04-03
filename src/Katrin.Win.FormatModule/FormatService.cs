@@ -9,7 +9,6 @@ namespace Katrin.Win.FormatModule
 {
     /// <summary>
     /// Format Service
-    /// author:hecq
     /// date:2012-11-13
     /// </summary>
     class FormatService : IListener<FormatRequestMessage>,IModuleService
