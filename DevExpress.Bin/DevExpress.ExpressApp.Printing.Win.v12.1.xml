@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.Printing.Win.v12.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.Printing.Win.IModelPrintingSettings">
+
+            <summary>
+                <para>This interface is obsolete. Use <see cref="T:DevExpress.ExpressApp.Win.SystemModule.IModelPrintingSettings"/> instead.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Printing.Win.IModelPrintingSettings.CustomPaperSize">
+            <summary>
+                <para>Specifies the size of custom paper.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Size"/> object specifying the size of custom paper.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Printing.Win.IModelPrintingSettings.Landscape">
+            <summary>
+                <para>Specifies whether the page orientation is Landscape.
+</para>
+            </summary>
+            <value><b>true</b>, if the page orientation is Landscape; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Printing.Win.IModelPrintingSettings.Margins">
+            <summary>
+                <para>Specifies the page margins.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Printing.Margins"/> object representing the page margins.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Printing.Win.IModelPrintingSettings.PageHeaderFooter">
+            <summary>
+                <para>This property is intended for internal use.
+</para>
+            </summary>
+            <value>@nbsp;
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Printing.Win.IModelPrintingSettings.PaperKind">
+            <summary>
+                <para>Specifies the type of paper that must be used by a printer.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Printing.PaperKind"/> object representing the type of paper that must be used by a printer.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Printing.Win.IModelPrintingSettings.PaperName">
+            <summary>
+                <para>Specifies the name of the paper.
+</para>
+            </summary>
+            <value>A string specifying the name of the paper.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Printing.Win.IModelOptionsPrintingSettings">
+
+            <summary>
+                <para>Used to extend the Application Model with the PrintingSettings node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Printing.Win.IModelOptionsPrintingSettings.PrintingSettings">
+            <summary>
+                <para>Provides access to the PrintingSettings child node.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.Printing.Win.IModelPrintingSettings"/> object representing the PrintingSettings child node.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Printing.Win.PrintingSettingsStorage">
+
+            <summary>
+                <para>Specifies whether printing settings are saved separately for each View.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Printing.Win.PrintingSettingsStorage.Application">
+            <summary>
+                <para>Specifies that saved printing settings affect all the Views in an application.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Printing.Win.PrintingSettingsStorage.View">
+            <summary>
+                <para>Specifies that printing settings are saved separately for each View.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Printing.Win.Module">
+
+            <summary>
+                <para>This class is obsolete. Use the <see cref="T:DevExpress.ExpressApp.Printing.Win.PrintingWindowsFormsModule"/> instead.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Printing.Win.Module.#ctor">
+            <summary>
+                <para>Creates an instance of the Module class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Printing.Win.PrintingWindowsFormsModule">
+
+            <summary>
+                <para><b>PrintingWindowsFormsModule</b> is obsolete. Its functionality has been integrated into <see cref="T:DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Printing.Win.PrintingWindowsFormsModule.#ctor">
+            <summary>
+                <para>PrintingWindowsFormsModule is obsolete. Its functionality has been integrated into <see cref="T:DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule"/>.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Printing.Win.PrintingWindowsFormsModule.ExtendModelInterfaces(DevExpress.ExpressApp.Model.ModelInterfaceExtenders)">
+            <summary>
+                <para>PrintingWindowsFormsModule is obsolete. Its functionality has been integrated into <see cref="T:DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule"/>.
+</para>
+            </summary>
+            <param name="extenders">
+		@nbsp;
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Printing.Win.PrintingWindowsFormsModule.GetXafResourceLocalizerTypes">
+            <summary>
+                <para>PrintingWindowsFormsModule is obsolete. Its functionality has been integrated into <see cref="T:DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule"/>.
+</para>
+            </summary>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Printing.Win.PrintingWindowsFormsModule.PrintingSettingsStorage">
+            <summary>
+                <para>PrintingWindowsFormsModule is obsolete. Its functionality has been integrated into <see cref="T:DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule"/>.
+</para>
+            </summary>
+            <value>@nbsp;
+</value>
+
+
+        </member>
+    </members>
+</doc>

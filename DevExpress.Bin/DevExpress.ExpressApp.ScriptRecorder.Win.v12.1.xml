@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.ScriptRecorder.Win.v12.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.ScriptRecorder.Win.ScriptRecorderWindowsFormsModule">
+
+            <summary>
+                <para>The module contained in the <i>DevExpress.ExpressApp.ScriptRecorder.Win.v12.1.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ScriptRecorder.Win.ScriptRecorderWindowsFormsModule.#ctor">
+            <summary>
+                <para>Creates an instance of the ScriptRecorderWindowsFormsModule class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ScriptRecorder.Win.ScriptRecorderWindowsFormsModule.Setup(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Sets up the ScriptRecorderWindowsFormsModule after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application. This parameter value is set for the <see cref="P:DevExpress.ExpressApp.ModuleBase.Application"/> property.
+
+            </param>
+
+
+        </member>
+    </members>
+</doc>

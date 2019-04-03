@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.ScriptRecorder.v12.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.ScriptRecorder.ScriptRecorderModuleBase">
+
+            <summary>
+                <para>The module contained in the <i>DevExpress.ExpressApp.ScriptRecorder.v12.1.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ScriptRecorder.ScriptRecorderModuleBase.#ctor">
+            <summary>
+                <para>Creates an instance of the ScriptRecorderModuleBase class.
+</para>
+            </summary>
+
+
+        </member>
+    </members>
+</doc>

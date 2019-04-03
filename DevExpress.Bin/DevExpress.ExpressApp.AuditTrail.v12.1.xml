@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.AuditTrail.v12.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.AuditTrail.Module">
+
+            <summary>
+                <para>This class is obsolete. Use the <see cref="T:DevExpress.ExpressApp.AuditTrail.AuditTrailModule"/> instead.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.AuditTrail.Module.#ctor">
+            <summary>
+                <para>Creates an instance of the Module class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.AuditTrail.Module.AuditDataItemPersistentType">
+            <summary>
+                <para>Specifies the business class used to persist auditing information in the database.
+</para>
+            </summary>
+            <value>The type of a business class used to persist auditing information in the database.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.AuditTrail.Module.Setup(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Sets up the Module after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.AuditTrail.AuditTrailModule">
+
+            <summary>
+                <para>The module contained in the <i>DevExpress.ExpressApp.AuditTrail.v12.1.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.AuditTrail.AuditTrailModule.#ctor">
+            <summary>
+                <para>Creates an instance of the AuditTrailModule class.
+</para>
+            </summary>
+
+
+        </member>
+    </members>
+</doc>

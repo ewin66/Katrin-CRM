@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.FileAttachment.Web.v12.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.FileAttachments.Web.FileAttachmentsAspNetModule">
+
+            <summary>
+                <para>The module contained in the <i>DevExpress.ExpressApp.FileAttachment.Web.v12.1.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.FileAttachments.Web.FileAttachmentsAspNetModule.#ctor">
+            <summary>
+                <para>Creates an instance of the FileAttachmentsAspNetModule class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.FileAttachments.Web.FileAttachmentsAspNetModule.CreateFileData(DevExpress.ExpressApp.IObjectSpace,DevExpress.ExpressApp.DC.IMemberInfo)">
+            <summary>
+                <para>Creates a new <b>IFileData</b> object via the specified Object Space.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object specifying the Object Space where a new <b>IFileData</b> object will be created.
+
+            </param>
+            <param name="memberDescriptor">
+		An <see cref="T:DevExpress.ExpressApp.DC.IMemberInfo"/> object supplying metadata on the property to which the created <b>IFileData</b> object will be assigned.
+
+            </param>
+            <returns>The created <b>IFileData</b> object.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.FileAttachments.Web.Module">
+
+            <summary>
+                <para>This class is obsolete. Use the <see cref="T:DevExpress.ExpressApp.FileAttachments.Web.FileAttachmentsAspNetModule"/> instead.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.FileAttachments.Web.Module.#ctor">
+            <summary>
+                <para>Creates an instance of the Module class.
+</para>
+            </summary>
+
+
+        </member>
+    </members>
+</doc>

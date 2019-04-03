@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.StateMachine.v12.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.StateMachine.StateMachineModule">
+
+            <summary>
+                <para>The module contained in the <i>DevExpress.ExpressApp.StateMachine.v12.1.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.StateMachine.StateMachineModule.#ctor">
+            <summary>
+                <para>Creates an instance of the StateMachineModule class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.StateMachine.StateMachineModule.RegisterDomainComponentEntities(DevExpress.ExpressApp.DC.ITypesInfo,System.String,System.String,System.String,System.String)">
+            <summary>
+                <para>Registers the domain component entities that are required by the State Machine module.
+</para>
+            </summary>
+            <param name="typesInfo">
+		An <b>ITypesInfo</b> object that is the type information store within which the domain components required for the State Machine module must be registered.
+
+
+            </param>
+            <param name="stateMachineEntityName">
+		A string that specifies the name for the State Machine entity.
+
+            </param>
+            <param name="stateEntityName">
+		A string that specifies the name for the State entity.
+
+            </param>
+            <param name="transitionEntityName">
+		A string that specifies the name for the Transition entity.
+
+            </param>
+            <param name="stateAppearanceEntityName">
+		A string that specifies the name for the State Appearance entity.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.StateMachine.StateMachineModule.Setup(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Sets up the StateMachineModule after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application. This parameter value is set for the <see cref="P:DevExpress.ExpressApp.ModuleBase.Application"/> property.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.StateMachine.StateMachineModule.StateMachineRepository">
+            <summary>
+                <para>Specifies a state machine repository used by the StateMachineModule.
+</para>
+            </summary>
+            <value>An <b>IStateMachineRepository</b> object used by the <b>StateMachineModule</b> to retrieve state machines associated with business objects of a particular type.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.StateMachine.StateMachineModule.StateMachineStorageType">
+            <summary>
+                <para>Specifies a persistent type used to store state machines in the database.
+</para>
+            </summary>
+            <value>A persistent type used to store state machines in the database.
+</value>
+
+
+        </member>
+    </members>
+</doc>

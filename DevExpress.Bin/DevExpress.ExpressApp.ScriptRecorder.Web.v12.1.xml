@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.ScriptRecorder.Web.v12.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.ScriptRecorder.Web.ScriptRecorderAspNetModule">
+
+            <summary>
+                <para>The module contained in the <i>DevExpress.ExpressApp.ScriptRecorder.Web.v12.1.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ScriptRecorder.Web.ScriptRecorderAspNetModule.#ctor">
+            <summary>
+                <para>Creates an instance of the ScriptRecorderAspNetModule class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ScriptRecorder.Web.ScriptRecorderAspNetModule.AddGeneratorUpdaters(DevExpress.ExpressApp.Model.Core.ModelNodesGeneratorUpdaters)">
+            <summary>
+                <para>Registers the <b>ActionNodeGeneratorUpdater</b> Generator Updater.
+</para>
+            </summary>
+            <param name="updaters">
+		A <b>ModelNodesGeneratorUpdaters</b> object providing access to the list of Generator Updaters.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ScriptRecorder.Web.ScriptRecorderAspNetModule.Setup(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Sets up the ScriptRecorderAspNetModule after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application. This parameter value is set for the <see cref="P:DevExpress.ExpressApp.ModuleBase.Application"/> property.
+
+            </param>
+
+
+        </member>
+    </members>
+</doc>
